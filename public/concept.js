@@ -50,4 +50,9 @@ async function load() {
     error.textContent = err.message;
   }
 }
-load();
+
+load().then(() => {
+    if (window.MathJax) {
+        MathJax.typesetPromise();
+    }
+});

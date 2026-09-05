@@ -5,83 +5,1113 @@
   "topic": "trigonometry",
   "section": "intro-trigono",
   "difficulty": 1,
+
   "connections": {
-    "prerequisites": ["right-triangles", "similar-triangles"],
-    "leads_to": ["reciprocal-trigonometric-ratios", "trigonometric-ratios-any-angle", "exact-trigonometric-values", "trigonometric-functions"],
+    "prerequisites": [
+      "right-triangles",
+      "similar-triangles"
+    ],
+    "leads_to": [
+      "reciprocal-trigonometric-ratios",
+      "trigonometric-ratios-any-angle",
+      "exact-trigonometric-values",
+      "trigonometric-functions"
+    ],
     "related": []
   },
+
   "theory": {
-    "introduction": "Trigonometric ratios describe relationships between the sides of a right triangle for a chosen acute angle. The three fundamental ratios are sine, cosine, and tangent. Their importance comes from similarity: right triangles with the same acute angle have the same side proportions, so an angle can be associated with a fixed ratio.",
+    "introduction": "Trigonometry begins with a simple question: if we know something about an angle in a right triangle, what can that angle tell us about the lengths of its sides? Trigonometric ratios provide the answer. They create a connection between angles and side lengths and allow us to calculate quantities that would otherwise be difficult to measure. In this lesson, we will build the idea of trigonometric ratios from the beginning, understand why they work, learn sine, cosine and tangent, and use them to solve right-triangle problems.",
+
     "sections": [
-      {"id":"from-angles-to-ratios","title":"From Angles to Ratios","content":[{"type":"paragraph","text":"A triangle can have many different side lengths while keeping the same angle. If the triangle is enlarged or reduced proportionally, its shape stays the same."},{"type":"paragraph","text":"Two triangles with the same angles are similar. Their corresponding sides have the same scale factor, so ratios of corresponding sides remain unchanged."},{"type":"paragraph","text":"This lets us describe a triangle using relationships between its sides instead of its actual size."}]},
-      {"id":"why-ratios-are-useful","title":"Why Ratios Are Useful","content":[{"type":"paragraph","text":"A side length tells us how large a triangle is, but ratios describe its shape. For example, 3-4-5 and 6-8-10 triangles have different sizes but identical side proportions."},{"type":"paragraph","text":"Trigonometric ratios let the same angle-and-shape relationship work for triangles of many different sizes."}]},
-      {"id":"identifying-sides","title":"Opposite, Adjacent and Hypotenuse","content":[{"type":"paragraph","text":"First choose the acute angle being studied. The names opposite and adjacent are defined relative to that angle."},{"type":"paragraph","text":"The hypotenuse is opposite the 90° angle and is always the longest side."},{"type":"paragraph","text":"The opposite side is directly across from the chosen angle."},{"type":"paragraph","text":"The adjacent side touches the chosen angle and is not the hypotenuse."},{"type":"paragraph","text":"If the other acute angle is chosen, the opposite and adjacent sides exchange roles."}]},
-      {"id":"sine","title":"Sine","content":[{"type":"paragraph","text":"Sine compares the opposite side with the hypotenuse."},{"type":"paragraph","text":"For an acute angle θ, sin(θ) is the opposite side divided by the hypotenuse."},{"type":"paragraph","text":"Because the opposite side is shorter than the hypotenuse, sine lies between 0 and 1 for an acute angle."},{"type":"paragraph","text":"As the acute angle increases, the opposite side becomes larger relative to the hypotenuse, so sine increases."}]},
-      {"id":"cosine","title":"Cosine","content":[{"type":"paragraph","text":"Cosine compares the adjacent side with the hypotenuse."},{"type":"paragraph","text":"For an acute angle θ, cos(θ) is the adjacent side divided by the hypotenuse."},{"type":"paragraph","text":"For acute angles, cosine lies between 0 and 1 and decreases as the angle increases."}]},
-      {"id":"tangent","title":"Tangent","content":[{"type":"paragraph","text":"Tangent compares the opposite side with the adjacent side."},{"type":"paragraph","text":"For an acute angle θ, tan(θ) is the opposite side divided by the adjacent side."},{"type":"paragraph","text":"Tangent does not use the hypotenuse. It describes how large the opposite side is compared with the adjacent side, so it can be less than, equal to, or greater than 1."}]},
-      {"id":"soh-cah-toa","title":"SOH-CAH-TOA","content":[{"type":"paragraph","text":"SOH-CAH-TOA is a mnemonic for the three fundamental ratios."},{"type":"paragraph","text":"SOH: Sine = Opposite / Hypotenuse."},{"type":"paragraph","text":"CAH: Cosine = Adjacent / Hypotenuse."},{"type":"paragraph","text":"TOA: Tangent = Opposite / Adjacent."},{"type":"paragraph","text":"Always identify the reference angle and label the sides before applying the mnemonic."}]},
-      {"id":"relationship-between-ratios","title":"Relationships Between the Ratios","content":[{"type":"paragraph","text":"Sine and cosine both contain the hypotenuse, while tangent compares the two legs directly."},{"type":"paragraph","text":"Dividing sine by cosine gives (opposite/hypotenuse) ÷ (adjacent/hypotenuse). The hypotenuse cancels, leaving opposite/adjacent."},{"type":"paragraph","text":"Therefore tan(θ) = sin(θ) / cos(θ) when cos(θ) is nonzero."}]},
-      {"id":"choosing-the-ratio","title":"Selecting the Correct Ratio","content":[{"type":"paragraph","text":"Opposite and hypotenuse → sine. Adjacent and hypotenuse → cosine. Opposite and adjacent → tangent."},{"type":"paragraph","text":"A reliable process is: identify the angle, label the three sides, identify the known and unknown sides, then choose the ratio containing those sides."}]},
-      {"id":"calculating-ratios","title":"Calculating Trigonometric Ratios","content":[{"type":"paragraph","text":"When the required side lengths are known, substitute them directly into the appropriate ratio."},{"type":"paragraph","text":"For example, if the opposite side is 6 cm and the hypotenuse is 10 cm, sin(θ) = 6/10 = 3/5."},{"type":"paragraph","text":"Units cancel when equal length units are divided, so a trigonometric ratio has no physical unit."}]},
-      {"id":"finding-unknown-sides","title":"Finding an Unknown Side","content":[{"type":"paragraph","text":"A trigonometric ratio can determine an unknown side when one acute angle and one suitable side length are known."},{"type":"paragraph","text":"Choose the ratio containing the known and unknown sides, substitute the values, and rearrange to isolate the unknown length."},{"type":"paragraph","text":"For example, if θ = 60° and the adjacent side is 5 cm, cos(60°) = 5/h. Since cos(60°) = 1/2, h = 10 cm."}]},
-      {"id":"solving-right-triangles","title":"Using Ratios to Solve Right Triangles","content":[{"type":"paragraph","text":"Trigonometric ratios can be combined with the Pythagorean theorem to find missing side lengths."},{"type":"paragraph","text":"If two sides are known, the Pythagorean theorem can find the third. If an acute angle and one side are known, a trigonometric ratio can find another side."},{"type":"paragraph","text":"The three angles of a triangle add to 180°. Since one angle is 90°, the two acute angles add to 90°."}]},
-      {"id":"complementary-angles","title":"Complementary Angles","content":[{"type":"paragraph","text":"The two acute angles of a right triangle are complementary, meaning their measures add to 90°."},{"type":"paragraph","text":"When one acute angle is replaced by its complementary angle, the opposite and adjacent sides exchange roles."},{"type":"paragraph","text":"This gives sin(θ) = cos(90° − θ) and cos(θ) = sin(90° − θ)."}]},
-      {"id":"why-ratios-stay-constant","title":"Why the Ratios Stay Constant","content":[{"type":"paragraph","text":"Right triangles with the same acute angle are similar, so corresponding sides are proportional."},{"type":"paragraph","text":"If every side is multiplied by the same scale factor, both the numerator and denominator of a corresponding ratio are multiplied by that factor."},{"type":"paragraph","text":"The scale factor cancels, leaving the same ratio. This is why the value of a trigonometric ratio belongs to the angle rather than the triangle's size."}]},
-      {"id":"geometric-meaning","title":"Geometric Meaning","content":[{"type":"paragraph","text":"Sine tells us how large the opposite side is compared with the hypotenuse. Cosine tells us how large the adjacent side is compared with the hypotenuse."},{"type":"paragraph","text":"Tangent compares the opposite and adjacent sides and can be viewed as a measure of the triangle's steepness relative to the chosen angle."}]},
-      {"id":"checking-calculations","title":"Checking Your Answer","content":[{"type":"paragraph","text":"For an acute angle, sine and cosine are between 0 and 1, while tangent is positive and may be greater than 1."},{"type":"paragraph","text":"The hypotenuse must be longer than either leg. If a calculated hypotenuse is shorter than a leg, the setup or calculation is incorrect."},{"type":"paragraph","text":"Keep full calculator precision during intermediate steps and round the final answer when required."}]}
+      {
+        "id": "what-is-trigonometry",
+        "title": "What Is Trigonometry?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The word trigonometry comes from Greek roots that refer to the measurement of triangles. At its simplest, trigonometry is the study of relationships between the angles and sides of triangles."
+          },
+          {
+            "type": "paragraph",
+            "text": "Imagine a ladder leaning against a wall. You know the length of the ladder and the angle it makes with the ground, but you want to know how high the ladder reaches. Instead of measuring the height directly, trigonometry allows you to calculate it using the relationship between the angle and the sides of the triangle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Trigonometry appears in many areas of mathematics and science, including geometry, physics, engineering, architecture, astronomy, navigation and computer graphics."
+          },
+          {
+            "type": "paragraph",
+            "text": "We begin with right triangles because their geometry gives us especially simple and useful relationships between their sides and acute angles."
+          }
+        ]
+      },
+
+      {
+        "id": "why-right-triangles",
+        "title": "Why Do We Start With Right Triangles?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A right triangle is a triangle containing one angle of \\(90^\\circ\\). The side opposite this right angle has a special name: the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "The other two sides are called the legs of the triangle. Together, the three sides form the geometric setting in which we first define sine, cosine and tangent."
+          },
+          {
+            "type": "paragraph",
+            "text": "The other two angles of a right triangle are acute angles. An acute angle is greater than \\(0^\\circ\\) and less than \\(90^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For now, our trigonometric ratios will be introduced using these acute angles. Later, trigonometry can be extended to angles of any size."
+          }
+        ]
+      },
+
+      {
+        "id": "parts-of-right-triangle",
+        "title": "The Three Sides of a Right Triangle",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Before learning the formulas, you need to know how the sides of a right triangle are named. The three important names are hypotenuse, opposite and adjacent."
+          },
+          {
+            "type": "paragraph",
+            "text": "The hypotenuse is the side opposite the \\(90^\\circ\\) angle. It is always the longest side of a right triangle."
+          },
+          {
+            "type": "paragraph",
+            "text": "The opposite side is the side directly across from the particular angle you are studying."
+          },
+          {
+            "type": "paragraph",
+            "text": "The adjacent side is the leg that touches the chosen angle. In trigonometry, when we say adjacent, we mean the side next to the chosen angle that is not the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "There is an important detail here: opposite and adjacent are relative names. They depend on which angle you have chosen. If you switch to the other acute angle, the opposite and adjacent sides switch roles."
+          }
+        ]
+      },
+
+      {
+        "id": "understanding-the-hypotenuse",
+        "title": "Understanding the Hypotenuse",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The hypotenuse is the easiest side to identify because it does not depend on which acute angle you choose. It is always opposite the right angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if a triangle has angles \\(90^\\circ\\), \\(30^\\circ\\), and \\(60^\\circ\\), the side opposite the \\(90^\\circ\\) angle is the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "The hypotenuse is also always the longest side. This follows from the geometry of right triangles and the Pythagorean theorem."
+          },
+          {
+            "type": "paragraph",
+            "text": "A useful first step in almost every right-triangle trigonometry problem is therefore to identify the \\(90^\\circ\\) angle and mark the hypotenuse."
+          }
+        ]
+      },
+
+      {
+        "id": "similar-triangles-connection",
+        "title": "The Hidden Idea: Similar Triangles",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The reason trigonometric ratios work is closely connected to similar triangles."
+          },
+          {
+            "type": "paragraph",
+            "text": "Two triangles are similar when they have the same shape, even if they are different sizes. Their corresponding angles are equal and their corresponding side lengths are proportional."
+          },
+          {
+            "type": "paragraph",
+            "text": "Suppose one right triangle has sides \\(3\\), \\(4\\), and \\(5\\), while another has sides \\(6\\), \\(8\\), and \\(10\\). The second triangle is twice as large, but its shape is exactly the same."
+          },
+          {
+            "type": "paragraph",
+            "text": "Corresponding side ratios remain unchanged:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\frac{3}{5}=\\frac{6}{10}=\\frac{4}{5}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "This means that if two right triangles have the same acute angle, the corresponding side ratios are the same."
+          }
+        ]
+      },
+
+      {
+        "id": "why-ratios-are-useful",
+        "title": "Why Do We Use Ratios?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A side length tells us about the size of a triangle. A ratio tells us about the relationship between two sides."
+          },
+          {
+            "type": "paragraph",
+            "text": "Consider two similar triangles. One might be small enough to draw on a notebook, while another might be large enough to form part of a building. Their actual side lengths are different, but the proportions between corresponding sides are the same."
+          },
+          {
+            "type": "paragraph",
+            "text": "Ratios allow us to ignore the overall size of the triangle and focus on its shape."
+          },
+          {
+            "type": "paragraph",
+            "text": "This is exactly what we need in trigonometry. For a particular angle, the relationship between the sides remains fixed even when the triangle is enlarged or reduced."
+          }
+        ]
+      },
+
+      {
+        "id": "from-angle-to-ratio",
+        "title": "From an Angle to a Ratio",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Imagine drawing many right triangles that all contain the same acute angle \\(\\theta\\). The triangles can have different sizes, but because they have the same angle, they have the same shape."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since the triangles are similar, corresponding sides change by the same scale factor. Therefore, ratios such as opposite divided by hypotenuse remain constant."
+          },
+          {
+            "type": "paragraph",
+            "text": "This gives us a powerful idea: an angle can be associated with a particular numerical ratio."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine, cosine and tangent are simply three different ways of comparing pairs of sides of a right triangle."
+          }
+        ]
+      },
+
+      {
+        "id": "sine",
+        "title": "Sine: Opposite Compared With Hypotenuse",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The first fundamental trigonometric ratio is sine, written as \\(\\sin(\\theta)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine compares the length of the opposite side with the length of the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "The definition is:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{\\text{opposite}}{\\text{hypotenuse}}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if the opposite side is \\(6\\,\\text{cm}\\) and the hypotenuse is \\(10\\,\\text{cm}\\), then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{6}{10}=\\frac{3}{5}=0.6\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Because the hypotenuse is always longer than the opposite side, the sine of an acute angle lies between \\(0\\) and \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Conceptually, sine tells us how large the opposite side is compared with the hypotenuse."
+          }
+        ]
+      },
+
+      {
+        "id": "cosine",
+        "title": "Cosine: Adjacent Compared With Hypotenuse",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The second fundamental trigonometric ratio is cosine, written as \\(\\cos(\\theta)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine compares the length of the adjacent side with the length of the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "The definition is:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{\\text{adjacent}}{\\text{hypotenuse}}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if the adjacent side is \\(8\\,\\text{cm}\\) and the hypotenuse is \\(10\\,\\text{cm}\\), then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{8}{10}=\\frac{4}{5}=0.8\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "For an acute angle, cosine is between \\(0\\) and \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Conceptually, cosine tells us how large the adjacent side is compared with the hypotenuse."
+          }
+        ]
+      },
+
+      {
+        "id": "tangent",
+        "title": "Tangent: Opposite Compared With Adjacent",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The third fundamental trigonometric ratio is tangent, written as \\(\\tan(\\theta)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent compares the opposite side directly with the adjacent side."
+          },
+          {
+            "type": "paragraph",
+            "text": "The definition is:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{\\text{opposite}}{\\text{adjacent}}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if the opposite side is \\(9\\,\\text{cm}\\) and the adjacent side is \\(12\\,\\text{cm}\\), then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{9}{12}=\\frac{3}{4}=0.75\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Unlike sine and cosine, tangent does not use the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent can be less than \\(1\\), equal to \\(1\\), or greater than \\(1\\), depending on the relative lengths of the opposite and adjacent sides."
+          }
+        ]
+      },
+
+      {
+        "id": "soh-cah-toa",
+        "title": "SOH-CAH-TOA",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "SOH-CAH-TOA is a mnemonic that helps us remember the three fundamental trigonometric ratios."
+          },
+          {
+            "type": "paragraph",
+            "text": "SOH means Sine = Opposite over Hypotenuse:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "CAH means Cosine = Adjacent over Hypotenuse:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{A}{H}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "TOA means Tangent = Opposite over Adjacent:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{O}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The mnemonic is useful, but understanding what the ratios actually compare is more important than memorising three groups of letters."
+          }
+        ]
+      },
+
+      {
+        "id": "what-ratios-mean",
+        "title": "What Does a Ratio Actually Mean?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A ratio is a comparison between two quantities."
+          },
+          {
+            "type": "paragraph",
+            "text": "Suppose \\(\\sin(\\theta)=0.6\\). This means that the opposite side is \\(0.6\\) times the length of the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the hypotenuse were \\(10\\,\\text{cm}\\), the opposite side would be \\(6\\,\\text{cm}\\). If the hypotenuse were \\(20\\,\\text{cm}\\), the corresponding opposite side would be \\(12\\,\\text{cm}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The ratio remains \\(0.6\\) because the triangle has the same shape."
+          },
+          {
+            "type": "paragraph",
+            "text": "Thinking of trigonometric ratios as comparisons helps make the formulas meaningful rather than treating them as formulas that must simply be memorised."
+          }
+        ]
+      },
+
+      {
+        "id": "choosing-the-ratio",
+        "title": "How to Choose the Correct Ratio",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "One of the most important skills in beginner trigonometry is choosing the correct ratio."
+          },
+          {
+            "type": "paragraph",
+            "text": "First identify the angle you are working with. Then identify the opposite, adjacent and hypotenuse sides relative to that angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the two relevant sides are opposite and hypotenuse, use sine."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the two relevant sides are adjacent and hypotenuse, use cosine."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the two relevant sides are opposite and adjacent, use tangent."
+          },
+          {
+            "type": "paragraph",
+            "text": "A reliable process is: identify the angle, label the three sides, identify the known and unknown sides, and then choose the ratio containing those sides."
+          }
+        ]
+      },
+
+      {
+        "id": "calculating-ratios",
+        "title": "Calculating Trigonometric Ratios",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "When the relevant side lengths are known, calculating a trigonometric ratio is simply a matter of substituting the side lengths into the correct definition."
+          },
+          {
+            "type": "paragraph",
+            "text": "Suppose a right triangle has an opposite side of \\(6\\,\\text{cm}\\) and a hypotenuse of \\(10\\,\\text{cm}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because the problem involves opposite and hypotenuse, we use sine:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{6}{10}=\\frac{3}{5}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The units cancel because we are dividing one length by another length measured in the same unit. Therefore, trigonometric ratios do not have units such as centimetres or metres."
+          }
+        ]
+      },
+
+      {
+        "id": "finding-unknown-sides",
+        "title": "Finding an Unknown Side",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Trigonometric ratios are especially useful when a side of a right triangle is unknown."
+          },
+          {
+            "type": "paragraph",
+            "text": "Suppose we know an acute angle and one side of the triangle. We can choose a ratio that contains the known side and the unknown side."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, suppose \\(\\theta=60^\\circ\\), the adjacent side is \\(5\\,\\text{cm}\\), and the hypotenuse is \\(h\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The relevant sides are adjacent and hypotenuse, so we use cosine:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(60^\\circ)=\\frac{5}{h}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Since \\(\\cos(60^\\circ)=\\frac{1}{2}\\), we obtain:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\frac{1}{2}=\\frac{5}{h}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Multiplying both sides by \\(h\\) gives \\(\\frac{h}{2}=5\\). Multiplying by \\(2\\) gives \\(h=10\\,\\text{cm}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Notice that the trigonometric part gave us the relationship, while ordinary algebra allowed us to solve for the unknown side."
+          }
+        ]
+      },
+
+      {
+        "id": "rearranging-equations",
+        "title": "Rearranging Trigonometric Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Once you write a trigonometric ratio as an equation, solving for an unknown side is ordinary algebra."
+          },
+          {
+            "type": "paragraph",
+            "text": "Suppose:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{x}{12}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Multiply both sides by \\(12\\):"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[x=12\\sin(\\theta)\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Similarly, if:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{7}{x}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "then multiplying by \\(x\\) and dividing by \\(\\cos(\\theta)\\) gives:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[x=\\frac{7}{\\cos(\\theta)}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "You do not need to memorise every possible rearrangement. Write the original ratio first and then use algebra to isolate the unknown."
+          }
+        ]
+      },
+
+      {
+        "id": "pythagorean-theorem-connection",
+        "title": "Trigonometry and the Pythagorean Theorem",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The Pythagorean theorem and trigonometric ratios are two different tools for working with right triangles."
+          },
+          {
+            "type": "paragraph",
+            "text": "If \\(a\\) and \\(b\\) are the legs of a right triangle and \\(c\\) is the hypotenuse, the Pythagorean theorem states:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[a^2+b^2=c^2\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "If two side lengths are known, the Pythagorean theorem can often be used to find the third."
+          },
+          {
+            "type": "paragraph",
+            "text": "If an acute angle and one side are known, a trigonometric ratio can often be used to find another side."
+          },
+          {
+            "type": "paragraph",
+            "text": "Learning to recognise which information you have helps you decide which mathematical tool is most appropriate."
+          }
+        ]
+      },
+
+      {
+        "id": "solving-right-triangles",
+        "title": "Solving Right-Triangle Problems Step by Step",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A good solution starts by understanding the diagram rather than immediately pressing buttons on a calculator."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 1: Identify the angle you are using."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 2: Identify the hypotenuse. It is opposite the \\(90^\\circ\\) angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 3: Identify the opposite and adjacent sides relative to your chosen angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 4: Determine which sides are known and which side is unknown."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 5: Choose sine, cosine or tangent."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 6: Write the equation before substituting numbers."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 7: Rearrange the equation using algebra."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 8: Calculate the answer and include the correct unit if you are finding a length."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 9: Check whether the answer makes sense geometrically."
+          }
+        ]
+      },
+
+      {
+        "id": "complementary-angles",
+        "title": "The Two Acute Angles Are Complementary",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The angles inside every triangle add to \\(180^\\circ\\). A right triangle already contains one \\(90^\\circ\\) angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, the two remaining acute angles must add to \\(90^\\circ\\). Such angles are called complementary angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "If one acute angle is \\(\\theta\\), the other acute angle is:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[90^\\circ-\\theta\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "When we switch from one acute angle to the other, the opposite and adjacent sides exchange roles."
+          },
+          {
+            "type": "paragraph",
+            "text": "This explains the relationships:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\cos(90^\\circ-\\theta)\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\sin(90^\\circ-\\theta)\\]"
+          }
+        ]
+      },
+
+      {
+        "id": "why-tangent-is-sin-over-cos",
+        "title": "Why Is Tangent Sine Divided by Cosine?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The relationship between tangent, sine and cosine is not another rule that we have to accept without explanation. It follows directly from their definitions."
+          },
+          {
+            "type": "paragraph",
+            "text": "Start with sine and cosine:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H},\\qquad \\cos(\\theta)=\\frac{A}{H}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Now divide sine by cosine:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\frac{\\sin(\\theta)}{\\cos(\\theta)}=\\frac{O/H}{A/H}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The two occurrences of the hypotenuse cancel:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\frac{O/H}{A/H}=\\frac{O}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "But \\(\\frac{O}{A}\\) is exactly the definition of tangent. Therefore:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{\\sin(\\theta)}{\\cos(\\theta)}\\]"
+          }
+        ]
+      },
+
+      {
+        "id": "why-ratios-stay-constant",
+        "title": "Why Do the Ratios Stay Constant?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Suppose we enlarge a right triangle by a scale factor \\(k\\). Every side becomes \\(k\\) times its original length."
+          },
+          {
+            "type": "paragraph",
+            "text": "For sine, the new ratio would be:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\frac{kO}{kH}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The common factor \\(k\\) cancels:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\frac{kO}{kH}=\\frac{O}{H}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore the sine ratio has not changed."
+          },
+          {
+            "type": "paragraph",
+            "text": "Exactly the same reasoning works for cosine and tangent. This is why a trigonometric ratio is associated with the angle rather than with the size of one particular triangle."
+          }
+        ]
+      },
+
+      {
+        "id": "calculator-degree-mode",
+        "title": "Using a Calculator Correctly",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A calculator can evaluate trigonometric functions, but it must interpret the angle using the correct angle unit."
+          },
+          {
+            "type": "paragraph",
+            "text": "In this lesson, angles are commonly given in degrees. Therefore, when calculating values such as \\(\\sin(30^\\circ)\\), your calculator should be in degree mode."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the calculator is accidentally set to radian mode, it will interpret \\(30\\) differently and give a completely different result."
+          },
+          {
+            "type": "paragraph",
+            "text": "Before beginning a problem involving degree measures, check that the calculator displays DEG or otherwise indicates degree mode."
+          },
+          {
+            "type": "paragraph",
+            "text": "The calculator should perform the numerical calculation, not replace the mathematical reasoning. First identify the sides and choose the correct ratio; calculate only after the equation has been set up."
+          }
+        ]
+      },
+
+      {
+        "id": "exact-and-decimal-values",
+        "title": "Exact Values and Decimal Values",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A trigonometric ratio can sometimes be written exactly as a fraction or radical, and sometimes as a decimal approximation."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(30^\\circ)=\\frac{1}{2}=0.5\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Both forms represent the same value."
+          },
+          {
+            "type": "paragraph",
+            "text": "Exact values are useful because they preserve the mathematical value without rounding. Decimal values are often convenient when a numerical approximation is required."
+          },
+          {
+            "type": "paragraph",
+            "text": "When a problem asks for a specific number of decimal places, keep extra precision during intermediate calculations and round only the final answer."
+          }
+        ]
+      },
+
+      {
+        "id": "reasonableness-checks",
+        "title": "Checking Whether Your Answer Makes Sense",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A calculator can produce a precise number even when you have chosen the wrong ratio. Therefore, checking your answer is an important part of solving a problem."
+          },
+          {
+            "type": "paragraph",
+            "text": "For an acute angle, sine and cosine are both greater than \\(0\\) and less than \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent is positive for an acute angle and can be greater than \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The hypotenuse must be longer than either leg. If a calculation gives a hypotenuse that is shorter than one of the legs, the setup or calculation needs to be checked."
+          },
+          {
+            "type": "paragraph",
+            "text": "The size of the angle can also give you a rough expectation. For a small acute angle, the opposite side should generally be relatively small compared with the hypotenuse. For a larger acute angle, the opposite side should be relatively larger."
+          }
+        ]
+      },
+
+      {
+        "id": "common-problem-types",
+        "title": "The Main Types of Beginner Problems",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Most beginner problems involving trigonometric ratios fall into a few common patterns."
+          },
+          {
+            "type": "paragraph",
+            "text": "In the first type, the side lengths are known and you are asked to calculate a trigonometric ratio. You simply identify the relevant sides and substitute them into the correct formula."
+          },
+          {
+            "type": "paragraph",
+            "text": "In the second type, an angle and one side are known and another side is unknown. You select the ratio containing the known and unknown sides and solve the resulting equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "In the third type, several sides are missing. You may combine trigonometric ratios with the Pythagorean theorem to solve the triangle step by step."
+          },
+          {
+            "type": "paragraph",
+            "text": "In every case, the main skill is translating the geometry of the triangle into the correct mathematical relationship."
+          }
+        ]
+      },
+
+      {
+        "id": "three-ratios-together",
+        "title": "Seeing Sine, Cosine and Tangent Together",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The three fundamental ratios describe three different relationships inside the same right triangle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine compares opposite with hypotenuse:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine compares adjacent with hypotenuse:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{A}{H}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent compares opposite with adjacent:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{O}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "All three ratios describe the same triangle, but each focuses on a different pair of sides."
+          }
+        ]
+      },
+
+      {
+        "id": "geometric-meaning",
+        "title": "The Geometric Meaning of the Ratios",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sine, cosine and tangent are not just symbols to enter into a calculator. Each one describes a geometric relationship."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine measures how large the vertical or opposite component is compared with the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine measures how large the adjacent component is compared with the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent compares the opposite and adjacent sides directly. It is closely connected to the steepness of a line or slope of a right triangle."
+          },
+          {
+            "type": "paragraph",
+            "text": "This geometric interpretation becomes increasingly important as trigonometry develops beyond simple triangle calculations."
+          }
+        ]
+      },
+
+      {
+        "id": "from-ratios-to-functions",
+        "title": "The Bigger Idea: Ratios Become Functions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "At this stage, sine, cosine and tangent have been introduced as ratios in right triangles."
+          },
+          {
+            "type": "paragraph",
+            "text": "There is a deeper way to think about them: each ratio can be viewed as a function whose input is an angle and whose output is a number."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(30^\\circ)=\\frac{1}{2}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Here, the angle \\(30^\\circ\\) is the input and \\(\\frac{1}{2}\\) is the output."
+          },
+          {
+            "type": "paragraph",
+            "text": "This viewpoint will become much more powerful later when we study trigonometric functions, graphs, periodic behaviour and angles beyond the acute-angle setting."
+          }
+        ]
+      }
     ]
   },
+
   "formulas": [
-    {"id":"sine-ratio","name":"Sine Ratio","expression":"sin(θ) = opposite / hypotenuse","explanation":"Use sine when the opposite side and hypotenuse are the relevant sides."},
-    {"id":"cosine-ratio","name":"Cosine Ratio","expression":"cos(θ) = adjacent / hypotenuse","explanation":"Use cosine when the adjacent side and hypotenuse are the relevant sides."},
-    {"id":"tangent-ratio","name":"Tangent Ratio","expression":"tan(θ) = opposite / adjacent","explanation":"Use tangent when the opposite and adjacent sides are the relevant sides."},
-    {"id":"tangent-sine-cosine","name":"Tangent Relationship","expression":"tan(θ) = sin(θ) / cos(θ)","explanation":"Dividing the sine ratio by the cosine ratio cancels the hypotenuse."},
-    {"id":"sine-complementary","name":"Complementary-Angle Relationship","expression":"sin(θ) = cos(90° − θ)","explanation":"The opposite side for one acute angle becomes the adjacent side for its complementary angle."},
-    {"id":"cosine-complementary","name":"Complementary-Angle Relationship","expression":"cos(θ) = sin(90° − θ)","explanation":"The adjacent side for one acute angle becomes the opposite side for its complementary angle."}
+    {
+      "id": "sine-ratio",
+      "name": "Sine Ratio",
+      "expression": "\\(\\sin(\\theta)=\\frac{O}{H}\\)",
+      "explanation": "Sine compares the opposite side with the hypotenuse."
+    },
+    {
+      "id": "cosine-ratio",
+      "name": "Cosine Ratio",
+      "expression": "\\(\\cos(\\theta)=\\frac{A}{H}\\)",
+      "explanation": "Cosine compares the adjacent side with the hypotenuse."
+    },
+    {
+      "id": "tangent-ratio",
+      "name": "Tangent Ratio",
+      "expression": "\\(\\tan(\\theta)=\\frac{O}{A}\\)",
+      "explanation": "Tangent compares the opposite side with the adjacent side."
+    },
+    {
+      "id": "tangent-sine-cosine",
+      "name": "Tangent Relationship",
+      "expression": "\\(\\tan(\\theta)=\\frac{\\sin(\\theta)}{\\cos(\\theta)}\\)",
+      "explanation": "Dividing the sine ratio by the cosine ratio causes the hypotenuse to cancel."
+    },
+    {
+      "id": "sine-complementary",
+      "name": "Complementary-Angle Relationship",
+      "expression": "\\(\\sin(\\theta)=\\cos(90^\\circ-\\theta)\\)",
+      "explanation": "The opposite side for one acute angle becomes the adjacent side for its complementary angle."
+    },
+    {
+      "id": "cosine-complementary",
+      "name": "Complementary-Angle Relationship",
+      "expression": "\\(\\cos(\\theta)=\\sin(90^\\circ-\\theta)\\)",
+      "explanation": "The adjacent side for one acute angle becomes the opposite side for its complementary angle."
+    },
+    {
+      "id": "pythagorean-theorem",
+      "name": "Pythagorean Theorem",
+      "expression": "\\(a^2+b^2=c^2\\)",
+      "explanation": "For a right triangle, the squares of the two legs add to the square of the hypotenuse."
+    }
   ],
+
   "examples": [
-    {"id":"trig-ratio-example-1","question":"A right triangle has an opposite side of 6 cm and a hypotenuse of 10 cm. Find sin(θ).","solution":"sin(θ) = opposite/hypotenuse = 6/10 = 3/5."},
-    {"id":"trig-ratio-example-2","question":"A right triangle has an adjacent side of 8 cm and a hypotenuse of 10 cm. Find cos(θ).","solution":"cos(θ) = adjacent/hypotenuse = 8/10 = 4/5."},
-    {"id":"trig-ratio-example-3","question":"A right triangle has an opposite side of 9 cm and an adjacent side of 12 cm. Find tan(θ).","solution":"tan(θ) = opposite/adjacent = 9/12 = 3/4."},
-    {"id":"trig-ratio-example-4","question":"A right triangle has an angle of 30° and a hypotenuse of 12 cm. Find the opposite side.","solution":"Use sine: sin(30°) = opposite/12. Since sin(30°) = 1/2, the opposite side is 6 cm."},
-    {"id":"trig-ratio-example-5","question":"A right triangle has an angle of 60° and an adjacent side of 5 cm. Find the hypotenuse.","solution":"Use cosine: cos(60°) = 5/h. Since cos(60°) = 1/2, h = 10 cm."},
-    {"id":"trig-ratio-example-6","question":"A right triangle has an angle of 45° and an adjacent side of 7 cm. Find the opposite side.","solution":"Use tangent: tan(45°) = opposite/7. Since tan(45°) = 1, the opposite side is 7 cm."},
-    {"id":"trig-ratio-example-7","question":"A right triangle has an angle of 30° and an adjacent side of 8 cm. Find the hypotenuse.","solution":"Use cosine: cos(30°) = 8/h. Therefore h = 8/cos(30°) = 16√3/3 cm."},
-    {"id":"trig-ratio-example-8","question":"A right triangle has an angle of 45° and a hypotenuse of 10 cm. Find the adjacent side.","solution":"Use cosine: cos(45°) = adjacent/10. Since cos(45°) = √2/2, the adjacent side is 5√2 cm."},
-    {"id":"trig-ratio-example-9","question":"A right triangle has an angle of 30° and an adjacent side of 6 cm. Find the opposite side.","solution":"Use tangent: tan(30°) = opposite/6. Since tan(30°) = 1/√3, the opposite side is 2√3 cm."},
-    {"id":"trig-ratio-example-10","question":"Two similar right triangles have the same acute angle. In the first triangle, the opposite side is 4 cm and the hypotenuse is 10 cm. In the second, the hypotenuse is 15 cm. Find the opposite side.","solution":"The ratio stays constant: 4/10 = x/15, so x = 6 cm."},
-    {"id":"trig-ratio-example-11","question":"A right triangle has legs of 6 cm and 8 cm. Find the hypotenuse and the three basic ratios for the angle opposite the 6 cm side.","solution":"By the Pythagorean theorem, h = 10 cm. Therefore sin(θ) = 6/10 = 3/5, cos(θ) = 8/10 = 4/5, and tan(θ) = 6/8 = 3/4."},
-    {"id":"trig-ratio-example-12","question":"For an acute angle θ, sin(θ) = 3/5 and cos(θ) = 4/5. Find tan(θ).","solution":"tan(θ) = sin(θ)/cos(θ) = (3/5)/(4/5) = 3/4."}
+    {
+      "id": "trig-ratio-example-1",
+      "question": "A right triangle has an opposite side of \\(6\\,\\text{cm}\\) and a hypotenuse of \\(10\\,\\text{cm}\\). Find \\(\\sin(\\theta)\\).",
+      "solution": "The relevant sides are opposite and hypotenuse, so use sine. \\[\\sin(\\theta)=\\frac{6}{10}=\\frac{3}{5}=0.6\\]"
+    },
+    {
+      "id": "trig-ratio-example-2",
+      "question": "A right triangle has an adjacent side of \\(8\\,\\text{cm}\\) and a hypotenuse of \\(10\\,\\text{cm}\\). Find \\(\\cos(\\theta)\\).",
+      "solution": "The relevant sides are adjacent and hypotenuse, so use cosine. \\[\\cos(\\theta)=\\frac{8}{10}=\\frac{4}{5}=0.8\\]"
+    },
+    {
+      "id": "trig-ratio-example-3",
+      "question": "A right triangle has an opposite side of \\(9\\,\\text{cm}\\) and an adjacent side of \\(12\\,\\text{cm}\\). Find \\(\\tan(\\theta)\\).",
+      "solution": "The relevant sides are opposite and adjacent, so use tangent. \\[\\tan(\\theta)=\\frac{9}{12}=\\frac{3}{4}=0.75\\]"
+    },
+    {
+      "id": "trig-ratio-example-4",
+      "question": "A right triangle has an angle of \\(30^\\circ\\) and a hypotenuse of \\(12\\,\\text{cm}\\). Find the opposite side.",
+      "solution": "The unknown side is opposite and the known side is the hypotenuse, so use sine. \\[\\sin(30^\\circ)=\\frac{x}{12}\\] Since \\(\\sin(30^\\circ)=\\frac{1}{2}\\), we get \\(\\frac{1}{2}=\\frac{x}{12}\\). Therefore \\(x=6\\,\\text{cm}\\)."
+    },
+    {
+      "id": "trig-ratio-example-5",
+      "question": "A right triangle has an angle of \\(60^\\circ\\) and an adjacent side of \\(5\\,\\text{cm}\\). Find the hypotenuse.",
+      "solution": "Use cosine because the known side is adjacent and the unknown side is the hypotenuse. \\[\\cos(60^\\circ)=\\frac{5}{h}\\] Since \\(\\cos(60^\\circ)=\\frac{1}{2}\\), \\(\\frac{1}{2}=\\frac{5}{h}\\). Therefore \\(h=10\\,\\text{cm}\\)."
+    },
+    {
+      "id": "trig-ratio-example-6",
+      "question": "A right triangle has an angle of \\(45^\\circ\\) and an adjacent side of \\(7\\,\\text{cm}\\). Find the opposite side.",
+      "solution": "Use tangent because the relevant sides are opposite and adjacent. \\[\\tan(45^\\circ)=\\frac{x}{7}\\] Since \\(\\tan(45^\\circ)=1\\), \\(1=\\frac{x}{7}\\), so \\(x=7\\,\\text{cm}\\)."
+    },
+    {
+      "id": "trig-ratio-example-7",
+      "question": "A right triangle has an angle of \\(30^\\circ\\) and an adjacent side of \\(8\\,\\text{cm}\\). Find the hypotenuse.",
+      "solution": "Use cosine: \\[\\cos(30^\\circ)=\\frac{8}{h}\\] Therefore \\(h=\\frac{8}{\\cos(30^\\circ)}\\). Since \\(\\cos(30^\\circ)=\\frac{\\sqrt{3}}{2}\\), \\(h=\\frac{16}{\\sqrt{3}}=\\frac{16\\sqrt{3}}{3}\\,\\text{cm}\\approx9.24\\,\\text{cm}\\)."
+    },
+    {
+      "id": "trig-ratio-example-8",
+      "question": "A right triangle has an angle of \\(45^\\circ\\) and a hypotenuse of \\(10\\,\\text{cm}\\). Find the adjacent side.",
+      "solution": "Use cosine: \\[\\cos(45^\\circ)=\\frac{x}{10}\\] Since \\(\\cos(45^\\circ)=\\frac{\\sqrt{2}}{2}\\), \\(x=10\\cdot\\frac{\\sqrt{2}}{2}=5\\sqrt{2}\\,\\text{cm}\\approx7.07\\,\\text{cm}\\)."
+    },
+    {
+      "id": "trig-ratio-example-9",
+      "question": "A right triangle has legs of \\(6\\,\\text{cm}\\) and \\(8\\,\\text{cm}\\). Find the hypotenuse and the three basic ratios for the angle opposite the \\(6\\,\\text{cm}\\) side.",
+      "solution": "First use the Pythagorean theorem: \\[h^2=6^2+8^2=36+64=100\\] Therefore \\(h=10\\,\\text{cm}\\). For the chosen angle, opposite = \\(6\\), adjacent = \\(8\\), and hypotenuse = \\(10\\). Thus \\[\\sin(\\theta)=\\frac{3}{5},\\qquad\\cos(\\theta)=\\frac{4}{5},\\qquad\\tan(\\theta)=\\frac{3}{4}.\\]"
+    },
+    {
+      "id": "trig-ratio-example-10",
+      "question": "Two similar right triangles have the same acute angle. In the first triangle, the opposite side is \\(4\\,\\text{cm}\\) and the hypotenuse is \\(10\\,\\text{cm}\\). In the second triangle, the hypotenuse is \\(15\\,\\text{cm}\\). Find the corresponding opposite side.",
+      "solution": "Because the triangles are similar, the sine ratio remains constant. \\[\\frac{4}{10}=\\frac{x}{15}\\] Therefore \\(x=15\\cdot\\frac{4}{10}=6\\,\\text{cm}\\)."
+    },
+    {
+      "id": "trig-ratio-example-11",
+      "question": "A right triangle has an opposite side of \\(5\\,\\text{cm}\\) and a hypotenuse of \\(13\\,\\text{cm}\\). Find the sine ratio and explain what the answer means.",
+      "solution": "Use sine: \\[\\sin(\\theta)=\\frac{5}{13}\\approx0.3846\\] This means that the opposite side is approximately \\(38.46\\%\\) of the hypotenuse."
+    },
+    {
+      "id": "trig-ratio-example-12",
+      "question": "For an acute angle \\(\\theta\\), \\(\\sin(\\theta)=\\frac{3}{5}\\) and \\(\\cos(\\theta)=\\frac{4}{5}\\). Find \\(\\tan(\\theta)\\).",
+      "solution": "Use the relationship between tangent, sine and cosine: \\[\\tan(\\theta)=\\frac{\\sin(\\theta)}{\\cos(\\theta)}=\\frac{3/5}{4/5}=\\frac{3}{4}.\\]"
+    }
   ],
+
   "key_ideas": [
-    "Trigonometric ratios describe relationships between side lengths in a right triangle.",
-    "Similarity explains why a fixed angle produces fixed side ratios.",
-    "The hypotenuse is opposite the right angle and is always the longest side.",
+    "Trigonometry studies relationships between angles and sides of triangles.",
+    "A right triangle contains one \\(90^\\circ\\) angle.",
+    "The hypotenuse is opposite the \\(90^\\circ\\) angle and is always the longest side.",
     "Opposite and adjacent are defined relative to the chosen angle.",
-    "Sine = opposite/hypotenuse.",
-    "Cosine = adjacent/hypotenuse.",
-    "Tangent = opposite/adjacent.",
-    "SOH-CAH-TOA helps remember the three fundamental ratios.",
-    "Trigonometric ratios can be used to calculate unknown side lengths.",
-    "The two acute angles of a right triangle are complementary."
+    "Similar right triangles with the same acute angle have the same corresponding side ratios.",
+    "Sine compares opposite with hypotenuse.",
+    "Cosine compares adjacent with hypotenuse.",
+    "Tangent compares opposite with adjacent.",
+    "SOH-CAH-TOA is a mnemonic for the three fundamental ratios.",
+    "Trigonometric ratios describe relationships, not physical lengths.",
+    "A trigonometric equation can be rearranged using ordinary algebra to find an unknown side.",
+    "The Pythagorean theorem and trigonometric ratios can be used together.",
+    "The two acute angles of a right triangle are complementary.",
+    "For degree problems, the calculator should be in degree mode.",
+    "Always check whether the final answer makes geometric sense."
   ],
+
   "misconceptions": [
-    "Opposite and adjacent are not permanent labels; they depend on the chosen angle.",
-    "The hypotenuse is defined by the right angle and is always the longest side.",
+    "Opposite and adjacent are not permanent labels; they depend on the angle being studied.",
+    "The hypotenuse is identified by the right angle, not simply because it looks like the longest side.",
     "Tangent does not use the hypotenuse.",
-    "Trigonometric ratios do not change when a right triangle is enlarged or reduced proportionally.",
-    "SOH-CAH-TOA is a mnemonic, not a separate mathematical rule.",
-    "A ratio such as 3/5 has no unit when equal length units are divided.",
-    "An unknown side should be solved using a ratio that contains the known and unknown sides."
+    "Sine, cosine and tangent are ratios, not lengths.",
+    "Trigonometric ratios do not have units when equal length units are divided.",
+    "Changing the size of a similar triangle does not change the corresponding trigonometric ratios.",
+    "SOH-CAH-TOA is a mnemonic, not a separate mathematical law.",
+    "You must identify the reference angle before labelling opposite and adjacent.",
+    "A calculator can give a precise number even when the wrong ratio has been selected.",
+    "The hypotenuse cannot be shorter than either leg.",
+    "For an acute angle, sine and cosine are between \\(0\\) and \\(1\\), but tangent can be greater than \\(1\\).",
+    "Rounding intermediate calculations too early can reduce the accuracy of the final answer."
   ],
+
   "explorations": [
-    {"id":"why-fixed-angle-ratio","type":"why"},
-    {"id":"visualize-opposite-adjacent-hypotenuse","type":"visualization"},
-    {"id":"visualize-sine-ratio","type":"visualization"},
-    {"id":"visualize-cosine-ratio","type":"visualization"},
-    {"id":"visualize-tangent-ratio","type":"visualization"},
-    {"id":"explore-trig-ratios","type":"experiment"},
-    {"id":"deeper-similarity-to-trigonometry","type":"go-deeper"}
+    {
+      "id": "why-fixed-angle-ratio",
+      "type": "why"
+    },
+    {
+      "id": "visualize-opposite-adjacent-hypotenuse",
+      "type": "visualization"
+    },
+    {
+      "id": "visualize-sine-ratio",
+      "type": "visualization"
+    },
+    {
+      "id": "visualize-cosine-ratio",
+      "type": "visualization"
+    },
+    {
+      "id": "visualize-tangent-ratio",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-triangle-scale",
+      "type": "experiment"
+    },
+    {
+      "id": "explore-angle-and-ratio",
+      "type": "experiment"
+    },
+    {
+      "id": "deeper-similarity-to-trigonometry",
+      "type": "go-deeper"
+    }
   ],
-  "sources": ["khan-academy-trigonometry", "openstax-precalculus"]
+
+  "sources": [
+    "khan-academy-trigonometry",
+    "openstax-precalculus"
+  ]
 }
