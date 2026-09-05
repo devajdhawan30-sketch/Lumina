@@ -26,7 +26,7 @@
   },
 
   "theory": {
-    "introduction": "So far, trigonometric ratios have been introduced using right triangles. This works naturally when the angle being studied is acute, meaning it lies between 0° and 90°. But angles can be much larger than 90°, and they can also be negative. To make trigonometry useful for every possible angle, we need to extend the definitions of sine, cosine and tangent beyond the right triangle. The coordinate plane gives us a natural way to do this. By placing an angle in standard position and studying a point on its terminal side, we can define trigonometric ratios for angles in all four quadrants. This also explains why trigonometric values can be positive or negative, introduces reference angles, and gives us a systematic way to work with angles such as 120°, 210°, 315° and −45°.",
+    "introduction": "So far, trigonometric ratios have been introduced using right triangles. This works naturally when the angle being studied is acute, meaning \\(0^\\circ<\\theta<90^\\circ\\). But angles can be much larger than \\(90^\\circ\\), and they can also be negative. To make trigonometry useful for every possible angle, we need to extend the definitions of sine, cosine and tangent beyond the right triangle. The coordinate plane gives us a natural way to do this. By placing an angle in standard position and studying a point on its terminal side, we can define trigonometric ratios for angles in all four quadrants. This also explains why trigonometric values can be positive or negative, introduces reference angles, and gives us a systematic way to work with angles such as \\(120^\\circ\\), \\(210^\\circ\\), \\(315^\\circ\\) and \\(-45^\\circ\\).",
 
     "sections": [
       {
@@ -39,11 +39,11 @@
           },
           {
             "type": "paragraph",
-            "text": "This is extremely useful, but it has a limitation. A right triangle naturally contains one right angle and two acute angles. Therefore, the basic right-triangle picture does not directly represent an angle such as 120°, 200° or −45°."
+            "text": "This is extremely useful, but it has a limitation. A right triangle naturally contains one right angle and two acute angles. Therefore, the basic right-triangle picture does not directly represent an angle such as \\(120^\\circ\\), \\(200^\\circ\\) or \\(-45^\\circ\\)."
           },
           {
             "type": "paragraph",
-            "text": "However, these angles are perfectly meaningful. We can rotate a line through 120°, continue the rotation to 200°, or rotate clockwise through −45°. Mathematics needs a way to assign trigonometric values to all of these angles."
+            "text": "However, these angles are perfectly meaningful. We can rotate a line through \\(120^\\circ\\), continue the rotation to \\(200^\\circ\\), or rotate clockwise through \\(-45^\\circ\\). Mathematics needs a way to assign trigonometric values to all of these angles."
           },
           {
             "type": "paragraph",
@@ -74,11 +74,11 @@
           },
           {
             "type": "paragraph",
-            "text": "For example, imagine a ray starting at the origin and pointing directly to the right along the positive x-axis. If we rotate this ray counterclockwise through 60°, the final ray is the terminal side of the 60° angle."
+            "text": "For example, imagine a ray starting at the origin and pointing directly to the right along the positive x-axis. If we rotate this ray counterclockwise through \\(60^\\circ\\), the final ray is the terminal side of the \\(60^\\circ\\) angle."
           },
           {
             "type": "paragraph",
-            "text": "This setup lets us talk about angles larger than 90° as well. We simply continue rotating the terminal side."
+            "text": "This setup lets us talk about angles larger than \\(90^\\circ\\) as well. We simply continue rotating the terminal side."
           },
           {
             "type": "paragraph",
@@ -97,11 +97,11 @@
           },
           {
             "type": "paragraph",
-            "text": "A positive angle is created by rotating counterclockwise from the positive x-axis. For example, 90° means a counterclockwise quarter-turn."
+            "text": "A positive angle is created by rotating counterclockwise from the positive x-axis. For example, \\(90^\\circ\\) means a counterclockwise quarter-turn."
           },
           {
             "type": "paragraph",
-            "text": "A negative angle is created by rotating clockwise from the positive x-axis. For example, −90° means a clockwise quarter-turn."
+            "text": "A negative angle is created by rotating clockwise from the positive x-axis. For example, \\(-90^\\circ\\) means a clockwise quarter-turn."
           },
           {
             "type": "paragraph",
@@ -109,7 +109,7 @@
           },
           {
             "type": "paragraph",
-            "text": "For example, −30° means rotate 30° clockwise. Similarly, −120° means rotate 120° clockwise."
+            "text": "For example, \\(-30^\\circ\\) means rotate \\(30^\\circ\\) clockwise. Similarly, \\(-120^\\circ\\) means rotate \\(120^\\circ\\) clockwise."
           },
           {
             "type": "paragraph",
@@ -124,11 +124,11 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "The coordinate plane consists of two perpendicular number lines. The horizontal line is the x-axis and the vertical line is the y-axis. They meet at the origin, written as (0, 0)."
+            "text": "The coordinate plane consists of two perpendicular number lines. The horizontal line is the x-axis and the vertical line is the y-axis. They meet at the origin, written as \\((0,0)\\)."
           },
           {
             "type": "paragraph",
-            "text": "Every point on the plane can be described using an ordered pair (x, y). The first number tells us how far the point is horizontally from the y-axis, while the second tells us how far it is vertically from the x-axis."
+            "text": "Every point on the plane can be described using an ordered pair \\((x,y)\\). The first number tells us how far the point is horizontally from the y-axis, while the second tells us how far it is vertically from the x-axis."
           },
           {
             "type": "paragraph",
@@ -151,15 +151,15 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Suppose an angle θ is in standard position and its terminal side passes through a point P(x, y) that is not the origin."
+            "text": "Suppose an angle \\(\\theta\\) is in standard position and its terminal side passes through a point \\(P(x,y)\\) that is not the origin."
           },
           {
             "type": "paragraph",
-            "text": "Draw a perpendicular line from P to the x-axis. This creates a right triangle whose horizontal leg is related to x, whose vertical leg is related to y, and whose hypotenuse is the distance from the origin to P."
+            "text": "Draw a perpendicular line from \\(P\\) to the x-axis. This creates a right triangle whose horizontal leg is related to \\(x\\), whose vertical leg is related to \\(y\\), and whose hypotenuse is the distance from the origin to \\(P\\)."
           },
           {
             "type": "paragraph",
-            "text": "Let r represent this distance from the origin to P. Since r is a length, it is always positive."
+            "text": "Let \\(r\\) represent this distance from the origin to \\(P\\). Since \\(r\\) is a length, it is always positive."
           },
           {
             "type": "paragraph",
@@ -174,31 +174,31 @@
 
       {
         "id": "distance-r",
-        "title": "Finding the Distance r",
+        "title": "Finding the Distance \\(r\\)",
         "content": [
           {
             "type": "paragraph",
-            "text": "If the terminal side passes through P(x, y), the distance from the origin to P is called r."
+            "text": "If the terminal side passes through \\(P(x,y)\\), the distance from the origin to \\(P\\) is called \\(r\\)."
           },
           {
             "type": "paragraph",
-            "text": "The horizontal and vertical distances form the two legs of a right triangle, so the Pythagorean theorem can be used to find r."
+            "text": "The horizontal and vertical distances form the two legs of a right triangle, so the Pythagorean theorem can be used to find \\(r\\)."
           },
           {
             "type": "paragraph",
-            "text": "The Pythagorean theorem gives the relationship r² = x² + y²."
+            "text": "The Pythagorean theorem gives the relationship \\(r^2=x^2+y^2\\)."
           },
           {
             "type": "paragraph",
-            "text": "Taking the positive square root gives r = √(x² + y²). We choose the positive root because r represents a distance, and distances are not negative."
+            "text": "Taking the positive square root gives \\(r=\\sqrt{x^2+y^2}\\). We choose the positive root because \\(r\\) represents a distance, and distances are not negative."
           },
           {
             "type": "paragraph",
-            "text": "For example, if P = (3, 4), then r = √(3² + 4²) = √25 = 5."
+            "text": "For example, if \\(P=(3,4)\\), then \\(r=\\sqrt{3^2+4^2}=\\sqrt{25}=5\\)."
           },
           {
             "type": "paragraph",
-            "text": "Notice that even if x or y is negative, its square is positive. For example, if P = (−3, 4), then r = √((−3)² + 4²) = 5."
+            "text": "Notice that even if \\(x\\) or \\(y\\) is negative, its square is positive. For example, if \\(P=(-3,4)\\), then \\(r=\\sqrt{(-3)^2+4^2}=5\\)."
           }
         ]
       },
@@ -213,7 +213,7 @@
           },
           {
             "type": "paragraph",
-            "text": "In the coordinate-plane picture, the vertical side of the right triangle is associated with the y-coordinate, while the hypotenuse is r."
+            "text": "In the coordinate-plane picture, the vertical side of the right triangle is associated with the y-coordinate, while the hypotenuse is \\(r\\)."
           },
           {
             "type": "paragraph",
@@ -221,15 +221,15 @@
           },
           {
             "type": "paragraph",
-            "text": "The definition is sin(θ) = y/r."
+            "text": "The definition is \\(\\sin(\\theta)=\\frac{y}{r}\\)."
           },
           {
             "type": "paragraph",
-            "text": "This definition explains something that the basic right-triangle picture could not explain by itself: sine can be negative. If the terminal side lies below the x-axis, then y is negative, so y/r is negative."
+            "text": "This definition explains something that the basic right-triangle picture could not explain by itself: sine can be negative. If the terminal side lies below the x-axis, then \\(y\\) is negative, so \\(y/r\\) is negative."
           },
           {
             "type": "paragraph",
-            "text": "For example, if P = (−3, −4), then r = 5 and sin(θ) = −4/5. The negative value comes from the negative y-coordinate."
+            "text": "For example, if \\(P=(-3,-4)\\), then \\(r=5\\) and \\(\\sin(\\theta)=-\\frac{4}{5}\\). The negative value comes from the negative y-coordinate."
           }
         ]
       },
@@ -244,7 +244,7 @@
           },
           {
             "type": "paragraph",
-            "text": "In the coordinate-plane picture, the horizontal side of the right triangle is associated with the x-coordinate, while the hypotenuse is r."
+            "text": "In the coordinate-plane picture, the horizontal side of the right triangle is associated with the x-coordinate, while the hypotenuse is \\(r\\)."
           },
           {
             "type": "paragraph",
@@ -252,15 +252,15 @@
           },
           {
             "type": "paragraph",
-            "text": "The definition is cos(θ) = x/r."
+            "text": "The definition is \\(\\cos(\\theta)=\\frac{x}{r}\\)."
           },
           {
             "type": "paragraph",
-            "text": "This explains why cosine can be negative. If the terminal side lies to the left of the y-axis, then x is negative, while r remains positive."
+            "text": "This explains why cosine can be negative. If the terminal side lies to the left of the y-axis, then \\(x\\) is negative, while \\(r\\) remains positive."
           },
           {
             "type": "paragraph",
-            "text": "For example, if P = (−3, 4), then r = 5 and cos(θ) = −3/5."
+            "text": "For example, if \\(P=(-3,4)\\), then \\(r=5\\) and \\(\\cos(\\theta)=-\\frac{3}{5}\\)."
           }
         ]
       },
@@ -279,19 +279,19 @@
           },
           {
             "type": "paragraph",
-            "text": "Therefore, tangent can be defined as tan(θ) = y/x, provided x is not zero."
+            "text": "Therefore, tangent can be defined as \\(\\tan(\\theta)=\\frac{y}{x}\\), provided \\(x\\neq0\\)."
           },
           {
             "type": "paragraph",
-            "text": "This definition also explains why tangent can be negative. If x and y have opposite signs, their quotient is negative."
+            "text": "This definition also explains why tangent can be negative. If \\(x\\) and \\(y\\) have opposite signs, their quotient is negative."
           },
           {
             "type": "paragraph",
-            "text": "For example, if P = (−3, 4), then tan(θ) = 4/(−3) = −4/3."
+            "text": "For example, if \\(P=(-3,4)\\), then \\(\\tan(\\theta)=\\frac{4}{-3}=-\\frac{4}{3}\\)."
           },
           {
             "type": "paragraph",
-            "text": "If x = 0, the expression y/x would require division by zero. Division by zero is undefined, which explains why tangent is undefined when the terminal side lies on the y-axis."
+            "text": "If \\(x=0\\), the expression \\(y/x\\) would require division by zero. Division by zero is undefined, which explains why tangent is undefined when the terminal side lies on the y-axis."
           }
         ]
       },
@@ -306,19 +306,19 @@
           },
           {
             "type": "paragraph",
-            "text": "SOH tells us that sine compares opposite with hypotenuse. In the coordinate picture, this becomes y/r."
+            "text": "SOH tells us that sine compares opposite with hypotenuse. In the coordinate picture, this becomes \\(y/r\\)."
           },
           {
             "type": "paragraph",
-            "text": "CAH tells us that cosine compares adjacent with hypotenuse. In the coordinate picture, this becomes x/r."
+            "text": "CAH tells us that cosine compares adjacent with hypotenuse. In the coordinate picture, this becomes \\(x/r\\)."
           },
           {
             "type": "paragraph",
-            "text": "TOA tells us that tangent compares opposite with adjacent. In the coordinate picture, this becomes y/x."
+            "text": "TOA tells us that tangent compares opposite with adjacent. In the coordinate picture, this becomes \\(y/x\\)."
           },
           {
             "type": "paragraph",
-            "text": "The major new idea is not the ratio itself. The new idea is that x and y can be positive or negative depending on where the terminal side lies."
+            "text": "The major new idea is not the ratio itself. The new idea is that \\(x\\) and \\(y\\) can be positive or negative depending on where the terminal side lies."
           },
           {
             "type": "paragraph",
@@ -337,23 +337,23 @@
           },
           {
             "type": "paragraph",
-            "text": "Quadrant I is the region above the x-axis and to the right of the y-axis. Both x and y are positive there."
+            "text": "Quadrant I is the region above the x-axis and to the right of the y-axis. Both \\(x\\) and \\(y\\) are positive there."
           },
           {
             "type": "paragraph",
-            "text": "Quadrant II is above the x-axis and to the left of the y-axis. Here x is negative and y is positive."
+            "text": "Quadrant II is above the x-axis and to the left of the y-axis. Here \\(x\\) is negative and \\(y\\) is positive."
           },
           {
             "type": "paragraph",
-            "text": "Quadrant III is below the x-axis and to the left of the y-axis. Both x and y are negative."
+            "text": "Quadrant III is below the x-axis and to the left of the y-axis. Both \\(x\\) and \\(y\\) are negative."
           },
           {
             "type": "paragraph",
-            "text": "Quadrant IV is below the x-axis and to the right of the y-axis. Here x is positive and y is negative."
+            "text": "Quadrant IV is below the x-axis and to the right of the y-axis. Here \\(x\\) is positive and \\(y\\) is negative."
           },
           {
             "type": "paragraph",
-            "text": "When an angle is in standard position, the quadrant containing its terminal side tells us the signs of x and y and therefore the signs of sine, cosine and tangent."
+            "text": "When an angle is in standard position, the quadrant containing its terminal side tells us the signs of \\(x\\) and \\(y\\) and therefore the signs of sine, cosine and tangent."
           }
         ]
       },
@@ -364,31 +364,31 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Because r is always positive, the sign of sine depends entirely on the sign of y. If y is positive, sine is positive. If y is negative, sine is negative."
+            "text": "Because \\(r\\) is always positive, the sign of sine depends entirely on the sign of \\(y\\). If \\(y\\) is positive, sine is positive. If \\(y\\) is negative, sine is negative."
           },
           {
             "type": "paragraph",
-            "text": "Similarly, the sign of cosine depends on x because cos(θ) = x/r. Positive x gives positive cosine, while negative x gives negative cosine."
+            "text": "Similarly, the sign of cosine depends on \\(x\\) because \\(\\cos(\\theta)=x/r\\). Positive \\(x\\) gives positive cosine, while negative \\(x\\) gives negative cosine."
           },
           {
             "type": "paragraph",
-            "text": "Tangent is different because it uses y/x. Its sign depends on whether x and y have the same sign or opposite signs."
+            "text": "Tangent is different because it uses \\(y/x\\). Its sign depends on whether \\(x\\) and \\(y\\) have the same sign or opposite signs."
           },
           {
             "type": "paragraph",
-            "text": "In Quadrant I, x and y are both positive. Therefore sine, cosine and tangent are all positive."
+            "text": "In Quadrant I, \\(x\\) and \\(y\\) are both positive. Therefore sine, cosine and tangent are all positive."
           },
           {
             "type": "paragraph",
-            "text": "In Quadrant II, y is positive and x is negative. Therefore sine is positive, cosine is negative and tangent is negative."
+            "text": "In Quadrant II, \\(y\\) is positive and \\(x\\) is negative. Therefore sine is positive, cosine is negative and tangent is negative."
           },
           {
             "type": "paragraph",
-            "text": "In Quadrant III, x and y are both negative. Therefore sine and cosine are negative, while tangent is positive because a negative divided by a negative is positive."
+            "text": "In Quadrant III, \\(x\\) and \\(y\\) are both negative. Therefore sine and cosine are negative, while tangent is positive because a negative divided by a negative is positive."
           },
           {
             "type": "paragraph",
-            "text": "In Quadrant IV, x is positive and y is negative. Therefore sine and tangent are negative, while cosine is positive."
+            "text": "In Quadrant IV, \\(x\\) is positive and \\(y\\) is negative. Therefore sine and tangent are negative, while cosine is positive."
           }
         ]
       },
@@ -415,7 +415,7 @@
           },
           {
             "type": "paragraph",
-            "text": "However, CAST should be treated as a memory shortcut rather than the reason the signs occur. The real reason comes from the signs of x and y in the coordinate definitions."
+            "text": "However, CAST should be treated as a memory shortcut rather than the reason the signs occur. The real reason comes from the signs of \\(x\\) and \\(y\\) in the coordinate definitions."
           }
         ]
       },
@@ -434,7 +434,7 @@
           },
           {
             "type": "paragraph",
-            "text": "The reference angle is always between 0° and 90° for a non-axis angle."
+            "text": "The reference angle is always between \\(0^\\circ\\) and \\(90^\\circ\\) for a non-axis angle."
           },
           {
             "type": "paragraph",
@@ -442,7 +442,7 @@
           },
           {
             "type": "paragraph",
-            "text": "For example, 150° lies in Quadrant II. Its terminal side is 30° away from the negative x-axis, so its reference angle is 30°."
+            "text": "For example, \\(150^\\circ\\) lies in Quadrant II. Its terminal side is \\(30^\\circ\\) away from the negative x-axis, so its reference angle is \\(30^\\circ\\)."
           },
           {
             "type": "paragraph",
@@ -461,7 +461,7 @@
           },
           {
             "type": "paragraph",
-            "text": "For example, if θ = 40°, the angle is already between 0° and 90°, so its reference angle is 40°."
+            "text": "For example, if \\(\\theta=40^\\circ\\), the angle is already between \\(0^\\circ\\) and \\(90^\\circ\\), so its reference angle is \\(40^\\circ\\)."
           },
           {
             "type": "paragraph",
@@ -480,23 +480,23 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "In Quadrant II, angles lie between 90° and 180°. The reference angle is measured from the terminal side to the negative x-axis."
+            "text": "In Quadrant II, angles lie between \\(90^\\circ\\) and \\(180^\\circ\\). The reference angle is measured from the terminal side to the negative x-axis."
           },
           {
             "type": "paragraph",
-            "text": "Since the angle from the positive x-axis to the negative x-axis is 180°, we subtract the given angle from 180°."
+            "text": "Since the angle from the positive x-axis to the negative x-axis is \\(180^\\circ\\), we subtract the given angle from \\(180^\\circ\\)."
           },
           {
             "type": "paragraph",
-            "text": "Therefore, for a Quadrant II angle θ, the reference angle is 180° − θ."
+            "text": "Therefore, for a Quadrant II angle \\(\\theta\\), the reference angle is \\(180^\\circ-\\theta\\)."
           },
           {
             "type": "paragraph",
-            "text": "For example, for 120°, the reference angle is 180° − 120° = 60°."
+            "text": "For example, for \\(120^\\circ\\), the reference angle is \\(180^\\circ-120^\\circ=60^\\circ\\)."
           },
           {
             "type": "paragraph",
-            "text": "For 150°, the reference angle is 180° − 150° = 30°."
+            "text": "For \\(150^\\circ\\), the reference angle is \\(180^\\circ-150^\\circ=30^\\circ\\)."
           }
         ]
       },
@@ -507,23 +507,23 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "In Quadrant III, angles lie between 180° and 270°. The reference angle is measured from the terminal side to the negative x-axis."
+            "text": "In Quadrant III, angles lie between \\(180^\\circ\\) and \\(270^\\circ\\). The reference angle is measured from the terminal side to the negative x-axis."
           },
           {
             "type": "paragraph",
-            "text": "Because the angle has already passed 180°, we subtract 180° from the given angle."
+            "text": "Because the angle has already passed \\(180^\\circ\\), we subtract \\(180^\\circ\\) from the given angle."
           },
           {
             "type": "paragraph",
-            "text": "Therefore, for a Quadrant III angle θ, the reference angle is θ − 180°."
+            "text": "Therefore, for a Quadrant III angle \\(\\theta\\), the reference angle is \\(\\theta-180^\\circ\\)."
           },
           {
             "type": "paragraph",
-            "text": "For example, for 210°, the reference angle is 210° − 180° = 30°."
+            "text": "For example, for \\(210^\\circ\\), the reference angle is \\(210^\\circ-180^\\circ=30^\\circ\\)."
           },
           {
             "type": "paragraph",
-            "text": "For 240°, the reference angle is 240° − 180° = 60°."
+            "text": "For \\(240^\\circ\\), the reference angle is \\(240^\\circ-180^\\circ=60^\\circ\\)."
           }
         ]
       },
@@ -534,23 +534,23 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "In Quadrant IV, angles lie between 270° and 360°. The reference angle is measured from the terminal side to the positive x-axis."
+            "text": "In Quadrant IV, angles lie between \\(270^\\circ\\) and \\(360^\\circ\\). The reference angle is measured from the terminal side to the positive x-axis."
           },
           {
             "type": "paragraph",
-            "text": "A full rotation is 360°, so we subtract the given angle from 360°."
+            "text": "A full rotation is \\(360^\\circ\\), so we subtract the given angle from \\(360^\\circ\\)."
           },
           {
             "type": "paragraph",
-            "text": "Therefore, for a Quadrant IV angle θ, the reference angle is 360° − θ."
+            "text": "Therefore, for a Quadrant IV angle \\(\\theta\\), the reference angle is \\(360^\\circ-\\theta\\)."
           },
           {
             "type": "paragraph",
-            "text": "For example, for 300°, the reference angle is 360° − 300° = 60°."
+            "text": "For example, for \\(300^\\circ\\), the reference angle is \\(360^\\circ-300^\\circ=60^\\circ\\)."
           },
           {
             "type": "paragraph",
-            "text": "For 315°, the reference angle is 360° − 315° = 45°."
+            "text": "For \\(315^\\circ\\), the reference angle is \\(360^\\circ-315^\\circ=45^\\circ\\)."
           }
         ]
       },
@@ -565,15 +565,15 @@
           },
           {
             "type": "paragraph",
-            "text": "A useful approach is to first find a positive coterminal angle between 0° and 360°. Once that positive angle is known, we can identify its quadrant and find the reference angle normally."
+            "text": "A useful approach is to first find a positive coterminal angle between \\(0^\\circ\\) and \\(360^\\circ\\). Once that positive angle is known, we can identify its quadrant and find the reference angle normally."
           },
           {
             "type": "paragraph",
-            "text": "For example, consider −45°. Add 360° to obtain 315°. The angles −45° and 315° have the same terminal side."
+            "text": "For example, consider \\(-45^\\circ\\). Add \\(360^\\circ\\) to obtain \\(315^\\circ\\). The angles \\(-45^\\circ\\) and \\(315^\\circ\\) have the same terminal side."
           },
           {
             "type": "paragraph",
-            "text": "Since 315° lies in Quadrant IV, its reference angle is 360° − 315° = 45°."
+            "text": "Since \\(315^\\circ\\) lies in Quadrant IV, its reference angle is \\(360^\\circ-315^\\circ=45^\\circ\\)."
           },
           {
             "type": "paragraph",
@@ -596,15 +596,15 @@
           },
           {
             "type": "paragraph",
-            "text": "Since one complete revolution is 360°, adding or subtracting 360° produces another angle with the same terminal side."
+            "text": "Since one complete revolution is \\(360^\\circ\\), adding or subtracting \\(360^\\circ\\) produces another angle with the same terminal side."
           },
           {
             "type": "paragraph",
-            "text": "For example, 45° and 405° are coterminal because 405° = 45° + 360°."
+            "text": "For example, \\(45^\\circ\\) and \\(405^\\circ\\) are coterminal because \\(405^\\circ=45^\\circ+360^\\circ\\)."
           },
           {
             "type": "paragraph",
-            "text": "Similarly, 45° and −315° are coterminal because −315° + 360° = 45°."
+            "text": "Similarly, \\(45^\\circ\\) and \\(-315^\\circ\\) are coterminal because \\(-315^\\circ+360^\\circ=45^\\circ\\)."
           },
           {
             "type": "paragraph",
@@ -627,15 +627,15 @@
           },
           {
             "type": "paragraph",
-            "text": "For example, consider 150°. The angle lies in Quadrant II, and its reference angle is 30°."
+            "text": "For example, consider \\(150^\\circ\\). The angle lies in Quadrant II, and its reference angle is \\(30^\\circ\\)."
           },
           {
             "type": "paragraph",
-            "text": "The reference angle tells us to use the 30° trigonometric relationship. The quadrant tells us the sign. Since sine is positive in Quadrant II, the sine of 150° has the same magnitude as the sine associated with 30° but is positive."
+            "text": "The reference angle tells us to use the \\(30^\\circ\\) trigonometric relationship. The quadrant tells us the sign. Since sine is positive in Quadrant II, the sine of \\(150^\\circ\\) has the same magnitude as the sine associated with \\(30^\\circ\\) but is positive."
           },
           {
             "type": "paragraph",
-            "text": "For cosine, the same reference angle is used, but cosine is negative in Quadrant II. Therefore, the cosine value has the corresponding 30° magnitude with a negative sign."
+            "text": "For cosine, the same reference angle is used, but cosine is negative in Quadrant II. Therefore, the cosine value has the corresponding \\(30^\\circ\\) magnitude with a negative sign."
           },
           {
             "type": "paragraph",
@@ -689,19 +689,19 @@
           },
           {
             "type": "paragraph",
-            "text": "Examples include 0°, 90°, 180°, 270° and 360°."
+            "text": "Examples include \\(0^\\circ\\), \\(90^\\circ\\), \\(180^\\circ\\), \\(270^\\circ\\) and \\(360^\\circ\\)."
           },
           {
             "type": "paragraph",
-            "text": "At these positions, one of the coordinates x or y is zero."
+            "text": "At these positions, one of the coordinates \\(x\\) or \\(y\\) is zero."
           },
           {
             "type": "paragraph",
-            "text": "For example, on the positive x-axis, y = 0. Therefore sine is zero."
+            "text": "For example, on the positive x-axis, \\(y=0\\). Therefore sine is zero."
           },
           {
             "type": "paragraph",
-            "text": "On the positive y-axis, x = 0. Since tangent involves division by x, tangent is undefined there."
+            "text": "On the positive y-axis, \\(x=0\\). Since tangent involves division by \\(x\\), tangent is undefined there."
           },
           {
             "type": "paragraph",
@@ -720,11 +720,11 @@
           },
           {
             "type": "paragraph",
-            "text": "A right triangle is formed using a point on the terminal side of an angle. The coordinates of that point allow the familiar ratios to be written as sin(θ) = y/r, cos(θ) = x/r and tan(θ) = y/x."
+            "text": "A right triangle is formed using a point on the terminal side of an angle. The coordinates of that point allow the familiar ratios to be written as \\(\\sin(\\theta)=y/r\\), \\(\\cos(\\theta)=x/r\\) and \\(\\tan(\\theta)=y/x\\)."
           },
           {
             "type": "paragraph",
-            "text": "Because x and y can be positive or negative, the trigonometric ratios can also be positive or negative."
+            "text": "Because \\(x\\) and \\(y\\) can be positive or negative, the trigonometric ratios can also be positive or negative."
           },
           {
             "type": "paragraph",
@@ -747,50 +747,50 @@
     {
       "id": "coordinate-distance",
       "name": "Distance from the Origin",
-      "expression": "\\(r=\\sqrt{x^2+y^2}\\)",
-      "explanation": "If a point \\((x,y)\\) lies on the terminal side of an angle, r is the distance from the origin to that point. It is found using the Pythagorean theorem and is always positive."
+      "expression": "\\[r=\\sqrt{x^2+y^2}\\]",
+      "explanation": "If a point \\((x,y)\\) lies on the terminal side of an angle, \\(r\\) is the distance from the origin to that point. It is found using the Pythagorean theorem and is always positive."
     },
     {
       "id": "sine-coordinate-ratio",
       "name": "Sine Using Coordinates",
-      "expression": "\\(\\sin(\\theta)=\\frac{y}{r}\\)",
-      "explanation": "The y-coordinate plays the role of the signed opposite side, while r is the positive hypotenuse length."
+      "expression": "\\[\\sin(\\theta)=\\frac{y}{r}\\]",
+      "explanation": "The y-coordinate plays the role of the signed opposite side, while \\(r\\) is the positive hypotenuse length."
     },
     {
       "id": "cosine-coordinate-ratio",
       "name": "Cosine Using Coordinates",
-      "expression": "\\(\\cos(\\theta)=\\frac{x}{r}\\)",
-      "explanation": "The x-coordinate plays the role of the signed adjacent side, while r is the positive hypotenuse length."
+      "expression": "\\[\\cos(\\theta)=\\frac{x}{r}\\]",
+      "explanation": "The x-coordinate plays the role of the signed adjacent side, while \\(r\\) is the positive hypotenuse length."
     },
     {
       "id": "tangent-coordinate-ratio",
       "name": "Tangent Using Coordinates",
-      "expression": "\\(\\tan(\\theta)=\\frac{y}{x}\\)",
-      "explanation": "Tangent compares the vertical coordinate with the horizontal coordinate. It is defined only when x is not zero."
+      "expression": "\\[\\tan(\\theta)=\\frac{y}{x}\\]",
+      "explanation": "Tangent compares the vertical coordinate with the horizontal coordinate. It is defined only when \\(x\\neq0\\)."
     },
     {
       "id": "quadrant-two-reference-angle",
       "name": "Reference Angle in Quadrant II",
-      "expression": "\\(\\alpha=180^\\circ-\\theta\\)",
-      "explanation": "For an angle θ between 90° and 180°, subtract θ from 180° to find the acute reference angle."
+      "expression": "\\[\\alpha=180^\\circ-\\theta\\]",
+      "explanation": "For an angle \\(\\theta\\) between \\(90^\\circ\\) and \\(180^\\circ\\), subtract \\(\\theta\\) from \\(180^\\circ\\) to find the acute reference angle."
     },
     {
       "id": "quadrant-three-reference-angle",
       "name": "Reference Angle in Quadrant III",
-      "expression": "\\(\\alpha=\\theta-180^\\circ\\)",
-      "explanation": "For an angle θ between 180° and 270°, subtract 180° from θ to find the acute reference angle."
+      "expression": "\\[\\alpha=\\theta-180^\\circ\\]",
+      "explanation": "For an angle \\(\\theta\\) between \\(180^\\circ\\) and \\(270^\\circ\\), subtract \\(180^\\circ\\) from \\(\\theta\\) to find the acute reference angle."
     },
     {
       "id": "quadrant-four-reference-angle",
       "name": "Reference Angle in Quadrant IV",
-      "expression": "\\(\\alpha=360^\\circ-\\theta\\)",
-      "explanation": "For an angle θ between 270° and 360°, subtract θ from 360° to find the acute reference angle."
+      "expression": "\\[\\alpha=360^\\circ-\\theta\\]",
+      "explanation": "For an angle \\(\\theta\\) between \\(270^\\circ\\) and \\(360^\\circ\\), subtract \\(\\theta\\) from \\(360^\\circ\\) to find the acute reference angle."
     },
     {
       "id": "coterminal-angles",
       "name": "Coterminal Angles",
-      "expression": "\\(\\theta_{\\text{coterminal}}=\\theta+360^\\circ k\\)",
-      "explanation": "Adding or subtracting any whole number of full rotations produces an angle with the same terminal side. Here k is any integer."
+      "expression": "\\[\\theta_{\\text{coterminal}}=\\theta+360^\\circ k\\]",
+      "explanation": "Adding or subtracting any whole number of full rotations produces an angle with the same terminal side. Here \\(k\\) is any integer."
     }
   ],
 
@@ -798,122 +798,122 @@
     {
       "id": "any-angle-example-1",
       "question": "Explain why the right-triangle definitions of trigonometric ratios are not enough to describe every angle.",
-      "solution": "A right triangle contains one 90° angle and two acute angles. Therefore, the triangle directly represents angles between 0° and 90°, but not angles such as 120°, 210° or −45°. To extend trigonometry to these angles, we use the coordinate plane and define the ratios using a point on the terminal side."
+      "solution": "A right triangle contains one \\(90^\\circ\\) angle and two acute angles. Therefore, the triangle directly represents angles between \\(0^\\circ\\) and \\(90^\\circ\\), but not angles such as \\(120^\\circ\\), \\(210^\\circ\\) or \\(-45^\\circ\\). To extend trigonometry to these angles, we use the coordinate plane and define the ratios using a point on the terminal side."
     },
     {
       "id": "any-angle-example-2",
-      "question": "Describe the angle 70° in standard position.",
-      "solution": "The initial side lies along the positive x-axis. Since 70° is positive, rotate counterclockwise by 70°. The terminal side lies between the positive x-axis and positive y-axis, so the angle lies in Quadrant I."
+      "question": "Describe the angle \\(70^\\circ\\) in standard position.",
+      "solution": "The initial side lies along the positive x-axis. Since \\(70^\\circ\\) is positive, rotate counterclockwise by \\(70^\\circ\\). The terminal side lies between the positive x-axis and positive y-axis, so the angle lies in Quadrant I."
     },
     {
       "id": "any-angle-example-3",
-      "question": "Describe the angle −60° in standard position.",
-      "solution": "The negative sign means clockwise rotation. Starting from the positive x-axis, rotate 60° clockwise. The terminal side lies below the positive x-axis, so it is in Quadrant IV."
+      "question": "Describe the angle \\(-60^\\circ\\) in standard position.",
+      "solution": "The negative sign means clockwise rotation. Starting from the positive x-axis, rotate \\(60^\\circ\\) clockwise. The terminal side lies below the positive x-axis, so it is in Quadrant IV."
     },
     {
       "id": "any-angle-example-4",
-      "question": "A point P(3,4) lies on the terminal side of an angle θ. Find r.",
-      "solution": "Use the Pythagorean theorem: \\[r=\\sqrt{x^2+y^2}.\\] Substitute x = 3 and y = 4: \\[r=\\sqrt{3^2+4^2}=\\sqrt{9+16}=\\sqrt{25}=5.\\] Therefore, r = 5."
+      "question": "A point \\(P(3,4)\\) lies on the terminal side of an angle \\(\\theta\\). Find \\(r\\).",
+      "solution": "Use the Pythagorean theorem: \\[r=\\sqrt{x^2+y^2}.\\] Substitute \\(x=3\\) and \\(y=4\\): \\[r=\\sqrt{3^2+4^2}=\\sqrt{9+16}=\\sqrt{25}=5.\\] Therefore, \\(r=5\\)."
     },
     {
       "id": "any-angle-example-5",
-      "question": "A point P(3,4) lies on the terminal side of θ. Find sin(θ), cos(θ), and tan(θ).",
-      "solution": "First find r = 5. Then use the coordinate definitions. \\[\\sin(\\theta)=\\frac{y}{r}=\\frac{4}{5}.\\] \\[\\cos(\\theta)=\\frac{x}{r}=\\frac{3}{5}.\\] \\[\\tan(\\theta)=\\frac{y}{x}=\\frac{4}{3}.\\] Therefore, the three ratios are 4/5, 3/5 and 4/3."
+      "question": "A point \\(P(3,4)\\) lies on the terminal side of \\(\\theta\\). Find \\(\\sin(\\theta)\\), \\(\\cos(\\theta)\\), and \\(\\tan(\\theta)\\).",
+      "solution": "First find \\(r=5\\). Then use the coordinate definitions. \\[\\sin(\\theta)=\\frac{y}{r}=\\frac{4}{5}.\\] \\[\\cos(\\theta)=\\frac{x}{r}=\\frac{3}{5}.\\] \\[\\tan(\\theta)=\\frac{y}{x}=\\frac{4}{3}.\\] Therefore, the three ratios are \\(4/5\\), \\(3/5\\) and \\(4/3\\)."
     },
     {
       "id": "any-angle-example-6",
-      "question": "A point P(−3,4) lies on the terminal side of θ. Find r and determine the signs of sine, cosine, and tangent.",
-      "solution": "First find r: \\[r=\\sqrt{(-3)^2+4^2}=\\sqrt{9+16}=5.\\] The point has x < 0 and y > 0, so it lies in Quadrant II. Therefore sine is positive, cosine is negative, and tangent is negative."
+      "question": "A point \\(P(-3,4)\\) lies on the terminal side of \\(\\theta\\). Find \\(r\\) and determine the signs of sine, cosine, and tangent.",
+      "solution": "First find \\(r\\): \\[r=\\sqrt{(-3)^2+4^2}=\\sqrt{9+16}=5.\\] The point has \\(x<0\\) and \\(y>0\\), so it lies in Quadrant II. Therefore sine is positive, cosine is negative, and tangent is negative."
     },
     {
       "id": "any-angle-example-7",
-      "question": "A point P(−5,−12) lies on the terminal side of θ. Find r and the signs of the three basic trigonometric ratios.",
-      "solution": "Calculate r: \\[r=\\sqrt{(-5)^2+(-12)^2}=\\sqrt{25+144}=13.\\] Both x and y are negative, so the point lies in Quadrant III. Therefore sine is negative, cosine is negative, and tangent is positive."
+      "question": "A point \\(P(-5,-12)\\) lies on the terminal side of \\(\\theta\\). Find \\(r\\) and the signs of the three basic trigonometric ratios.",
+      "solution": "Calculate \\(r\\): \\[r=\\sqrt{(-5)^2+(-12)^2}=\\sqrt{25+144}=13.\\] Both \\(x\\) and \\(y\\) are negative, so the point lies in Quadrant III. Therefore sine is negative, cosine is negative, and tangent is positive."
     },
     {
       "id": "any-angle-example-8",
-      "question": "In which quadrant does 120° lie? What are the signs of sine, cosine, and tangent?",
-      "solution": "The four quadrants correspond to 0°–90°, 90°–180°, 180°–270° and 270°–360°. Since 120° lies between 90° and 180°, it is in Quadrant II. In Quadrant II, sine is positive, while cosine and tangent are negative."
+      "question": "In which quadrant does \\(120^\\circ\\) lie? What are the signs of sine, cosine, and tangent?",
+      "solution": "\\(120^\\circ\\) lies between \\(90^\\circ\\) and \\(180^\\circ\\), so it is in Quadrant II. In Quadrant II, sine is positive, while cosine and tangent are negative."
     },
     {
       "id": "any-angle-example-9",
-      "question": "In which quadrant does 240° lie? What are the signs of sine, cosine, and tangent?",
-      "solution": "240° lies between 180° and 270°, so it is in Quadrant III. In Quadrant III, both x and y are negative. Therefore sine and cosine are negative, while tangent is positive."
+      "question": "In which quadrant does \\(240^\\circ\\) lie? What are the signs of sine, cosine, and tangent?",
+      "solution": "\\(240^\\circ\\) lies between \\(180^\\circ\\) and \\(270^\\circ\\), so it is in Quadrant III. In Quadrant III, both \\(x\\) and \\(y\\) are negative. Therefore sine and cosine are negative, while tangent is positive."
     },
     {
       "id": "any-angle-example-10",
-      "question": "In which quadrant does 315° lie? What are the signs of sine, cosine, and tangent?",
-      "solution": "315° lies between 270° and 360°, so it is in Quadrant IV. Here x is positive and y is negative. Therefore cosine is positive, while sine and tangent are negative."
+      "question": "In which quadrant does \\(315^\\circ\\) lie? What are the signs of sine, cosine, and tangent?",
+      "solution": "\\(315^\\circ\\) lies between \\(270^\\circ\\) and \\(360^\\circ\\), so it is in Quadrant IV. Here \\(x\\) is positive and \\(y\\) is negative. Therefore cosine is positive, while sine and tangent are negative."
     },
     {
       "id": "any-angle-example-11",
-      "question": "Find the reference angle of 40°.",
-      "solution": "40° lies in Quadrant I and is already acute. Therefore, the reference angle is simply 40°."
+      "question": "Find the reference angle of \\(40^\\circ\\).",
+      "solution": "\\(40^\\circ\\) lies in Quadrant I and is already acute. Therefore, the reference angle is simply \\(40^\\circ\\)."
     },
     {
       "id": "any-angle-example-12",
-      "question": "Find the reference angle of 120°.",
-      "solution": "120° lies in Quadrant II. For Quadrant II, subtract the angle from 180°: \\[180^\\circ-120^\\circ=60^\\circ.\\] Therefore, the reference angle is 60°."
+      "question": "Find the reference angle of \\(120^\\circ\\).",
+      "solution": "\\(120^\\circ\\) lies in Quadrant II. For Quadrant II, subtract the angle from \\(180^\\circ\\): \\[180^\\circ-120^\\circ=60^\\circ.\\] Therefore, the reference angle is \\(60^\\circ\\)."
     },
     {
       "id": "any-angle-example-13",
-      "question": "Find the reference angle of 150°.",
-      "solution": "150° is in Quadrant II. Therefore: \\[180^\\circ-150^\\circ=30^\\circ.\\] The reference angle is 30°."
+      "question": "Find the reference angle of \\(150^\\circ\\).",
+      "solution": "\\(150^\\circ\\) is in Quadrant II. Therefore: \\[180^\\circ-150^\\circ=30^\\circ.\\] The reference angle is \\(30^\\circ\\)."
     },
     {
       "id": "any-angle-example-14",
-      "question": "Find the reference angle of 210°.",
-      "solution": "210° lies in Quadrant III. Subtract 180°: \\[210^\\circ-180^\\circ=30^\\circ.\\] Therefore, the reference angle is 30°."
+      "question": "Find the reference angle of \\(210^\\circ\\).",
+      "solution": "\\(210^\\circ\\) lies in Quadrant III. Subtract \\(180^\\circ\\): \\[210^\\circ-180^\\circ=30^\\circ.\\] Therefore, the reference angle is \\(30^\\circ\\)."
     },
     {
       "id": "any-angle-example-15",
-      "question": "Find the reference angle of 240°.",
-      "solution": "240° lies in Quadrant III. Therefore: \\[240^\\circ-180^\\circ=60^\\circ.\\] The reference angle is 60°."
+      "question": "Find the reference angle of \\(240^\\circ\\).",
+      "solution": "\\(240^\\circ\\) lies in Quadrant III. Therefore: \\[240^\\circ-180^\\circ=60^\\circ.\\] The reference angle is \\(60^\\circ\\)."
     },
     {
       "id": "any-angle-example-16",
-      "question": "Find the reference angle of 300°.",
-      "solution": "300° lies in Quadrant IV. Therefore subtract it from 360°: \\[360^\\circ-300^\\circ=60^\\circ.\\] The reference angle is 60°."
+      "question": "Find the reference angle of \\(300^\\circ\\).",
+      "solution": "\\(300^\\circ\\) lies in Quadrant IV. Therefore subtract it from \\(360^\\circ\\): \\[360^\\circ-300^\\circ=60^\\circ.\\] The reference angle is \\(60^\\circ\\)."
     },
     {
       "id": "any-angle-example-17",
-      "question": "Find the reference angle of 315°.",
-      "solution": "315° lies in Quadrant IV. Therefore: \\[360^\\circ-315^\\circ=45^\\circ.\\] The reference angle is 45°."
+      "question": "Find the reference angle of \\(315^\\circ\\).",
+      "solution": "\\(315^\\circ\\) lies in Quadrant IV. Therefore: \\[360^\\circ-315^\\circ=45^\\circ.\\] The reference angle is \\(45^\\circ\\)."
     },
     {
       "id": "any-angle-example-18",
-      "question": "Find a positive coterminal angle for −45° and then find its reference angle.",
-      "solution": "Add 360° to −45°: \\[−45^\\circ+360^\\circ=315^\\circ.\\] Therefore, 315° is a positive coterminal angle. Since 315° lies in Quadrant IV, its reference angle is \\[360^\\circ-315^\\circ=45^\\circ.\\]"
+      "question": "Find a positive coterminal angle for \\(-45^\\circ\\) and then find its reference angle.",
+      "solution": "Add \\(360^\\circ\\) to \\(-45^\\circ\\): \\[-45^\\circ+360^\\circ=315^\\circ.\\] Therefore, \\(315^\\circ\\) is a positive coterminal angle. Since \\(315^\\circ\\) lies in Quadrant IV, its reference angle is \\[360^\\circ-315^\\circ=45^\\circ.\\]"
     },
     {
       "id": "any-angle-example-19",
-      "question": "Give two angles coterminal with 45°.",
-      "solution": "Add and subtract 360°. \\[45^\\circ+360^\\circ=405^\\circ\\] and \\[45^\\circ-360^\\circ=-315^\\circ.\\] Therefore, 405° and −315° are both coterminal with 45°."
+      "question": "Give two angles coterminal with \\(45^\\circ\\).",
+      "solution": "Add and subtract \\(360^\\circ\\). \\[45^\\circ+360^\\circ=405^\\circ\\] and \\[45^\\circ-360^\\circ=-315^\\circ.\\] Therefore, \\(405^\\circ\\) and \\(-315^\\circ\\) are both coterminal with \\(45^\\circ\\)."
     },
     {
       "id": "any-angle-example-20",
-      "question": "A point P(−3,4) lies on the terminal side of θ. Find all three basic trigonometric ratios.",
-      "solution": "First find r: \\[r=\\sqrt{(-3)^2+4^2}=5.\\] Then: \\[\\sin(\\theta)=\\frac{4}{5},\\qquad\\cos(\\theta)=\\frac{-3}{5},\\qquad\\tan(\\theta)=\\frac{4}{-3}=-\\frac{4}{3}.\\] Therefore sine is positive, cosine is negative, and tangent is negative."
+      "question": "A point \\(P(-3,4)\\) lies on the terminal side of \\(\\theta\\). Find all three basic trigonometric ratios.",
+      "solution": "First find \\(r\\): \\[r=\\sqrt{(-3)^2+4^2}=5.\\] Then: \\[\\sin(\\theta)=\\frac{4}{5},\\qquad\\cos(\\theta)=-\\frac{3}{5},\\qquad\\tan(\\theta)=-\\frac{4}{3}.\\] Therefore sine is positive, cosine is negative, and tangent is negative."
     },
     {
       "id": "any-angle-example-21",
-      "question": "A point P(4,−3) lies on the terminal side of θ. Find all three basic trigonometric ratios.",
-      "solution": "First calculate r: \\[r=\\sqrt{4^2+(-3)^2}=5.\\] Then: \\[\\sin(\\theta)=\\frac{-3}{5},\\qquad\\cos(\\theta)=\\frac{4}{5},\\qquad\\tan(\\theta)=\\frac{-3}{4}.\\] The point is in Quadrant IV, which agrees with the signs: sine and tangent are negative, while cosine is positive."
+      "question": "A point \\(P(4,-3)\\) lies on the terminal side of \\(\\theta\\). Find all three basic trigonometric ratios.",
+      "solution": "First calculate \\(r\\): \\[r=\\sqrt{4^2+(-3)^2}=5.\\] Then: \\[\\sin(\\theta)=-\\frac{3}{5},\\qquad\\cos(\\theta)=\\frac{4}{5},\\qquad\\tan(\\theta)=-\\frac{3}{4}.\\] The point is in Quadrant IV, which agrees with the signs: sine and tangent are negative, while cosine is positive."
     },
     {
       "id": "any-angle-example-22",
       "question": "Explain why tangent is undefined when the terminal side lies on the y-axis.",
-      "solution": "If the terminal side lies on the y-axis, then x = 0. Since \\[\\tan(\\theta)=\\frac{y}{x},\\] the denominator becomes zero. Division by zero is undefined. Therefore tangent is undefined for these angles."
+      "solution": "If the terminal side lies on the y-axis, then \\(x=0\\). Since \\[\\tan(\\theta)=\\frac{y}{x},\\] the denominator becomes zero. Division by zero is undefined. Therefore tangent is undefined for these angles."
     },
     {
       "id": "any-angle-example-23",
       "question": "Explain why sine is zero when the terminal side lies on the x-axis.",
-      "solution": "When the terminal side lies on the x-axis, y = 0. Since \\[\\sin(\\theta)=\\frac{y}{r},\\] we get \\[\\sin(\\theta)=\\frac{0}{r}=0.\\] Therefore sine is zero."
+      "solution": "When the terminal side lies on the x-axis, \\(y=0\\). Since \\[\\sin(\\theta)=\\frac{y}{r},\\] we get \\[\\sin(\\theta)=\\frac{0}{r}=0.\\] Therefore sine is zero."
     },
     {
       "id": "any-angle-example-24",
-      "question": "For an angle of 150°, explain how the reference angle and quadrant work together.",
-      "solution": "First find the reference angle: \\[180^\\circ-150^\\circ=30^\\circ.\\] Therefore, 30° gives the corresponding acute-angle magnitude. Next, identify the quadrant. 150° lies in Quadrant II. In Quadrant II, sine is positive while cosine and tangent are negative. Thus the reference angle determines the magnitude pattern and the quadrant determines the sign."
+      "question": "For an angle of \\(150^\\circ\\), explain how the reference angle and quadrant work together.",
+      "solution": "First find the reference angle: \\[180^\\circ-150^\\circ=30^\\circ.\\] Therefore, \\(30^\\circ\\) gives the corresponding acute-angle magnitude. Next, identify the quadrant. \\(150^\\circ\\) lies in Quadrant II. In Quadrant II, sine is positive while cosine and tangent are negative. Thus the reference angle determines the magnitude pattern and the quadrant determines the sign."
     }
   ],
 
@@ -922,16 +922,16 @@
     "Standard position places the vertex at the origin and the initial side along the positive x-axis.",
     "Positive angles represent counterclockwise rotation.",
     "Negative angles represent clockwise rotation.",
-    "A point on the terminal side can be written as (x,y).",
-    "The distance from the origin to (x,y) is r = √(x² + y²).",
-    "The value of r is always positive because it represents a distance.",
-    "For any angle, sine can be defined as y/r.",
-    "For any angle, cosine can be defined as x/r.",
-    "For any angle where x is non-zero, tangent can be defined as y/x.",
+    "A point on the terminal side can be written as \\((x,y)\\).",
+    "The distance from the origin to \\((x,y)\\) is \\(r=\\sqrt{x^2+y^2}\\).",
+    "The value of \\(r\\) is always positive because it represents a distance.",
+    "For any angle, sine can be defined as \\(\\sin(\\theta)=y/r\\).",
+    "For any angle, cosine can be defined as \\(\\cos(\\theta)=x/r\\).",
+    "For any angle where \\(x\\neq0\\), tangent can be defined as \\(\\tan(\\theta)=y/x\\).",
     "The coordinate definitions are extensions of SOH-CAH-TOA.",
-    "Sine depends on the sign of y.",
-    "Cosine depends on the sign of x.",
-    "Tangent depends on the relative signs of x and y.",
+    "Sine depends on the sign of \\(y\\).",
+    "Cosine depends on the sign of \\(x\\).",
+    "Tangent depends on the relative signs of \\(x\\) and \\(y\\).",
     "All three basic ratios are positive in Quadrant I.",
     "Only sine is positive in Quadrant II.",
     "Only tangent is positive in Quadrant III.",
@@ -941,34 +941,34 @@
     "A reference angle is the positive acute angle between the terminal side and the x-axis.",
     "The reference angle provides the corresponding acute-angle magnitude.",
     "The quadrant determines the sign of the trigonometric ratio.",
-    "Angles that differ by multiples of 360° are coterminal.",
+    "Angles that differ by multiples of \\(360^\\circ\\) are coterminal.",
     "Coterminal angles have the same terminal side.",
-    "Negative angles can be converted to positive coterminal angles by adding 360° when appropriate.",
-    "Tangent is undefined when x = 0.",
-    "Sine is zero when y = 0.",
-    "Cosine is zero when x = 0.",
+    "Negative angles can be converted to positive coterminal angles by adding \\(360^\\circ\\) when appropriate.",
+    "Tangent is undefined when \\(x=0\\).",
+    "Sine is zero when \\(y=0\\).",
+    "Cosine is zero when \\(x=0\\).",
     "Any-angle trigonometry extends the same fundamental side relationships rather than replacing them."
   ],
 
   "misconceptions": [
-    "Trigonometric ratios are not restricted to angles between 0° and 90°.",
+    "Trigonometric ratios are not restricted to angles between \\(0^\\circ\\) and \\(90^\\circ\\).",
     "A negative angle represents clockwise rotation; it does not mean that an angle has a negative physical length.",
-    "The negative signs of x and y are coordinate signs, not negative triangle side lengths.",
-    "The value of r is always positive because r represents a distance.",
+    "The negative signs of \\(x\\) and \\(y\\) are coordinate signs, not negative triangle side lengths.",
+    "The value of \\(r\\) is always positive because \\(r\\) represents a distance.",
     "Sine is not always positive.",
     "Cosine is not always positive.",
-    "Tangent can be positive in Quadrant III because both x and y are negative.",
+    "Tangent can be positive in Quadrant III because both \\(x\\) and \\(y\\) are negative.",
     "CAST or ASTC is a memory aid and not the fundamental reason for the signs.",
     "The reference angle is always acute for a non-axis angle.",
     "The reference angle is not the same as the original angle in most quadrants.",
     "The quadrant determines the sign; the reference angle does not determine the sign by itself.",
     "A reference angle is not found by simply taking the absolute value of the original angle.",
-    "Angles greater than 360° are valid angles; they represent more than one complete rotation.",
+    "Angles greater than \\(360^\\circ\\) are valid angles; they represent more than one complete rotation.",
     "Negative angles can be coterminal with positive angles.",
     "Coterminal angles are different angle measures but share the same terminal side.",
-    "Tangent is not defined when x = 0 because division by zero is undefined.",
-    "Sine is zero on the x-axis because y = 0.",
-    "Cosine is zero on the y-axis because x = 0.",
+    "Tangent is not defined when \\(x=0\\) because division by zero is undefined.",
+    "Sine is zero on the x-axis because \\(y=0\\).",
+    "Cosine is zero on the y-axis because \\(x=0\\).",
     "The coordinate-plane definitions do not contradict SOH-CAH-TOA; they extend it.",
     "A point with negative coordinates does not mean the associated triangle has negative side lengths.",
     "The terminal side, not the initial side, determines the quadrant of an angle.",
@@ -1027,4 +1027,4 @@
     "khan-academy-trigonometry",
     "openstax-precalculus"
   ]
-}
+} 
