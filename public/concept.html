@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumina — Concept</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/concept.css" />
+</head>
+<body class="concept-page">
+  <div class="ambient orb-one"></div><div class="ambient orb-two"></div>
+  <main>
+    <nav>
+      <a class="brand" href="/">lumina<span>✦</span></a>
+      <div class="nav-links"><a href="/">Roadmap</a><a href="#theory">Theory</a><a href="#examples">Examples</a></div>
+    </nav>
+
+    <div id="loading" class="concept-loading">Loading concept…</div>
+    <div id="error" class="concept-error" hidden></div>
+
+    <article id="concept" hidden>
+      <header class="concept-hero">
+        <div class="concept-eyebrow"><span id="subject"></span><i>•</i><span id="topic"></span><i>•</i><span id="difficulty"></span></div>
+        <h1 id="title"></h1>
+        <p id="introduction"></p>
+      </header>
+
+      <div class="concept-layout">
+        <aside class="concept-toc">
+          <span>IN THIS LESSON</span>
+          <div id="toc"></div>
+        </aside>
+        <div class="concept-main">
+          <section id="theory" class="concept-section">
+            <div class="section-kicker">01 · THEORY</div>
+            <h2>Build the idea</h2>
+            <div id="theory-content"></div>
+          </section>
+
+          <section id="formulas" class="concept-section">
+            <div class="section-kicker">02 · FORMULAS</div>
+            <h2>Three ratios to remember</h2>
+            <div id="formula-grid" class="formula-grid"></div>
+          </section>
+
+          <section id="examples" class="concept-section">
+            <div class="section-kicker">03 · EXAMPLES</div>
+            <h2>See it in action</h2>
+            <div id="examples-list" class="examples-list"></div>
+          </section>
+
+          <section id="ideas" class="concept-section split-section">
+            <div>
+              <div class="section-kicker">04 · KEY IDEAS</div>
+              <h2>What to remember</h2>
+              <ul id="key-ideas"></ul>
+            </div>
+            <div>
+              <div class="section-kicker">05 · MISCONCEPTIONS</div>
+              <h2>Watch out for these</h2>
+              <ul id="misconceptions"></ul>
+            </div>
+          </section>
+
+          <section id="explorations" class="concept-section">
+            <div class="section-kicker">06 · EXPLORE</div>
+            <h2>Go beyond the page</h2>
+            <div id="explorations-list" class="exploration-grid"></div>
+          </section>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer><span>© 2026 LUMINA</span><span>Learning is not a straight line. But it can have a map.</span></footer>
+  <script src="/concept.js"></script>
+</body>
+</html>
