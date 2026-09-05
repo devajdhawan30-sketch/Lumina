@@ -1,0 +1,294 @@
+{
+  "id": "angles-on-a-circle",
+  "title": "Angles on a Circle",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+  "difficulty": 1,
+  "connections": {
+    "prerequisites": [
+      "angles",
+      "degrees-and-radians"
+    ],
+    "leads_to": [
+      "clock-and-rotation",
+      "right-triangles"
+    ],
+    "related": [
+      "coordinate-plane",
+      "unit-circle",
+      "quadrants",
+      "coterminal-angles"
+    ]
+  },
+  "theory": {
+    "introduction": "An angle becomes much more useful in trigonometry when we stop viewing it only as an isolated drawing and use it to describe a position around a circle. Starting from a fixed direction, the angle tells us how far and in which direction to rotate. The terminal side then points into a particular part of the coordinate plane, giving us a geometric way to locate and classify the angle.",
+    "sections": [
+      {
+        "id": "angle-as-position",
+        "title": "An Angle Can Locate a Direction",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "rotation-to-location",
+            "text": "An angle does more than describe the size of a turn. If we begin from a fixed direction and rotate through a known angle, the terminal side ends up pointing in a definite direction. We can therefore use an angle to describe where a direction lies."
+          },
+          {
+            "type": "paragraph",
+            "id": "circle-tracing",
+            "text": "Imagine a point attached to the terminal side at a fixed distance from the vertex. As the side rotates, that point traces a circle. The angle therefore corresponds naturally to a location on a circular path."
+          },
+          {
+            "type": "paragraph",
+            "id": "same-direction-many-rotations",
+            "text": "A direction can be reached after different amounts of rotation. For example, continuing around the circle for an additional full revolution brings the rotating side back to the same direction. The numerical angle can change even though the final direction is unchanged."
+          }
+        ]
+      },
+      {
+        "id": "standard-position-review",
+        "title": "Putting the Circle on the Coordinate Plane",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "origin-and-positive-x",
+            "text": "For trigonometric work, it is useful to place the center of the circle at the origin of the coordinate plane and use the positive x-axis as the starting direction. An angle arranged this way is in standard position."
+          },
+          {
+            "type": "paragraph",
+            "id": "initial-terminal-sides",
+            "text": "The positive x-axis is the initial side. After the specified rotation, the ray showing the final direction is the terminal side."
+          },
+          {
+            "type": "paragraph",
+            "id": "directed-rotation",
+            "text": "Positive angles rotate counterclockwise from the initial side, while negative angles rotate clockwise. This means the same circle can represent rotations in both directions."
+          }
+        ]
+      },
+      {
+        "id": "quadrants",
+        "title": "The Four Quadrants",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "quadrant-definition",
+            "text": "The coordinate axes divide the plane into four regions called Quadrants I, II, III, and IV. As a terminal side rotates around a circle, it can point into any of these four regions or lie directly on an axis."
+          },
+          {
+            "type": "paragraph",
+            "id": "counterclockwise-quadrants",
+            "text": "Starting from the positive x-axis and rotating counterclockwise, the terminal side enters Quadrant I first, then Quadrant II, Quadrant III, and finally Quadrant IV before completing the revolution."
+          },
+          {
+            "type": "paragraph",
+            "id": "quadrant-intervals-degrees",
+            "text": "Within one positive revolution measured in degrees, Quadrant I lies between 0° and 90°, Quadrant II between 90° and 180°, Quadrant III between 180° and 270°, and Quadrant IV between 270° and 360°."
+          },
+          {
+            "type": "paragraph",
+            "id": "quadrant-intervals-radians",
+            "text": "The same regions can be described in radians: Quadrant I lies between 0 and π/2, Quadrant II between π/2 and π, Quadrant III between π and 3π/2, and Quadrant IV between 3π/2 and 2π."
+          }
+        ]
+      },
+      {
+        "id": "axis-angles",
+        "title": "Angles Whose Terminal Side Lies on an Axis",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "quadrantal-angles",
+            "text": "Some angles do not end inside a quadrant. Their terminal side lies directly on one of the coordinate axes. These are called quadrantal angles."
+          },
+          {
+            "type": "paragraph",
+            "id": "important-axis-directions",
+            "text": "Within one counterclockwise revolution, the four main axis directions occur at 0°, 90°, 180°, and 270°, or equivalently at 0, π/2, π, and 3π/2 radians."
+          },
+          {
+            "type": "paragraph",
+            "id": "why-axis-positions-matter",
+            "text": "These positions form the boundaries between quadrants and later become important because the coordinates of points on the axes have a particularly simple form."
+          }
+        ]
+      },
+      {
+        "id": "terminal-point",
+        "title": "The Terminal Side and a Point on the Circle",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "point-on-terminal-side",
+            "text": "Choose a circle centered at the origin and place a point on the circle where the terminal side intersects it. That point gives a concrete location associated with the angle."
+          },
+          {
+            "type": "paragraph",
+            "id": "coordinates-as-information",
+            "text": "Because the point lies on the coordinate plane, it has an x-coordinate and a y-coordinate. These coordinates tell us how far the point lies horizontally and vertically from the axes."
+          },
+          {
+            "type": "paragraph",
+            "id": "coordinate-signs",
+            "text": "The signs of the coordinates depend on the quadrant: in Quadrant I both coordinates are positive; in Quadrant II x is negative and y is positive; in Quadrant III both are negative; in Quadrant IV x is positive and y is negative."
+          }
+        ]
+      },
+      {
+        "id": "unit-circle-preview",
+        "title": "Why the Unit Circle Will Matter",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "unit-circle-definition-preview",
+            "text": "A unit circle is a circle with radius 1 centered at the origin. Because its radius is fixed at 1, the location of a point on the circle can be described especially cleanly using its coordinates."
+          },
+          {
+            "type": "paragraph",
+            "id": "angle-point-relationship",
+            "text": "An angle in standard position can be paired with the point where its terminal side meets the unit circle. This creates a direct bridge between angle measure and coordinates."
+          },
+          {
+            "type": "paragraph",
+            "id": "trig-function-preview",
+            "text": "Later, the coordinates of this point will become the basis for defining trigonometric functions for angles beyond the acute angles of a right triangle. For now, the important idea is simply that an angle can identify a point on a circle."
+          }
+        ]
+      },
+      {
+        "id": "reference-angle-preview",
+        "title": "A Common Angle Can Be Used as a Reference",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "reference-angle-idea",
+            "text": "When an angle lies in a quadrant, it can be compared with the nearest horizontal axis. The smaller positive acute angle between the terminal side and the horizontal axis is called the reference angle."
+          },
+          {
+            "type": "paragraph",
+            "id": "reference-angle-purpose",
+            "text": "The reference angle captures the basic geometric size of the angle while temporarily ignoring which quadrant contains the terminal side. This will later help connect angles in different quadrants to familiar acute-angle geometry."
+          },
+          {
+            "type": "paragraph",
+            "id": "reference-angle-not-same-angle",
+            "text": "A reference angle is not the original angle. It is an associated acute angle used as a geometric comparison. The original angle still contains information about its direction and quadrant."
+          }
+        ]
+      },
+      {
+        "id": "circle-as-map",
+        "title": "The Circle as a Map of Rotation",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "angle-map",
+            "text": "A circle can be viewed as a map of all possible directions reached by rotating a ray around a fixed center. Every rotation places the terminal side somewhere on this circular map."
+          },
+          {
+            "type": "paragraph",
+            "id": "measure-and-location",
+            "text": "The angle measure tells us how much rotation has occurred, while the terminal side tells us where that rotation has placed the direction. The same location can therefore correspond to multiple angle measures when extra full revolutions are included."
+          },
+          {
+            "type": "paragraph",
+            "id": "bridge-forward",
+            "text": "This viewpoint prepares us to study rotation as something that happens continuously over time. The next concept will connect this circular motion to familiar repeating motion, such as the movement of the hands of a clock."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "quadrant-degree-ranges",
+      "name": "Quadrant Ranges in Degrees",
+      "expression": "QI: 0°<θ<90°, QII: 90°<θ<180°, QIII: 180°<θ<270°, QIV: 270°<θ<360°",
+      "explanation": "These intervals describe where the terminal side lies during one positive revolution, excluding the axis boundaries."
+    },
+    {
+      "id": "quadrant-radian-ranges",
+      "name": "Quadrant Ranges in Radians",
+      "expression": "QI: 0<θ<π/2, QII: π/2<θ<π, QIII: π<θ<3π/2, QIV: 3π/2<θ<2π",
+      "explanation": "These are the same four quadrant regions expressed using radian measure."
+    },
+    {
+      "id": "quadrantal-angles",
+      "name": "Main Quadrantal Angles",
+      "expression": "0°, 90°, 180°, 270° ↔ 0, π/2, π, 3π/2",
+      "explanation": "These angles place the terminal side on one of the coordinate axes during one counterclockwise revolution."
+    },
+    {
+      "id": "reference-angle-definition",
+      "name": "Reference Angle",
+      "expression": "α = smallest positive acute angle between the terminal side and the horizontal axis",
+      "explanation": "The reference angle is an acute angle associated with the original angle and is used to compare angles across different quadrants."
+    }
+  ],
+  "examples": [
+    {
+      "id": "locate-60-degrees",
+      "question": "In which quadrant does an angle of 60° terminate when drawn in standard position?",
+      "solution": "Since 60° lies between 0° and 90°, its terminal side lies in Quadrant I."
+    },
+    {
+      "id": "locate-135-degrees",
+      "question": "In which quadrant does an angle of 135° terminate?",
+      "solution": "135° lies between 90° and 180°, so the terminal side lies in Quadrant II."
+    },
+    {
+      "id": "locate-five-pi-over-four",
+      "question": "In which quadrant does 5π/4 radians terminate?",
+      "solution": "5π/4 lies between π and 3π/2, so the terminal side lies in Quadrant III."
+    },
+    {
+      "id": "axis-angle",
+      "question": "Where does the terminal side of 270° lie?",
+      "solution": "270° is a quadrantal angle. Its terminal side lies on the negative y-axis."
+    },
+    {
+      "id": "coordinate-signs",
+      "question": "A point where an angle's terminal side meets a circle lies in Quadrant IV. What can you say about the signs of its x- and y-coordinates?",
+      "solution": "In Quadrant IV, x is positive and y is negative."
+    },
+    {
+      "id": "reference-angle-qii",
+      "question": "What is the reference angle for 150°?",
+      "solution": "The terminal side lies in Quadrant II. The acute angle between the terminal side and the negative x-axis is 180° − 150° = 30°, so the reference angle is 30°."
+    },
+    {
+      "id": "multiple-rotations",
+      "question": "Can two different angle measures point in exactly the same direction on the circle?",
+      "solution": "Yes. Adding or subtracting a full revolution changes the amount of rotation but brings the terminal side back to the same direction. Such angles are coterminal."
+    }
+  ],
+  "key_ideas": [
+    "An angle can be used to describe a direction or position around a circle.",
+    "In standard position, the vertex is at the origin and the initial side lies on the positive x-axis.",
+    "Positive rotation is counterclockwise and negative rotation is clockwise.",
+    "The coordinate plane divides the circle's possible directions into four quadrants.",
+    "Quadrant I has positive x and positive y coordinates.",
+    "Quadrant II has negative x and positive y coordinates.",
+    "Quadrant III has negative x and negative y coordinates.",
+    "Quadrant IV has positive x and negative y coordinates.",
+    "Angles whose terminal sides lie on an axis are quadrantal angles.",
+    "A point where the terminal side meets a circle provides a coordinate representation of the angle's direction.",
+    "The unit circle gives a particularly useful connection between angles and coordinates.",
+    "A reference angle captures the smallest acute angle associated with an angle's terminal side and the horizontal axis.",
+    "The same direction can correspond to multiple angle measures after additional full rotations."
+  ],
+  "misconceptions": [
+    "An angle only tells us the size of a turn and cannot tell us a direction.",
+    "Every angle must terminate inside one of the four quadrants.",
+    "Quadrant II means both coordinates are negative.",
+    "A negative angle means its terminal side must be in Quadrant III or IV.",
+    "An angle of 360° points somewhere different from an angle of 0°.",
+    "A reference angle is the same thing as the original angle.",
+    "The reference angle tells us which quadrant the original angle is in.",
+    "The coordinates of a point on a circle do not depend on which quadrant it lies in.",
+    "A circle can represent only angles between 0° and 360°.",
+    "Different angle measures cannot produce the same terminal direction."
+  ],
+  "explorations": [],
+  "sources": []
+}

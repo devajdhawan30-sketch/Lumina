@@ -1,0 +1,351 @@
+{
+  "id": "angles",
+  "title": "Angles",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+  "difficulty": 1,
+  "connections": {
+    "prerequisites": [],
+    "leads_to": [
+      "angle-measurement",
+      "degrees-and-radians",
+      "angles-on-a-circle"
+    ],
+    "related": [
+      "geometry",
+      "coordinate-plane",
+      "rotation"
+    ]
+  },
+  "theory": {
+    "introduction": "An angle is not merely a shape drawn between two lines. It can be understood as a geometric object created by two rays and, dynamically, as the amount of rotation from one ray to another. This rotational viewpoint is especially important in trigonometry because trigonometric functions eventually describe what happens as an angle rotates around a circle.",
+    "sections": [
+      {
+        "id": "what-is-a-ray",
+        "title": "1. The Ray: The Building Block of an Angle",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "ray-definition",
+            "text": "A ray is a directed part of a line that begins at one endpoint and continues indefinitely in one direction. The endpoint is the starting point of the ray, while the other points extend away from it."
+          },
+          {
+            "type": "paragraph",
+            "id": "ray-naming",
+            "text": "A ray can be named using its endpoint followed by any other point lying on the ray. For example, if E is the endpoint and F is another point on the ray, the ray can be written as ray EF. The order matters because the first point identifies the endpoint."
+          },
+          {
+            "type": "paragraph",
+            "id": "ray-direction",
+            "text": "The idea of direction is important. Unlike an ordinary line segment, a ray has one fixed endpoint and extends infinitely in only one direction. This directional nature becomes important when an angle is viewed as a rotation."
+          }
+        ]
+      },
+      {
+        "id": "parts-of-an-angle",
+        "title": "2. What Is an Angle?",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "angle-definition",
+            "text": "An angle is formed by two rays that have a common endpoint. The common endpoint is called the vertex, and the two rays are called the sides of the angle."
+          },
+          {
+            "type": "paragraph",
+            "id": "angle-vertex",
+            "text": "The vertex is the point about which the angle is formed. It is the point shared by both sides of the angle. In an angle written with three letters, the vertex is always the middle letter."
+          },
+          {
+            "type": "paragraph",
+            "id": "angle-sides",
+            "text": "The sides of an angle are the two rays that extend from the vertex. The angle is therefore determined by the two directions in which these rays point."
+          },
+          {
+            "type": "paragraph",
+            "id": "angle-visual-intuition",
+            "text": "A useful way to picture an angle is to imagine two rays initially lying on top of one another. Keep one ray fixed and rotate the other. The amount through which the moving ray turns determines the angle."
+          }
+        ]
+      },
+      {
+        "id": "naming-angles",
+        "title": "3. How Angles Are Named",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "three-letter-naming",
+            "text": "An angle can be named using three letters: one point on the first side, the vertex, and one point on the second side. The vertex must be the middle letter. For example, angle DEF has vertex E, because E is the middle letter."
+          },
+          {
+            "type": "paragraph",
+            "id": "single-letter-naming",
+            "text": "When there is no ambiguity about which angle at a vertex is being discussed, an angle may also be named using the letter of its vertex alone."
+          },
+          {
+            "type": "paragraph",
+            "id": "greek-angle-letters",
+            "text": "Greek letters are frequently used to represent angles or their measures. Common symbols include theta (θ), phi (φ), alpha (α), beta (β), and gamma (γ). These symbols are variables: they do not represent one particular fixed angle unless the context defines them."
+          }
+        ]
+      },
+      {
+        "id": "angle-as-rotation",
+        "title": "4. An Angle as Rotation",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "dynamic-angle",
+            "text": "An angle can be understood dynamically as a rotation. Imagine two rays starting on top of each other. Keep one ray fixed and rotate the other around the common endpoint. The fixed ray is the initial side, and the ray that moves is the terminal side."
+          },
+          {
+            "type": "paragraph",
+            "id": "initial-side",
+            "text": "The initial side is the ray from which the rotation begins. It provides the starting direction of the angle."
+          },
+          {
+            "type": "paragraph",
+            "id": "terminal-side",
+            "text": "The terminal side is the ray at which the rotation ends. The final direction of this ray determines where the angle finishes."
+          },
+          {
+            "type": "paragraph",
+            "id": "rotation-arrow",
+            "text": "When an angle is drawn as a rotation, an arrow near the vertex can indicate the direction in which the terminal side moved. This is useful because the same two geometric rays can be associated with different rotations depending on the direction and number of turns."
+          },
+          {
+            "type": "paragraph",
+            "id": "angle-measure-concept",
+            "text": "The measure of an angle is the amount of rotation from the initial side to the terminal side. The numerical unit used to describe that rotation will be studied separately."
+          }
+        ]
+      },
+      {
+        "id": "positive-negative-angles",
+        "title": "5. Positive and Negative Angles",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "counterclockwise-positive",
+            "text": "By convention, a counterclockwise rotation is represented by a positive angle. Starting from the initial side, moving counterclockwise means the angle has a positive measure."
+          },
+          {
+            "type": "paragraph",
+            "id": "clockwise-negative",
+            "text": "A clockwise rotation is represented by a negative angle. The negative sign therefore communicates direction; it does not mean that the angle is somehow a physically negative size."
+          },
+          {
+            "type": "paragraph",
+            "id": "same-terminal-different-rotation",
+            "text": "A positive and a negative angle can end at the same terminal side if they differ by complete rotations. Thus, the final position of the terminal side alone does not always tell us how much rotation occurred or in which direction."
+          },
+          {
+            "type": "paragraph",
+            "id": "multiple-rotations",
+            "text": "An angle can represent more than one complete rotation. For example, a rotation can go all the way around once and continue further before stopping. This is important because trigonometry works with angles as rotations, not merely with the small region visually enclosed by two rays."
+          }
+        ]
+      },
+      {
+        "id": "standard-position",
+        "title": "6. Angles in Standard Position",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "standard-position-definition",
+            "text": "For systematic work in trigonometry, angles are commonly placed on the coordinate plane in standard position. An angle is in standard position when its vertex is at the origin and its initial side lies along the positive x-axis."
+          },
+          {
+            "type": "paragraph",
+            "id": "why-standard-position",
+            "text": "Standard position gives every angle the same starting point and starting direction. This makes different angles easier to compare and provides a common framework for connecting angles with the coordinate plane and, later, with the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "id": "standard-position-start",
+            "text": "To place an angle in standard position, first place the vertex at the origin. Then place the initial side along the positive x-axis. The terminal side is obtained by rotating from that starting ray in the required direction."
+          },
+          {
+            "type": "paragraph",
+            "id": "standard-position-direction",
+            "text": "For a positive angle, rotate counterclockwise from the positive x-axis. For a negative angle, rotate clockwise from the positive x-axis."
+          },
+          {
+            "type": "paragraph",
+            "id": "terminal-side-determines-position",
+            "text": "Once an angle is in standard position, its terminal side tells us where the rotation ends. The terminal side may lie inside a quadrant or directly on one of the coordinate axes."
+          }
+        ]
+      },
+      {
+        "id": "quadrantal-angles",
+        "title": "7. Quadrantal Angles",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "quadrantal-definition",
+            "text": "A quadrantal angle is an angle in standard position whose terminal side lies along a coordinate axis."
+          },
+          {
+            "type": "paragraph",
+            "id": "quadrantal-values",
+            "text": "The basic quadrantal positions in one full rotation correspond to 0°, 90°, 180°, 270°, and 360°. These positions lie on the positive x-axis, positive y-axis, negative x-axis, negative y-axis, and again the positive x-axis respectively."
+          },
+          {
+            "type": "paragraph",
+            "id": "zero-and-full-rotation",
+            "text": "An angle of 0° means that no rotation has occurred, so the initial and terminal sides coincide. A full rotation brings the terminal side back to the initial side, even though a complete turn has occurred."
+          },
+          {
+            "type": "paragraph",
+            "id": "quadrantal-importance",
+            "text": "Quadrantal angles are important because they provide the boundaries between the four quadrants of the coordinate plane. They also become important later when trigonometric functions are studied on the unit circle."
+          }
+        ]
+      },
+      {
+        "id": "drawing-standard-position",
+        "title": "8. How to Draw an Angle in Standard Position",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "draw-step-one",
+            "text": "Step 1: Draw the coordinate axes and place the vertex of the angle at the origin."
+          },
+          {
+            "type": "paragraph",
+            "id": "draw-step-two",
+            "text": "Step 2: Draw the initial side along the positive x-axis."
+          },
+          {
+            "type": "paragraph",
+            "id": "draw-step-three",
+            "text": "Step 3: Determine the direction of rotation. Move counterclockwise for a positive angle and clockwise for a negative angle."
+          },
+          {
+            "type": "paragraph",
+            "id": "draw-step-four",
+            "text": "Step 4: Rotate through the required amount until reaching the terminal side. If the angle represents more than one full rotation, continue rotating through the additional turns before stopping."
+          },
+          {
+            "type": "paragraph",
+            "id": "draw-step-five",
+            "text": "Step 5: Mark or draw the terminal side clearly. The direction of rotation can be shown with a curved arrow near the vertex."
+          },
+          {
+            "type": "paragraph",
+            "id": "drawing-fraction-of-rotation",
+            "text": "When the angle is given in degrees, its position can be understood by comparing it with a full circular rotation. A complete rotation corresponds to 360°, so the angle represents a particular fraction of one complete turn. Detailed conversion between angle units belongs to the later study of degree and radian measure."
+          }
+        ]
+      },
+      {
+        "id": "angles-and-coordinate-plane",
+        "title": "9. Angles and the Four Quadrants",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "quadrant-idea",
+            "text": "The coordinate plane is divided into four quadrants by the x-axis and y-axis. When an angle is placed in standard position, its terminal side can point into any of these four regions or lie directly on an axis."
+          },
+          {
+            "type": "paragraph",
+            "id": "counterclockwise-quadrants",
+            "text": "Starting from the positive x-axis and rotating counterclockwise, the terminal side moves through the first quadrant, then the second, third, and fourth quadrants before returning to the positive x-axis after a complete rotation."
+          },
+          {
+            "type": "paragraph",
+            "id": "quadrant-not-measure",
+            "text": "A quadrant describes the location of the terminal side; it does not by itself give the exact angle. Many different angles can have terminal sides in the same quadrant, including angles that have made additional complete rotations."
+          },
+          {
+            "type": "paragraph",
+            "id": "why-quadrants-matter",
+            "text": "Knowing the quadrant of the terminal side becomes especially useful later because the signs and values of trigonometric functions depend on the position of the terminal side."
+          }
+        ]
+      },
+      {
+        "id": "angle-mental-model",
+        "title": "10. The Mental Model to Carry Forward",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "angle-core-model",
+            "text": "The most useful way to think about an angle is as directed rotation. Start with an initial side, rotate it about the vertex, and stop at the terminal side. The amount of rotation is the angle's measure, while the direction tells us whether the angle is positive or negative."
+          },
+          {
+            "type": "paragraph",
+            "id": "geometry-to-trigonometry",
+            "text": "This viewpoint is the bridge from elementary geometry to trigonometry. Instead of treating an angle as merely the small opening between two rays, trigonometry treats it as a quantity that can rotate through a circle, make multiple turns, and be placed systematically on a coordinate plane."
+          },
+          {
+            "type": "paragraph",
+            "id": "next-concept-bridge",
+            "text": "Once the idea of an angle is clear, the next question is: how do we measure this amount of rotation precisely? That leads to angle measurement and, eventually, to the two most important angle units used in trigonometry: degrees and radians."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [],
+  "examples": [
+    {
+      "id": "identify-angle-parts",
+      "question": "Two rays share the endpoint O. One ray passes through A and the other passes through B. Identify the vertex and the sides of the angle.",
+      "solution": "The common endpoint is O, so O is the vertex. The two sides are the rays extending from O through A and B. The angle can therefore be named angle AOB or angle BOA, provided there is no ambiguity about which angle is intended."
+    },
+    {
+      "id": "standard-position-positive",
+      "question": "Describe how you would place a positive angle in standard position on the coordinate plane.",
+      "solution": "Place the vertex at the origin and draw the initial side along the positive x-axis. Because the angle is positive, rotate the terminal side counterclockwise through the required amount."
+    },
+    {
+      "id": "standard-position-negative",
+      "question": "Describe how you would place a negative angle in standard position.",
+      "solution": "Place the vertex at the origin and the initial side along the positive x-axis. Because the angle is negative, rotate the terminal side clockwise through the required amount."
+    },
+    {
+      "id": "quadrantal-identification",
+      "question": "Why is an angle whose terminal side lies on the y-axis called a quadrantal angle?",
+      "solution": "A quadrantal angle is defined by the location of its terminal side. If the terminal side lies on a coordinate axis, the angle is quadrantal. The y-axis corresponds to the 90° and 270° positions in one full rotation."
+    },
+    {
+      "id": "same-terminal-side",
+      "question": "Can two different rotations end with the terminal side in exactly the same direction?",
+      "solution": "Yes. A rotation can make one or more complete turns and still finish in the same direction as a shorter rotation. This is why angles must be understood as rotations, including direction and the number of complete turns, rather than only as the final geometric position."
+    },
+    {
+      "id": "multiple-rotation",
+      "question": "What happens to the terminal side after one complete counterclockwise rotation?",
+      "solution": "It returns to the same position as the initial side. The terminal side overlaps the initial side, but a complete rotation has still occurred."
+    }
+  ],
+  "key_ideas": [
+    "A ray has one endpoint and extends indefinitely in one direction.",
+    "An angle is formed by two rays with a common endpoint.",
+    "The common endpoint is the vertex and the rays are the sides of the angle.",
+    "An angle can be viewed dynamically as rotation from an initial side to a terminal side.",
+    "The initial side is fixed at the beginning of the rotation and the terminal side is where the rotation ends.",
+    "Counterclockwise rotation represents a positive angle.",
+    "Clockwise rotation represents a negative angle.",
+    "An angle may represent more than one complete rotation.",
+    "An angle in standard position has its vertex at the origin and its initial side along the positive x-axis.",
+    "A quadrantal angle has its terminal side on a coordinate axis.",
+    "The position of an angle's terminal side is different from the total amount of rotation used to reach it.",
+    "The rotational viewpoint of angles provides the foundation for trigonometry and the unit circle."
+  ],
+  "misconceptions": [
+    "An angle is only the small region visually enclosed between two rays.",
+    "Every angle must be positive.",
+    "A negative angle means that the angle has a negative physical size rather than indicating clockwise direction.",
+    "The terminal side must always lie inside one of the four quadrants.",
+    "Two rotations ending at the same terminal side must represent the same angle.",
+    "An angle cannot make more than one complete rotation.",
+    "Standard position means placing the terminal side on the positive x-axis.",
+    "The vertex of a three-letter angle name is the first letter rather than the middle letter.",
+    "The numerical value of an angle tells its complete meaning without considering the direction of rotation."
+  ],
+  "explorations": [],
+  "sources": []
+}

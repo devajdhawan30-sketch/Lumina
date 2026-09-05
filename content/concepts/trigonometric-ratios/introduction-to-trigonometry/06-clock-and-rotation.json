@@ -1,0 +1,249 @@
+{
+  "id": "clock-and-rotation",
+  "title": "Clock and Rotation",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+  "difficulty": 1,
+  "connections": {
+    "prerequisites": [
+      "angles-on-a-circle",
+      "degrees-and-radians"
+    ],
+    "leads_to": [
+      "right-triangles",
+      "trig-ratios"
+    ],
+    "related": [
+      "rotation",
+      "circular-motion",
+      "arc-length",
+      "angular-speed",
+      "linear-speed"
+    ]
+  },
+  "theory": {
+    "introduction": "Angles are not only measurements of static positions. They can also describe how something turns as time passes. A clock hand, wheel, gear, or rotating planet can all be understood by tracking the angle through which they rotate.",
+    "sections": [
+      {
+        "id": "rotation-as-motion",
+        "title": "Rotation turns angle into motion",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "rotation-over-time",
+            "text": "When an object rotates, its position changes continuously around a circle. The amount of rotation can be described by an angle, while the time taken tells us how quickly that rotation occurs."
+          },
+          {
+            "type": "paragraph",
+            "id": "angle-as-change",
+            "text": "For example, a rotating object that completes one full revolution has turned through 360 degrees, or 2π radians. A quarter revolution corresponds to 90 degrees, or π/2 radians."
+          }
+        ]
+      },
+      {
+        "id": "clock-hands",
+        "title": "A clock as a rotation model",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "clock-hand-rotation",
+            "text": "The hands of a clock provide a familiar example of continuous circular rotation. As a hand moves, it sweeps out an angle around the center of the clock."
+          },
+          {
+            "type": "paragraph",
+            "id": "minute-hand-full-turn",
+            "text": "The minute hand completes one full revolution during one hour. Therefore, its angular rotation can be described as 360 degrees per hour, or 2π radians per hour."
+          },
+          {
+            "type": "paragraph",
+            "id": "hour-hand-full-turn",
+            "text": "The hour hand completes one full revolution during twelve hours. Its angular rotation is therefore slower than the minute hand."
+          },
+          {
+            "type": "paragraph",
+            "id": "clock-angle-over-time",
+            "text": "This gives us a useful way to think about rotation: instead of asking only where a hand is, we can ask how much angle it has swept through during a given amount of time."
+          }
+        ]
+      },
+      {
+        "id": "angular-speed",
+        "title": "Angular speed",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "angular-speed-definition",
+            "text": "Angular speed describes how much angular rotation occurs per unit of time. It tells us how quickly an object is turning, rather than how far a point on the object has traveled."
+          },
+          {
+            "type": "paragraph",
+            "id": "angular-speed-units",
+            "text": "Angular speed can be expressed in radians per second, rotations per minute, degrees per hour, or other angle-per-time units."
+          },
+          {
+            "type": "paragraph",
+            "id": "angular-speed-calculation",
+            "text": "To calculate angular speed, express the total rotation in a consistent angle unit, preferably radians when connecting it to linear speed, and divide by the elapsed time."
+          }
+        ]
+      },
+      {
+        "id": "linear-speed",
+        "title": "Linear speed along a circle",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "linear-speed-definition",
+            "text": "A point on a rotating object travels along a circular path. Its linear speed describes the distance traveled along that path per unit of time."
+          },
+          {
+            "type": "paragraph",
+            "id": "arc-distance",
+            "text": "The distance traveled by a point on the circle is measured along an arc. Because arc length depends on both the angle swept and the radius, two points rotating through the same angle can travel different distances if they are at different radii."
+          },
+          {
+            "type": "paragraph",
+            "id": "radius-speed-relationship",
+            "text": "For the same angular speed, a point farther from the center travels a longer distance in the same amount of time. Therefore, its linear speed is greater."
+          }
+        ]
+      },
+      {
+        "id": "angular-and-linear-connection",
+        "title": "How angular and linear speed are connected",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "speed-connection",
+            "text": "When angular speed is measured in radians per unit time, multiplying angular speed by the radius gives the corresponding linear speed."
+          },
+          {
+            "type": "paragraph",
+            "id": "why-radius-matters",
+            "text": "This relationship makes intuitive sense: angular speed tells us how quickly the object turns, while the radius determines how much circular distance is covered for that amount of turning."
+          },
+          {
+            "type": "paragraph",
+            "id": "same-rotation-different-speeds",
+            "text": "Points on the same rotating object share the same angular speed, but points at different distances from the center have different linear speeds."
+          }
+        ]
+      },
+      {
+        "id": "real-world-rotation",
+        "title": "Rotation in the real world",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "wheel-example",
+            "text": "Wheels, gears, turntables, water wheels, satellites, and planetary motion can all be modeled using angular and linear quantities."
+          },
+          {
+            "type": "paragraph",
+            "id": "wheel-road-connection",
+            "text": "For a rolling wheel, the linear speed of a point on the outside of the tire corresponds to the speed at which the wheel moves along the road. This connects circular rotation with ordinary straight-line motion."
+          },
+          {
+            "type": "paragraph",
+            "id": "rotation-trigonometry-bridge",
+            "text": "Rotation gives trigonometry a broader meaning: an angle is not merely something drawn inside a triangle. It can describe position, direction, and motion around a circle."
+          }
+        ]
+      },
+      {
+        "id": "bridge-to-right-triangles",
+        "title": "From rotation to trigonometric functions",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "circle-to-triangle",
+            "text": "Once an angle represents a position around a circle, we can look at the horizontal and vertical components of that position. A right triangle naturally appears when a point on the circle is connected to the coordinate axes."
+          },
+          {
+            "type": "paragraph",
+            "id": "next-step",
+            "text": "This is the bridge to the next stage: using right triangles to build precise relationships between an angle and side lengths."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "angular-speed",
+      "name": "Angular Speed",
+      "expression": "ω = θ/t",
+      "explanation": "Angular speed is the angle of rotation divided by the elapsed time. When θ is measured in radians, ω is measured in radians per unit time."
+    },
+    {
+      "id": "linear-speed",
+      "name": "Linear Speed",
+      "expression": "v = s/t",
+      "explanation": "Linear speed is the distance traveled along a path divided by the elapsed time. For circular motion, the distance traveled is the arc length."
+    },
+    {
+      "id": "linear-angular-speed",
+      "name": "Linear Speed from Angular Speed",
+      "expression": "v = rω",
+      "explanation": "When angular speed is measured in radians per unit time, multiplying it by the radius gives the linear speed of a point moving along the circle."
+    },
+    {
+      "id": "full-revolution",
+      "name": "One Full Revolution",
+      "expression": "1 revolution = 360° = 2π rad",
+      "explanation": "A complete turn around a circle corresponds to 360 degrees or 2π radians."
+    }
+  ],
+  "examples": [
+    {
+      "id": "minute-hand-angle",
+      "question": "How much angle does the minute hand rotate through in 15 minutes?",
+      "solution": "The minute hand completes 360° in 60 minutes. In 15 minutes it completes one-fourth of a revolution, so it rotates through 90°, which is π/2 radians."
+    },
+    {
+      "id": "water-wheel-angular-speed",
+      "question": "A wheel completes 1 rotation every 5 seconds. Find its angular speed in radians per second.",
+      "solution": "One rotation is 2π radians. Therefore, angular speed = 2π/5 radians per second."
+    },
+    {
+      "id": "clock-angular-speed",
+      "question": "What is the angular speed of the minute hand in radians per minute?",
+      "solution": "The minute hand completes 2π radians in 60 minutes. Therefore, ω = 2π/60 = π/30 radians per minute."
+    },
+    {
+      "id": "linear-speed-from-angular",
+      "question": "A point on a circular object is 0.5 m from the center and the object rotates at 4 radians per second. What is the point's linear speed?",
+      "solution": "Use v = rω. Thus v = (0.5)(4) = 2 m/s."
+    },
+    {
+      "id": "bicycle-wheel",
+      "question": "A bicycle wheel has diameter 28 inches and rotates at 180 revolutions per minute. How can its rotation be connected to the bicycle's speed?",
+      "solution": "First convert the rotational rate to radians per minute. Then multiply the angular speed by the wheel radius using v = rω. The resulting linear speed is the speed of the wheel's outer edge, which corresponds to the bicycle's travel speed when the wheel rolls without slipping."
+    }
+  ],
+  "key_ideas": [
+    "Rotation can be described by the angle swept through over time.",
+    "A clock hand is a simple model of continuous circular rotation.",
+    "Angular speed measures angular rotation per unit time.",
+    "Linear speed measures distance traveled per unit time.",
+    "For circular motion, the traveled distance is measured along an arc.",
+    "For the same angular speed, a larger radius produces a larger linear speed.",
+    "When angular speed is in radians per unit time, v = rω connects angular and linear speed.",
+    "One full revolution is 360° or 2π radians.",
+    "Circular motion connects angle measurement with real-world motion.",
+    "The circle-based view of angles prepares us to connect angles with right triangles."
+  ],
+  "misconceptions": [
+    "Angular speed and linear speed are the same quantity.",
+    "Every point on a rotating object has the same linear speed.",
+    "A larger radius changes the angular speed of the whole rigid object.",
+    "Degrees can always be substituted directly into v = rω without conversion.",
+    "A full rotation is π radians.",
+    "Clock hands move through angles but do not provide a mathematical model of rotation.",
+    "The distance traveled by a rotating point is measured along a straight line instead of along the circular path.",
+    "A point farther from the center rotates through a larger angle in the same time."
+  ],
+  "explorations": [],
+  "sources": []
+}
