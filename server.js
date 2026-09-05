@@ -4,9 +4,8 @@ import { extname, join, normalize } from "node:path";
 
 const PORT = process.env.PORT || 3000;
 const publicDir = join(process.cwd(), "public");
+const conceptsDir = join(process.cwd(), "content", "concepts");
 
-// In production this graph belongs in a database / content service. Keeping it
-// here makes the demo deterministic while the API boundary stays the same.
 const topics = [
   { id: "number-sense", title: "Number sense & factors", level: "Grade 6", kind: "foundation", mins: 75, tags: ["Numbers", "Arithmetic"], desc: "Build fluency with factors, multiples, primes and divisibility." },
   { id: "fractions", title: "Fractions, decimals & percentages", level: "Grade 6", kind: "foundation", mins: 100, tags: ["Numbers", "Arithmetic"], desc: "Move flexibly between parts, ratios, decimals and percentages." },
@@ -65,9 +64,7 @@ function roadmap({ grade = "6", topic = "derivatives", interest = "" }) {
   const start = gradeStarts[grade] || "number-sense";
   const target = topics.some(t => t.id === topic) ? topic : "derivatives";
   let path = pathFrom(start, target);
-  if (path.length === 2 && start !== target && !edges.some(e => e[0] === start && e[1] === target)) {
-    path = pathFrom("number-sense", target);
-  }
+  if (path.length === 2 && start !== target && !edges.some(e => e[0] === start && e[1] === target)) path = pathFrom("number-sense", target);
   const nodes = path.map((id, index) => ({ ...topics.find(t => t.id === id), status: index === 0 ? "start" : id === target ? "target" : "next", order: index + 1 }));
   return { learner: { grade, interest }, target, nodes, edges: edges.filter(([from, to]) => path.includes(from) && path.includes(to)), estimate: nodes.reduce((n, t) => n + t.mins, 0), message: `Your path starts with ${nodes[0].title} and builds toward ${nodes.at(-1).title}.` };
 }
@@ -78,13 +75,26 @@ const sendJson = (res, data, status = 200) => { res.writeHead(status, { "Content
 http.createServer(async (req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
   if (url.pathname === "/api/topics") return sendJson(res, { topics });
+
   if (url.pathname === "/api/roadmap" && req.method === "POST") {
     let body = "";
     req.on("data", c => body += c);
     req.on("end", () => { try { sendJson(res, roadmap(JSON.parse(body || "{}"))); } catch { sendJson(res, { error: "Please send valid JSON." }, 400); } });
     return;
   }
-  const requested = url.pathname === "/" ? "index.html" : url.pathname.slice(1);
+
+  if (url.pathname === "/api/concepts/trigonometric-ratios") {
+    try {
+      const file = join(conceptsDir, "trigonometric-ratios", "trigonometric-ratios.json");
+      const concept = JSON.parse(await readFile(file, "utf8"));
+      return sendJson(res, concept);
+    } catch (error) {
+      return sendJson(res, { error: "Concept could not be loaded." }, 404);
+    }
+  }
+
+  let requested = url.pathname === "/" ? "index.html" : url.pathname.slice(1);
+  if (url.pathname === "/concept/trigonometric-ratios" || url.pathname === "/concept/trigonometric-ratios/") requested = "concept.html";
   const file = normalize(join(publicDir, requested));
   if (!file.startsWith(publicDir)) { res.writeHead(403); return res.end("Forbidden"); }
   try { const content = await readFile(file); res.writeHead(200, { "Content-Type": typeMap[extname(file)] || "application/octet-stream" }); res.end(content); }
