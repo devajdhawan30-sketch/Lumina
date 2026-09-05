@@ -10,6 +10,32 @@ npm start
 
 Open `http://localhost:3000`.
 
+## Tutor chatbot
+
+The **Ask Lumina** section is integrated into the main page. It retrieves matching sections from `content/concepts/` first and returns module-aware answers with lesson references. It works without credentials using a deterministic local fallback for the current curriculum.
+
+For richer explanations and optional web context, set a Gemini API key on the server before starting:
+
+```powershell
+$env:GEMINI_API_KEY="your-key"
+$env:GEMINI_MODEL="gemini-3.6-flash" # optional
+$env:GEMINI_WEB_SEARCH="true" # optional; defaults to true when a key is present
+npm start
+```
+
+The browser never receives the API key. The server calls Gemini only after finding matching Lumina lesson context, supplies those sections to the model, and optionally enables Google Search grounding as supplemental context. Questions outside the current Lumina content stay on the local supported-topic response instead of receiving an unrelated generic answer. Web citations are shown below an answer when Gemini returns them. Add approved book or page content to `content/sources/` as it becomes available; Lumina content remains the source of truth for module names and learning sequence. n8n is not required for the request path, but can be added later for scheduled source ingestion or moderation workflows.
+
+The chat API is `POST /api/chat`:
+
+```json
+{
+  "question": "What is sine theta?",
+  "grade": "10"
+}
+```
+
+It returns an `answer`, `mode`, `webUsed`, structured Lumina `references`, and an `externalSources` array when web search citations are available. Keep provider keys in environment variables and never commit them to the repository.
+
 ## What is implemented
 
 - Learner intake: grade, subject (Maths in this demo), target topic, and optional learning motivation.
