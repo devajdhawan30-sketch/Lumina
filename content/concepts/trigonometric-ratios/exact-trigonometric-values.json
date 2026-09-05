@@ -1,0 +1,1044 @@
+{
+  "id": "exact-trigonometric-values",
+  "title": "Exact Trigonometric Values",
+
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+
+  "difficulty": 2,
+
+  "connections": {
+    "prerequisites": [
+      "trigonometric-ratios",
+      "trigonometric-ratios-any-angle"
+    ],
+
+    "leads_to": [
+      "trigonometric-functions"
+    ],
+
+    "related": [
+      "reciprocal-trigonometric-ratios",
+      "trigonometric-ratios-any-angle"
+    ]
+  },
+
+  "theory": {
+    "introduction": "When working with trigonometry, we often need the values of sine, cosine and tangent for certain important angles. A calculator can give decimal approximations, but sometimes we want the exact value instead. Exact trigonometric values are values written using fractions and radicals rather than rounded decimals. The most important angles are \\(0^\\circ\\), \\(30^\\circ\\), \\(45^\\circ\\), \\(60^\\circ\\) and \\(90^\\circ\\). These values are not random numbers to memorize. They can be derived from simple geometric shapes such as an equilateral triangle and an isosceles right triangle. Once these values are understood, reference angles and quadrant signs allow us to find exact trigonometric values for many other angles.",
+
+    "sections": [
+      {
+        "id": "what-is-an-exact-value",
+        "title": "What Does Exact Value Mean?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An exact value represents a quantity without rounding or approximation. For example, \\(\\frac{1}{2}\\) is an exact number, while \\(0.5\\) is its decimal representation."
+          },
+          {
+            "type": "paragraph",
+            "text": "In trigonometry, a calculator might tell us that \\(\\sin(30^\\circ)=0.5\\). Instead of writing the decimal, we can write the exact value \\(\\frac{1}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Some trigonometric values contain square roots. For example, \\(\\sin(45^\\circ)=\\frac{\\sqrt{2}}{2}\\). This is an exact value even though its decimal representation is approximately \\(0.7071\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The important difference is that an exact value does not involve rounding. A decimal such as \\(0.7071\\) is only an approximation of \\(\\frac{\\sqrt{2}}{2}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "why-exact-values-matter",
+        "title": "Why Exact Values Matter",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Exact values are useful because they preserve complete mathematical information. If we round a value too early, small errors can appear in later calculations."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\frac{\\sqrt{2}}{2}\\) contains the complete value of \\(\\sin(45^\\circ)\\), while \\(0.707\\) is only an approximation."
+          },
+          {
+            "type": "paragraph",
+            "text": "Exact values are especially important in algebra, geometry and trigonometric equations because they allow expressions to be simplified symbolically."
+          },
+          {
+            "type": "paragraph",
+            "text": "The goal is therefore not simply to memorize a table. We want to understand where the values come from so that the table becomes logical rather than mysterious."
+          }
+        ]
+      },
+
+      {
+        "id": "important-angles",
+        "title": "The Five Important Angles",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The most commonly used exact trigonometric angles are \\(0^\\circ\\), \\(30^\\circ\\), \\(45^\\circ\\), \\(60^\\circ\\) and \\(90^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "These angles are important because they occur naturally from simple geometric constructions and appear repeatedly in trigonometry."
+          },
+          {
+            "type": "paragraph",
+            "text": "The angles \\(30^\\circ\\) and \\(60^\\circ\\) come from splitting an equilateral triangle into two right triangles."
+          },
+          {
+            "type": "paragraph",
+            "text": "The angle \\(45^\\circ\\) comes from an isosceles right triangle, where the two acute angles must both be \\(45^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The angles \\(0^\\circ\\) and \\(90^\\circ\\) can be understood naturally using the coordinate-plane definition of trigonometric ratios."
+          }
+        ]
+      },
+
+      {
+        "id": "derive-45-degree-triangle",
+        "title": "Deriving the \\(45^\\circ\\) Values",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "To find the exact values for \\(45^\\circ\\), consider an isosceles right triangle. An isosceles triangle has two equal sides, and a right triangle has one angle of \\(90^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The two remaining angles must have equal measures because the triangle has two equal sides. Since the angles in a triangle add to \\(180^\\circ\\), the two acute angles must satisfy \\(\\theta+\\theta+90^\\circ=180^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, \\(2\\theta=90^\\circ\\), so \\(\\theta=45^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Let each of the equal legs have length \\(1\\). We now need to find the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "Using the Pythagorean theorem: \\[1^2+1^2=h^2\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, \\(2=h^2\\), giving \\(h=\\sqrt{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "We now have a \\(45^\\circ-45^\\circ-90^\\circ\\) triangle with side lengths \\(1\\), \\(1\\) and \\(\\sqrt{2}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "sine-45",
+        "title": "Finding \\(\\sin(45^\\circ)\\)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Using SOH-CAH-TOA, sine is opposite divided by hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "In the \\(45^\\circ-45^\\circ-90^\\circ\\) triangle, the opposite side has length \\(1\\) and the hypotenuse has length \\(\\sqrt{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\sin(45^\\circ)=\\frac{1}{\\sqrt{2}}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "We usually rationalize the denominator. Multiply the numerator and denominator by \\(\\sqrt{2}\\): \\[\\frac{1}{\\sqrt{2}}\\times\\frac{\\sqrt{2}}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, \\(\\sin(45^\\circ)=\\frac{\\sqrt{2}}{2}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "cosine-45",
+        "title": "Finding \\(\\cos(45^\\circ)\\)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cosine is adjacent divided by hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a \\(45^\\circ-45^\\circ-90^\\circ\\) triangle, the adjacent leg has length \\(1\\), while the hypotenuse has length \\(\\sqrt{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\cos(45^\\circ)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "This is the same as the sine value because the two legs of the triangle are equal."
+          }
+        ]
+      },
+
+      {
+        "id": "tangent-45",
+        "title": "Finding \\(\\tan(45^\\circ)\\)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Tangent is opposite divided by adjacent."
+          },
+          {
+            "type": "paragraph",
+            "text": "Both legs of the \\(45^\\circ-45^\\circ-90^\\circ\\) triangle have length \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\tan(45^\\circ)=\\frac{1}{1}=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "So the three basic exact values at \\(45^\\circ\\) are \\(\\sin(45^\\circ)=\\frac{\\sqrt{2}}{2}\\), \\(\\cos(45^\\circ)=\\frac{\\sqrt{2}}{2}\\), and \\(\\tan(45^\\circ)=1\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "derive-30-60-triangle",
+        "title": "Deriving the \\(30^\\circ\\) and \\(60^\\circ\\) Values",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The exact values for \\(30^\\circ\\) and \\(60^\\circ\\) come from an equilateral triangle."
+          },
+          {
+            "type": "paragraph",
+            "text": "An equilateral triangle has three equal sides and three equal angles. Since the angles of a triangle add to \\(180^\\circ\\), each angle is \\(60^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Take an equilateral triangle whose side length is \\(2\\). Draw a perpendicular line from the top vertex to the midpoint of the opposite side."
+          },
+          {
+            "type": "paragraph",
+            "text": "The perpendicular line divides the equilateral triangle into two congruent right triangles."
+          },
+          {
+            "type": "paragraph",
+            "text": "Each right triangle has angles \\(30^\\circ\\), \\(60^\\circ\\) and \\(90^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The hypotenuse is the original side of the equilateral triangle, so its length is \\(2\\). The bottom half of the original side has length \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Let the remaining side have length \\(h\\). Using the Pythagorean theorem: \\[1^2+h^2=2^2\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[1+h^2=4\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "So \\(h^2=3\\), giving \\(h=\\sqrt{3}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The resulting \\(30^\\circ-60^\\circ-90^\\circ\\) triangle therefore has side lengths \\(1\\), \\(\\sqrt{3}\\), and \\(2\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "side-roles-30-60",
+        "title": "Understanding the Side Roles",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "In the \\(30^\\circ-60^\\circ-90^\\circ\\) triangle, the side opposite \\(30^\\circ\\) has length \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The side opposite \\(60^\\circ\\) has length \\(\\sqrt{3}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The hypotenuse, which is opposite the \\(90^\\circ\\) angle, has length \\(2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This distinction is extremely important. The same triangle can be used to find values for both \\(30^\\circ\\) and \\(60^\\circ\\), but the opposite and adjacent sides change depending on which angle we are considering."
+          },
+          {
+            "type": "paragraph",
+            "text": "For \\(30^\\circ\\), the opposite side is \\(1\\) and the adjacent side is \\(\\sqrt{3}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For \\(60^\\circ\\), the opposite side is \\(\\sqrt{3}\\) and the adjacent side is \\(1\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "sine-30",
+        "title": "Finding \\(\\sin(30^\\circ)\\)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For the \\(30^\\circ\\) angle, the opposite side is \\(1\\) and the hypotenuse is \\(2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Using the sine definition: \\[\\sin(30^\\circ)=\\frac{\\text{opposite}}{\\text{hypotenuse}}=\\frac{1}{2}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, \\(\\sin(30^\\circ)=\\frac{1}{2}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "cosine-30",
+        "title": "Finding \\(\\cos(30^\\circ)\\)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For the \\(30^\\circ\\) angle, the adjacent side is \\(\\sqrt{3}\\) and the hypotenuse is \\(2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\cos(30^\\circ)=\\frac{\\sqrt{3}}{2}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "So the exact value is \\(\\cos(30^\\circ)=\\frac{\\sqrt{3}}{2}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "tangent-30",
+        "title": "Finding \\(\\tan(30^\\circ)\\)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For the \\(30^\\circ\\) angle, the opposite side is \\(1\\) and the adjacent side is \\(\\sqrt{3}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\tan(30^\\circ)=\\frac{1}{\\sqrt{3}}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Rationalizing the denominator gives: \\[\\frac{1}{\\sqrt{3}}\\times\\frac{\\sqrt{3}}{\\sqrt{3}}=\\frac{\\sqrt{3}}{3}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, \\(\\tan(30^\\circ)=\\frac{\\sqrt{3}}{3}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "sine-60",
+        "title": "Finding \\(\\sin(60^\\circ)\\)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For the \\(60^\\circ\\) angle, the opposite side is \\(\\sqrt{3}\\) and the hypotenuse is \\(2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\sin(60^\\circ)=\\frac{\\sqrt{3}}{2}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "So the exact value is \\(\\sin(60^\\circ)=\\frac{\\sqrt{3}}{2}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "cosine-60",
+        "title": "Finding \\(\\cos(60^\\circ)\\)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For the \\(60^\\circ\\) angle, the adjacent side is \\(1\\) and the hypotenuse is \\(2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\cos(60^\\circ)=\\frac{1}{2}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, \\(\\cos(60^\\circ)=\\frac{1}{2}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "tangent-60",
+        "title": "Finding \\(\\tan(60^\\circ)\\)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For the \\(60^\\circ\\) angle, the opposite side is \\(\\sqrt{3}\\) and the adjacent side is \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\tan(60^\\circ)=\\frac{\\sqrt{3}}{1}=\\sqrt{3}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "So the exact value is \\(\\tan(60^\\circ)=\\sqrt{3}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "zero-degree-values",
+        "title": "Understanding the Values at \\(0^\\circ\\)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An angle of \\(0^\\circ\\) means that the terminal side has not rotated away from the positive x-axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "Using the coordinate definition, imagine a point \\((r,0)\\) on the positive x-axis. Since the y-coordinate is \\(0\\), sine is \\(0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine uses \\(x/r\\). Since \\(x=r\\), cosine is \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent uses \\(y/x\\). Since \\(y=0\\), tangent is \\(0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\sin(0^\\circ)=0,\\qquad\\cos(0^\\circ)=1,\\qquad\\tan(0^\\circ)=0\\]"
+          }
+        ]
+      },
+
+      {
+        "id": "ninety-degree-values",
+        "title": "Understanding the Values at \\(90^\\circ\\)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An angle of \\(90^\\circ\\) means the terminal side has rotated counterclockwise from the positive x-axis to the positive y-axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "A point on the terminal side can be written as \\((0,r)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since \\(y=r\\), sine is \\(1\\): \\[\\sin(90^\\circ)=\\frac{r}{r}=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Since \\(x=0\\), cosine is \\(0\\): \\[\\cos(90^\\circ)=\\frac{0}{r}=0\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent would require dividing by \\(x=0\\): \\[\\tan(90^\\circ)=\\frac{r}{0}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Division by zero is undefined. Therefore, \\(\\tan(90^\\circ)\\) is undefined."
+          }
+        ]
+      },
+
+      {
+        "id": "complete-exact-value-table",
+        "title": "The Complete Exact-Value Table",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We can now combine the values we derived for the five important angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "The sine values are: \\(0,\\frac{1}{2},\\frac{\\sqrt{2}}{2},\\frac{\\sqrt{3}}{2},1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The cosine values are: \\(1,\\frac{\\sqrt{3}}{2},\\frac{\\sqrt{2}}{2},\\frac{1}{2},0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The tangent values are: \\(0,\\frac{\\sqrt{3}}{3},1,\\sqrt{3}\\), followed by an undefined value at \\(90^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The table should not be treated as a collection of unrelated numbers. Each value comes from the geometry of the two special right triangles or from the coordinate definitions at the axes."
+          }
+        ]
+      },
+
+      {
+        "id": "patterns-in-exact-values",
+        "title": "Patterns in the Exact-Value Table",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The exact-value table contains useful patterns that can make it easier to remember."
+          },
+          {
+            "type": "paragraph",
+            "text": "From \\(0^\\circ\\) to \\(90^\\circ\\), sine increases from \\(0\\) to \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Over the same interval, cosine decreases from \\(1\\) to \\(0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(45^\\circ\\), sine and cosine are equal because the two legs of the right triangle are equal."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent starts at \\(0\\) and increases as the angle approaches \\(90^\\circ\\), becoming undefined exactly at \\(90^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "These patterns are useful for checking whether a remembered value makes sense."
+          }
+        ]
+      },
+
+      {
+        "id": "using-reference-angles",
+        "title": "Using Reference Angles with Exact Values",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The exact values we derived apply directly to the first-quadrant angles \\(30^\\circ\\), \\(45^\\circ\\) and \\(60^\\circ\\). But reference angles allow us to use the same values for angles in other quadrants."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(150^\\circ\\) has reference angle \\(30^\\circ\\). Therefore, its trigonometric magnitude is based on the exact values for \\(30^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because \\(150^\\circ\\) is in Quadrant II, sine is positive and cosine is negative."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\sin(150^\\circ)=\\frac{1}{2}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "and \\[\\cos(150^\\circ)=-\\frac{\\sqrt{3}}{2}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The important idea is that the reference angle supplies the familiar exact value, while the quadrant supplies the sign."
+          }
+        ]
+      },
+
+      {
+        "id": "quadrant-two-exact-values",
+        "title": "Exact Values in Quadrant II",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "In Quadrant II, sine is positive, while cosine and tangent are negative."
+          },
+          {
+            "type": "paragraph",
+            "text": "Consider \\(120^\\circ\\). Its reference angle is \\(60^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The exact values for \\(60^\\circ\\) are \\(\\sin(60^\\circ)=\\frac{\\sqrt{3}}{2}\\), \\(\\cos(60^\\circ)=\\frac{1}{2}\\), and \\(\\tan(60^\\circ)=\\sqrt{3}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since \\(120^\\circ\\) is in Quadrant II, we keep the sine value positive and make cosine and tangent negative."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\sin(120^\\circ)=\\frac{\\sqrt{3}}{2},\\qquad\\cos(120^\\circ)=-\\frac{1}{2},\\qquad\\tan(120^\\circ)=-\\sqrt{3}\\]"
+          }
+        ]
+      },
+
+      {
+        "id": "quadrant-three-exact-values",
+        "title": "Exact Values in Quadrant III",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "In Quadrant III, both sine and cosine are negative, while tangent is positive."
+          },
+          {
+            "type": "paragraph",
+            "text": "Consider \\(225^\\circ\\). Its reference angle is \\(45^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(45^\\circ\\), sine and cosine both have magnitude \\(\\frac{\\sqrt{2}}{2}\\), while tangent has magnitude \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because \\(225^\\circ\\) lies in Quadrant III, sine and cosine become negative while tangent remains positive."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\sin(225^\\circ)=-\\frac{\\sqrt{2}}{2},\\qquad\\cos(225^\\circ)=-\\frac{\\sqrt{2}}{2},\\qquad\\tan(225^\\circ)=1\\]"
+          }
+        ]
+      },
+
+      {
+        "id": "quadrant-four-exact-values",
+        "title": "Exact Values in Quadrant IV",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "In Quadrant IV, sine and tangent are negative while cosine is positive."
+          },
+          {
+            "type": "paragraph",
+            "text": "Consider \\(315^\\circ\\). Its reference angle is \\(45^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The magnitude of sine and cosine for the reference angle is \\(\\frac{\\sqrt{2}}{2}\\), and the magnitude of tangent is \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because \\(315^\\circ\\) is in Quadrant IV, sine and tangent are negative while cosine is positive."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore: \\[\\sin(315^\\circ)=-\\frac{\\sqrt{2}}{2},\\qquad\\cos(315^\\circ)=\\frac{\\sqrt{2}}{2},\\qquad\\tan(315^\\circ)=-1\\]"
+          }
+        ]
+      },
+
+      {
+        "id": "systematic-method-exact-values",
+        "title": "A Systematic Method for Exact Values",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "When asked to find the exact trigonometric value of an angle, use a consistent procedure rather than guessing."
+          },
+          {
+            "type": "paragraph",
+            "text": "First, determine the quadrant of the angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Second, find the reference angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Third, identify the exact value associated with the reference angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Fourth, determine the sign using the quadrant."
+          },
+          {
+            "type": "paragraph",
+            "text": "Finally, write the exact value without converting it to a decimal."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, for \\(300^\\circ\\), the reference angle is \\(60^\\circ\\). The exact value of \\(\\sin(60^\\circ)\\) is \\(\\frac{\\sqrt{3}}{2}\\). Since \\(300^\\circ\\) lies in Quadrant IV, sine is negative. Therefore \\(\\sin(300^\\circ)=-\\frac{\\sqrt{3}}{2}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "exact-values-without-calculator",
+        "title": "Why You Can Solve These Without a Calculator",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The special-angle values do not need to be discovered using a calculator. They come directly from geometry."
+          },
+          {
+            "type": "paragraph",
+            "text": "The \\(45^\\circ\\) values come from the side lengths \\(1\\), \\(1\\), and \\(\\sqrt{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The \\(30^\\circ\\) and \\(60^\\circ\\) values come from the side lengths \\(1\\), \\(\\sqrt{3}\\), and \\(2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The \\(0^\\circ\\) and \\(90^\\circ\\) values come naturally from the coordinate definitions."
+          },
+          {
+            "type": "paragraph",
+            "text": "This is why these values can be known exactly even when their decimal representations are irrational."
+          }
+        ]
+      },
+
+      {
+        "id": "big-picture-exact-values",
+        "title": "The Big Picture",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Exact trigonometric values are a direct continuation of the ideas already learned. We use right triangles to derive the values for \\(30^\\circ\\), \\(45^\\circ\\) and \\(60^\\circ\\), and coordinate-plane ideas to understand \\(0^\\circ\\) and \\(90^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The \\(45^\\circ-45^\\circ-90^\\circ\\) triangle produces the values involving \\(\\sqrt{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The \\(30^\\circ-60^\\circ-90^\\circ\\) triangle produces the values involving \\(\\sqrt{3}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Reference angles then allow these exact values to be used for angles in other quadrants."
+          },
+          {
+            "type": "paragraph",
+            "text": "The final strategy is therefore simple: find the reference angle, use the exact value for that familiar angle, and then apply the correct sign from the quadrant."
+          }
+        ]
+      }
+    ]
+  },
+
+  "formulas": [
+    {
+      "id": "forty-five-triangle-hypotenuse",
+      "name": "Hypotenuse of a 45°-45°-90° Triangle",
+      "expression": "\\[h=\\sqrt{2}\\]",
+      "explanation": "If both legs of an isosceles right triangle have length 1, the Pythagorean theorem gives a hypotenuse of \\(\\sqrt{2}\\)."
+    },
+    {
+      "id": "thirty-sixty-ninety-side-ratio",
+      "name": "30°-60°-90° Side Ratio",
+      "expression": "\\[1:\\sqrt{3}:2\\]",
+      "explanation": "In a 30°-60°-90° triangle, the side opposite 30° has relative length 1, the side opposite 60° has relative length \\(\\sqrt{3}\\), and the hypotenuse has relative length 2."
+    },
+    {
+      "id": "sine-zero",
+      "name": "Sine of 0°",
+      "expression": "\\[\\sin(0^\\circ)=0\\]",
+      "explanation": "At 0°, the terminal side lies on the positive x-axis, so the y-coordinate is zero."
+    },
+    {
+      "id": "cosine-zero",
+      "name": "Cosine of 0°",
+      "expression": "\\[\\cos(0^\\circ)=1\\]",
+      "explanation": "At 0°, the terminal side lies on the positive x-axis, so the x-coordinate equals r."
+    },
+    {
+      "id": "tangent-zero",
+      "name": "Tangent of 0°",
+      "expression": "\\[\\tan(0^\\circ)=0\\]",
+      "explanation": "At 0°, the y-coordinate is zero, so \\(y/x=0\\)."
+    },
+    {
+      "id": "sine-ninety",
+      "name": "Sine of 90°",
+      "expression": "\\[\\sin(90^\\circ)=1\\]",
+      "explanation": "At 90°, the terminal side lies on the positive y-axis, so \\(y=r\\)."
+    },
+    {
+      "id": "cosine-ninety",
+      "name": "Cosine of 90°",
+      "expression": "\\[\\cos(90^\\circ)=0\\]",
+      "explanation": "At 90°, the terminal side lies on the y-axis, so \\(x=0\\)."
+    },
+    {
+      "id": "tangent-ninety",
+      "name": "Tangent of 90°",
+      "expression": "\\[\\tan(90^\\circ)\\text{ is undefined}\\]",
+      "explanation": "Tangent is \\(y/x\\), and at 90° the x-coordinate is zero, so the expression requires division by zero."
+    },
+    {
+      "id": "exact-value-table",
+      "name": "Basic Exact Trigonometric Values",
+      "expression": "\\[\\begin{array}{c|ccccc}\\theta&0^\\circ&30^\\circ&45^\\circ&60^\\circ&90^\\circ\\\\\\hline\\sin\\theta&0&\\frac12&\\frac{\\sqrt2}{2}&\\frac{\\sqrt3}{2}&1\\\\\\cos\\theta&1&\\frac{\\sqrt3}{2}&\\frac{\\sqrt2}{2}&\\frac12&0\\\\\\tan\\theta&0&\\frac{\\sqrt3}{3}&1&\\sqrt3&\\text{undefined}\\end{array}\\]",
+      "explanation": "This table collects the exact values derived from the special right triangles and coordinate-plane definitions."
+    }
+  ],
+
+  "examples": [
+    {
+      "id": "exact-example-1",
+      "question": "What is meant by an exact trigonometric value?",
+      "solution": "An exact trigonometric value is a value written without rounding. For example, \\(\\sin(45^\\circ)=\\frac{\\sqrt{2}}{2}\\) is exact, while \\(0.7071\\) is only an approximation."
+    },
+    {
+      "id": "exact-example-2",
+      "question": "Find \\(\\sin(45^\\circ)\\).",
+      "solution": "Use a 45°-45°-90° triangle with legs 1 and hypotenuse \\(\\sqrt{2}\\). Then \\[\\sin(45^\\circ)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}.\\]"
+    },
+    {
+      "id": "exact-example-3",
+      "question": "Find \\(\\cos(45^\\circ)\\).",
+      "solution": "In a 45°-45°-90° triangle, the adjacent leg is 1 and the hypotenuse is \\(\\sqrt{2}\\). Therefore \\[\\cos(45^\\circ)=\\frac{1}{\\sqrt{2}}=\\frac{\\sqrt{2}}{2}.\\]"
+    },
+    {
+      "id": "exact-example-4",
+      "question": "Find \\(\\tan(45^\\circ)\\).",
+      "solution": "Both legs of a 45°-45°-90° triangle are equal. Therefore \\[\\tan(45^\\circ)=\\frac{1}{1}=1.\\]"
+    },
+    {
+      "id": "exact-example-5",
+      "question": "Find \\(\\sin(30^\\circ)\\).",
+      "solution": "In a 30°-60°-90° triangle, the side opposite 30° has length 1 and the hypotenuse has length 2. Therefore \\[\\sin(30^\\circ)=\\frac{1}{2}.\\]"
+    },
+    {
+      "id": "exact-example-6",
+      "question": "Find \\(\\cos(30^\\circ)\\).",
+      "solution": "The adjacent side to 30° has length \\(\\sqrt{3}\\), and the hypotenuse has length 2. Therefore \\[\\cos(30^\\circ)=\\frac{\\sqrt{3}}{2}.\\]"
+    },
+    {
+      "id": "exact-example-7",
+      "question": "Find \\(\\tan(30^\\circ)\\).",
+      "solution": "The opposite side is 1 and the adjacent side is \\(\\sqrt{3}\\). Therefore \\[\\tan(30^\\circ)=\\frac{1}{\\sqrt{3}}=\\frac{\\sqrt{3}}{3}.\\]"
+    },
+    {
+      "id": "exact-example-8",
+      "question": "Find \\(\\sin(60^\\circ)\\).",
+      "solution": "The side opposite 60° has length \\(\\sqrt{3}\\), while the hypotenuse has length 2. Therefore \\[\\sin(60^\\circ)=\\frac{\\sqrt{3}}{2}.\\]"
+    },
+    {
+      "id": "exact-example-9",
+      "question": "Find \\(\\cos(60^\\circ)\\).",
+      "solution": "The adjacent side is 1 and the hypotenuse is 2. Therefore \\[\\cos(60^\\circ)=\\frac{1}{2}.\\]"
+    },
+    {
+      "id": "exact-example-10",
+      "question": "Find \\(\\tan(60^\\circ)\\).",
+      "solution": "The opposite side is \\(\\sqrt{3}\\) and the adjacent side is 1. Therefore \\[\\tan(60^\\circ)=\\sqrt{3}.\\]"
+    },
+    {
+      "id": "exact-example-11",
+      "question": "Find \\(\\sin(0^\\circ)\\), \\(\\cos(0^\\circ)\\), and \\(\\tan(0^\\circ)\\).",
+      "solution": "At 0°, the terminal side lies on the positive x-axis. Therefore \\(y=0\\) and \\(x=r\\). Hence \\[\\sin(0^\\circ)=0,\\qquad\\cos(0^\\circ)=1,\\qquad\\tan(0^\\circ)=0.\\]"
+    },
+    {
+      "id": "exact-example-12",
+      "question": "Find \\(\\sin(90^\\circ)\\), \\(\\cos(90^\\circ)\\), and \\(\\tan(90^\\circ)\\).",
+      "solution": "At 90°, the terminal side lies on the positive y-axis, so \\(x=0\\) and \\(y=r\\). Thus \\[\\sin(90^\\circ)=1,\\qquad\\cos(90^\\circ)=0.\\] Tangent is \\(y/x=r/0\\), which is undefined."
+    },
+    {
+      "id": "exact-example-13",
+      "question": "Find \\(\\sin(150^\\circ)\\).",
+      "solution": "First find the reference angle: \\[180^\\circ-150^\\circ=30^\\circ.\\] The exact value of \\(\\sin(30^\\circ)\\) is \\(\\frac12\\). Since 150° is in Quadrant II and sine is positive there, \\[\\sin(150^\\circ)=\\frac12.\\]"
+    },
+    {
+      "id": "exact-example-14",
+      "question": "Find \\(\\cos(150^\\circ)\\).",
+      "solution": "The reference angle is 30°. Since \\(\\cos(30^\\circ)=\\frac{\\sqrt3}{2}\\) and cosine is negative in Quadrant II, \\[\\cos(150^\\circ)=-\\frac{\\sqrt3}{2}.\\]"
+    },
+    {
+      "id": "exact-example-15",
+      "question": "Find \\(\\tan(150^\\circ)\\).",
+      "solution": "The reference angle is 30°. Since \\(\\tan(30^\\circ)=\\frac{\\sqrt3}{3}\\) and tangent is negative in Quadrant II, \\[\\tan(150^\\circ)=-\\frac{\\sqrt3}{3}.\\]"
+    },
+    {
+      "id": "exact-example-16",
+      "question": "Find \\(\\sin(210^\\circ)\\).",
+      "solution": "The reference angle is \\(210^\\circ-180^\\circ=30^\\circ\\). Since sine is negative in Quadrant III, \\[\\sin(210^\\circ)=-\\frac12.\\]"
+    },
+    {
+      "id": "exact-example-17",
+      "question": "Find \\(\\cos(225^\\circ)\\).",
+      "solution": "The reference angle is \\(225^\\circ-180^\\circ=45^\\circ\\). Since \\(\\cos(45^\\circ)=\\frac{\\sqrt2}{2}\\) and cosine is negative in Quadrant III, \\[\\cos(225^\\circ)=-\\frac{\\sqrt2}{2}.\\]"
+    },
+    {
+      "id": "exact-example-18",
+      "question": "Find \\(\\tan(240^\\circ)\\).",
+      "solution": "The reference angle is \\(240^\\circ-180^\\circ=60^\\circ\\). Since \\(\\tan(60^\\circ)=\\sqrt3\\) and tangent is positive in Quadrant III, \\[\\tan(240^\\circ)=\\sqrt3.\\]"
+    },
+    {
+      "id": "exact-example-19",
+      "question": "Find \\(\\sin(300^\\circ)\\).",
+      "solution": "The reference angle is \\(360^\\circ-300^\\circ=60^\\circ\\). Since \\(\\sin(60^\\circ)=\\frac{\\sqrt3}{2}\\) and sine is negative in Quadrant IV, \\[\\sin(300^\\circ)=-\\frac{\\sqrt3}{2}.\\]"
+    },
+    {
+      "id": "exact-example-20",
+      "question": "Find \\(\\cos(315^\\circ)\\).",
+      "solution": "The reference angle is \\(360^\\circ-315^\\circ=45^\\circ\\). Since \\(\\cos(45^\\circ)=\\frac{\\sqrt2}{2}\\) and cosine is positive in Quadrant IV, \\[\\cos(315^\\circ)=\\frac{\\sqrt2}{2}.\\]"
+    },
+    {
+      "id": "exact-example-21",
+      "question": "Find \\(\\tan(315^\\circ)\\).",
+      "solution": "The reference angle is 45°. Since \\(\\tan(45^\\circ)=1\\) and tangent is negative in Quadrant IV, \\[\\tan(315^\\circ)=-1.\\]"
+    },
+    {
+      "id": "exact-example-22",
+      "question": "Find the exact value of \\(\\sin(120^\\circ)\\).",
+      "solution": "The angle is in Quadrant II. Its reference angle is \\(180^\\circ-120^\\circ=60^\\circ\\). Since \\(\\sin(60^\\circ)=\\frac{\\sqrt3}{2}\\) and sine is positive in Quadrant II, \\[\\sin(120^\\circ)=\\frac{\\sqrt3}{2}.\\]"
+    },
+    {
+      "id": "exact-example-23",
+      "question": "Find the exact value of \\(\\cos(240^\\circ)\\).",
+      "solution": "The angle is in Quadrant III. Its reference angle is \\(240^\\circ-180^\\circ=60^\\circ\\). Since \\(\\cos(60^\\circ)=\\frac12\\) and cosine is negative in Quadrant III, \\[\\cos(240^\\circ)=-\\frac12.\\]"
+    },
+    {
+      "id": "exact-example-24",
+      "question": "Find the exact value of \\(\\sin(315^\\circ)\\).",
+      "solution": "The angle is in Quadrant IV. Its reference angle is \\(360^\\circ-315^\\circ=45^\\circ\\). Since \\(\\sin(45^\\circ)=\\frac{\\sqrt2}{2}\\) and sine is negative in Quadrant IV, \\[\\sin(315^\\circ)=-\\frac{\\sqrt2}{2}.\\]"
+    },
+    {
+      "id": "exact-example-25",
+      "question": "Without using a calculator, find \\(\\sin(330^\\circ)\\).",
+      "solution": "First find the reference angle: \\(360^\\circ-330^\\circ=30^\\circ\\). The exact value of \\(\\sin(30^\\circ)\\) is \\(\\frac12\\). Since 330° lies in Quadrant IV, sine is negative. Therefore \\[\\sin(330^\\circ)=-\\frac12.\\]"
+    },
+    {
+      "id": "exact-example-26",
+      "question": "Without using a calculator, find \\(\\cos(135^\\circ)\\).",
+      "solution": "The reference angle is \\(180^\\circ-135^\\circ=45^\\circ\\). The exact value of \\(\\cos(45^\\circ)\\) is \\(\\frac{\\sqrt2}{2}\\). Since 135° is in Quadrant II, cosine is negative. Therefore \\[\\cos(135^\\circ)=-\\frac{\\sqrt2}{2}.\\]"
+    },
+    {
+      "id": "exact-example-27",
+      "question": "Without using a calculator, find \\(\\tan(225^\\circ)\\).",
+      "solution": "The reference angle is \\(225^\\circ-180^\\circ=45^\\circ\\). Since \\(\\tan(45^\\circ)=1\\) and tangent is positive in Quadrant III, \\[\\tan(225^\\circ)=1.\\]"
+    },
+    {
+      "id": "exact-example-28",
+      "question": "Why is \\(\\sin(45^\\circ)=\\cos(45^\\circ)\\)?",
+      "solution": "A 45°-45°-90° triangle has two equal legs. For either 45° angle, the opposite and adjacent sides therefore have equal lengths. Since sine is opposite over hypotenuse and cosine is adjacent over hypotenuse, the two ratios are equal. Hence \\[\\sin(45^\\circ)=\\cos(45^\\circ)=\\frac{\\sqrt2}{2}.\\]"
+    },
+    {
+      "id": "exact-example-29",
+      "question": "Why is \\(\\tan(60^\\circ)\\) larger than \\(\\tan(30^\\circ)\\)?",
+      "solution": "In the 30°-60°-90° triangle, for 30° the opposite side is 1 and the adjacent side is \\(\\sqrt3\\), giving \\(\\tan(30^\\circ)=\\frac{\\sqrt3}{3}\\). For 60°, the opposite and adjacent sides switch roles, giving \\(\\tan(60^\\circ)=\\sqrt3\\). Thus the tangent value is larger for 60°."
+    },
+    {
+      "id": "exact-example-30",
+      "question": "Explain why \\(\\tan(90^\\circ)\\) is undefined rather than equal to a very large number.",
+      "solution": "Tangent is defined as \\(y/x\\). At 90°, \\(x=0\\), so the expression becomes division by zero. Division by zero is undefined. Although tangent values can become extremely large as an angle approaches 90°, the value at exactly 90° is not a finite number and is undefined."
+    }
+  ],
+
+  "key_ideas": [
+    "An exact value is not rounded or approximated.",
+    "The most important special angles are \\(0^\\circ\\), \\(30^\\circ\\), \\(45^\\circ\\), \\(60^\\circ\\) and \\(90^\\circ\\).",
+    "The \\(45^\\circ\\) values come from a 45°-45°-90° triangle.",
+    "A 45°-45°-90° triangle with legs 1 and 1 has hypotenuse \\(\\sqrt2\\).",
+    "\\(\\sin(45^\\circ)=\\frac{\\sqrt2}{2}\\).",
+    "\\(\\cos(45^\\circ)=\\frac{\\sqrt2}{2}\\).",
+    "\\(\\tan(45^\\circ)=1\\).",
+    "The \\(30^\\circ\\) and \\(60^\\circ\\) values come from a 30°-60°-90° triangle.",
+    "A 30°-60°-90° triangle has side ratio \\(1:\\sqrt3:2\\).",
+    "\\(\\sin(30^\\circ)=\\frac12\\).",
+    "\\(\\cos(30^\\circ)=\\frac{\\sqrt3}{2}\\).",
+    "\\(\\tan(30^\\circ)=\\frac{\\sqrt3}{3}\\).",
+    "\\(\\sin(60^\\circ)=\\frac{\\sqrt3}{2}\\).",
+    "\\(\\cos(60^\\circ)=\\frac12\\).",
+    "\\(\\tan(60^\\circ)=\\sqrt3\\).",
+    "\\(\\sin(0^\\circ)=0\\).",
+    "\\(\\cos(0^\\circ)=1\\).",
+    "\\(\\tan(0^\\circ)=0\\).",
+    "\\(\\sin(90^\\circ)=1\\).",
+    "\\(\\cos(90^\\circ)=0\\).",
+    "\\(\\tan(90^\\circ)\\) is undefined.",
+    "The exact-value table can be derived instead of memorized blindly.",
+    "Reference angles connect angles in other quadrants to the special acute angles.",
+    "The reference angle determines the magnitude of the exact value.",
+    "The quadrant determines the sign.",
+    "Sine is positive in Quadrants I and II.",
+    "Cosine is positive in Quadrants I and IV.",
+    "Tangent is positive in Quadrants I and III.",
+    "Exact values should normally be left in radical or fractional form instead of decimal form.",
+    "Rationalizing denominators is commonly used to write exact values in standard form."
+  ],
+
+  "misconceptions": [
+    "An exact value is not the same as a rounded decimal approximation.",
+    "The exact-value table is not a list of unrelated numbers; the values come from geometry.",
+    "The hypotenuse of a 45°-45°-90° triangle with legs 1 is \\(\\sqrt2\\), not 2.",
+    "In a 30°-60°-90° triangle, the side opposite 30° is the shortest side.",
+    "The side opposite 60° is \\(\\sqrt3\\) times the shortest side when the shortest side is 1.",
+    "The hypotenuse is always opposite the 90° angle.",
+    "Opposite and adjacent depend on which angle is being considered.",
+    "\\(\\sin(30^\\circ)\\) and \\(\\cos(60^\\circ)\\) are equal because both are \\(\\frac12\\).",
+    "\\(\\cos(30^\\circ)\\) and \\(\\sin(60^\\circ)\\) are equal because both are \\(\\frac{\\sqrt3}{2}\\).",
+    "\\(\\tan(30^\\circ)\\) is not \\(\\sqrt3\\); it is \\(\\frac{\\sqrt3}{3}\\).",
+    "\\(\\tan(60^\\circ)\\) is \\(\\sqrt3\\), not \\(\\frac{\\sqrt3}{3}\\).",
+    "\\(\\tan(90^\\circ)\\) is undefined, not zero.",
+    "\\(\\cos(90^\\circ)=0\\), while \\(\\sin(90^\\circ)=1\\).",
+    "A reference angle does not determine the sign of a trigonometric value.",
+    "The quadrant must still be considered after finding the reference angle.",
+    "An angle in Quadrant III does not make every trigonometric ratio negative; tangent is positive there.",
+    "Exact values should not be unnecessarily converted to decimals.",
+    "A radical such as \\(\\sqrt2\\) is an exact value even though its decimal representation is irrational.",
+    "Rationalizing a denominator does not change the value of an expression.",
+    "The special-angle values can be derived without using a calculator."
+  ],
+
+  "explorations": [
+    {
+      "id": "visualize-45-degree-triangle",
+      "type": "visualization"
+    },
+    {
+      "id": "visualize-30-60-90-triangle",
+      "type": "visualization"
+    },
+    {
+      "id": "visualize-exact-value-table",
+      "type": "visualization"
+    },
+    {
+      "id": "visualize-reference-angle-exact-values",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-changing-triangle-scale",
+      "type": "experiment"
+    },
+    {
+      "id": "explore-special-angle-ratios",
+      "type": "experiment"
+    },
+    {
+      "id": "explore-quadrant-signs",
+      "type": "experiment"
+    },
+    {
+      "id": "why-45-values-are-equal",
+      "type": "why"
+    },
+    {
+      "id": "why-30-60-values-are-related",
+      "type": "why"
+    },
+    {
+      "id": "why-tangent-90-undefined",
+      "type": "why"
+    },
+    {
+      "id": "deeper-exact-values-from-geometry",
+      "type": "go-deeper"
+    }
+  ],
+
+  "sources": [
+    "khan-academy-trigonometry",
+    "openstax-precalculus"
+  ]
+}
