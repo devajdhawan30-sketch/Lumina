@@ -1,1028 +1,1115 @@
 {
-  "id": "trigonometric-ratios-any-angle",
-  "title": "Trigonometric Ratios for Any Angle",
-
+  "id": "reciprocal-trigonometric-ratios",
+  "title": "Reciprocal Trigonometric Ratios",
   "subject": "mathematics",
   "topic": "trigonometry",
   "section": "intro-trigono",
-
   "difficulty": 2,
-
   "connections": {
     "prerequisites": [
-      "trigonometric-ratios",
-      "reciprocal-trigonometric-ratios"
+      "trigonometric-ratios"
     ],
-
     "leads_to": [
-      "exact-trigonometric-values",
+      "trigonometric-ratios-any-angle",
       "trigonometric-functions"
     ],
-
     "related": [
-      "trigonometric-ratios",
-      "reciprocal-trigonometric-ratios"
+      "trigonometric-ratios"
     ]
   },
-
   "theory": {
-    "introduction": "So far, trigonometric ratios have been introduced using right triangles. This works naturally when the angle being studied is acute, meaning it lies between 0° and 90°. But angles can be much larger than 90°, and they can also be negative. To make trigonometry useful for every possible angle, we need to extend the definitions of sine, cosine and tangent beyond the right triangle. The coordinate plane gives us a natural way to do this. By placing an angle in standard position and studying a point on its terminal side, we can define trigonometric ratios for angles in all four quadrants. This also explains why trigonometric values can be positive or negative, introduces reference angles, and gives us a systematic way to work with angles such as 120°, 210°, 315° and −45°.",
-
+    "introduction": "Once sine, cosine and tangent are understood, we can build three more trigonometric ratios by taking their reciprocals. These are cosecant, secant and cotangent. The reciprocal ratios do not introduce completely new ideas; they describe the same right triangle relationships from another direction. Understanding how these six ratios are connected makes trigonometry more organized and helps us recognize formulas instead of memorising them separately.",
     "sections": [
       {
-        "id": "why-right-triangles-are-not-enough",
-        "title": "Why Right Triangles Are Not Enough",
+        "id": "what-is-a-reciprocal",
+        "title": "What Does Reciprocal Mean?",
         "content": [
           {
             "type": "paragraph",
-            "text": "When we first learn trigonometry, we use a right triangle and a chosen acute angle. We identify the opposite side, adjacent side and hypotenuse, and then use sine, cosine or tangent to describe relationships between those sides."
+            "text": "Before learning the new trigonometric ratios, we need to understand the word reciprocal."
           },
           {
             "type": "paragraph",
-            "text": "This is extremely useful, but it has a limitation. A right triangle naturally contains one right angle and two acute angles. Therefore, the basic right-triangle picture does not directly represent an angle such as 120°, 200° or −45°."
+            "text": "The reciprocal of a non-zero number is the number that gives \\(1\\) when multiplied by the original number."
           },
           {
             "type": "paragraph",
-            "text": "However, these angles are perfectly meaningful. We can rotate a line through 120°, continue the rotation to 200°, or rotate clockwise through −45°. Mathematics needs a way to assign trigonometric values to all of these angles."
+            "text": "For example, the reciprocal of \\(5\\) is \\(\\frac{1}{5}\\), because \\(5\\times\\frac{1}{5}=1\\)."
           },
           {
             "type": "paragraph",
-            "text": "The solution is to move from a triangle-only viewpoint to a coordinate-plane viewpoint. A right triangle will still be present in the background, but now the position of a point and the signs of its coordinates will allow us to describe the trigonometric ratios for angles of any size."
+            "text": "The reciprocal of \\(\\frac{3}{7}\\) is \\(\\frac{7}{3}\\), because \\(\\frac{3}{7}\\times\\frac{7}{3}=1\\)."
           },
           {
             "type": "paragraph",
-            "text": "This is an important transition in trigonometry: the ratios that we first learned from triangles can now be understood as quantities associated with angles themselves."
+            "text": "For a fraction, taking the reciprocal means switching the numerator and denominator."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, if \\(\\sin(\\theta)=\\frac{O}{H}\\), its reciprocal is \\(\\frac{H}{O}\\). This reciprocal ratio is called cosecant."
           }
         ]
       },
-
       {
-        "id": "angles-in-standard-position",
-        "title": "Angles in Standard Position",
+        "id": "why-reciprocal-ratios",
+        "title": "Why Do Reciprocal Trigonometric Ratios Exist?",
         "content": [
           {
             "type": "paragraph",
-            "text": "To study an angle using the coordinate plane, we need a consistent way to place it. This standard arrangement is called standard position."
+            "text": "Sine, cosine and tangent already describe important relationships between the sides of a right triangle. So why introduce three more ratios?"
           },
           {
             "type": "paragraph",
-            "text": "An angle is in standard position when its vertex is placed at the origin of the coordinate plane and its initial side lies along the positive x-axis."
+            "text": "The reciprocal ratios are useful because sometimes the reversed relationship between two sides is more natural or convenient."
           },
           {
             "type": "paragraph",
-            "text": "The side where the angle begins is called the initial side. The side where the rotation ends is called the terminal side."
+            "text": "For example, sine compares opposite with hypotenuse. Its reciprocal, cosecant, compares hypotenuse with opposite."
           },
           {
             "type": "paragraph",
-            "text": "For example, imagine a ray starting at the origin and pointing directly to the right along the positive x-axis. If we rotate this ray counterclockwise through 60°, the final ray is the terminal side of the 60° angle."
+            "text": "Similarly, cosine compares adjacent with hypotenuse, while secant compares hypotenuse with adjacent."
           },
           {
             "type": "paragraph",
-            "text": "This setup lets us talk about angles larger than 90° as well. We simply continue rotating the terminal side."
+            "text": "Tangent compares opposite with adjacent, while cotangent compares adjacent with opposite."
           },
           {
             "type": "paragraph",
-            "text": "Counterclockwise rotation represents a positive angle. Clockwise rotation represents a negative angle. This convention allows positive and negative angles to be represented consistently on the same coordinate plane."
+            "text": "The important idea is that reciprocal ratios are not unrelated formulas. Each one is directly connected to one of the three basic ratios."
           }
         ]
       },
-
       {
-        "id": "positive-and-negative-angles",
-        "title": "Positive and Negative Angles",
+        "id": "cosecant",
+        "title": "Cosecant: The Reciprocal of Sine",
         "content": [
           {
             "type": "paragraph",
-            "text": "The direction in which we rotate determines whether an angle is positive or negative."
+            "text": "The first reciprocal trigonometric ratio is cosecant, written as \\(\\csc(\\theta)\\)."
           },
           {
             "type": "paragraph",
-            "text": "A positive angle is created by rotating counterclockwise from the positive x-axis. For example, 90° means a counterclockwise quarter-turn."
+            "text": "Cosecant is defined as the reciprocal of sine."
           },
           {
             "type": "paragraph",
-            "text": "A negative angle is created by rotating clockwise from the positive x-axis. For example, −90° means a clockwise quarter-turn."
+            "text": "Since sine is:"
           },
           {
             "type": "paragraph",
-            "text": "The negative sign does not mean that the angle has a negative physical size or that a length has become negative. It tells us the direction of rotation."
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H}\\]"
           },
           {
             "type": "paragraph",
-            "text": "For example, −30° means rotate 30° clockwise. Similarly, −120° means rotate 120° clockwise."
+            "text": "taking the reciprocal gives:"
           },
           {
             "type": "paragraph",
-            "text": "Thinking of angles as rotations makes negative angles much easier to understand than treating the minus sign as a purely algebraic symbol."
+            "text": "\\[\\csc(\\theta)=\\frac{H}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, cosecant compares the hypotenuse with the opposite side."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if the opposite side is \\(6\\) and the hypotenuse is \\(10\\), then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{6}{10}=\\frac{3}{5}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\csc(\\theta)=\\frac{10}{6}=\\frac{5}{3}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The two values are reciprocals of each other."
           }
         ]
       },
-
       {
-        "id": "coordinate-plane-basics",
-        "title": "The Coordinate Plane",
+        "id": "understanding-cosecant",
+        "title": "Understanding What Cosecant Compares",
         "content": [
           {
             "type": "paragraph",
-            "text": "The coordinate plane consists of two perpendicular number lines. The horizontal line is the x-axis and the vertical line is the y-axis. They meet at the origin, written as (0, 0)."
+            "text": "It is easy to think of cosecant as just a strange new function to memorise. A better approach is to look at the side relationship."
           },
           {
             "type": "paragraph",
-            "text": "Every point on the plane can be described using an ordered pair (x, y). The first number tells us how far the point is horizontally from the y-axis, while the second tells us how far it is vertically from the x-axis."
+            "text": "Sine asks: how large is the opposite side compared with the hypotenuse?"
           },
           {
             "type": "paragraph",
-            "text": "A positive x-coordinate means the point is to the right of the y-axis, while a negative x-coordinate means it is to the left."
+            "text": "Cosecant reverses that question: how large is the hypotenuse compared with the opposite side?"
           },
           {
             "type": "paragraph",
-            "text": "A positive y-coordinate means the point is above the x-axis, while a negative y-coordinate means it is below."
+            "text": "So if the opposite side is half the hypotenuse, the hypotenuse is twice the opposite side. The corresponding sine and cosecant values are therefore reciprocals."
           },
           {
             "type": "paragraph",
-            "text": "These signs become extremely important when we define trigonometric ratios for angles outside the first quadrant."
+            "text": "For an acute angle in a right triangle, the hypotenuse is longer than the opposite side. Therefore, \\(\\csc(\\theta)\\) is greater than \\(1\\)."
           }
         ]
       },
-
       {
-        "id": "point-on-terminal-side",
-        "title": "A Point on the Terminal Side",
+        "id": "secant",
+        "title": "Secant: The Reciprocal of Cosine",
         "content": [
           {
             "type": "paragraph",
-            "text": "Suppose an angle θ is in standard position and its terminal side passes through a point P(x, y) that is not the origin."
+            "text": "The second reciprocal trigonometric ratio is secant, written as \\(\\sec(\\theta)\\)."
           },
           {
             "type": "paragraph",
-            "text": "Draw a perpendicular line from P to the x-axis. This creates a right triangle whose horizontal leg is related to x, whose vertical leg is related to y, and whose hypotenuse is the distance from the origin to P."
+            "text": "Secant is defined as the reciprocal of cosine."
           },
           {
             "type": "paragraph",
-            "text": "Let r represent this distance from the origin to P. Since r is a length, it is always positive."
+            "text": "Since cosine is:"
           },
           {
             "type": "paragraph",
-            "text": "The important idea is that the familiar right triangle has not disappeared. Instead, it has been placed inside the coordinate-plane picture. The coordinates tell us which directions the horizontal and vertical sides point."
+            "text": "\\[\\cos(\\theta)=\\frac{A}{H}\\]"
           },
           {
             "type": "paragraph",
-            "text": "This allows us to use the familiar ideas of opposite, adjacent and hypotenuse while also keeping track of positive and negative coordinates."
+            "text": "taking the reciprocal gives:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{H}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, secant compares the hypotenuse with the adjacent side."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if the adjacent side is \\(8\\) and the hypotenuse is \\(10\\), then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{8}{10}=\\frac{4}{5}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{10}{8}=\\frac{5}{4}\\]"
           }
         ]
       },
-
       {
-        "id": "distance-r",
-        "title": "Finding the Distance r",
+        "id": "understanding-secant",
+        "title": "Understanding What Secant Compares",
         "content": [
           {
             "type": "paragraph",
-            "text": "If the terminal side passes through P(x, y), the distance from the origin to P is called r."
+            "text": "Cosine compares the adjacent side with the hypotenuse."
           },
           {
             "type": "paragraph",
-            "text": "The horizontal and vertical distances form the two legs of a right triangle, so the Pythagorean theorem can be used to find r."
+            "text": "Secant reverses that comparison and asks how large the hypotenuse is compared with the adjacent side."
           },
           {
             "type": "paragraph",
-            "text": "The Pythagorean theorem gives the relationship r² = x² + y²."
+            "text": "Because the hypotenuse is always longer than either leg of a right triangle, the hypotenuse-to-adjacent ratio is greater than \\(1\\) for an acute angle."
           },
           {
             "type": "paragraph",
-            "text": "Taking the positive square root gives r = √(x² + y²). We choose the positive root because r represents a distance, and distances are not negative."
+            "text": "Therefore, for an acute angle, \\(\\sec(\\theta)>1\\)."
           },
           {
             "type": "paragraph",
-            "text": "For example, if P = (3, 4), then r = √(3² + 4²) = √25 = 5."
-          },
-          {
-            "type": "paragraph",
-            "text": "Notice that even if x or y is negative, its square is positive. For example, if P = (−3, 4), then r = √((−3)² + 4²) = 5."
+            "text": "Secant is not a completely new geometric relationship. It is simply the reversed form of the cosine relationship."
           }
         ]
       },
-
       {
-        "id": "coordinate-definition-of-sine",
-        "title": "Defining Sine for Any Angle",
+        "id": "cotangent",
+        "title": "Cotangent: The Reciprocal of Tangent",
         "content": [
           {
             "type": "paragraph",
-            "text": "Recall the right-triangle definition of sine: sine compares the opposite side with the hypotenuse."
+            "text": "The third reciprocal trigonometric ratio is cotangent, written as \\(\\cot(\\theta)\\)."
           },
           {
             "type": "paragraph",
-            "text": "In the coordinate-plane picture, the vertical side of the right triangle is associated with the y-coordinate, while the hypotenuse is r."
+            "text": "Cotangent is defined as the reciprocal of tangent."
           },
           {
             "type": "paragraph",
-            "text": "Therefore, sine can be defined using the coordinates of a point on the terminal side."
+            "text": "Since tangent is:"
           },
           {
             "type": "paragraph",
-            "text": "The definition is sin(θ) = y/r."
+            "text": "\\[\\tan(\\theta)=\\frac{O}{A}\\]"
           },
           {
             "type": "paragraph",
-            "text": "This definition explains something that the basic right-triangle picture could not explain by itself: sine can be negative. If the terminal side lies below the x-axis, then y is negative, so y/r is negative."
+            "text": "taking the reciprocal gives:"
           },
           {
             "type": "paragraph",
-            "text": "For example, if P = (−3, −4), then r = 5 and sin(θ) = −4/5. The negative value comes from the negative y-coordinate."
+            "text": "\\[\\cot(\\theta)=\\frac{A}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, cotangent compares the adjacent side with the opposite side."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if the opposite side is \\(9\\) and the adjacent side is \\(12\\), then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{9}{12}=\\frac{3}{4}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cot(\\theta)=\\frac{12}{9}=\\frac{4}{3}\\]"
           }
         ]
       },
-
       {
-        "id": "coordinate-definition-of-cosine",
-        "title": "Defining Cosine for Any Angle",
+        "id": "understanding-cotangent",
+        "title": "Understanding What Cotangent Compares",
         "content": [
           {
             "type": "paragraph",
-            "text": "Recall that cosine compares the adjacent side with the hypotenuse."
+            "text": "Tangent compares opposite with adjacent."
           },
           {
             "type": "paragraph",
-            "text": "In the coordinate-plane picture, the horizontal side of the right triangle is associated with the x-coordinate, while the hypotenuse is r."
+            "text": "Cotangent reverses that relationship and compares adjacent with opposite."
           },
           {
             "type": "paragraph",
-            "text": "Therefore, cosine can be defined using the coordinates of a point on the terminal side."
+            "text": "Unlike cosecant and secant, cotangent is not necessarily greater than \\(1\\) for an acute angle."
           },
           {
             "type": "paragraph",
-            "text": "The definition is cos(θ) = x/r."
+            "text": "If the opposite side is shorter than the adjacent side, cotangent is greater than \\(1\\). If the opposite and adjacent sides are equal, cotangent is \\(1\\). If the opposite side is longer, cotangent is less than \\(1\\)."
           },
           {
             "type": "paragraph",
-            "text": "This explains why cosine can be negative. If the terminal side lies to the left of the y-axis, then x is negative, while r remains positive."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, if P = (−3, 4), then r = 5 and cos(θ) = −3/5."
+            "text": "So the value of cotangent depends on the relative lengths of the two legs."
           }
         ]
       },
-
       {
-        "id": "coordinate-definition-of-tangent",
-        "title": "Defining Tangent for Any Angle",
+        "id": "three-reciprocal-ratios",
+        "title": "The Three Reciprocal Ratios Together",
         "content": [
           {
             "type": "paragraph",
-            "text": "Recall that tangent compares the opposite side with the adjacent side."
+            "text": "The three reciprocal ratios can now be placed alongside the original three ratios."
           },
           {
             "type": "paragraph",
-            "text": "In the coordinate-plane picture, these two sides correspond to the y-coordinate and x-coordinate."
+            "text": "Sine and cosecant form a reciprocal pair:"
           },
           {
             "type": "paragraph",
-            "text": "Therefore, tangent can be defined as tan(θ) = y/x, provided x is not zero."
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H},\\qquad\\csc(\\theta)=\\frac{H}{O}\\]"
           },
           {
             "type": "paragraph",
-            "text": "This definition also explains why tangent can be negative. If x and y have opposite signs, their quotient is negative."
+            "text": "Cosine and secant form a reciprocal pair:"
           },
           {
             "type": "paragraph",
-            "text": "For example, if P = (−3, 4), then tan(θ) = 4/(−3) = −4/3."
+            "text": "\\[\\cos(\\theta)=\\frac{A}{H},\\qquad\\sec(\\theta)=\\frac{H}{A}\\]"
           },
           {
             "type": "paragraph",
-            "text": "If x = 0, the expression y/x would require division by zero. Division by zero is undefined, which explains why tangent is undefined when the terminal side lies on the y-axis."
+            "text": "Tangent and cotangent form a reciprocal pair:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{O}{A},\\qquad\\cot(\\theta)=\\frac{A}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The easiest way to remember the relationships is to notice that the numerator and denominator are simply switched."
           }
         ]
       },
-
       {
-        "id": "connection-to-soh-cahtoa",
-        "title": "Connecting the Coordinate Definitions to SOH-CAH-TOA",
+        "id": "reciprocal-identities",
+        "title": "The Reciprocal Identities",
         "content": [
           {
             "type": "paragraph",
-            "text": "The coordinate definitions are not completely new formulas. They are the familiar SOH-CAH-TOA relationships expressed in a more general setting."
+            "text": "When two quantities are reciprocals, their product is \\(1\\)."
           },
           {
             "type": "paragraph",
-            "text": "SOH tells us that sine compares opposite with hypotenuse. In the coordinate picture, this becomes y/r."
+            "text": "Therefore, sine and cosecant satisfy:"
           },
           {
             "type": "paragraph",
-            "text": "CAH tells us that cosine compares adjacent with hypotenuse. In the coordinate picture, this becomes x/r."
+            "text": "\\[\\sin(\\theta)\\cdot\\csc(\\theta)=1\\]"
           },
           {
             "type": "paragraph",
-            "text": "TOA tells us that tangent compares opposite with adjacent. In the coordinate picture, this becomes y/x."
+            "text": "Cosine and secant satisfy:"
           },
           {
             "type": "paragraph",
-            "text": "The major new idea is not the ratio itself. The new idea is that x and y can be positive or negative depending on where the terminal side lies."
+            "text": "\\[\\cos(\\theta)\\cdot\\sec(\\theta)=1\\]"
           },
           {
             "type": "paragraph",
-            "text": "This is what allows the same basic trigonometric relationships to work for angles in every quadrant."
+            "text": "Tangent and cotangent satisfy:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)\\cdot\\cot(\\theta)=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "These are called reciprocal identities. They follow directly from the definitions rather than being separate facts that must be memorised without explanation."
           }
         ]
       },
-
       {
-        "id": "four-quadrants",
-        "title": "The Four Quadrants",
+        "id": "why-products-equal-one",
+        "title": "Why Do the Products Equal One?",
         "content": [
           {
             "type": "paragraph",
-            "text": "The x-axis and y-axis divide the coordinate plane into four regions called quadrants."
+            "text": "Consider sine and cosecant."
           },
           {
             "type": "paragraph",
-            "text": "Quadrant I is the region above the x-axis and to the right of the y-axis. Both x and y are positive there."
+            "text": "We know:"
           },
           {
             "type": "paragraph",
-            "text": "Quadrant II is above the x-axis and to the left of the y-axis. Here x is negative and y is positive."
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H}\\]"
           },
           {
             "type": "paragraph",
-            "text": "Quadrant III is below the x-axis and to the left of the y-axis. Both x and y are negative."
+            "text": "and:"
           },
           {
             "type": "paragraph",
-            "text": "Quadrant IV is below the x-axis and to the right of the y-axis. Here x is positive and y is negative."
+            "text": "\\[\\csc(\\theta)=\\frac{H}{O}\\]"
           },
           {
             "type": "paragraph",
-            "text": "When an angle is in standard position, the quadrant containing its terminal side tells us the signs of x and y and therefore the signs of sine, cosine and tangent."
+            "text": "Multiplying them gives:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)\\cdot\\csc(\\theta)=\\frac{O}{H}\\cdot\\frac{H}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The common factors cancel:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\frac{O}{H}\\cdot\\frac{H}{O}=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Exactly the same reasoning works for cosine and secant, and for tangent and cotangent."
           }
         ]
       },
-
       {
-        "id": "trigonometric-signs-by-quadrant",
-        "title": "Why Trigonometric Ratios Change Sign",
+        "id": "finding-a-reciprocal",
+        "title": "Finding a Reciprocal Ratio From a Known Ratio",
         "content": [
           {
             "type": "paragraph",
-            "text": "Because r is always positive, the sign of sine depends entirely on the sign of y. If y is positive, sine is positive. If y is negative, sine is negative."
+            "text": "If you know one trigonometric ratio, you can immediately find its reciprocal by taking the reciprocal of the value."
           },
           {
             "type": "paragraph",
-            "text": "Similarly, the sign of cosine depends on x because cos(θ) = x/r. Positive x gives positive cosine, while negative x gives negative cosine."
+            "text": "For example, suppose:"
           },
           {
             "type": "paragraph",
-            "text": "Tangent is different because it uses y/x. Its sign depends on whether x and y have the same sign or opposite signs."
+            "text": "\\[\\sin(\\theta)=\\frac{3}{5}\\]"
           },
           {
             "type": "paragraph",
-            "text": "In Quadrant I, x and y are both positive. Therefore sine, cosine and tangent are all positive."
+            "text": "The reciprocal is:"
           },
           {
             "type": "paragraph",
-            "text": "In Quadrant II, y is positive and x is negative. Therefore sine is positive, cosine is negative and tangent is negative."
+            "text": "\\[\\csc(\\theta)=\\frac{5}{3}\\]"
           },
           {
             "type": "paragraph",
-            "text": "In Quadrant III, x and y are both negative. Therefore sine and cosine are negative, while tangent is positive because a negative divided by a negative is positive."
+            "text": "Similarly, if:"
           },
           {
             "type": "paragraph",
-            "text": "In Quadrant IV, x is positive and y is negative. Therefore sine and tangent are negative, while cosine is positive."
+            "text": "\\[\\cos(\\theta)=\\frac{4}{5}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{5}{4}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "And if:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{2}{3}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cot(\\theta)=\\frac{3}{2}\\]"
           }
         ]
       },
-
       {
-        "id": "cast-astc-rule",
-        "title": "CAST / ASTC: A Memory Aid",
+        "id": "finding-basic-ratio",
+        "title": "Finding a Basic Ratio From a Reciprocal",
         "content": [
           {
             "type": "paragraph",
-            "text": "The sign pattern can be remembered using the mnemonic CAST, or equivalently ASTC depending on the order in which it is taught."
+            "text": "The process also works in the opposite direction."
           },
           {
             "type": "paragraph",
-            "text": "CAST can be read as: All, Sine, Tangent, Cosine."
+            "text": "If you know a reciprocal ratio, take its reciprocal again to recover the original ratio."
           },
           {
             "type": "paragraph",
-            "text": "Starting in Quadrant IV and moving counterclockwise, the mnemonic indicates which basic trigonometric ratios are positive. In Quadrant I, All are positive. In Quadrant II, Sine is positive. In Quadrant III, Tangent is positive. In Quadrant IV, Cosine is positive."
+            "text": "For example, if:"
           },
           {
             "type": "paragraph",
-            "text": "This is useful when solving problems because once you identify the quadrant, you can quickly determine the sign of the required ratio."
+            "text": "\\[\\csc(\\theta)=\\frac{7}{3}\\]"
           },
           {
             "type": "paragraph",
-            "text": "However, CAST should be treated as a memory shortcut rather than the reason the signs occur. The real reason comes from the signs of x and y in the coordinate definitions."
+            "text": "then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{3}{7}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Likewise, if:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{9}{4}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{4}{9}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Taking the reciprocal twice returns you to the original value."
           }
         ]
       },
-
       {
-        "id": "reference-angle-introduction",
-        "title": "What Is a Reference Angle?",
+        "id": "reciprocal-ratios-from-sides",
+        "title": "Finding Reciprocal Ratios From Triangle Sides",
         "content": [
           {
             "type": "paragraph",
-            "text": "Angles in different quadrants can look very different, but their trigonometric ratios are closely related to ratios from acute angles."
+            "text": "You can also calculate the reciprocal ratios directly from a right triangle."
           },
           {
             "type": "paragraph",
-            "text": "A reference angle is the positive acute angle between the terminal side of an angle and the x-axis."
+            "text": "Suppose a right triangle has opposite side \\(6\\), adjacent side \\(8\\), and hypotenuse \\(10\\)."
           },
           {
             "type": "paragraph",
-            "text": "The reference angle is always between 0° and 90° for a non-axis angle."
+            "text": "For the chosen angle:"
           },
           {
             "type": "paragraph",
-            "text": "The purpose of a reference angle is to reduce a complicated angle to a familiar acute angle. Once we know the reference angle, we can use the corresponding acute-angle trigonometric relationship and then determine the correct sign from the quadrant."
+            "text": "\\[O=6,\\qquad A=8,\\qquad H=10\\]"
           },
           {
             "type": "paragraph",
-            "text": "For example, 150° lies in Quadrant II. Its terminal side is 30° away from the negative x-axis, so its reference angle is 30°."
+            "text": "Cosecant is hypotenuse divided by opposite:"
           },
           {
             "type": "paragraph",
-            "text": "The reference angle gives us the acute-angle magnitude associated with the ratio. The quadrant tells us whether the final value is positive or negative."
+            "text": "\\[\\csc(\\theta)=\\frac{10}{6}=\\frac{5}{3}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Secant is hypotenuse divided by adjacent:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{10}{8}=\\frac{5}{4}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent is adjacent divided by opposite:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cot(\\theta)=\\frac{8}{6}=\\frac{4}{3}\\]"
           }
         ]
       },
-
       {
-        "id": "finding-reference-angle-quadrant-one",
-        "title": "Reference Angles in Quadrant I",
+        "id": "six-ratios-table",
+        "title": "All Six Ratios in One Picture",
         "content": [
           {
             "type": "paragraph",
-            "text": "In Quadrant I, the angle itself is already acute. Therefore, the reference angle is simply the original angle."
+            "text": "For a chosen acute angle in a right triangle, the six trigonometric ratios can be organised into three reciprocal pairs."
           },
           {
             "type": "paragraph",
-            "text": "For example, if θ = 40°, the angle is already between 0° and 90°, so its reference angle is 40°."
+            "text": "The first pair is sine and cosecant:"
           },
           {
             "type": "paragraph",
-            "text": "There is no subtraction required because the terminal side is already close to the positive x-axis."
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H},\\qquad\\csc(\\theta)=\\frac{H}{O}\\]"
           },
           {
             "type": "paragraph",
-            "text": "This is the simplest reference-angle case."
+            "text": "The second pair is cosine and secant:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{A}{H},\\qquad\\sec(\\theta)=\\frac{H}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The third pair is tangent and cotangent:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{O}{A},\\qquad\\cot(\\theta)=\\frac{A}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "This arrangement is useful because it shows that the six ratios are built from only three side comparisons and their reciprocals."
           }
         ]
       },
-
       {
-        "id": "finding-reference-angle-quadrant-two",
-        "title": "Reference Angles in Quadrant II",
+        "id": "reciprocal-ratios-and-soh-cahtoa",
+        "title": "Connecting the Six Ratios to SOH-CAH-TOA",
         "content": [
           {
             "type": "paragraph",
-            "text": "In Quadrant II, angles lie between 90° and 180°. The reference angle is measured from the terminal side to the negative x-axis."
+            "text": "SOH-CAH-TOA gives the three original ratios:"
           },
           {
             "type": "paragraph",
-            "text": "Since the angle from the positive x-axis to the negative x-axis is 180°, we subtract the given angle from 180°."
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H},\\qquad\\cos(\\theta)=\\frac{A}{H},\\qquad\\tan(\\theta)=\\frac{O}{A}\\]"
           },
           {
             "type": "paragraph",
-            "text": "Therefore, for a Quadrant II angle θ, the reference angle is 180° − θ."
+            "text": "The reciprocal ratios are obtained simply by reversing each fraction."
           },
           {
             "type": "paragraph",
-            "text": "For example, for 120°, the reference angle is 180° − 120° = 60°."
+            "text": "Therefore:"
           },
           {
             "type": "paragraph",
-            "text": "For 150°, the reference angle is 180° − 150° = 30°."
+            "text": "\\[\\csc(\\theta)=\\frac{H}{O},\\qquad\\sec(\\theta)=\\frac{H}{A},\\qquad\\cot(\\theta)=\\frac{A}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "There is no need to create a completely separate memory system for the reciprocal ratios. Start with SOH-CAH-TOA and reverse the appropriate fraction."
           }
         ]
       },
-
       {
-        "id": "finding-reference-angle-quadrant-three",
-        "title": "Reference Angles in Quadrant III",
+        "id": "reciprocal-vs-inverse",
+        "title": "Reciprocal Does Not Mean Inverse Function",
         "content": [
           {
             "type": "paragraph",
-            "text": "In Quadrant III, angles lie between 180° and 270°. The reference angle is measured from the terminal side to the negative x-axis."
+            "text": "The word inverse can cause confusion in trigonometry because it can refer to different ideas."
           },
           {
             "type": "paragraph",
-            "text": "Because the angle has already passed 180°, we subtract 180° from the given angle."
+            "text": "A reciprocal means taking \\(\\frac{1}{x}\\). For example, the reciprocal of \\(\\sin(\\theta)\\) is \\(\\frac{1}{\\sin(\\theta)}\\), which is \\(\\csc(\\theta)\\)."
           },
           {
             "type": "paragraph",
-            "text": "Therefore, for a Quadrant III angle θ, the reference angle is θ − 180°."
+            "text": "This is different from an inverse function. Reciprocal ratios are the topic here; inverse trigonometric functions are a different concept and are not needed to understand cosecant, secant and cotangent."
           },
           {
             "type": "paragraph",
-            "text": "For example, for 210°, the reference angle is 210° − 180° = 30°."
-          },
-          {
-            "type": "paragraph",
-            "text": "For 240°, the reference angle is 240° − 180° = 60°."
+            "text": "For now, focus on the simple rule: reciprocal means flip the fraction."
           }
         ]
       },
-
       {
-        "id": "finding-reference-angle-quadrant-four",
-        "title": "Reference Angles in Quadrant IV",
+        "id": "why-cosecant-and-secant-greater-than-one",
+        "title": "Why Are Cosecant and Secant Greater Than One?",
         "content": [
           {
             "type": "paragraph",
-            "text": "In Quadrant IV, angles lie between 270° and 360°. The reference angle is measured from the terminal side to the positive x-axis."
+            "text": "For an acute angle in a right triangle, the hypotenuse is always longer than either leg."
           },
           {
             "type": "paragraph",
-            "text": "A full rotation is 360°, so we subtract the given angle from 360°."
+            "text": "Cosecant compares hypotenuse with opposite:"
           },
           {
             "type": "paragraph",
-            "text": "Therefore, for a Quadrant IV angle θ, the reference angle is 360° − θ."
+            "text": "\\[\\csc(\\theta)=\\frac{H}{O}\\]"
           },
           {
             "type": "paragraph",
-            "text": "For example, for 300°, the reference angle is 360° − 300° = 60°."
+            "text": "Since \\(H>O\\), this ratio must be greater than \\(1\\)."
           },
           {
             "type": "paragraph",
-            "text": "For 315°, the reference angle is 360° − 315° = 45°."
+            "text": "Secant compares hypotenuse with adjacent:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{H}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Since \\(H>A\\), this ratio is also greater than \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This also makes sense from the reciprocal relationships. For an acute angle, sine and cosine are between \\(0\\) and \\(1\\), so their reciprocals are greater than \\(1\\)."
           }
         ]
       },
-
       {
-        "id": "negative-angles-and-reference-angles",
-        "title": "Reference Angles for Negative Angles",
+        "id": "cotangent-size",
+        "title": "Why Cotangent Can Be Less Than, Equal To, or Greater Than One",
         "content": [
           {
             "type": "paragraph",
-            "text": "Negative angles require one extra step because they represent clockwise rotation."
+            "text": "Cotangent behaves differently from cosecant and secant because it compares the two legs of the right triangle."
           },
           {
             "type": "paragraph",
-            "text": "A useful approach is to first find a positive coterminal angle between 0° and 360°. Once that positive angle is known, we can identify its quadrant and find the reference angle normally."
+            "text": "\\[\\cot(\\theta)=\\frac{A}{O}\\]"
           },
           {
             "type": "paragraph",
-            "text": "For example, consider −45°. Add 360° to obtain 315°. The angles −45° and 315° have the same terminal side."
+            "text": "If the adjacent side is longer than the opposite side, then \\(\\cot(\\theta)>1\\)."
           },
           {
             "type": "paragraph",
-            "text": "Since 315° lies in Quadrant IV, its reference angle is 360° − 315° = 45°."
+            "text": "If the adjacent and opposite sides are equal, then \\(\\cot(\\theta)=1\\)."
           },
           {
             "type": "paragraph",
-            "text": "This method turns a negative-angle problem into an ordinary positive-angle problem."
+            "text": "If the adjacent side is shorter than the opposite side, then \\(\\cot(\\theta)<1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, in a right triangle with equal legs, the two acute angles are each \\(45^\\circ\\). For either acute angle:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(45^\\circ)=1,\\qquad\\cot(45^\\circ)=1\\]"
           }
         ]
       },
-
       {
-        "id": "coterminal-angles",
-        "title": "Coterminal Angles",
+        "id": "relationships-between-tan-and-cot",
+        "title": "Tangent and Cotangent as Opposite Ratios",
         "content": [
           {
             "type": "paragraph",
-            "text": "Two angles are called coterminal when they have the same initial side and the same terminal side."
+            "text": "Tangent and cotangent are especially easy to connect because they use exactly the same two sides."
           },
           {
             "type": "paragraph",
-            "text": "Imagine rotating through an angle and then making one complete additional revolution. The terminal side returns to exactly the same position."
+            "text": "Tangent uses:"
           },
           {
             "type": "paragraph",
-            "text": "Since one complete revolution is 360°, adding or subtracting 360° produces another angle with the same terminal side."
+            "text": "\\[\\tan(\\theta)=\\frac{O}{A}\\]"
           },
           {
             "type": "paragraph",
-            "text": "For example, 45° and 405° are coterminal because 405° = 45° + 360°."
+            "text": "Cotangent reverses it:"
           },
           {
             "type": "paragraph",
-            "text": "Similarly, 45° and −315° are coterminal because −315° + 360° = 45°."
+            "text": "\\[\\cot(\\theta)=\\frac{A}{O}\\]"
           },
           {
             "type": "paragraph",
-            "text": "Because coterminal angles have the same terminal side, their trigonometric ratios have the same values."
+            "text": "Therefore:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cot(\\theta)=\\frac{1}{\\tan(\\theta)}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "and:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)\\cdot\\cot(\\theta)=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The same reciprocal idea connects sine with cosecant and cosine with secant."
           }
         ]
       },
-
       {
-        "id": "using-reference-angle-and-quadrant",
-        "title": "Reference Angle + Quadrant = Trigonometric Value",
+        "id": "using-reciprocal-ratios",
+        "title": "When Might We Use Reciprocal Ratios?",
         "content": [
           {
             "type": "paragraph",
-            "text": "The most important practical use of reference angles is that they separate a problem into two simpler questions."
+            "text": "The reciprocal ratios are useful when a problem naturally involves hypotenuse divided by a leg, or one leg divided by the other."
           },
           {
             "type": "paragraph",
-            "text": "First, the reference angle tells us which familiar acute angle is involved. Second, the quadrant tells us whether the trigonometric ratio should be positive or negative."
+            "text": "For example, if a problem gives the hypotenuse and opposite side and asks for their ratio in that order, cosecant matches the relationship directly."
           },
           {
             "type": "paragraph",
-            "text": "For example, consider 150°. The angle lies in Quadrant II, and its reference angle is 30°."
+            "text": "Similarly, if the hypotenuse is divided by the adjacent side, secant gives that ratio directly."
           },
           {
             "type": "paragraph",
-            "text": "The reference angle tells us to use the 30° trigonometric relationship. The quadrant tells us the sign. Since sine is positive in Quadrant II, the sine of 150° has the same magnitude as the sine associated with 30° but is positive."
+            "text": "If adjacent is divided by opposite, cotangent gives that relationship directly."
           },
           {
             "type": "paragraph",
-            "text": "For cosine, the same reference angle is used, but cosine is negative in Quadrant II. Therefore, the cosine value has the corresponding 30° magnitude with a negative sign."
-          },
-          {
-            "type": "paragraph",
-            "text": "This idea will become especially useful when we later study exact trigonometric values."
+            "text": "However, you should not feel forced to use a reciprocal ratio just because it exists. If sine, cosine or tangent makes the problem clearer, the original ratios can still be used."
           }
         ]
       },
-
       {
-        "id": "worked-strategy-for-any-angle",
-        "title": "A General Strategy for Any-Angle Problems",
+        "id": "checking-reciprocal-calculations",
+        "title": "Checking Your Reciprocal Calculations",
         "content": [
           {
             "type": "paragraph",
-            "text": "When working with a trigonometric ratio for an angle outside the first quadrant, avoid trying to memorise a separate rule for every possible angle."
+            "text": "Because reciprocal ratios are created by flipping fractions, a quick check is possible."
           },
           {
             "type": "paragraph",
-            "text": "Step 1: Place the angle in standard position and identify its quadrant."
+            "text": "If you calculate both sine and cosecant for the same angle, multiplying them should give \\(1\\):"
           },
           {
             "type": "paragraph",
-            "text": "Step 2: Determine whether the angle is positive or negative and, if necessary, find a positive coterminal angle."
+            "text": "\\[\\sin(\\theta)\\cdot\\csc(\\theta)=1\\]"
           },
           {
             "type": "paragraph",
-            "text": "Step 3: Find the reference angle."
+            "text": "The same check works for cosine and secant:"
           },
           {
             "type": "paragraph",
-            "text": "Step 4: Determine the sign of the required trigonometric ratio from the quadrant."
+            "text": "\\[\\cos(\\theta)\\cdot\\sec(\\theta)=1\\]"
           },
           {
             "type": "paragraph",
-            "text": "Step 5: Use the reference angle to determine the corresponding magnitude."
+            "text": "And for tangent and cotangent:"
           },
           {
             "type": "paragraph",
-            "text": "This approach turns an unfamiliar angle into a familiar acute-angle problem plus a sign decision."
+            "text": "\\[\\tan(\\theta)\\cdot\\cot(\\theta)=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "If the product is not \\(1\\), check whether you reversed the fraction correctly or made an arithmetic error."
           }
         ]
       },
-
       {
-        "id": "special-axis-angles",
-        "title": "Angles on the Axes",
+        "id": "big-picture-six-ratios",
+        "title": "The Big Picture: Six Ratios, Three Core Relationships",
         "content": [
           {
             "type": "paragraph",
-            "text": "Not every angle lies inside a quadrant. Some angles place the terminal side directly on one of the coordinate axes."
+            "text": "At first, six trigonometric ratios can seem like six separate formulas. They are much more connected than they appear."
           },
           {
             "type": "paragraph",
-            "text": "Examples include 0°, 90°, 180°, 270° and 360°."
+            "text": "There are really three fundamental side relationships:"
           },
           {
             "type": "paragraph",
-            "text": "At these positions, one of the coordinates x or y is zero."
+            "text": "\\[\\frac{O}{H},\\qquad\\frac{A}{H},\\qquad\\frac{O}{A}\\]"
           },
           {
             "type": "paragraph",
-            "text": "For example, on the positive x-axis, y = 0. Therefore sine is zero."
+            "text": "These produce sine, cosine and tangent."
           },
           {
             "type": "paragraph",
-            "text": "On the positive y-axis, x = 0. Since tangent involves division by x, tangent is undefined there."
+            "text": "Reversing each relationship produces:"
           },
           {
             "type": "paragraph",
-            "text": "These axis cases are important because they show that the coordinate definitions naturally explain both zero values and undefined values."
-          }
-        ]
-      },
-
-      {
-        "id": "big-picture-any-angle",
-        "title": "The Big Picture",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "The transition from right-triangle trigonometry to any-angle trigonometry is not a completely new subject. It is an extension of the same relationships we already know."
+            "text": "\\[\\frac{H}{O},\\qquad\\frac{H}{A},\\qquad\\frac{A}{O}\\]"
           },
           {
             "type": "paragraph",
-            "text": "A right triangle is formed using a point on the terminal side of an angle. The coordinates of that point allow the familiar ratios to be written as sin(θ) = y/r, cos(θ) = x/r and tan(θ) = y/x."
+            "text": "These produce cosecant, secant and cotangent."
           },
           {
             "type": "paragraph",
-            "text": "Because x and y can be positive or negative, the trigonometric ratios can also be positive or negative."
-          },
-          {
-            "type": "paragraph",
-            "text": "The four quadrants provide a simple way to determine these signs. CAST or ASTC can be used as a memory aid, while the coordinate definitions explain why the pattern occurs."
-          },
-          {
-            "type": "paragraph",
-            "text": "Reference angles allow angles in other quadrants to be connected to familiar acute angles. Coterminal angles allow us to describe the same terminal side using many different angle measures."
-          },
-          {
-            "type": "paragraph",
-            "text": "Together, these ideas give us a complete foundation for working with trigonometric ratios beyond acute right-triangle problems."
+            "text": "So the six ratios are best understood as three relationships and their reciprocals."
           }
         ]
       }
     ]
   },
-
   "formulas": [
     {
-      "id": "coordinate-distance",
-      "name": "Distance from the Origin",
-      "expression": "\\(r=\\sqrt{x^2+y^2}\\)",
-      "explanation": "If a point \\((x,y)\\) lies on the terminal side of an angle, r is the distance from the origin to that point. It is found using the Pythagorean theorem and is always positive."
+      "id": "cosecant-ratio",
+      "name": "Cosecant Ratio",
+      "expression": "\\(\\csc(\\theta)=\\frac{H}{O}\\)",
+      "explanation": "Cosecant is the reciprocal of sine and compares the hypotenuse with the opposite side."
     },
     {
-      "id": "sine-coordinate-ratio",
-      "name": "Sine Using Coordinates",
-      "expression": "\\(\\sin(\\theta)=\\frac{y}{r}\\)",
-      "explanation": "The y-coordinate plays the role of the signed opposite side, while r is the positive hypotenuse length."
+      "id": "secant-ratio",
+      "name": "Secant Ratio",
+      "expression": "\\(\\sec(\\theta)=\\frac{H}{A}\\)",
+      "explanation": "Secant is the reciprocal of cosine and compares the hypotenuse with the adjacent side."
     },
     {
-      "id": "cosine-coordinate-ratio",
-      "name": "Cosine Using Coordinates",
-      "expression": "\\(\\cos(\\theta)=\\frac{x}{r}\\)",
-      "explanation": "The x-coordinate plays the role of the signed adjacent side, while r is the positive hypotenuse length."
+      "id": "cotangent-ratio",
+      "name": "Cotangent Ratio",
+      "expression": "\\(\\cot(\\theta)=\\frac{A}{O}\\)",
+      "explanation": "Cotangent is the reciprocal of tangent and compares the adjacent side with the opposite side."
     },
     {
-      "id": "tangent-coordinate-ratio",
-      "name": "Tangent Using Coordinates",
-      "expression": "\\(\\tan(\\theta)=\\frac{y}{x}\\)",
-      "explanation": "Tangent compares the vertical coordinate with the horizontal coordinate. It is defined only when x is not zero."
+      "id": "cosecant-reciprocal",
+      "name": "Cosecant and Sine",
+      "expression": "\\(\\csc(\\theta)=\\frac{1}{\\sin(\\theta)}\\)",
+      "explanation": "Cosecant is the reciprocal of sine."
     },
     {
-      "id": "quadrant-two-reference-angle",
-      "name": "Reference Angle in Quadrant II",
-      "expression": "\\(\\alpha=180^\\circ-\\theta\\)",
-      "explanation": "For an angle θ between 90° and 180°, subtract θ from 180° to find the acute reference angle."
+      "id": "secant-reciprocal",
+      "name": "Secant and Cosine",
+      "expression": "\\(\\sec(\\theta)=\\frac{1}{\\cos(\\theta)}\\)",
+      "explanation": "Secant is the reciprocal of cosine."
     },
     {
-      "id": "quadrant-three-reference-angle",
-      "name": "Reference Angle in Quadrant III",
-      "expression": "\\(\\alpha=\\theta-180^\\circ\\)",
-      "explanation": "For an angle θ between 180° and 270°, subtract 180° from θ to find the acute reference angle."
+      "id": "cotangent-reciprocal",
+      "name": "Cotangent and Tangent",
+      "expression": "\\(\\cot(\\theta)=\\frac{1}{\\tan(\\theta)}\\)",
+      "explanation": "Cotangent is the reciprocal of tangent."
     },
     {
-      "id": "quadrant-four-reference-angle",
-      "name": "Reference Angle in Quadrant IV",
-      "expression": "\\(\\alpha=360^\\circ-\\theta\\)",
-      "explanation": "For an angle θ between 270° and 360°, subtract θ from 360° to find the acute reference angle."
+      "id": "sine-cosecant-identity",
+      "name": "Sine-Cosecant Identity",
+      "expression": "\\(\\sin(\\theta)\\cdot\\csc(\\theta)=1\\)",
+      "explanation": "Sine and cosecant are reciprocals, so their product is one."
     },
     {
-      "id": "coterminal-angles",
-      "name": "Coterminal Angles",
-      "expression": "\\(\\theta_{\\text{coterminal}}=\\theta+360^\\circ k\\)",
-      "explanation": "Adding or subtracting any whole number of full rotations produces an angle with the same terminal side. Here k is any integer."
+      "id": "cosine-secant-identity",
+      "name": "Cosine-Secant Identity",
+      "expression": "\\(\\cos(\\theta)\\cdot\\sec(\\theta)=1\\)",
+      "explanation": "Cosine and secant are reciprocals, so their product is one."
+    },
+    {
+      "id": "tangent-cotangent-identity",
+      "name": "Tangent-Cotangent Identity",
+      "expression": "\\(\\tan(\\theta)\\cdot\\cot(\\theta)=1\\)",
+      "explanation": "Tangent and cotangent are reciprocals, so their product is one."
     }
   ],
-
   "examples": [
     {
-      "id": "any-angle-example-1",
-      "question": "Explain why the right-triangle definitions of trigonometric ratios are not enough to describe every angle.",
-      "solution": "A right triangle contains one 90° angle and two acute angles. Therefore, the triangle directly represents angles between 0° and 90°, but not angles such as 120°, 210° or −45°. To extend trigonometry to these angles, we use the coordinate plane and define the ratios using a point on the terminal side."
+      "id": "reciprocal-example-1",
+      "question": "If \\(\\sin(\\theta)=\\frac{3}{5}\\), find \\(\\csc(\\theta)\\).",
+      "solution": "Cosecant is the reciprocal of sine. Therefore, flip the fraction: \\[\\csc(\\theta)=\\frac{1}{\\sin(\\theta)}=\\frac{5}{3}.\\]"
     },
     {
-      "id": "any-angle-example-2",
-      "question": "Describe the angle 70° in standard position.",
-      "solution": "The initial side lies along the positive x-axis. Since 70° is positive, rotate counterclockwise by 70°. The terminal side lies between the positive x-axis and positive y-axis, so the angle lies in Quadrant I."
+      "id": "reciprocal-example-2",
+      "question": "If \\(\\cos(\\theta)=\\frac{4}{7}\\), find \\(\\sec(\\theta)\\).",
+      "solution": "Secant is the reciprocal of cosine. Therefore: \\[\\sec(\\theta)=\\frac{1}{\\cos(\\theta)}=\\frac{7}{4}.\\]"
     },
     {
-      "id": "any-angle-example-3",
-      "question": "Describe the angle −60° in standard position.",
-      "solution": "The negative sign means clockwise rotation. Starting from the positive x-axis, rotate 60° clockwise. The terminal side lies below the positive x-axis, so it is in Quadrant IV."
+      "id": "reciprocal-example-3",
+      "question": "If \\(\\tan(\\theta)=\\frac{2}{5}\\), find \\(\\cot(\\theta)\\).",
+      "solution": "Cotangent is the reciprocal of tangent. Therefore: \\[\\cot(\\theta)=\\frac{1}{\\tan(\\theta)}=\\frac{5}{2}.\\]"
     },
     {
-      "id": "any-angle-example-4",
-      "question": "A point P(3,4) lies on the terminal side of an angle θ. Find r.",
-      "solution": "Use the Pythagorean theorem: \\[r=\\sqrt{x^2+y^2}.\\] Substitute x = 3 and y = 4: \\[r=\\sqrt{3^2+4^2}=\\sqrt{9+16}=\\sqrt{25}=5.\\] Therefore, r = 5."
+      "id": "reciprocal-example-4",
+      "question": "If \\(\\csc(\\theta)=\\frac{9}{4}\\), find \\(\\sin(\\theta)\\).",
+      "solution": "Sine and cosecant are reciprocals. Flip the fraction: \\[\\sin(\\theta)=\\frac{4}{9}.\\]"
     },
     {
-      "id": "any-angle-example-5",
-      "question": "A point P(3,4) lies on the terminal side of θ. Find sin(θ), cos(θ), and tan(θ).",
-      "solution": "First find r = 5. Then use the coordinate definitions. \\[\\sin(\\theta)=\\frac{y}{r}=\\frac{4}{5}.\\] \\[\\cos(\\theta)=\\frac{x}{r}=\\frac{3}{5}.\\] \\[\\tan(\\theta)=\\frac{y}{x}=\\frac{4}{3}.\\] Therefore, the three ratios are 4/5, 3/5 and 4/3."
+      "id": "reciprocal-example-5",
+      "question": "If \\(\\sec(\\theta)=\\frac{11}{6}\\), find \\(\\cos(\\theta)\\).",
+      "solution": "Cosine is the reciprocal of secant. Therefore: \\[\\cos(\\theta)=\\frac{6}{11}.\\]"
     },
     {
-      "id": "any-angle-example-6",
-      "question": "A point P(−3,4) lies on the terminal side of θ. Find r and determine the signs of sine, cosine, and tangent.",
-      "solution": "First find r: \\[r=\\sqrt{(-3)^2+4^2}=\\sqrt{9+16}=5.\\] The point has x < 0 and y > 0, so it lies in Quadrant II. Therefore sine is positive, cosine is negative, and tangent is negative."
+      "id": "reciprocal-example-6",
+      "question": "If \\(\\cot(\\theta)=\\frac{7}{3}\\), find \\(\\tan(\\theta)\\).",
+      "solution": "Tangent and cotangent are reciprocals. Therefore: \\[\\tan(\\theta)=\\frac{3}{7}.\\]"
     },
     {
-      "id": "any-angle-example-7",
-      "question": "A point P(−5,−12) lies on the terminal side of θ. Find r and the signs of the three basic trigonometric ratios.",
-      "solution": "Calculate r: \\[r=\\sqrt{(-5)^2+(-12)^2}=\\sqrt{25+144}=13.\\] Both x and y are negative, so the point lies in Quadrant III. Therefore sine is negative, cosine is negative, and tangent is positive."
+      "id": "reciprocal-example-7",
+      "question": "A right triangle has opposite side \\(6\\,\\text{cm}\\), adjacent side \\(8\\,\\text{cm}\\), and hypotenuse \\(10\\,\\text{cm}\\). Find \\(\\csc(\\theta)\\).",
+      "solution": "Cosecant compares hypotenuse with opposite. Therefore: \\[\\csc(\\theta)=\\frac{H}{O}=\\frac{10}{6}=\\frac{5}{3}.\\]"
     },
     {
-      "id": "any-angle-example-8",
-      "question": "In which quadrant does 120° lie? What are the signs of sine, cosine, and tangent?",
-      "solution": "The four quadrants correspond to 0°–90°, 90°–180°, 180°–270° and 270°–360°. Since 120° lies between 90° and 180°, it is in Quadrant II. In Quadrant II, sine is positive, while cosine and tangent are negative."
+      "id": "reciprocal-example-8",
+      "question": "A right triangle has opposite side \\(6\\,\\text{cm}\\), adjacent side \\(8\\,\\text{cm}\\), and hypotenuse \\(10\\,\\text{cm}\\). Find \\(\\sec(\\theta)\\).",
+      "solution": "Secant compares hypotenuse with adjacent. Therefore: \\[\\sec(\\theta)=\\frac{H}{A}=\\frac{10}{8}=\\frac{5}{4}.\\]"
     },
     {
-      "id": "any-angle-example-9",
-      "question": "In which quadrant does 240° lie? What are the signs of sine, cosine, and tangent?",
-      "solution": "240° lies between 180° and 270°, so it is in Quadrant III. In Quadrant III, both x and y are negative. Therefore sine and cosine are negative, while tangent is positive."
+      "id": "reciprocal-example-9",
+      "question": "A right triangle has opposite side \\(6\\,\\text{cm}\\) and adjacent side \\(8\\,\\text{cm}\\). Find \\(\\cot(\\theta)\\).",
+      "solution": "Cotangent compares adjacent with opposite. Therefore: \\[\\cot(\\theta)=\\frac{A}{O}=\\frac{8}{6}=\\frac{4}{3}.\\]"
     },
     {
-      "id": "any-angle-example-10",
-      "question": "In which quadrant does 315° lie? What are the signs of sine, cosine, and tangent?",
-      "solution": "315° lies between 270° and 360°, so it is in Quadrant IV. Here x is positive and y is negative. Therefore cosine is positive, while sine and tangent are negative."
+      "id": "reciprocal-example-10",
+      "question": "For an acute angle \\(\\theta\\), \\(\\sin(\\theta)=0.4\\). Find \\(\\csc(\\theta)\\).",
+      "solution": "Cosecant is the reciprocal of sine: \\[\\csc(\\theta)=\\frac{1}{0.4}=2.5.\\]"
     },
     {
-      "id": "any-angle-example-11",
-      "question": "Find the reference angle of 40°.",
-      "solution": "40° lies in Quadrant I and is already acute. Therefore, the reference angle is simply 40°."
+      "id": "reciprocal-example-11",
+      "question": "For an acute angle \\(\\theta\\), \\(\\cos(\\theta)=0.8\\). Find \\(\\sec(\\theta)\\).",
+      "solution": "Secant is the reciprocal of cosine: \\[\\sec(\\theta)=\\frac{1}{0.8}=1.25.\\]"
     },
     {
-      "id": "any-angle-example-12",
-      "question": "Find the reference angle of 120°.",
-      "solution": "120° lies in Quadrant II. For Quadrant II, subtract the angle from 180°: \\[180^\\circ-120^\\circ=60^\\circ.\\] Therefore, the reference angle is 60°."
+      "id": "reciprocal-example-12",
+      "question": "For an acute angle \\(\\theta\\), \\(\\tan(\\theta)=\\frac{3}{4}\\). Find \\(\\cot(\\theta)\\) and verify the reciprocal identity.",
+      "solution": "Take the reciprocal of tangent: \\[\\cot(\\theta)=\\frac{4}{3}.\\] Now verify: \\[\\tan(\\theta)\\cdot\\cot(\\theta)=\\frac{3}{4}\\cdot\\frac{4}{3}=1.\\]"
     },
     {
-      "id": "any-angle-example-13",
-      "question": "Find the reference angle of 150°.",
-      "solution": "150° is in Quadrant II. Therefore: \\[180^\\circ-150^\\circ=30^\\circ.\\] The reference angle is 30°."
+      "id": "reciprocal-example-13",
+      "question": "A right triangle has sides \\(5\\), \\(12\\), and \\(13\\). For the angle opposite the side of length \\(5\\), find all six trigonometric ratios.",
+      "solution": "For the chosen angle, opposite = \\(5\\), adjacent = \\(12\\), and hypotenuse = \\(13\\). Therefore: \\[\\sin(\\theta)=\\frac{5}{13},\\quad\\cos(\\theta)=\\frac{12}{13},\\quad\\tan(\\theta)=\\frac{5}{12}.\\] Taking reciprocals gives: \\[\\csc(\\theta)=\\frac{13}{5},\\quad\\sec(\\theta)=\\frac{13}{12},\\quad\\cot(\\theta)=\\frac{12}{5}.\\]"
     },
     {
-      "id": "any-angle-example-14",
-      "question": "Find the reference angle of 210°.",
-      "solution": "210° lies in Quadrant III. Subtract 180°: \\[210^\\circ-180^\\circ=30^\\circ.\\] Therefore, the reference angle is 30°."
+      "id": "reciprocal-example-14",
+      "question": "If \\(\\sin(\\theta)=\\frac{5}{13}\\), find \\(\\csc(\\theta)\\) and verify that their product is \\(1\\).",
+      "solution": "The reciprocal of \\(\\frac{5}{13}\\) is \\(\\frac{13}{5}\\), so \\[\\csc(\\theta)=\\frac{13}{5}.\\] Verification: \\[\\sin(\\theta)\\cdot\\csc(\\theta)=\\frac{5}{13}\\cdot\\frac{13}{5}=1.\\]"
     },
     {
-      "id": "any-angle-example-15",
-      "question": "Find the reference angle of 240°.",
-      "solution": "240° lies in Quadrant III. Therefore: \\[240^\\circ-180^\\circ=60^\\circ.\\] The reference angle is 60°."
+      "id": "reciprocal-example-15",
+      "question": "A right triangle has opposite side \\(9\\,\\text{cm}\\) and adjacent side \\(12\\,\\text{cm}\\). Find tangent and cotangent.",
+      "solution": "Tangent compares opposite with adjacent: \\[\\tan(\\theta)=\\frac{9}{12}=\\frac{3}{4}.\\] Cotangent reverses the ratio: \\[\\cot(\\theta)=\\frac{12}{9}=\\frac{4}{3}.\\] Their product is \\(1\\)."
     },
     {
-      "id": "any-angle-example-16",
-      "question": "Find the reference angle of 300°.",
-      "solution": "300° lies in Quadrant IV. Therefore subtract it from 360°: \\[360^\\circ-300^\\circ=60^\\circ.\\] The reference angle is 60°."
-    },
-    {
-      "id": "any-angle-example-17",
-      "question": "Find the reference angle of 315°.",
-      "solution": "315° lies in Quadrant IV. Therefore: \\[360^\\circ-315^\\circ=45^\\circ.\\] The reference angle is 45°."
-    },
-    {
-      "id": "any-angle-example-18",
-      "question": "Find a positive coterminal angle for −45° and then find its reference angle.",
-      "solution": "Add 360° to −45°: \\[−45^\\circ+360^\\circ=315^\\circ.\\] Therefore, 315° is a positive coterminal angle. Since 315° lies in Quadrant IV, its reference angle is \\[360^\\circ-315^\\circ=45^\\circ.\\]"
-    },
-    {
-      "id": "any-angle-example-19",
-      "question": "Give two angles coterminal with 45°.",
-      "solution": "Add and subtract 360°. \\[45^\\circ+360^\\circ=405^\\circ\\] and \\[45^\\circ-360^\\circ=-315^\\circ.\\] Therefore, 405° and −315° are both coterminal with 45°."
-    },
-    {
-      "id": "any-angle-example-20",
-      "question": "A point P(−3,4) lies on the terminal side of θ. Find all three basic trigonometric ratios.",
-      "solution": "First find r: \\[r=\\sqrt{(-3)^2+4^2}=5.\\] Then: \\[\\sin(\\theta)=\\frac{4}{5},\\qquad\\cos(\\theta)=\\frac{-3}{5},\\qquad\\tan(\\theta)=\\frac{4}{-3}=-\\frac{4}{3}.\\] Therefore sine is positive, cosine is negative, and tangent is negative."
-    },
-    {
-      "id": "any-angle-example-21",
-      "question": "A point P(4,−3) lies on the terminal side of θ. Find all three basic trigonometric ratios.",
-      "solution": "First calculate r: \\[r=\\sqrt{4^2+(-3)^2}=5.\\] Then: \\[\\sin(\\theta)=\\frac{-3}{5},\\qquad\\cos(\\theta)=\\frac{4}{5},\\qquad\\tan(\\theta)=\\frac{-3}{4}.\\] The point is in Quadrant IV, which agrees with the signs: sine and tangent are negative, while cosine is positive."
-    },
-    {
-      "id": "any-angle-example-22",
-      "question": "Explain why tangent is undefined when the terminal side lies on the y-axis.",
-      "solution": "If the terminal side lies on the y-axis, then x = 0. Since \\[\\tan(\\theta)=\\frac{y}{x},\\] the denominator becomes zero. Division by zero is undefined. Therefore tangent is undefined for these angles."
-    },
-    {
-      "id": "any-angle-example-23",
-      "question": "Explain why sine is zero when the terminal side lies on the x-axis.",
-      "solution": "When the terminal side lies on the x-axis, y = 0. Since \\[\\sin(\\theta)=\\frac{y}{r},\\] we get \\[\\sin(\\theta)=\\frac{0}{r}=0.\\] Therefore sine is zero."
-    },
-    {
-      "id": "any-angle-example-24",
-      "question": "For an angle of 150°, explain how the reference angle and quadrant work together.",
-      "solution": "First find the reference angle: \\[180^\\circ-150^\\circ=30^\\circ.\\] Therefore, 30° gives the corresponding acute-angle magnitude. Next, identify the quadrant. 150° lies in Quadrant II. In Quadrant II, sine is positive while cosine and tangent are negative. Thus the reference angle determines the magnitude pattern and the quadrant determines the sign."
+      "id": "reciprocal-example-16",
+      "question": "A right triangle has equal legs. Find the tangent and cotangent of either acute angle.",
+      "solution": "Equal legs mean opposite and adjacent have the same length. Therefore: \\[\\tan(\\theta)=\\frac{O}{A}=1\\] and \\[\\cot(\\theta)=\\frac{A}{O}=1.\\] Thus both ratios are equal to \\(1\\)."
     }
   ],
-
   "key_ideas": [
-    "Right-triangle definitions naturally describe acute angles, but trigonometry must also handle larger and negative angles.",
-    "Standard position places the vertex at the origin and the initial side along the positive x-axis.",
-    "Positive angles represent counterclockwise rotation.",
-    "Negative angles represent clockwise rotation.",
-    "A point on the terminal side can be written as (x,y).",
-    "The distance from the origin to (x,y) is r = √(x² + y²).",
-    "The value of r is always positive because it represents a distance.",
-    "For any angle, sine can be defined as y/r.",
-    "For any angle, cosine can be defined as x/r.",
-    "For any angle where x is non-zero, tangent can be defined as y/x.",
-    "The coordinate definitions are extensions of SOH-CAH-TOA.",
-    "Sine depends on the sign of y.",
-    "Cosine depends on the sign of x.",
-    "Tangent depends on the relative signs of x and y.",
-    "All three basic ratios are positive in Quadrant I.",
-    "Only sine is positive in Quadrant II.",
-    "Only tangent is positive in Quadrant III.",
-    "Only cosine is positive in Quadrant IV.",
-    "CAST or ASTC can be used as a memory aid for the sign pattern.",
-    "The coordinate signs provide the reason behind the CAST pattern.",
-    "A reference angle is the positive acute angle between the terminal side and the x-axis.",
-    "The reference angle provides the corresponding acute-angle magnitude.",
-    "The quadrant determines the sign of the trigonometric ratio.",
-    "Angles that differ by multiples of 360° are coterminal.",
-    "Coterminal angles have the same terminal side.",
-    "Negative angles can be converted to positive coterminal angles by adding 360° when appropriate.",
-    "Tangent is undefined when x = 0.",
-    "Sine is zero when y = 0.",
-    "Cosine is zero when x = 0.",
-    "Any-angle trigonometry extends the same fundamental side relationships rather than replacing them."
+    "A reciprocal is a number that multiplies with the original number to give \\(1\\).",
+    "For a fraction, taking the reciprocal means switching the numerator and denominator.",
+    "Cosecant is the reciprocal of sine.",
+    "Secant is the reciprocal of cosine.",
+    "Cotangent is the reciprocal of tangent.",
+    "Cosecant compares hypotenuse with opposite.",
+    "Secant compares hypotenuse with adjacent.",
+    "Cotangent compares adjacent with opposite.",
+    "Sine and cosecant form a reciprocal pair.",
+    "Cosine and secant form a reciprocal pair.",
+    "Tangent and cotangent form a reciprocal pair.",
+    "The product of a trigonometric ratio and its reciprocal is \\(1\\).",
+    "For an acute angle, cosecant and secant are greater than \\(1\\).",
+    "Cotangent can be less than, equal to, or greater than \\(1\\).",
+    "The six trigonometric ratios can be understood as three basic ratios and their reciprocals.",
+    "SOH-CAH-TOA remains the foundation for the three original ratios.",
+    "You can find a reciprocal ratio directly from the side lengths or by taking the reciprocal of a known ratio.",
+    "Reciprocal ratios do not mean inverse trigonometric functions.",
+    "Understanding why the ratios are related is more useful than memorising six unrelated formulas."
   ],
-
   "misconceptions": [
-    "Trigonometric ratios are not restricted to angles between 0° and 90°.",
-    "A negative angle represents clockwise rotation; it does not mean that an angle has a negative physical length.",
-    "The negative signs of x and y are coordinate signs, not negative triangle side lengths.",
-    "The value of r is always positive because r represents a distance.",
-    "Sine is not always positive.",
-    "Cosine is not always positive.",
-    "Tangent can be positive in Quadrant III because both x and y are negative.",
-    "CAST or ASTC is a memory aid and not the fundamental reason for the signs.",
-    "The reference angle is always acute for a non-axis angle.",
-    "The reference angle is not the same as the original angle in most quadrants.",
-    "The quadrant determines the sign; the reference angle does not determine the sign by itself.",
-    "A reference angle is not found by simply taking the absolute value of the original angle.",
-    "Angles greater than 360° are valid angles; they represent more than one complete rotation.",
-    "Negative angles can be coterminal with positive angles.",
-    "Coterminal angles are different angle measures but share the same terminal side.",
-    "Tangent is not defined when x = 0 because division by zero is undefined.",
-    "Sine is zero on the x-axis because y = 0.",
-    "Cosine is zero on the y-axis because x = 0.",
-    "The coordinate-plane definitions do not contradict SOH-CAH-TOA; they extend it.",
-    "A point with negative coordinates does not mean the associated triangle has negative side lengths.",
-    "The terminal side, not the initial side, determines the quadrant of an angle.",
-    "A negative angle should not automatically be treated as being in Quadrant IV without considering its actual rotation.",
-    "When using a reference angle, the original quadrant must still be identified before assigning a sign."
+    "Cosecant is not the same as cosine; \\(\\csc\\) is the reciprocal of sine.",
+    "Secant is not the same as sine; \\(\\sec\\) is the reciprocal of cosine.",
+    "Cotangent is not the reciprocal of cosine; it is the reciprocal of tangent.",
+    "Taking a reciprocal means flipping the numerator and denominator of a non-zero fraction.",
+    "The reciprocal of \\(\\frac{3}{5}\\) is \\(\\frac{5}{3}\\), not \\(-\\frac{3}{5}\\).",
+    "Cosecant compares hypotenuse with opposite, not opposite with hypotenuse.",
+    "Secant compares hypotenuse with adjacent, not adjacent with hypotenuse.",
+    "Cotangent compares adjacent with opposite, not opposite with adjacent.",
+    "A reciprocal is not the same thing as an inverse trigonometric function.",
+    "The product of a ratio and its reciprocal is \\(1\\), not \\(0\\).",
+    "Cosecant and secant are greater than \\(1\\) for acute angles because the hypotenuse is longer than either leg.",
+    "Cotangent is not always greater than \\(1\\); its value depends on the relative lengths of the two legs.",
+    "You still need to identify the reference angle before deciding which side is opposite or adjacent.",
+    "The letters \\(\\csc\\), \\(\\sec\\), and \\(\\cot\\) represent specific trigonometric ratios and should not be treated as arbitrary abbreviations.",
+    "Reciprocal ratios are built from sine, cosine and tangent rather than being completely unrelated formulas."
   ],
-
   "explorations": [
     {
-      "id": "visualize-standard-position",
-      "type": "visualization"
-    },
-    {
-      "id": "visualize-four-quadrants",
-      "type": "visualization"
-    },
-    {
-      "id": "visualize-trig-signs-by-quadrant",
-      "type": "visualization"
-    },
-    {
-      "id": "visualize-positive-negative-angles",
-      "type": "visualization"
-    },
-    {
-      "id": "visualize-reference-angles",
-      "type": "visualization"
-    },
-    {
-      "id": "explore-coordinate-trig-ratios",
-      "type": "experiment"
-    },
-    {
-      "id": "explore-coterminal-angles",
-      "type": "experiment"
-    },
-    {
-      "id": "explore-reference-angle-and-sign",
-      "type": "experiment"
-    },
-    {
-      "id": "why-trig-values-change-sign",
+      "id": "why-reciprocal-means-flip",
       "type": "why"
     },
     {
-      "id": "why-reference-angles-work",
-      "type": "why"
+      "id": "visualize-six-trig-ratios",
+      "type": "visualization"
     },
     {
-      "id": "deeper-coordinate-definition-of-trig",
+      "id": "visualize-cosecant",
+      "type": "visualization"
+    },
+    {
+      "id": "visualize-secant",
+      "type": "visualization"
+    },
+    {
+      "id": "visualize-cotangent",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-reciprocal-pairs",
+      "type": "experiment"
+    },
+    {
+      "id": "explore-six-ratios-from-345",
+      "type": "experiment"
+    },
+    {
+      "id": "deeper-six-ratios-three-relationships",
       "type": "go-deeper"
     }
   ],
-
   "sources": [
     "khan-academy-trigonometry",
     "openstax-precalculus"
