@@ -1,0 +1,1117 @@
+{
+  "id": "reciprocal-trigonometric-ratios",
+  "title": "Reciprocal Trigonometric Ratios",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+  "difficulty": 2,
+  "connections": {
+    "prerequisites": [
+      "trigonometric-ratios"
+    ],
+    "leads_to": [
+      "trigonometric-ratios-any-angle",
+      "trigonometric-functions"
+    ],
+    "related": [
+      "trigonometric-ratios"
+    ]
+  },
+  "theory": {
+    "introduction": "Once sine, cosine and tangent are understood, we can build three more trigonometric ratios by taking their reciprocals. These are cosecant, secant and cotangent. The reciprocal ratios do not introduce completely new ideas; they describe the same right triangle relationships from another direction. Understanding how these six ratios are connected makes trigonometry more organized and helps us recognize formulas instead of memorising them separately.",
+    "sections": [
+      {
+        "id": "what-is-a-reciprocal",
+        "title": "What Does Reciprocal Mean?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Before learning the new trigonometric ratios, we need to understand the word reciprocal."
+          },
+          {
+            "type": "paragraph",
+            "text": "The reciprocal of a non-zero number is the number that gives \\(1\\) when multiplied by the original number."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, the reciprocal of \\(5\\) is \\(\\frac{1}{5}\\), because \\(5\\times\\frac{1}{5}=1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The reciprocal of \\(\\frac{3}{7}\\) is \\(\\frac{7}{3}\\), because \\(\\frac{3}{7}\\times\\frac{7}{3}=1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a fraction, taking the reciprocal means switching the numerator and denominator."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, if \\(\\sin(\\theta)=\\frac{O}{H}\\), its reciprocal is \\(\\frac{H}{O}\\). This reciprocal ratio is called cosecant."
+          }
+        ]
+      },
+      {
+        "id": "why-reciprocal-ratios",
+        "title": "Why Do Reciprocal Trigonometric Ratios Exist?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sine, cosine and tangent already describe important relationships between the sides of a right triangle. So why introduce three more ratios?"
+          },
+          {
+            "type": "paragraph",
+            "text": "The reciprocal ratios are useful because sometimes the reversed relationship between two sides is more natural or convenient."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sine compares opposite with hypotenuse. Its reciprocal, cosecant, compares hypotenuse with opposite."
+          },
+          {
+            "type": "paragraph",
+            "text": "Similarly, cosine compares adjacent with hypotenuse, while secant compares hypotenuse with adjacent."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent compares opposite with adjacent, while cotangent compares adjacent with opposite."
+          },
+          {
+            "type": "paragraph",
+            "text": "The important idea is that reciprocal ratios are not unrelated formulas. Each one is directly connected to one of the three basic ratios."
+          }
+        ]
+      },
+      {
+        "id": "cosecant",
+        "title": "Cosecant: The Reciprocal of Sine",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The first reciprocal trigonometric ratio is cosecant, written as \\(\\csc(\\theta)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosecant is defined as the reciprocal of sine."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since sine is:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "taking the reciprocal gives:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\csc(\\theta)=\\frac{H}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, cosecant compares the hypotenuse with the opposite side."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if the opposite side is \\(6\\) and the hypotenuse is \\(10\\), then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{6}{10}=\\frac{3}{5}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\csc(\\theta)=\\frac{10}{6}=\\frac{5}{3}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The two values are reciprocals of each other."
+          }
+        ]
+      },
+      {
+        "id": "understanding-cosecant",
+        "title": "Understanding What Cosecant Compares",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "It is easy to think of cosecant as just a strange new function to memorise. A better approach is to look at the side relationship."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine asks: how large is the opposite side compared with the hypotenuse?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosecant reverses that question: how large is the hypotenuse compared with the opposite side?"
+          },
+          {
+            "type": "paragraph",
+            "text": "So if the opposite side is half the hypotenuse, the hypotenuse is twice the opposite side. The corresponding sine and cosecant values are therefore reciprocals."
+          },
+          {
+            "type": "paragraph",
+            "text": "For an acute angle in a right triangle, the hypotenuse is longer than the opposite side. Therefore, \\(\\csc(\\theta)\\) is greater than \\(1\\)."
+          }
+        ]
+      },
+      {
+        "id": "secant",
+        "title": "Secant: The Reciprocal of Cosine",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The second reciprocal trigonometric ratio is secant, written as \\(\\sec(\\theta)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Secant is defined as the reciprocal of cosine."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since cosine is:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{A}{H}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "taking the reciprocal gives:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{H}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, secant compares the hypotenuse with the adjacent side."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if the adjacent side is \\(8\\) and the hypotenuse is \\(10\\), then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{8}{10}=\\frac{4}{5}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{10}{8}=\\frac{5}{4}\\]"
+          }
+        ]
+      },
+      {
+        "id": "understanding-secant",
+        "title": "Understanding What Secant Compares",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cosine compares the adjacent side with the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "Secant reverses that comparison and asks how large the hypotenuse is compared with the adjacent side."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because the hypotenuse is always longer than either leg of a right triangle, the hypotenuse-to-adjacent ratio is greater than \\(1\\) for an acute angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, for an acute angle, \\(\\sec(\\theta)>1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Secant is not a completely new geometric relationship. It is simply the reversed form of the cosine relationship."
+          }
+        ]
+      },
+      {
+        "id": "cotangent",
+        "title": "Cotangent: The Reciprocal of Tangent",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The third reciprocal trigonometric ratio is cotangent, written as \\(\\cot(\\theta)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent is defined as the reciprocal of tangent."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since tangent is:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{O}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "taking the reciprocal gives:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cot(\\theta)=\\frac{A}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, cotangent compares the adjacent side with the opposite side."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if the opposite side is \\(9\\) and the adjacent side is \\(12\\), then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{9}{12}=\\frac{3}{4}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cot(\\theta)=\\frac{12}{9}=\\frac{4}{3}\\]"
+          }
+        ]
+      },
+      {
+        "id": "understanding-cotangent",
+        "title": "Understanding What Cotangent Compares",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Tangent compares opposite with adjacent."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent reverses that relationship and compares adjacent with opposite."
+          },
+          {
+            "type": "paragraph",
+            "text": "Unlike cosecant and secant, cotangent is not necessarily greater than \\(1\\) for an acute angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the opposite side is shorter than the adjacent side, cotangent is greater than \\(1\\). If the opposite and adjacent sides are equal, cotangent is \\(1\\). If the opposite side is longer, cotangent is less than \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "So the value of cotangent depends on the relative lengths of the two legs."
+          }
+        ]
+      },
+      {
+        "id": "three-reciprocal-ratios",
+        "title": "The Three Reciprocal Ratios Together",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The three reciprocal ratios can now be placed alongside the original three ratios."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine and cosecant form a reciprocal pair:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H},\\qquad\\csc(\\theta)=\\frac{H}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine and secant form a reciprocal pair:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{A}{H},\\qquad\\sec(\\theta)=\\frac{H}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent and cotangent form a reciprocal pair:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{O}{A},\\qquad\\cot(\\theta)=\\frac{A}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The easiest way to remember the relationships is to notice that the numerator and denominator are simply switched."
+          }
+        ]
+      },
+      {
+        "id": "reciprocal-identities",
+        "title": "The Reciprocal Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "When two quantities are reciprocals, their product is \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, sine and cosecant satisfy:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)\\cdot\\csc(\\theta)=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine and secant satisfy:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)\\cdot\\sec(\\theta)=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent and cotangent satisfy:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)\\cdot\\cot(\\theta)=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "These are called reciprocal identities. They follow directly from the definitions rather than being separate facts that must be memorised without explanation."
+          }
+        ]
+      },
+      {
+        "id": "why-products-equal-one",
+        "title": "Why Do the Products Equal One?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Consider sine and cosecant."
+          },
+          {
+            "type": "paragraph",
+            "text": "We know:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "and:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\csc(\\theta)=\\frac{H}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Multiplying them gives:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)\\cdot\\csc(\\theta)=\\frac{O}{H}\\cdot\\frac{H}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The common factors cancel:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\frac{O}{H}\\cdot\\frac{H}{O}=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Exactly the same reasoning works for cosine and secant, and for tangent and cotangent."
+          }
+        ]
+      },
+      {
+        "id": "finding-a-reciprocal",
+        "title": "Finding a Reciprocal Ratio From a Known Ratio",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "If you know one trigonometric ratio, you can immediately find its reciprocal by taking the reciprocal of the value."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, suppose:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{3}{5}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The reciprocal is:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\csc(\\theta)=\\frac{5}{3}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Similarly, if:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{4}{5}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{5}{4}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "And if:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{2}{3}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cot(\\theta)=\\frac{3}{2}\\]"
+          }
+        ]
+      },
+      {
+        "id": "finding-basic-ratio",
+        "title": "Finding a Basic Ratio From a Reciprocal",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The process also works in the opposite direction."
+          },
+          {
+            "type": "paragraph",
+            "text": "If you know a reciprocal ratio, take its reciprocal again to recover the original ratio."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\csc(\\theta)=\\frac{7}{3}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{3}{7}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Likewise, if:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{9}{4}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "then:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{4}{9}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Taking the reciprocal twice returns you to the original value."
+          }
+        ]
+      },
+      {
+        "id": "reciprocal-ratios-from-sides",
+        "title": "Finding Reciprocal Ratios From Triangle Sides",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "You can also calculate the reciprocal ratios directly from a right triangle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Suppose a right triangle has opposite side \\(6\\), adjacent side \\(8\\), and hypotenuse \\(10\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For the chosen angle:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[O=6,\\qquad A=8,\\qquad H=10\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosecant is hypotenuse divided by opposite:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\csc(\\theta)=\\frac{10}{6}=\\frac{5}{3}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Secant is hypotenuse divided by adjacent:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{10}{8}=\\frac{5}{4}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent is adjacent divided by opposite:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cot(\\theta)=\\frac{8}{6}=\\frac{4}{3}\\]"
+          }
+        ]
+      },
+      {
+        "id": "six-ratios-table",
+        "title": "All Six Ratios in One Picture",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For a chosen acute angle in a right triangle, the six trigonometric ratios can be organised into three reciprocal pairs."
+          },
+          {
+            "type": "paragraph",
+            "text": "The first pair is sine and cosecant:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H},\\qquad\\csc(\\theta)=\\frac{H}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The second pair is cosine and secant:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)=\\frac{A}{H},\\qquad\\sec(\\theta)=\\frac{H}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The third pair is tangent and cotangent:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{O}{A},\\qquad\\cot(\\theta)=\\frac{A}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "This arrangement is useful because it shows that the six ratios are built from only three side comparisons and their reciprocals."
+          }
+        ]
+      },
+      {
+        "id": "reciprocal-ratios-and-soh-cahtoa",
+        "title": "Connecting the Six Ratios to SOH-CAH-TOA",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "SOH-CAH-TOA gives the three original ratios:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)=\\frac{O}{H},\\qquad\\cos(\\theta)=\\frac{A}{H},\\qquad\\tan(\\theta)=\\frac{O}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The reciprocal ratios are obtained simply by reversing each fraction."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\csc(\\theta)=\\frac{H}{O},\\qquad\\sec(\\theta)=\\frac{H}{A},\\qquad\\cot(\\theta)=\\frac{A}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "There is no need to create a completely separate memory system for the reciprocal ratios. Start with SOH-CAH-TOA and reverse the appropriate fraction."
+          }
+        ]
+      },
+      {
+        "id": "reciprocal-vs-inverse",
+        "title": "Reciprocal Does Not Mean Inverse Function",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The word inverse can cause confusion in trigonometry because it can refer to different ideas."
+          },
+          {
+            "type": "paragraph",
+            "text": "A reciprocal means taking \\(\\frac{1}{x}\\). For example, the reciprocal of \\(\\sin(\\theta)\\) is \\(\\frac{1}{\\sin(\\theta)}\\), which is \\(\\csc(\\theta)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This is different from an inverse function. Reciprocal ratios are the topic here; inverse trigonometric functions are a different concept and are not needed to understand cosecant, secant and cotangent."
+          },
+          {
+            "type": "paragraph",
+            "text": "For now, focus on the simple rule: reciprocal means flip the fraction."
+          }
+        ]
+      },
+      {
+        "id": "why-cosecant-and-secant-greater-than-one",
+        "title": "Why Are Cosecant and Secant Greater Than One?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For an acute angle in a right triangle, the hypotenuse is always longer than either leg."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosecant compares hypotenuse with opposite:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\csc(\\theta)=\\frac{H}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Since \\(H>O\\), this ratio must be greater than \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Secant compares hypotenuse with adjacent:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sec(\\theta)=\\frac{H}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Since \\(H>A\\), this ratio is also greater than \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This also makes sense from the reciprocal relationships. For an acute angle, sine and cosine are between \\(0\\) and \\(1\\), so their reciprocals are greater than \\(1\\)."
+          }
+        ]
+      },
+      {
+        "id": "cotangent-size",
+        "title": "Why Cotangent Can Be Less Than, Equal To, or Greater Than One",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cotangent behaves differently from cosecant and secant because it compares the two legs of the right triangle."
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cot(\\theta)=\\frac{A}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "If the adjacent side is longer than the opposite side, then \\(\\cot(\\theta)>1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the adjacent and opposite sides are equal, then \\(\\cot(\\theta)=1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the adjacent side is shorter than the opposite side, then \\(\\cot(\\theta)<1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, in a right triangle with equal legs, the two acute angles are each \\(45^\\circ\\). For either acute angle:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(45^\\circ)=1,\\qquad\\cot(45^\\circ)=1\\]"
+          }
+        ]
+      },
+      {
+        "id": "relationships-between-tan-and-cot",
+        "title": "Tangent and Cotangent as Opposite Ratios",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Tangent and cotangent are especially easy to connect because they use exactly the same two sides."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent uses:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)=\\frac{O}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent reverses it:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cot(\\theta)=\\frac{A}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cot(\\theta)=\\frac{1}{\\tan(\\theta)}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "and:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)\\cdot\\cot(\\theta)=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The same reciprocal idea connects sine with cosecant and cosine with secant."
+          }
+        ]
+      },
+      {
+        "id": "using-reciprocal-ratios",
+        "title": "When Might We Use Reciprocal Ratios?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The reciprocal ratios are useful when a problem naturally involves hypotenuse divided by a leg, or one leg divided by the other."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if a problem gives the hypotenuse and opposite side and asks for their ratio in that order, cosecant matches the relationship directly."
+          },
+          {
+            "type": "paragraph",
+            "text": "Similarly, if the hypotenuse is divided by the adjacent side, secant gives that ratio directly."
+          },
+          {
+            "type": "paragraph",
+            "text": "If adjacent is divided by opposite, cotangent gives that relationship directly."
+          },
+          {
+            "type": "paragraph",
+            "text": "However, you should not feel forced to use a reciprocal ratio just because it exists. If sine, cosine or tangent makes the problem clearer, the original ratios can still be used."
+          }
+        ]
+      },
+      {
+        "id": "checking-reciprocal-calculations",
+        "title": "Checking Your Reciprocal Calculations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Because reciprocal ratios are created by flipping fractions, a quick check is possible."
+          },
+          {
+            "type": "paragraph",
+            "text": "If you calculate both sine and cosecant for the same angle, multiplying them should give \\(1\\):"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\sin(\\theta)\\cdot\\csc(\\theta)=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "The same check works for cosine and secant:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\cos(\\theta)\\cdot\\sec(\\theta)=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "And for tangent and cotangent:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\tan(\\theta)\\cdot\\cot(\\theta)=1\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "If the product is not \\(1\\), check whether you reversed the fraction correctly or made an arithmetic error."
+          }
+        ]
+      },
+      {
+        "id": "big-picture-six-ratios",
+        "title": "The Big Picture: Six Ratios, Three Core Relationships",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "At first, six trigonometric ratios can seem like six separate formulas. They are much more connected than they appear."
+          },
+          {
+            "type": "paragraph",
+            "text": "There are really three fundamental side relationships:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\frac{O}{H},\\qquad\\frac{A}{H},\\qquad\\frac{O}{A}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "These produce sine, cosine and tangent."
+          },
+          {
+            "type": "paragraph",
+            "text": "Reversing each relationship produces:"
+          },
+          {
+            "type": "paragraph",
+            "text": "\\[\\frac{H}{O},\\qquad\\frac{H}{A},\\qquad\\frac{A}{O}\\]"
+          },
+          {
+            "type": "paragraph",
+            "text": "These produce cosecant, secant and cotangent."
+          },
+          {
+            "type": "paragraph",
+            "text": "So the six ratios are best understood as three relationships and their reciprocals."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "cosecant-ratio",
+      "name": "Cosecant Ratio",
+      "expression": "\\(\\csc(\\theta)=\\frac{H}{O}\\)",
+      "explanation": "Cosecant is the reciprocal of sine and compares the hypotenuse with the opposite side."
+    },
+    {
+      "id": "secant-ratio",
+      "name": "Secant Ratio",
+      "expression": "\\(\\sec(\\theta)=\\frac{H}{A}\\)",
+      "explanation": "Secant is the reciprocal of cosine and compares the hypotenuse with the adjacent side."
+    },
+    {
+      "id": "cotangent-ratio",
+      "name": "Cotangent Ratio",
+      "expression": "\\(\\cot(\\theta)=\\frac{A}{O}\\)",
+      "explanation": "Cotangent is the reciprocal of tangent and compares the adjacent side with the opposite side."
+    },
+    {
+      "id": "cosecant-reciprocal",
+      "name": "Cosecant and Sine",
+      "expression": "\\(\\csc(\\theta)=\\frac{1}{\\sin(\\theta)}\\)",
+      "explanation": "Cosecant is the reciprocal of sine."
+    },
+    {
+      "id": "secant-reciprocal",
+      "name": "Secant and Cosine",
+      "expression": "\\(\\sec(\\theta)=\\frac{1}{\\cos(\\theta)}\\)",
+      "explanation": "Secant is the reciprocal of cosine."
+    },
+    {
+      "id": "cotangent-reciprocal",
+      "name": "Cotangent and Tangent",
+      "expression": "\\(\\cot(\\theta)=\\frac{1}{\\tan(\\theta)}\\)",
+      "explanation": "Cotangent is the reciprocal of tangent."
+    },
+    {
+      "id": "sine-cosecant-identity",
+      "name": "Sine-Cosecant Identity",
+      "expression": "\\(\\sin(\\theta)\\cdot\\csc(\\theta)=1\\)",
+      "explanation": "Sine and cosecant are reciprocals, so their product is one."
+    },
+    {
+      "id": "cosine-secant-identity",
+      "name": "Cosine-Secant Identity",
+      "expression": "\\(\\cos(\\theta)\\cdot\\sec(\\theta)=1\\)",
+      "explanation": "Cosine and secant are reciprocals, so their product is one."
+    },
+    {
+      "id": "tangent-cotangent-identity",
+      "name": "Tangent-Cotangent Identity",
+      "expression": "\\(\\tan(\\theta)\\cdot\\cot(\\theta)=1\\)",
+      "explanation": "Tangent and cotangent are reciprocals, so their product is one."
+    }
+  ],
+  "examples": [
+    {
+      "id": "reciprocal-example-1",
+      "question": "If \\(\\sin(\\theta)=\\frac{3}{5}\\), find \\(\\csc(\\theta)\\).",
+      "solution": "Cosecant is the reciprocal of sine. Therefore, flip the fraction: \\[\\csc(\\theta)=\\frac{1}{\\sin(\\theta)}=\\frac{5}{3}.\\]"
+    },
+    {
+      "id": "reciprocal-example-2",
+      "question": "If \\(\\cos(\\theta)=\\frac{4}{7}\\), find \\(\\sec(\\theta)\\).",
+      "solution": "Secant is the reciprocal of cosine. Therefore: \\[\\sec(\\theta)=\\frac{1}{\\cos(\\theta)}=\\frac{7}{4}.\\]"
+    },
+    {
+      "id": "reciprocal-example-3",
+      "question": "If \\(\\tan(\\theta)=\\frac{2}{5}\\), find \\(\\cot(\\theta)\\).",
+      "solution": "Cotangent is the reciprocal of tangent. Therefore: \\[\\cot(\\theta)=\\frac{1}{\\tan(\\theta)}=\\frac{5}{2}.\\]"
+    },
+    {
+      "id": "reciprocal-example-4",
+      "question": "If \\(\\csc(\\theta)=\\frac{9}{4}\\), find \\(\\sin(\\theta)\\).",
+      "solution": "Sine and cosecant are reciprocals. Flip the fraction: \\[\\sin(\\theta)=\\frac{4}{9}.\\]"
+    },
+    {
+      "id": "reciprocal-example-5",
+      "question": "If \\(\\sec(\\theta)=\\frac{11}{6}\\), find \\(\\cos(\\theta)\\).",
+      "solution": "Cosine is the reciprocal of secant. Therefore: \\[\\cos(\\theta)=\\frac{6}{11}.\\]"
+    },
+    {
+      "id": "reciprocal-example-6",
+      "question": "If \\(\\cot(\\theta)=\\frac{7}{3}\\), find \\(\\tan(\\theta)\\).",
+      "solution": "Tangent and cotangent are reciprocals. Therefore: \\[\\tan(\\theta)=\\frac{3}{7}.\\]"
+    },
+    {
+      "id": "reciprocal-example-7",
+      "question": "A right triangle has opposite side \\(6\\,\\text{cm}\\), adjacent side \\(8\\,\\text{cm}\\), and hypotenuse \\(10\\,\\text{cm}\\). Find \\(\\csc(\\theta)\\).",
+      "solution": "Cosecant compares hypotenuse with opposite. Therefore: \\[\\csc(\\theta)=\\frac{H}{O}=\\frac{10}{6}=\\frac{5}{3}.\\]"
+    },
+    {
+      "id": "reciprocal-example-8",
+      "question": "A right triangle has opposite side \\(6\\,\\text{cm}\\), adjacent side \\(8\\,\\text{cm}\\), and hypotenuse \\(10\\,\\text{cm}\\). Find \\(\\sec(\\theta)\\).",
+      "solution": "Secant compares hypotenuse with adjacent. Therefore: \\[\\sec(\\theta)=\\frac{H}{A}=\\frac{10}{8}=\\frac{5}{4}.\\]"
+    },
+    {
+      "id": "reciprocal-example-9",
+      "question": "A right triangle has opposite side \\(6\\,\\text{cm}\\) and adjacent side \\(8\\,\\text{cm}\\). Find \\(\\cot(\\theta)\\).",
+      "solution": "Cotangent compares adjacent with opposite. Therefore: \\[\\cot(\\theta)=\\frac{A}{O}=\\frac{8}{6}=\\frac{4}{3}.\\]"
+    },
+    {
+      "id": "reciprocal-example-10",
+      "question": "For an acute angle \\(\\theta\\), \\(\\sin(\\theta)=0.4\\). Find \\(\\csc(\\theta)\\).",
+      "solution": "Cosecant is the reciprocal of sine: \\[\\csc(\\theta)=\\frac{1}{0.4}=2.5.\\]"
+    },
+    {
+      "id": "reciprocal-example-11",
+      "question": "For an acute angle \\(\\theta\\), \\(\\cos(\\theta)=0.8\\). Find \\(\\sec(\\theta)\\).",
+      "solution": "Secant is the reciprocal of cosine: \\[\\sec(\\theta)=\\frac{1}{0.8}=1.25.\\]"
+    },
+    {
+      "id": "reciprocal-example-12",
+      "question": "For an acute angle \\(\\theta\\), \\(\\tan(\\theta)=\\frac{3}{4}\\). Find \\(\\cot(\\theta)\\) and verify the reciprocal identity.",
+      "solution": "Take the reciprocal of tangent: \\[\\cot(\\theta)=\\frac{4}{3}.\\] Now verify: \\[\\tan(\\theta)\\cdot\\cot(\\theta)=\\frac{3}{4}\\cdot\\frac{4}{3}=1.\\]"
+    },
+    {
+      "id": "reciprocal-example-13",
+      "question": "A right triangle has sides \\(5\\), \\(12\\), and \\(13\\). For the angle opposite the side of length \\(5\\), find all six trigonometric ratios.",
+      "solution": "For the chosen angle, opposite = \\(5\\), adjacent = \\(12\\), and hypotenuse = \\(13\\). Therefore: \\[\\sin(\\theta)=\\frac{5}{13},\\quad\\cos(\\theta)=\\frac{12}{13},\\quad\\tan(\\theta)=\\frac{5}{12}.\\] Taking reciprocals gives: \\[\\csc(\\theta)=\\frac{13}{5},\\quad\\sec(\\theta)=\\frac{13}{12},\\quad\\cot(\\theta)=\\frac{12}{5}.\\]"
+    },
+    {
+      "id": "reciprocal-example-14",
+      "question": "If \\(\\sin(\\theta)=\\frac{5}{13}\\), find \\(\\csc(\\theta)\\) and verify that their product is \\(1\\).",
+      "solution": "The reciprocal of \\(\\frac{5}{13}\\) is \\(\\frac{13}{5}\\), so \\[\\csc(\\theta)=\\frac{13}{5}.\\] Verification: \\[\\sin(\\theta)\\cdot\\csc(\\theta)=\\frac{5}{13}\\cdot\\frac{13}{5}=1.\\]"
+    },
+    {
+      "id": "reciprocal-example-15",
+      "question": "A right triangle has opposite side \\(9\\,\\text{cm}\\) and adjacent side \\(12\\,\\text{cm}\\). Find tangent and cotangent.",
+      "solution": "Tangent compares opposite with adjacent: \\[\\tan(\\theta)=\\frac{9}{12}=\\frac{3}{4}.\\] Cotangent reverses the ratio: \\[\\cot(\\theta)=\\frac{12}{9}=\\frac{4}{3}.\\] Their product is \\(1\\)."
+    },
+    {
+      "id": "reciprocal-example-16",
+      "question": "A right triangle has equal legs. Find the tangent and cotangent of either acute angle.",
+      "solution": "Equal legs mean opposite and adjacent have the same length. Therefore: \\[\\tan(\\theta)=\\frac{O}{A}=1\\] and \\[\\cot(\\theta)=\\frac{A}{O}=1.\\] Thus both ratios are equal to \\(1\\)."
+    }
+  ],
+  "key_ideas": [
+    "A reciprocal is a number that multiplies with the original number to give \\(1\\).",
+    "For a fraction, taking the reciprocal means switching the numerator and denominator.",
+    "Cosecant is the reciprocal of sine.",
+    "Secant is the reciprocal of cosine.",
+    "Cotangent is the reciprocal of tangent.",
+    "Cosecant compares hypotenuse with opposite.",
+    "Secant compares hypotenuse with adjacent.",
+    "Cotangent compares adjacent with opposite.",
+    "Sine and cosecant form a reciprocal pair.",
+    "Cosine and secant form a reciprocal pair.",
+    "Tangent and cotangent form a reciprocal pair.",
+    "The product of a trigonometric ratio and its reciprocal is \\(1\\).",
+    "For an acute angle, cosecant and secant are greater than \\(1\\).",
+    "Cotangent can be less than, equal to, or greater than \\(1\\).",
+    "The six trigonometric ratios can be understood as three basic ratios and their reciprocals.",
+    "SOH-CAH-TOA remains the foundation for the three original ratios.",
+    "You can find a reciprocal ratio directly from the side lengths or by taking the reciprocal of a known ratio.",
+    "Reciprocal ratios do not mean inverse trigonometric functions.",
+    "Understanding why the ratios are related is more useful than memorising six unrelated formulas."
+  ],
+  "misconceptions": [
+    "Cosecant is not the same as cosine; \\(\\csc\\) is the reciprocal of sine.",
+    "Secant is not the same as sine; \\(\\sec\\) is the reciprocal of cosine.",
+    "Cotangent is not the reciprocal of cosine; it is the reciprocal of tangent.",
+    "Taking a reciprocal means flipping the numerator and denominator of a non-zero fraction.",
+    "The reciprocal of \\(\\frac{3}{5}\\) is \\(\\frac{5}{3}\\), not \\(-\\frac{3}{5}\\).",
+    "Cosecant compares hypotenuse with opposite, not opposite with hypotenuse.",
+    "Secant compares hypotenuse with adjacent, not adjacent with hypotenuse.",
+    "Cotangent compares adjacent with opposite, not opposite with adjacent.",
+    "A reciprocal is not the same thing as an inverse trigonometric function.",
+    "The product of a ratio and its reciprocal is \\(1\\), not \\(0\\).",
+    "Cosecant and secant are greater than \\(1\\) for acute angles because the hypotenuse is longer than either leg.",
+    "Cotangent is not always greater than \\(1\\); its value depends on the relative lengths of the two legs.",
+    "You still need to identify the reference angle before deciding which side is opposite or adjacent.",
+    "The letters \\(\\csc\\), \\(\\sec\\), and \\(\\cot\\) represent specific trigonometric ratios and should not be treated as arbitrary abbreviations.",
+    "Reciprocal ratios are built from sine, cosine and tangent rather than being completely unrelated formulas."
+  ],
+  "explorations": [
+    {
+      "id": "why-reciprocal-means-flip",
+      "type": "why"
+    },
+    {
+      "id": "visualize-six-trig-ratios",
+      "type": "visualization"
+    },
+    {
+      "id": "visualize-cosecant",
+      "type": "visualization"
+    },
+    {
+      "id": "visualize-secant",
+      "type": "visualization"
+    },
+    {
+      "id": "visualize-cotangent",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-reciprocal-pairs",
+      "type": "experiment"
+    },
+    {
+      "id": "explore-six-ratios-from-345",
+      "type": "experiment"
+    },
+    {
+      "id": "deeper-six-ratios-three-relationships",
+      "type": "go-deeper"
+    }
+  ],
+  "sources": [
+    "khan-academy-trigonometry",
+    "openstax-precalculus"
+  ]
+}
