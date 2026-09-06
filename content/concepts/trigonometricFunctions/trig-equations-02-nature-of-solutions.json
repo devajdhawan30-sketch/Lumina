@@ -1,0 +1,97 @@
+
+{
+  "id": "trig-equations-02",
+  "title": "Understanding the Nature of Solutions",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 2,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-01"
+    ],
+    "leads_to": [
+      "trig-equations-03",
+      "trig-equations-09",
+      "trig-equations-11"
+    ],
+    "related": [
+      "trigonometric-functions",
+      "trigonometric-graphs",
+      "unit-circle",
+      "periodic-functions"
+    ]
+  },
+  "theory": {
+    "introduction": "The periodic nature of trigonometric functions means that solutions repeat at regular intervals.",
+    "sections": [
+      {
+        "id": "periodicity",
+        "title": "Periodicity",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sine and cosine repeat every 2π radians, while tangent repeats every π radians."
+          }
+        ]
+      },
+      {
+        "id": "general-and-restricted",
+        "title": "General and Restricted Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A restricted interval asks for only the solutions inside a specified range. A general solution describes all solutions."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "sine-period",
+      "name": "Sine Period",
+      "expression": "sin(x + 2π) = sin(x)",
+      "explanation": "Sine repeats every 2π radians."
+    },
+    {
+      "id": "cosine-period",
+      "name": "Cosine Period",
+      "expression": "cos(x + 2π) = cos(x)",
+      "explanation": "Cosine repeats every 2π radians."
+    },
+    {
+      "id": "tangent-period",
+      "name": "Tangent Period",
+      "expression": "tan(x + π) = tan(x)",
+      "explanation": "Tangent repeats every π radians."
+    }
+  ],
+  "examples": [
+    {
+      "id": "period-example",
+      "question": "If x = π/6 is a solution of sin(x) = 1/2, give another solution.",
+      "solution": "Because sine has period 2π, x = π/6 + 2π is also a solution."
+    }
+  ],
+  "key_ideas": [
+    "Trigonometric functions are periodic.",
+    "General solutions describe infinitely many solutions.",
+    "Restricted intervals limit which solutions are accepted."
+  ],
+  "misconceptions": [
+    "Assuming the inverse trigonometric function gives every solution.",
+    "Forgetting the period when generating additional solutions."
+  ],
+  "explorations": [
+    {
+      "id": "why-infinite-solutions",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations",
+    "libretexts-basic-trigonometric-equations"
+  ]
+}
+

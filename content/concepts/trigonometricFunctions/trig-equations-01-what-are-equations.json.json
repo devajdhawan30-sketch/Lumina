@@ -1,0 +1,74 @@
+
+{
+  "id": "trig-equations-01",
+  "title": "What Are Trigonometric Equations?",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 2,
+  "connections": {
+    "prerequisites": [
+      "trigonometric-ratios",
+      "trigonometric-functions",
+      "trigonometric-graphs"
+    ],
+    "leads_to": [
+      "trig-equations-02"
+    ],
+    "related": [
+      "algebraic-equations",
+      "functions"
+    ]
+  },
+  "theory": {
+    "introduction": "A trigonometric equation is an equation involving one or more trigonometric functions in which the unknown is usually an angle.",
+    "sections": [
+      {
+        "id": "definition",
+        "title": "Definition",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Examples include sin(x) = 1/2, cos(x) = 0, and tan(x) = 1. The goal is to find every value of x that makes the equation true."
+          }
+        ]
+      },
+      {
+        "id": "difference-from-algebra",
+        "title": "How Trigonometric Equations Differ",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Unlike many basic algebraic equations, trigonometric equations can have multiple or infinitely many solutions because trigonometric functions are periodic."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [],
+  "examples": [
+    {
+      "id": "simple-example",
+      "question": "Is sin(x) = 1/2 a trigonometric equation?",
+      "solution": "Yes. It contains the trigonometric function sine and has x as the unknown angle."
+    }
+  ],
+  "key_ideas": [
+    "The unknown is usually an angle.",
+    "A trigonometric equation may have multiple solutions.",
+    "Periodic behavior is responsible for repeated solutions."
+  ],
+  "misconceptions": [
+    "Thinking a trigonometric equation must have only one answer.",
+    "Confusing a trigonometric identity with a trigonometric equation."
+  ],
+  "explorations": [
+    {
+      "id": "equation-as-graph-intersection",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations"
+  ]
+}

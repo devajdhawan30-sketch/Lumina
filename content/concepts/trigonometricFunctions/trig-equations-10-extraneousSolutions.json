@@ -1,0 +1,76 @@
+
+{
+  "id": "trig-equations-10",
+  "title": "Checking for Extraneous Solutions",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 4,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-04",
+      "trig-equations-05",
+      "trig-equations-07",
+      "trig-equations-09"
+    ],
+    "leads_to": [
+      "trig-equations-11"
+    ],
+    "related": [
+      "algebraic-equations",
+      "domain-and-range"
+    ]
+  },
+  "theory": {
+    "introduction": "Algebraic transformations can sometimes introduce invalid candidates or remove valid solutions. Checking the original equation protects against these errors.",
+    "sections": [
+      {
+        "id": "when-check",
+        "title": "When Should You Check?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Checking is especially important after squaring, multiplying by expressions, dividing by expressions, or using reciprocal functions."
+          }
+        ]
+      },
+      {
+        "id": "original-equation",
+        "title": "Check the Original Equation",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Substitute each candidate back into the original equation rather than checking only a transformed version."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [],
+  "examples": [
+    {
+      "id": "checking-example",
+      "question": "Why should a solution obtained after squaring both sides be checked?",
+      "solution": "Squaring can make two expressions equal even when their original signs were different. Therefore a candidate must be substituted into the original equation."
+    }
+  ],
+  "key_ideas": [
+    "Always respect the original domain.",
+    "Check candidates after transformations that may change the solution set.",
+    "The original equation is the final authority."
+  ],
+  "misconceptions": [
+    "Assuming every algebraically obtained value is automatically valid.",
+    "Checking only the simplified equation."
+  ],
+  "explorations": [
+    {
+      "id": "checking-solutions",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations"
+  ]
+}
+

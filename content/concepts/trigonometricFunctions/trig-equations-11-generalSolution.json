@@ -1,0 +1,99 @@
+
+{
+  "id": "trig-equations-11",
+  "title": "Writing the General Solution",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 4,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-02",
+      "trig-equations-03",
+      "trig-equations-09",
+      "trig-equations-10"
+    ],
+    "leads_to": [
+      "inverse-trigonometric-functions",
+      "trigonometric-inequalities",
+      "trigonometric-modeling"
+    ],
+    "related": [
+      "periodic-functions",
+      "trigonometric-functions"
+    ]
+  },
+  "theory": {
+    "introduction": "When an interval is not specified, trigonometric equations are often expressed using a general solution that represents every possible angle.",
+    "sections": [
+      {
+        "id": "integer-parameter",
+        "title": "Using an Integer Parameter",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The symbol n is usually used to represent any integer, allowing the formula to generate infinitely many solutions."
+          }
+        ]
+      },
+      {
+        "id": "different-periods",
+        "title": "Different Periods",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The general solution depends on the period of the trigonometric function involved."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "sine-general",
+      "name": "Sine General Solution",
+      "expression": "sin(x) = a  ⇒  x = (−1)ⁿ sin⁻¹(a) + nπ, n ∈ ℤ",
+      "explanation": "Represents all real solutions."
+    },
+    {
+      "id": "cosine-general",
+      "name": "Cosine General Solution",
+      "expression": "cos(x) = a  ⇒  x = ±cos⁻¹(a) + 2nπ, n ∈ ℤ",
+      "explanation": "Represents all real solutions."
+    },
+    {
+      "id": "tangent-general",
+      "name": "Tangent General Solution",
+      "expression": "tan(x) = a  ⇒  x = tan⁻¹(a) + nπ, n ∈ ℤ",
+      "explanation": "Uses tangent's π-periodicity."
+    }
+  ],
+  "examples": [
+    {
+      "id": "general-tangent-example",
+      "question": "Find the general solution of tan(x) = √3.",
+      "solution": "The reference angle is π/3. Since tangent repeats every π, x = π/3 + nπ, where n ∈ ℤ."
+    }
+  ],
+  "key_ideas": [
+    "General solutions represent all solutions.",
+    "n represents any integer.",
+    "The period determines how solutions repeat."
+  ],
+  "misconceptions": [
+    "Forgetting n ∈ ℤ.",
+    "Using 2π as the period for tangent.",
+    "Giving only solutions in one revolution when a general solution is required."
+  ],
+  "explorations": [
+    {
+      "id": "general-solution-patterns",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "libretexts-basic-trigonometric-equations",
+    "openstax-precalculus-trigonometric-equations"
+  ]
+}
+

@@ -1,0 +1,128 @@
+
+{
+  "id": "trig-equations-03",
+  "title": "Solving Basic Trigonometric Equations",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 2,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-02",
+      "trigonometric-ratios",
+      "unit-circle"
+    ],
+    "leads_to": [
+      "trig-equations-04",
+      "trig-equations-05",
+      "trig-equations-06",
+      "trig-equations-07"
+    ],
+    "related": [
+      "inverse-trigonometric-functions",
+      "unit-circle"
+    ]
+  },
+  "theory": {
+    "introduction": "Basic trigonometric equations can be solved by isolating a trigonometric function and using the unit circle or inverse trigonometric functions.",
+    "sections": [
+      {
+        "id": "sine",
+        "title": "Sine Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For sin(x) = a, find the angles where sine has value a and include all required solutions."
+          }
+        ]
+      },
+      {
+        "id": "cosine",
+        "title": "Cosine Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For cos(x) = a, use the unit circle and symmetry to locate the angles."
+          }
+        ]
+      },
+      {
+        "id": "tangent",
+        "title": "Tangent Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For tan(x) = a, find the reference angle and use tangent's period of π."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "sine-general",
+      "name": "General Sine Solution",
+      "expression": "sin(x) = a  ⇒  x = (−1)ⁿ sin⁻¹(a) + nπ, n ∈ ℤ",
+      "explanation": "Represents all real solutions when −1 ≤ a ≤ 1."
+    },
+    {
+      "id": "cosine-general",
+      "name": "General Cosine Solution",
+      "expression": "cos(x) = a  ⇒  x = ±cos⁻¹(a) + 2nπ, n ∈ ℤ",
+      "explanation": "Represents all real solutions when −1 ≤ a ≤ 1."
+    },
+    {
+      "id": "tangent-general",
+      "name": "General Tangent Solution",
+      "expression": "tan(x) = a  ⇒  x = tan⁻¹(a) + nπ, n ∈ ℤ",
+      "explanation": "Tangent repeats every π radians."
+    }
+  ],
+  "examples": [
+    {
+      "id": "sine-example",
+      "question": "Solve sin(x) = 1/2 for 0 ≤ x < 2π.",
+      "solution": "The reference angle is π/6. Sine is positive in Quadrants I and II, so x = π/6 and 5π/6."
+    },
+    {
+      "id": "cosine-example",
+      "question": "Solve cos(x) = −√2/2 for 0 ≤ x < 2π.",
+      "solution": "The reference angle is π/4. Cosine is negative in Quadrants II and III, so x = 3π/4 and 5π/4."
+    },
+    {
+      "id": "tangent-example",
+      "question": "Solve tan(x) = √3.",
+      "solution": "The reference angle is π/3. Therefore x = π/3 + nπ, where n ∈ ℤ."
+    }
+  ],
+  "key_ideas": [
+    "Isolate the trigonometric function first.",
+    "Use the unit circle to find all angles.",
+    "Use inverse functions to obtain reference or principal angles.",
+    "Use periodicity to generate additional solutions."
+  ],
+  "misconceptions": [
+    "Giving only the calculator's inverse-trigonometric answer.",
+    "Forgetting the second solution for sine or cosine.",
+    "Using the wrong period for tangent."
+  ],
+  "explorations": [
+    {
+      "id": "sine-equation-unit-circle",
+      "type": "visualization"
+    },
+    {
+      "id": "cosine-equation-unit-circle",
+      "type": "visualization"
+    },
+    {
+      "id": "tangent-equation-graph",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations",
+    "libretexts-basic-trigonometric-equations"
+  ]
+}
+

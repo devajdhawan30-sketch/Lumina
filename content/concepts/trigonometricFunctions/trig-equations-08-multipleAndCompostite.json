@@ -1,0 +1,83 @@
+
+{
+  "id": "trig-equations-08",
+  "title": "Multiple-Angle and Composite Equations",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 4,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-03",
+      "trig-equations-07",
+      "trigonometric-graphs"
+    ],
+    "leads_to": [
+      "trig-equations-09",
+      "trig-equations-11"
+    ],
+    "related": [
+      "double-angle-identities",
+      "periodic-functions"
+    ]
+  },
+  "theory": {
+    "introduction": "Equations containing angles such as 2x or 3x can produce more solutions within a given interval.",
+    "sections": [
+      {
+        "id": "multiple-angle",
+        "title": "Multiple Angles",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Solve the equation for the multiple angle first, then divide by the coefficient of x."
+          }
+        ]
+      },
+      {
+        "id": "solution-count",
+        "title": "Finding All Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "When the angle is multiplied, carefully generate all solutions before dividing so that none are missed."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "multiple-angle-example",
+      "name": "Basic Multiple-Angle Pattern",
+      "expression": "cos(2x) = 0  ⇒  2x = π/2 + nπ",
+      "explanation": "Solve for the multiple angle first, then divide by 2."
+    }
+  ],
+  "examples": [
+    {
+      "id": "double-angle-example",
+      "question": "Solve cos(2x) = 0 for 0 ≤ x < 2π.",
+      "solution": "2x = π/2 + nπ. Therefore x = π/4 + nπ/2. The solutions are π/4, 3π/4, 5π/4, and 7π/4."
+    }
+  ],
+  "key_ideas": [
+    "Solve for the multiple angle first.",
+    "Generate every solution in the relevant interval.",
+    "Divide by the coefficient only after accounting for all solutions."
+  ],
+  "misconceptions": [
+    "Finding only one value of 2x.",
+    "Dividing too early and losing solutions."
+  ],
+  "explorations": [
+    {
+      "id": "multiple-angle-solutions",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations"
+  ]
+}
+

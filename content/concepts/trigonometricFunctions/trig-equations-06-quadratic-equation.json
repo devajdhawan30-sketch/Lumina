@@ -1,0 +1,83 @@
+
+{
+  "id": "trig-equations-06",
+  "title": "Quadratic Trigonometric Equations",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 3,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-03",
+      "trig-equations-05",
+      "quadratic-equations"
+    ],
+    "leads_to": [
+      "trig-equations-07",
+      "trig-equations-08"
+    ],
+    "related": [
+      "quadratic-equations",
+      "pythagorean-identities"
+    ]
+  },
+  "theory": {
+    "introduction": "Some trigonometric equations have the form of quadratic equations when one trigonometric function is treated as the variable.",
+    "sections": [
+      {
+        "id": "substitution",
+        "title": "Using Substitution",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "If an equation contains repeated powers of one trigonometric function, temporarily treat that function as a variable and solve the resulting quadratic."
+          }
+        ]
+      },
+      {
+        "id": "convert-back",
+        "title": "Convert Back to Angles",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "After solving the quadratic, substitute the trigonometric expression back and solve the resulting trigonometric equations."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "quadratic-form",
+      "name": "Quadratic Form",
+      "expression": "au² + bu + c = 0",
+      "explanation": "A repeated trigonometric expression can sometimes be represented by u and solved as a quadratic."
+    }
+  ],
+  "examples": [
+    {
+      "id": "quadratic-example",
+      "question": "Solve 2cos²(x) − 3cos(x) + 1 = 0.",
+      "solution": "Let u = cos(x). Then 2u² − 3u + 1 = 0, which factors as (2u − 1)(u − 1) = 0. Therefore cos(x) = 1/2 or cos(x) = 1. Solve each equation separately."
+    }
+  ],
+  "key_ideas": [
+    "Recognize quadratic structure.",
+    "Use substitution when helpful.",
+    "Convert every algebraic solution back into an angle."
+  ],
+  "misconceptions": [
+    "Stopping after solving the quadratic.",
+    "Forgetting to check whether the obtained trigonometric values are possible."
+  ],
+  "explorations": [
+    {
+      "id": "quadratic-trigonometric-equation",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations"
+  ]
+}
+

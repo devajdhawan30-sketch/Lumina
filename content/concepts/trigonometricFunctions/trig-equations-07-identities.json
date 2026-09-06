@@ -1,0 +1,89 @@
+
+{
+  "id": "trig-equations-07",
+  "title": "Equations Using Identities",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 4,
+  "connections": {
+    "prerequisites": [
+      "advanced-trigonometric-identities",
+      "trig-equations-05",
+      "trig-equations-06"
+    ],
+    "leads_to": [
+      "trig-equations-08",
+      "trig-equations-10"
+    ],
+    "related": [
+      "trigonometric-identities",
+      "double-angle-identities"
+    ]
+  },
+  "theory": {
+    "introduction": "More complicated trigonometric equations can be transformed into solvable forms using identities already learned.",
+    "sections": [
+      {
+        "id": "choose-identity",
+        "title": "Choosing an Identity",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Choose an identity that reduces the number of different trigonometric functions or creates a familiar algebraic form."
+          }
+        ]
+      },
+      {
+        "id": "common-identities",
+        "title": "Commonly Useful Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Pythagorean, reciprocal, double-angle, and sum-and-difference identities can transform complicated equations."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "pythagorean",
+      "name": "Pythagorean Identity",
+      "expression": "sin²(x) + cos²(x) = 1",
+      "explanation": "Useful for converting between sine and cosine."
+    },
+    {
+      "id": "double-angle-cosine",
+      "name": "Double-Angle Identity",
+      "expression": "cos(2x) = 1 − 2sin²(x)",
+      "explanation": "Can convert a double-angle expression into a squared trigonometric function."
+    }
+  ],
+  "examples": [
+    {
+      "id": "identity-example",
+      "question": "Solve 1 − 2sin²(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Rearrange to sin²(x) = 1/2. Therefore sin(x) = ±√2/2. The four solutions are π/4, 3π/4, 5π/4, and 7π/4."
+    }
+  ],
+  "key_ideas": [
+    "Use identities strategically.",
+    "Transform rather than randomly manipulate.",
+    "Return to a basic trigonometric equation whenever possible."
+  ],
+  "misconceptions": [
+    "Using an identity without considering whether it simplifies the equation.",
+    "Assuming every identity makes an equation easier."
+  ],
+  "explorations": [
+    {
+      "id": "identity-to-equation",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations"
+  ]
+}
+

@@ -1,0 +1,89 @@
+
+{
+  "id": "trig-equations-04",
+  "title": "Equations Using Reciprocal Functions",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 3,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-03",
+      "advanced-trigonometric-identities"
+    ],
+    "leads_to": [
+      "trig-equations-05",
+      "trig-equations-07",
+      "trig-equations-10"
+    ],
+    "related": [
+      "trigonometric-functions",
+      "domain-and-range"
+    ]
+  },
+  "theory": {
+    "introduction": "Equations involving secant, cosecant, and cotangent can often be rewritten using their reciprocal relationships.",
+    "sections": [
+      {
+        "id": "reciprocal-functions",
+        "title": "Reciprocal Relationships",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Secant is the reciprocal of cosine, cosecant is the reciprocal of sine, and cotangent is the reciprocal of tangent."
+          }
+        ]
+      },
+      {
+        "id": "domain",
+        "title": "Domain Restrictions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "These functions are undefined whenever their denominator is zero. Domain restrictions must be respected while solving."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "reciprocal-identities",
+      "name": "Reciprocal Identities",
+      "expression": "sec(x) = 1/cos(x), csc(x) = 1/sin(x), cot(x) = 1/tan(x)",
+      "explanation": "These identities convert reciprocal functions into familiar trigonometric functions."
+    }
+  ],
+  "examples": [
+    {
+      "id": "sec-example",
+      "question": "Solve sec(x) = 2 for 0 ≤ x < 2π.",
+      "solution": "Rewrite as cos(x) = 1/2. Therefore x = π/3 and 5π/3."
+    },
+    {
+      "id": "csc-example",
+      "question": "Solve csc(x) = −1 for 0 ≤ x < 2π.",
+      "solution": "Rewrite as sin(x) = −1. Therefore x = 3π/2."
+    }
+  ],
+  "key_ideas": [
+    "Rewrite reciprocal functions when useful.",
+    "Check domain restrictions.",
+    "Do not include values where the original function is undefined."
+  ],
+  "misconceptions": [
+    "Treating sec(x) as 1/sin(x).",
+    "Ignoring undefined values.",
+    "Checking only the transformed equation instead of the original one."
+  ],
+  "explorations": [
+    {
+      "id": "reciprocal-function-graphs",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-functions"
+  ]
+}
+

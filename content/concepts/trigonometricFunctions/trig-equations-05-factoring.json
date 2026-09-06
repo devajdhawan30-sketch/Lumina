@@ -1,0 +1,82 @@
+
+{
+  "id": "trig-equations-05",
+  "title": "Factoring Trigonometric Equations",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 3,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-03",
+      "algebraic-equations"
+    ],
+    "leads_to": [
+      "trig-equations-06",
+      "trig-equations-07"
+    ],
+    "related": [
+      "factoring",
+      "zero-product-property"
+    ]
+  },
+  "theory": {
+    "introduction": "Some trigonometric equations can be factored using familiar algebraic techniques before solving each factor.",
+    "sections": [
+      {
+        "id": "zero-product",
+        "title": "Zero Product Property",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "If a product equals zero, at least one factor must equal zero. This allows a complicated trigonometric equation to be separated into simpler equations."
+          }
+        ]
+      },
+      {
+        "id": "factoring-process",
+        "title": "Factoring Process",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Move all terms to one side, factor the expression, solve each factor, and combine all valid solutions."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "zero-product",
+      "name": "Zero Product Property",
+      "expression": "AB = 0  ⇒  A = 0 or B = 0",
+      "explanation": "Used after factoring an equation."
+    }
+  ],
+  "examples": [
+    {
+      "id": "factoring-example",
+      "question": "Solve 2sin²(x) − sin(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Factor: sin(x)(2sin(x) − 1) = 0. Thus sin(x) = 0 or sin(x) = 1/2. The solutions are 0, π, π/6, and 5π/6."
+    }
+  ],
+  "key_ideas": [
+    "Treat trigonometric expressions algebraically when possible.",
+    "Factor before applying more complicated identities.",
+    "Solve every resulting equation."
+  ],
+  "misconceptions": [
+    "Dividing by sin(x) and accidentally removing sin(x) = 0 solutions.",
+    "Solving only one factor."
+  ],
+  "explorations": [
+    {
+      "id": "factoring-trigonometric-equation",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations"
+  ]
+}
+

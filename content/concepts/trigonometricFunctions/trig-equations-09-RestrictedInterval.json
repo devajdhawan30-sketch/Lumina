@@ -1,0 +1,83 @@
+
+{
+  "id": "trig-equations-09",
+  "title": "Solving on a Restricted Interval",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 3,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-02",
+      "trig-equations-03",
+      "trig-equations-08"
+    ],
+    "leads_to": [
+      "trig-equations-10",
+      "trig-equations-11"
+    ],
+    "related": [
+      "unit-circle",
+      "trigonometric-graphs"
+    ]
+  },
+  "theory": {
+    "introduction": "A restricted interval limits the set of acceptable solutions.",
+    "sections": [
+      {
+        "id": "common-intervals",
+        "title": "Common Intervals",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Common intervals include 0 ≤ x < 2π and 0° ≤ x ≤ 360°."
+          }
+        ]
+      },
+      {
+        "id": "finding-solutions",
+        "title": "Finding All Valid Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Use the unit circle, reference angles, and periodicity to identify every solution inside the required interval."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "full-revolution",
+      "name": "One Full Revolution",
+      "expression": "360° = 2π radians",
+      "explanation": "One complete revolution can be represented using either degrees or radians."
+    }
+  ],
+  "examples": [
+    {
+      "id": "interval-example",
+      "question": "Solve cos(x) = 1/2 for 0 ≤ x < 2π.",
+      "solution": "The reference angle is π/3. Cosine is positive in Quadrants I and IV, giving x = π/3 and 5π/3."
+    }
+  ],
+  "key_ideas": [
+    "The interval determines which answers are valid.",
+    "Always check the endpoints.",
+    "Use the unit circle to locate solutions."
+  ],
+  "misconceptions": [
+    "Giving a general solution when a restricted interval was requested.",
+    "Missing a solution because only the principal angle was considered."
+  ],
+  "explorations": [
+    {
+      "id": "restricted-interval-unit-circle",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "libretexts-basic-trigonometric-equations"
+  ]
+}
+
