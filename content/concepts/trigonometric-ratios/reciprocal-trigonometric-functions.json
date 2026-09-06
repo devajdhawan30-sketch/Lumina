@@ -1,0 +1,946 @@
+{
+  "id": "reciprocal-trigonometric-functions",
+  "title": "Reciprocal Trigonometric Functions",
+
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+
+  "difficulty": 2,
+
+  "connections": {
+    "prerequisites": [
+      "trigonometric-functions",
+      "trigonometric-ratios-any-angle",
+      "sine-function",
+      "cosine-function",
+      "tangent-function",
+      "reciprocal-trigonometric-ratios"
+    ],
+
+    "leads_to": [],
+
+    "related": [
+      "trigonometric-functions",
+      "sine-function",
+      "cosine-function",
+      "tangent-function",
+      "reciprocal-trigonometric-ratios"
+    ]
+  },
+
+  "theory": {
+    "introduction": "The reciprocal trigonometric functions are cosecant, secant, and cotangent. They are defined as the reciprocals of sine, cosine, and tangent respectively. Their graphs have an important connection with the graphs of the original trigonometric functions: they are undefined wherever the corresponding original function is zero, and their graphs develop vertical asymptotes at those locations. Understanding these functions through reciprocals, domains, ranges, zeros, periods, and graph behavior provides a natural extension of the six basic trigonometric functions.",
+
+    "sections": [
+      {
+        "id": "what-are-reciprocal-functions",
+        "title": "What Does Reciprocal Mean?",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Before studying the reciprocal trigonometric functions, recall what a reciprocal is. The reciprocal of a nonzero number is the number that gives 1 when multiplied by the original number."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, the reciprocal of 5 is \\(\\frac{1}{5}\\), because \\(5\\times\\frac{1}{5}=1\\). The reciprocal of \\(\\frac{2}{3}\\) is \\(\\frac{3}{2}\\), because \\(\\frac{2}{3}\\times\\frac{3}{2}=1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The reciprocal of a function is formed by taking 1 divided by the function, wherever that function is nonzero."
+          },
+          {
+            "type": "paragraph",
+            "text": "In trigonometry, this creates three additional functions: cosecant, secant, and cotangent."
+          }
+        ]
+      },
+
+      {
+        "id": "three-reciprocal-functions",
+        "title": "The Three Reciprocal Trigonometric Functions",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The reciprocal of sine is called cosecant and is written \\(\\csc x\\). The reciprocal of cosine is called secant and is written \\(\\sec x\\). The reciprocal of tangent is called cotangent and is written \\(\\cot x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Their definitions are \\(\\csc x=\\frac{1}{\\sin x}\\), \\(\\sec x=\\frac{1}{\\cos x}\\), and \\(\\cot x=\\frac{1}{\\tan x}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "These are not completely new ideas. Each function is directly connected to one of the three functions already studied."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because taking a reciprocal requires division, the original function cannot be zero at an input where its reciprocal is defined."
+          }
+        ]
+      },
+
+      {
+        "id": "cosecant-function",
+        "title": "The Cosecant Function",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cosecant is the reciprocal of sine. It is written as \\(\\csc x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Its definition is \\(\\csc x=\\frac{1}{\\sin x}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "If sine has a value of \\(\\frac{1}{2}\\), then cosecant has a value of 2. If sine has a value of \\(-1\\), then cosecant has a value of \\(-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosecant cannot be defined when sine is zero because that would require division by zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since sine is zero at integer multiples of \\(\\pi\\), cosecant is undefined at \\(x=k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "secant-function",
+        "title": "The Secant Function",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Secant is the reciprocal of cosine. It is written as \\(\\sec x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Its definition is \\(\\sec x=\\frac{1}{\\cos x}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, since \\(\\cos60^\\circ=\\frac{1}{2}\\), we have \\(\\sec60^\\circ=2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Secant is undefined whenever cosine is zero because its denominator would become zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine is zero at \\(x=\\frac{\\pi}{2}+k\\pi\\). Therefore, secant has vertical asymptotes at these same x-values."
+          }
+        ]
+      },
+
+      {
+        "id": "cotangent-function",
+        "title": "The Cotangent Function",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cotangent is the reciprocal of tangent. It is written as \\(\\cot x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Its definition is \\(\\cot x=\\frac{1}{\\tan x}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since \\(\\tan x=\\frac{\\sin x}{\\cos x}\\), taking its reciprocal gives \\(\\cot x=\\frac{\\cos x}{\\sin x}\\), whenever sine is nonzero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent is therefore undefined whenever sine is zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\cot45^\\circ=1\\) because \\(\\tan45^\\circ=1\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "reciprocal-identities",
+        "title": "The Reciprocal Identities",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The three reciprocal relationships can be written as identities. An identity is an equation that is true for every input for which both sides are defined."
+          },
+          {
+            "type": "paragraph",
+            "text": "The first identity is \\(\\csc x=\\frac{1}{\\sin x}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The second identity is \\(\\sec x=\\frac{1}{\\cos x}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The third identity is \\(\\cot x=\\frac{1}{\\tan x}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Using \\(\\tan x=\\frac{\\sin x}{\\cos x}\\), the cotangent identity can also be written as \\(\\cot x=\\frac{\\cos x}{\\sin x}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "These identities allow us to move between the original three trigonometric functions and their reciprocal functions."
+          }
+        ]
+      },
+
+      {
+        "id": "product-identities",
+        "title": "Why Their Products Equal 1",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A number multiplied by its reciprocal equals 1. The same idea works for trigonometric functions."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since \\(\\csc x=\\frac{1}{\\sin x}\\), multiplying gives \\(\\sin x\\cdot\\csc x=\\sin x\\cdot\\frac{1}{\\sin x}=1\\), whenever sine is nonzero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Similarly, \\(\\cos x\\cdot\\sec x=1\\) whenever cosine is nonzero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Finally, \\(\\tan x\\cdot\\cot x=1\\) whenever tangent is nonzero."
+          },
+          {
+            "type": "paragraph",
+            "text": "These identities are simply the familiar reciprocal property expressed using trigonometric functions."
+          }
+        ]
+      },
+
+      {
+        "id": "domain-cosecant",
+        "title": "Domain of Cosecant",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The domain of a function is the set of input values for which the function is defined."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosecant is defined by \\(\\csc x=\\frac{1}{\\sin x}\\). Therefore, sine cannot equal zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since \\(\\sin x=0\\) at \\(x=k\\pi\\), the domain of cosecant excludes every integer multiple of \\(\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The excluded values create vertical asymptotes in the cosecant graph."
+          }
+        ]
+      },
+
+      {
+        "id": "domain-secant",
+        "title": "Domain of Secant",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Secant is defined by \\(\\sec x=\\frac{1}{\\cos x}\\). Therefore, cosine cannot equal zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine equals zero at \\(x=\\frac{\\pi}{2}+k\\pi\\). These values are excluded from the domain of secant."
+          },
+          {
+            "type": "paragraph",
+            "text": "At each excluded value, the secant graph has a vertical asymptote."
+          }
+        ]
+      },
+
+      {
+        "id": "domain-cotangent",
+        "title": "Domain of Cotangent",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cotangent can be written as \\(\\cot x=\\frac{\\cos x}{\\sin x}\\). Therefore, sine cannot equal zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine is zero at \\(x=k\\pi\\), so these values are excluded from the domain of cotangent."
+          },
+          {
+            "type": "paragraph",
+            "text": "The cotangent graph has vertical asymptotes at these excluded values."
+          }
+        ]
+      },
+
+      {
+        "id": "ranges",
+        "title": "Ranges of the Reciprocal Functions",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The reciprocal relationship also explains the ranges of cosecant and secant."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since sine always lies between \\(-1\\) and \\(1\\), its nonzero values have absolute value at most 1. Taking their reciprocals produces values whose absolute value is at least 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, the range of cosecant is \\(y\\leq-1\\) or \\(y\\geq1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The same reasoning applies to cosine, so the range of secant is also \\(y\\leq-1\\) or \\(y\\geq1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent is different. Because tangent can take every real value, its reciprocal can also take every nonzero real value. Therefore, the range of cotangent is all real numbers except zero."
+          }
+        ]
+      },
+
+      {
+        "id": "zeros",
+        "title": "Do Reciprocal Functions Have Zeros?",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A reciprocal function cannot equal zero when its original function is defined and finite."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\csc x=\\frac{1}{\\sin x}\\). The numerator is always 1, so this fraction can never equal zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "The same reasoning shows that secant and cotangent have no zeros."
+          },
+          {
+            "type": "paragraph",
+            "text": "This is an important contrast with sine, cosine, and tangent, which all have zeros."
+          }
+        ]
+      },
+
+      {
+        "id": "periods",
+        "title": "Periods of Reciprocal Functions",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Taking a reciprocal does not change the basic repeating interval of sine or cosine. Therefore, cosecant has period \\(2\\pi\\), just like sine."
+          },
+          {
+            "type": "paragraph",
+            "text": "Secant has period \\(2\\pi\\), just like cosine."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent has period \\(\\pi\\), just like tangent."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\csc(x+2\\pi)=\\csc x\\), \\(\\sec(x+2\\pi)=\\sec x\\), and \\(\\cot(x+\\pi)=\\cot x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The period can therefore be inherited directly from the corresponding original function."
+          }
+        ]
+      },
+
+      {
+        "id": "cosecant-graph",
+        "title": "Building the Cosecant Graph",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The cosecant graph can be understood by starting with the sine graph and taking the reciprocal of every nonzero sine value."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because sine is zero at integer multiples of \\(\\pi\\), cosecant is undefined at those points. These locations become vertical asymptotes."
+          },
+          {
+            "type": "paragraph",
+            "text": "Between two consecutive asymptotes, the sine graph stays either positive or negative. The corresponding cosecant branch therefore stays entirely above or entirely below the x-axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "When sine reaches its maximum value \\(1\\), cosecant reaches \\(1\\). When sine reaches its minimum value \\(-1\\), cosecant reaches \\(-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "As sine approaches zero, its reciprocal becomes very large in magnitude. This causes the cosecant graph to move toward its vertical asymptotes."
+          }
+        ]
+      },
+
+      {
+        "id": "secant-graph",
+        "title": "Building the Secant Graph",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The secant graph can be understood by starting with the cosine graph and taking the reciprocal of every nonzero cosine value."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine is zero at odd multiples of \\(\\frac{\\pi}{2}\\), so secant is undefined at those points. These locations become vertical asymptotes."
+          },
+          {
+            "type": "paragraph",
+            "text": "When cosine equals \\(1\\), secant equals \\(1\\). When cosine equals \\(-1\\), secant equals \\(-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because cosine stays positive or negative between consecutive zeros, each secant branch stays on one side of the x-axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "As cosine approaches zero, secant becomes very large in magnitude, producing the characteristic branches around the asymptotes."
+          }
+        ]
+      },
+
+      {
+        "id": "cotangent-graph",
+        "title": "Building the Cotangent Graph",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cotangent is the reciprocal of tangent, so its graph can be understood from the tangent graph."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent is zero at integer multiples of \\(\\pi\\). Therefore, cotangent is undefined at these values and has vertical asymptotes there."
+          },
+          {
+            "type": "paragraph",
+            "text": "Unlike tangent, whose basic graph increases from left to right between asymptotes, cotangent decreases from very large positive values to very large negative values."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent has no zeros because the reciprocal of a nonzero finite number cannot be zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "The graph repeats every \\(\\pi\\) radians."
+          }
+        ]
+      },
+
+      {
+        "id": "graph-comparison",
+        "title": "Comparing the Three Reciprocal Graphs",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The three reciprocal functions can be paired directly with the original functions."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosecant corresponds to sine. Wherever sine is zero, cosecant has a vertical asymptote. Wherever sine reaches \\(1\\) or \\(-1\\), cosecant reaches the same value."
+          },
+          {
+            "type": "paragraph",
+            "text": "Secant corresponds to cosine. Wherever cosine is zero, secant has a vertical asymptote. Wherever cosine reaches \\(1\\) or \\(-1\\), secant reaches the same value."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent corresponds to tangent. Wherever tangent is zero, cotangent has a vertical asymptote. Because tangent itself already has vertical asymptotes, cotangent has a different set of excluded values."
+          },
+          {
+            "type": "paragraph",
+            "text": "Thinking in pairs makes the reciprocal graphs much easier to understand than memorizing each graph independently."
+          }
+        ]
+      },
+
+      {
+        "id": "worked-examples",
+        "title": "Worked Examples",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Example 1: Find \\(\\csc30^\\circ\\). Since \\(\\sin30^\\circ=\\frac{1}{2}\\), take the reciprocal: \\(\\csc30^\\circ=2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 2: Find \\(\\sec60^\\circ\\). Since \\(\\cos60^\\circ=\\frac{1}{2}\\), \\(\\sec60^\\circ=2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 3: Find \\(\\cot45^\\circ\\). Since \\(\\tan45^\\circ=1\\), its reciprocal is also 1. Therefore, \\(\\cot45^\\circ=1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 4: Find \\(\\cot30^\\circ\\). Since \\(\\tan30^\\circ=\\frac{\\sqrt{3}}{3}\\), \\(\\cot30^\\circ=\\frac{1}{\\sqrt{3}/3}=\\sqrt{3}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 5: Determine whether \\(\\sec90^\\circ\\) is defined. Since \\(\\cos90^\\circ=0\\), \\(\\sec90^\\circ=\\frac{1}{0}\\), so it is undefined."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 6: Determine whether \\(\\csc180^\\circ\\) is defined. Since \\(\\sin180^\\circ=0\\), \\(\\csc180^\\circ\\) is undefined."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 7: Determine the vertical asymptotes of \\(y=\\csc x\\). Cosecant is undefined where sine is zero. Therefore, the asymptotes occur at \\(x=k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 8: Determine the vertical asymptotes of \\(y=\\sec x\\). Secant is undefined where cosine is zero. Therefore, the asymptotes occur at \\(x=\\frac{\\pi}{2}+k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 9: Determine the vertical asymptotes of \\(y=\\cot x\\). Cotangent is \\(\\frac{\\cos x}{\\sin x}\\), so it is undefined when sine is zero. Therefore, the asymptotes occur at \\(x=k\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 10: Find the range of \\(\\csc x\\). Since \\(-1\\leq\\sin x\\leq1\\) and sine cannot be zero for cosecant, its reciprocal has magnitude at least 1. Therefore, the range is \\(y\\leq-1\\) or \\(y\\geq1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 11: Find the period of \\(\\sec x\\). Secant is the reciprocal of cosine, and cosine has period \\(2\\pi\\). Therefore, secant also has period \\(2\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 12: Find the period of \\(\\cot x\\). Cotangent is the reciprocal of tangent, and tangent has period \\(\\pi\\). Therefore, cotangent also has period \\(\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 13: Does \\(y=\\csc x\\) have any x-intercepts? No. Cosecant can never equal zero because its numerator is 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 14: If \\(\\sin x=\\frac{2}{3}\\), find \\(\\csc x\\). Take the reciprocal: \\(\\csc x=\\frac{3}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 15: If \\(\\sec x=-4\\), find \\(\\cos x\\). Since secant is the reciprocal of cosine, \\(\\cos x=\\frac{1}{\\sec x}=-\\frac{1}{4}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 16: If \\(\\cot x=-2\\), find \\(\\tan x\\). Since cotangent and tangent are reciprocals, \\(\\tan x=-\\frac{1}{2}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "visualization",
+        "title": "Visualizing Reciprocal Graphs",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A powerful visualization is to display an original trigonometric graph together with its reciprocal graph."
+          },
+          {
+            "type": "paragraph",
+            "text": "For sine and cosecant, highlight points where sine is close to zero. Their reciprocal values become very large in magnitude, showing why cosecant approaches vertical asymptotes."
+          },
+          {
+            "type": "paragraph",
+            "text": "At points where sine equals \\(1\\) or \\(-1\\), the reciprocal remains \\(1\\) or \\(-1\\). These become the closest points of the cosecant branches to the x-axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "The same idea works for cosine and secant. When cosine approaches zero, secant grows without bound in magnitude. When cosine equals \\(1\\) or \\(-1\\), secant equals \\(1\\) or \\(-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For tangent and cotangent, show how values near tangent's zeros produce very large cotangent values. This explains why cotangent has asymptotes where tangent crosses the x-axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "The key visual lesson is that reciprocal graphs are controlled by the zeros and extreme values of the original functions."
+          }
+        ]
+      },
+
+      {
+        "id": "common-mistakes",
+        "title": "Common Mistakes to Avoid",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Mistake 1: Thinking secant is the inverse of cosine. Secant is the reciprocal of cosine, not its inverse function."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 2: Thinking cosecant is the inverse of sine. Cosecant means reciprocal: \\(\\csc x=\\frac{1}{\\sin x}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 3: Forgetting that reciprocal functions are undefined when the original function equals zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 4: Assuming reciprocal functions can have zeros. A reciprocal such as \\(\\frac{1}{f(x)}\\) cannot equal zero when it is defined."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 5: Thinking \\(\\csc x\\) has the same range as sine. Sine has range \\([-1,1]\\), while cosecant has range \\(( -\\infty,-1]\\cup[1,\\infty)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 6: Forgetting that a reciprocal reverses the size of a nonzero number. Values close to zero become large in magnitude."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 7: Putting the vertical asymptotes of secant at the zeros of sine. Secant is the reciprocal of cosine, so its asymptotes occur where cosine is zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 8: Putting the vertical asymptotes of cotangent at the zeros of cosine. Cotangent is \\(\\frac{\\cos x}{\\sin x}\\), so its asymptotes occur where sine is zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 9: Thinking reciprocal functions have completely new periods. Their periods come directly from the original functions."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 10: Thinking an undefined value is equal to infinity. A function may grow without bound near an asymptote, but the function is still undefined at the asymptote."
+          }
+        ]
+      },
+
+      {
+        "id": "big-picture",
+        "title": "The Big Picture",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "There are six fundamental trigonometric functions, which naturally form three reciprocal pairs."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine and cosecant are reciprocals: \\(\\csc x=\\frac{1}{\\sin x}\\). Cosine and secant are reciprocals: \\(\\sec x=\\frac{1}{\\cos x}\\). Tangent and cotangent are reciprocals: \\(\\cot x=\\frac{1}{\\tan x}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The zeros of the original functions become the undefined points of their reciprocal functions."
+          },
+          {
+            "type": "paragraph",
+            "text": "These undefined points appear as vertical asymptotes on the reciprocal graphs."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosecant and secant can never take values strictly between \\(-1\\) and \\(1\\), because sine and cosine themselves never have magnitude greater than 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent can take every nonzero real value, but it cannot equal zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "The reciprocal functions do not need to be memorized as completely separate objects. Their behavior can be understood by asking one simple question: what happens when we take the reciprocal of the corresponding original trigonometric function?"
+          },
+          {
+            "type": "paragraph",
+            "text": "This viewpoint connects the algebraic definitions, domains, ranges, asymptotes, periods, and graphs into one coherent picture."
+          }
+        ]
+      }
+    ]
+  },
+
+  "formulas": [
+    {
+      "id": "cosecant-definition",
+      "name": "Cosecant",
+      "expression": "\\(\\csc x=\\frac{1}{\\sin x}\\)",
+      "explanation": "Cosecant is the reciprocal of sine."
+    },
+    {
+      "id": "secant-definition",
+      "name": "Secant",
+      "expression": "\\(\\sec x=\\frac{1}{\\cos x}\\)",
+      "explanation": "Secant is the reciprocal of cosine."
+    },
+    {
+      "id": "cotangent-definition",
+      "name": "Cotangent",
+      "expression": "\\(\\cot x=\\frac{1}{\\tan x}\\)",
+      "explanation": "Cotangent is the reciprocal of tangent."
+    },
+    {
+      "id": "cotangent-sine-cosine",
+      "name": "Cotangent in Terms of Sine and Cosine",
+      "expression": "\\(\\cot x=\\frac{\\cos x}{\\sin x}\\)",
+      "explanation": "Because tangent is sine divided by cosine, its reciprocal is cosine divided by sine."
+    },
+    {
+      "id": "sine-cosecant-identity",
+      "name": "Sine-Cosecant Identity",
+      "expression": "\\(\\sin x\\cdot\\csc x=1\\)",
+      "explanation": "A nonzero number multiplied by its reciprocal equals 1."
+    },
+    {
+      "id": "cosine-secant-identity",
+      "name": "Cosine-Secant Identity",
+      "expression": "\\(\\cos x\\cdot\\sec x=1\\)",
+      "explanation": "Cosine multiplied by its reciprocal, secant, equals 1 whenever cosine is nonzero."
+    },
+    {
+      "id": "tangent-cotangent-identity",
+      "name": "Tangent-Cotangent Identity",
+      "expression": "\\(\\tan x\\cdot\\cot x=1\\)",
+      "explanation": "Tangent multiplied by its reciprocal, cotangent, equals 1 whenever tangent is nonzero."
+    },
+    {
+      "id": "cosecant-domain",
+      "name": "Cosecant Domain Restriction",
+      "expression": "\\(x\\neq k\\pi,\\quad k\\in\\mathbb{Z}\\)",
+      "explanation": "Cosecant is undefined where sine is zero."
+    },
+    {
+      "id": "secant-domain",
+      "name": "Secant Domain Restriction",
+      "expression": "\\(x\\neq\\frac{\\pi}{2}+k\\pi,\\quad k\\in\\mathbb{Z}\\)",
+      "explanation": "Secant is undefined where cosine is zero."
+    },
+    {
+      "id": "cotangent-domain",
+      "name": "Cotangent Domain Restriction",
+      "expression": "\\(x\\neq k\\pi,\\quad k\\in\\mathbb{Z}\\)",
+      "explanation": "Cotangent is undefined where sine is zero."
+    },
+    {
+      "id": "cosecant-range",
+      "name": "Cosecant Range",
+      "expression": "\\(y\\leq-1\\quad\\text{or}\\quad y\\geq1\\)",
+      "explanation": "The reciprocal of a nonzero sine value always has magnitude at least 1."
+    },
+    {
+      "id": "secant-range",
+      "name": "Secant Range",
+      "expression": "\\(y\\leq-1\\quad\\text{or}\\quad y\\geq1\\)",
+      "explanation": "The reciprocal of a nonzero cosine value always has magnitude at least 1."
+    },
+    {
+      "id": "cotangent-range",
+      "name": "Cotangent Range",
+      "expression": "\\(y\\in\\mathbb{R},\\quad y\\neq0\\)",
+      "explanation": "Cotangent can take every nonzero real value but cannot equal zero."
+    },
+    {
+      "id": "cosecant-period",
+      "name": "Cosecant Period",
+      "expression": "\\(\\csc(x+2\\pi)=\\csc x\\)",
+      "explanation": "Cosecant has the same basic period as sine: \\(2\\pi\\)."
+    },
+    {
+      "id": "secant-period",
+      "name": "Secant Period",
+      "expression": "\\(\\sec(x+2\\pi)=\\sec x\\)",
+      "explanation": "Secant has the same basic period as cosine: \\(2\\pi\\)."
+    },
+    {
+      "id": "cotangent-period",
+      "name": "Cotangent Period",
+      "expression": "\\(\\cot(x+\\pi)=\\cot x\\)",
+      "explanation": "Cotangent has the same basic period as tangent: \\(\\pi\\)."
+    }
+  ],
+
+  "examples": [
+    {
+      "id": "example-csc-30",
+      "question": "Find \\(\\csc30^\\circ\\).",
+      "solution": "Since \\(\\sin30^\\circ=\\frac{1}{2}\\), take its reciprocal: \\(\\csc30^\\circ=\\frac{1}{1/2}=2\\)."
+    },
+    {
+      "id": "example-sec-60",
+      "question": "Find \\(\\sec60^\\circ\\).",
+      "solution": "Since \\(\\cos60^\\circ=\\frac{1}{2}\\), \\(\\sec60^\\circ=\\frac{1}{1/2}=2\\)."
+    },
+    {
+      "id": "example-cot-45",
+      "question": "Find \\(\\cot45^\\circ\\).",
+      "solution": "Since \\(\\tan45^\\circ=1\\), its reciprocal is also 1. Therefore, \\(\\cot45^\\circ=1\\)."
+    },
+    {
+      "id": "example-cot-30",
+      "question": "Find \\(\\cot30^\\circ\\).",
+      "solution": "Since \\(\\tan30^\\circ=\\frac{\\sqrt{3}}{3}\\), \\(\\cot30^\\circ=\\frac{1}{\\sqrt{3}/3}=\\sqrt{3}\\)."
+    },
+    {
+      "id": "example-sec-undefined",
+      "question": "Is \\(\\sec90^\\circ\\) defined?",
+      "solution": "No. Since \\(\\cos90^\\circ=0\\), \\(\\sec90^\\circ=\\frac{1}{0}\\), which is undefined."
+    },
+    {
+      "id": "example-csc-undefined",
+      "question": "Is \\(\\csc180^\\circ\\) defined?",
+      "solution": "No. Since \\(\\sin180^\\circ=0\\), \\(\\csc180^\\circ=\\frac{1}{0}\\), which is undefined."
+    },
+    {
+      "id": "example-csc-asymptotes",
+      "question": "Find the vertical asymptotes of \\(y=\\csc x\\).",
+      "solution": "Cosecant is undefined wherever sine is zero. Since \\(\\sin x=0\\) at \\(x=k\\pi\\), the vertical asymptotes occur at \\(x=k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
+    },
+    {
+      "id": "example-sec-asymptotes",
+      "question": "Find the vertical asymptotes of \\(y=\\sec x\\).",
+      "solution": "Secant is undefined where cosine is zero. Since \\(\\cos x=0\\) at \\(x=\\frac{\\pi}{2}+k\\pi\\), these are the vertical asymptotes."
+    },
+    {
+      "id": "example-cot-asymptotes",
+      "question": "Find the vertical asymptotes of \\(y=\\cot x\\).",
+      "solution": "Cotangent is \\(\\frac{\\cos x}{\\sin x}\\), so it is undefined where sine equals zero. Therefore, the vertical asymptotes occur at \\(x=k\\pi\\)."
+    },
+    {
+      "id": "example-csc-range",
+      "question": "Find the range of \\(\\csc x\\).",
+      "solution": "Since \\(-1\\leq\\sin x\\leq1\\), every nonzero sine value has magnitude at most 1. Its reciprocal therefore has magnitude at least 1. Hence the range is \\(y\\leq-1\\) or \\(y\\geq1\\)."
+    },
+    {
+      "id": "example-sec-period",
+      "question": "Find the period of \\(\\sec x\\).",
+      "solution": "Secant is the reciprocal of cosine. Since cosine has period \\(2\\pi\\), secant also has period \\(2\\pi\\)."
+    },
+    {
+      "id": "example-cot-period",
+      "question": "Find the period of \\(\\cot x\\).",
+      "solution": "Cotangent is the reciprocal of tangent. Since tangent has period \\(\\pi\\), cotangent also has period \\(\\pi\\)."
+    },
+    {
+      "id": "example-no-csc-zero",
+      "question": "Does \\(y=\\csc x\\) have any x-intercepts?",
+      "solution": "No. For an x-intercept, the function would have to equal zero. But \\(\\csc x=\\frac{1}{\\sin x}\\) can never equal zero."
+    },
+    {
+      "id": "example-given-sine",
+      "question": "If \\(\\sin x=\\frac{2}{3}\\), find \\(\\csc x\\).",
+      "solution": "Cosecant is the reciprocal of sine. Therefore, \\(\\csc x=\\frac{1}{2/3}=\\frac{3}{2}\\)."
+    },
+    {
+      "id": "example-given-sec",
+      "question": "If \\(\\sec x=-4\\), find \\(\\cos x\\).",
+      "solution": "Since secant is the reciprocal of cosine, \\(\\cos x=\\frac{1}{\\sec x}=\\frac{1}{-4}=-\\frac{1}{4}\\)."
+    },
+    {
+      "id": "example-given-cot",
+      "question": "If \\(\\cot x=-2\\), find \\(\\tan x\\).",
+      "solution": "Cotangent and tangent are reciprocals. Therefore, \\(\\tan x=\\frac{1}{-2}=-\\frac{1}{2}\\)."
+    }
+  ],
+
+  "key_ideas": [
+    "A reciprocal is a number or expression that multiplies with the original to give 1.",
+    "Cosecant is the reciprocal of sine.",
+    "Secant is the reciprocal of cosine.",
+    "Cotangent is the reciprocal of tangent.",
+    "The reciprocal identities are \\(\\csc x=\\frac{1}{\\sin x}\\), \\(\\sec x=\\frac{1}{\\cos x}\\), and \\(\\cot x=\\frac{1}{\\tan x}\\).",
+    "Cotangent can also be written as \\(\\frac{\\cos x}{\\sin x}\\).",
+    "A reciprocal function is undefined wherever its original function is zero.",
+    "Cosecant is undefined where sine is zero.",
+    "Secant is undefined where cosine is zero.",
+    "Cotangent is undefined where sine is zero.",
+    "The undefined values of reciprocal functions produce vertical asymptotes.",
+    "Cosecant has period \\(2\\pi\\).",
+    "Secant has period \\(2\\pi\\).",
+    "Cotangent has period \\(\\pi\\).",
+    "Cosecant and secant have ranges outside the interval \\([-1,1]\\).",
+    "The range of cosecant is \\(y\\leq-1\\) or \\(y\\geq1\\).",
+    "The range of secant is \\(y\\leq-1\\) or \\(y\\geq1\\).",
+    "The range of cotangent is all nonzero real numbers.",
+    "None of the three reciprocal functions has a zero.",
+    "Values close to zero become very large in magnitude when reciprocated.",
+    "Cosecant can be understood from the sine graph.",
+    "Secant can be understood from the cosine graph.",
+    "Cotangent can be understood from the tangent graph.",
+    "The zeros of an original function become asymptotes of its reciprocal.",
+    "The extreme values \\(1\\) and \\(-1\\) of sine and cosine remain \\(1\\) and \\(-1\\) after taking reciprocals.",
+    "Reciprocal functions are extensions of the original three trigonometric functions rather than unrelated functions.",
+    "The product of a trigonometric function and its reciprocal is 1 wherever both are defined."
+  ],
+
+  "misconceptions": [
+    "Secant is the inverse function of cosine.",
+    "Cosecant is the inverse function of sine.",
+    "Cotangent is the inverse function of tangent.",
+    "Reciprocal and inverse mean the same thing.",
+    "A reciprocal function is defined where the original function is zero.",
+    "Cosecant can equal zero.",
+    "Secant can equal zero.",
+    "Cotangent can equal zero.",
+    "Cosecant has the same range as sine.",
+    "Secant has the same range as cosine.",
+    "Secant has vertical asymptotes where sine is zero.",
+    "Cosecant has vertical asymptotes where cosine is zero.",
+    "Cotangent has vertical asymptotes where cosine is zero.",
+    "All reciprocal functions have period \\(2\\pi\\).",
+    "A vertical asymptote is a point on the graph.",
+    "An undefined value is the same as infinity.",
+    "A reciprocal always makes a number smaller.",
+    "Taking the reciprocal preserves the value of every number.",
+    "The reciprocal of a negative number is positive.",
+    "Cotangent is always positive.",
+    "Cosecant and secant are always greater than 1.",
+    "The reciprocal graphs must look exactly like the original graphs."
+  ],
+
+  "explorations": [
+    {
+      "id": "explore-reciprocal-sine",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-reciprocal-cosine",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-reciprocal-tangent",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-asymptotes",
+      "type": "why"
+    },
+    {
+      "id": "explore-reciprocal-range",
+      "type": "why"
+    },
+    {
+      "id": "explore-six-functions",
+      "type": "visualization"
+    }
+  ],
+
+  "sources": [
+    "khan-academy-trigonometry",
+    "openstax-precalculus"
+  ]
+}
