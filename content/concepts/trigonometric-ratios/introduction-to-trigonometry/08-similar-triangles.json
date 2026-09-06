@@ -1,0 +1,242 @@
+{
+  "id": "similar-triangles",
+  "title": "Similar Triangles",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+  "difficulty": 1,
+  "connections": {
+    "prerequisites": [
+      "right-triangles"
+    ],
+    "leads_to": [
+      "bridge-to-trig-ratios"
+    ],
+    "related": [
+      "geometry",
+      "proportionality",
+      "scale-factor",
+      "congruent-triangles"
+    ]
+  },
+  "theory": {
+    "introduction": "Similar triangles are triangles that have the same shape, even if their sizes are different. This is the missing link between a particular right triangle and the general trigonometric ratios that depend only on an angle. If two right triangles contain the same acute angle, they have the same shape and their corresponding side lengths change by the same scale factor. Therefore, ratios of corresponding sides remain unchanged.",
+    "sections": [
+      {
+        "id": "what-similar-means",
+        "title": "What does it mean for triangles to be similar?",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "same-shape",
+            "text": "Two triangles are similar when they have the same shape, although they do not have to have the same size. One triangle can be viewed as a scaled version of the other."
+          },
+          {
+            "type": "paragraph",
+            "id": "angle-correspondence",
+            "text": "For similar triangles, corresponding angles are equal. Corresponding sides are proportional, meaning that one triangle's corresponding side lengths are obtained from the other's by the same scale factor."
+          },
+          {
+            "type": "paragraph",
+            "id": "similar-not-congruent",
+            "text": "Similar does not mean identical in size. Congruent triangles have the same shape and the same size; similar triangles only need to have the same shape."
+          }
+        ]
+      },
+      {
+        "id": "shape-and-scale",
+        "title": "Shape versus size",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "scale-factor",
+            "text": "Suppose a triangle has sides 3, 4, and 5. If every side is multiplied by 2, the new triangle has sides 6, 8, and 10. Its size has changed, but its shape has not."
+          },
+          {
+            "type": "paragraph",
+            "id": "uniform-scaling",
+            "text": "The important condition is that every corresponding length is multiplied by the same scale factor. If different sides were multiplied by different factors, the shape would generally change and the triangles would no longer be similar."
+          },
+          {
+            "type": "paragraph",
+            "id": "ratio-survives-scaling",
+            "text": "Because corresponding sides are multiplied by the same factor, ratios between corresponding sides stay the same. This invariance is the key idea that will lead to trigonometric ratios."
+          }
+        ]
+      },
+      {
+        "id": "same-angle-similarity",
+        "title": "Why do right triangles with the same acute angle have the same shape?",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "two-angle-information",
+            "text": "Every right triangle already contains one angle of 90°. If two right triangles also share the same acute angle, then they have two equal corresponding angles."
+          },
+          {
+            "type": "paragraph",
+            "id": "aa-similarity",
+            "text": "Once two corresponding angles are equal, the third angles must also be equal because the angles of a triangle add to 180°. Thus the triangles have the same angle structure and are similar."
+          },
+          {
+            "type": "paragraph",
+            "id": "same-angle-same-shape",
+            "text": "This means that changing the size of a right triangle while keeping a particular acute angle fixed does not change the triangle's shape. The sides may become longer or shorter, but their relative proportions remain fixed."
+          }
+        ]
+      },
+      {
+        "id": "corresponding-sides-and-proportions",
+        "title": "Corresponding sides remain proportional",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "correspondence",
+            "text": "To compare similar triangles correctly, first identify which angles correspond. The sides opposite corresponding angles are corresponding sides, as are the sides adjacent to those corresponding angles."
+          },
+          {
+            "type": "paragraph",
+            "id": "proportion-example",
+            "text": "If corresponding sides of two similar triangles are 3 and 6, 4 and 8, and 5 and 10, every corresponding pair has the same scale factor of 2. Consequently, 3/5 = 6/10 and 4/5 = 8/10."
+          },
+          {
+            "type": "paragraph",
+            "id": "ratio-survives-scaling-2",
+            "text": "If a side length is multiplied by a scale factor k, another corresponding side is also multiplied by k. In a ratio, the same factor appears in both numerator and denominator and cancels. That is why the ratio is independent of the triangle's size."
+          }
+        ]
+      },
+      {
+        "id": "the-trigonometry-connection",
+        "title": "The crucial connection to Trigonometry",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "fixed-angle-family",
+            "text": "Imagine drawing many right triangles that all contain the same acute angle. They can be tiny or large, but as long as that angle stays fixed, the triangles remain similar."
+          },
+          {
+            "type": "paragraph",
+            "id": "ratios-depend-on-angle",
+            "text": "Because all of these triangles are similar, the ratios between corresponding sides are identical. Therefore, a ratio such as opposite side divided by hypotenuse is determined by the angle, not by the particular size of the triangle."
+          },
+          {
+            "type": "paragraph",
+            "id": "why-sine-is-possible",
+            "text": "This is the reason it makes sense to define a trigonometric ratio for an angle. We are not arbitrarily choosing a ratio from one triangle and hoping it works everywhere. Similarity guarantees that the same angle produces the same side ratio in every similar right triangle."
+          },
+          {
+            "type": "paragraph",
+            "id": "formula-not-yet",
+            "text": "The formal names sine, cosine, and tangent will be introduced next. The important idea here is the reason these ratios can belong to an angle itself: similar triangles make the relevant side ratios invariant under scaling."
+          }
+        ]
+      },
+      {
+        "id": "visualizing-similarity",
+        "title": "A useful way to visualize similarity",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "nested-triangles",
+            "text": "Draw two rays from a common point and place a line segment across them at one distance from the point. Then place another parallel line segment farther away. The two triangles formed have the same angles and therefore the same shape, while the farther triangle is a scaled version of the nearer one."
+          },
+          {
+            "type": "paragraph",
+            "id": "same-angle-different-size",
+            "text": "The larger triangle contains longer sides, but each corresponding side has increased by the same factor. Any ratio formed from corresponding sides therefore remains unchanged."
+          },
+          {
+            "type": "paragraph",
+            "id": "exploration-hook",
+            "text": "This gives a natural visualization for the next stage of learning: continuously resize a right triangle while keeping one angle fixed and watch the side lengths change while their ratios remain constant."
+          }
+        ]
+      },
+      {
+        "id": "bridge-forward",
+        "title": "From Similarity to Trigonometric Ratios",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "bridge-summary",
+            "text": "We can now make the central argument: a fixed acute angle determines a fixed triangle shape; fixed shape means corresponding side ratios are fixed; therefore those ratios can be treated as functions of the angle."
+          },
+          {
+            "type": "paragraph",
+            "id": "next-concept",
+            "text": "The next concept will name the three fundamental ratios—sine, cosine, and tangent—and define them using the sides of a right triangle relative to a chosen angle."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "similarity-scale-factor",
+      "name": "Corresponding Side Proportion",
+      "expression": "a₁/a₂ = b₁/b₂ = c₁/c₂",
+      "explanation": "For two similar triangles, the ratios of corresponding side lengths are equal."
+    },
+    {
+      "id": "scale-factor-relation",
+      "name": "Scale Factor",
+      "expression": "a₂ = k a₁,  b₂ = k b₁,  c₂ = k c₁",
+      "explanation": "Every corresponding side is multiplied by the same scale factor k."
+    }
+  ],
+  "examples": [
+    {
+      "id": "example-3-4-5-scaling",
+      "question": "A right triangle has side lengths 3, 4, and 5. Another right triangle has corresponding side lengths 6, 8, and 10. Are the triangles similar?",
+      "solution": "Compare corresponding sides: 6/3 = 2, 8/4 = 2, and 10/5 = 2. Every corresponding side has the same scale factor, so the triangles are similar."
+    },
+    {
+      "id": "example-fixed-angle",
+      "question": "Two right triangles have the same acute angle. One has an opposite side of 3 and a hypotenuse of 5. A corresponding triangle has an opposite side of 9. What is its hypotenuse?",
+      "solution": "Because the triangles have the same acute angle and are both right triangles, they are similar. The scale factor from the first triangle to the second is 9/3 = 3. Therefore the hypotenuse is 5 × 3 = 15."
+    },
+    {
+      "id": "example-ratio-invariance",
+      "question": "For a right triangle, the opposite side and hypotenuse are 4 and 10. A similar triangle has an opposite side of 12. What is its hypotenuse, and what happens to the ratio opposite/hypotenuse?",
+      "solution": "The scale factor is 12/4 = 3, so the hypotenuse becomes 10 × 3 = 30. The original ratio is 4/10 = 0.4 and the new ratio is 12/30 = 0.4. The ratio is unchanged."
+    },
+    {
+      "id": "example-identify-correspondence",
+      "question": "Two similar triangles have corresponding side pairs (5, 7) and (10, 14). If another side of the smaller triangle is 9, what is the corresponding side of the larger triangle?",
+      "solution": "The scale factor is 10/5 = 2 and also 14/7 = 2. Therefore the corresponding side is 9 × 2 = 18."
+    },
+    {
+      "id": "example-why-trig-ratio-is-stable",
+      "question": "Three right triangles all contain the same acute angle. Their opposite and hypotenuse sides are (2, 5), (4, 10), and (6, 15). Why can one ratio be associated with the angle rather than with a particular triangle?",
+      "solution": "The triangles are similar because they are right triangles with the same acute angle. Their opposite-to-hypotenuse ratios are 2/5, 4/10, and 6/15, all equal to 0.4. The ratio remains unchanged as the triangle is scaled, so it depends on the angle rather than the triangle's size."
+    }
+  ],
+  "key_ideas": [
+    "Similar triangles have the same shape but can have different sizes.",
+    "Corresponding angles of similar triangles are equal.",
+    "Corresponding side lengths of similar triangles are proportional.",
+    "A single scale factor multiplies every corresponding side.",
+    "Scaling a triangle changes its size without changing its shape.",
+    "In a ratio of corresponding sides, the scale factor cancels.",
+    "Therefore, corresponding side ratios are invariant across similar triangles.",
+    "Two right triangles with the same acute angle are similar.",
+    "A fixed acute angle therefore determines fixed ratios between corresponding sides of a right triangle.",
+    "This invariance is the conceptual foundation for sine, cosine, and tangent.",
+    "Trigonometric ratios can be associated with angles because similarity makes them independent of triangle size."
+  ],
+  "misconceptions": [
+    "Similar triangles must have the same side lengths.",
+    "Similar triangles must be the same size.",
+    "Any two right triangles are automatically similar.",
+    "If two triangles have one equal angle, they are always similar without any additional information.",
+    "Corresponding sides are identified by position on the page rather than by corresponding angles.",
+    "Changing the size of a triangle changes its side ratios.",
+    "A trigonometric ratio is just a property of one particular triangle.",
+    "Sine, cosine, and tangent are arbitrary formulas to memorize.",
+    "Similarity and congruence mean the same thing.",
+    "The scale factor can be different for different corresponding sides in similar triangles."
+  ],
+  "explorations": [],
+  "sources": []
+}
