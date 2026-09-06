@@ -1,0 +1,272 @@
+{
+  "id": "angle-measurement",
+  "title": "Angle Measurement",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+  "difficulty": 1,
+  "connections": {
+    "prerequisites": [
+      "angles"
+    ],
+    "leads_to": [
+      "degrees-and-radians",
+      "angles-on-a-circle"
+    ],
+    "related": [
+      "rotation",
+      "circles",
+      "arc-length",
+      "coordinate-plane"
+    ]
+  },
+  "theory": {
+    "introduction": "In trigonometry, an angle represents an amount of rotation. To work with angles mathematically, we need a way to describe that rotation with numbers. A circle provides a natural reference for doing this: we can compare a rotation with a complete revolution, or relate the arc traced by the rotation to the radius of the circle.",
+    "sections": [
+      {
+        "id": "why-measure-angles",
+        "title": "Why Do We Need to Measure an Angle?",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "angle-needs-number",
+            "text": "An angle tells us how much one direction has rotated relative to another, but trigonometry needs more than a visual description. We need a numerical measure so that different rotations can be compared, calculated, and eventually used as inputs to trigonometric functions."
+          },
+          {
+            "type": "paragraph",
+            "id": "measurement-as-rotation",
+            "text": "For example, a quarter-turn, a half-turn, and a full turn are clearly different amounts of rotation. Angle measurement assigns numbers to these amounts so that the relationship between them can be expressed precisely."
+          },
+          {
+            "type": "paragraph",
+            "id": "measurement-and-trigonometry",
+            "text": "Once an angle has a numerical measure, trigonometry can connect that measure with geometric quantities such as side lengths, coordinates, and positions on a circle."
+          }
+        ]
+      },
+      {
+        "id": "rotation-and-circle",
+        "title": "Measuring Rotation Using a Circle",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "circle-reference",
+            "text": "A complete rotation provides a natural reference for measuring an angle. If a rotating ray makes one complete turn, it has returned to its original direction. A smaller rotation can then be described as a fraction of that complete revolution."
+          },
+          {
+            "type": "paragraph",
+            "id": "fractions-of-revolution",
+            "text": "A quarter-turn represents one-fourth of a revolution, a half-turn represents one-half of a revolution, and three-quarters of a turn represents three-fourths of a revolution. Rotations can also continue beyond one complete revolution, so an angle may represent more than one full turn."
+          },
+          {
+            "type": "paragraph",
+            "id": "direction-matters",
+            "text": "The direction of rotation matters as well. In standard trigonometric convention, counterclockwise rotation is positive and clockwise rotation is negative. Therefore, the same terminal direction can be reached by rotations with different signed measures."
+          }
+        ]
+      },
+      {
+        "id": "circle-as-reference",
+        "title": "The Circle as a Reference for Angle Measurement",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "same-angle-different-circles",
+            "text": "Consider the same angle drawn from the center of two circles with different radii. The larger circle produces a longer arc, while the smaller circle produces a shorter arc. However, the amount of rotation is unchanged, so the angle itself has not changed."
+          },
+          {
+            "type": "paragraph",
+            "id": "angle-versus-distance",
+            "text": "This shows an important distinction: an angle measures an amount of rotation, whereas the arc measures a physical distance travelled along a circle. Arc length can change when the circle changes size even though the angle remains the same."
+          },
+          {
+            "type": "paragraph",
+            "id": "scale-independent-angle",
+            "text": "A useful angle-measurement system should therefore describe the rotation independently of the particular circle on which we draw it."
+          }
+        ]
+      },
+      {
+        "id": "arcs-and-rotation",
+        "title": "Arcs and the Rotation They Represent",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "arc-definition-context",
+            "text": "When a point on a circle moves as a ray rotates about the center, it traces a curved path called an arc. The arc records the part of the circular path swept out during the rotation."
+          },
+          {
+            "type": "paragraph",
+            "id": "partial-complete-multiple-arcs",
+            "text": "The traced arc may represent only part of a circle, an entire circle, or more than one complete revolution. Thus, circular motion gives us a visual way to see how much rotation has occurred."
+          },
+          {
+            "type": "paragraph",
+            "id": "arc-not-angle",
+            "text": "The arc and the angle are related, but they are not the same quantity. For a fixed angle, increasing the radius increases the arc length. The angle describes the rotation; the arc describes the resulting distance along the circle."
+          }
+        ]
+      },
+      {
+        "id": "central-angle",
+        "title": "Central Angles",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "central-angle-definition",
+            "text": "When the vertex of an angle is at the center of a circle and its sides extend along radii, the angle is called a central angle."
+          },
+          {
+            "type": "paragraph",
+            "id": "central-angle-arc",
+            "text": "A central angle naturally determines an arc of the circle. The two sides of the angle meet the circle at two points, and the portion of the circumference between those points is the arc associated with the rotation."
+          },
+          {
+            "type": "paragraph",
+            "id": "central-angle-radian-bridge",
+            "text": "Central angles are especially important because they provide the geometric setting for radian measurement. Instead of defining an angle only by dividing a full revolution into equal pieces, we can connect its measure directly to the arc it subtends and the circle's radius."
+          }
+        ]
+      },
+      {
+        "id": "arc-length-radius-relationship",
+        "title": "Why the Radius Matters",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "arc-grows-with-radius",
+            "text": "For a particular angle, a larger circle produces a proportionally larger arc. A smaller circle produces a proportionally smaller arc. The arc length therefore depends on both the angle and the size of the circle."
+          },
+          {
+            "type": "paragraph",
+            "id": "ratio-removes-scale",
+            "text": "Dividing the arc length by the radius removes this dependence on the scale of the circle. For a given angle, the ratio of arc length to radius is the same regardless of the radius used."
+          },
+          {
+            "type": "paragraph",
+            "id": "ratio-depends-on-angle",
+            "text": "This is a powerful idea: the arc length changes from circle to circle, the radius changes from circle to circle, but their ratio remains tied to the amount of rotation. This gives us a natural, scale-independent way to measure an angle."
+          }
+        ]
+      },
+      {
+        "id": "angle-measurement-units",
+        "title": "Angle Measurement Requires a Unit",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "measurement-system",
+            "text": "Just as length can be measured in different units, angles can be represented using different measurement systems. The physical rotation does not change when the measurement system changes; only the numerical representation changes."
+          },
+          {
+            "type": "paragraph",
+            "id": "degree-system-motivation",
+            "text": "One familiar system divides a complete revolution into 360 equal parts. Each part is one degree, so a complete revolution measures 360 degrees. This makes a quarter-turn 90 degrees and a half-turn 180 degrees."
+          },
+          {
+            "type": "paragraph",
+            "id": "units-not-geometry",
+            "text": "The number 360 is a convention for the degree system, not a property that every possible angle-measurement system must use. Trigonometry also uses a measurement system built from the geometry of circles themselves."
+          }
+        ]
+      },
+      {
+        "id": "degrees-as-revolution",
+        "title": "Degrees as a Fraction of a Revolution",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "one-degree",
+            "text": "In the degree system, one degree represents one three-hundred-sixtieth of a complete revolution. Therefore, the numerical degree measure can be interpreted as how many of these equal parts of a full turn the rotation contains."
+          },
+          {
+            "type": "paragraph",
+            "id": "common-revolution-measures",
+            "text": "A quarter revolution corresponds to 90 degrees, a half revolution to 180 degrees, three-quarters of a revolution to 270 degrees, and one complete revolution to 360 degrees."
+          },
+          {
+            "type": "paragraph",
+            "id": "multiple-revolutions-degrees",
+            "text": "Because a rotation can continue beyond one revolution, angles can have degree measures greater than 360 degrees or negative degree measures when the rotation is clockwise."
+          }
+        ]
+      },
+      {
+        "id": "toward-radians",
+        "title": "Why Another Angle Measure?",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "degree-is-convention",
+            "text": "Degrees are useful, but their definition begins with the convention of dividing a full revolution into 360 equal parts. A circle also contains another natural relationship: its radius and the arc traced by a central angle."
+          },
+          {
+            "type": "paragraph",
+            "id": "natural-circle-measure",
+            "text": "Because the ratio of arc length to radius depends only on the angle, that ratio can itself be used to measure the angle. This leads to radian measure."
+          },
+          {
+            "type": "paragraph",
+            "id": "bridge-to-next-file",
+            "text": "The next step is therefore to understand degrees and radians as two different ways of assigning numbers to the same rotation, how they are related, and why radians become especially natural when trigonometry is connected with circles and later mathematics."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [],
+  "examples": [
+    {
+      "id": "quarter-turn-measure",
+      "question": "A rotating ray turns through exactly one-fourth of a complete revolution. What fraction of a full rotation has occurred, and what is its degree measure?",
+      "solution": "One-fourth of a complete revolution has occurred. Since a complete revolution is 360 degrees in the degree system, the rotation measures 360 × 1/4 = 90 degrees."
+    },
+    {
+      "id": "same-angle-different-circles",
+      "question": "The same central angle is drawn on two circles, one with radius 2 units and another with radius 5 units. Does the angle change because the circles have different sizes?",
+      "solution": "No. The amount of rotation is the same, so the angle is the same. The larger circle produces a longer arc, but the angle itself is independent of the circle's size."
+    },
+    {
+      "id": "arc-versus-angle",
+      "question": "Two circles are rotated through the same angle, but one circle has twice the radius of the other. Which circle produces the longer arc?",
+      "solution": "The circle with twice the radius produces the longer arc. For the same angle, increasing the radius increases the arc length proportionally. The angle remains unchanged."
+    },
+    {
+      "id": "clockwise-rotation",
+      "question": "A ray is rotated clockwise through one-quarter of a complete revolution. What is its degree measure under the usual signed-angle convention?",
+      "solution": "One-quarter of a revolution is 90 degrees. Because the rotation is clockwise, it is negative, so the signed angle measure is -90 degrees."
+    },
+    {
+      "id": "scale-independent-ratio",
+      "question": "Why can the ratio of an arc length to the radius be useful for describing an angle, even though the arc length itself changes when the circle gets larger?",
+      "solution": "For a fixed angle, increasing the radius increases the arc length in the same proportion. Dividing the arc length by the radius removes this scale effect, leaving a ratio determined by the amount of rotation."
+    }
+  ],
+  "key_ideas": [
+    "In trigonometry, an angle can be understood as an amount of directed rotation.",
+    "Angle measurement assigns a numerical value to an amount of rotation.",
+    "A complete revolution provides a natural reference for comparing rotations.",
+    "Arc length is a distance travelled along a circle, while angle measure describes the amount of rotation.",
+    "The same angle can be drawn on circles of different radii.",
+    "Changing the radius changes the arc length but does not change the angle.",
+    "For a fixed angle, the ratio of arc length to radius is independent of the circle's size.",
+    "A central angle has its vertex at the center of a circle and naturally determines an arc.",
+    "Degrees represent a full revolution as 360 equal parts.",
+    "Angle measurement systems are ways of assigning numbers to the same physical rotation.",
+    "Radians arise naturally from the relationship between arc length and radius.",
+    "Degrees and radians represent the same geometric idea using different measurement systems."
+  ],
+  "misconceptions": [
+    "A longer arc always means a larger angle.",
+    "Changing the radius of a circle changes the angle.",
+    "Arc length and angle measure are the same quantity.",
+    "An angle can only represent less than one complete revolution.",
+    "360 degrees is a fundamental property that every angle-measurement system must use.",
+    "A negative angle means the angle is somehow physically smaller; it actually indicates clockwise direction under the signed-angle convention.",
+    "If two rotations end in the same direction, they must have had the same angle measure.",
+    "The ratio of arc length to radius depends on the size of the circle.",
+    "Radians are simply another name for degrees."
+  ],
+  "explorations": [],
+  "sources": []
+}

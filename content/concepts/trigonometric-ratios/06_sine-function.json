@@ -1,0 +1,740 @@
+{
+  "id": "sine-function",
+  "title": "Sine Function",
+
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+
+  "difficulty": 2,
+
+  "connections": {
+    "prerequisites": [
+      "trigonometric-functions",
+      "trigonometric-ratios-any-angle",
+      "exact-trigonometric-values"
+    ],
+
+    "leads_to": [
+      "cosine-function"
+    ],
+
+    "related": [
+      "trigonometric-functions",
+      "exact-trigonometric-values",
+      "trigonometric-ratios-any-angle"
+    ]
+  },
+
+  "theory": {
+    "introduction": "The sine function is one of the most important functions in mathematics. We first encountered sine as a ratio of two sides in a right triangle, but the function becomes much more powerful when we view it as a rule that assigns a value to every real angle. The graph of y = sin(x) gives us a visual representation of how this value changes as an angle rotates. By connecting the graph to the unit circle, we can understand where the sine function reaches zero, where it reaches its maximum and minimum values, why it repeats, and how amplitude and period describe its behavior.",
+
+    "sections": [
+      {
+        "id": "what-is-sine-function",
+        "title": "What Is the Sine Function?",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The sine function takes an angle as its input and returns a number as its output. We write the function as \\(y = \\sin x\\). Here, \\(x\\) represents the input angle and \\(y\\) represents the resulting sine value."
+          },
+          {
+            "type": "paragraph",
+            "text": "Earlier, sine was introduced through a right triangle using \\(\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\). That definition gives us excellent intuition for acute angles. However, a function such as \\(y = \\sin x\\) needs to work for every real input, including angles greater than \\(90^\\circ\\), negative angles, and angles involving multiple rotations."
+          },
+          {
+            "type": "paragraph",
+            "text": "The unit circle provides a natural way to extend the definition. For an angle \\(x\\), imagine a radius rotating from the positive x-axis. The point where the radius meets the unit circle has coordinates \\((\\cos x, \\sin x)\\). Therefore, the sine of the angle is the vertical coordinate of that point."
+          },
+          {
+            "type": "paragraph",
+            "text": "This interpretation is extremely useful because the vertical coordinate of a point on the unit circle can never be greater than \\(1\\) or less than \\(-1\\). This immediately explains why the sine function always has values between \\(-1\\) and \\(1\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "unit-circle-to-graph",
+        "title": "From the Unit Circle to the Sine Graph",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The graph of \\(y = \\sin x\\) can be constructed directly from the unit circle. As the angle increases, imagine a point moving counterclockwise around the circle. At every angle, record the point's vertical coordinate. That vertical coordinate is \\(\\sin x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Start at \\(0^\\circ\\). The point on the unit circle is \\((1,0)\\), so the sine value is \\(0\\). Therefore, the graph begins at \\((0,0)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(90^\\circ\\), the point reaches \\((0,1)\\). Therefore, \\(\\sin90^\\circ = 1\\), giving the point \\((90^\\circ,1)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(180^\\circ\\), the point reaches \\((-1,0)\\), so \\(\\sin180^\\circ = 0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(270^\\circ\\), the point reaches \\((0,-1)\\), so \\(\\sin270^\\circ = -1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Finally, at \\(360^\\circ\\), the point returns to \\((1,0)\\), so \\(\\sin360^\\circ = 0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "These five points describe one complete cycle of the basic sine function. Connecting them smoothly produces the familiar wave-shaped sine curve."
+          },
+          {
+            "type": "paragraph",
+            "text": "A useful visualization for Lumina would show the unit-circle point moving while a second coordinate system records its vertical coordinate. As the point moves upward, downward, and back to its starting position, the corresponding sine graph is drawn simultaneously."
+          }
+        ]
+      },
+
+      {
+        "id": "key-points",
+        "title": "The Five Key Points of One Cycle",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The basic sine graph can be understood using five important points over one complete revolution. These occur at quarter-turn intervals."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(0^\\circ\\), \\(\\sin0^\\circ = 0\\). The graph is at the middle level."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(90^\\circ\\), \\(\\sin90^\\circ = 1\\). The graph reaches its highest point."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(180^\\circ\\), \\(\\sin180^\\circ = 0\\). The graph returns to the middle level."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(270^\\circ\\), \\(\\sin270^\\circ = -1\\). The graph reaches its lowest point."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(360^\\circ\\), \\(\\sin360^\\circ = 0\\). The graph returns to the middle level and completes one cycle."
+          },
+          {
+            "type": "paragraph",
+            "text": "The corresponding points are \\((0,0)\\), \\((90^\\circ,1)\\), \\((180^\\circ,0)\\), \\((270^\\circ,-1)\\), and \\((360^\\circ,0)\\). When radians are used, the same points occur at \\(0\\), \\(\\frac{\\pi}{2}\\), \\(\\pi\\), \\(\\frac{3\\pi}{2}\\), and \\(2\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "These points are enough to establish the overall shape of the basic sine curve when they are connected smoothly."
+          }
+        ]
+      },
+
+      {
+        "id": "one-complete-cycle",
+        "title": "Understanding One Complete Cycle",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A cycle is one complete repetition of a function's pattern. For the basic sine function, one cycle occurs during one complete revolution of the corresponding unit-circle point."
+          },
+          {
+            "type": "paragraph",
+            "text": "One complete revolution is \\(360^\\circ\\), or \\(2\\pi\\) radians. Therefore, the sine function repeats its pattern every \\(360^\\circ\\), or \\(2\\pi\\) radians."
+          },
+          {
+            "type": "paragraph",
+            "text": "Starting at \\(0^\\circ\\), sine begins at zero, rises to \\(1\\), falls back to zero, continues down to \\(-1\\), and finally rises back to zero at \\(360^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "After reaching \\(360^\\circ\\), the same pattern begins again. At \\(450^\\circ\\), which is \\(360^\\circ + 90^\\circ\\), the sine value is again \\(1\\). At \\(540^\\circ\\), which is \\(360^\\circ + 180^\\circ\\), the sine value is again \\(0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This repeating behavior is called periodicity. The length of the smallest repeating interval is called the period."
+          }
+        ]
+      },
+
+      {
+        "id": "period",
+        "title": "The Period of the Sine Function",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The period of a function tells us how far we must move along the input axis before the function begins repeating its values in the same pattern."
+          },
+          {
+            "type": "paragraph",
+            "text": "For the basic sine function \\(y = \\sin x\\), the period is \\(2\\pi\\) radians, or \\(360^\\circ\\). This means that increasing an angle by one complete revolution does not change its sine value."
+          },
+          {
+            "type": "paragraph",
+            "text": "The repeating relationship can be written as \\(\\sin(x + 2\\pi) = \\sin x\\). In degree measure, the same idea is \\(\\sin(x + 360^\\circ) = \\sin x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\sin30^\\circ = \\frac{1}{2}\\). If we add one complete revolution, we obtain \\(390^\\circ\\). Therefore, \\(\\sin390^\\circ = \\frac{1}{2}\\) as well."
+          },
+          {
+            "type": "paragraph",
+            "text": "The period does not mean that the function has only one cycle. The sine function continues repeating indefinitely in both directions."
+          }
+        ]
+      },
+
+      {
+        "id": "maximum-and-minimum",
+        "title": "Maximum and Minimum Values",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The maximum value of a function is its greatest possible output, while the minimum value is its smallest possible output."
+          },
+          {
+            "type": "paragraph",
+            "text": "For the basic sine function, the maximum value is \\(1\\). It occurs whenever the point on the unit circle reaches the highest point, corresponding to angles such as \\(90^\\circ\\), \\(450^\\circ\\), and so on."
+          },
+          {
+            "type": "paragraph",
+            "text": "The minimum value is \\(-1\\). It occurs whenever the point on the unit circle reaches the lowest point, corresponding to angles such as \\(270^\\circ\\), \\(630^\\circ\\), and so on."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, the sine function satisfies \\(-1 \\leq \\sin x \\leq 1\\) for every real value of \\(x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The maximum and minimum values are directly connected to the geometry of the unit circle. The vertical coordinate cannot rise above \\(1\\) or fall below \\(-1\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "amplitude",
+        "title": "Amplitude of the Sine Function",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Amplitude describes the maximum distance of a periodic function from its central or midline value. For the basic sine function, the midline is \\(y=0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The sine function reaches \\(1\\) above the midline and \\(-1\\) below the midline. Therefore, its maximum distance from the midline is \\(1\\). The amplitude of \\(y=\\sin x\\) is therefore \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Amplitude is not the same thing as the total vertical distance from the maximum to the minimum. For the basic sine function, the maximum is \\(1\\) and the minimum is \\(-1\\), so the total height is \\(2\\), while the amplitude is \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a function of the form \\(y=A\\sin x\\), the amplitude is \\(|A|\\). The absolute value is used because amplitude describes a distance and therefore is nonnegative."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, the amplitude of \\(y=3\\sin x\\) is \\(3\\). The function can reach a maximum of \\(3\\) and a minimum of \\(-3\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "zeros-of-sine",
+        "title": "Where Does Sine Equal Zero?",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A zero of a function is an input value for which the output is zero. On the graph, zeros are the points where the curve crosses or touches the x-axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "For sine, the value is zero whenever the corresponding point on the unit circle lies on the horizontal axis. This happens at \\(0^\\circ\\), \\(180^\\circ\\), \\(360^\\circ\\), and every additional half-turn."
+          },
+          {
+            "type": "paragraph",
+            "text": "In radians, the zeros occur at integer multiples of \\(\\pi\\). This can be written as \\(x=k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\sin0=0\\), \\(\\sin\\pi=0\\), \\(\\sin2\\pi=0\\), and \\(\\sin(-\\pi)=0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Understanding the zeros from the unit circle is more useful than simply memorizing them because it explains why they occur."
+          }
+        ]
+      },
+
+      {
+        "id": "sign-of-sine",
+        "title": "Why Sine Changes Sign",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The sine function can be positive, zero, or negative. This follows directly from its interpretation as the y-coordinate of a point on the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "In the first and second quadrants, points on the unit circle have positive y-coordinates. Therefore, sine is positive in these quadrants."
+          },
+          {
+            "type": "paragraph",
+            "text": "In the third and fourth quadrants, points have negative y-coordinates. Therefore, sine is negative in these quadrants."
+          },
+          {
+            "type": "paragraph",
+            "text": "On the horizontal axis, the y-coordinate is zero. Therefore, sine is zero at the angles where the terminal side lies on the horizontal axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\sin120^\\circ\\) is positive because \\(120^\\circ\\) lies in the second quadrant, while \\(\\sin240^\\circ\\) is negative because \\(240^\\circ\\) lies in the third quadrant."
+          }
+        ]
+      },
+
+      {
+        "id": "graph-shape",
+        "title": "Understanding the Shape of the Sine Curve",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The sine graph is a smooth wave. Its shape is not arbitrary; it comes from the continuous movement of a point around the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Starting at \\((0,0)\\), the graph rises because the y-coordinate of the rotating point becomes positive. It reaches its highest point at \\(90^\\circ\\), where the y-coordinate is \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "After \\(90^\\circ\\), the y-coordinate begins decreasing. At \\(180^\\circ\\), it reaches zero. The graph then continues downward because the point has entered the lower half of the circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "The graph reaches its minimum at \\(270^\\circ\\), where the y-coordinate is \\(-1\\). It then rises again and returns to zero at \\(360^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The smoothness of the graph reflects the continuous movement around the circle. There are no sudden jumps between the key points."
+          }
+        ]
+      },
+
+      {
+        "id": "radians-on-graph",
+        "title": "The Sine Graph in Radians",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Graphs of trigonometric functions are commonly drawn using radians on the horizontal axis. This is especially important in more advanced mathematics because radians provide a natural connection between angles and circular geometry."
+          },
+          {
+            "type": "paragraph",
+            "text": "The five key points of one sine cycle become \\((0,0)\\), \\(\\left(\\frac{\\pi}{2},1\\right)\\), \\((\\pi,0)\\), \\(\\left(\\frac{3\\pi}{2},-1\\right)\\), and \\((2\\pi,0)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The distance from \\(0\\) to \\(2\\pi\\) represents one complete cycle. Thus, the period of the basic sine function is naturally written as \\(2\\pi\\) when the input is measured in radians."
+          },
+          {
+            "type": "paragraph",
+            "text": "The degree and radian graphs represent the same mathematical behavior. Only the numerical labels on the horizontal axis change."
+          }
+        ]
+      },
+
+      {
+        "id": "negative-inputs",
+        "title": "What Happens for Negative Angles?",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The sine function is defined for negative angles as well. A negative angle represents rotation in the clockwise direction."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(-90^\\circ\\) means a clockwise quarter-turn. The corresponding point on the unit circle is \\((0,-1)\\), so \\(\\sin(-90^\\circ)=-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "There is an important symmetry property: \\(\\sin(-x)=-\\sin x\\). This means that sine is an odd function."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, since \\(\\sin30^\\circ=\\frac{1}{2}\\), we have \\(\\sin(-30^\\circ)=-\\frac{1}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "On the graph, this property means the sine curve has rotational symmetry about the origin."
+          }
+        ]
+      },
+
+      {
+        "id": "periodicity-examples",
+        "title": "Using the Period to Find Sine Values",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Because sine has period \\(2\\pi\\), angles that differ by a whole number of complete revolutions have the same sine value."
+          },
+          {
+            "type": "paragraph",
+            "text": "Suppose we want to find \\(\\sin\\left(\\frac{13\\pi}{6}\\right)\\). Subtract one complete revolution, \\(2\\pi=\\frac{12\\pi}{6}\\). This gives \\(\\frac{13\\pi}{6}-\\frac{12\\pi}{6}=\\frac{\\pi}{6}\\). Therefore, \\(\\sin\\left(\\frac{13\\pi}{6}\\right)=\\sin\\left(\\frac{\\pi}{6}\\right)=\\frac{1}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The same idea works with degrees. For example, \\(\\sin420^\\circ=\\sin60^\\circ=\\frac{\\sqrt{3}}{2}\\), because \\(420^\\circ-360^\\circ=60^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Periodicity allows us to reduce large angles to simpler coterminal angles without changing the sine value."
+          }
+        ]
+      },
+
+      {
+        "id": "building-graph-step-by-step",
+        "title": "How to Draw the Basic Sine Graph",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "To draw \\(y=\\sin x\\), begin by choosing one complete interval such as \\(0\\leq x\\leq2\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 1: Mark the five important x-values: \\(0\\), \\(\\frac{\\pi}{2}\\), \\(\\pi\\), \\(\\frac{3\\pi}{2}\\), and \\(2\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 2: Determine the corresponding sine values: \\(0\\), \\(1\\), \\(0\\), \\(-1\\), and \\(0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 3: Plot the points \\((0,0)\\), \\(\\frac{\\pi}{2},1\\), \\((\\pi,0)\\), \\(\\frac{3\\pi}{2},-1\\), and \\((2\\pi,0)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 4: Connect the points using a smooth curve. The curve should rise from zero to one, fall through zero to negative one, and rise back to zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 5: Extend the pattern to the left and right because sine continues indefinitely and repeats every \\(2\\pi\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "worked-graph-examples",
+        "title": "Worked Examples",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Example 1: Find the maximum value of \\(y=\\sin x\\). Since the range of sine is \\([-1,1]\\), the maximum value is \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 2: Find the minimum value of \\(y=\\sin x\\). The minimum possible sine value is \\(-1\\). Therefore, the minimum is \\(-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 3: Find the period of \\(y=\\sin x\\). One complete cycle corresponds to one complete revolution, which is \\(2\\pi\\) radians. Therefore, the period is \\(2\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 4: Evaluate \\(\\sin\\left(\\frac{5\\pi}{2}\\right)\\). Since \\(\\frac{5\\pi}{2}=2\\pi+\\frac{\\pi}{2}\\), periodicity gives \\(\\sin\\left(\\frac{5\\pi}{2}\\right)=\\sin\\left(\\frac{\\pi}{2}\\right)=1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 5: Evaluate \\(\\sin\\left(-\\frac{\\pi}{2}\\right)\\). A clockwise quarter-turn reaches the point \\((0,-1)\\). Therefore, \\(\\sin\\left(-\\frac{\\pi}{2}\\right)=-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 6: Determine whether \\(\\sin300^\\circ\\) is positive or negative. Since \\(300^\\circ\\) lies in the fourth quadrant, its y-coordinate is negative. Therefore, \\(\\sin300^\\circ<0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 7: Evaluate \\(\\sin390^\\circ\\). Subtract one complete revolution: \\(390^\\circ-360^\\circ=30^\\circ\\). Therefore, \\(\\sin390^\\circ=\\sin30^\\circ=\\frac{1}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 8: Determine the amplitude of \\(y=4\\sin x\\). The amplitude is the absolute value of the coefficient of sine: \\(|4|=4\\). Therefore, the graph reaches a maximum of \\(4\\) and a minimum of \\(-4\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 9: Determine the five key points of \\(y=\\sin x\\) over \\([0,2\\pi]\\). The x-values are \\(0,\\frac{\\pi}{2},\\pi,\\frac{3\\pi}{2},2\\pi\\), and the corresponding y-values are \\(0,1,0,-1,0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 10: Explain why \\(\\sin x\\) can never equal \\(2\\). On the unit circle, sine is the y-coordinate of a point whose distance from the origin is \\(1\\). No point on that circle has a y-coordinate of \\(2\\). Therefore, \\(\\sin x=2\\) has no real solution."
+          }
+        ]
+      },
+
+      {
+        "id": "visual-unit-circle-graph",
+        "title": "Visual Exploration: Circle and Graph Together",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "One of the most effective ways to understand the sine graph is to connect it directly to the unit circle. Imagine a point moving counterclockwise around the circle while a graph is drawn beside it."
+          },
+          {
+            "type": "paragraph",
+            "text": "At every moment, take the point's vertical coordinate and use it as the y-coordinate of a new point on the graph. The angle used to locate the point on the circle becomes the x-coordinate on the graph."
+          },
+          {
+            "type": "paragraph",
+            "text": "When the circle point is at the top, the graph reaches \\(1\\). When the point crosses the horizontal axis, the graph is at \\(0\\). When the point reaches the bottom, the graph reaches \\(-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This visualization turns the sine graph from a curve to memorize into a consequence of circular motion."
+          }
+        ]
+      },
+
+      {
+        "id": "big-picture",
+        "title": "The Big Picture",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The basic sine function is \\(y=\\sin x\\). Its input is an angle and its output is the corresponding sine value."
+          },
+          {
+            "type": "paragraph",
+            "text": "The unit circle provides the geometric meaning of sine: for an angle \\(x\\), the sine value is the y-coordinate of the corresponding point on the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because the unit-circle y-coordinate always lies between \\(-1\\) and \\(1\\), the sine function has range \\([-1,1]\\). Its maximum is \\(1\\), and its minimum is \\(-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The sine pattern repeats after one complete revolution, so its period is \\(2\\pi\\) radians or \\(360^\\circ\\). Its five key points over one cycle are \\((0,0)\\), \\(\\left(\\frac{\\pi}{2},1\\right)\\), \\((\\pi,0)\\), \\(\\left(\\frac{3\\pi}{2},-1\\right)\\), and \\((2\\pi,0)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The amplitude of the basic sine function is \\(1\\). Together, amplitude and period describe two of the most important features of the sine wave."
+          },
+          {
+            "type": "paragraph",
+            "text": "The key conceptual idea is that the sine graph is not an isolated picture. It is a visual record of the vertical coordinate of a point moving around the unit circle."
+          }
+        ]
+      }
+    ]
+  },
+
+  "formulas": [
+    {
+      "id": "basic-sine-function",
+      "name": "Basic Sine Function",
+      "expression": "\\(y=\\sin x\\)",
+      "explanation": "The basic sine function takes an angle x as input and returns its sine value."
+    },
+    {
+      "id": "unit-circle-sine",
+      "name": "Unit-Circle Definition of Sine",
+      "expression": "\\((\\cos x,\\sin x)\\)",
+      "explanation": "For an angle x on the unit circle, the corresponding point has x-coordinate cos x and y-coordinate sin x."
+    },
+    {
+      "id": "sine-range",
+      "name": "Range of Sine",
+      "expression": "\\(-1\\leq\\sin x\\leq1\\)",
+      "explanation": "The sine value is the vertical coordinate of a point on the unit circle, so it can never be outside the interval from -1 to 1."
+    },
+    {
+      "id": "sine-period",
+      "name": "Period of Sine",
+      "expression": "\\(\\sin(x+2\\pi)=\\sin x\\)",
+      "explanation": "Adding one complete revolution, 2π radians, does not change the sine value. Therefore, the basic sine function has period 2π."
+    },
+    {
+      "id": "sine-degree-period",
+      "name": "Sine Period in Degrees",
+      "expression": "\\(\\sin(x+360^\\circ)=\\sin x\\)",
+      "explanation": "The same periodic behavior can be expressed using degrees. One complete revolution is 360 degrees."
+    },
+    {
+      "id": "sine-amplitude",
+      "name": "Amplitude of Basic Sine",
+      "expression": "\\(A=1\\)",
+      "explanation": "The basic sine function moves one unit above and one unit below its midline y = 0."
+    },
+    {
+      "id": "general-sine-amplitude",
+      "name": "Amplitude of A Sine Function",
+      "expression": "\\(\\text{Amplitude}=|A|\\)",
+      "explanation": "For a function of the form y = A sin x, the amplitude is the absolute value of A."
+    },
+    {
+      "id": "sine-zeros",
+      "name": "Zeros of Sine",
+      "expression": "\\(x=k\\pi,\\quad k\\in\\mathbb{Z}\\)",
+      "explanation": "Sine equals zero at every integer multiple of π radians."
+    },
+    {
+      "id": "odd-symmetry",
+      "name": "Odd Symmetry of Sine",
+      "expression": "\\(\\sin(-x)=-\\sin x\\)",
+      "explanation": "Sine is an odd function, meaning changing the sign of the input changes the sign of the output."
+    }
+  ],
+
+  "examples": [
+    {
+      "id": "example-maximum",
+      "question": "What is the maximum value of \\(y=\\sin x\\)?",
+      "solution": "The sine function has range \\([-1,1]\\). Therefore, its greatest possible value is \\(1\\)."
+    },
+    {
+      "id": "example-minimum",
+      "question": "What is the minimum value of \\(y=\\sin x\\)?",
+      "solution": "The sine function has range \\([-1,1]\\). Therefore, its smallest possible value is \\(-1\\)."
+    },
+    {
+      "id": "example-period",
+      "question": "What is the period of \\(y=\\sin x\\)?",
+      "solution": "One complete cycle corresponds to one complete revolution around the unit circle, which is \\(2\\pi\\) radians. Therefore, the period is \\(2\\pi\\)."
+    },
+    {
+      "id": "example-five-key-points",
+      "question": "Find the five key points of \\(y=\\sin x\\) on \\([0,2\\pi]\\).",
+      "solution": "Use the quarter-turn angles \\(0,\\frac{\\pi}{2},\\pi,\\frac{3\\pi}{2},2\\pi\\). Their sine values are \\(0,1,0,-1,0\\). Therefore, the points are \\((0,0)\\), \\(\\left(\\frac{\\pi}{2},1\\right)\\), \\((\\pi,0)\\), \\(\\left(\\frac{3\\pi}{2},-1\\right)\\), and \\((2\\pi,0)\\)."
+    },
+    {
+      "id": "example-periodic-angle",
+      "question": "Evaluate \\(\\sin\\left(\\frac{5\\pi}{2}\\right)\\).",
+      "solution": "Subtract one complete revolution: \\(\\frac{5\\pi}{2}-2\\pi=\\frac{\\pi}{2}\\). Therefore, \\(\\sin\\left(\\frac{5\\pi}{2}\\right)=\\sin\\left(\\frac{\\pi}{2}\\right)=1\\)."
+    },
+    {
+      "id": "example-degree-periodic",
+      "question": "Evaluate \\(\\sin390^\\circ\\).",
+      "solution": "Subtract one complete revolution: \\(390^\\circ-360^\\circ=30^\\circ\\). Therefore, \\(\\sin390^\\circ=\\sin30^\\circ=\\frac{1}{2}\\)."
+    },
+    {
+      "id": "example-negative-angle",
+      "question": "Evaluate \\(\\sin\\left(-\\frac{\\pi}{2}\\right)\\).",
+      "solution": "A negative quarter-turn is a clockwise rotation of \\(90^\\circ\\). The corresponding unit-circle point is \\((0,-1)\\), so \\(\\sin\\left(-\\frac{\\pi}{2}\\right)=-1\\)."
+    },
+    {
+      "id": "example-sign",
+      "question": "Is \\(\\sin300^\\circ\\) positive or negative?",
+      "solution": "\\(300^\\circ\\) lies in the fourth quadrant. Points in the fourth quadrant have negative y-coordinates. Since sine is the y-coordinate, \\(\\sin300^\\circ\\) is negative."
+    },
+    {
+      "id": "example-amplitude",
+      "question": "Find the amplitude of \\(y=4\\sin x\\).",
+      "solution": "For \\(y=A\\sin x\\), amplitude is \\(|A|\\). Here \\(A=4\\), so the amplitude is \\(|4|=4\\)."
+    },
+    {
+      "id": "example-impossible-sine",
+      "question": "Can \\(\\sin x=2\\) for a real angle x?",
+      "solution": "No. The range of sine is \\([-1,1]\\), so 2 is outside the possible output range. Therefore, there is no real angle whose sine is 2."
+    }
+  ],
+
+  "key_ideas": [
+    "The basic sine function is written as \\(y=\\sin x\\).",
+    "The input of sine is an angle.",
+    "The output of sine is a real number between -1 and 1.",
+    "The unit circle provides a geometric interpretation of sine.",
+    "For a unit-circle point corresponding to angle x, the y-coordinate is \\(\\sin x\\).",
+    "The basic sine function has maximum value 1.",
+    "The basic sine function has minimum value -1.",
+    "The range of sine is \\([-1,1]\\).",
+    "The basic sine function has period \\(2\\pi\\) radians.",
+    "The period is \\(360^\\circ\\) when degrees are used.",
+    "One complete sine cycle corresponds to one complete revolution around the unit circle.",
+    "The five key points of one cycle are obtained at quarter-turn intervals.",
+    "The basic sine function has amplitude 1.",
+    "Amplitude measures the maximum distance from the midline.",
+    "The total vertical distance from maximum to minimum is twice the amplitude.",
+    "Sine equals zero at integer multiples of \\(\\pi\\).",
+    "Sine is positive in the first and second quadrants.",
+    "Sine is negative in the third and fourth quadrants.",
+    "Negative angles represent clockwise rotations.",
+    "Sine satisfies \\(\\sin(-x)=-\\sin x\\).",
+    "The sine graph is periodic.",
+    "The wave shape of the sine graph comes from continuous circular motion.",
+    "Degrees and radians describe the same angles using different numerical units.",
+    "Large angles can be reduced by adding or subtracting complete revolutions.",
+    "The sine graph can be constructed from unit-circle values.",
+    "The graph of sine extends indefinitely in both directions.",
+    "The sine function is bounded above by 1 and below by -1.",
+    "The sine graph is a visual representation of changing vertical coordinates on the unit circle."
+  ],
+
+  "misconceptions": [
+    "The sine graph is simply a curve that must be memorized without a geometric explanation.",
+    "Sine can produce values greater than 1 because triangle side lengths can be large.",
+    "The amplitude of the basic sine function is 2 because the maximum and minimum differ by 2.",
+    "The period of sine is \\(\\pi\\) instead of \\(2\\pi\\).",
+    "Sine becomes undefined at some angles in the same way tangent does.",
+    "The sine function is only defined between 0 and 360 degrees.",
+    "Negative angles cannot be used as inputs to sine.",
+    "A negative sine value means the angle itself is negative.",
+    "The maximum value of sine occurs at 180 degrees.",
+    "The minimum value of sine occurs at 180 degrees.",
+    "The five key points are unrelated to the unit circle.",
+    "A complete sine cycle ends permanently at 360 degrees.",
+    "The sine function has different mathematical behavior in degrees and radians.",
+    "Amplitude is the same thing as the total height of the wave.",
+    "If an angle is larger than 360 degrees, sine cannot be evaluated.",
+    "If sine is negative, the angle must be negative.",
+    "The graph of sine has abrupt corners at its key points.",
+    "The equation \\(\\sin x=2\\) has a real solution because sine is a ratio of side lengths."
+  ],
+
+  "explorations": [
+    {
+      "id": "explore-unit-circle-sine",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-five-key-points",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-periodicity",
+      "type": "why"
+    },
+    {
+      "id": "explore-amplitude",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-negative-angles",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-sine-range",
+      "type": "why"
+    }
+  ],
+
+  "sources": [
+    "khan-academy-trigonometry",
+    "openstax-precalculus"
+  ]
+}  

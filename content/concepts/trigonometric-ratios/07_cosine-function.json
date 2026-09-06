@@ -1,0 +1,845 @@
+{
+  "id": "cosine-function",
+  "title": "Cosine Function",
+
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+
+  "difficulty": 2,
+
+  "connections": {
+    "prerequisites": [
+      "trigonometric-functions",
+      "trigonometric-ratios-any-angle",
+      "exact-trigonometric-values"
+    ],
+
+    "leads_to": [
+      "tangent-function"
+    ],
+
+    "related": [
+      "sine-function",
+      "trigonometric-functions",
+      "exact-trigonometric-values"
+    ]
+  },
+
+  "theory": {
+    "introduction": "The cosine function is one of the three fundamental trigonometric functions. It begins as a ratio in a right triangle, where cosine compares the adjacent side with the hypotenuse. When we extend this idea to the unit circle, cosine becomes the horizontal coordinate of a rotating point. This gives us a powerful way to understand the cosine function for every real angle. Its graph is a smooth repeating wave with a maximum value of 1, a minimum value of -1, an amplitude of 1, and a period of 2π radians. Understanding how the unit circle produces the cosine graph provides the foundation for studying more advanced trigonometric functions and transformations.",
+
+    "sections": [
+      {
+        "id": "what-is-cosine-function",
+        "title": "What Is the Cosine Function?",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The cosine function takes an angle as its input and produces a numerical value as its output. We write the basic cosine function as \\(y=\\cos x\\), where \\(x\\) is the input angle and \\(y\\) is the resulting cosine value."
+          },
+          {
+            "type": "paragraph",
+            "text": "In right-triangle trigonometry, cosine is defined as the ratio of the adjacent side to the hypotenuse: \\(\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}}\\). This tells us how strongly the adjacent side compares with the hypotenuse for a particular angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because similar triangles preserve side ratios, the cosine value depends on the angle rather than the size of the triangle. A small triangle and a large triangle with the same angle will have the same cosine."
+          },
+          {
+            "type": "paragraph",
+            "text": "The right-triangle definition is especially useful for acute angles, but it does not by itself provide a complete definition for every possible real angle. The unit circle extends the idea naturally."
+          },
+          {
+            "type": "paragraph",
+            "text": "For an angle \\(x\\), the corresponding point on the unit circle has coordinates \\((\\cos x,\\sin x)\\). Therefore, cosine can be understood as the horizontal coordinate of the rotating point."
+          }
+        ]
+      },
+
+      {
+        "id": "unit-circle-cosine",
+        "title": "Cosine on the Unit Circle",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The unit circle is a circle centered at the origin with radius \\(1\\). It provides a geometric interpretation of the trigonometric functions for arbitrary angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "Imagine a radius starting on the positive x-axis and rotating counterclockwise through an angle \\(x\\). The endpoint of the radius lies on the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the endpoint has coordinates \\((X,Y)\\), then the distance from the origin is \\(1\\). The coordinates of the point are precisely \\((\\cos x,\\sin x)\\). Thus, the horizontal coordinate is \\(\\cos x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(0^\\circ\\), the point is \\((1,0)\\), so \\(\\cos0^\\circ=1\\). At \\(90^\\circ\\), the point is \\((0,1)\\), so \\(\\cos90^\\circ=0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(180^\\circ\\), the point is \\((-1,0)\\), so \\(\\cos180^\\circ=-1\\). At \\(270^\\circ\\), the point is \\((0,-1)\\), so \\(\\cos270^\\circ=0\\). Finally, at \\(360^\\circ\\), the point returns to \\((1,0)\\), so \\(\\cos360^\\circ=1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "These values form the foundation of one complete cycle of the cosine graph."
+          }
+        ]
+      },
+
+      {
+        "id": "cosine-key-points",
+        "title": "The Five Key Points of One Cycle",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The basic cosine graph can be constructed using five important points over one complete revolution."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(0^\\circ\\), cosine is \\(1\\). This is the starting point and also the maximum value of the basic cosine function."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(90^\\circ\\), cosine is \\(0\\). The graph crosses its middle level."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(180^\\circ\\), cosine is \\(-1\\). The graph reaches its minimum value."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(270^\\circ\\), cosine is \\(0\\). The graph returns to its middle level."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(360^\\circ\\), cosine is \\(1\\). The graph returns to its starting value and completes one cycle."
+          },
+          {
+            "type": "paragraph",
+            "text": "The five key points are therefore \\((0,1)\\), \\((90^\\circ,0)\\), \\((180^\\circ,-1)\\), \\((270^\\circ,0)\\), and \\((360^\\circ,1)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "In radians, the same points are \\((0,1)\\), \\(\\left(\\frac{\\pi}{2},0\\right)\\), \\((\\pi,-1)\\), \\(\\left(\\frac{3\\pi}{2},0\\right)\\), and \\((2\\pi,1)\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "why-cosine-starts-at-one",
+        "title": "Why Does Cosine Start at 1?",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A common question is why the cosine graph begins at \\(1\\), while the sine graph begins at \\(0\\). The answer comes directly from the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "At angle \\(0\\), the radius points directly along the positive x-axis. The endpoint of the radius is therefore \\((1,0)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine represents the horizontal coordinate, so the cosine value is the x-coordinate \\(1\\). Therefore, \\(\\cos0=1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine represents the vertical coordinate. At the same point, the y-coordinate is \\(0\\), which explains \\(\\sin0=0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This difference in starting position is one of the simplest and most important ways to distinguish the basic sine and cosine graphs."
+          }
+        ]
+      },
+
+      {
+        "id": "one-complete-cycle",
+        "title": "Understanding One Complete Cosine Cycle",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A cycle is one complete repetition of a periodic pattern. For the basic cosine function, one cycle corresponds to one complete revolution around the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Starting at \\(0^\\circ\\), cosine begins at its maximum value \\(1\\). As the point rotates toward \\(90^\\circ\\), its x-coordinate decreases from \\(1\\) to \\(0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "From \\(90^\\circ\\) to \\(180^\\circ\\), the x-coordinate becomes negative and reaches \\(-1\\) at \\(180^\\circ\\). The cosine graph therefore reaches its minimum."
+          },
+          {
+            "type": "paragraph",
+            "text": "From \\(180^\\circ\\) to \\(270^\\circ\\), the x-coordinate increases from \\(-1\\) to \\(0\\). From \\(270^\\circ\\) to \\(360^\\circ\\), it continues increasing until it reaches \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "After \\(360^\\circ\\), the same pattern repeats. This repeating behavior means cosine is periodic."
+          }
+        ]
+      },
+
+      {
+        "id": "period",
+        "title": "The Period of the Cosine Function",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The period of a function is the length of the smallest positive interval after which its values repeat in exactly the same pattern."
+          },
+          {
+            "type": "paragraph",
+            "text": "For the basic cosine function, one complete pattern requires one complete revolution. Therefore, the period is \\(360^\\circ\\), or \\(2\\pi\\) radians."
+          },
+          {
+            "type": "paragraph",
+            "text": "This periodicity can be written as \\(\\cos(x+2\\pi)=\\cos x\\). In degrees, it becomes \\(\\cos(x+360^\\circ)=\\cos x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\cos60^\\circ=\\frac{1}{2}\\). Adding a complete revolution gives \\(420^\\circ\\), and \\(\\cos420^\\circ=\\frac{1}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The function does not stop after one cycle. It continues indefinitely in both directions, producing the same pattern again and again."
+          }
+        ]
+      },
+
+      {
+        "id": "maximum-and-minimum",
+        "title": "Maximum and Minimum Values",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The maximum value of a function is its greatest possible output, while the minimum value is its smallest possible output."
+          },
+          {
+            "type": "paragraph",
+            "text": "For the basic cosine function, the maximum value is \\(1\\). It occurs whenever the rotating point reaches the far right side of the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "The minimum value is \\(-1\\). It occurs whenever the rotating point reaches the far left side of the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, for every real angle \\(x\\), we have \\(-1\\leq\\cos x\\leq1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The maximum occurs at angles such as \\(0^\\circ\\), \\(360^\\circ\\), and \\(720^\\circ\\). The minimum occurs at angles such as \\(180^\\circ\\), \\(540^\\circ\\), and \\(-180^\\circ\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "amplitude",
+        "title": "Amplitude of the Cosine Function",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Amplitude describes the maximum distance between the graph and its midline. For the basic cosine function, the midline is \\(y=0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The cosine graph rises to \\(1\\) and falls to \\(-1\\). Therefore, its greatest distance from the midline is \\(1\\). The amplitude of \\(y=\\cos x\\) is therefore \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The total vertical distance between the maximum and minimum is \\(2\\), but this is not the amplitude. Amplitude is only the distance from the midline to either extreme."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a function of the form \\(y=A\\cos x\\), the amplitude is \\(|A|\\). For example, \\(y=5\\cos x\\) has amplitude \\(5\\), maximum value \\(5\\), and minimum value \\(-5\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "zeros",
+        "title": "Where Does Cosine Equal Zero?",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A zero is an input for which the function's output is zero. On the graph, zeros occur where the curve meets the x-axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "On the unit circle, cosine is the horizontal coordinate. Therefore, cosine equals zero whenever the point lies on the vertical axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "This occurs at \\(90^\\circ\\), \\(270^\\circ\\), \\(450^\\circ\\), and so on. In radians, the zeros occur at \\(\\frac{\\pi}{2}\\), \\(\\frac{3\\pi}{2}\\), \\(\\frac{5\\pi}{2}\\), and so forth."
+          },
+          {
+            "type": "paragraph",
+            "text": "The general form is \\(x=\\frac{\\pi}{2}+k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\cos\\frac{\\pi}{2}=0\\), \\(\\cos\\frac{3\\pi}{2}=0\\), and \\(\\cos\\left(-\\frac{\\pi}{2}\\right)=0\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "sign-of-cosine",
+        "title": "Why Does Cosine Change Sign?",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cosine can be positive, zero, or negative because the x-coordinate of a point on the unit circle can have all three possibilities."
+          },
+          {
+            "type": "paragraph",
+            "text": "In the first and fourth quadrants, points have positive x-coordinates. Therefore, cosine is positive in these quadrants."
+          },
+          {
+            "type": "paragraph",
+            "text": "In the second and third quadrants, points have negative x-coordinates. Therefore, cosine is negative in these quadrants."
+          },
+          {
+            "type": "paragraph",
+            "text": "On the vertical axis, the x-coordinate is zero. Therefore, cosine is zero at the corresponding angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\cos120^\\circ<0\\) because \\(120^\\circ\\) lies in the second quadrant. On the other hand, \\(\\cos300^\\circ>0\\) because \\(300^\\circ\\) lies in the fourth quadrant."
+          }
+        ]
+      },
+
+      {
+        "id": "graph-shape",
+        "title": "Understanding the Shape of the Cosine Curve",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The cosine graph is a smooth repeating wave. Its shape comes from the continuous change of the horizontal coordinate as a point moves around the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "The graph starts at its highest point, \\(1\\), because the point begins at the far right of the unit circle. It then falls smoothly toward zero as the point moves upward."
+          },
+          {
+            "type": "paragraph",
+            "text": "The graph continues downward into negative values as the point moves into the left half of the circle. It reaches its minimum of \\(-1\\) at \\(180^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "After \\(180^\\circ\\), the horizontal coordinate begins increasing again. The graph rises through zero at \\(270^\\circ\\) and returns to \\(1\\) at \\(360^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The graph is smooth because the rotating point moves continuously around the circle."
+          }
+        ]
+      },
+
+      {
+        "id": "radians",
+        "title": "The Cosine Graph in Radians",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Although degrees are useful for introductory trigonometry, radians are commonly used when studying trigonometric functions and their graphs."
+          },
+          {
+            "type": "paragraph",
+            "text": "The five key points for one cycle of \\(y=\\cos x\\) in radians are \\((0,1)\\), \\(\\left(\\frac{\\pi}{2},0\\right)\\), \\((\\pi,-1)\\), \\(\\left(\\frac{3\\pi}{2},0\\right)\\), and \\((2\\pi,1)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The distance from \\(0\\) to \\(2\\pi\\) on the horizontal axis represents one complete cycle. This is why the period of the basic cosine function is written as \\(2\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The degree and radian versions describe the same curve behavior. The only difference is the numerical scale used for the angle."
+          }
+        ]
+      },
+
+      {
+        "id": "negative-inputs",
+        "title": "Cosine of Negative Angles",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Negative angles represent clockwise rotations. The cosine function is defined for negative angles just as it is for positive angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(-60^\\circ\\) represents a clockwise rotation of \\(60^\\circ\\). The corresponding point on the unit circle has the same horizontal coordinate as the point at \\(60^\\circ\\). Therefore, \\(\\cos(-60^\\circ)=\\cos60^\\circ=\\frac{1}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This leads to the identity \\(\\cos(-x)=\\cos x\\). The cosine function is therefore called an even function."
+          },
+          {
+            "type": "paragraph",
+            "text": "Geometrically, this happens because reflecting an angle across the x-axis changes the sign of the y-coordinate but leaves the x-coordinate unchanged. Since cosine is the x-coordinate, its value remains the same."
+          },
+          {
+            "type": "paragraph",
+            "text": "On the graph, this property means the cosine curve has symmetry about the y-axis."
+          }
+        ]
+      },
+
+      {
+        "id": "periodicity",
+        "title": "Using Periodicity to Simplify Angles",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Since cosine has period \\(2\\pi\\), adding or subtracting complete revolutions does not change its value."
+          },
+          {
+            "type": "paragraph",
+            "text": "Suppose we want to evaluate \\(\\cos\\left(\\frac{13\\pi}{6}\\right)\\). One complete revolution is \\(2\\pi=\\frac{12\\pi}{6}\\). Subtracting it gives \\(\\frac{13\\pi}{6}-\\frac{12\\pi}{6}=\\frac{\\pi}{6}\\). Therefore, \\(\\cos\\left(\\frac{13\\pi}{6}\\right)=\\cos\\frac{\\pi}{6}=\\frac{\\sqrt{3}}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "In degrees, \\(\\cos420^\\circ=\\cos60^\\circ=\\frac{1}{2}\\), because \\(420^\\circ-360^\\circ=60^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This method is especially useful for angles larger than one complete revolution."
+          }
+        ]
+      },
+
+      {
+        "id": "building-graph",
+        "title": "How to Draw the Basic Cosine Graph",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "To draw \\(y=\\cos x\\), begin by choosing one complete cycle, such as \\(0\\leq x\\leq2\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 1: Mark the five important x-values: \\(0\\), \\(\\frac{\\pi}{2}\\), \\(\\pi\\), \\(\\frac{3\\pi}{2}\\), and \\(2\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 2: Find their cosine values: \\(1\\), \\(0\\), \\(-1\\), \\(0\\), and \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 3: Plot the points \\((0,1)\\), \\(\\left(\\frac{\\pi}{2},0\\right)\\), \\((\\pi,-1)\\), \\(\\left(\\frac{3\\pi}{2},0\\right)\\), and \\((2\\pi,1)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 4: Connect the points using a smooth curve. The curve starts at its maximum, falls through the midline, reaches its minimum, rises through the midline, and returns to its maximum."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 5: Continue the same pattern to the left and right because cosine is periodic."
+          }
+        ]
+      },
+
+      {
+        "id": "sine-and-cosine-relationship",
+        "title": "Relationship Between Sine and Cosine",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sine and cosine are closely connected because they come from the same point on the unit circle. For an angle \\(x\\), the point has coordinates \\((\\cos x,\\sin x)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This means cosine records the horizontal movement of the point while sine records the vertical movement."
+          },
+          {
+            "type": "paragraph",
+            "text": "Their basic graphs have the same amplitude and period. Both have range \\([-1,1]\\), and both repeat every \\(2\\pi\\). Their main difference is where each cycle begins."
+          },
+          {
+            "type": "paragraph",
+            "text": "The sine graph begins at zero and initially rises, while the cosine graph begins at its maximum value of one and initially falls."
+          },
+          {
+            "type": "paragraph",
+            "text": "A deeper relationship between the two functions will become important when studying transformations and identities. At this stage, the key idea is that both functions describe different coordinates of the same rotating point."
+          }
+        ]
+      },
+
+      {
+        "id": "worked-examples",
+        "title": "Worked Examples",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Example 1: Find \\(\\cos0^\\circ\\). At \\(0^\\circ\\), the unit-circle point is \\((1,0)\\). Cosine is the x-coordinate, so \\(\\cos0^\\circ=1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 2: Find \\(\\cos180^\\circ\\). At \\(180^\\circ\\), the unit-circle point is \\((-1,0)\\). Therefore, \\(\\cos180^\\circ=-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 3: Find the maximum value of \\(y=\\cos x\\). Since cosine has range \\([-1,1]\\), the maximum value is \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 4: Find the minimum value of \\(y=\\cos x\\). The smallest possible cosine value is \\(-1\\). Therefore, the minimum is \\(-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 5: Find the period of \\(y=\\cos x\\). One complete cycle corresponds to one complete revolution, which is \\(2\\pi\\) radians. Therefore, the period is \\(2\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 6: Evaluate \\(\\cos420^\\circ\\). Subtract one complete revolution: \\(420^\\circ-360^\\circ=60^\\circ\\). Therefore, \\(\\cos420^\\circ=\\cos60^\\circ=\\frac{1}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 7: Evaluate \\(\\cos(-60^\\circ)\\). Cosine is an even function, so \\(\\cos(-60^\\circ)=\\cos60^\\circ=\\frac{1}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 8: Determine whether \\(\\cos240^\\circ\\) is positive or negative. Since \\(240^\\circ\\) lies in the third quadrant, the x-coordinate is negative. Therefore, \\(\\cos240^\\circ<0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 9: Find the amplitude of \\(y=3\\cos x\\). The amplitude is \\(|3|=3\\). Therefore, the graph reaches a maximum of \\(3\\) and a minimum of \\(-3\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 10: Find the zeros of \\(\\cos x\\). Cosine is zero whenever the point lies on the vertical axis. Therefore, \\(x=\\frac{\\pi}{2}+k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "visual-exploration",
+        "title": "Visual Exploration: The Rotating Point and Cosine Graph",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A powerful visualization is to place a unit circle next to a coordinate graph. Let a point rotate around the circle while simultaneously plotting its horizontal coordinate against the angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "At \\(0^\\circ\\), the point is at the far right, so the graph begins at \\(1\\). As the point moves upward, its horizontal coordinate decreases and the graph moves downward."
+          },
+          {
+            "type": "paragraph",
+            "text": "When the point reaches the top of the circle at \\(90^\\circ\\), its horizontal coordinate is zero and the graph crosses the x-axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "When the point reaches the far left at \\(180^\\circ\\), the horizontal coordinate is \\(-1\\), producing the minimum of the cosine graph."
+          },
+          {
+            "type": "paragraph",
+            "text": "Continuing the rotation causes the horizontal coordinate to increase again, producing the upward portion of the graph."
+          },
+          {
+            "type": "paragraph",
+            "text": "This visualization makes the cosine graph a direct consequence of circular motion rather than a curve that must simply be memorized."
+          }
+        ]
+      },
+
+      {
+        "id": "common-mistakes",
+        "title": "Common Mistakes to Avoid",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Mistake 1: Thinking the cosine graph starts at zero. The basic cosine graph starts at \\(1\\), because \\(\\cos0=1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 2: Thinking cosine can be greater than 1 or less than -1. For real angles, cosine always lies between \\(-1\\) and \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 3: Confusing amplitude with total height. The basic cosine graph has amplitude \\(1\\), even though its maximum-to-minimum height is \\(2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 4: Thinking the period of cosine is \\(\\pi\\). The basic cosine function repeats every \\(2\\pi\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 5: Assuming cosine is negative in the fourth quadrant. Cosine represents the x-coordinate, which is positive in the fourth quadrant."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 6: Thinking negative angles cannot be used. Cosine is defined for negative angles and satisfies \\(\\cos(-x)=\\cos x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 7: Treating degrees and radians as different mathematical functions. They are simply different units for measuring the same angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 8: Memorizing the five graph points without understanding their connection to the unit circle. The points are much easier to remember when they are derived from the rotating point."
+          }
+        ]
+      },
+
+      {
+        "id": "big-picture",
+        "title": "The Big Picture",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The basic cosine function is \\(y=\\cos x\\). Its input is an angle and its output is a real number between \\(-1\\) and \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The unit circle gives cosine a clear geometric meaning. For an angle \\(x\\), the corresponding point on the unit circle is \\((\\cos x,\\sin x)\\), so cosine is the horizontal coordinate."
+          },
+          {
+            "type": "paragraph",
+            "text": "The cosine function has maximum value \\(1\\), minimum value \\(-1\\), amplitude \\(1\\), and period \\(2\\pi\\) radians."
+          },
+          {
+            "type": "paragraph",
+            "text": "One complete cycle is represented by the five key points \\((0,1)\\), \\(\\left(\\frac{\\pi}{2},0\\right)\\), \\((\\pi,-1)\\), \\(\\left(\\frac{3\\pi}{2},0\\right)\\), and \\((2\\pi,1)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine is positive when the rotating point is on the right half of the unit circle and negative when it is on the left half."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine is also an even function, meaning \\(\\cos(-x)=\\cos x\\). Geometrically, this happens because reflecting a point across the x-axis changes its vertical coordinate but leaves its horizontal coordinate unchanged."
+          },
+          {
+            "type": "paragraph",
+            "text": "The most important idea is that the cosine graph is a record of the horizontal coordinate of a point moving around the unit circle. Once this connection is understood, its key points, range, amplitude, period, signs, and repeating behavior all become consequences of the same geometric picture."
+          }
+        ]
+      }
+    ]
+  },
+
+  "formulas": [
+    {
+      "id": "basic-cosine-function",
+      "name": "Basic Cosine Function",
+      "expression": "\\(y=\\cos x\\)",
+      "explanation": "The basic cosine function takes an angle x as input and returns its cosine value."
+    },
+    {
+      "id": "unit-circle-cosine",
+      "name": "Unit-Circle Definition of Cosine",
+      "expression": "\\((\\cos x,\\sin x)\\)",
+      "explanation": "For an angle x on the unit circle, cosine is the x-coordinate of the corresponding point."
+    },
+    {
+      "id": "cosine-range",
+      "name": "Range of Cosine",
+      "expression": "\\(-1\\leq\\cos x\\leq1\\)",
+      "explanation": "The cosine value is the horizontal coordinate of a point on the unit circle, so it cannot be outside the interval from -1 to 1."
+    },
+    {
+      "id": "cosine-period",
+      "name": "Period of Cosine",
+      "expression": "\\(\\cos(x+2\\pi)=\\cos x\\)",
+      "explanation": "Adding one complete revolution does not change the cosine value, so the basic cosine function has period 2π."
+    },
+    {
+      "id": "cosine-degree-period",
+      "name": "Cosine Period in Degrees",
+      "expression": "\\(\\cos(x+360^\\circ)=\\cos x\\)",
+      "explanation": "The same periodic behavior can be expressed using degrees."
+    },
+    {
+      "id": "cosine-amplitude",
+      "name": "Amplitude of Basic Cosine",
+      "expression": "\\(A=1\\)",
+      "explanation": "The basic cosine function moves one unit above and one unit below its midline."
+    },
+    {
+      "id": "general-cosine-amplitude",
+      "name": "Amplitude of A Cosine Function",
+      "expression": "\\(\\text{Amplitude}=|A|\\)",
+      "explanation": "For a function of the form y = A cos x, the amplitude is the absolute value of A."
+    },
+    {
+      "id": "cosine-zeros",
+      "name": "Zeros of Cosine",
+      "expression": "\\(x=\\frac{\\pi}{2}+k\\pi,\\quad k\\in\\mathbb{Z}\\)",
+      "explanation": "Cosine equals zero whenever the corresponding point on the unit circle lies on the vertical axis."
+    },
+    {
+      "id": "even-symmetry",
+      "name": "Even Symmetry of Cosine",
+      "expression": "\\(\\cos(-x)=\\cos x\\)",
+      "explanation": "Cosine is an even function, so opposite inputs produce the same output."
+    }
+  ],
+
+  "examples": [
+    {
+      "id": "example-cos-zero",
+      "question": "Find \\(\\cos0^\\circ\\).",
+      "solution": "At \\(0^\\circ\\), the unit-circle point is \\((1,0)\\). Cosine is the x-coordinate, so \\(\\cos0^\\circ=1\\)."
+    },
+    {
+      "id": "example-cos-180",
+      "question": "Find \\(\\cos180^\\circ\\).",
+      "solution": "At \\(180^\\circ\\), the unit-circle point is \\((-1,0)\\). Therefore, \\(\\cos180^\\circ=-1\\)."
+    },
+    {
+      "id": "example-maximum",
+      "question": "What is the maximum value of \\(y=\\cos x\\)?",
+      "solution": "The range of cosine is \\([-1,1]\\). Therefore, its maximum value is \\(1\\)."
+    },
+    {
+      "id": "example-minimum",
+      "question": "What is the minimum value of \\(y=\\cos x\\)?",
+      "solution": "The range of cosine is \\([-1,1]\\). Therefore, its minimum value is \\(-1\\)."
+    },
+    {
+      "id": "example-period",
+      "question": "What is the period of \\(y=\\cos x\\)?",
+      "solution": "One complete cycle corresponds to one complete revolution, which is \\(2\\pi\\) radians. Therefore, the period is \\(2\\pi\\)."
+    },
+    {
+      "id": "example-periodic-value",
+      "question": "Evaluate \\(\\cos420^\\circ\\).",
+      "solution": "Subtract one complete revolution: \\(420^\\circ-360^\\circ=60^\\circ\\). Therefore, \\(\\cos420^\\circ=\\cos60^\\circ=\\frac{1}{2}\\)."
+    },
+    {
+      "id": "example-negative-angle",
+      "question": "Evaluate \\(\\cos(-60^\\circ)\\).",
+      "solution": "Cosine is an even function, so \\(\\cos(-60^\\circ)=\\cos60^\\circ=\\frac{1}{2}\\)."
+    },
+    {
+      "id": "example-sign",
+      "question": "Is \\(\\cos240^\\circ\\) positive or negative?",
+      "solution": "\\(240^\\circ\\) lies in the third quadrant, where x-coordinates are negative. Since cosine is the x-coordinate, \\(\\cos240^\\circ\\) is negative."
+    },
+    {
+      "id": "example-amplitude",
+      "question": "Find the amplitude of \\(y=3\\cos x\\).",
+      "solution": "For \\(y=A\\cos x\\), the amplitude is \\(|A|\\). Here \\(A=3\\), so the amplitude is \\(3\\)."
+    },
+    {
+      "id": "example-zeros",
+      "question": "Find the zeros of \\(\\cos x\\).",
+      "solution": "Cosine is zero whenever the corresponding unit-circle point lies on the vertical axis. Therefore, \\(x=\\frac{\\pi}{2}+k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
+    },
+    {
+      "id": "example-large-radian",
+      "question": "Evaluate \\(\\cos\\left(\\frac{13\\pi}{6}\\right)\\).",
+      "solution": "Subtract one complete revolution: \\(\\frac{13\\pi}{6}-2\\pi=\\frac{\\pi}{6}\\). Therefore, \\(\\cos\\left(\\frac{13\\pi}{6}\\right)=\\cos\\frac{\\pi}{6}=\\frac{\\sqrt{3}}{2}\\)."
+    }
+  ],
+
+  "key_ideas": [
+    "The basic cosine function is written as \\(y=\\cos x\\).",
+    "The input of cosine is an angle.",
+    "The output of cosine is a real number between -1 and 1.",
+    "The unit circle provides the geometric interpretation of cosine.",
+    "For a unit-circle point corresponding to angle x, the x-coordinate is \\(\\cos x\\).",
+    "The basic cosine function starts at 1 when x = 0.",
+    "The maximum value of the basic cosine function is 1.",
+    "The minimum value of the basic cosine function is -1.",
+    "The range of cosine is \\([-1,1]\\).",
+    "The basic cosine function has amplitude 1.",
+    "The basic cosine function has period \\(2\\pi\\) radians.",
+    "The period is \\(360^\\circ\\) when degrees are used.",
+    "One complete cosine cycle corresponds to one complete revolution around the unit circle.",
+    "The five key points of one cycle occur at quarter-turn intervals.",
+    "Cosine equals zero whenever the corresponding point lies on the vertical axis.",
+    "The zeros of cosine are \\(x=\\frac{\\pi}{2}+k\\pi\\).",
+    "Cosine is positive in the first and fourth quadrants.",
+    "Cosine is negative in the second and third quadrants.",
+    "Negative angles represent clockwise rotations.",
+    "Cosine satisfies \\(\\cos(-x)=\\cos x\\).",
+    "Cosine is an even function.",
+    "The cosine graph is periodic.",
+    "The cosine graph is a visual record of horizontal coordinates on the unit circle.",
+    "The amplitude is the distance from the midline to a maximum or minimum.",
+    "The total vertical height of the basic cosine wave is 2, not its amplitude.",
+    "Degrees and radians represent the same geometric angles using different numerical units.",
+    "Large angles can be reduced by adding or subtracting complete revolutions.",
+    "Sine and cosine describe different coordinates of the same rotating point."
+  ],
+
+  "misconceptions": [
+    "The cosine graph starts at zero.",
+    "Cosine can have values greater than 1.",
+    "Cosine can have values less than -1.",
+    "The amplitude of the basic cosine graph is 2.",
+    "The period of cosine is \\(\\pi\\).",
+    "Cosine is negative in the fourth quadrant.",
+    "Cosine is undefined at some angles like tangent.",
+    "Negative angles cannot be used as inputs.",
+    "A negative angle must always produce a negative cosine value.",
+    "The cosine graph stops after one complete cycle.",
+    "Degrees and radians describe different geometric angles.",
+    "The five key points of the cosine graph must simply be memorized.",
+    "The maximum value occurs at \\(180^\\circ\\).",
+    "The minimum value occurs at \\(90^\\circ\\).",
+    "The zeros of cosine occur at integer multiples of \\(\\pi\\).",
+    "Amplitude and total vertical height are the same quantity.",
+    "Cosine represents the vertical coordinate of the unit-circle point.",
+    "Cosine and sine are unrelated functions."
+  ],
+
+  "explorations": [
+    {
+      "id": "explore-unit-circle-cosine",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-five-key-points",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-cosine-periodicity",
+      "type": "why"
+    },
+    {
+      "id": "explore-cosine-amplitude",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-negative-angles",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-sine-cosine-coordinates",
+      "type": "visualization"
+    }
+  ],
+
+  "sources": [
+    "khan-academy-trigonometry",
+    "openstax-precalculus"
+  ]
+}

@@ -1,0 +1,822 @@
+{
+  "id": "trigonometric-functions",
+  "title": "Trigonometric Functions",
+
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+
+  "difficulty": 2,
+
+  "connections": {
+    "prerequisites": [
+      "trigonometric-ratios",
+      "trigonometric-ratios-any-angle",
+      "exact-trigonometric-values"
+    ],
+
+    "leads_to": [
+      "sine-function",
+      "cosine-function",
+      "tangent-function"
+    ],
+
+    "related": [
+      "reciprocal-trigonometric-ratios",
+      "exact-trigonometric-values"
+    ]
+  },
+
+  "theory": {
+    "introduction": "A trigonometric ratio such as sine, cosine, or tangent begins as a relationship between the sides of a right triangle. But trigonometry becomes much more powerful when we stop thinking of these ratios only as triangle calculations and recognize them as functions. A trigonometric function takes an angle as its input and produces a number as its output. This viewpoint allows us to study trigonometric quantities for every real angle, understand their domain and range, and eventually study their graphs, periodic behavior, and applications.",
+
+    "sections": [
+      {
+        "id": "ratios-become-functions",
+        "title": "From Trigonometric Ratios to Functions",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "In a right triangle, we learned that an angle can determine ratios between the sides. For example, for an angle \\(\\theta\\), sine is defined by \\(\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\), cosine by \\(\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\), and tangent by \\(\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The important observation is that these ratios depend on the angle, not on the particular size of the triangle. If two right triangles contain the same acute angle, they are similar, so their corresponding side lengths have the same proportions. Therefore, a particular angle is associated with a particular trigonometric value."
+          },
+          {
+            "type": "paragraph",
+            "text": "This gives us the idea of a function. A function is a rule that assigns an output to an input. In a trigonometric function, the input is an angle and the output is the corresponding trigonometric value."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, when we write \\(\\sin 30^\\circ = \\frac{1}{2}\\), we can interpret this as saying that the sine function takes the angle \\(30^\\circ\\) as its input and produces \\(\\frac{1}{2}\\) as its output."
+          },
+          {
+            "type": "paragraph",
+            "text": "The function viewpoint is more general than simply calculating a side of a triangle. Instead of asking only for the missing side of one triangle, we can ask what value the function produces for any angle."
+          }
+        ]
+      },
+
+      {
+        "id": "input-output-idea",
+        "title": "Angle as Input and Ratio as Output",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A useful way to understand a trigonometric function is to imagine a machine. You give the machine an angle, and the function produces a number. For sine, the machine is called the sine function. For cosine, it is the cosine function. For tangent, it is the tangent function."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, the sine function gives \\(\\sin 30^\\circ = \\frac{1}{2}\\), \\(\\sin 45^\\circ = \\frac{\\sqrt{2}}{2}\\), and \\(\\sin 90^\\circ = 1\\). The angle is the input and the resulting number is the output."
+          },
+          {
+            "type": "paragraph",
+            "text": "The output is not necessarily a side length. It is a dimensionless ratio. This is important because the same angle can occur in triangles of many different sizes, but the corresponding trigonometric ratio remains the same."
+          },
+          {
+            "type": "paragraph",
+            "text": "Once trigonometric ratios are treated as functions, we can also consider angles outside the range of a single right triangle. Using the coordinate-plane definition of trigonometric functions, sine, cosine, and tangent can be associated with positive, negative, and larger angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "This is the bridge between elementary right-triangle trigonometry and the broader study of trigonometric functions."
+          }
+        ]
+      },
+
+      {
+        "id": "function-notation",
+        "title": "Understanding Function Notation",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Function notation tells us explicitly which input is being given to a function. For ordinary functions, we might write \\(f(x)\\). In trigonometry, we commonly use \\(\\sin(x)\\), \\(\\cos(x)\\), and \\(\\tan(x)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The expression \\(\\sin(x)\\) means the value produced by the sine function when the input is \\(x\\). Similarly, \\(\\cos(x)\\) means the value produced by cosine for input \\(x\\), and \\(\\tan(x)\\) means the value produced by tangent for input \\(x\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The parentheses do not mean multiplication. In \\(\\sin(x)\\), the \\(x\\) is the input of the sine function."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\sin(30^\\circ)\\) and \\(\\sin 30^\\circ\\) mean the same thing. Both represent the sine of an angle measuring \\(30^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "It is also important to distinguish the function from its value. \\(\\sin(x)\\) refers to the sine function applied to an input \\(x\\), while \\(\\sin(30^\\circ) = \\frac{1}{2}\\) is a particular output of that function."
+          }
+        ]
+      },
+
+      {
+        "id": "sine-function",
+        "title": "The Sine Function",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The sine function associates every allowed angle with a numerical value. In the right-triangle setting, sine is the ratio of the opposite side to the hypotenuse. For an angle \\(\\theta\\), this is written as \\(\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For angles between \\(0^\\circ\\) and \\(90^\\circ\\), the right-triangle definition gives an intuitive interpretation of sine. For example, \\(\\sin 30^\\circ = \\frac{1}{2}\\), because in a \\(30^\\circ\\)-\\(60^\\circ\\)-\\(90^\\circ\\) triangle, the side opposite \\(30^\\circ\\) is half the hypotenuse."
+          },
+          {
+            "type": "paragraph",
+            "text": "The coordinate-plane definition extends sine beyond acute angles. If an angle in standard position has a terminal point \\((x,y)\\) at distance \\(r\\) from the origin, then \\(\\sin\\theta = \\frac{y}{r}\\). Since \\(r\\) is nonnegative, the sign of sine is determined by the sign of the y-coordinate."
+          },
+          {
+            "type": "paragraph",
+            "text": "This explains why sine can be positive or negative when we consider angles in different quadrants. The sine function is therefore not restricted to values between \\(0\\) and \\(1\\); its values range from \\(-1\\) to \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Some important values are \\(\\sin 0^\\circ = 0\\), \\(\\sin 30^\\circ = \\frac{1}{2}\\), \\(\\sin 45^\\circ = \\frac{\\sqrt{2}}{2}\\), \\(\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}\\), and \\(\\sin 90^\\circ = 1\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "cosine-function",
+        "title": "The Cosine Function",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The cosine function also associates an angle with a numerical value. In a right triangle, cosine is the ratio of the adjacent side to the hypotenuse: \\(\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\cos 60^\\circ = \\frac{1}{2}\\). In a \\(30^\\circ\\)-\\(60^\\circ\\)-\\(90^\\circ\\) triangle, the side adjacent to \\(60^\\circ\\) has length \\(1\\) when the hypotenuse has length \\(2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "For an angle in standard position with terminal point \\((x,y)\\) and distance \\(r\\) from the origin, cosine is defined by \\(\\cos\\theta = \\frac{x}{r}\\). The x-coordinate therefore determines the sign of cosine."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because the x-coordinate can be positive or negative, cosine can also be positive or negative. Its possible outputs range from \\(-1\\) to \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Important values include \\(\\cos 0^\\circ = 1\\), \\(\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}\\), \\(\\cos 45^\\circ = \\frac{\\sqrt{2}}{2}\\), \\(\\cos 60^\\circ = \\frac{1}{2}\\), and \\(\\cos 90^\\circ = 0\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "tangent-function",
+        "title": "The Tangent Function",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The tangent function is defined in a right triangle as the ratio of the opposite side to the adjacent side: \\(\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Unlike sine and cosine, tangent is not restricted to values between \\(-1\\) and \\(1\\). For example, \\(\\tan 45^\\circ = 1\\), but \\(\\tan 60^\\circ = \\sqrt{3}\\), which is greater than \\(1\\). Tangent can become even larger as the angle approaches certain angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent can also be expressed using sine and cosine. Whenever cosine is defined and nonzero, \\(\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}\\). This relationship follows directly from the coordinate definitions because \\(\\sin\\theta = \\frac{y}{r}\\) and \\(\\cos\\theta = \\frac{x}{r}\\), giving \\(\\frac{y/r}{x/r} = \\frac{y}{x}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This also explains why tangent becomes undefined when cosine is zero. Division by zero is not defined, so tangent cannot have a finite value at those angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\tan 90^\\circ\\) is undefined because \\(\\cos 90^\\circ = 0\\). Similarly, tangent is undefined at angles such as \\(270^\\circ\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "three-functions-together",
+        "title": "Sine, Cosine and Tangent Together",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The three basic trigonometric functions are closely connected. In a right triangle, sine compares opposite to hypotenuse, cosine compares adjacent to hypotenuse, and tangent compares opposite to adjacent."
+          },
+          {
+            "type": "paragraph",
+            "text": "The mnemonic SOH-CAH-TOA summarizes these three definitions: Sine = Opposite/Hypotenuse, Cosine = Adjacent/Hypotenuse, and Tangent = Opposite/Adjacent."
+          },
+          {
+            "type": "paragraph",
+            "text": "There is also an algebraic relationship between the functions: \\(\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}\\), whenever \\(\\cos\\theta \\neq 0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "These functions should not be thought of as three unrelated rules. They describe different relationships associated with the same angle. Knowing one ratio and additional information about the angle can often help determine another."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, at \\(45^\\circ\\), we know \\(\\sin45^\\circ = \\frac{\\sqrt{2}}{2}\\) and \\(\\cos45^\\circ = \\frac{\\sqrt{2}}{2}\\). Therefore, \\(\\tan45^\\circ = \\frac{\\sin45^\\circ}{\\cos45^\\circ} = 1\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "domain-and-range-introduction",
+        "title": "Understanding Domain and Range",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "When we study a function, two important questions are: What inputs are allowed? And what outputs can the function produce? The set of allowed inputs is called the domain. The set of possible outputs is called the range."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a trigonometric function, the domain consists of the angles for which the function has a defined value. The range consists of all numerical values that the function can produce."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sine is defined for every real angle, and its values always lie between \\(-1\\) and \\(1\\). Therefore, the domain of sine is all real numbers and its range is \\([-1,1]\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine has the same domain and range: every real angle is allowed, and its output is always between \\(-1\\) and \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent is different. Because \\(\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}\\), tangent is undefined whenever \\(\\cos\\theta = 0\\). This happens at angles such as \\(90^\\circ\\), \\(270^\\circ\\), and more generally at odd multiples of \\(90^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent can produce every real number. It has no maximum or minimum output. Its range is therefore all real numbers."
+          }
+        ]
+      },
+
+      {
+        "id": "sine-domain-range",
+        "title": "Domain and Range of Sine",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The sine function is defined for every real-number angle. An angle can represent any amount of rotation, including positive rotations, negative rotations, and rotations greater than one complete revolution."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, the domain of sine is all real numbers: \\(\\mathbb{R}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "To understand the range, use the coordinate-plane or unit-circle interpretation. Sine corresponds to the vertical coordinate of a point on the unit circle. A point on the unit circle can never have a y-coordinate greater than \\(1\\) or less than \\(-1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, the output of sine can never exceed \\(1\\) or fall below \\(-1\\). Both endpoints are actually reached: \\(\\sin90^\\circ = 1\\) and \\(\\sin270^\\circ = -1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Thus, the range of sine is \\([-1,1]\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The fact that sine always remains within this interval will become especially important when we later study the graph and behavior of the sine function."
+          }
+        ]
+      },
+
+      {
+        "id": "cosine-domain-range",
+        "title": "Domain and Range of Cosine",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Like sine, cosine is defined for every real-number angle. There is no real angle for which the coordinate definition of cosine breaks down. Therefore, the domain of cosine is all real numbers: \\(\\mathbb{R}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine represents the horizontal coordinate of a point on the unit circle. Since the x-coordinate of any point on the unit circle lies between \\(-1\\) and \\(1\\), cosine can never produce a value outside that interval."
+          },
+          {
+            "type": "paragraph",
+            "text": "The endpoints are reached. At \\(0^\\circ\\), the point on the unit circle is \\((1,0)\\), so \\(\\cos0^\\circ = 1\\). At \\(180^\\circ\\), the point is \\((-1,0)\\), so \\(\\cos180^\\circ = -1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, the range of cosine is also \\([-1,1]\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine and cosine have the same domain and range, but they assign different values to most angles because they represent different coordinates of the rotating point."
+          }
+        ]
+      },
+
+      {
+        "id": "tangent-domain-range",
+        "title": "Domain and Range of Tangent",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Tangent requires more care because it involves division. We have \\(\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}\\). A fraction cannot have zero as its denominator, so tangent is undefined whenever \\(\\cos\\theta = 0\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine is zero at \\(90^\\circ\\), \\(270^\\circ\\), and every angle obtained by adding or subtracting another multiple of \\(180^\\circ\\). In radians, these angles are represented by \\(\\frac{\\pi}{2} + k\\pi\\), where \\(k\\) is any integer."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, the domain of tangent is all real numbers except angles of the form \\(\\frac{\\pi}{2} + k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Unlike sine and cosine, tangent has no upper or lower bound. It can produce values such as \\(0\\), \\(1\\), \\(-1\\), \\(\\sqrt{3}\\), \\(-\\sqrt{3}\\), and arbitrarily large positive or negative values."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\tan45^\\circ = 1\\), while \\(\\tan60^\\circ = \\sqrt{3}\\). As an angle approaches \\(90^\\circ\\) from one side, the magnitude of tangent becomes extremely large, even though tangent is not defined exactly at \\(90^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, the range of tangent is all real numbers: \\(\\mathbb{R}\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "why-tangent-undefined",
+        "title": "Why Is Tangent Undefined at Certain Angles?",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The simplest reason tangent is undefined at certain angles is that its definition requires division by cosine: \\(\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}\\). If cosine equals zero, the denominator becomes zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Consider \\(90^\\circ\\). We know \\(\\sin90^\\circ = 1\\) and \\(\\cos90^\\circ = 0\\). Therefore, \\(\\tan90^\\circ = \\frac{1}{0}\\), which is undefined."
+          },
+          {
+            "type": "paragraph",
+            "text": "It is important not to say that tangent is equal to infinity at \\(90^\\circ\\). Infinity is not a normal real-number output of the function. The correct statement is that tangent is undefined at \\(90^\\circ\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "We can also see this from the right-triangle definition. Tangent is opposite divided by adjacent. At the corresponding axis position, the horizontal component that plays the role of the adjacent quantity becomes zero, so the division cannot be performed."
+          },
+          {
+            "type": "paragraph",
+            "text": "The same problem occurs every \\(180^\\circ\\). Thus, tangent is undefined at \\(90^\\circ + 180^\\circ k\\), where \\(k\\) is any integer."
+          }
+        ]
+      },
+
+      {
+        "id": "reciprocal-functions-domain-range",
+        "title": "Domain and Range of Secant, Cosecant and Cotangent",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The reciprocal trigonometric functions are secant, cosecant, and cotangent. They are defined through the reciprocals of cosine, sine, and tangent respectively: \\(\\sec\\theta = \\frac{1}{\\cos\\theta}\\), \\(\\csc\\theta = \\frac{1}{\\sin\\theta}\\), and \\(\\cot\\theta = \\frac{1}{\\tan\\theta}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because these definitions involve division, we must identify where their denominators are zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Secant is undefined whenever cosine is zero. Therefore, its domain excludes angles \\(\\frac{\\pi}{2}+k\\pi\\). Since cosine lies between \\(-1\\) and \\(1\\), its reciprocal can never lie strictly between \\(-1\\) and \\(1\\). Therefore, the range of secant is \\((-\u221e,-1]\\cup[1,\u221e)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosecant is undefined whenever sine is zero. Sine equals zero at integer multiples of \\(\\pi\\), so the domain of cosecant excludes \\(k\\pi\\). Its range is \\((-\u221e,-1]\\cup[1,\u221e)\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cotangent can be written as \\(\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}\\). Therefore, cotangent is undefined whenever sine is zero. Its domain excludes integer multiples of \\(\\pi\\). Cotangent can produce every real number, so its range is \\(\\mathbb{R}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "These domain and range restrictions follow naturally from the reciprocal relationships rather than being arbitrary rules to memorize."
+          }
+        ]
+      },
+
+      {
+        "id": "degrees-and-radians",
+        "title": "Angles as Inputs: Degrees and Radians",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An angle can be measured using degrees or radians. Both units describe the same geometric angle, but they use different numerical measurements."
+          },
+          {
+            "type": "paragraph",
+            "text": "A complete revolution is \\(360^\\circ\\), which is equivalent to \\(2\\pi\\) radians. A half revolution is \\(180^\\circ = \\pi\\) radians, and a quarter revolution is \\(90^\\circ = \\frac{\\pi}{2}\\) radians."
+          },
+          {
+            "type": "paragraph",
+            "text": "The trigonometric functions themselves do not fundamentally change when we switch units. Only the numerical representation of the input angle changes."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, \\(\\sin90^\\circ = 1\\) and \\(\\sin\\left(\\frac{\\pi}{2}\\right) = 1\\). These are the same angle expressed in different units."
+          },
+          {
+            "type": "paragraph",
+            "text": "When working with a calculator, the angle mode matters. If the calculator is set to degree mode, entering \\(\\sin(30)\\) means the sine of \\(30^\\circ\\). In radian mode, it means the sine of \\(30\\) radians. These are completely different angles."
+          }
+        ]
+      },
+
+      {
+        "id": "worked-examples",
+        "title": "Worked Examples",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Example 1: Evaluate \\(\\sin30^\\circ\\). From the exact-value results, \\(\\sin30^\\circ = \\frac{1}{2}\\). The input is \\(30^\\circ\\), and the output is \\(\\frac{1}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 2: Evaluate \\(\\cos60^\\circ\\). From the exact-value table, \\(\\cos60^\\circ = \\frac{1}{2}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 3: Evaluate \\(\\tan45^\\circ\\). Since \\(\\sin45^\\circ = \\frac{\\sqrt{2}}{2}\\) and \\(\\cos45^\\circ = \\frac{\\sqrt{2}}{2}\\), we get \\(\\tan45^\\circ = \\frac{\\sin45^\\circ}{\\cos45^\\circ} = 1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 4: Determine whether \\(\\tan90^\\circ\\) is defined. We know \\(\\cos90^\\circ = 0\\). Therefore, \\(\\tan90^\\circ = \\frac{\\sin90^\\circ}{\\cos90^\\circ} = \\frac{1}{0}\\), which is undefined."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 5: Determine the domain of \\(\\tan x\\). Tangent is undefined whenever \\(\\cos x = 0\\). This occurs at \\(x = \\frac{\\pi}{2}+k\\pi\\), where \\(k\\in\\mathbb{Z}\\). Therefore, every real number is allowed except these angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 6: Determine the range of \\(\\sin x\\). Since sine represents the vertical coordinate of a point on the unit circle, its value cannot be less than \\(-1\\) or greater than \\(1\\). Both endpoints occur, so the range is \\([-1,1]\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 7: Determine the range of \\(\\tan x\\). Tangent is not bounded above or below. It can take any real value. Therefore, its range is \\(\\mathbb{R}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 8: Find \\(\\tan60^\\circ\\) using sine and cosine. We know \\(\\sin60^\\circ = \\frac{\\sqrt{3}}{2}\\) and \\(\\cos60^\\circ = \\frac{1}{2}\\). Therefore, \\(\\tan60^\\circ = \\frac{\\sin60^\\circ}{\\cos60^\\circ} = \\frac{\\sqrt{3}/2}{1/2} = \\sqrt{3}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 9: Find \\(\\sec60^\\circ\\). Since \\(\\sec\\theta = \\frac{1}{\\cos\\theta}\\) and \\(\\cos60^\\circ = \\frac{1}{2}\\), we obtain \\(\\sec60^\\circ = 2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 10: Find \\(\\csc30^\\circ\\). Since \\(\\csc\\theta = \\frac{1}{\\sin\\theta}\\) and \\(\\sin30^\\circ = \\frac{1}{2}\\), we obtain \\(\\csc30^\\circ = 2\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 11: Find \\(\\cot45^\\circ\\). Since \\(\\cot\\theta = \\frac{1}{\\tan\\theta}\\) and \\(\\tan45^\\circ = 1\\), we obtain \\(\\cot45^\\circ = 1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 12: Explain why \\(\\sec90^\\circ\\) is undefined. Since \\(\\sec\\theta = \\frac{1}{\\cos\\theta}\\) and \\(\\cos90^\\circ = 0\\), we would have \\(\\sec90^\\circ = \\frac{1}{0}\\). Division by zero is undefined, so \\(\\sec90^\\circ\\) is undefined."
+          }
+        ]
+      },
+
+      {
+        "id": "visualizing-functions",
+        "title": "A Visual Way to Think About Trigonometric Functions",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Imagine a point moving around a circle centered at the origin. As the point rotates, its horizontal and vertical coordinates continuously change."
+          },
+          {
+            "type": "paragraph",
+            "text": "On a unit circle, the point corresponding to an angle \\(\\theta\\) has coordinates \\((\\cos\\theta,\\sin\\theta)\\). Therefore, cosine tells us the horizontal position of the point and sine tells us the vertical position."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent can then be understood as the ratio of the vertical coordinate to the horizontal coordinate: \\(\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}\\), whenever the horizontal coordinate is not zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "This moving-point picture explains several properties at once. Sine and cosine stay between \\(-1\\) and \\(1\\) because the coordinates of a point on the unit circle cannot leave that interval. Tangent becomes undefined when the horizontal coordinate becomes zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "A useful visualization for the learning interface would show a rotating radius on a unit circle, display the current angle, and dynamically show the values of \\(\\sin\\theta\\), \\(\\cos\\theta\\), and \\(\\tan\\theta\\)."
+          }
+        ]
+      },
+
+      {
+        "id": "connecting-previous-topics",
+        "title": "Connecting This Topic to Earlier Ideas",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Trigonometric functions are not a completely new subject. They are a broader interpretation of the trigonometric ratios already studied."
+          },
+          {
+            "type": "paragraph",
+            "text": "Similar triangles explained why a fixed angle produces a fixed ratio. Right-triangle trigonometry gave us the definitions of sine, cosine, and tangent. Trigonometric ratios for any angle extended these ideas beyond acute angles using the coordinate plane. Exact values gave us important outputs for standard angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "The function viewpoint now combines these ideas. An angle becomes the input, and the corresponding trigonometric ratio becomes the output."
+          },
+          {
+            "type": "paragraph",
+            "text": "This viewpoint prepares us for the next stage of the curriculum, where sine, cosine, and tangent will be studied individually as functions. Their graphs, periods, amplitudes, zeros, extrema, and other properties can then be understood systematically."
+          }
+        ]
+      },
+
+      {
+        "id": "common-mistakes",
+        "title": "Common Mistakes to Avoid",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Mistake 1: Thinking that sine and cosine are side lengths. They are ratios or function outputs, not physical lengths. Their values do not have units."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 2: Thinking that sine and cosine can be greater than \\(1\\). For real angles, their values are always between \\(-1\\) and \\(1\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 3: Thinking that tangent must also lie between \\(-1\\) and \\(1\\). This is false. Tangent can take any real value."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 4: Writing \\(\\tan90^\\circ = \\infty\\). The correct statement is that tangent is undefined at \\(90^\\circ\\). It may grow without bound as the angle approaches \\(90^\\circ\\), but the function does not have an infinity output."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 5: Forgetting the calculator angle mode. The calculator must be in degree mode for degree inputs and radian mode for radian inputs."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 6: Confusing the reciprocal of a function with an inverse function. For example, \\(\\sec x = \\frac{1}{\\cos x}\\) is a reciprocal relationship. It is not the same idea as an inverse trigonometric function."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 7: Assuming that every angle must come from a right triangle. Right triangles provide the original intuition, but the coordinate-plane definition allows trigonometric functions to handle arbitrary real angles."
+          }
+        ]
+      },
+
+      {
+        "id": "big-picture",
+        "title": "The Big Picture",
+
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The central idea of this chapter is that trigonometric ratios can be viewed as functions. Instead of thinking only about a particular triangle, we can think of an angle as an input and a trigonometric value as an output."
+          },
+          {
+            "type": "paragraph",
+            "text": "The three fundamental functions are \\(\\sin x\\), \\(\\cos x\\), and \\(\\tan x\\). Sine and cosine are defined for every real input and have range \\([-1,1]\\). Tangent is undefined when cosine is zero and has range \\(\\mathbb{R}\\)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The reciprocal functions extend the same structure: \\(\\sec x = \\frac{1}{\\cos x}\\), \\(\\csc x = \\frac{1}{\\sin x}\\), and \\(\\cot x = \\frac{1}{\\tan x}\\). Their domain restrictions arise naturally from division by zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "The most important conceptual transition is from 'a ratio in a triangle' to 'a function whose input is an angle.' Once this transition is understood, trigonometry becomes a study of functions with predictable values, restrictions, symmetries, and eventually graphs."
+          }
+        ]
+      }
+    ]
+  },
+
+  "formulas": [
+    {
+      "id": "sine-definition",
+      "name": "Sine",
+      "expression": "\\(\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\)",
+      "explanation": "For an acute angle in a right triangle, sine is the ratio of the side opposite the angle to the hypotenuse."
+    },
+    {
+      "id": "cosine-definition",
+      "name": "Cosine",
+      "expression": "\\(\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)",
+      "explanation": "For an acute angle in a right triangle, cosine is the ratio of the side adjacent to the angle to the hypotenuse."
+    },
+    {
+      "id": "tangent-definition",
+      "name": "Tangent",
+      "expression": "\\(\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\)",
+      "explanation": "For an acute angle in a right triangle, tangent is the ratio of the side opposite the angle to the side adjacent to it."
+    },
+    {
+      "id": "tangent-sine-cosine",
+      "name": "Tangent in Terms of Sine and Cosine",
+      "expression": "\\(\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}\\)",
+      "explanation": "Tangent can be expressed as sine divided by cosine whenever cosine is nonzero."
+    },
+    {
+      "id": "sine-domain-range",
+      "name": "Sine Domain and Range",
+      "expression": "\\(\\operatorname{Domain}(\\sin x)=\\mathbb{R},\\qquad \\operatorname{Range}(\\sin x)=[-1,1]\\)",
+      "explanation": "Sine is defined for every real angle, and its output always lies between -1 and 1."
+    },
+    {
+      "id": "cosine-domain-range",
+      "name": "Cosine Domain and Range",
+      "expression": "\\(\\operatorname{Domain}(\\cos x)=\\mathbb{R},\\qquad \\operatorname{Range}(\\cos x)=[-1,1]\\)",
+      "explanation": "Cosine is defined for every real angle, and its output always lies between -1 and 1."
+    },
+    {
+      "id": "tangent-domain",
+      "name": "Tangent Domain",
+      "expression": "\\(x\\neq\\frac{\\pi}{2}+k\\pi,\\qquad k\\in\\mathbb{Z}\\)",
+      "explanation": "Tangent is undefined whenever cosine is zero, which occurs at odd multiples of \\(\\frac{\\pi}{2}\\)."
+    },
+    {
+      "id": "tangent-range",
+      "name": "Tangent Range",
+      "expression": "\\(\\operatorname{Range}(\\tan x)=\\mathbb{R}\\)",
+      "explanation": "Tangent can produce every real number, so it has no upper or lower bound."
+    },
+    {
+      "id": "secant-definition",
+      "name": "Secant",
+      "expression": "\\(\\sec\\theta=\\frac{1}{\\cos\\theta}\\)",
+      "explanation": "Secant is the reciprocal of cosine and is undefined wherever cosine is zero."
+    },
+    {
+      "id": "cosecant-definition",
+      "name": "Cosecant",
+      "expression": "\\(\\csc\\theta=\\frac{1}{\\sin\\theta}\\)",
+      "explanation": "Cosecant is the reciprocal of sine and is undefined wherever sine is zero."
+    },
+    {
+      "id": "cotangent-definition",
+      "name": "Cotangent",
+      "expression": "\\(\\cot\\theta=\\frac{1}{\\tan\\theta}=\\frac{\\cos\\theta}{\\sin\\theta}\\)",
+      "explanation": "Cotangent is the reciprocal of tangent and can also be written as cosine divided by sine."
+    },
+    {
+      "id": "degree-radian",
+      "name": "Degrees and Radians",
+      "expression": "\\(180^\\circ=\\pi\\text{ radians}\\)",
+      "explanation": "This is the fundamental conversion relationship between degree and radian measures."
+    }
+  ],
+
+  "examples": [
+    {
+      "id": "example-sine-function",
+      "question": "Evaluate \\(\\sin30^\\circ\\).",
+      "solution": "From the exact trigonometric values, \\(\\sin30^\\circ=\\frac{1}{2}\\). Therefore, the sine function takes \\(30^\\circ\\) as its input and produces \\(\\frac{1}{2}\\) as its output."
+    },
+    {
+      "id": "example-cosine-function",
+      "question": "Evaluate \\(\\cos60^\\circ\\).",
+      "solution": "Using the exact value for \\(60^\\circ\\), \\(\\cos60^\\circ=\\frac{1}{2}\\)."
+    },
+    {
+      "id": "example-tangent-function",
+      "question": "Evaluate \\(\\tan45^\\circ\\).",
+      "solution": "We know \\(\\sin45^\\circ=\\frac{\\sqrt{2}}{2}\\) and \\(\\cos45^\\circ=\\frac{\\sqrt{2}}{2}\\). Therefore, \\(\\tan45^\\circ=\\frac{\\sin45^\\circ}{\\cos45^\\circ}=\\frac{\\sqrt{2}/2}{\\sqrt{2}/2}=1\\)."
+    },
+    {
+      "id": "example-tangent-undefined",
+      "question": "Is \\(\\tan90^\\circ\\) defined?",
+      "solution": "No. Since \\(\\cos90^\\circ=0\\), we have \\(\\tan90^\\circ=\\frac{\\sin90^\\circ}{\\cos90^\\circ}=\\frac{1}{0}\\). Division by zero is undefined, so \\(\\tan90^\\circ\\) is undefined."
+    },
+    {
+      "id": "example-sine-range",
+      "question": "What is the range of \\(\\sin x\\)?",
+      "solution": "On the unit circle, sine represents the vertical coordinate of a point. A point on the unit circle cannot have a vertical coordinate below \\(-1\\) or above \\(1\\). Both values occur, so the range is \\([-1,1]\\)."
+    },
+    {
+      "id": "example-cosine-range",
+      "question": "What is the range of \\(\\cos x\\)?",
+      "solution": "Cosine represents the horizontal coordinate of a point on the unit circle. That coordinate always lies between \\(-1\\) and \\(1\\), and both endpoints occur. Therefore, the range is \\([-1,1]\\)."
+    },
+    {
+      "id": "example-tangent-range",
+      "question": "What is the range of \\(\\tan x\\)?",
+      "solution": "Tangent is not bounded above or below. It can produce any real number. Therefore, the range is \\(\\mathbb{R}\\)."
+    },
+    {
+      "id": "example-tangent-from-sine-cosine",
+      "question": "Find \\(\\tan60^\\circ\\) using sine and cosine.",
+      "solution": "Use \\(\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}\\). Since \\(\\sin60^\\circ=\\frac{\\sqrt{3}}{2}\\) and \\(\\cos60^\\circ=\\frac{1}{2}\\), we get \\(\\tan60^\\circ=\\frac{\\sqrt{3}/2}{1/2}=\\sqrt{3}\\)."
+    },
+    {
+      "id": "example-sec-function",
+      "question": "Evaluate \\(\\sec60^\\circ\\).",
+      "solution": "Secant is the reciprocal of cosine. Since \\(\\cos60^\\circ=\\frac{1}{2}\\), \\(\\sec60^\\circ=\\frac{1}{1/2}=2\\)."
+    },
+    {
+      "id": "example-csc-function",
+      "question": "Evaluate \\(\\csc30^\\circ\\).",
+      "solution": "Cosecant is the reciprocal of sine. Since \\(\\sin30^\\circ=\\frac{1}{2}\\), \\(\\csc30^\\circ=\\frac{1}{1/2}=2\\)."
+    },
+    {
+      "id": "example-cot-function",
+      "question": "Evaluate \\(\\cot45^\\circ\\).",
+      "solution": "Cotangent is the reciprocal of tangent. Since \\(\\tan45^\\circ=1\\), \\(\\cot45^\\circ=\\frac{1}{1}=1\\)."
+    },
+    {
+      "id": "example-sec-undefined",
+      "question": "Explain why \\(\\sec90^\\circ\\) is undefined.",
+      "solution": "Since \\(\\sec\\theta=\\frac{1}{\\cos\\theta}\\) and \\(\\cos90^\\circ=0\\), we get \\(\\sec90^\\circ=\\frac{1}{0}\\). Division by zero is undefined, so \\(\\sec90^\\circ\\) is undefined."
+    }
+  ],
+
+  "key_ideas": [
+    "A function assigns an output to an input.",
+    "A trigonometric function takes an angle as its input and produces a numerical value as its output.",
+    "Sine, cosine, and tangent originate from ratios of sides in right triangles.",
+    "Similar triangles explain why a fixed angle produces a fixed trigonometric ratio.",
+    "The notation \\(\\sin(x)\\), \\(\\cos(x)\\), and \\(\\tan(x)\\) describes functions applied to an input.",
+    "Sine and cosine can be defined for every real angle.",
+    "The range of sine is \\([-1,1]\\).",
+    "The range of cosine is \\([-1,1]\\).",
+    "Tangent is defined using sine divided by cosine.",
+    "Tangent is undefined whenever cosine is zero.",
+    "The range of tangent is all real numbers.",
+    "A trigonometric function can use degrees or radians as the unit for its angle input.",
+    "On the unit circle, cosine corresponds to the x-coordinate.",
+    "On the unit circle, sine corresponds to the y-coordinate.",
+    "Tangent can be viewed as the ratio of the vertical coordinate to the horizontal coordinate.",
+    "The reciprocal functions are secant, cosecant, and cotangent.",
+    "Secant is the reciprocal of cosine.",
+    "Cosecant is the reciprocal of sine.",
+    "Cotangent is the reciprocal of tangent.",
+    "Division by zero creates domain restrictions for reciprocal trigonometric functions.",
+    "Sine and cosine are bounded, while tangent is unbounded.",
+    "An undefined trigonometric value is not the same thing as an infinitely large value.",
+    "The function viewpoint is the bridge from triangle-based trigonometry to the study of trigonometric graphs.",
+    "Domain describes the allowed inputs of a function.",
+    "Range describes the possible outputs of a function.",
+    "The exact values learned earlier become specific input-output examples of trigonometric functions."
+  ],
+
+  "misconceptions": [
+    "A trigonometric function output is a side length.",
+    "Sine and cosine can be larger than 1.",
+    "Tangent must also lie between -1 and 1.",
+    "Tangent at 90 degrees is infinity.",
+    "An undefined value and infinity mean the same thing.",
+    "The domain of every trigonometric function is all real numbers.",
+    "Secant, cosecant, and cotangent have the same domains as their original functions.",
+    "Changing from degrees to radians changes the actual geometric angle rather than only its numerical representation.",
+    "The parentheses in \\(\\sin(x)\\) mean multiplication.",
+    "The reciprocal of a trigonometric function is the same thing as an inverse trigonometric function.",
+    "Right-triangle definitions alone are sufficient for every possible angle.",
+    "A function can have only positive outputs.",
+    "If two triangles have different side lengths, their trigonometric ratios must be different even when the angle is the same."
+  ],
+
+  "explorations": [
+    {
+      "id": "explore-function-machine",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-unit-circle-functions",
+      "type": "visualization"
+    },
+    {
+      "id": "explore-domain-range",
+      "type": "why"
+    },
+    {
+      "id": "explore-tangent-undefined",
+      "type": "why"
+    },
+    {
+      "id": "explore-degree-radian-input",
+      "type": "visualization"
+    }
+  ],
+
+  "sources": [
+    "khan-academy-trigonometry",
+    "openstax-precalculus"
+  ]
+}

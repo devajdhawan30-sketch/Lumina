@@ -1,0 +1,111 @@
+{
+  "id": "what-is-trigonometry",
+  "title": "What Is Trigonometry?",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+  "difficulty": 1,
+  "connections": {
+    "prerequisites": [],
+    "leads_to": [
+      "angles",
+      "right-triangles"
+    ],
+    "related": [
+      "geometry",
+      "measurement"
+    ]
+  },
+  "theory": {
+    "introduction": "Trigonometry is the study of relationships between angles and lengths, especially in triangles. It gives us a systematic way to use an angle to understand unknown distances, heights, directions, and other geometric quantities.",
+    "sections": [
+      {
+        "id": "meaning-of-trigonometry",
+        "title": "What does Trigonometry mean?",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "trigonometry-definition",
+            "text": "The word trigonometry comes from Greek roots meaning \"triangle\" and \"measurement.\" At its core, trigonometry studies how the angles and sides of geometric figures are related."
+          },
+          {
+            "type": "paragraph",
+            "id": "trigonometry-beyond-measuring-triangles",
+            "text": "Although triangles are where the subject begins, trigonometry eventually becomes a much broader language for describing rotation, circular motion, waves, periodic phenomena, and relationships between quantities."
+          }
+        ]
+      },
+      {
+        "id": "why-trigonometry-exists",
+        "title": "Why do we need Trigonometry?",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "hidden-length-problem",
+            "text": "Imagine that you want to determine the height of a building, the distance to an object, or the direction in which something is moving, but measuring the required length directly is difficult or impossible. If you can measure suitable angles and some known lengths, trigonometry can help determine the quantities you cannot measure directly."
+          },
+          {
+            "type": "paragraph",
+            "id": "angle-length-relationship",
+            "text": "The key idea is that an angle can carry information about the relative lengths in a triangle. Trigonometry provides precise relationships that allow us to move between angular information and length information."
+          }
+        ]
+      },
+      {
+        "id": "a-simple-example",
+        "title": "A Simple Idea",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "triangle-height-example",
+            "text": "Suppose you stand some distance away from a vertical tower and measure the angle from the ground to the top of the tower. Together with the distance you know, this forms a right triangle. The geometry of that triangle contains enough information to determine the tower's height."
+          },
+          {
+            "type": "paragraph",
+            "id": "from-geometry-to-trigonometry",
+            "text": "This is the kind of problem that motivates trigonometry: instead of physically measuring an inaccessible length, we use the relationships inside a triangle to calculate it."
+          }
+        ]
+      },
+      {
+        "id": "where-it-leads",
+        "title": "Where does Trigonometry go from here?",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "trig-foundation",
+            "text": "To understand these relationships, we first need to understand angles properly: what an angle represents, how it is measured, and how an angle can be viewed as a rotation."
+          },
+          {
+            "type": "paragraph",
+            "id": "trig-learning-path",
+            "text": "We will then connect angles with right triangles, discover why certain ratios remain connected to an angle, and eventually build the trigonometric functions such as sine, cosine, and tangent."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [],
+  "examples": [
+    {
+      "id": "tower-height-motivation",
+      "question": "You are standing a known distance from a tower and can measure the angle from the ground to the top. How could this information help you determine the tower's height?",
+      "solution": "The ground, the tower, and the line of sight form a right triangle. Once the relevant angle and known distance are identified, a trigonometric relationship can be used to determine the unknown height. The exact ratio used will be introduced when we study trigonometric ratios."
+    }
+  ],
+  "key_ideas": [
+    "Trigonometry studies relationships between angles and lengths.",
+    "It begins with triangles but eventually applies to rotation, circles, waves, and periodic phenomena.",
+    "One major purpose of trigonometry is to determine quantities that are difficult or impossible to measure directly.",
+    "Angles can provide information about relative side lengths in a triangle.",
+    "The natural starting point for learning trigonometry is understanding angles and their measurement."
+  ],
+  "misconceptions": [
+    "Trigonometry is only about memorizing sine, cosine, and tangent formulas.",
+    "Trigonometry is only useful for solving textbook triangle problems.",
+    "Every trigonometry problem requires a calculator.",
+    "Trigonometry is completely separate from geometry."
+  ],
+  "explorations": [],
+  "sources": []
+}
