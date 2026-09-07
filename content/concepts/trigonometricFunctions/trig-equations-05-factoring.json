@@ -1,10 +1,13 @@
 {
   "id": "trig-equations-05",
   "title": "Factoring Trigonometric Equations",
+
   "subject": "mathematics",
   "topic": "trigonometry",
   "section": "trigonometric-equations",
+
   "difficulty": 3,
+
   "connections": {
     "prerequisites": [
       "trig-equations-03",
@@ -19,8 +22,10 @@
       "zero-product-property"
     ]
   },
+
   "theory": {
-    "introduction": "Some trigonometric equations can be factored using familiar algebraic techniques before solving each factor.",
+    "introduction": "Many trigonometric equations can be solved by treating trigonometric expressions such as sin(x), cos(x), or tan(x) like algebraic variables. The key idea is to rearrange the equation so that it can be factored, apply the Zero Product Property, solve every resulting trigonometric equation, and then combine all valid solutions. Factoring is especially useful for equations containing products, common factors, or quadratic expressions in a trigonometric function.",
+
     "sections": [
       {
         "id": "zero-product",
@@ -28,55 +33,539 @@
         "content": [
           {
             "type": "paragraph",
+<<<<<<< HEAD
             "text": "If a product equals zero, at least one factor must equal zero. This allows a complicated trigonometric equation to be separated into simpler equations.",
             "id": "zero-product-paragraph-1"
+=======
+            "text": "If a product of two or more expressions equals zero, at least one of the factors must equal zero. Therefore, AB = 0 implies A = 0 or B = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a trigonometric equation, this allows one complicated equation to be separated into several simpler equations that can be solved independently."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sin(x)(2sin(x) − 1) = 0 gives two equations: sin(x) = 0 and 2sin(x) − 1 = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "Every factor must be considered. Solving only one factor produces an incomplete answer."
+>>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
           }
         ]
       },
+
       {
         "id": "factoring-process",
-        "title": "Factoring Process",
+        "title": "General Factoring Process",
         "content": [
           {
             "type": "paragraph",
+<<<<<<< HEAD
             "text": "Move all terms to one side, factor the expression, solve each factor, and combine all valid solutions.",
             "id": "factoring-process-paragraph-1"
+=======
+            "text": "First move all terms to one side so that the other side is zero. Then look for a common factor, difference of squares, grouping pattern, or quadratic structure. Factor completely before solving the individual factors."
+          },
+          {
+            "type": "paragraph",
+            "text": "After factoring, use the Zero Product Property to create separate equations. Solve each equation using the appropriate trigonometric method, such as the unit circle, inverse trigonometric functions, or general-solution formulas."
+          },
+          {
+            "type": "paragraph",
+            "text": "Finally, combine the solutions, remove duplicates, and check that they satisfy the original equation when necessary."
+          }
+        ]
+      },
+
+      {
+        "id": "common-factor",
+        "title": "Factoring Out a Common Trigonometric Factor",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A trigonometric expression may contain a common factor such as sin(x), cos(x), tan(x), or a constant multiple of one of these functions."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, 3cos²(x) + 6cos(x) = 0 can be written as 3cos(x)(cos(x) + 2) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "This gives cos(x) = 0 or cos(x) + 2 = 0. The second equation would require cos(x) = −2, which has no real solution because the range of cosine is [−1, 1]."
+          },
+          {
+            "type": "paragraph",
+            "text": "A factor that produces no valid trigonometric value should not be discarded without explaining why it has no solution."
+          }
+        ]
+      },
+
+      {
+        "id": "trig-expression-as-variable",
+        "title": "Treating a Trigonometric Function Like a Variable",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Expressions involving sin(x), cos(x), or tan(x) can often be treated algebraically. For example, cos²(x) − 3cos(x) + 2 = 0 has the same algebraic structure as y² − 3y + 2 = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "Factoring gives (cos(x) − 1)(cos(x) − 2) = 0. Therefore cos(x) = 1 or cos(x) = 2. Since cosine cannot equal 2 for real x, only cos(x) = 1 contributes solutions."
+          },
+          {
+            "type": "paragraph",
+            "text": "This idea is the bridge between ordinary algebraic factoring and quadratic trigonometric equations."
+          }
+        ]
+      },
+
+      {
+        "id": "difference-of-squares",
+        "title": "Difference of Squares",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The identity A² − B² = (A − B)(A + B) can be used when a trigonometric equation contains a difference of two squares."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sin²(x) − 1 = 0 factors as (sin(x) − 1)(sin(x) + 1) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "The resulting equations are sin(x) = 1 and sin(x) = −1, which can then be solved using the unit circle or general solutions."
+          }
+        ]
+      },
+
+      {
+        "id": "factoring-by-grouping",
+        "title": "Factoring by Grouping",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Some trigonometric equations contain four or more terms and can be factored by grouping terms in pairs."
+          },
+          {
+            "type": "paragraph",
+            "text": "The goal is to create a common factor between groups. For example, sin(x)cos(x) + 2sin(x) + 3cos(x) + 6 can be grouped as sin(x)(cos(x) + 2) + 3(cos(x) + 2), giving (sin(x) + 3)(cos(x) + 2) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "The resulting factors must then be tested against the possible ranges of the trigonometric functions."
+          }
+        ]
+      },
+
+      {
+        "id": "factoring-after-rearranging",
+        "title": "Rearranging Before Factoring",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An equation may not look factorable until all terms are moved to one side."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, 2sin²(x) = sin(x) can be rewritten as 2sin²(x) − sin(x) = 0 and then factored as sin(x)(2sin(x) − 1) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "Always check whether one side can be made zero before deciding that an equation cannot be factored."
+          }
+        ]
+      },
+
+      {
+        "id": "factoring-and-division",
+        "title": "Why Dividing by a Trigonometric Factor Can Lose Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A common mistake is to divide an equation by sin(x), cos(x), or another expression that might equal zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sin(x)(2sin(x) − 1) = 0 contains the solution set from sin(x) = 0. If we divide by sin(x), we obtain 2sin(x) − 1 = 0 and permanently lose every solution for which sin(x) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "Factoring is therefore often safer than dividing because the Zero Product Property explicitly preserves every factor."
+          },
+          {
+            "type": "paragraph",
+            "text": "If division is necessary, first separately consider the case where the divisor equals zero."
+          }
+        ]
+      },
+
+      {
+        "id": "solving-each-factor",
+        "title": "Solving Every Factor",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "After factoring, each factor creates its own equation. Each equation must be solved independently."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, (2sin(x) − 1)(cos(x) + 1) = 0 gives sin(x) = 1/2 or cos(x) = −1."
+          },
+          {
+            "type": "paragraph",
+            "text": "The final solution is the union of the solutions from both equations. Solutions should not be combined by multiplication or treated as if both conditions must hold simultaneously."
+          }
+        ]
+      },
+
+      {
+        "id": "restricted-interval",
+        "title": "Factoring on a Restricted Interval",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "When an interval such as 0 ≤ x < 2π is given, every factor must be solved only within that interval."
+          },
+          {
+            "type": "paragraph",
+            "text": "A useful method is to solve each factor separately, list its solutions in the required interval, and then combine the lists."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pay careful attention to whether the endpoint is included. For example, 0 ≤ x < 2π includes x = 0 but excludes x = 2π."
+          }
+        ]
+      },
+
+      {
+        "id": "general-solutions",
+        "title": "General Solutions After Factoring",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "If no interval is specified, each resulting trigonometric equation must normally be expressed using a general solution involving an integer n."
+          },
+          {
+            "type": "paragraph",
+            "text": "For sine and cosine, the period is 2π. For tangent, the period is π."
+          },
+          {
+            "type": "paragraph",
+            "text": "When several factors produce solutions, the general solution must include the complete family of solutions from every factor."
+          }
+        ]
+      },
+
+      {
+        "id": "checking-solutions",
+        "title": "Checking the Final Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Factoring using valid algebraic steps does not normally create extraneous solutions, but checking is still useful, especially when identities, division, squaring, reciprocals, or other transformations were used before factoring."
+          },
+          {
+            "type": "paragraph",
+            "text": "Substitute candidate values into the original equation rather than only the factored equation when a transformation could have changed the domain or solution set."
+          }
+        ]
+      },
+
+      {
+        "id": "solution-union",
+        "title": "Combining Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The word 'or' is important after applying the Zero Product Property. If A(x)B(x) = 0, then A(x) = 0 OR B(x) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, the final answer is the union of all valid solution sets."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the same solution appears from more than one factor, list it only once."
+>>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
           }
         ]
       }
     ]
   },
+
   "formulas": [
     {
-      "id": "zero-product",
+      "id": "zero-product-property",
       "name": "Zero Product Property",
       "expression": "AB = 0  ⇒  A = 0 or B = 0",
-      "explanation": "Used after factoring an equation."
+      "explanation": "The main rule used after factoring a trigonometric equation. Every factor must be set equal to zero."
+    },
+    {
+      "id": "three-factor-zero-product",
+      "name": "Zero Product Property for Three Factors",
+      "expression": "ABC = 0  ⇒  A = 0 or B = 0 or C = 0",
+      "explanation": "The same principle applies when an equation has three or more factors."
+    },
+    {
+      "id": "common-factor",
+      "name": "Common-Factor Pattern",
+      "expression": "AB + AC = A(B + C)",
+      "explanation": "Factor out the common expression before solving. The common factor may be sin(x), cos(x), tan(x), or another trigonometric expression."
+    },
+    {
+      "id": "difference-of-squares",
+      "name": "Difference of Squares",
+      "expression": "A² − B² = (A − B)(A + B)",
+      "explanation": "Useful when a trigonometric equation contains the difference between two squares."
+    },
+    {
+      "id": "perfect-square-trinomial",
+      "name": "Perfect Square Trinomials",
+      "expression": "A² + 2AB + B² = (A + B)²;  A² − 2AB + B² = (A − B)²",
+      "explanation": "Useful when a trigonometric expression forms a perfect-square trinomial."
+    },
+    {
+      "id": "quadratic-factoring",
+      "name": "Quadratic Factoring Pattern",
+      "expression": "u² + bu + c = (u + p)(u + q), where p + q = b and pq = c",
+      "explanation": "A trigonometric expression such as cos²(x) + bcos(x) + c can be treated algebraically by temporarily viewing cos(x) as the variable u."
+    },
+    {
+      "id": "quadratic-zero-form",
+      "name": "Quadratic Zero Form",
+      "expression": "au² + bu + c = 0",
+      "explanation": "Rewrite a trigonometric equation into zero form before attempting to factor."
+    },
+    {
+      "id": "sine-zero",
+      "name": "Sine Equals Zero",
+      "expression": "sin(x) = 0  ⇒  x = nπ,  n ∈ ℤ",
+      "explanation": "Useful when sin(x) appears as a factor."
+    },
+    {
+      "id": "cosine-zero",
+      "name": "Cosine Equals Zero",
+      "expression": "cos(x) = 0  ⇒  x = π/2 + nπ,  n ∈ ℤ",
+      "explanation": "Useful when cos(x) appears as a factor."
+    },
+    {
+      "id": "tangent-zero",
+      "name": "Tangent Equals Zero",
+      "expression": "tan(x) = 0  ⇒  x = nπ,  n ∈ ℤ",
+      "explanation": "Useful when tan(x) appears as a factor."
+    },
+    {
+      "id": "sine-half",
+      "name": "Sine Equals One-Half",
+      "expression": "sin(x) = 1/2  ⇒  x = π/6 + 2nπ or x = 5π/6 + 2nπ",
+      "explanation": "A common result when factoring equations involving sin(x)."
+    },
+    {
+      "id": "sine-minus-half",
+      "name": "Sine Equals Negative One-Half",
+      "expression": "sin(x) = −1/2  ⇒  x = 7π/6 + 2nπ or x = 11π/6 + 2nπ",
+      "explanation": "Useful when a factored equation produces sin(x) = −1/2."
+    },
+    {
+      "id": "cosine-half",
+      "name": "Cosine Equals One-Half",
+      "expression": "cos(x) = 1/2  ⇒  x = π/3 + 2nπ or x = 5π/3 + 2nπ",
+      "explanation": "A common result when factoring equations involving cos(x)."
+    },
+    {
+      "id": "cosine-minus-half",
+      "name": "Cosine Equals Negative One-Half",
+      "expression": "cos(x) = −1/2  ⇒  x = 2π/3 + 2nπ or x = 4π/3 + 2nπ",
+      "explanation": "Useful when a factored equation produces cos(x) = −1/2."
+    },
+    {
+      "id": "sine-range",
+      "name": "Range of Sine",
+      "expression": "−1 ≤ sin(x) ≤ 1",
+      "explanation": "Any factor that produces sin(x) outside this range has no real solution."
+    },
+    {
+      "id": "cosine-range",
+      "name": "Range of Cosine",
+      "expression": "−1 ≤ cos(x) ≤ 1",
+      "explanation": "Any factor that produces cos(x) outside this range has no real solution."
+    },
+    {
+      "id": "tangent-range",
+      "name": "Range of Tangent",
+      "expression": "tan(x) ∈ ℝ",
+      "explanation": "Tangent can take every real value, although it is undefined where cos(x) = 0."
+    },
+    {
+      "id": "sine-period",
+      "name": "Period of Sine",
+      "expression": "sin(x + 2π) = sin(x)",
+      "explanation": "Sine repeats every 2π radians, which is why general solutions commonly contain 2nπ."
+    },
+    {
+      "id": "cosine-period",
+      "name": "Period of Cosine",
+      "expression": "cos(x + 2π) = cos(x)",
+      "explanation": "Cosine repeats every 2π radians."
+    },
+    {
+      "id": "tangent-period",
+      "name": "Period of Tangent",
+      "expression": "tan(x + π) = tan(x)",
+      "explanation": "Tangent repeats every π radians, so general tangent solutions commonly contain nπ."
+    },
+    {
+      "id": "division-warning",
+      "name": "Division by a Possible-Zero Factor",
+      "expression": "If A(x)B(x) = 0, do not divide by A(x) without separately considering A(x) = 0.",
+      "explanation": "Dividing by an expression that may equal zero can remove valid solutions."
+    },
+    {
+      "id": "solution-union",
+      "name": "Union of Factor Solutions",
+      "expression": "Solutions of A(x)B(x)=0 = solutions of A(x)=0 ∪ solutions of B(x)=0",
+      "explanation": "The final answer contains every valid solution from every factor."
     }
   ],
+
   "examples": [
     {
-      "id": "factoring-example",
+      "id": "factoring-example-basic",
       "question": "Solve 2sin²(x) − sin(x) = 0 for 0 ≤ x < 2π.",
-      "solution": "Factor: sin(x)(2sin(x) − 1) = 0. Thus sin(x) = 0 or sin(x) = 1/2. The solutions are 0, π, π/6, and 5π/6."
+      "solution": "Factor: sin(x)(2sin(x) − 1) = 0. Apply the Zero Product Property: sin(x) = 0 or 2sin(x) − 1 = 0. First, sin(x) = 0 gives x = 0, π in the interval. Second, 2sin(x) − 1 = 0 gives sin(x) = 1/2, so x = π/6, 5π/6. Therefore the solutions are x = 0, π/6, 5π/6, π."
+    },
+    {
+      "id": "factoring-example-common-factor",
+      "question": "Solve 3cos²(x) − 3cos(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Factor out 3cos(x): 3cos(x)(cos(x) − 1) = 0. Therefore cos(x) = 0 or cos(x) = 1. On 0 ≤ x < 2π, cos(x) = 0 gives x = π/2, 3π/2, while cos(x) = 1 gives x = 0. Final answer: x = 0, π/2, 3π/2."
+    },
+    {
+      "id": "factoring-example-negative",
+      "question": "Solve 2sin²(x) + sin(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Factor: sin(x)(2sin(x) + 1) = 0. Therefore sin(x) = 0 or sin(x) = −1/2. On 0 ≤ x < 2π, sin(x) = 0 gives x = 0, π. Sin(x) = −1/2 gives x = 7π/6, 11π/6. Final answer: x = 0, π, 7π/6, 11π/6."
+    },
+    {
+      "id": "factoring-example-cosine",
+      "question": "Solve cos²(x) − 3cos(x) + 2 = 0 for 0 ≤ x < 2π.",
+      "solution": "Treat cos(x) like an algebraic variable. Factor: (cos(x) − 1)(cos(x) − 2) = 0. Therefore cos(x) = 1 or cos(x) = 2. Cos(x) = 2 has no real solution because −1 ≤ cos(x) ≤ 1. Cos(x) = 1 gives x = 0 in the interval. Final answer: x = 0."
+    },
+    {
+      "id": "factoring-example-difference-squares",
+      "question": "Solve sin²(x) − 1 = 0 for 0 ≤ x < 2π.",
+      "solution": "Use the difference of squares: sin²(x) − 1 = (sin(x) − 1)(sin(x) + 1) = 0. Therefore sin(x) = 1 or sin(x) = −1. On 0 ≤ x < 2π, these give x = π/2 and x = 3π/2. Final answer: x = π/2, 3π/2."
+    },
+    {
+      "id": "factoring-example-two-factors",
+      "question": "Solve (2sin(x) − 1)(cos(x) + 1) = 0 for 0 ≤ x < 2π.",
+      "solution": "Set each factor equal to zero. 2sin(x) − 1 = 0 gives sin(x) = 1/2, so x = π/6, 5π/6. Cos(x) + 1 = 0 gives cos(x) = −1, so x = π. Combine all valid solutions: x = π/6, 5π/6, π."
+    },
+    {
+      "id": "factoring-example-no-solution-factor",
+      "question": "Solve (cos(x) − 2)(sin(x) + 1) = 0.",
+      "solution": "Set each factor equal to zero. cos(x) − 2 = 0 gives cos(x) = 2, which has no real solution because cosine lies between −1 and 1. sin(x) + 1 = 0 gives sin(x) = −1, so x = 3π/2 + 2nπ, n ∈ ℤ. Therefore the general solution is x = 3π/2 + 2nπ."
+    },
+    {
+      "id": "factoring-example-general",
+      "question": "Solve 2sin²(x) − sin(x) = 0 for all real x.",
+      "solution": "Factor: sin(x)(2sin(x) − 1) = 0. Thus sin(x) = 0 or sin(x) = 1/2. For sin(x) = 0, x = nπ. For sin(x) = 1/2, x = π/6 + 2nπ or x = 5π/6 + 2nπ, where n ∈ ℤ. These three families form the complete general solution."
+    },
+    {
+      "id": "factoring-example-lost-solutions",
+      "question": "Solve sin(x)(2sin(x) − 1) = 0 and explain why dividing by sin(x) is dangerous.",
+      "solution": "Factoring already gives sin(x) = 0 or 2sin(x) − 1 = 0. Therefore both sin(x) = 0 and sin(x) = 1/2 must be solved. If we divide by sin(x), we get 2sin(x) − 1 = 0, but this assumes sin(x) ≠ 0 and removes all solutions where sin(x) = 0. The correct approach is to use the Zero Product Property."
+    },
+    {
+      "id": "factoring-example-rearrange",
+      "question": "Solve 2sin²(x) = sin(x) for 0 ≤ x < 2π.",
+      "solution": "Move everything to one side: 2sin²(x) − sin(x) = 0. Factor: sin(x)(2sin(x) − 1) = 0. Thus sin(x) = 0 or sin(x) = 1/2. The solutions are x = 0, π, π/6, 5π/6. Ordered from smallest to largest: x = 0, π/6, 5π/6, π."
+    },
+    {
+      "id": "factoring-example-tangent",
+      "question": "Solve tan²(x) − tan(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Factor: tan(x)(tan(x) − 1) = 0. Therefore tan(x) = 0 or tan(x) = 1. On 0 ≤ x < 2π, tan(x) = 0 gives x = 0, π. Tan(x) = 1 gives x = π/4, 5π/4. Final answer: x = 0, π/4, π, 5π/4."
+    },
+    {
+      "id": "factoring-example-multiple-factors",
+      "question": "Solve sin(x)(sin(x) − 1)(sin(x) + 1) = 0 for 0 ≤ x < 2π.",
+      "solution": "Set every factor equal to zero: sin(x) = 0, sin(x) = 1, or sin(x) = −1. On 0 ≤ x < 2π these give x = 0, π; x = π/2; and x = 3π/2. Final answer: x = 0, π/2, π, 3π/2."
+    },
+    {
+      "id": "factoring-example-grouping",
+      "question": "Factor and solve sin(x)cos(x) + 2sin(x) + 3cos(x) + 6 = 0.",
+      "solution": "Group terms: [sin(x)cos(x) + 2sin(x)] + [3cos(x) + 6] = 0. Factor each group: sin(x)[cos(x) + 2] + 3[cos(x) + 2] = 0. Factor again: [sin(x) + 3][cos(x) + 2] = 0. This would require sin(x) = −3 or cos(x) = −2. Neither is possible for real x because sine and cosine both lie between −1 and 1. Therefore there are no real solutions."
+    },
+    {
+      "id": "factoring-example-special-values",
+      "question": "Solve 4cos²(x) − 4 = 0 for 0 ≤ x < 2π.",
+      "solution": "Factor: 4(cos²(x) − 1) = 0. Use difference of squares: 4(cos(x) − 1)(cos(x) + 1) = 0. Therefore cos(x) = 1 or cos(x) = −1. On 0 ≤ x < 2π, x = 0 for cos(x) = 1 and x = π for cos(x) = −1. Final answer: x = 0, π."
     }
   ],
+
   "key_ideas": [
-    "Treat trigonometric expressions algebraically when possible.",
-    "Factor before applying more complicated identities.",
-    "Solve every resulting equation."
+    "Move all terms to one side before factoring whenever possible.",
+    "The Zero Product Property is the central rule after factoring.",
+    "Every factor must be solved.",
+    "Treat sin(x), cos(x), and tan(x) like algebraic variables when the equation has a suitable algebraic structure.",
+    "Factor out common trigonometric factors before using more complicated identities.",
+    "Use difference of squares when an expression has the form A² − B².",
+    "A factor can produce an impossible trigonometric value, such as sin(x) = 2 or cos(x) = −3; such a factor has no real solutions.",
+    "The final answer is the union of the solutions from every factor.",
+    "Do not divide by a trigonometric expression that might equal zero without separately checking that case.",
+    "When a restricted interval is given, keep only solutions inside that interval.",
+    "When no interval is given, use general solutions with n ∈ ℤ.",
+    "Always pay attention to the period of the trigonometric function being solved.",
+    "Check the original equation when transformations may have introduced domain issues or extraneous solutions.",
+    "Factoring connects algebraic equations with trigonometric equations and prepares the learner for quadratic trigonometric equations."
   ],
+
   "misconceptions": [
-    "Dividing by sin(x) and accidentally removing sin(x) = 0 solutions.",
-    "Solving only one factor."
+    "Dividing by sin(x) or cos(x) without checking whether that expression can equal zero.",
+    "Solving only the first factor and forgetting the remaining factors.",
+    "Thinking that A·B = 0 means A = 0 and B = 0 simultaneously.",
+    "Forgetting to move all terms to one side before applying the Zero Product Property.",
+    "Assuming every algebraic value obtained for sin(x) or cos(x) is possible.",
+    "Forgetting that sin(x) and cos(x) can only take values from −1 to 1.",
+    "Forgetting that tangent is undefined where cos(x) = 0.",
+    "Giving only one angle when a trigonometric equation has multiple solutions in the required interval.",
+    "Using the wrong period when writing general solutions.",
+    "Including an excluded endpoint such as 2π when the interval is 0 ≤ x < 2π.",
+    "Listing duplicate solutions when two different factors produce the same angle.",
+    "Assuming factoring automatically means there is a solution from every factor.",
+    "Stopping after factoring instead of solving each resulting trigonometric equation.",
+    "Using the factored equation for checking when an earlier algebraic operation may have changed the domain.",
+    "Confusing 'or' from the Zero Product Property with 'and'."
   ],
+
   "explorations": [
     {
       "id": "factoring-trigonometric-equation",
       "type": "visualization"
+    },
+    {
+      "id": "zero-product-unit-circle",
+      "type": "visualization"
+    },
+    {
+      "id": "factoring-as-branches",
+      "type": "visualization"
+    },
+    {
+      "id": "lost-solutions-by-division",
+      "type": "why"
+    },
+    {
+      "id": "trig-function-as-variable",
+      "type": "why"
     }
   ],
+
   "sources": [
     "openstax-precalculus-trigonometric-equations"
   ]
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
