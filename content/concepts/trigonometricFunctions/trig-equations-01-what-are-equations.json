@@ -1,0 +1,393 @@
+
+{
+  "id": "trig-equations-01",
+  "title": "What Are Trigonometric Equations?",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 2,
+
+  "connections": {
+    "prerequisites": [
+      "trigonometric-ratios",
+      "trigonometric-functions",
+      "trigonometric-graphs"
+    ],
+    "leads_to": [
+      "trig-equations-02"
+    ],
+    "related": [
+      "algebraic-equations",
+      "functions",
+      "trigonometric-identities",
+      "unit-circle",
+      "periodic-functions"
+    ]
+  },
+
+  "theory": {
+    "introduction": "A trigonometric equation is an equation containing one or more trigonometric functions in which the unknown is usually an angle. The goal is to find every value of the unknown that makes the equation true. Unlike many ordinary algebraic equations, trigonometric equations can have more than one solution or infinitely many solutions because trigonometric functions repeat periodically.",
+
+    "sections": [
+      {
+        "id": "definition",
+        "title": "What Is a Trigonometric Equation?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An equation states that two expressions are equal. A trigonometric equation is an equation in which at least one expression contains a trigonometric function such as sin, cos, tan, sec, csc, or cot."
+          },
+          {
+            "type": "paragraph",
+            "text": "Examples include sin(x) = 1/2, cos(x) = 0, tan(x) = 1, 2sin(x) + 1 = 0, and sin²(x) + sin(x) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "The variable is usually an angle, although it can appear inside a more complicated expression such as sin(2x), cos(x + π/3), or tan(3x − π/4)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The solution of a trigonometric equation is any value of the variable that makes the original equation true."
+          }
+        ]
+      },
+
+      {
+        "id": "equation-vs-expression",
+        "title": "Expression, Equation, and Identity",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A trigonometric expression is a mathematical expression such as sin(x) + cos(x). It does not claim that one quantity equals another."
+          },
+          {
+            "type": "paragraph",
+            "text": "A trigonometric equation contains an equals sign and asks us to find the values of the variable for which the equality is true."
+          },
+          {
+            "type": "paragraph",
+            "text": "A trigonometric identity is different. An identity is true for every value of the variable for which both sides are defined. For example, sin²(x) + cos²(x) = 1 is an identity."
+          },
+          {
+            "type": "paragraph",
+            "text": "When solving an equation, we are looking for particular values that make the equation true. When working with an identity, the equality is already true throughout its domain."
+          }
+        ]
+      },
+
+      {
+        "id": "examples-of-equations",
+        "title": "Examples and Non-Examples",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "sin(x) = 1/2 is a trigonometric equation because it asks which values of x make sine equal to 1/2."
+          },
+          {
+            "type": "paragraph",
+            "text": "2cos(x) − 1 = 0 is a trigonometric equation because solving it requires finding values of x for which cosine has a particular value."
+          },
+          {
+            "type": "paragraph",
+            "text": "sin²(x) + cos²(x) = 1 is a trigonometric identity, not an equation that needs to be solved for particular values."
+          },
+          {
+            "type": "paragraph",
+            "text": "sin(x) + 3 is a trigonometric expression, not an equation, because it has no equality statement."
+          }
+        ]
+      },
+
+      {
+        "id": "goal-of-solving",
+        "title": "What Does It Mean to Solve One?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "To solve a trigonometric equation means to determine every allowed value of the variable that satisfies the original equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, solving sin(x) = 1/2 is not simply about calculating one inverse-sine value. The complete answer depends on whether the problem asks for solutions on a particular interval or all possible solutions."
+          },
+          {
+            "type": "paragraph",
+            "text": "A complete solution therefore requires attention to the equation, the domain, the interval if one is specified, and the periodic behavior of the trigonometric function."
+          }
+        ]
+      },
+
+      {
+        "id": "multiple-solutions",
+        "title": "Why Can There Be Multiple Solutions?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Trigonometric functions are periodic. This means their values repeat after a fixed interval."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine and cosine repeat every 2π radians, while tangent repeats every π radians."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because of this repetition, the same trigonometric value can correspond to several angles in one revolution and infinitely many angles when no interval is specified."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sin(x) = 1/2 has two solutions in the interval 0 ≤ x < 2π, but infinitely many solutions if x is allowed to be any real number."
+          }
+        ]
+      },
+
+      {
+        "id": "restricted-vs-general",
+        "title": "Restricted and General Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A restricted solution means that the problem specifies an interval in which x must lie, such as 0 ≤ x < 2π or 0° ≤ x ≤ 360°."
+          },
+          {
+            "type": "paragraph",
+            "text": "A general solution represents every solution and usually contains an integer parameter such as n ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sin(x) = 0 has solutions x = 0 and x = π in one interval from 0 to 2π, but it has infinitely many solutions when x can be any real number."
+          },
+          {
+            "type": "paragraph",
+            "text": "Students must therefore read the requested interval carefully before deciding how many solutions to give."
+          }
+        ]
+      },
+
+      {
+        "id": "domain",
+        "title": "Why the Domain Matters",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A value can only be a solution if the original trigonometric expression is defined at that value."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, tan(x) is undefined wherever cos(x) = 0, so angles such as π/2 and 3π/2 cannot be solutions of an equation involving tan(x) at those points."
+          },
+          {
+            "type": "paragraph",
+            "text": "Similarly, sec(x) is undefined when cos(x) = 0, csc(x) is undefined when sin(x) = 0, and cot(x) is undefined when sin(x) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "Domain restrictions become especially important when equations are transformed using reciprocals, multiplication, division, or other algebraic operations."
+          }
+        ]
+      },
+
+      {
+        "id": "equations-may-have-no-solutions",
+        "title": "Not Every Trigonometric Equation Has a Solution",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A trigonometric equation may have no real solution if the requested trigonometric value is outside the range of the function."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sin(x) = 2 has no real solution because sine can only have values from −1 to 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "Likewise, cos(x) = −3 has no real solution because cosine also has a range from −1 to 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "Recognizing whether a solution is possible is an important first step before attempting detailed calculations."
+          }
+        ]
+      },
+
+      {
+        "id": "graphical-meaning",
+        "title": "Understanding Equations Graphically",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A trigonometric equation can also be understood using graphs."
+          },
+          {
+            "type": "paragraph",
+            "text": "For an equation such as sin(x) = 1/2, graph y = sin(x) and the horizontal line y = 1/2. Every intersection point corresponds to a solution."
+          },
+          {
+            "type": "paragraph",
+            "text": "This gives a visual explanation for why there can be multiple solutions: the periodic sine graph crosses the same horizontal level repeatedly."
+          },
+          {
+            "type": "paragraph",
+            "text": "Graphical thinking will become especially useful later when solving more complicated equations and interpreting the number of solutions."
+          }
+        ]
+      },
+
+      {
+        "id": "solution-verification",
+        "title": "How Do We Know a Solution Is Correct?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A proposed value is a solution only if substituting it into the original equation makes both sides equal."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if x = π/6 is proposed for sin(x) = 1/2, substitution gives sin(π/6) = 1/2, so the value is valid."
+          },
+          {
+            "type": "paragraph",
+            "text": "Checking becomes particularly important in later lessons when equations are manipulated through factoring, squaring, division, reciprocal transformations, or identities."
+          }
+        ]
+      },
+
+      {
+        "id": "big-picture-strategy",
+        "title": "The Big Picture of Solving Trigonometric Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Most trigonometric equations are eventually transformed into a simpler equation involving one basic trigonometric function."
+          },
+          {
+            "type": "paragraph",
+            "text": "The general process is: understand the equation, simplify or rearrange it using algebra and identities, isolate a trigonometric function when possible, find the corresponding angles, include every valid solution in the required interval or general solution, and check the final answers."
+          },
+          {
+            "type": "paragraph",
+            "text": "Later lessons will develop each of these steps in detail. This lesson provides the mental model needed to understand why those steps are necessary."
+          }
+        ]
+      }
+    ]
+  },
+
+  "formulas": [],
+
+  "examples": [
+    {
+      "id": "simple-equation-identification",
+      "question": "Is sin(x) = 1/2 a trigonometric equation?",
+      "solution": "Yes. It contains the trigonometric function sine, has an equality sign, and asks for the values of x that make the equation true."
+    },
+    {
+      "id": "identity-identification",
+      "question": "Is sin²(x) + cos²(x) = 1 a trigonometric equation that needs to be solved?",
+      "solution": "It is a trigonometric identity. It is true for every value of x for which the expressions are defined, so there is no particular set of angles to find."
+    },
+    {
+      "id": "expression-identification",
+      "question": "Is 2sin(x) + 3 a trigonometric equation?",
+      "solution": "No. It is a trigonometric expression because there is no equality sign."
+    },
+    {
+      "id": "multiple-solutions",
+      "question": "How many solutions does sin(x) = 1/2 have on 0 ≤ x < 2π?",
+      "solution": "There are two solutions: x = π/6 and x = 5π/6. Both angles have a sine value of 1/2."
+    },
+    {
+      "id": "no-real-solution",
+      "question": "Does sin(x) = 2 have a real solution?",
+      "solution": "No. The range of sine is −1 ≤ sin(x) ≤ 1, so sine can never equal 2."
+    },
+    {
+      "id": "graphical-solution",
+      "question": "How can sin(x) = 1/2 be understood graphically?",
+      "solution": "Graph y = sin(x) and y = 1/2. The x-coordinates of their intersection points are the solutions of the equation."
+    },
+    {
+      "id": "domain-example",
+      "question": "Can x = π/2 be a solution of tan(x) = 1?",
+      "solution": "No. tan(π/2) is undefined because cos(π/2) = 0. Therefore π/2 is not even in the domain of tangent."
+    },
+    {
+      "id": "solution-check",
+      "question": "Is x = π/6 a solution of sin(x) = 1/2?",
+      "solution": "Yes. Substituting x = π/6 gives sin(π/6) = 1/2, so the equation is satisfied."
+    },
+    {
+      "id": "interval-awareness",
+      "question": "Why does the answer to a trigonometric equation change when the interval changes?",
+      "solution": "Because a periodic trigonometric function can reach the same value many times. A restricted interval tells us which of those angles should be included."
+    }
+  ],
+
+  "key_ideas": [
+    "A trigonometric equation contains one or more trigonometric functions and an equality.",
+    "The goal is to find every allowed value of the variable that makes the original equation true.",
+    "The unknown is usually an angle.",
+    "A trigonometric equation is different from a trigonometric expression.",
+    "A trigonometric equation is different from a trigonometric identity.",
+    "Periodic trigonometric functions can produce multiple or infinitely many solutions.",
+    "Sine and cosine have period 2π.",
+    "Tangent has period π.",
+    "The specified interval determines which solutions should be listed.",
+    "The domain of the original equation must always be respected.",
+    "Some equations have no real solution because the requested value is outside the function's range.",
+    "Graphs provide a visual interpretation of trigonometric equations as intersection problems.",
+    "Every proposed solution should satisfy the original equation.",
+    "Solving usually involves algebraic manipulation followed by finding the corresponding angles.",
+    "A complete answer must include all valid solutions, not just the first angle found."
+  ],
+
+  "misconceptions": [
+    "Thinking every trigonometric equation has exactly one solution.",
+    "Thinking the inverse sine, cosine, or tangent result from a calculator is automatically the complete answer.",
+    "Confusing a trigonometric equation with a trigonometric identity.",
+    "Thinking an expression such as sin(x) + 2 is itself an equation.",
+    "Forgetting that the requested interval controls which solutions should be included.",
+    "Assuming every trigonometric equation has a real solution.",
+    "Forgetting that sine and cosine have maximum value 1 and minimum value −1.",
+    "Assuming tangent is defined for every real angle.",
+    "Ignoring the domain of reciprocal trigonometric functions.",
+    "Checking a solution only against a transformed equation instead of the original equation.",
+    "Giving only one solution when the trigonometric function reaches the required value more than once in the interval.",
+    "Assuming that finding a reference angle is the same as finding every solution.",
+    "Mixing degrees and radians when solving an equation.",
+    "Assuming that an equation and an identity are solved in exactly the same way.",
+    "Forgetting that periodicity is the reason solutions can repeat indefinitely."
+  ],
+
+  "explorations": [
+    {
+      "id": "equation-as-graph-intersection",
+      "type": "visualization"
+    },
+    {
+      "id": "trigonometric-equation-vs-identity",
+      "type": "why"
+    },
+    {
+      "id": "why-infinite-solutions",
+      "type": "why"
+    },
+    {
+      "id": "sine-equation-unit-circle",
+      "type": "visualization"
+    },
+    {
+      "id": "trigonometric-function-ranges",
+      "type": "visualization"
+    },
+    {
+      "id": "periodicity-and-repeated-solutions",
+      "type": "visualization"
+    }
+  ],
+
+  "sources": [
+    "openstax-precalculus-trigonometric-equations",
+    "openstax-precalculus-trigonometric-identities"
+  ]
+}
+

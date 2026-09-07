@@ -1,11 +1,13 @@
-
 {
   "id": "trig-equations-11",
   "title": "Writing the General Solution",
+
   "subject": "mathematics",
   "topic": "trigonometry",
   "section": "trigonometric-equations",
+
   "difficulty": 4,
+
   "connections": {
     "prerequisites": [
       "trig-equations-02",
@@ -20,80 +22,793 @@
     ],
     "related": [
       "periodic-functions",
-      "trigonometric-functions"
+      "trigonometric-functions",
+      "unit-circle",
+      "trigonometric-identities",
+      "multiple-angle-identities"
     ]
   },
+
   "theory": {
-    "introduction": "When an interval is not specified, trigonometric equations are often expressed using a general solution that represents every possible angle.",
+    "introduction": "When no interval is specified, a trigonometric equation usually requires a general solution: a mathematical expression that represents every angle satisfying the equation. Because trigonometric functions are periodic, a single equation can have infinitely many solutions. The general solution captures this repeating pattern using an integer parameter such as n ∈ ℤ. Writing a correct general solution requires understanding the function's period, all solution branches within one period, the effect of multiple angles such as 2x or 3x, and any domain restrictions.",
+
     "sections": [
+      {
+        "id": "what-is-general-solution",
+        "title": "What Is a General Solution?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A general solution is an expression that represents every value of the variable satisfying a trigonometric equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, tan(x) = 1 has infinitely many solutions because tangent repeats every π radians. Instead of listing π/4, 5π/4, 9π/4, and so on, we write x = π/4 + nπ, n ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "The integer n generates all repeated solutions. Positive, negative, and zero integer values of n allow the formula to represent solutions in both directions along the number line."
+          }
+        ]
+      },
+
       {
         "id": "integer-parameter",
         "title": "Using an Integer Parameter",
         "content": [
           {
             "type": "paragraph",
-            "text": "The symbol n is usually used to represent any integer, allowing the formula to generate infinitely many solutions."
+            "text": "The symbol n usually represents any integer, meaning n ∈ ℤ. Substituting different integer values produces the complete infinite sequence of solutions."
+          },
+          {
+            "type": "paragraph",
+            "text": "For x = θ + 2nπ, n = 0 gives θ, n = 1 gives θ + 2π, n = −1 gives θ − 2π, and so on."
+          },
+          {
+            "type": "paragraph",
+            "text": "Never restrict n to positive integers unless the problem specifically says so."
           }
         ]
       },
+
       {
-        "id": "different-periods",
-        "title": "Different Periods",
+        "id": "period-determines-solution",
+        "title": "The Period Determines the General Solution",
         "content": [
           {
             "type": "paragraph",
-            "text": "The general solution depends on the period of the trigonometric function involved."
+            "text": "The period is the amount by which the angle can be increased while leaving the function value unchanged."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine and cosine have period 2π, while tangent and cotangent have period π."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, sine and cosine general solutions normally repeat using 2nπ, whereas tangent and cotangent solutions normally repeat using nπ."
+          },
+          {
+            "type": "paragraph",
+            "text": "Reciprocal functions inherit the periods of their corresponding functions: secant has period 2π, cosecant has period 2π, and cotangent has period π."
+          }
+        ]
+      },
+
+      {
+        "id": "sine-general-solution",
+        "title": "General Solution of Sine Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For sin(x) = a, first determine a principal angle θ = sin⁻¹(a). Sine has the same value at θ and π − θ within one 2π cycle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, the two solution branches can be written as x = θ + 2nπ and x = π − θ + 2nπ."
+          },
+          {
+            "type": "paragraph",
+            "text": "An equivalent compact form is x = (−1)ⁿ sin⁻¹(a) + nπ, n ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "The two-branch form is often easier to understand and use when solving problems manually, while the compact form is useful for expressing all solutions in a single formula."
+          }
+        ]
+      },
+
+      {
+        "id": "cosine-general-solution",
+        "title": "General Solution of Cosine Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For cos(x) = a, let θ = cos⁻¹(a). Cosine has the same value at θ and −θ, or equivalently at θ and 2π − θ within one cycle."
+          },
+          {
+            "type": "paragraph",
+            "text": "The general solution is x = ±θ + 2nπ, n ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "An equivalent two-branch form is x = θ + 2nπ or x = 2π − θ + 2nπ."
+          }
+        ]
+      },
+
+      {
+        "id": "tangent-general-solution",
+        "title": "General Solution of Tangent Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For tan(x) = a, let θ = tan⁻¹(a). Tangent repeats every π radians, so every solution differs from θ by an integer multiple of π."
+          },
+          {
+            "type": "paragraph",
+            "text": "The general solution is x = θ + nπ, n ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "Unlike sine and cosine, tangent does not require two separate branches when its equation is written as tan(x) = a."
+          }
+        ]
+      },
+
+      {
+        "id": "reciprocal-general-solutions",
+        "title": "General Solutions for Reciprocal Functions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Secant, cosecant, and cotangent equations are usually rewritten using reciprocal identities before solving."
+          },
+          {
+            "type": "paragraph",
+            "text": "For sec(x) = a, rewrite it as cos(x) = 1/a, provided a ≠ 0 and the resulting cosine value lies in [−1, 1]."
+          },
+          {
+            "type": "paragraph",
+            "text": "For csc(x) = a, rewrite it as sin(x) = 1/a, provided a ≠ 0 and the resulting sine value lies in [−1, 1]."
+          },
+          {
+            "type": "paragraph",
+            "text": "For cot(x) = a, rewrite it as tan(x) = 1/a, provided a ≠ 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "Domain restrictions must still be checked because reciprocal functions are undefined wherever their denominator is zero."
+          }
+        ]
+      },
+
+      {
+        "id": "zero-values",
+        "title": "General Solutions for Zero Values",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Some equations have especially simple general solutions. For example, sin(x) = 0 occurs at every integer multiple of π, while cos(x) = 0 occurs at every odd multiple of π/2."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent equals zero whenever sine is zero and cosine is nonzero, giving x = nπ."
+          },
+          {
+            "type": "paragraph",
+            "text": "Secant and cosecant can never equal zero because they are reciprocals of cosine and sine."
+          }
+        ]
+      },
+
+      {
+        "id": "multiple-angle-general",
+        "title": "General Solutions with Multiple Angles",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For equations such as sin(2x) = a, first solve for the complete set of values of 2x."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if sin(2x) = a and the general solutions for y are y = α + 2nπ or y = π − α + 2nπ, substitute y = 2x and divide every complete solution by 2."
+          },
+          {
+            "type": "paragraph",
+            "text": "Thus x = α/2 + nπ or x = (π − α)/2 + nπ."
+          },
+          {
+            "type": "paragraph",
+            "text": "The same principle applies to cos(kx), tan(kx), and equations containing more complicated angle expressions."
+          }
+        ]
+      },
+
+      {
+        "id": "composite-angle-general",
+        "title": "Composite Angles",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For an equation such as sin(3x − π/4) = a, treat the entire angle 3x − π/4 as the unknown angle first."
+          },
+          {
+            "type": "paragraph",
+            "text": "Solve the trigonometric equation for the composite angle, generate every required branch, and only then solve the resulting algebraic equations for x."
+          },
+          {
+            "type": "paragraph",
+            "text": "Failing to generate every branch before isolating x can cause valid solutions to be missed."
+          }
+        ]
+      },
+
+      {
+        "id": "identity-before-general",
+        "title": "Using Identities Before Writing the General Solution",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Many equations cannot immediately be written in a standard form. They may first require identities, factoring, substitution, or algebraic manipulation."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, an equation such as 2sin²(x) − 1 = 0 can be transformed into sin²(x) = 1/2 and then into sin(x) = ±1/√2."
+          },
+          {
+            "type": "paragraph",
+            "text": "Both signs must be considered before constructing the general solution."
+          },
+          {
+            "type": "paragraph",
+            "text": "The final answer should represent every solution of the original equation, not merely every solution of an intermediate equation."
+          }
+        ]
+      },
+
+      {
+        "id": "degrees-and-radians",
+        "title": "General Solutions in Degrees and Radians",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "General solutions can be written in degrees or radians, but the units must remain consistent throughout the solution."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine and cosine repeat every 360° or 2π radians, while tangent and cotangent repeat every 180° or π radians."
+          },
+          {
+            "type": "paragraph",
+            "text": "Do not combine degree measures with radian measures in the same formula."
+          }
+        ]
+      },
+
+      {
+        "id": "general-vs-restricted",
+        "title": "General Solution vs Restricted Solution",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A restricted solution lists only the solutions lying inside a specified interval such as 0 ≤ x < 2π or 0° ≤ x ≤ 360°."
+          },
+          {
+            "type": "paragraph",
+            "text": "A general solution represents all solutions, usually through an integer parameter n."
+          },
+          {
+            "type": "paragraph",
+            "text": "If a question asks for the general solution, do not stop after listing the solutions in one revolution."
+          },
+          {
+            "type": "paragraph",
+            "text": "If a question specifies an interval, use the general solution as a pattern and then select only the values that lie inside the requested interval."
+          }
+        ]
+      },
+
+      {
+        "id": "checking-general-solution",
+        "title": "Checking a General Solution",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A general solution should be checked conceptually and, when necessary, algebraically."
+          },
+          {
+            "type": "paragraph",
+            "text": "Check that the formula reproduces known solutions for several integer values of n and that increasing n moves between solutions by the correct period."
+          },
+          {
+            "type": "paragraph",
+            "text": "If algebraic transformations such as squaring, multiplying by an expression that might be zero, or taking reciprocals were used, substitute the final solutions back into the original equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "Domain restrictions must also be respected."
+          }
+        ]
+      },
+
+      {
+        "id": "solution-counting",
+        "title": "Understanding Why Solutions Repeat",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The infinite nature of the solution set comes from periodicity. Once one solution is known, adding an integer multiple of the function's period produces another solution."
+          },
+          {
+            "type": "paragraph",
+            "text": "For sine and cosine, the fundamental period is 2π. For tangent and cotangent, it is π."
+          },
+          {
+            "type": "paragraph",
+            "text": "When the input is multiplied by k, such as sin(kx), the resulting function has period 2π/|k|. This is why multiple-angle equations can have more solutions within a fixed interval."
+          }
+        ]
+      },
+
+      {
+        "id": "systematic-method",
+        "title": "Systematic Method for Writing General Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "First simplify the equation until it is in a solvable trigonometric form."
+          },
+          {
+            "type": "paragraph",
+            "text": "Next identify the trigonometric function and determine its period."
+          },
+          {
+            "type": "paragraph",
+            "text": "Find every solution branch for one complete period."
+          },
+          {
+            "type": "paragraph",
+            "text": "Introduce the appropriate integer parameter n."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the equation contains kx or another composite angle, solve for the complete angle expression first and then isolate x."
+          },
+          {
+            "type": "paragraph",
+            "text": "Finally check domain restrictions and substitute into the original equation when transformations could have introduced or removed solutions."
           }
         ]
       }
     ]
   },
+
   "formulas": [
     {
       "id": "sine-general",
-      "name": "Sine General Solution",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Sine General Solution",
       "expression": "sin(x) = a  ⇒  x = (−1)ⁿ sin⁻¹(a) + nπ, n ∈ ℤ",
-      "explanation": "Represents all real solutions."
+      "explanation": "Compact formula representing every real solution of sin(x) = a."
+    },
+    {
+      "id": "sine-general-two-branch",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Sine Two-Branch General Solution",
+      "expression": "sin(x) = sin(θ)  ⇒  x = θ + 2nπ  OR  x = π − θ + 2nπ, n ∈ ℤ",
+      "explanation": "The two branches arise because sine has the same value at θ and π − θ in one 2π cycle."
     },
     {
       "id": "cosine-general",
-      "name": "Cosine General Solution",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosine General Solution",
       "expression": "cos(x) = a  ⇒  x = ±cos⁻¹(a) + 2nπ, n ∈ ℤ",
-      "explanation": "Represents all real solutions."
+      "explanation": "Represents every real solution of a cosine equation."
+    },
+    {
+      "id": "cosine-general-two-branch",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosine Two-Branch General Solution",
+      "expression": "cos(x) = cos(θ)  ⇒  x = 2nπ ± θ, n ∈ ℤ",
+      "explanation": "Equivalent form that directly uses cosine's symmetry."
     },
     {
       "id": "tangent-general",
-      "name": "Tangent General Solution",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Tangent General Solution",
       "expression": "tan(x) = a  ⇒  x = tan⁻¹(a) + nπ, n ∈ ℤ",
       "explanation": "Uses tangent's π-periodicity."
+    },
+    {
+      "id": "tangent-equal",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Equal Tangent General Solution",
+      "expression": "tan(x) = tan(θ)  ⇒  x = θ + nπ, n ∈ ℤ",
+      "explanation": "Any two tangent angles with the same value differ by an integer multiple of π."
+    },
+    {
+      "id": "sine-zero",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Sine Equals Zero",
+      "expression": "sin(x) = 0  ⇒  x = nπ, n ∈ ℤ",
+      "explanation": "Sine is zero at every integer multiple of π."
+    },
+    {
+      "id": "cosine-zero",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosine Equals Zero",
+      "expression": "cos(x) = 0  ⇒  x = π/2 + nπ, n ∈ ℤ",
+      "explanation": "Cosine is zero at every odd multiple of π/2."
+    },
+    {
+      "id": "tangent-zero",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Tangent Equals Zero",
+      "expression": "tan(x) = 0  ⇒  x = nπ, n ∈ ℤ",
+      "explanation": "Tangent is zero whenever sine is zero and cosine is nonzero."
+    },
+    {
+      "id": "sec-general",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Secant General Solution",
+      "expression": "sec(x) = a  ⇒  cos(x) = 1/a  ⇒  x = ±cos⁻¹(1/a) + 2nπ, n ∈ ℤ",
+      "explanation": "Valid for a ≠ 0 and |a| ≥ 1. Domain restrictions must also be satisfied."
+    },
+    {
+      "id": "csc-general",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosecant General Solution",
+      "expression": "csc(x) = a  ⇒  sin(x) = 1/a  ⇒  x = (−1)ⁿ sin⁻¹(1/a) + nπ, n ∈ ℤ",
+      "explanation": "Valid for a ≠ 0 and |a| ≥ 1, with the original cosecant domain respected."
+    },
+    {
+      "id": "cot-general",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cotangent General Solution",
+      "expression": "cot(x) = a  ⇒  tan(x) = 1/a  ⇒  x = tan⁻¹(1/a) + nπ, n ∈ ℤ",
+      "explanation": "Valid for a ≠ 0. Cotangent has period π."
+    },
+    {
+      "id": "sec-domain",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Secant Domain",
+      "expression": "sec(x) is defined only when cos(x) ≠ 0",
+      "explanation": "Secant is undefined at x = π/2 + nπ."
+    },
+    {
+      "id": "csc-domain",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosecant Domain",
+      "expression": "csc(x) is defined only when sin(x) ≠ 0",
+      "explanation": "Cosecant is undefined at x = nπ."
+    },
+    {
+      "id": "cot-domain",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cotangent Domain",
+      "expression": "cot(x) is defined only when sin(x) ≠ 0",
+      "explanation": "Cotangent is undefined wherever sine is zero."
+    },
+    {
+      "id": "sec-zero",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Secant Cannot Equal Zero",
+      "expression": "sec(x) = 0  ⇒  no real solution",
+      "explanation": "Secant is the reciprocal of cosine, so it can never equal zero."
+    },
+    {
+      "id": "csc-zero",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosecant Cannot Equal Zero",
+      "expression": "csc(x) = 0  ⇒  no real solution",
+      "explanation": "Cosecant is the reciprocal of sine, so it can never equal zero."
+    },
+    {
+      "id": "sine-period",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Sine Period",
+      "expression": "sin(x + 2π) = sin(x)",
+      "explanation": "Sine repeats every 2π radians."
+    },
+    {
+      "id": "cosine-period",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosine Period",
+      "expression": "cos(x + 2π) = cos(x)",
+      "explanation": "Cosine repeats every 2π radians."
+    },
+    {
+      "id": "tangent-period",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Tangent Period",
+      "expression": "tan(x + π) = tan(x)",
+      "explanation": "Tangent repeats every π radians."
+    },
+    {
+      "id": "cotangent-period",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cotangent Period",
+      "expression": "cot(x + π) = cot(x)",
+      "explanation": "Cotangent repeats every π radians."
+    },
+    {
+      "id": "secant-period",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Secant Period",
+      "expression": "sec(x + 2π) = sec(x)",
+      "explanation": "Secant has the same fundamental period as cosine."
+    },
+    {
+      "id": "cosecant-period",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosecant Period",
+      "expression": "csc(x + 2π) = csc(x)",
+      "explanation": "Cosecant has the same fundamental period as sine."
+    },
+    {
+      "id": "multiple-angle-sine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Period of sin(kx)",
+      "expression": "Period of sin(kx) = 2π/|k|",
+      "explanation": "Multiplying the input by k compresses the graph horizontally and reduces the period."
+    },
+    {
+      "id": "multiple-angle-cosine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Period of cos(kx)",
+      "expression": "Period of cos(kx) = 2π/|k|",
+      "explanation": "Useful for understanding the number of repetitions and solutions in an interval."
+    },
+    {
+      "id": "multiple-angle-tangent",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Period of tan(kx)",
+      "expression": "Period of tan(kx) = π/|k|",
+      "explanation": "The tangent period becomes smaller when the input is multiplied by k."
+    },
+    {
+      "id": "multiple-angle-sine-equation",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Solving sin(kx) = a",
+      "expression": "sin(kx) = a  ⇒  kx = (−1)ⁿ sin⁻¹(a) + nπ  ⇒  x = [(−1)ⁿ sin⁻¹(a) + nπ]/k, n ∈ ℤ",
+      "explanation": "Solve the complete equation for the multiple angle kx before dividing by k."
+    },
+    {
+      "id": "multiple-angle-cosine-equation",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Solving cos(kx) = a",
+      "expression": "cos(kx) = a  ⇒  kx = ±cos⁻¹(a) + 2nπ  ⇒  x = [±cos⁻¹(a) + 2nπ]/k, n ∈ ℤ",
+      "explanation": "Generate both cosine branches before isolating x."
+    },
+    {
+      "id": "multiple-angle-tangent-equation",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Solving tan(kx) = a",
+      "expression": "tan(kx) = a  ⇒  kx = tan⁻¹(a) + nπ  ⇒  x = [tan⁻¹(a) + nπ]/k, n ∈ ℤ",
+      "explanation": "Tangent contributes its π-periodicity before the division by k."
+    },
+    {
+      "id": "degree-radian",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Degree-Radian Conversion",
+      "expression": "180° = π radians",
+      "explanation": "The fundamental conversion relationship between degrees and radians."
+    },
+    {
+      "id": "degree-to-radian",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Degrees to Radians",
+      "expression": "θ radians = θ° × π/180",
+      "explanation": "Multiply a degree measure by π/180 to convert it to radians."
+    },
+    {
+      "id": "radian-to-degree",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Radians to Degrees",
+      "expression": "θ° = θ radians × 180/π",
+      "explanation": "Multiply a radian measure by 180/π to convert it to degrees."
+    },
+    {
+      "id": "sine-period-degrees",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Sine and Cosine Period in Degrees",
+      "expression": "Period = 360°",
+      "explanation": "Sine and cosine repeat every 360 degrees."
+    },
+    {
+      "id": "tangent-period-degrees",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Tangent Period in Degrees",
+      "expression": "Period = 180°",
+      "explanation": "Tangent and cotangent repeat every 180 degrees."
+    },
+    {
+      "id": "sine-range",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Sine Range",
+      "expression": "−1 ≤ sin(x) ≤ 1",
+      "explanation": "Therefore sin(x) = a has real solutions only when −1 ≤ a ≤ 1."
+    },
+    {
+      "id": "cosine-range",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosine Range",
+      "expression": "−1 ≤ cos(x) ≤ 1",
+      "explanation": "Therefore cos(x) = a has real solutions only when −1 ≤ a ≤ 1."
+    },
+    {
+      "id": "tangent-range",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Tangent Range",
+      "expression": "tan(x) ∈ ℝ",
+      "explanation": "Tangent can take every real value, although it is undefined at x = π/2 + nπ."
+    },
+    {
+      "id": "reciprocal-identities",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Reciprocal Identities",
+      "expression": "sec(x) = 1/cos(x),  csc(x) = 1/sin(x),  cot(x) = 1/tan(x)",
+      "explanation": "Useful for converting reciprocal-function equations into sine, cosine, or tangent equations."
+    },
+    {
+      "id": "general-solution-period-rule",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] General Periodic Solution Rule",
+      "expression": "If f(x) = f(x + T), then x = θ + nT, n ∈ ℤ, whenever θ is a solution and T is the relevant period",
+      "explanation": "This is the underlying principle behind general solutions of periodic equations."
+    },
+    {
+      "id": "solution-verification",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Verify Solutions in the Original Equation",
+      "expression": "Candidate solution  →  substitute into the original equation  →  accept only if the original equation is satisfied",
+      "explanation": "Essential when transformations may introduce extraneous solutions or violate domain restrictions."
     }
   ],
+
   "examples": [
+    {
+      "id": "general-sine-example",
+      "question": "Find the general solution of sin(x) = 1/2.",
+      "solution": "The reference angle is π/6 because sin(π/6) = 1/2. Sine is positive in Quadrants I and II. Therefore x = π/6 + 2nπ or x = 5π/6 + 2nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "general-cosine-example",
+      "question": "Find the general solution of cos(x) = −1/2.",
+      "solution": "The reference angle is π/3. Cosine is negative in Quadrants II and III. Therefore x = 2π/3 + 2nπ or x = 4π/3 + 2nπ, where n ∈ ℤ. Equivalently, x = ±2π/3 + 2nπ."
+    },
     {
       "id": "general-tangent-example",
       "question": "Find the general solution of tan(x) = √3.",
-      "solution": "The reference angle is π/3. Since tangent repeats every π, x = π/3 + nπ, where n ∈ ℤ."
+      "solution": "The reference angle is π/3 because tan(π/3) = √3. Tangent has period π, so x = π/3 + nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "sine-zero-example",
+      "question": "Find the general solution of sin(x) = 0.",
+      "solution": "Sine is zero at 0, π, 2π, and every integer multiple of π. Therefore x = nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "cosine-zero-example",
+      "question": "Find the general solution of cos(x) = 0.",
+      "solution": "Cosine is zero at π/2 and 3π/2 in one revolution. Since the solutions are separated by π, the general solution is x = π/2 + nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "sec-general-example",
+      "question": "Find the general solution of sec(x) = 2.",
+      "solution": "Rewrite the equation as cos(x) = 1/2. Therefore x = ±π/3 + 2nπ, where n ∈ ℤ. Equivalently, x = π/3 + 2nπ or x = 5π/3 + 2nπ."
+    },
+    {
+      "id": "csc-general-example",
+      "question": "Find the general solution of csc(x) = −2.",
+      "solution": "Rewrite as sin(x) = −1/2. The solutions are x = 7π/6 + 2nπ or x = 11π/6 + 2nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "cot-general-example",
+      "question": "Find the general solution of cot(x) = 1.",
+      "solution": "Since cot(x) = 1 means tan(x) = 1, the reference angle is π/4. Tangent has period π, so x = π/4 + nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "multiple-sine-example",
+      "question": "Find the general solution of sin(2x) = 1/2.",
+      "solution": "Let y = 2x. Then sin(y) = 1/2, so y = π/6 + 2nπ or y = 5π/6 + 2nπ. Since y = 2x, divide by 2: x = π/12 + nπ or x = 5π/12 + nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "multiple-cosine-example",
+      "question": "Find the general solution of cos(3x) = 0.",
+      "solution": "For cos(y) = 0, y = π/2 + nπ. Let y = 3x. Then 3x = π/2 + nπ, so x = π/6 + nπ/3, where n ∈ ℤ."
+    },
+    {
+      "id": "multiple-tangent-example",
+      "question": "Find the general solution of tan(2x) = 1.",
+      "solution": "For tan(y) = 1, y = π/4 + nπ. Set y = 2x. Then 2x = π/4 + nπ, giving x = π/8 + nπ/2, where n ∈ ℤ."
+    },
+    {
+      "id": "composite-angle-example",
+      "question": "Find the general solution of sin(2x − π/3) = 0.",
+      "solution": "Let y = 2x − π/3. Since sin(y) = 0, y = nπ. Therefore 2x − π/3 = nπ. Solving for x gives x = π/6 + nπ/2, where n ∈ ℤ."
+    },
+    {
+      "id": "identity-general-example",
+      "question": "Find the general solution of 2sin²(x) − 1 = 0.",
+      "solution": "Rearrange: 2sin²(x) = 1, so sin²(x) = 1/2. Therefore sin(x) = ±1/√2. The corresponding angles are x = π/4, 3π/4, 5π/4, and 7π/4 in one 2π cycle. A compact general solution is x = π/4 + nπ/2, where n ∈ ℤ."
+    },
+    {
+      "id": "degree-general-example",
+      "question": "Find the general solution of sin(x) = √3/2 in degrees.",
+      "solution": "The reference angle is 60°. Sine is positive in Quadrants I and II, so x = 60° + 360°n or x = 120° + 360°n, where n ∈ ℤ."
+    },
+    {
+      "id": "period-example",
+      "question": "Explain why tan(x) = 2 has infinitely many solutions.",
+      "solution": "Tangent has period π. If θ = tan⁻¹(2) is one solution, then θ + nπ is also a solution for every integer n. Therefore the general solution is x = tan⁻¹(2) + nπ, n ∈ ℤ."
+    },
+    {
+      "id": "negative-n-example",
+      "question": "For x = π/4 + nπ, what happens when n = −1?",
+      "solution": "Substituting n = −1 gives x = π/4 − π = −3π/4. This is a valid solution because the general solution includes negative angles as well as positive angles."
+    },
+    {
+      "id": "no-solution-example",
+      "question": "Find the general solution of 2sin(x) = 3.",
+      "solution": "Rearrange to sin(x) = 3/2. Since the range of sine is [−1, 1], sine cannot equal 3/2. Therefore there is no real solution."
+    },
+    {
+      "id": "sec-no-solution-example",
+      "question": "Find the general solution of sec(x) = 1/2.",
+      "solution": "Rewrite as cos(x) = 2. Since cosine can only take values from −1 to 1, cos(x) = 2 is impossible. Therefore there is no real solution."
     }
   ],
+
   "key_ideas": [
-    "General solutions represent all solutions.",
-    "n represents any integer.",
-    "The period determines how solutions repeat."
+    "A general solution represents every solution, not just the solutions in one revolution.",
+    "n represents any integer, so always state n ∈ ℤ.",
+    "The period determines how solutions repeat.",
+    "Sine and cosine normally use 2nπ in their general solutions.",
+    "Tangent and cotangent normally use nπ because their period is π.",
+    "Sine equations generally have two solution branches in one 2π cycle.",
+    "Cosine equations can be expressed using ±θ or two explicit branches.",
+    "Tangent equations require only one branch plus integer multiples of π.",
+    "Secant, cosecant, and cotangent equations can usually be converted to cosine, sine, and tangent equations.",
+    "Reciprocal-function domain restrictions must be checked.",
+    "Secant and cosecant can never equal zero.",
+    "For multiple-angle equations, solve for the complete multiple angle before isolating x.",
+    "Multiplying the angle by k changes the period and can increase the number of solutions in a fixed interval.",
+    "For composite angles such as ax + b, solve for the complete angle expression first.",
+    "When identities or algebraic transformations are used, the final solution must still satisfy the original equation.",
+    "General solutions may be written in degrees or radians, but the units must remain consistent.",
+    "Restricted solutions and general solutions are different types of answers.",
+    "The integer parameter allows the solution pattern to extend infinitely in both directions.",
+    "A correct general solution must contain every valid branch and must not include invalid values."
   ],
+
   "misconceptions": [
-    "Forgetting n ∈ ℤ.",
+    "Forgetting to include n ∈ ℤ.",
+    "Giving only the solutions from 0 to 2π when a general solution is required.",
     "Using 2π as the period for tangent.",
-    "Giving only solutions in one revolution when a general solution is required."
+    "Using π as the period for sine or cosine.",
+    "Finding only one solution branch for sine or cosine.",
+    "Dividing by the multiple-angle coefficient before generating all solutions.",
+    "Forgetting that a composite angle such as 3x − π/4 must be treated as the complete angle first.",
+    "Mixing degrees and radians in the same solution.",
+    "Assuming every reciprocal-function equation has a solution.",
+    "Forgetting that sec(x) and csc(x) cannot equal zero.",
+    "Ignoring the domain of secant, cosecant, or cotangent.",
+    "Assuming that n must be positive.",
+    "Assuming negative values of n are invalid.",
+    "Writing a formula that generates only some of the solutions.",
+    "Accepting solutions introduced by an algebraic transformation without checking the original equation.",
+    "Using an inverse-trigonometric calculator result as the complete answer.",
+    "Forgetting that inverse trigonometric functions return principal values, not all possible solutions.",
+    "Assuming that the same general-solution formula works unchanged for every trigonometric function.",
+    "Forgetting that the period of sin(kx), cos(kx), and tan(kx) changes when the angle is multiplied by k.",
+    "Failing to check whether the equation has any real solution based on the range of the function."
   ],
+
   "explorations": [
     {
       "id": "general-solution-patterns",
       "type": "visualization"
+    },
+    {
+      "id": "integer-n-slider",
+      "type": "visualization"
+    },
+    {
+      "id": "sine-general-solution-graph",
+      "type": "visualization"
+    },
+    {
+      "id": "cosine-general-solution-graph",
+      "type": "visualization"
+    },
+    {
+      "id": "tangent-general-solution-graph",
+      "type": "visualization"
+    },
+    {
+      "id": "multiple-angle-solution-count",
+      "type": "visualization"
+    },
+    {
+      "id": "period-and-solution-spacing",
+      "type": "visualization"
+    },
+    {
+      "id": "general-vs-restricted-solutions",
+      "type": "visualization"
+    },
+    {
+      "id": "why-integer-n-creates-infinite-solutions",
+      "type": "why"
+    },
+    {
+      "id": "why-tangent-uses-pi",
+      "type": "why"
     }
   ],
+
   "sources": [
     "libretexts-basic-trigonometric-equations",
     "openstax-precalculus-trigonometric-equations"
   ]
 }
-
