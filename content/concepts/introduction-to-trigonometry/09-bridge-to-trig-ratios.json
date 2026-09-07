@@ -27,22 +27,15 @@
     "sections": [
       {
         "id": "from-similarity-to-functions",
-        "title": "Why can a ratio become a function of an angle?",
+        "title": "From Similarity to a Function of an Angle",
         "content": [
           {
             "type": "paragraph",
-            "id": "fixed-angle-fixed-ratios",
-            "text": "Take any acute angle and construct a right triangle containing that angle. You can make the triangle larger or smaller while keeping the angle unchanged. The resulting triangles are similar, so their corresponding side ratios remain constant."
+            "text": "Similarity showed that right triangles with the same acute angle have the same side-length proportions. Therefore, a side ratio can be associated consistently with an angle rather than with one particular triangle."
           },
           {
             "type": "paragraph",
-            "id": "ratio-belongs-to-angle",
-            "text": "Because the ratio does not depend on the particular size of the triangle, it can be associated with the angle itself. This is the fundamental idea behind a trigonometric function."
-          },
-          {
-            "type": "paragraph",
-            "id": "three-basic-ratios",
-            "text": "Relative to a chosen acute angle, there are three especially important ratios: opposite to hypotenuse, adjacent to hypotenuse, and opposite to adjacent. These are named sine, cosine, and tangent."
+            "text": "This is the conceptual bridge to sine, cosine, and tangent. The next lesson owns the actual definitions, notation, calculations, and worked problems."
           }
         ]
       },
@@ -52,23 +45,7 @@
         "content": [
           {
             "type": "paragraph",
-            "id": "hypotenuse-reminder",
-            "text": "The hypotenuse is always the side opposite the 90° angle, so it is also the longest side of a right triangle."
-          },
-          {
-            "type": "paragraph",
-            "id": "opposite-side",
-            "text": "For a chosen acute angle θ, the opposite side is the side directly across from θ. It does not touch the chosen angle."
-          },
-          {
-            "type": "paragraph",
-            "id": "adjacent-side",
-            "text": "For the same chosen angle θ, the adjacent side is the leg that touches θ but is not the hypotenuse."
-          },
-          {
-            "type": "paragraph",
-            "id": "labels-depend-on-angle",
-            "text": "Opposite and adjacent are relative labels. If you choose the other acute angle of the same triangle, the old opposite side becomes the new adjacent side, and vice versa."
+            "text": "Recall from Right Triangles that the three side labels are determined by the chosen reference angle. This lesson only reconnects those labels to the next topic; the complete treatment of trigonometric ratios is in trigonometric-ratios."
           }
         ]
       },
@@ -78,13 +55,7 @@
         "content": [
           {
             "type": "paragraph",
-            "id": "sine-definition",
-            "text": "The sine of an acute angle is the ratio of the length of the side opposite the angle to the length of the hypotenuse."
-          },
-          {
-            "type": "paragraph",
-            "id": "sine-meaning",
-            "text": "For a fixed angle, this ratio tells us how large the opposite component of the right triangle is relative to the triangle's overall longest side."
+            "text": "Sine will be introduced formally in the next concept. Here, think of it only as a way to connect an angle in a right triangle with a side ratio. Full definition, calculation methods, and problem-solving examples are in trigonometric-ratios."
           }
         ]
       },
@@ -94,13 +65,7 @@
         "content": [
           {
             "type": "paragraph",
-            "id": "cosine-definition",
-            "text": "The cosine of an acute angle is the ratio of the length of the side adjacent to the angle to the length of the hypotenuse."
-          },
-          {
-            "type": "paragraph",
-            "id": "cosine-meaning",
-            "text": "For a fixed angle, this ratio describes the adjacent component relative to the hypotenuse."
+            "text": "Cosine will be introduced formally in the next concept. Here, it is enough to see that an angle can determine a side ratio. Full definition, calculation methods, and examples are in trigonometric-ratios."
           }
         ]
       },
@@ -110,13 +75,7 @@
         "content": [
           {
             "type": "paragraph",
-            "id": "tangent-definition",
-            "text": "The tangent of an acute angle is the ratio of the length of the side opposite the angle to the length of the side adjacent to the angle."
-          },
-          {
-            "type": "paragraph",
-            "id": "tangent-meaning",
-            "text": "Tangent compares the two legs of the right triangle. In applications involving a line rising from the horizontal, this ratio naturally describes how steeply the line rises."
+            "text": "Tangent will be introduced formally in the next concept. Here, it completes the idea that one angle can determine a stable ratio in similar right triangles. Full treatment is in trigonometric-ratios."
           }
         ]
       },
@@ -126,13 +85,7 @@
         "content": [
           {
             "type": "paragraph",
-            "id": "sohcahtoa",
-            "text": "A common mnemonic is SOH-CAH-TOA: Sine = Opposite/Hypotenuse, Cosine = Adjacent/Hypotenuse, Tangent = Opposite/Adjacent."
-          },
-          {
-            "type": "paragraph",
-            "id": "mnemonic-not-concept",
-            "text": "The mnemonic is useful for recall, but the deeper reason these formulas work is similarity: a fixed angle produces similar right triangles, and similarity keeps the corresponding ratios constant."
+            "text": "SOH-CAH-TOA is the memory aid used in the next lesson: sin = opposite/hypotenuse, cos = adjacent/hypotenuse, tan = opposite/adjacent. Do not treat this bridge as a second full lesson on these ratios; the complete explanation belongs to trigonometric-ratios."
           }
         ]
       },
@@ -142,29 +95,21 @@
         "content": [
           {
             "type": "paragraph",
-            "id": "example-3-4-5",
-            "text": "Consider a right triangle with side lengths 3, 4, and 5. If the chosen angle has opposite side 3, adjacent side 4, and hypotenuse 5, then its sine is 3/5, its cosine is 4/5, and its tangent is 3/4."
-          },
-          {
-            "type": "paragraph",
-            "id": "scale-example",
-            "text": "Now enlarge the triangle by a factor of 2. Its corresponding sides become 6, 8, and 10. The ratios become 6/10, 8/10, and 6/8, which simplify to exactly the same values. The triangle changed size, but the three trigonometric ratios did not change."
+            "text": "This bridge intentionally avoids a second full ratio-solving lesson. Use the worked examples in trigonometric-ratios for calculating missing sides or angles; the purpose here is only to see why similar triangles naturally lead to angle-dependent ratios."
           }
         ]
       },
       {
         "id": "special-angles-preview",
-        "title": "Where do Exact Trigonometric Values Come From?",
+        "title": "Preview: Exact Trigonometric Values",
         "content": [
           {
             "type": "paragraph",
-            "id": "special-triangles",
-            "text": "Some angles occur naturally in special right triangles, especially 30°, 45°, and 60°. Their side-length relationships allow the corresponding trigonometric ratios to be determined exactly rather than approximated with a calculator."
+            "text": "Some angles produce especially simple trigonometric values, such as 30°, 45°, and 60°. These values will be derived and organized systematically in exact-trigonometric-values."
           },
           {
             "type": "paragraph",
-            "id": "preview-not-table",
-            "text": "The important point is not to memorize a table yet. The exact values can be derived from the geometry of special triangles. This will make the familiar values feel like consequences of geometry rather than isolated facts."
+            "text": "This bridge only signals why certain angles matter; it does not teach the exact-value table."
           }
         ]
       },
@@ -202,32 +147,7 @@
       }
     ]
   },
-  "formulas": [
-    {
-      "id": "sine",
-      "name": "Sine",
-      "expression": "sin(θ) = opposite / hypotenuse",
-      "explanation": "For an acute angle in a right triangle, sine is the ratio of the opposite side to the hypotenuse."
-    },
-    {
-      "id": "cosine",
-      "name": "Cosine",
-      "expression": "cos(θ) = adjacent / hypotenuse",
-      "explanation": "For an acute angle in a right triangle, cosine is the ratio of the adjacent leg to the hypotenuse."
-    },
-    {
-      "id": "tangent",
-      "name": "Tangent",
-      "expression": "tan(θ) = opposite / adjacent",
-      "explanation": "For an acute angle in a right triangle, tangent is the ratio of the opposite leg to the adjacent leg."
-    },
-    {
-      "id": "tangent-as-sine-cosine",
-      "name": "Tangent as a Quotient",
-      "expression": "tan(θ) = sin(θ) / cos(θ)",
-      "explanation": "Dividing opposite/hypotenuse by adjacent/hypotenuse cancels the common hypotenuse and gives opposite/adjacent."
-    }
-  ],
+  "formulas": [],
   "examples": [
     {
       "id": "example-basic-ratios",

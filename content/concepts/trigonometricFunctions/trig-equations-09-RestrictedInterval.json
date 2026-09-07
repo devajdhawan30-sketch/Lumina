@@ -1,14 +1,10 @@
-
 {
   "id": "trig-equations-09",
   "title": "Solving on a Restricted Interval",
-
   "subject": "mathematics",
   "topic": "trigonometry",
   "section": "trigonometric-equations",
-
   "difficulty": 3,
-
   "connections": {
     "prerequisites": [
       "trig-equations-02",
@@ -26,10 +22,8 @@
       "inverse-trigonometric-functions"
     ]
   },
-
   "theory": {
     "introduction": "A restricted interval limits the set of acceptable solutions. Unlike a general solution, where every possible value is represented using an integer parameter, a restricted-interval problem asks you to find only the solutions that lie inside a specified range. The main skills are reading the interval correctly, finding all trigonometric solutions, using the unit circle and reference angles, handling endpoints correctly, and checking that every answer belongs to the requested interval.",
-
     "sections": [
       {
         "id": "what-restricted-interval-means",
@@ -49,186 +43,108 @@
           }
         ]
       },
-
       {
         "id": "common-intervals",
         "title": "Common Intervals",
         "content": [
           {
             "type": "paragraph",
-            "text": "Common radian intervals include 0 ≤ x < 2π, 0 ≤ x ≤ 2π, −π ≤ x ≤ π, and 0 ≤ x ≤ π."
-          },
-          {
-            "type": "paragraph",
-            "text": "Common degree intervals include 0° ≤ x ≤ 360°, 0° ≤ x < 360°, −180° ≤ x ≤ 180°, and 0° ≤ x ≤ 180°."
-          },
-          {
-            "type": "paragraph",
-            "text": "Always read whether each endpoint is included. The symbols ≤ and < are important."
+            "text": "Common intervals include 0 ≤ x < 2π, 0 ≤ x ≤ 2π, and 0° ≤ x ≤ 360°. The basic trigonometric equation methods are taught in trig-equations-03; this lesson focuses on selecting every valid solution inside the stated interval."
           }
         ]
       },
-
       {
         "id": "degrees-and-radians",
         "title": "Degrees and Radians",
         "content": [
           {
             "type": "paragraph",
-            "text": "Trigonometric equations may be expressed in degrees or radians. Do not mix the two systems within a calculation."
-          },
-          {
-            "type": "paragraph",
-            "text": "A complete revolution is 360° or 2π radians. Therefore 180° = π radians."
-          },
-          {
-            "type": "paragraph",
-            "text": "Before solving, identify the unit used by the equation and the interval."
+            "text": "Use the degree/radian definitions from degrees-and-radians. Here the only new task is applying the correct full-turn period while filtering solutions in the requested interval."
           }
         ]
       },
-
       {
         "id": "unit-circle-method",
-        "title": "Using the Unit Circle",
+        "title": "Unit-Circle Method for Restricted Solutions",
         "content": [
           {
             "type": "paragraph",
-            "text": "The unit circle gives the exact values and signs of sine, cosine, and tangent at important angles."
+            "text": "Use the unit circle as a lookup and selection tool. The basic equation lesson determines what trigonometric value is required; this lesson determines which angles in the requested interval produce that value."
           },
           {
             "type": "paragraph",
-            "text": "For an equation such as cos(x) = 1/2, locate the points on the unit circle whose x-coordinate is 1/2. These occur at π/3 and 5π/3 in the interval 0 ≤ x < 2π."
-          },
-          {
-            "type": "paragraph",
-            "text": "The unit-circle method is especially useful for exact answers because it avoids unnecessary decimal approximations."
+            "text": "The objective is interval filtering, not a second derivation of the coordinate definitions of sine, cosine, and tangent."
           }
         ]
       },
-
       {
         "id": "reference-angle",
-        "title": "Using Reference Angles",
+        "title": "Reference Angles as a Solution-Selection Tool",
         "content": [
           {
             "type": "paragraph",
-            "text": "A reference angle is the acute positive angle between the terminal side of an angle and the x-axis."
+            "text": "Reference angles and quadrant signs were developed in the any-angle trigonometric-ratios lesson. Here they are used only as a procedure for locating solutions after a basic equation has been solved."
           },
           {
             "type": "paragraph",
-            "text": "For many restricted-interval problems, first find the reference angle using an inverse trigonometric function, then use the sign of the trigonometric function to determine the correct quadrants."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, if sin(x) = −1/2, the reference angle is π/6. Sine is negative in Quadrants III and IV, giving x = 7π/6 and 11π/6 in 0 ≤ x < 2π."
+            "text": "For an equation such as sin x = a, first determine the reference angle and then select the quadrants in which sine has the required sign. Do not treat this section as a second lesson on constructing reference angles from scratch."
           }
         ]
       },
-
       {
         "id": "quadrant-signs",
-        "title": "Quadrant Signs",
+        "title": "Quadrant Signs for Equation Solving",
         "content": [
           {
             "type": "paragraph",
-            "text": "In Quadrant I, sine, cosine, and tangent are all positive."
+            "text": "Use the established quadrant sign rules to choose the correct terminal positions for a solution. The full coordinate-plane explanation and CAST/ASTC reasoning belong to trigonometric-ratios-any-angle."
           },
           {
             "type": "paragraph",
-            "text": "In Quadrant II, sine is positive while cosine and tangent are negative."
-          },
-          {
-            "type": "paragraph",
-            "text": "In Quadrant III, tangent is positive while sine and cosine are negative."
-          },
-          {
-            "type": "paragraph",
-            "text": "In Quadrant IV, cosine is positive while sine and tangent are negative."
-          },
-          {
-            "type": "paragraph",
-            "text": "The quadrant determines which angles must be included after finding the reference angle."
+            "text": "In this lesson, the sign table is a decision aid: sine is positive in Quadrants I and II, cosine in I and IV, and tangent in I and III."
           }
         ]
       },
-
       {
         "id": "sine-restricted",
         "title": "Solving Sine Equations on a Restricted Interval",
         "content": [
           {
             "type": "paragraph",
-            "text": "For sin(x) = a, use the inverse sine to obtain a reference or principal angle and then identify all angles in the interval where sine has the required value."
-          },
-          {
-            "type": "paragraph",
-            "text": "If the value is positive, solutions occur in Quadrants I and II. If the value is negative, solutions occur in Quadrants III and IV."
-          },
-          {
-            "type": "paragraph",
-            "text": "For exact special-angle values, the unit circle is usually the fastest method."
+            "text": "For a sine equation, first use the basic solution method from trig-equations-03 to identify the branches. Then list only the values inside the specified interval."
           }
         ]
       },
-
       {
         "id": "cosine-restricted",
         "title": "Solving Cosine Equations on a Restricted Interval",
         "content": [
           {
             "type": "paragraph",
-            "text": "For cos(x) = a, use the reference angle and the sign of cosine to locate all solutions."
-          },
-          {
-            "type": "paragraph",
-            "text": "Cosine is positive in Quadrants I and IV and negative in Quadrants II and III."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, cos(x) = −√3/2 has reference angle π/6 and solutions 5π/6 and 7π/6 in 0 ≤ x < 2π."
+            "text": "For a cosine equation, first use the basic solution method from trig-equations-03. Then generate and filter all valid angles in the interval."
           }
         ]
       },
-
       {
         "id": "tangent-restricted",
         "title": "Solving Tangent Equations on a Restricted Interval",
         "content": [
           {
             "type": "paragraph",
-            "text": "For tan(x) = a, find the reference angle and use the fact that tangent is positive in Quadrants I and III and negative in Quadrants II and IV."
-          },
-          {
-            "type": "paragraph",
-            "text": "Tangent has period π, so solutions repeat every π."
-          },
-          {
-            "type": "paragraph",
-            "text": "Always remember that tangent is undefined at angles where cosine is zero."
+            "text": "For a tangent equation, use its π or 180° periodicity from the basic-equation framework, generate all candidates in the interval, and discard anything outside the bounds."
           }
         ]
       },
-
       {
         "id": "reciprocal-functions",
         "title": "Restricted Intervals with Reciprocal Functions",
         "content": [
           {
             "type": "paragraph",
-            "text": "Equations involving sec(x), csc(x), and cot(x) can be rewritten using reciprocal identities before solving."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, sec(x) = 2 becomes cos(x) = 1/2. Solve the resulting cosine equation and retain only values in the requested interval."
-          },
-          {
-            "type": "paragraph",
-            "text": "Domain restrictions must still be respected. For example, sec(x) and tan(x) are undefined when cos(x) = 0."
+            "text": "For sec, csc, and cot, first rewrite and solve using trig-equations-04. Then apply the interval-filtering method here while preserving the reciprocal function domain restrictions."
           }
         ]
       },
-
       {
         "id": "multiple-angle-interval",
         "title": "Multiple-Angle Equations on Restricted Intervals",
@@ -251,7 +167,6 @@
           }
         ]
       },
-
       {
         "id": "negative-angles",
         "title": "Intervals Containing Negative Angles",
@@ -270,7 +185,6 @@
           }
         ]
       },
-
       {
         "id": "endpoints",
         "title": "Handling Endpoints Correctly",
@@ -293,7 +207,6 @@
           }
         ]
       },
-
       {
         "id": "solution-generation",
         "title": "Systematically Finding Every Solution",
@@ -312,7 +225,6 @@
           }
         ]
       },
-
       {
         "id": "special-values",
         "title": "Special-Angle Values",
@@ -327,7 +239,6 @@
           }
         ]
       },
-
       {
         "id": "calculator-method",
         "title": "Using a Calculator Correctly",
@@ -346,28 +257,18 @@
           }
         ]
       },
-
       {
         "id": "verification",
         "title": "Checking the Final Solutions",
         "content": [
           {
             "type": "paragraph",
-            "text": "Substitute each final value into the original equation."
-          },
-          {
-            "type": "paragraph",
-            "text": "Also verify that every answer belongs to the specified interval."
-          },
-          {
-            "type": "paragraph",
-            "text": "For equations involving reciprocals or multiple-angle expressions, checking the original equation is particularly important."
+            "text": "Substitute final values into the original equation and verify that each belongs to the stated interval. More detailed transformation-related checking belongs to trig-equations-10."
           }
         ]
       }
     ]
   },
-
   "formulas": [
     {
       "id": "full-revolution",
@@ -586,7 +487,6 @@
       "explanation": "These values are frequently used when solving tangent equations exactly."
     }
   ],
-
   "examples": [
     {
       "id": "interval-example",
@@ -669,7 +569,6 @@
       "solution": "sin(3x) = 0 gives 3x = nπ, so x = nπ/3. The interval 0 ≤ x < 2π gives n = 0,1,2,3,4,5. Therefore there are 6 solutions: 0, π/3, 2π/3, π, 4π/3, and 5π/3."
     }
   ],
-
   "key_ideas": [
     "A restricted interval determines which solutions are valid.",
     "Always read the endpoint symbols carefully.",
@@ -686,7 +585,6 @@
     "A general solution and a restricted-interval solution are different forms of the answer.",
     "The safest workflow is: solve completely, restrict, then verify."
   ],
-
   "misconceptions": [
     "Giving a general solution when the question asks for solutions in a restricted interval.",
     "Using only the principal inverse-trigonometric value.",
@@ -704,7 +602,6 @@
     "Rounding exact answers unnecessarily.",
     "Failing to check the final answers in the original equation."
   ],
-
   "explorations": [
     {
       "id": "restricted-interval-unit-circle",
@@ -743,9 +640,7 @@
       "type": "why"
     }
   ],
-
   "sources": [
     "libretexts-basic-trigonometric-equations"
   ]
 }
-

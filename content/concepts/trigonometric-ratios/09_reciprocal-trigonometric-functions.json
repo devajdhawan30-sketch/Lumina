@@ -1,13 +1,10 @@
 {
   "id": "reciprocal-trigonometric-functions",
   "title": "Reciprocal Trigonometric Functions",
-
   "subject": "mathematics",
   "topic": "trigonometry",
   "section": "intro-trigono",
-
   "difficulty": 2,
-
   "connections": {
     "prerequisites": [
       "trigonometric-functions",
@@ -17,9 +14,7 @@
       "tangent-function",
       "reciprocal-trigonometric-ratios"
     ],
-
     "leads_to": [],
-
     "related": [
       "trigonometric-functions",
       "sine-function",
@@ -28,63 +23,36 @@
       "reciprocal-trigonometric-ratios"
     ]
   },
-
   "theory": {
     "introduction": "The reciprocal trigonometric functions are cosecant, secant, and cotangent. They are defined as the reciprocals of sine, cosine, and tangent respectively. Their graphs have an important connection with the graphs of the original trigonometric functions: they are undefined wherever the corresponding original function is zero, and their graphs develop vertical asymptotes at those locations. Understanding these functions through reciprocals, domains, ranges, zeros, periods, and graph behavior provides a natural extension of the six basic trigonometric functions.",
-
     "sections": [
       {
         "id": "what-are-reciprocal-functions",
         "title": "What Does Reciprocal Mean?",
-
         "content": [
           {
             "type": "paragraph",
-            "text": "Before studying the reciprocal trigonometric functions, recall what a reciprocal is. The reciprocal of a nonzero number is the number that gives 1 when multiplied by the original number."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, the reciprocal of 5 is \\(\\frac{1}{5}\\), because \\(5\\times\\frac{1}{5}=1\\). The reciprocal of \\(\\frac{2}{3}\\) is \\(\\frac{3}{2}\\), because \\(\\frac{2}{3}\\times\\frac{3}{2}=1\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "The reciprocal of a function is formed by taking 1 divided by the function, wherever that function is nonzero."
-          },
-          {
-            "type": "paragraph",
-            "text": "In trigonometry, this creates three additional functions: cosecant, secant, and cotangent."
+            "text": "The reciprocal relationships were established in reciprocal-trigonometric-ratios. Here the focus changes from ratios in triangles to reciprocal functions as graphs: where they are defined, how they behave, and how their graphs relate to sine, cosine, and tangent."
           }
         ]
       },
-
       {
         "id": "three-reciprocal-functions",
-        "title": "The Three Reciprocal Trigonometric Functions",
-
+        "title": "Three Reciprocal Functions: Function-Level View",
         "content": [
           {
             "type": "paragraph",
-            "text": "The reciprocal of sine is called cosecant and is written \\(\\csc x\\). The reciprocal of cosine is called secant and is written \\(\\sec x\\). The reciprocal of tangent is called cotangent and is written \\(\\cot x\\)."
+            "text": "Secant, cosecant, and cotangent are reciprocal functions: sec x = 1/cos x, csc x = 1/sin x, and cot x = 1/tan x where the denominators are nonzero."
           },
           {
             "type": "paragraph",
-            "text": "Their definitions are \\(\\csc x=\\frac{1}{\\sin x}\\), \\(\\sec x=\\frac{1}{\\cos x}\\), and \\(\\cot x=\\frac{1}{\\tan x}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "These are not completely new ideas. Each function is directly connected to one of the three functions already studied."
-          },
-          {
-            "type": "paragraph",
-            "text": "Because taking a reciprocal requires division, the original function cannot be zero at an input where its reciprocal is defined."
+            "text": "The reciprocal-ratio lesson established these relationships in right-triangle language. This lesson owns their function behavior: domain, range, period, asymptotes, and graphs."
           }
         ]
       },
-
       {
         "id": "cosecant-function",
         "title": "The Cosecant Function",
-
         "content": [
           {
             "type": "paragraph",
@@ -108,11 +76,9 @@
           }
         ]
       },
-
       {
         "id": "secant-function",
         "title": "The Secant Function",
-
         "content": [
           {
             "type": "paragraph",
@@ -136,11 +102,9 @@
           }
         ]
       },
-
       {
         "id": "cotangent-function",
         "title": "The Cotangent Function",
-
         "content": [
           {
             "type": "paragraph",
@@ -164,71 +128,29 @@
           }
         ]
       },
-
       {
         "id": "reciprocal-identities",
         "title": "The Reciprocal Identities",
-
         "content": [
           {
             "type": "paragraph",
-            "text": "The three reciprocal relationships can be written as identities. An identity is an equation that is true for every input for which both sides are defined."
-          },
-          {
-            "type": "paragraph",
-            "text": "The first identity is \\(\\csc x=\\frac{1}{\\sin x}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "The second identity is \\(\\sec x=\\frac{1}{\\cos x}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "The third identity is \\(\\cot x=\\frac{1}{\\tan x}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Using \\(\\tan x=\\frac{\\sin x}{\\cos x}\\), the cotangent identity can also be written as \\(\\cot x=\\frac{\\cos x}{\\sin x}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "These identities allow us to move between the original three trigonometric functions and their reciprocal functions."
+            "text": "The reciprocal identities are a prerequisite reference rather than a new derivation here. Use them to connect each reciprocal graph to its parent function."
           }
         ]
       },
-
       {
         "id": "product-identities",
         "title": "Why Their Products Equal 1",
-
         "content": [
           {
             "type": "paragraph",
-            "text": "A number multiplied by its reciprocal equals 1. The same idea works for trigonometric functions."
-          },
-          {
-            "type": "paragraph",
-            "text": "Since \\(\\csc x=\\frac{1}{\\sin x}\\), multiplying gives \\(\\sin x\\cdot\\csc x=\\sin x\\cdot\\frac{1}{\\sin x}=1\\), whenever sine is nonzero."
-          },
-          {
-            "type": "paragraph",
-            "text": "Similarly, \\(\\cos x\\cdot\\sec x=1\\) whenever cosine is nonzero."
-          },
-          {
-            "type": "paragraph",
-            "text": "Finally, \\(\\tan x\\cdot\\cot x=1\\) whenever tangent is nonzero."
-          },
-          {
-            "type": "paragraph",
-            "text": "These identities are simply the familiar reciprocal property expressed using trigonometric functions."
+            "text": "The identities sin(x)csc(x)=1, cos(x)sec(x)=1, and tan(x)cot(x)=1 follow directly from the reciprocal definitions. They are included as a quick function reference; the underlying ratio idea was already established earlier."
           }
         ]
       },
-
       {
         "id": "domain-cosecant",
         "title": "Domain of Cosecant",
-
         "content": [
           {
             "type": "paragraph",
@@ -248,11 +170,9 @@
           }
         ]
       },
-
       {
         "id": "domain-secant",
         "title": "Domain of Secant",
-
         "content": [
           {
             "type": "paragraph",
@@ -268,11 +188,9 @@
           }
         ]
       },
-
       {
         "id": "domain-cotangent",
         "title": "Domain of Cotangent",
-
         "content": [
           {
             "type": "paragraph",
@@ -288,11 +206,9 @@
           }
         ]
       },
-
       {
         "id": "ranges",
         "title": "Ranges of the Reciprocal Functions",
-
         "content": [
           {
             "type": "paragraph",
@@ -316,11 +232,9 @@
           }
         ]
       },
-
       {
         "id": "zeros",
         "title": "Do Reciprocal Functions Have Zeros?",
-
         "content": [
           {
             "type": "paragraph",
@@ -340,11 +254,9 @@
           }
         ]
       },
-
       {
         "id": "periods",
         "title": "Periods of Reciprocal Functions",
-
         "content": [
           {
             "type": "paragraph",
@@ -368,11 +280,9 @@
           }
         ]
       },
-
       {
         "id": "cosecant-graph",
         "title": "Building the Cosecant Graph",
-
         "content": [
           {
             "type": "paragraph",
@@ -396,11 +306,9 @@
           }
         ]
       },
-
       {
         "id": "secant-graph",
         "title": "Building the Secant Graph",
-
         "content": [
           {
             "type": "paragraph",
@@ -424,11 +332,9 @@
           }
         ]
       },
-
       {
         "id": "cotangent-graph",
         "title": "Building the Cotangent Graph",
-
         "content": [
           {
             "type": "paragraph",
@@ -452,11 +358,9 @@
           }
         ]
       },
-
       {
         "id": "graph-comparison",
         "title": "Comparing the Three Reciprocal Graphs",
-
         "content": [
           {
             "type": "paragraph",
@@ -480,83 +384,19 @@
           }
         ]
       },
-
       {
         "id": "worked-examples",
         "title": "Worked Examples",
-
         "content": [
           {
             "type": "paragraph",
-            "text": "Example 1: Find \\(\\csc30^\\circ\\). Since \\(\\sin30^\\circ=\\frac{1}{2}\\), take the reciprocal: \\(\\csc30^\\circ=2\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 2: Find \\(\\sec60^\\circ\\). Since \\(\\cos60^\\circ=\\frac{1}{2}\\), \\(\\sec60^\\circ=2\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 3: Find \\(\\cot45^\\circ\\). Since \\(\\tan45^\\circ=1\\), its reciprocal is also 1. Therefore, \\(\\cot45^\\circ=1\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 4: Find \\(\\cot30^\\circ\\). Since \\(\\tan30^\\circ=\\frac{\\sqrt{3}}{3}\\), \\(\\cot30^\\circ=\\frac{1}{\\sqrt{3}/3}=\\sqrt{3}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 5: Determine whether \\(\\sec90^\\circ\\) is defined. Since \\(\\cos90^\\circ=0\\), \\(\\sec90^\\circ=\\frac{1}{0}\\), so it is undefined."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 6: Determine whether \\(\\csc180^\\circ\\) is defined. Since \\(\\sin180^\\circ=0\\), \\(\\csc180^\\circ\\) is undefined."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 7: Determine the vertical asymptotes of \\(y=\\csc x\\). Cosecant is undefined where sine is zero. Therefore, the asymptotes occur at \\(x=k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 8: Determine the vertical asymptotes of \\(y=\\sec x\\). Secant is undefined where cosine is zero. Therefore, the asymptotes occur at \\(x=\\frac{\\pi}{2}+k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 9: Determine the vertical asymptotes of \\(y=\\cot x\\). Cotangent is \\(\\frac{\\cos x}{\\sin x}\\), so it is undefined when sine is zero. Therefore, the asymptotes occur at \\(x=k\\pi\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 10: Find the range of \\(\\csc x\\). Since \\(-1\\leq\\sin x\\leq1\\) and sine cannot be zero for cosecant, its reciprocal has magnitude at least 1. Therefore, the range is \\(y\\leq-1\\) or \\(y\\geq1\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 11: Find the period of \\(\\sec x\\). Secant is the reciprocal of cosine, and cosine has period \\(2\\pi\\). Therefore, secant also has period \\(2\\pi\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 12: Find the period of \\(\\cot x\\). Cotangent is the reciprocal of tangent, and tangent has period \\(\\pi\\). Therefore, cotangent also has period \\(\\pi\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 13: Does \\(y=\\csc x\\) have any x-intercepts? No. Cosecant can never equal zero because its numerator is 1."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 14: If \\(\\sin x=\\frac{2}{3}\\), find \\(\\csc x\\). Take the reciprocal: \\(\\csc x=\\frac{3}{2}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 15: If \\(\\sec x=-4\\), find \\(\\cos x\\). Since secant is the reciprocal of cosine, \\(\\cos x=\\frac{1}{\\sec x}=-\\frac{1}{4}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 16: If \\(\\cot x=-2\\), find \\(\\tan x\\). Since cotangent and tangent are reciprocals, \\(\\tan x=-\\frac{1}{2}\\)."
+            "text": "The examples here focus on function behavior, domain, range, period, asymptotes, and graph interpretation. Calculating reciprocal ratios from right-triangle sides belongs to reciprocal-trigonometric-ratios."
           }
         ]
       },
-
       {
         "id": "visualization",
         "title": "Visualizing Reciprocal Graphs",
-
         "content": [
           {
             "type": "paragraph",
@@ -584,11 +424,9 @@
           }
         ]
       },
-
       {
         "id": "common-mistakes",
         "title": "Common Mistakes to Avoid",
-
         "content": [
           {
             "type": "paragraph",
@@ -632,11 +470,9 @@
           }
         ]
       },
-
       {
         "id": "big-picture",
         "title": "The Big Picture",
-
         "content": [
           {
             "type": "paragraph",
@@ -674,7 +510,6 @@
       }
     ]
   },
-
   "formulas": [
     {
       "id": "cosecant-definition",
@@ -773,7 +608,6 @@
       "explanation": "Cotangent has the same basic period as tangent: \\(\\pi\\)."
     }
   ],
-
   "examples": [
     {
       "id": "example-csc-30",
@@ -856,7 +690,6 @@
       "solution": "Cotangent and tangent are reciprocals. Therefore, \\(\\tan x=\\frac{1}{-2}=-\\frac{1}{2}\\)."
     }
   ],
-
   "key_ideas": [
     "A reciprocal is a number or expression that multiplies with the original to give 1.",
     "Cosecant is the reciprocal of sine.",
@@ -886,7 +719,6 @@
     "Reciprocal functions are extensions of the original three trigonometric functions rather than unrelated functions.",
     "The product of a trigonometric function and its reciprocal is 1 wherever both are defined."
   ],
-
   "misconceptions": [
     "Secant is the inverse function of cosine.",
     "Cosecant is the inverse function of sine.",
@@ -911,7 +743,6 @@
     "Cosecant and secant are always greater than 1.",
     "The reciprocal graphs must look exactly like the original graphs."
   ],
-
   "explorations": [
     {
       "id": "explore-reciprocal-sine",
@@ -938,7 +769,6 @@
       "type": "visualization"
     }
   ],
-
   "sources": [
     "khan-academy-trigonometry",
     "openstax-precalculus"

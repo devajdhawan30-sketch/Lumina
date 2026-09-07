@@ -155,18 +155,7 @@
         "content": [
           {
             "type": "paragraph",
-            "id": "measurement-system",
-            "text": "Just as length can be measured in different units, angles can be represented using different measurement systems. The physical rotation does not change when the measurement system changes; only the numerical representation changes."
-          },
-          {
-            "type": "paragraph",
-            "id": "degree-system-motivation",
-            "text": "One familiar system divides a complete revolution into 360 equal parts. Each part is one degree, so a complete revolution measures 360 degrees. This makes a quarter-turn 90 degrees and a half-turn 180 degrees."
-          },
-          {
-            "type": "paragraph",
-            "id": "units-not-geometry",
-            "text": "The number 360 is a convention for the degree system, not a property that every possible angle-measurement system must use. Trigonometry also uses a measurement system built from the geometry of circles themselves."
+            "text": "Angle measurement can use different units. This lesson introduces the need for a unit; the complete comparison, definition, conversion rules, and common values for degrees and radians are taught in degrees-and-radians."
           }
         ]
       },
@@ -176,18 +165,7 @@
         "content": [
           {
             "type": "paragraph",
-            "id": "one-degree",
-            "text": "In the degree system, one degree represents one three-hundred-sixtieth of a complete revolution. Therefore, the numerical degree measure can be interpreted as how many of these equal parts of a full turn the rotation contains."
-          },
-          {
-            "type": "paragraph",
-            "id": "common-revolution-measures",
-            "text": "A quarter revolution corresponds to 90 degrees, a half revolution to 180 degrees, three-quarters of a revolution to 270 degrees, and one complete revolution to 360 degrees."
-          },
-          {
-            "type": "paragraph",
-            "id": "multiple-revolutions-degrees",
-            "text": "Because a rotation can continue beyond one revolution, angles can have degree measures greater than 360 degrees or negative degree measures when the rotation is clockwise."
+            "text": "A degree divides one full revolution into 360 equal parts. This is enough here to establish the idea of a measurement unit; the detailed degree/radian conversion system belongs to degrees-and-radians."
           }
         ]
       },
@@ -197,18 +175,7 @@
         "content": [
           {
             "type": "paragraph",
-            "id": "degree-is-convention",
-            "text": "Degrees are useful, but their definition begins with the convention of dividing a full revolution into 360 equal parts. A circle also contains another natural relationship: its radius and the arc traced by a central angle."
-          },
-          {
-            "type": "paragraph",
-            "id": "natural-circle-measure",
-            "text": "Because the ratio of arc length to radius depends only on the angle, that ratio can itself be used to measure the angle. This leads to radian measure."
-          },
-          {
-            "type": "paragraph",
-            "id": "bridge-to-next-file",
-            "text": "The next step is therefore to understand degrees and radians as two different ways of assigning numbers to the same rotation, how they are related, and why radians become especially natural when trigonometry is connected with circles and later mathematics."
+            "text": "Radians will be introduced as the natural circle-based angle measure in the next lesson. The full definition, why radians are useful, and conversion formulas are intentionally left to degrees-and-radians."
           }
         ]
       }

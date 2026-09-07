@@ -26,27 +26,7 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Before learning the new trigonometric ratios, we need to understand the word reciprocal."
-          },
-          {
-            "type": "paragraph",
-            "text": "The reciprocal of a non-zero number is the number that gives \\(1\\) when multiplied by the original number."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, the reciprocal of \\(5\\) is \\(\\frac{1}{5}\\), because \\(5\\times\\frac{1}{5}=1\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "The reciprocal of \\(\\frac{3}{7}\\) is \\(\\frac{7}{3}\\), because \\(\\frac{3}{7}\\times\\frac{7}{3}=1\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "For a fraction, taking the reciprocal means switching the numerator and denominator."
-          },
-          {
-            "type": "paragraph",
-            "text": "Therefore, if \\(\\sin(\\theta)=\\frac{O}{H}\\), its reciprocal is \\(\\frac{H}{O}\\). This reciprocal ratio is called cosecant."
+            "text": "A reciprocal reverses a nonzero number or ratio: a/b becomes b/a. In this lesson the idea is applied to the three basic trigonometric ratios. The later reciprocal-trigonometric-functions concept develops the corresponding functions, graphs, domains, ranges, and periods."
           }
         ]
       },
@@ -594,35 +574,7 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "For a chosen acute angle in a right triangle, the six trigonometric ratios can be organised into three reciprocal pairs."
-          },
-          {
-            "type": "paragraph",
-            "text": "The first pair is sine and cosecant:"
-          },
-          {
-            "type": "paragraph",
-            "text": "\\[\\sin(\\theta)=\\frac{O}{H},\\qquad\\csc(\\theta)=\\frac{H}{O}\\]"
-          },
-          {
-            "type": "paragraph",
-            "text": "The second pair is cosine and secant:"
-          },
-          {
-            "type": "paragraph",
-            "text": "\\[\\cos(\\theta)=\\frac{A}{H},\\qquad\\sec(\\theta)=\\frac{H}{A}\\]"
-          },
-          {
-            "type": "paragraph",
-            "text": "The third pair is tangent and cotangent:"
-          },
-          {
-            "type": "paragraph",
-            "text": "\\[\\tan(\\theta)=\\frac{O}{A},\\qquad\\cot(\\theta)=\\frac{A}{O}\\]"
-          },
-          {
-            "type": "paragraph",
-            "text": "This arrangement is useful because it shows that the six ratios are built from only three side comparisons and their reciprocals."
+            "text": "Use this as a quick reference for all six ratios. The full function-level comparison of sine, cosine, tangent, secant, cosecant, and cotangent is reserved for trigonometric-functions; this lesson focuses on how the three reciprocal ratios are obtained from the basic ratios."
           }
         ]
       },
@@ -662,19 +614,7 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "The word inverse can cause confusion in trigonometry because it can refer to different ideas."
-          },
-          {
-            "type": "paragraph",
-            "text": "A reciprocal means taking \\(\\frac{1}{x}\\). For example, the reciprocal of \\(\\sin(\\theta)\\) is \\(\\frac{1}{\\sin(\\theta)}\\), which is \\(\\csc(\\theta)\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "This is different from an inverse function. Reciprocal ratios are the topic here; inverse trigonometric functions are a different concept and are not needed to understand cosecant, secant and cotangent."
-          },
-          {
-            "type": "paragraph",
-            "text": "For now, focus on the simple rule: reciprocal means flip the fraction."
+            "text": "A reciprocal and an inverse function are different ideas. This distinction is introduced here because it prevents a common mistake; inverse trigonometric functions are treated separately when solving equations."
           }
         ]
       },

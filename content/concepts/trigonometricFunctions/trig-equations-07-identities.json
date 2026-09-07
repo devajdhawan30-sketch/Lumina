@@ -1,14 +1,10 @@
-
 {
   "id": "trig-equations-07",
   "title": "Equations Using Identities",
-
   "subject": "mathematics",
   "topic": "trigonometry",
   "section": "trigonometric-equations",
-
   "difficulty": 4,
-
   "connections": {
     "prerequisites": [
       "advanced-trigonometric-identities",
@@ -24,10 +20,8 @@
       "double-angle-identities"
     ]
   },
-
   "theory": {
     "introduction": "Many difficult trigonometric equations cannot be solved directly. The key is to transform them into a familiar form using identities. The most important skill is not merely memorizing identities, but recognizing which identity will simplify the equation. A good transformation usually reduces the number of different trigonometric functions, reduces the complexity of the expression, creates a factorable or quadratic form, or converts the equation into one of the basic equations already learned.",
-
     "sections": [
       {
         "id": "choose-identity",
@@ -51,42 +45,16 @@
           }
         ]
       },
-
       {
         "id": "identity-strategy",
         "title": "A General Identity-Solving Strategy",
         "content": [
           {
             "type": "paragraph",
-            "text": "Step 1: Identify the different trigonometric functions and powers present."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 2: Decide whether the equation should be rewritten using reciprocal, quotient, Pythagorean, double-angle, half-angle, sum-and-difference, or product-to-sum identities."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 3: Transform only enough to reach a familiar solvable form."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 4: Use algebraic techniques such as factoring or substitution when appropriate."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 5: Solve all resulting trigonometric equations."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 6: Apply the required interval or write the complete general solution."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 7: Check the solutions in the original equation, especially when division, squaring, reciprocals, or other domain-changing operations were used."
+            "text": "This lesson is the central identity reference for the equation module. Learn how to recognize and select an identity, but later equation lessons should use the required identity as a tool rather than reteaching the identity library."
           }
         ]
       },
-
       {
         "id": "pythagorean-identities",
         "title": "Pythagorean Identities",
@@ -109,7 +77,6 @@
           }
         ]
       },
-
       {
         "id": "reciprocal-identities",
         "title": "Reciprocal Identities",
@@ -128,7 +95,6 @@
           }
         ]
       },
-
       {
         "id": "quotient-identities",
         "title": "Quotient Identities",
@@ -143,7 +109,6 @@
           }
         ]
       },
-
       {
         "id": "even-odd-identities",
         "title": "Even and Odd Identities",
@@ -158,7 +123,6 @@
           }
         ]
       },
-
       {
         "id": "cofunction-identities",
         "title": "Cofunction Identities",
@@ -173,7 +137,6 @@
           }
         ]
       },
-
       {
         "id": "sum-difference-identities",
         "title": "Sum and Difference Identities",
@@ -192,7 +155,6 @@
           }
         ]
       },
-
       {
         "id": "double-angle-identities",
         "title": "Double-Angle Identities",
@@ -215,7 +177,6 @@
           }
         ]
       },
-
       {
         "id": "power-reduction-identities",
         "title": "Power-Reduction Identities",
@@ -234,7 +195,6 @@
           }
         ]
       },
-
       {
         "id": "triple-angle-identities",
         "title": "Triple-Angle Identities",
@@ -253,7 +213,6 @@
           }
         ]
       },
-
       {
         "id": "half-angle-identities",
         "title": "Half-Angle Identities",
@@ -272,7 +231,6 @@
           }
         ]
       },
-
       {
         "id": "product-to-sum",
         "title": "Product-to-Sum Identities",
@@ -291,7 +249,6 @@
           }
         ]
       },
-
       {
         "id": "sum-to-product",
         "title": "Sum-to-Product Identities",
@@ -306,7 +263,6 @@
           }
         ]
       },
-
       {
         "id": "identity-and-factoring",
         "title": "Combining Identities with Factoring",
@@ -325,7 +281,6 @@
           }
         ]
       },
-
       {
         "id": "identity-and-quadratic",
         "title": "Combining Identities with Quadratic Methods",
@@ -344,34 +299,16 @@
           }
         ]
       },
-
       {
         "id": "identity-equation-workflow",
         "title": "Complete Identity-Based Solving Workflow",
         "content": [
           {
             "type": "paragraph",
-            "text": "First identify the target form you want. Usually the goal is sin(x) = a, cos(x) = a, tan(x) = a, a factorized equation, or a quadratic equation."
-          },
-          {
-            "type": "paragraph",
-            "text": "Then select an identity that moves the equation toward that target."
-          },
-          {
-            "type": "paragraph",
-            "text": "Simplify carefully and preserve equality at every step."
-          },
-          {
-            "type": "paragraph",
-            "text": "Once the equation reaches a familiar form, stop applying identities and solve it using the methods already learned."
-          },
-          {
-            "type": "paragraph",
-            "text": "Finally, verify the solutions in the original equation and respect all domain restrictions."
+            "text": "When an equation needs an identity, identify the target form first, apply the smallest useful identity transformation, solve the resulting trigonometric equation, and check the original equation when necessary. Multiple-angle equation mechanics are applied in trig-equations-08; general-solution notation is consolidated in trig-equations-11."
           }
         ]
       },
-
       {
         "id": "domain-awareness",
         "title": "Domain Restrictions During Identity Manipulation",
@@ -390,7 +327,6 @@
           }
         ]
       },
-
       {
         "id": "identity-selection-guide",
         "title": "Which Identity Should I Try?",
@@ -443,7 +379,6 @@
       }
     ]
   },
-
   "formulas": [
     {
       "id": "pythagorean",
@@ -746,7 +681,6 @@
       "explanation": "The fundamental principle behind identity-based equation solving. Choose the form that makes the equation easier to solve."
     }
   ],
-
   "examples": [
     {
       "id": "identity-example",
@@ -814,7 +748,6 @@
       "solution": "Consider tan(x) = sin(x)/cos(x). This equality is valid only where cos(x) ≠ 0 because tan(x) is undefined when cos(x) = 0. Therefore replacing tan(x) with sin(x)/cos(x) does not make those excluded values valid. Domain restrictions from the original equation must always be preserved."
     }
   ],
-
   "key_ideas": [
     "The purpose of an identity is to transform an equation into a form that is easier to solve.",
     "Do not use identities randomly; choose one based on the structure of the equation.",
@@ -836,7 +769,6 @@
     "The best identity is the one that moves the equation closer to a familiar solvable form.",
     "Some identities are far more frequently used in problem solving than others; these are explicitly marked as important."
   ],
-
   "misconceptions": [
     "Trying random identities without first identifying the desired target form.",
     "Assuming that applying more identities always makes an equation easier.",
@@ -856,7 +788,6 @@
     "Assuming that an identity transformation automatically preserves values where the transformed expression is undefined.",
     "Checking only the transformed equation instead of the original equation when division or another potentially non-reversible operation was used."
   ],
-
   "explorations": [
     {
       "id": "identity-to-equation",
@@ -887,11 +818,7 @@
       "type": "why"
     }
   ],
-
   "sources": [
     "openstax-precalculus-trigonometric-equations"
   ]
 }
-
-
-

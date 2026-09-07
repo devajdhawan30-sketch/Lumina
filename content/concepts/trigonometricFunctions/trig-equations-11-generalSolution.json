@@ -1,13 +1,10 @@
 {
   "id": "trig-equations-11",
   "title": "Writing the General Solution",
-
   "subject": "mathematics",
   "topic": "trigonometry",
   "section": "trigonometric-equations",
-
   "difficulty": 4,
-
   "connections": {
     "prerequisites": [
       "trig-equations-02",
@@ -28,10 +25,8 @@
       "multiple-angle-identities"
     ]
   },
-
   "theory": {
     "introduction": "When no interval is specified, a trigonometric equation usually requires a general solution: a mathematical expression that represents every angle satisfying the equation. Because trigonometric functions are periodic, a single equation can have infinitely many solutions. The general solution captures this repeating pattern using an integer parameter such as n ∈ ℤ. Writing a correct general solution requires understanding the function's period, all solution branches within one period, the effect of multiple angles such as 2x or 3x, and any domain restrictions.",
-
     "sections": [
       {
         "id": "what-is-general-solution",
@@ -51,7 +46,6 @@
           }
         ]
       },
-
       {
         "id": "integer-parameter",
         "title": "Using an Integer Parameter",
@@ -70,7 +64,6 @@
           }
         ]
       },
-
       {
         "id": "period-determines-solution",
         "title": "The Period Determines the General Solution",
@@ -93,7 +86,6 @@
           }
         ]
       },
-
       {
         "id": "sine-general-solution",
         "title": "General Solution of Sine Equations",
@@ -116,7 +108,6 @@
           }
         ]
       },
-
       {
         "id": "cosine-general-solution",
         "title": "General Solution of Cosine Equations",
@@ -135,7 +126,6 @@
           }
         ]
       },
-
       {
         "id": "tangent-general-solution",
         "title": "General Solution of Tangent Equations",
@@ -154,53 +144,26 @@
           }
         ]
       },
-
       {
         "id": "reciprocal-general-solutions",
         "title": "General Solutions for Reciprocal Functions",
         "content": [
           {
             "type": "paragraph",
-            "text": "Secant, cosecant, and cotangent equations are usually rewritten using reciprocal identities before solving."
-          },
-          {
-            "type": "paragraph",
-            "text": "For sec(x) = a, rewrite it as cos(x) = 1/a, provided a ≠ 0 and the resulting cosine value lies in [−1, 1]."
-          },
-          {
-            "type": "paragraph",
-            "text": "For csc(x) = a, rewrite it as sin(x) = 1/a, provided a ≠ 0 and the resulting sine value lies in [−1, 1]."
-          },
-          {
-            "type": "paragraph",
-            "text": "For cot(x) = a, rewrite it as tan(x) = 1/a, provided a ≠ 0."
-          },
-          {
-            "type": "paragraph",
-            "text": "Domain restrictions must still be checked because reciprocal functions are undefined wherever their denominator is zero."
+            "text": "Secant, cosecant, and cotangent general solutions are obtained by the reciprocal-function solving method in trig-equations-04. Here the focus is how those complete solution families are written using n ∈ ℤ."
           }
         ]
       },
-
       {
         "id": "zero-values",
         "title": "General Solutions for Zero Values",
         "content": [
           {
             "type": "paragraph",
-            "text": "Some equations have especially simple general solutions. For example, sin(x) = 0 occurs at every integer multiple of π, while cos(x) = 0 occurs at every odd multiple of π/2."
-          },
-          {
-            "type": "paragraph",
-            "text": "Tangent equals zero whenever sine is zero and cosine is nonzero, giving x = nπ."
-          },
-          {
-            "type": "paragraph",
-            "text": "Secant and cosecant can never equal zero because they are reciprocals of cosine and sine."
+            "text": "These special cases follow the basic equation patterns from trig-equations-03. They are collected here only because they are especially useful when writing compact general solutions."
           }
         ]
       },
-
       {
         "id": "multiple-angle-general",
         "title": "General Solutions with Multiple Angles",
@@ -223,7 +186,6 @@
           }
         ]
       },
-
       {
         "id": "composite-angle-general",
         "title": "Composite Angles",
@@ -242,30 +204,16 @@
           }
         ]
       },
-
       {
         "id": "identity-before-general",
         "title": "Using Identities Before Writing the General Solution",
         "content": [
           {
             "type": "paragraph",
-            "text": "Many equations cannot immediately be written in a standard form. They may first require identities, factoring, substitution, or algebraic manipulation."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, an equation such as 2sin²(x) − 1 = 0 can be transformed into sin²(x) = 1/2 and then into sin(x) = ±1/√2."
-          },
-          {
-            "type": "paragraph",
-            "text": "Both signs must be considered before constructing the general solution."
-          },
-          {
-            "type": "paragraph",
-            "text": "The final answer should represent every solution of the original equation, not merely every solution of an intermediate equation."
+            "text": "Identity manipulation and equation solving are developed in trig-equations-07. Once the equation has been reduced to a standard trigonometric form, use this lesson to express the complete solution family."
           }
         ]
       },
-
       {
         "id": "degrees-and-radians",
         "title": "General Solutions in Degrees and Radians",
@@ -284,53 +232,26 @@
           }
         ]
       },
-
       {
         "id": "general-vs-restricted",
         "title": "General Solution vs Restricted Solution",
         "content": [
           {
             "type": "paragraph",
-            "text": "A restricted solution lists only the solutions lying inside a specified interval such as 0 ≤ x < 2π or 0° ≤ x ≤ 360°."
-          },
-          {
-            "type": "paragraph",
-            "text": "A general solution represents all solutions, usually through an integer parameter n."
-          },
-          {
-            "type": "paragraph",
-            "text": "If a question asks for the general solution, do not stop after listing the solutions in one revolution."
-          },
-          {
-            "type": "paragraph",
-            "text": "If a question specifies an interval, use the general solution as a pattern and then select only the values that lie inside the requested interval."
+            "text": "Restricted-interval solving belongs to trig-equations-09. A general solution describes every solution using an integer parameter; a restricted solution selects only those values inside a stated interval."
           }
         ]
       },
-
       {
         "id": "checking-general-solution",
         "title": "Checking a General Solution",
         "content": [
           {
             "type": "paragraph",
-            "text": "A general solution should be checked conceptually and, when necessary, algebraically."
-          },
-          {
-            "type": "paragraph",
-            "text": "Check that the formula reproduces known solutions for several integer values of n and that increasing n moves between solutions by the correct period."
-          },
-          {
-            "type": "paragraph",
-            "text": "If algebraic transformations such as squaring, multiplying by an expression that might be zero, or taking reciprocals were used, substitute the final solutions back into the original equation."
-          },
-          {
-            "type": "paragraph",
-            "text": "Domain restrictions must also be respected."
+            "text": "The original-equation checking workflow belongs to trig-equations-10. Here, checking means confirming that the general formula has the correct period, branches, and domain restrictions."
           }
         ]
       },
-
       {
         "id": "solution-counting",
         "title": "Understanding Why Solutions Repeat",
@@ -349,40 +270,18 @@
           }
         ]
       },
-
       {
         "id": "systematic-method",
         "title": "Systematic Method for Writing General Solutions",
         "content": [
           {
             "type": "paragraph",
-            "text": "First simplify the equation until it is in a solvable trigonometric form."
-          },
-          {
-            "type": "paragraph",
-            "text": "Next identify the trigonometric function and determine its period."
-          },
-          {
-            "type": "paragraph",
-            "text": "Find every solution branch for one complete period."
-          },
-          {
-            "type": "paragraph",
-            "text": "Introduce the appropriate integer parameter n."
-          },
-          {
-            "type": "paragraph",
-            "text": "If the equation contains kx or another composite angle, solve for the complete angle expression first and then isolate x."
-          },
-          {
-            "type": "paragraph",
-            "text": "Finally check domain restrictions and substitute into the original equation when transformations could have introduced or removed solutions."
+            "text": "Simplify using the appropriate earlier method, identify the trigonometric function and its period, generate every branch, introduce n ∈ ℤ, isolate x for multiple/composite angles, and then apply domain and original-equation checks when required. This lesson owns the final general-solution notation, not the earlier solving techniques."
           }
         ]
       }
     ]
   },
-
   "formulas": [
     {
       "id": "sine-general",
@@ -625,7 +524,6 @@
       "explanation": "Essential when transformations may introduce extraneous solutions or violate domain restrictions."
     }
   ],
-
   "examples": [
     {
       "id": "general-sine-example",
@@ -718,7 +616,6 @@
       "solution": "Rewrite as cos(x) = 2. Since cosine can only take values from −1 to 1, cos(x) = 2 is impossible. Therefore there is no real solution."
     }
   ],
-
   "key_ideas": [
     "A general solution represents every solution, not just the solutions in one revolution.",
     "n represents any integer, so always state n ∈ ℤ.",
@@ -740,7 +637,6 @@
     "The integer parameter allows the solution pattern to extend infinitely in both directions.",
     "A correct general solution must contain every valid branch and must not include invalid values."
   ],
-
   "misconceptions": [
     "Forgetting to include n ∈ ℤ.",
     "Giving only the solutions from 0 to 2π when a general solution is required.",
@@ -763,7 +659,6 @@
     "Forgetting that the period of sin(kx), cos(kx), and tan(kx) changes when the angle is multiplied by k.",
     "Failing to check whether the equation has any real solution based on the range of the function."
   ],
-
   "explorations": [
     {
       "id": "general-solution-patterns",
@@ -806,7 +701,6 @@
       "type": "why"
     }
   ],
-
   "sources": [
     "libretexts-basic-trigonometric-equations",
     "openstax-precalculus-trigonometric-equations"

@@ -1,39 +1,31 @@
 {
   "id": "tangent-function",
   "title": "Tangent Function",
-
   "subject": "mathematics",
   "topic": "trigonometry",
   "section": "intro-trigono",
-
   "difficulty": 2,
-
   "connections": {
     "prerequisites": [
       "trigonometric-functions",
       "trigonometric-ratios-any-angle",
       "exact-trigonometric-values"
     ],
-
     "leads_to": [
       "reciprocal-trigonometric-functions"
     ],
-
     "related": [
       "sine-function",
       "cosine-function",
       "trigonometric-functions"
     ]
   },
-
   "theory": {
     "introduction": "The tangent function is the third fundamental trigonometric function. We first encountered tangent as the ratio of the opposite side to the adjacent side of a right triangle. When tangent is viewed as a function, an angle becomes the input and the tangent value becomes the output. Unlike sine and cosine, tangent is not bounded between -1 and 1. It can become arbitrarily large in magnitude and is undefined at certain angles. Its graph therefore has a distinctive repeating pattern separated by vertical asymptotes. Understanding why these asymptotes occur and how the graph is connected to sine and cosine is essential for understanding tangent as a function.",
-
     "sections": [
       {
         "id": "what-is-tangent",
         "title": "What Is the Tangent Function?",
-
         "content": [
           {
             "type": "paragraph",
@@ -57,39 +49,19 @@
           }
         ]
       },
-
       {
         "id": "tangent-sine-cosine",
         "title": "Tangent as Sine Divided by Cosine",
-
         "content": [
           {
             "type": "paragraph",
-            "text": "One of the most important relationships in trigonometry is \\(\\tan x=\\frac{\\sin x}{\\cos x}\\), whenever \\(\\cos x\\neq0\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "This relationship can be derived directly from the right-triangle definitions. We have \\(\\sin\\theta=\\frac{\\text{opposite}}{\\text{hypotenuse}}\\) and \\(\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Dividing sine by cosine gives \\(\\frac{\\sin\\theta}{\\cos\\theta}=\\frac{\\text{opposite}/\\text{hypotenuse}}{\\text{adjacent}/\\text{hypotenuse}}\\). The two occurrences of the hypotenuse cancel, leaving \\(\\frac{\\text{opposite}}{\\text{adjacent}}\\), which is exactly tangent."
-          },
-          {
-            "type": "paragraph",
-            "text": "The coordinate-plane definition leads to the same relationship. If a point on the terminal side of an angle has coordinates \\((x,y)\\) and distance \\(r\\) from the origin, then \\(\\sin\\theta=\\frac{y}{r}\\) and \\(\\cos\\theta=\\frac{x}{r}\\). Therefore, \\(\\tan\\theta=\\frac{y/r}{x/r}=\\frac{y}{x}\\), provided \\(x\\neq0\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "This formula is also the key to understanding why tangent is undefined at certain angles."
+            "text": "Tangent can be related to sine and cosine by tan(x)=sin(x)/cos(x), provided cos(x)≠0. This relationship is useful here for understanding tangent behavior; the broader six-function comparison belongs to trigonometric-functions."
           }
         ]
       },
-
       {
         "id": "tangent-unit-circle",
         "title": "Tangent on the Unit Circle",
-
         "content": [
           {
             "type": "paragraph",
@@ -113,11 +85,9 @@
           }
         ]
       },
-
       {
         "id": "key-values",
         "title": "Important Tangent Values",
-
         "content": [
           {
             "type": "paragraph",
@@ -145,11 +115,9 @@
           }
         ]
       },
-
       {
         "id": "zeros",
         "title": "Zeros of the Tangent Function",
-
         "content": [
           {
             "type": "paragraph",
@@ -173,11 +141,9 @@
           }
         ]
       },
-
       {
         "id": "undefined-values",
         "title": "Why Is Tangent Undefined at Certain Angles?",
-
         "content": [
           {
             "type": "paragraph",
@@ -201,11 +167,9 @@
           }
         ]
       },
-
       {
         "id": "vertical-asymptotes",
         "title": "Vertical Asymptotes",
-
         "content": [
           {
             "type": "paragraph",
@@ -237,11 +201,9 @@
           }
         ]
       },
-
       {
         "id": "period",
         "title": "The Period of Tangent",
-
         "content": [
           {
             "type": "paragraph",
@@ -265,11 +227,9 @@
           }
         ]
       },
-
       {
         "id": "unbounded",
         "title": "Why Tangent Is Unbounded",
-
         "content": [
           {
             "type": "paragraph",
@@ -293,11 +253,9 @@
           }
         ]
       },
-
       {
         "id": "building-graph",
         "title": "Building the Basic Tangent Graph",
-
         "content": [
           {
             "type": "paragraph",
@@ -325,11 +283,9 @@
           }
         ]
       },
-
       {
         "id": "signs",
         "title": "Where Is Tangent Positive or Negative?",
-
         "content": [
           {
             "type": "paragraph",
@@ -357,11 +313,9 @@
           }
         ]
       },
-
       {
         "id": "negative-angles",
         "title": "Tangent of Negative Angles",
-
         "content": [
           {
             "type": "paragraph",
@@ -385,95 +339,39 @@
           }
         ]
       },
-
-      {
-        "id": "tangent-cycle",
-        "title": "One Complete Cycle of Tangent",
-
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "One basic tangent cycle can be studied between the vertical asymptotes \\(x=-\\frac{\\pi}{2}\\) and \\(x=\\frac{\\pi}{2}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "As \\(x\\) approaches \\(-\\frac{\\pi}{2}\\) from the right, tangent becomes very large and negative."
-          },
-          {
-            "type": "paragraph",
-            "text": "At \\(x=-\\frac{\\pi}{4}\\), tangent equals \\(-1\\). At \\(x=0\\), tangent equals \\(0\\). At \\(x=\\frac{\\pi}{4}\\), tangent equals \\(1\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "As \\(x\\) approaches \\(\\frac{\\pi}{2}\\) from the left, tangent becomes very large and positive."
-          },
-          {
-            "type": "paragraph",
-            "text": "This increasing branch between two consecutive asymptotes represents one complete tangent cycle. The next branch begins after \\(x=\\frac{\\pi}{2}\\) and has the same shape."
-          }
-        ]
-      },
-
       {
         "id": "worked-examples",
-        "title": "Worked Examples",
-
+        "title": "Worked Examples: Tangent-Specific Behavior",
         "content": [
           {
             "type": "paragraph",
-            "text": "Example 1: Evaluate \\(\\tan45^\\circ\\). Since \\(\\sin45^\\circ=\\frac{\\sqrt{2}}{2}\\) and \\(\\cos45^\\circ=\\frac{\\sqrt{2}}{2}\\), we get \\(\\tan45^\\circ=\\frac{\\sqrt{2}/2}{\\sqrt{2}/2}=1\\)."
+            "text": "Example 1: Evaluate tan 45°. Using tan x = sin x / cos x gives 1."
           },
           {
             "type": "paragraph",
-            "text": "Example 2: Evaluate \\(\\tan60^\\circ\\). Using the exact values, \\(\\tan60^\\circ=\\frac{\\sqrt{3}/2}{1/2}=\\sqrt{3}\\)."
+            "text": "Example 2: Explain why tan 90° is undefined. Since cos 90° = 0, the quotient sin 90° / cos 90° divides by zero."
           },
           {
             "type": "paragraph",
-            "text": "Example 3: Explain why \\(\\tan90^\\circ\\) is undefined. Since \\(\\cos90^\\circ=0\\), we have \\(\\tan90^\\circ=\\frac{1}{0}\\), which is undefined."
+            "text": "Example 3: Find the zeros of tangent. Tangent is zero when sine is zero and cosine is nonzero, giving x = kπ, k ∈ ℤ."
           },
           {
             "type": "paragraph",
-            "text": "Example 4: Find the zeros of tangent. Tangent equals zero when sine equals zero while cosine is nonzero. Therefore, \\(x=k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
+            "text": "Example 4: Find the period of tangent. The period is π because tan(x + π) = tan x."
           },
           {
             "type": "paragraph",
-            "text": "Example 5: Find the period of tangent. Tangent repeats after \\(\\pi\\) radians, so its period is \\(\\pi\\)."
+            "text": "Example 5: Determine the sign of tan 120°. Sine is positive and cosine is negative in Quadrant II, so tangent is negative."
           },
           {
             "type": "paragraph",
-            "text": "Example 6: Determine whether \\(\\tan120^\\circ\\) is positive or negative. The angle lies in quadrant II, where sine is positive and cosine is negative. Their quotient is negative, so \\(\\tan120^\\circ<0\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 7: Determine whether \\(\\tan240^\\circ\\) is positive or negative. The angle lies in quadrant III, where both sine and cosine are negative. Their quotient is positive, so \\(\\tan240^\\circ>0\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 8: Evaluate \\(\\tan210^\\circ\\). Since \\(210^\\circ=180^\\circ+30^\\circ\\) and tangent has period \\(180^\\circ\\), \\(\\tan210^\\circ=\\tan30^\\circ=\\frac{\\sqrt{3}}{3}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 9: Evaluate \\(\\tan(-45^\\circ)\\). Since tangent is an odd function, \\(\\tan(-45^\\circ)=-\\tan45^\\circ=-1\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 10: Find the vertical asymptotes of \\(y=\\tan x\\). Tangent is undefined when cosine is zero. Therefore, the vertical asymptotes occur at \\(x=\\frac{\\pi}{2}+k\\pi\\), where \\(k\\in\\mathbb{Z}\\)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 11: Explain why tangent can be greater than 1. Tangent is a ratio of opposite to adjacent, and there is no requirement that the opposite side be shorter than the adjacent side. Therefore, ratios such as \\(\\sqrt{3}\\) are possible."
-          },
-          {
-            "type": "paragraph",
-            "text": "Example 12: Determine the range of \\(y=\\tan x\\). Tangent can take arbitrarily large positive and negative values and can produce every real number. Therefore, its range is \\(\\mathbb{R}\\)."
+            "text": "Example 6: Find the vertical asymptotes of y = tan x. They occur where cosine is zero: x = π/2 + kπ, k ∈ ℤ."
           }
         ]
       },
-
       {
         "id": "visual-exploration",
         "title": "Visual Exploration: Unit Circle to Tangent Graph",
-
         "content": [
           {
             "type": "paragraph",
@@ -497,11 +395,9 @@
           }
         ]
       },
-
       {
         "id": "common-mistakes",
         "title": "Common Mistakes to Avoid",
-
         "content": [
           {
             "type": "paragraph",
@@ -541,11 +437,9 @@
           }
         ]
       },
-
       {
         "id": "big-picture",
         "title": "The Big Picture",
-
         "content": [
           {
             "type": "paragraph",
@@ -579,7 +473,6 @@
       }
     ]
   },
-
   "formulas": [
     {
       "id": "basic-tangent-function",
@@ -648,7 +541,6 @@
       "explanation": "Tangent is an odd function, so reversing the sign of the angle reverses the sign of the tangent value."
     }
   ],
-
   "examples": [
     {
       "id": "example-tan-45",
@@ -711,7 +603,6 @@
       "solution": "Tangent can produce arbitrarily large positive and negative values and every real number in between. Therefore, its range is \\(\\mathbb{R}\\)."
     }
   ],
-
   "key_ideas": [
     "The basic tangent function is written as \\(y=\\tan x\\).",
     "Tangent takes an angle as input and produces a numerical output.",
@@ -740,7 +631,6 @@
     "The period of tangent is half the period of sine and cosine.",
     "Tangent's unusual graph follows naturally from its relationship with sine and cosine."
   ],
-
   "misconceptions": [
     "Tangent must always lie between -1 and 1.",
     "Tangent at 90 degrees is infinity.",
@@ -760,7 +650,6 @@
     "A very large tangent value means tangent is equal to infinity.",
     "The zeros of tangent occur at odd multiples of \\(\\frac{\\pi}{2}\\)."
   ],
-
   "explorations": [
     {
       "id": "explore-unit-circle-tangent",
@@ -787,7 +676,6 @@
       "type": "visualization"
     }
   ],
-
   "sources": [
     "khan-academy-trigonometry",
     "openstax-precalculus"
