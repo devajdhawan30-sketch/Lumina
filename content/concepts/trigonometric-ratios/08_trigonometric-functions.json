@@ -123,6 +123,7 @@
         "content": [
           {
             "type": "paragraph",
+<<<<<<< HEAD
             "text": "The sine function associates every allowed angle with a numerical value. In the right-triangle setting, sine is the ratio of the opposite side to the hypotenuse. For an angle \\(\\theta\\), this is written as \\(\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}\\).",
             "id": "sine-function-paragraph-1"
           },
@@ -145,6 +146,9 @@
             "type": "paragraph",
             "text": "Some important values are \\(\\sin 0^\\circ = 0\\), \\(\\sin 30^\\circ = \\frac{1}{2}\\), \\(\\sin 45^\\circ = \\frac{\\sqrt{2}}{2}\\), \\(\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}\\), and \\(\\sin 90^\\circ = 1\\).",
             "id": "sine-function-paragraph-5"
+=======
+            "text": "Sine is one of the three core trigonometric functions. The detailed sine graph, transformations, and behavior are developed in sine-function; this overview only establishes its place in the family."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -154,6 +158,7 @@
         "content": [
           {
             "type": "paragraph",
+<<<<<<< HEAD
             "text": "The cosine function also associates an angle with a numerical value. In a right triangle, cosine is the ratio of the adjacent side to the hypotenuse: \\(\\cos\\theta = \\frac{\\text{adjacent}}{\\text{hypotenuse}}\\).",
             "id": "cosine-function-paragraph-1"
           },
@@ -176,6 +181,9 @@
             "type": "paragraph",
             "text": "Important values include \\(\\cos 0^\\circ = 1\\), \\(\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}\\), \\(\\cos 45^\\circ = \\frac{\\sqrt{2}}{2}\\), \\(\\cos 60^\\circ = \\frac{1}{2}\\), and \\(\\cos 90^\\circ = 0\\).",
             "id": "cosine-function-paragraph-5"
+=======
+            "text": "Cosine is one of the three core trigonometric functions. The detailed cosine graph, transformations, and behavior are developed in cosine-function; this overview only establishes its place in the family."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -185,6 +193,7 @@
         "content": [
           {
             "type": "paragraph",
+<<<<<<< HEAD
             "text": "The tangent function is defined in a right triangle as the ratio of the opposite side to the adjacent side: \\(\\tan\\theta = \\frac{\\text{opposite}}{\\text{adjacent}}\\).",
             "id": "tangent-function-paragraph-1"
           },
@@ -207,6 +216,9 @@
             "type": "paragraph",
             "text": "For example, \\(\\tan 90^\\circ\\) is undefined because \\(\\cos 90^\\circ = 0\\). Similarly, tangent is undefined at angles such as \\(270^\\circ\\).",
             "id": "tangent-function-paragraph-5"
+=======
+            "text": "Tangent is the third core trigonometric function. Its detailed domain, asymptotes, graph, period, and behavior are developed in tangent-function; this overview only establishes its place in the family."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -243,6 +255,7 @@
       },
       {
         "id": "domain-and-range-introduction",
+<<<<<<< HEAD
         "title": "Understanding Domain and Range",
         "content": [
           {
@@ -274,11 +287,27 @@
             "type": "paragraph",
             "text": "Tangent can produce every real number. It has no maximum or minimum output. Its range is therefore all real numbers.",
             "id": "domain-and-range-introduction-paragraph-6"
+=======
+        "title": "Domain and Range: The Family-Level View",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Domain asks which angle inputs are allowed; range asks which numerical outputs a trigonometric function can produce."
+          },
+          {
+            "type": "paragraph",
+            "text": "For this family, sine and cosine accept every real angle and stay between −1 and 1. Tangent accepts every real angle except where cosine is zero, and its range is all real numbers."
+          },
+          {
+            "type": "paragraph",
+            "text": "The detailed reasons, equations, and graph behavior belong to the dedicated sine-function, cosine-function, and tangent-function lessons. This section provides the comparison students need before moving between those lessons."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
       {
         "id": "sine-domain-range",
+<<<<<<< HEAD
         "title": "Domain and Range of Sine",
         "content": [
           {
@@ -310,11 +339,23 @@
             "type": "paragraph",
             "text": "The fact that sine always remains within this interval will become especially important when we later study the graph and behavior of the sine function.",
             "id": "sine-domain-range-paragraph-6"
+=======
+        "title": "Sine: Domain and Range Summary",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sine is defined for every real angle, so its domain is ℝ. Its output is always between −1 and 1 because sine is the vertical coordinate of a unit-circle point."
+          },
+          {
+            "type": "paragraph",
+            "text": "The detailed unit-circle explanation and graph behavior are developed in sine-function; this section keeps only the family-level domain/range fact needed for comparison."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
       {
         "id": "cosine-domain-range",
+<<<<<<< HEAD
         "title": "Domain and Range of Cosine",
         "content": [
           {
@@ -341,11 +382,23 @@
             "type": "paragraph",
             "text": "Sine and cosine have the same domain and range, but they assign different values to most angles because they represent different coordinates of the rotating point.",
             "id": "cosine-domain-range-paragraph-5"
+=======
+        "title": "Cosine: Domain and Range Summary",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cosine is defined for every real angle, so its domain is ℝ. Its output is always between −1 and 1 because cosine is the horizontal coordinate of a unit-circle point."
+          },
+          {
+            "type": "paragraph",
+            "text": "The detailed unit-circle explanation and graph behavior are developed in cosine-function; this section keeps only the family-level domain/range fact needed for comparison."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
       {
         "id": "tangent-domain-range",
+<<<<<<< HEAD
         "title": "Domain and Range of Tangent",
         "content": [
           {
@@ -377,11 +430,23 @@
             "type": "paragraph",
             "text": "Therefore, the range of tangent is all real numbers: \\(\\mathbb{R}\\).",
             "id": "tangent-domain-range-paragraph-6"
+=======
+        "title": "Tangent: Domain and Range Summary",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Tangent is defined wherever cosine is nonzero. In radians its excluded inputs are x = π/2 + kπ, k ∈ ℤ. Its range is ℝ."
+          },
+          {
+            "type": "paragraph",
+            "text": "The detailed denominator reasoning, asymptotes, periodicity, and graph behavior belong to tangent-function; this section keeps only the comparison facts needed here."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
       {
         "id": "why-tangent-undefined",
+<<<<<<< HEAD
         "title": "Why Is Tangent Undefined at Certain Angles?",
         "content": [
           {
@@ -408,6 +473,17 @@
             "type": "paragraph",
             "text": "The same problem occurs every \\(180^\\circ\\). Thus, tangent is undefined at \\(90^\\circ + 180^\\circ k\\), where \\(k\\) is any integer.",
             "id": "why-tangent-undefined-paragraph-5"
+=======
+        "title": "Why Tangent Has a Restricted Domain",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The essential reason is division: tan x = sin x / cos x, so cosine cannot be zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "The dedicated tangent-function lesson develops the geometry and graph consequences of this restriction. Here the goal is only to understand why tangent differs from sine and cosine at the domain level."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -417,6 +493,7 @@
         "content": [
           {
             "type": "paragraph",
+<<<<<<< HEAD
             "text": "The reciprocal trigonometric functions are secant, cosecant, and cotangent. They are defined through the reciprocals of cosine, sine, and tangent respectively: \\(\\sec\\theta = \\frac{1}{\\cos\\theta}\\), \\(\\csc\\theta = \\frac{1}{\\sin\\theta}\\), and \\(\\cot\\theta = \\frac{1}{\\tan\\theta}\\).",
             "id": "reciprocal-functions-domain-range-paragraph-1"
           },
@@ -444,6 +521,9 @@
             "type": "paragraph",
             "text": "These domain and range restrictions follow naturally from the reciprocal relationships rather than being arbitrary rules to memorize.",
             "id": "reciprocal-functions-domain-range-paragraph-6"
+=======
+            "text": "The three reciprocal functions were introduced as ratios in reciprocal-trigonometric-ratios. Their full function-level domains, ranges, periods, asymptotes, and graphs are developed in reciprocal-trigonometric-functions. Here they are included only to complete the six-function family overview."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -480,6 +560,7 @@
       },
       {
         "id": "worked-examples",
+<<<<<<< HEAD
         "title": "Worked Examples",
         "content": [
           {
@@ -541,6 +622,21 @@
             "type": "paragraph",
             "text": "Example 12: Explain why \\(\\sec90^\\circ\\) is undefined. Since \\(\\sec\\theta = \\frac{1}{\\cos\\theta}\\) and \\(\\cos90^\\circ = 0\\), we would have \\(\\sec90^\\circ = \\frac{1}{0}\\). Division by zero is undefined, so \\(\\sec90^\\circ\\) is undefined.",
             "id": "worked-examples-paragraph-12"
+=======
+        "title": "Comparing the Three Core Functions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Example 1: Compare the domain and range of sine, cosine, and tangent. Sine and cosine have domain ℝ and range [−1,1]. Tangent excludes x = π/2 + kπ and has range ℝ."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 2: Explain why tan x can exceed 1 while sin x and cos x cannot. Sine and cosine are coordinates on the unit circle, so they stay in [−1,1]. Tangent is a quotient of those coordinates and can become arbitrarily large when cosine is close to zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 3: Explain why tan x is undefined at π/2. At that angle cos x = 0, so tan x would require division by zero."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -581,6 +677,7 @@
         "content": [
           {
             "type": "paragraph",
+<<<<<<< HEAD
             "text": "Trigonometric functions are not a completely new subject. They are a broader interpretation of the trigonometric ratios already studied.",
             "id": "connecting-previous-topics-paragraph-1"
           },
@@ -598,11 +695,15 @@
             "type": "paragraph",
             "text": "This viewpoint prepares us for the next stage of the curriculum, where sine, cosine, and tangent will be studied individually as functions. Their graphs, periods, amplitudes, zeros, extrema, and other properties can then be understood systematically.",
             "id": "connecting-previous-topics-paragraph-4"
+=======
+            "text": "This concept gathers earlier ideas into one function framework. For detailed treatments, follow the dedicated sine-function, cosine-function, tangent-function, and reciprocal-trigonometric-functions concepts rather than repeating those lessons here."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
       {
         "id": "common-mistakes",
+<<<<<<< HEAD
         "title": "Common Mistakes to Avoid",
         "content": [
           {
@@ -639,6 +740,21 @@
             "type": "paragraph",
             "text": "Mistake 7: Assuming that every angle must come from a right triangle. Right triangles provide the original intuition, but the coordinate-plane definition allows trigonometric functions to handle arbitrary real angles.",
             "id": "common-mistakes-paragraph-7"
+=======
+        "title": "Common Comparison Mistakes",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Mistake 1: Assuming all trigonometric functions have the same domain. Tangent has excluded inputs; sine and cosine do not."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 2: Assuming all trigonometric functions have outputs only between −1 and 1. That is true for sine and cosine, not tangent."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mistake 3: Relearning the full graph of a function from this overview. Use the dedicated function lesson when detailed graph behavior is required."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },

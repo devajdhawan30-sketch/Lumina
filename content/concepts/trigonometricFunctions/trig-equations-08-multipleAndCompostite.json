@@ -1,13 +1,10 @@
 {
   "id": "trig-equations-08",
   "title": "Multiple-Angle and Composite Equations",
-
   "subject": "mathematics",
   "topic": "trigonometry",
   "section": "trigonometric-equations",
-
   "difficulty": 4,
-
   "connections": {
     "prerequisites": [
       "trig-equations-03",
@@ -25,10 +22,8 @@
       "trigonometric-identities"
     ]
   },
-
   "theory": {
     "introduction": "Multiple-angle and composite trigonometric equations contain expressions such as sin(2x), cos(3x), tan(4x), or other functions of a multiple or transformed angle. The main challenge is not simply solving the trigonometric equation, but making sure that every solution for the transformed angle produces every valid value of x in the required interval. These equations connect the periodic nature of trigonometric functions with algebraic substitution, identities, and systematic solution generation.",
-
     "sections": [
       {
         "id": "multiple-angle",
@@ -53,7 +48,6 @@
           }
         ]
       },
-
       {
         "id": "general-method",
         "title": "General Method for Solving Multiple-Angle Equations",
@@ -88,7 +82,6 @@
           }
         ]
       },
-
       {
         "id": "why-more-solutions",
         "title": "Why Multiple-Angle Equations Have More Solutions",
@@ -107,7 +100,6 @@
           }
         ]
       },
-
       {
         "id": "sine-multiple-angle",
         "title": "Equations of the Form sin(nx) = a",
@@ -126,7 +118,6 @@
           }
         ]
       },
-
       {
         "id": "cosine-multiple-angle",
         "title": "Equations of the Form cos(nx) = a",
@@ -145,7 +136,6 @@
           }
         ]
       },
-
       {
         "id": "tangent-multiple-angle",
         "title": "Equations of the Form tan(nx) = a",
@@ -168,45 +158,26 @@
           }
         ]
       },
-
       {
         "id": "double-angle",
         "title": "Double-Angle Equations",
         "content": [
           {
             "type": "paragraph",
-            "text": "Double-angle equations contain 2x, such as sin(2x) = 0, cos(2x) = 1/2, or tan(2x) = √3."
-          },
-          {
-            "type": "paragraph",
-            "text": "They can often be solved directly by treating 2x as the angle. In other cases, double-angle identities can transform the equation into an equation involving sin(x), cos(x), or their squares."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, cos(2x) = 0 can be solved directly using the cosine equation. Alternatively, cos(2x) = 1 − 2sin²(x) can transform an equation into a quadratic in sin(x)."
+            "text": "Double-angle identities are taught in trig-equations-07. Here the focus is their use inside an equation, such as converting sin(2x) or cos(2x) into a solvable form."
           }
         ]
       },
-
       {
         "id": "triple-angle",
         "title": "Triple-Angle Equations",
         "content": [
           {
             "type": "paragraph",
-            "text": "Triple-angle equations contain 3x, such as sin(3x) = 1/2 or cos(3x) = −1."
-          },
-          {
-            "type": "paragraph",
-            "text": "When the equation is already in the form sin(3x) = a or cos(3x) = a, solve for 3x first and then divide."
-          },
-          {
-            "type": "paragraph",
-            "text": "Triple-angle identities can also be useful when an equation contains powers such as sin³(x) or cos³(x), allowing the equation to be rewritten in terms of sin(3x) or cos(3x)."
+            "text": "Triple-angle identities are part of the identity library in trig-equations-07. Here they are used only when they help solve a multiple-angle equation."
           }
         ]
       },
-
       {
         "id": "composite-equations",
         "title": "Composite Trigonometric Equations",
@@ -229,7 +200,6 @@
           }
         ]
       },
-
       {
         "id": "identity-assisted",
         "title": "Using Identities Before Solving",
@@ -252,7 +222,6 @@
           }
         ]
       },
-
       {
         "id": "solution-count",
         "title": "Finding All Solutions",
@@ -279,68 +248,36 @@
           }
         ]
       },
-
       {
         "id": "restricted-interval",
         "title": "Restricted Intervals",
         "content": [
           {
             "type": "paragraph",
-            "text": "When an interval is specified, first transform the interval along with the angle. If 0 ≤ x ≤ 2π and θ = 4x, then 0 ≤ θ ≤ 8π."
-          },
-          {
-            "type": "paragraph",
-            "text": "Solve the trigonometric equation for θ over this larger interval, then convert each θ-value back to x."
-          },
-          {
-            "type": "paragraph",
-            "text": "Pay special attention to whether the interval includes or excludes its endpoints. For example, 0 ≤ x < 2π is different from 0 ≤ x ≤ 2π."
-          },
-          {
-            "type": "paragraph",
-            "text": "In degree problems, apply the same reasoning. For example, if 0° ≤ x ≤ 360° and θ = 3x, then 0° ≤ θ ≤ 1080°."
+            "text": "When an interval is given, transform the interval consistently with the multiple-angle expression and then apply the detailed restricted-interval workflow in trig-equations-09."
           }
         ]
       },
-
       {
         "id": "general-solutions",
         "title": "Writing General Solutions",
         "content": [
           {
             "type": "paragraph",
-            "text": "For a multiple-angle equation, the general solution should describe every possible value of x."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, if sin(2x) = sin(θ), solve 2x = θ + 2nπ or 2x = π − θ + 2nπ, then divide the entire equation by 2."
-          },
-          {
-            "type": "paragraph",
-            "text": "The integer n must remain unrestricted unless the problem specifies a particular interval. When a restricted interval is given, n is used only to generate the solutions inside that interval."
+            "text": "After solving the multiple or composite angle, express the complete answer using the general-solution conventions in trig-equations-11."
           }
         ]
       },
-
       {
         "id": "checking",
         "title": "Checking Solutions",
         "content": [
           {
             "type": "paragraph",
-            "text": "Every final value of x should satisfy the original equation."
-          },
-          {
-            "type": "paragraph",
-            "text": "Checking is particularly useful when identities, algebraic transformations, squaring, division, or substitutions have been used."
-          },
-          {
-            "type": "paragraph",
-            "text": "For multiple-angle equations, substitute the value into the original expression, such as sin(3x), rather than checking only an intermediate equation."
+            "text": "For multiple-angle equations, substitute the final x-value into the original complete expression. The broader theory of checking and extraneous solutions is in trig-equations-10."
           }
         ]
       },
-
       {
         "id": "common-traps",
         "title": "Common Traps",
@@ -374,7 +311,6 @@
       }
     ]
   },
-
   "formulas": [
     {
       "id": "sine-multiple-general",
@@ -551,7 +487,6 @@
       "explanation": "Use consistently when a problem mixes degree and radian measures."
     }
   ],
-
   "examples": [
     {
       "id": "double-angle-example",
@@ -609,7 +544,6 @@
       "solution": "Let θ = 3x. Then 0° ≤ θ ≤ 1080°. Since sin(θ) = 1, θ = 90° + 360°k. Within the transformed interval, θ = 90°, 450°, 810°. Therefore x = 30°, 150°, 270°."
     }
   ],
-
   "key_ideas": [
     "Treat the complete multiple angle such as nx as a single angle while solving the trigonometric equation.",
     "Solve the multiple angle completely before dividing by its coefficient.",
@@ -626,7 +560,6 @@
     "The coefficient multiplying x affects the number and spacing of solutions.",
     "The most important practical skill is systematic solution generation rather than finding only a principal angle."
   ],
-
   "misconceptions": [
     "Finding only the principal value of nx and assuming it is the only solution.",
     "Dividing by n before generating all solutions for nx.",
@@ -647,7 +580,6 @@
     "Assuming that more complicated-looking equations always require identities; sometimes direct substitution into the multiple angle is simpler.",
     "Stopping after obtaining a general solution without listing restricted-interval solutions when the problem asks for them."
   ],
-
   "explorations": [
     {
       "id": "multiple-angle-solutions",
@@ -678,7 +610,6 @@
       "type": "why"
     }
   ],
-
   "sources": [
     "openstax-precalculus-trigonometric-equations"
   ]

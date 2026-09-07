@@ -1,13 +1,10 @@
 {
   "id": "trig-equations-10",
   "title": "Checking for Extraneous Solutions",
-
   "subject": "mathematics",
   "topic": "trigonometry",
   "section": "trigonometric-equations",
-
   "difficulty": 4,
-
   "connections": {
     "prerequisites": [
       "trig-equations-04",
@@ -25,10 +22,8 @@
       "inverse-trigonometric-functions"
     ]
   },
-
   "theory": {
     "introduction": "Algebraic transformations are powerful tools for solving trigonometric equations, but some transformations can change the set of possible solutions. A value obtained during the algebraic process is only a candidate until it has been checked against the original equation and its original domain. An extraneous solution is a value that satisfies a transformed equation but does not satisfy the original equation.",
-
     "sections": [
       {
         "id": "what-is-extraneous",
@@ -48,7 +43,6 @@
           }
         ]
       },
-
       {
         "id": "original-domain",
         "title": "The Original Domain Comes First",
@@ -71,7 +65,6 @@
           }
         ]
       },
-
       {
         "id": "when-check",
         "title": "When Should You Check?",
@@ -95,7 +88,6 @@
           }
         ]
       },
-
       {
         "id": "squaring",
         "title": "Why Squaring Can Create Extraneous Solutions",
@@ -114,7 +106,6 @@
           }
         ]
       },
-
       {
         "id": "square-root",
         "title": "Taking Square Roots",
@@ -133,7 +124,6 @@
           }
         ]
       },
-
       {
         "id": "division",
         "title": "Dividing by an Expression",
@@ -156,7 +146,6 @@
           }
         ]
       },
-
       {
         "id": "multiplication",
         "title": "Multiplying by an Expression",
@@ -175,7 +164,6 @@
           }
         ]
       },
-
       {
         "id": "reciprocal-functions",
         "title": "Reciprocal Functions and Domain Restrictions",
@@ -194,7 +182,6 @@
           }
         ]
       },
-
       {
         "id": "identity-transformations",
         "title": "Using Trigonometric Identities Safely",
@@ -217,87 +204,54 @@
           }
         ]
       },
-
       {
         "id": "factoring",
-        "title": "Factoring Without Losing Solutions",
+        "title": "Factoring and Solution Checking",
         "content": [
           {
             "type": "paragraph",
-            "text": "Factoring is generally safer than dividing by a variable expression because the zero-product property preserves the separate cases."
+            "text": "Factoring itself is taught in Lesson 05. Here the only question is whether the resulting candidates satisfy the original equation."
           },
           {
             "type": "paragraph",
-            "text": "For example, sin(x)cos(x) = 0 gives sin(x) = 0 or cos(x) = 0."
-          },
-          {
-            "type": "paragraph",
-            "text": "If you divide by sin(x), the sin(x) = 0 branch disappears. Factoring prevents this loss."
+            "text": "After factoring, carry each candidate into the original equation and reject any value that fails. This section therefore focuses on verification rather than reteaching the factoring method."
           }
         ]
       },
-
       {
         "id": "substitution",
-        "title": "Substitution and Checking",
+        "title": "Substitution and Solution Checking",
         "content": [
           {
             "type": "paragraph",
-            "text": "Substitution can make a trigonometric equation easier to solve, especially when it has a quadratic form such as 2sin²(x) − 3sin(x) + 1 = 0."
+            "text": "The substitution method for quadratic-form equations is taught in Lesson 06. Here, use substitution only to trace candidates back to the original trigonometric equation and verify them."
           },
           {
             "type": "paragraph",
-            "text": "If u = sin(x), solve the resulting algebraic equation for u, then solve sin(x) = u."
-          },
-          {
-            "type": "paragraph",
-            "text": "Every algebraic value of u must still be a valid value of the original trigonometric function. For sine and cosine, u must lie between −1 and 1."
-          },
-          {
-            "type": "paragraph",
-            "text": "Finally, check the resulting x-values in the original equation."
+            "text": "A value can satisfy the transformed algebraic equation yet fail the original equation if a non-equivalent transformation was used."
           }
         ]
       },
-
       {
         "id": "multiple-angle-checking",
-        "title": "Checking Multiple-Angle Equations",
+        "title": "Checking Multiple-Angle Candidates",
         "content": [
           {
             "type": "paragraph",
-            "text": "For equations such as sin(2x) = a or cos(3x) = a, substitute the final x-value into the complete original expression."
-          },
-          {
-            "type": "paragraph",
-            "text": "Do not check only whether the intermediate angle satisfies the transformed equation."
-          },
-          {
-            "type": "paragraph",
-            "text": "This is especially important when the multiple-angle equation was obtained after applying identities or algebraic operations."
+            "text": "Multiple-angle equation methods belong to Lesson 08. This section applies the same verification principle: substitute each candidate into the original multiple-angle equation rather than relying only on the transformed form."
           }
         ]
       },
-
       {
         "id": "restricted-interval-check",
-        "title": "Checking the Restricted Interval",
+        "title": "Checking Restricted-Interval Solutions",
         "content": [
           {
             "type": "paragraph",
-            "text": "A candidate can fail for two different reasons: it may not satisfy the original equation, or it may lie outside the requested interval."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, if the interval is 0 ≤ x < 2π, then x = 2π is not an accepted answer even though it may produce the same trigonometric value as x = 0."
-          },
-          {
-            "type": "paragraph",
-            "text": "Therefore, checking should include both the original equation and the original interval."
+            "text": "Interval filtering belongs to Lesson 09. After that lesson produces the candidates inside the requested interval, use this lesson to verify those candidates in the original equation when transformations may have introduced invalid values."
           }
         ]
       },
-
       {
         "id": "original-equation",
         "title": "Check the Original Equation",
@@ -320,7 +274,6 @@
           }
         ]
       },
-
       {
         "id": "logical-equivalence",
         "title": "Equivalent Transformations vs One-Way Transformations",
@@ -339,7 +292,6 @@
           }
         ]
       },
-
       {
         "id": "systematic-check",
         "title": "The Complete Checking Workflow",
@@ -378,7 +330,6 @@
           }
         ]
       },
-
       {
         "id": "why-checking-matters",
         "title": "Why Checking Is the Final Authority",
@@ -400,7 +351,6 @@
       }
     ]
   },
-
   "formulas": [
     {
       "id": "squaring-condition",
@@ -559,7 +509,6 @@
       "explanation": "Tangent repeats every π."
     }
   ],
-
   "examples": [
     {
       "id": "checking-example",
@@ -622,7 +571,6 @@
       "solution": "The identity tan(x) = sin(x)/cos(x) requires cos(x) ≠ 0. At angles where cos(x) = 0, both the quotient and tangent are undefined. Therefore those values cannot become valid solutions simply because an algebraic transformation produces them."
     }
   ],
-
   "key_ideas": [
     "A candidate solution is not automatically a true solution.",
     "The original equation is the final authority.",
@@ -640,7 +588,6 @@
     "Use the original interval only after generating candidates, unless the solving method naturally incorporates the interval.",
     "Checking is both a way to detect extraneous solutions and a way to catch algebraic mistakes."
   ],
-
   "misconceptions": [
     "Assuming every value obtained through algebra is automatically a solution.",
     "Checking only the transformed equation instead of the original equation.",
@@ -658,7 +605,6 @@
     "Assuming that every transformed equation has exactly the same domain as the original equation.",
     "Not checking answers because the algebra appears correct."
   ],
-
   "explorations": [
     {
       "id": "checking-solutions",
@@ -693,8 +639,11 @@
       "type": "why"
     }
   ],
-
   "sources": [
     "openstax-precalculus-trigonometric-equations"
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0

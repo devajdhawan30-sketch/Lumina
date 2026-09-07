@@ -5,11 +5,9 @@
   "topic": "trigonometry",
   "section": "trigonometric-equations",
   "difficulty": 3,
-
   "connections": {
     "prerequisites": [
-      "trig-equations-03",
-      "advanced-trigonometric-identities"
+      "trig-equations-03"
     ],
     "leads_to": [
       "trig-equations-05",
@@ -25,10 +23,8 @@
       "quadrants"
     ]
   },
-
   "theory": {
     "introduction": "Reciprocal trigonometric equations involve secant, cosecant, and cotangent. These functions are reciprocals of cosine, sine, and tangent respectively. Most reciprocal-function equations can be solved by rewriting them in terms of sine, cosine, or tangent, solving the resulting basic trigonometric equation, and then checking that the original reciprocal function is defined.",
-
     "sections": [
       {
         "id": "reciprocal-functions",
@@ -36,6 +32,7 @@
         "content": [
           {
             "type": "paragraph",
+<<<<<<< HEAD
 <<<<<<< HEAD
             "text": "Secant is the reciprocal of cosine, cosecant is the reciprocal of sine, and cotangent is the reciprocal of tangent.",
             "id": "reciprocal-functions-paragraph-1"
@@ -58,10 +55,12 @@
             "type": "paragraph",
             "text": "Because these functions are reciprocals, an equation involving secant, cosecant, or cotangent can often be converted into an equation involving cosine, sine, or tangent."
 >>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
+=======
+            "text": "Reciprocal functions were introduced earlier in reciprocal-trigonometric-ratios and developed as functions in reciprocal-trigonometric-functions. This lesson focuses specifically on solving equations involving sec, csc, and cot."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
-
       {
         "id": "reciprocal-from-sine-cosine-tangent",
         "title": "How the Reciprocal Functions Are Defined",
@@ -88,7 +87,6 @@
           }
         ]
       },
-
       {
         "id": "domain",
         "title": "Domain Restrictions",
@@ -119,7 +117,6 @@
           }
         ]
       },
-
       {
         "id": "secant-domain",
         "title": "Domain of Secant",
@@ -138,7 +135,6 @@
           }
         ]
       },
-
       {
         "id": "cosecant-domain",
         "title": "Domain of Cosecant",
@@ -157,7 +153,6 @@
           }
         ]
       },
-
       {
         "id": "cotangent-domain",
         "title": "Domain of Cotangent",
@@ -176,7 +171,6 @@
           }
         ]
       },
-
       {
         "id": "secant-equations",
         "title": "Solving Equations Involving Secant",
@@ -203,7 +197,6 @@
           }
         ]
       },
-
       {
         "id": "secant-general-solution",
         "title": "General Solution for Secant Equations",
@@ -222,7 +215,6 @@
           }
         ]
       },
-
       {
         "id": "cosecant-equations",
         "title": "Solving Equations Involving Cosecant",
@@ -249,7 +241,6 @@
           }
         ]
       },
-
       {
         "id": "cosecant-general-solution",
         "title": "General Solution for Cosecant Equations",
@@ -272,7 +263,6 @@
           }
         ]
       },
-
       {
         "id": "cotangent-equations",
         "title": "Solving Equations Involving Cotangent",
@@ -299,7 +289,6 @@
           }
         ]
       },
-
       {
         "id": "cotangent-general-solution",
         "title": "General Solution for Cotangent Equations",
@@ -318,7 +307,6 @@
           }
         ]
       },
-
       {
         "id": "special-zero-cases",
         "title": "Special Case: Reciprocal Functions Equal Zero",
@@ -345,7 +333,6 @@
           }
         ]
       },
-
       {
         "id": "range",
         "title": "Ranges of Reciprocal Functions",
@@ -368,34 +355,16 @@
           }
         ]
       },
-
       {
         "id": "rewriting-strategy",
         "title": "The Reciprocal-Rewriting Strategy",
         "content": [
           {
             "type": "paragraph",
-            "text": "The safest basic strategy is: identify the reciprocal function, replace it with its reciprocal identity, rearrange the equation, solve the resulting sine/cosine/tangent equation, and check the original equation."
-          },
-          {
-            "type": "paragraph",
-            "text": "For secant, think sec → cosine."
-          },
-          {
-            "type": "paragraph",
-            "text": "For cosecant, think csc → sine."
-          },
-          {
-            "type": "paragraph",
-            "text": "For cotangent, think cot → tangent."
-          },
-          {
-            "type": "paragraph",
-            "text": "This connects reciprocal-function equations directly to the basic equations already learned."
+            "text": "Use the reciprocal identities as a solving tool: convert sec to cosine, csc to sine, and cot to tangent. The underlying reciprocal definitions are prerequisites and are not re-taught here."
           }
         ]
       },
-
       {
         "id": "equations-with-algebra",
         "title": "Reciprocal Equations Requiring Algebra",
@@ -418,72 +387,36 @@
           }
         ]
       },
-
       {
         "id": "reciprocal-equations-and-periodicity",
         "title": "Periodicity of Reciprocal Functions",
         "content": [
           {
             "type": "paragraph",
-            "text": "Secant has period 2π because cosine has period 2π."
-          },
-          {
-            "type": "paragraph",
-            "text": "Cosecant has period 2π because sine has period 2π."
-          },
-          {
-            "type": "paragraph",
-            "text": "Cotangent has period π because tangent has period π."
-          },
-          {
-            "type": "paragraph",
-            "text": "Knowing these periods helps generate general solutions and determine how many solutions can occur within an interval."
+            "text": "Use the known period of the corresponding parent function when writing solutions. The full theory of general solution notation is consolidated in trig-equations-11."
           }
         ]
       },
-
       {
         "id": "restricted-intervals",
         "title": "Solving Reciprocal Equations on an Interval",
         "content": [
           {
             "type": "paragraph",
-            "text": "When an interval such as 0 ≤ x < 2π is given, first solve the converted sine, cosine, or tangent equation within that interval."
-          },
-          {
-            "type": "paragraph",
-            "text": "Then ensure every candidate is in the domain of the original reciprocal function."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, a cosine equation obtained from a secant equation may have values where cosine is zero only if the transformed equation was manipulated incorrectly. Such values must never be accepted as secant solutions."
-          },
-          {
-            "type": "paragraph",
-            "text": "The original equation, not only the transformed equation, determines whether a candidate is valid."
+            "text": "If an interval is specified, first solve the reciprocal equation using the parent-function method, then apply the restricted-interval workflow from trig-equations-09. This lesson does not reteach that workflow."
           }
         ]
       },
-
       {
         "id": "checking-original-equation",
         "title": "Always Check the Original Equation",
         "content": [
           {
             "type": "paragraph",
-            "text": "Rewriting an equation using reciprocal identities is usually reversible when the relevant functions are defined, but domain restrictions still matter."
-          },
-          {
-            "type": "paragraph",
-            "text": "For this reason, substitute final candidates back into the original reciprocal equation whenever there is any possibility of a domain issue."
-          },
-          {
-            "type": "paragraph",
-            "text": "This is especially important in longer equations involving division, multiplication, or reciprocal transformations."
+            "text": "Check domain restrictions and substitute into the original reciprocal equation when a transformation could create an invalid candidate. The full theory of extraneous solutions is in trig-equations-10."
           }
         ]
       },
-
       {
         "id": "graphical-understanding",
         "title": "Understanding Reciprocal Equations Through Graphs",
@@ -510,7 +443,6 @@
           }
         ]
       },
-
       {
         "id": "common-question-patterns",
         "title": "Common Question Patterns",
@@ -545,7 +477,6 @@
           }
         ]
       },
-
       {
         "id": "decision-guide",
         "title": "Choosing the Correct Conversion",
@@ -572,13 +503,13 @@
           }
         ]
       },
-
       {
         "id": "connection-to-next-topics",
         "title": "Why This Topic Matters for Later Equations",
         "content": [
           {
             "type": "paragraph",
+<<<<<<< HEAD
             "text": "Reciprocal-function equations are an important bridge to more complicated trigonometric equations."
           },
           {
@@ -589,12 +520,14 @@
             "type": "paragraph",
             "text": "The habit of tracking domain restrictions becomes especially important when equations involve division or reciprocal transformations."
 >>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
+=======
+            "text": "Factoring and quadratic forms are the next algebraic solving tools. Identity-based transformations are developed in trig-equations-07; systematic checking is developed in trig-equations-10."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       }
     ]
   },
-
   "formulas": [
     {
       "id": "sec-reciprocal",
@@ -735,7 +668,6 @@
       "explanation": "Because cosecant is the reciprocal of sine and |sin(x)| ≤ 1, every defined cosecant value has magnitude at least 1."
     }
   ],
-
   "examples": [
     {
       "id": "sec-example",
@@ -858,7 +790,6 @@
       "solution": "No. The range of secant is (−∞, −1] ∪ [1, ∞), so −1/2 is not a possible secant value."
     }
   ],
-
   "key_ideas": [
     "Secant is the reciprocal of cosine.",
     "Cosecant is the reciprocal of sine.",
@@ -889,7 +820,6 @@
     "The original equation is the final authority when checking a candidate solution.",
     "Understanding reciprocal functions makes later identity-based equations easier to solve."
   ],
-
   "misconceptions": [
     "Thinking sec(x) means 1/sin(x).",
     "Thinking csc(x) means 1/cos(x).",
@@ -922,7 +852,6 @@
     "Confusing the range restriction of secant/cosecant with the range restriction of sine/cosine.",
     "Forgetting that tangent and cotangent can take all real values."
   ],
-
   "explorations": [
     {
       "id": "reciprocal-function-graphs",
@@ -969,15 +898,17 @@
       "type": "visualization"
     }
   ],
-
   "sources": [
     "openstax-precalculus-trigonometric-functions",
     "openstax-precalculus-trigonometric-equations"
   ]
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 
 
 >>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
+=======
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0

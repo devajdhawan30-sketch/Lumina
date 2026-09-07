@@ -1,13 +1,10 @@
 {
   "id": "trig-equations-06",
   "title": "Quadratic Trigonometric Equations",
-
   "subject": "mathematics",
   "topic": "trigonometry",
   "section": "trigonometric-equations",
-
   "difficulty": 3,
-
   "connections": {
     "prerequisites": [
       "trig-equations-03",
@@ -23,10 +20,8 @@
       "pythagorean-identities"
     ]
   },
-
   "theory": {
     "introduction": "Some trigonometric equations have the structure of quadratic equations when one trigonometric expression is temporarily treated as the variable. For example, 2cos²(x) − 3cos(x) + 1 = 0 has the same algebraic structure as 2u² − 3u + 1 = 0 if u = cos(x). The quadratic can first be solved algebraically, but every resulting value must then be converted back into a trigonometric equation and solved for all possible angles.",
-
     "sections": [
       {
         "id": "recognizing-quadratic-form",
@@ -46,7 +41,6 @@
           }
         ]
       },
-
       {
         "id": "substitution",
         "title": "Using Substitution",
@@ -74,7 +68,6 @@
           }
         ]
       },
-
       {
         "id": "factoring-quadratic",
         "title": "Solving the Quadratic by Factoring",
@@ -97,7 +90,6 @@
           }
         ]
       },
-
       {
         "id": "quadratic-formula",
         "title": "Using the Quadratic Formula",
@@ -120,7 +112,6 @@
           }
         ]
       },
-
       {
         "id": "convert-back",
         "title": "Convert Back to Angles",
@@ -147,7 +138,6 @@
           }
         ]
       },
-
       {
         "id": "valid-trig-values",
         "title": "Checking Whether Quadratic Solutions Are Possible",
@@ -170,7 +160,6 @@
           }
         ]
       },
-
       {
         "id": "quadratic-in-sine",
         "title": "Quadratic Equations in sin(x)",
@@ -189,7 +178,6 @@
           }
         ]
       },
-
       {
         "id": "quadratic-in-cosine",
         "title": "Quadratic Equations in cos(x)",
@@ -208,7 +196,6 @@
           }
         ]
       },
-
       {
         "id": "quadratic-in-tangent",
         "title": "Quadratic Equations in tan(x)",
@@ -227,7 +214,6 @@
           }
         ]
       },
-
       {
         "id": "special-zero-cases",
         "title": "Special Cases Involving Zero",
@@ -246,72 +232,36 @@
           }
         ]
       },
-
       {
         "id": "using-pythagorean-identities",
         "title": "Using Pythagorean Identities to Create Quadratic Form",
         "content": [
           {
             "type": "paragraph",
-            "text": "Sometimes an equation is not initially quadratic in one trigonometric function, but a Pythagorean identity can transform it into quadratic form."
-          },
-          {
-            "type": "paragraph",
-            "text": "For example, if an equation contains sin²(x), the identity sin²(x) = 1 − cos²(x) can convert it into an equation involving only cos(x)."
-          },
-          {
-            "type": "paragraph",
-            "text": "Similarly, cos²(x) = 1 − sin²(x) can convert an equation into one involving only sine."
-          },
-          {
-            "type": "paragraph",
-            "text": "This technique should be used when it reduces the number of different trigonometric functions and creates a recognizable quadratic structure."
+            "text": "Use the Pythagorean identities as algebraic conversion tools when needed. Their full identity family and selection strategy are taught in trig-equations-07; this lesson only applies the relevant identity to a quadratic-form equation."
           }
         ]
       },
-
       {
         "id": "restricted-interval",
         "title": "Solving on a Restricted Interval",
         "content": [
           {
             "type": "paragraph",
-            "text": "A quadratic trigonometric equation may produce several trigonometric values, and each value can produce multiple angles."
-          },
-          {
-            "type": "paragraph",
-            "text": "For an interval such as 0 ≤ x < 2π, solve every resulting trigonometric equation and keep only angles inside the specified interval."
-          },
-          {
-            "type": "paragraph",
-            "text": "Do not stop after finding the principal inverse-trigonometric angle. Use the unit circle and the sign of the function to find every valid angle."
-          },
-          {
-            "type": "paragraph",
-            "text": "When the interval includes 0 but excludes 2π, x = 0 may be included while x = 2π must not be listed."
+            "text": "Once the quadratic equation has been solved and converted back to trigonometric values, use trig-equations-09 for systematic interval filtering."
           }
         ]
       },
-
       {
         "id": "general-solution",
         "title": "Writing General Solutions",
         "content": [
           {
             "type": "paragraph",
-            "text": "If the problem asks for all real solutions rather than solutions on a particular interval, each resulting trigonometric equation must be expressed as a general solution."
-          },
-          {
-            "type": "paragraph",
-            "text": "For sine and cosine, solutions repeat every 2π. For tangent, solutions repeat every π."
-          },
-          {
-            "type": "paragraph",
-            "text": "If the quadratic produces multiple trigonometric values, write a complete solution family for each valid value."
+            "text": "After the quadratic step produces one or more basic trigonometric equations, use the general-solution conventions consolidated in trig-equations-11."
           }
         ]
       },
-
       {
         "id": "duplicate-solutions",
         "title": "Avoiding Duplicate Solutions",
@@ -330,56 +280,51 @@
           }
         ]
       },
-
       {
         "id": "checking-solutions",
-        "title": "Checking the Final Answer",
+        "title": "Checking Quadratic-Trig Candidates",
         "content": [
           {
             "type": "paragraph",
-            "text": "Substitute the final candidate angles into the original equation when checking is useful or when the equation has undergone several transformations."
+            "text": "Quadratic methods can produce algebraic candidates, but candidates must satisfy the original trigonometric equation and its domain restrictions."
           },
           {
             "type": "paragraph",
-            "text": "Checking is particularly important if squaring, taking reciprocals, dividing by an expression, or other operations that may alter the solution set were used."
-          },
-          {
-            "type": "paragraph",
-            "text": "A complete answer should satisfy the original equation and the original domain restrictions."
+            "text": "Lesson 10 owns the detailed theory of extraneous solutions and systematic checking. Here, apply that principle briefly: substitute the candidate into the original equation before accepting it."
           }
         ]
       },
-
       {
         "id": "complete-workflow",
-        "title": "Complete Problem-Solving Workflow",
+        "title": "Quadratic-Trig Workflow",
         "content": [
           {
             "type": "paragraph",
-            "text": "Step 1: Move the equation into a suitable zero form if necessary."
+            "text": "1. Identify the repeated trigonometric quantity, such as sin x, cos x, or tan x."
           },
           {
             "type": "paragraph",
-            "text": "Step 2: Identify whether the equation is quadratic in sin(x), cos(x), tan(x), or another repeated trigonometric expression."
+            "text": "2. Substitute it with a temporary variable when that makes the algebra clearer."
           },
           {
             "type": "paragraph",
-            "text": "Step 3: Use substitution if it makes the structure clearer."
+            "text": "3. Solve the resulting quadratic using factoring or the quadratic formula."
           },
           {
             "type": "paragraph",
-            "text": "Step 4: Solve the quadratic using factoring or the quadratic formula."
+            "text": "4. Convert the valid trigonometric values back into angle solutions using the appropriate trigonometric equation method."
           },
           {
             "type": "paragraph",
-            "text": "Step 5: Check whether each algebraic root is possible for the original trigonometric function."
+            "text": "5. If the problem gives a restricted interval, use Lesson 09 to select the allowed angles."
           },
           {
             "type": "paragraph",
-            "text": "Step 6: Substitute the valid roots back into the trigonometric equation."
+            "text": "6. Check candidates in the original equation; Lesson 10 provides the full checking framework."
           },
           {
             "type": "paragraph",
+<<<<<<< HEAD
             "text": "Step 7: Solve every resulting trigonometric equation."
           },
           {
@@ -390,12 +335,14 @@
             "type": "paragraph",
             "text": "Step 9: Remove duplicates and check the final answers in the original equation when appropriate."
 >>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
+=======
+            "text": "This lesson owns the quadratic structure. It does not reteach interval filtering, general-solution notation, or extraneous-solution theory."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       }
     ]
   },
-
   "formulas": [
     {
       "id": "quadratic-form",
@@ -560,7 +507,6 @@
       "explanation": "Tangent repeats every π radians."
     }
   ],
-
   "examples": [
     {
       "id": "quadratic-example",
@@ -628,7 +574,6 @@
       "solution": "Step 1: The equation is already equal to zero. Step 2: It is quadratic in cos(x). Step 3: Let u = cos(x). Step 4: 4u² − 4u = 0. Factor: 4u(u − 1) = 0. Step 5: u = 0 or u = 1, and both are valid cosine values. Step 6: Convert back: cos(x) = 0 or cos(x) = 1. Step 7: On 0 ≤ x < 2π, cos(x) = 0 gives x = π/2, 3π/2, while cos(x) = 1 gives x = 0. Step 8: Combine and order the solutions. Final answer: x = 0, π/2, 3π/2."
     }
   ],
-
   "key_ideas": [
     "Recognize when a trigonometric equation has quadratic structure.",
     "Treat a repeated trigonometric function as a temporary algebraic variable.",
@@ -650,7 +595,6 @@
     "Check the final solutions in the original equation when transformations may have changed the solution set.",
     "The complete process is: recognize → substitute → solve quadratic → validate roots → convert back → solve trigonometric equations → apply interval/general solution → check."
   ],
-
   "misconceptions": [
     "Thinking that solving the quadratic completes the problem.",
     "Treating the quadratic root u as the angle x instead of as a trigonometric value.",
@@ -673,7 +617,6 @@
     "Assuming a real quadratic root always produces a real trigonometric solution.",
     "Checking only the transformed equation instead of the original equation when a transformation may have introduced or removed solutions."
   ],
-
   "explorations": [
     {
       "id": "quadratic-trigonometric-equation",
@@ -704,8 +647,11 @@
       "type": "why"
     }
   ],
-
   "sources": [
     "openstax-precalculus-trigonometric-equations"
   ]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0

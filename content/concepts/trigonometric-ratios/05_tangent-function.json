@@ -60,6 +60,7 @@
         "content": [
           {
             "type": "paragraph",
+<<<<<<< HEAD
             "text": "One of the most important relationships in trigonometry is \\(\\tan x=\\frac{\\sin x}{\\cos x}\\), whenever \\(\\cos x\\neq0\\).",
             "id": "tangent-sine-cosine-paragraph-1"
           },
@@ -82,6 +83,9 @@
             "type": "paragraph",
             "text": "This formula is also the key to understanding why tangent is undefined at certain angles.",
             "id": "tangent-sine-cosine-paragraph-5"
+=======
+            "text": "Tangent can be related to sine and cosine by tan(x)=sin(x)/cos(x), provided cos(x)≠0. This relationship is useful here for understanding tangent behavior; the broader six-function comparison belongs to trigonometric-functions."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -420,6 +424,7 @@
           }
         ]
       },
+<<<<<<< HEAD
       {
         "id": "tangent-cycle",
         "title": "One Complete Cycle of Tangent",
@@ -514,6 +519,35 @@
             "type": "paragraph",
             "text": "Example 12: Determine the range of \\(y=\\tan x\\). Tangent can take arbitrarily large positive and negative values and can produce every real number. Therefore, its range is \\(\\mathbb{R}\\).",
             "id": "worked-examples-paragraph-12"
+=======
+      {
+        "id": "worked-examples",
+        "title": "Worked Examples: Tangent-Specific Behavior",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Example 1: Evaluate tan 45°. Using tan x = sin x / cos x gives 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 2: Explain why tan 90° is undefined. Since cos 90° = 0, the quotient sin 90° / cos 90° divides by zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 3: Find the zeros of tangent. Tangent is zero when sine is zero and cosine is nonzero, giving x = kπ, k ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 4: Find the period of tangent. The period is π because tan(x + π) = tan x."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 5: Determine the sign of tan 120°. Sine is positive and cosine is negative in Quadrant II, so tangent is negative."
+          },
+          {
+            "type": "paragraph",
+            "text": "Example 6: Find the vertical asymptotes of y = tan x. They occur where cosine is zero: x = π/2 + kπ, k ∈ ℤ."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
