@@ -1,4 +1,3 @@
-import whatIsTrigonometry from "../../content/concepts/introduction-to-trigonometry/01-what-is-trigonometry.json";
 import angles from "../../content/concepts/introduction-to-trigonometry/02-angles.json";
 import angleMeasurement from "../../content/concepts/introduction-to-trigonometry/03-angle-measurement.json";
 import degreesAndRadians from "../../content/concepts/introduction-to-trigonometry/04-degrees-and-radians.json";
@@ -18,7 +17,7 @@ import cosineFunction from "../../content/concepts/trigonometric-ratios/07_cosin
 import trigonometricFunctions from "../../content/concepts/trigonometric-ratios/08_trigonometric-functions.json";
 import reciprocalTrigonometricFunctions from "../../content/concepts/trigonometric-ratios/09_reciprocal-trigonometric-functions.json";
 
-import whatAreTrigEquations from "../../content/concepts/trigonometricFunctions/trig-equations-01-what-are-equations.json.json";
+import whatAreTrigEquations from "../../content/concepts/trigonometricFunctions/trig-equations-01-what-are-equations.json";
 import natureOfSolutions from "../../content/concepts/trigonometricFunctions/trig-equations-02-nature-of-solutions.json";
 import basicTrigEquations from "../../content/concepts/trigonometricFunctions/trig-equations-03-basic-equations.json";
 import reciprocalFunctionEquations from "../../content/concepts/trigonometricFunctions/trig-equations-04-reciprocal-function-equations.json";
@@ -35,7 +34,6 @@ import applicationsOfTrigonometry from "../../content/concepts/applicationOfTrig
 
 const concepts = [
   // Introduction to Trigonometry
-  whatIsTrigonometry,
   angles,
   angleMeasurement,
   degreesAndRadians,
