@@ -8,13 +8,33 @@ import rightTriangles from "../../content/concepts/introduction-to-trigonometry/
 import similarTriangles from "../../content/concepts/introduction-to-trigonometry/08-similar-triangles.json";
 import bridgeToTrigRatios from "../../content/concepts/introduction-to-trigonometry/09-bridge-to-trig-ratios.json";
 
-import trigonometricRatios from "../../content/concepts/trigonometric-ratios/trigonometric-ratios.json";
-import exactTrigonometricValues from "../../content/concepts/trigonometric-ratios/exact-trigonometric-values.json";
-import reciprocalTrigonometricRatios from "../../content/concepts/trigonometric-ratios/reciprocal-trigonometric-ratios.json";
-import trigonometricRatiosAnyAngle from "../../content/concepts/trigonometric-ratios/trigonometric-ratios-any-angle.json";
+import trigonometricRatios from "../../content/concepts/trigonometric-ratios/01_trigonometric-ratios.json";
+import reciprocalTrigonometricRatios from "../../content/concepts/trigonometric-ratios/02_reciprocal-trigonometric-ratios.json";
+import trigonometricRatiosAnyAngle from "../../content/concepts/trigonometric-ratios/03_trigonometric-ratios-any-angle.json";
+import exactTrigonometricValues from "../../content/concepts/trigonometric-ratios/04_exact-trigonometric-values.json";
+import tangentFunction from "../../content/concepts/trigonometric-ratios/05_tangent-function.json";
+import sineFunction from "../../content/concepts/trigonometric-ratios/06_sine-function.json";
+import cosineFunction from "../../content/concepts/trigonometric-ratios/07_cosine-function.json";
+import trigonometricFunctions from "../../content/concepts/trigonometric-ratios/08_trigonometric-functions.json";
+import reciprocalTrigonometricFunctions from "../../content/concepts/trigonometric-ratios/09_reciprocal-trigonometric-functions.json";
+
+import whatAreTrigEquations from "../../content/concepts/trigonometricFunctions/trig-equations-01-what-are-equations.json.json";
+import natureOfSolutions from "../../content/concepts/trigonometricFunctions/trig-equations-02-nature-of-solutions.json";
+import basicTrigEquations from "../../content/concepts/trigonometricFunctions/trig-equations-03-basic-equations.json";
+import reciprocalFunctionEquations from "../../content/concepts/trigonometricFunctions/trig-equations-04-reciprocal-function-equations.json";
+import factoringTrigEquations from "../../content/concepts/trigonometricFunctions/trig-equations-05-factoring.json";
+import quadraticTrigEquations from "../../content/concepts/trigonometricFunctions/trig-equations-06-quadratic-equation.json";
+import identityTrigEquations from "../../content/concepts/trigonometricFunctions/trig-equations-07-identities.json";
+import multipleCompositeEquations from "../../content/concepts/trigonometricFunctions/trig-equations-08-multipleAndCompostite.json";
+import restrictedInterval from "../../content/concepts/trigonometricFunctions/trig-equations-09-RestrictedInterval.json";
+import extraneousSolutions from "../../content/concepts/trigonometricFunctions/trig-equations-10-extraneousSolutions.json";
+import generalSolution from "../../content/concepts/trigonometricFunctions/trig-equations-11-generalSolution.json";
+
+import applicationsOfTrigonometry from "../../content/concepts/applicationOfTrigo/application-trigo.json";
 
 
 const concepts = [
+  // Introduction to Trigonometry
   whatIsTrigonometry,
   angles,
   angleMeasurement,
@@ -25,10 +45,32 @@ const concepts = [
   similarTriangles,
   bridgeToTrigRatios,
 
+  // Trigonometric Ratios and Functions
   trigonometricRatios,
-  exactTrigonometricValues,
   reciprocalTrigonometricRatios,
-  trigonometricRatiosAnyAngle
+  trigonometricRatiosAnyAngle,
+  exactTrigonometricValues,
+  tangentFunction,
+  sineFunction,
+  cosineFunction,
+  trigonometricFunctions,
+  reciprocalTrigonometricFunctions,
+
+  // Trigonometric Equations
+  whatAreTrigEquations,
+  natureOfSolutions,
+  basicTrigEquations,
+  reciprocalFunctionEquations,
+  factoringTrigEquations,
+  quadraticTrigEquations,
+  identityTrigEquations,
+  multipleCompositeEquations,
+  restrictedInterval,
+  extraneousSolutions,
+  generalSolution,
+
+  // Applications
+  applicationsOfTrigonometry
 ];
 
 
@@ -40,6 +82,7 @@ export function getAllConcepts() {
 export function getConceptById(id: string) {
   return concepts.find((concept) => concept.id === id);
 }
+
 
 export function getAllSubjects() {
   const subjects = new Map<string, {
@@ -157,9 +200,13 @@ export function getTopicById(topicId: string) {
 function formatTitle(id: string) {
   return id
     .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .map(
+      (word) =>
+        word.charAt(0).toUpperCase() + word.slice(1)
+    )
     .join(" ");
 }
+
 
 export function getRoadmapByTopic(topicId: string) {
   const topicConcepts = concepts.filter(
@@ -229,6 +276,7 @@ export function getRoadmapByTopic(topicId: string) {
   };
 }
 
+
 export function getContentElement(
   conceptId: string,
   contentId: string
@@ -241,7 +289,7 @@ export function getContentElement(
 
   for (const section of concept.theory.sections) {
     for (const element of section.content) {
-      if (element.id === contentId) {
+      if ("id" in element && element.id === contentId) {
         return {
           sectionTitle: section.title,
           element
