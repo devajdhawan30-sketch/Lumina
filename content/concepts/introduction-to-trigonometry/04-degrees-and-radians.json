@@ -51,7 +51,8 @@
           {
             "type": "paragraph",
             "id": "one-radian-definition",
-            "text": "One radian is the measure of a central angle whose intercepted arc has the same length as the radius of the circle."
+            "text": "One radian is the measure of a central angle whose intercepted arc has the same length as the radius of the circle.",
+            "highlights": [{"id": "one-radian-arc", "text": "arc has the same length as the radius", "explorationId": "visualize-one-radian", "actions": ["visualize", "ask-ai", "why"]}]
           },
           {
             "type": "paragraph",

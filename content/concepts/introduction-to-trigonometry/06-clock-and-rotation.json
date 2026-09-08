@@ -32,7 +32,8 @@
           {
             "type": "paragraph",
             "id": "rotation-over-time",
-            "text": "When an object rotates, its position changes continuously around a circle. The amount of rotation can be described by an angle, while the time taken tells us how quickly that rotation occurs."
+            "text": "When an object rotates, its position changes continuously around a circle. The amount of rotation can be described by an angle, while the time taken tells us how quickly that rotation occurs.",
+            "highlights": [{"id": "continuous-rotation", "text": "position changes continuously around a circle", "explorationId": "visualize-clock-rotation", "actions": ["visualize", "ask-ai", "why"]}]
           },
           {
             "type": "paragraph",

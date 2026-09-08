@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import {
   ArrowLeft,
-  ArrowRight,
   Bot,
   ChevronRight,
   Lightbulb,
@@ -15,6 +14,8 @@ import {
   getConcept,
   type Concept,
 } from '../services/api'
+import ExplorationPopover from '../components/ExplorationPopover'
+import type { ExplorationId } from '../data/explorations'
 
 export default function TutorPage() {
   const { conceptId } = useParams<{ conceptId: string }>()
@@ -187,11 +188,7 @@ function ContentBlock({
   }
 }) {
   if (element.type === 'paragraph') {
-    return (
-      <p className="text-lg leading-9 text-black/65">
-        {element.text}
-      </p>
-    )
+    return <HighlightedParagraph text={element.text ?? ''} highlights={element.highlights as Highlight[] | undefined} />
   }
 
   return (
@@ -415,4 +412,48 @@ function formatSection(section: string) {
         word.charAt(0).toUpperCase() + word.slice(1)
     )
     .join(' ')
+}
+
+type Highlight = {
+  text: string
+  explorationId: ExplorationId
+}
+
+function HighlightedParagraph({
+  text,
+  highlights,
+}: {
+  text: string
+  highlights?: Highlight[]
+}) {
+  const [visibleId, setVisibleId] = useState<ExplorationId | null>(null)
+  const highlight = highlights?.[0]
+  const start = highlight ? text.indexOf(highlight.text) : -1
+
+  if (!highlight || start < 0) {
+    return <p className="text-lg leading-9 text-black/65">{text}</p>
+  }
+
+  return (
+    <div className="relative text-lg leading-9 text-black/65">
+      {text.slice(0, start)}
+      <span
+        className="relative inline"
+        onMouseEnter={() => setVisibleId(highlight.explorationId)}
+        onMouseLeave={() => setVisibleId(null)}
+      >
+        <button
+          type="button"
+          className="content-highlight"
+          onFocus={() => setVisibleId(highlight.explorationId)}
+          onBlur={() => setVisibleId(null)}
+          aria-label={`Visualize ${highlight.text}`}
+        >
+          {highlight.text}
+        </button>
+        {visibleId && <ExplorationPopover id={visibleId} />}
+      </span>
+      {text.slice(start + highlight.text.length)}
+    </div>
+  )
 }

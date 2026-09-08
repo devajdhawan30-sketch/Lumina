@@ -37,7 +37,15 @@
           {
             "type": "paragraph",
             "text": "Imagine standing far away from a tall building. You cannot climb it, and you do not have a measuring tape long enough to reach its top. Yet, by observing an angle and knowing a distance that is easier to measure, mathematics can help determine the building's height. This is one of the central ideas behind applied trigonometry: information that seems unrelated to an unknown quantity can be connected through geometry.",
-            "id": "trigonometry-as-a-tool-paragraph-1"
+            "id": "trigonometry-as-a-tool-paragraph-1",
+            "highlights": [
+              {
+                "id": "tower-height-indirect",
+                "text": "observing an angle and knowing a distance that is easier to measure",
+                "explorationId": "visualize-tower-height",
+                "actions": ["visualize", "ask-ai", "why"]
+              }
+            ]
           },
           {
             "type": "paragraph",
@@ -89,7 +97,8 @@
           {
             "type": "paragraph",
             "text": "By measuring carefully chosen angles and distances and connecting them through geometric relationships, surveyors can construct a network of triangles. This idea, known as triangulation, allows locations to be determined indirectly.",
-            "id": "surveying-paragraph-2"
+            "id": "surveying-paragraph-2",
+            "highlights": [{"id": "surveying-triangulation", "text": "construct a network of triangles", "explorationId": "visualize-triangulation", "actions": ["visualize", "ask-ai", "why"]}]
           },
           {
             "type": "paragraph",
@@ -115,7 +124,8 @@
           {
             "type": "paragraph",
             "text": "Angles provide a natural way to describe direction. When directions and distances are combined, geometric shapes such as triangles appear, and trigonometric relationships can connect the different pieces of information.",
-            "id": "navigation-paragraph-2"
+            "id": "navigation-paragraph-2",
+            "highlights": [{"id": "navigation-components", "text": "directions and distances are combined", "explorationId": "visualize-navigation-vector", "actions": ["visualize", "ask-ai", "why"]}]
           },
           {
             "type": "paragraph",
@@ -266,7 +276,8 @@
           {
             "type": "paragraph",
             "text": "Many things in nature repeat. Vibrations, sound, alternating electrical signals, tides, and idealized models of many physical waves exhibit patterns that repeat over time or distance.",
-            "id": "waves-paragraph-1"
+            "id": "waves-paragraph-1",
+            "highlights": [{"id": "repeating-wave-pattern", "text": "patterns that repeat over time or distance", "explorationId": "visualize-wave-motion", "actions": ["visualize", "ask-ai", "why"]}]
           },
           {
             "type": "paragraph",

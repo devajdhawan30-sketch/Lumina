@@ -19,7 +19,6 @@
     ]
   },
   "theory": {
-    "introduction": "An angle is not merely a shape drawn between two lines. It can be understood as a geometric object created by two rays and, dynamically, as the amount of rotation from one ray to another. This rotational viewpoint is especially important in trigonometry because trigonometric functions eventually describe what happens as an angle rotates around a circle.",
     "sections": [
       {
         "id": "what-is-a-ray",
@@ -96,7 +95,15 @@
           {
             "type": "paragraph",
             "id": "dynamic-angle",
-            "text": "An angle can be understood dynamically as a rotation. Imagine two rays starting on top of each other. Keep one ray fixed and rotate the other around the common endpoint. The fixed ray is the initial side, and the ray that moves is the terminal side."
+            "text": "An angle can be understood dynamically as a rotation. Imagine two rays starting on top of each other. Keep one ray fixed and rotate the other around the common endpoint. The fixed ray is the initial side, and the ray that moves is the terminal side.",
+            "highlights": [
+              {
+                "id": "angle-as-rotation",
+                "text": "understood dynamically as a rotation",
+                "explorationId": "visualize-angle-rotation",
+                "actions": ["visualize", "ask-ai", "why"]
+              }
+            ]
           },
           {
             "type": "paragraph",
@@ -173,7 +180,15 @@
           {
             "type": "paragraph",
             "id": "terminal-side-determines-position",
-            "text": "Once an angle is in standard position, its terminal side tells us where the rotation ends. The terminal side may lie inside a quadrant or directly on one of the coordinate axes."
+            "text": "Once an angle is in standard position, its terminal side tells us where the rotation ends. The terminal side may lie inside a quadrant or directly on one of the coordinate axes.",
+            "highlights": [
+              {
+                "id": "unit-circle-coordinate",
+                "text": "terminal side tells us where the rotation ends",
+                "explorationId": "visualize-unit-circle",
+                "actions": ["visualize", "ask-ai", "why"]
+              }
+            ]
           }
         ]
       },

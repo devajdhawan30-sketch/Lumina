@@ -219,7 +219,9 @@
           },
           {
             "type": "paragraph",
-            "text": "For an equation such as sin(x) = 1/2, graph y = sin(x) and the horizontal line y = 1/2. Every intersection point corresponds to a solution."
+            "text": "For an equation such as sin(x) = 1/2, graph y = sin(x) and the horizontal line y = 1/2. Every intersection point corresponds to a solution.",
+            "id": "graphical-meaning-solution",
+            "highlights": [{"id": "graph-intersection-solution", "text": "Every intersection point corresponds to a solution", "explorationId": "visualize-equation-intersections", "actions": ["visualize", "ask-ai", "why"]}]
           },
           {
             "type": "paragraph",
