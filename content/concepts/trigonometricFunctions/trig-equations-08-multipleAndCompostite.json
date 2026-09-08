@@ -31,20 +31,8 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
             "text": "Solve the equation for the multiple angle first, then divide by the coefficient of x.",
             "id": "multiple-angle-paragraph-1"
-=======
-            "text": "A multiple-angle equation contains an angle such as nx, where n is an integer. Examples include sin(2x) = 1/2, cos(3x) = −1, and tan(4x) = √3."
-          },
-          {
-            "type": "paragraph",
-            "text": "The key idea is to temporarily treat the entire multiple angle as a single angle. For example, in sin(3x) = 1/2, let θ = 3x. First solve sin(θ) = 1/2, then convert the resulting values of θ into values of x."
-          },
-          {
-            "type": "paragraph",
-            "text": "Because multiplication changes how quickly the trigonometric function completes its cycles as x changes, multiple-angle equations can have more solutions in a fixed interval than basic equations."
->>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
           }
         ]
       },
@@ -228,84 +216,8 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
             "text": "When the angle is multiplied, carefully generate all solutions before dividing so that none are missed.",
             "id": "solution-count-paragraph-1"
-=======
-            "text": "The most important skill in multiple-angle equations is generating every solution in the requested interval."
-          },
-          {
-            "type": "paragraph",
-            "text": "If x lies in 0 ≤ x < 2π and the equation contains 3x, then 3x lies in 0 ≤ 3x < 6π. The transformed angle therefore covers three full 2π cycles."
-          },
-          {
-            "type": "paragraph",
-            "text": "This transformed interval explains why an equation involving 3x can have three times as many solutions as the corresponding equation involving x, depending on the equation and boundary conditions."
-          },
-          {
-            "type": "paragraph",
-            "text": "Never assume that the number of solutions is the same as for the corresponding basic equation. Always examine the interval of the transformed angle."
-          }
-        ]
-      },
-      {
-        "id": "restricted-interval",
-        "title": "Restricted Intervals",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "When an interval is given, transform the interval consistently with the multiple-angle expression and then apply the detailed restricted-interval workflow in trig-equations-09."
-          }
-        ]
-      },
-      {
-        "id": "general-solutions",
-        "title": "Writing General Solutions",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "After solving the multiple or composite angle, express the complete answer using the general-solution conventions in trig-equations-11."
-          }
-        ]
-      },
-      {
-        "id": "checking",
-        "title": "Checking Solutions",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "For multiple-angle equations, substitute the final x-value into the original complete expression. The broader theory of checking and extraneous solutions is in trig-equations-10."
-          }
-        ]
-      },
-      {
-        "id": "common-traps",
-        "title": "Common Traps",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "Do not find only the principal value of the multiple angle."
-          },
-          {
-            "type": "paragraph",
-            "text": "Do not divide by the coefficient of x before generating all relevant solutions for the multiple angle."
-          },
-          {
-            "type": "paragraph",
-            "text": "Do not forget that the transformed angle has a different interval from x."
-          },
-          {
-            "type": "paragraph",
-            "text": "Do not use the period of x instead of the period of the transformed angle."
-          },
-          {
-            "type": "paragraph",
-            "text": "Do not treat tangent as having period 2π. Its fundamental period is π."
-          },
-          {
-            "type": "paragraph",
-            "text": "Do not ignore domain restrictions when the equation contains tangent, secant, cosecant, or cotangent."
->>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
           }
         ]
       }

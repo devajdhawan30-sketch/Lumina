@@ -32,7 +32,6 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
             "text": "Before studying the reciprocal trigonometric functions, recall what a reciprocal is. The reciprocal of a nonzero number is the number that gives 1 when multiplied by the original number.",
             "id": "what-are-reciprocal-functions-paragraph-1"
           },
@@ -50,15 +49,11 @@
             "type": "paragraph",
             "text": "In trigonometry, this creates three additional functions: cosecant, secant, and cotangent.",
             "id": "what-are-reciprocal-functions-paragraph-4"
-=======
-            "text": "The reciprocal relationships were established in reciprocal-trigonometric-ratios. Here the focus changes from ratios in triangles to reciprocal functions as graphs: where they are defined, how they behave, and how their graphs relate to sine, cosine, and tangent."
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
       {
         "id": "three-reciprocal-functions",
-<<<<<<< HEAD
         "title": "The Three Reciprocal Trigonometric Functions",
         "content": [
           {
@@ -80,17 +75,6 @@
             "type": "paragraph",
             "text": "Because taking a reciprocal requires division, the original function cannot be zero at an input where its reciprocal is defined.",
             "id": "three-reciprocal-functions-paragraph-4"
-=======
-        "title": "Three Reciprocal Functions: Function-Level View",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "Secant, cosecant, and cotangent are reciprocal functions: sec x = 1/cos x, csc x = 1/sin x, and cot x = 1/tan x where the denominators are nonzero."
-          },
-          {
-            "type": "paragraph",
-            "text": "The reciprocal-ratio lesson established these relationships in right-triangle language. This lesson owns their function behavior: domain, range, period, asymptotes, and graphs."
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -193,7 +177,6 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
             "text": "The three reciprocal relationships can be written as identities. An identity is an equation that is true for every input for which both sides are defined.",
             "id": "reciprocal-identities-paragraph-1"
           },
@@ -221,9 +204,6 @@
             "type": "paragraph",
             "text": "These identities allow us to move between the original three trigonometric functions and their reciprocal functions.",
             "id": "reciprocal-identities-paragraph-6"
-=======
-            "text": "The reciprocal identities are a prerequisite reference rather than a new derivation here. Use them to connect each reciprocal graph to its parent function."
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -233,7 +213,6 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
             "text": "A number multiplied by its reciprocal equals 1. The same idea works for trigonometric functions.",
             "id": "product-identities-paragraph-1"
           },
@@ -256,9 +235,6 @@
             "type": "paragraph",
             "text": "These identities are simply the familiar reciprocal property expressed using trigonometric functions.",
             "id": "product-identities-paragraph-5"
-=======
-            "text": "The identities sin(x)csc(x)=1, cos(x)sec(x)=1, and tan(x)cot(x)=1 follow directly from the reciprocal definitions. They are included as a quick function reference; the underlying ratio idea was already established earlier."
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -548,7 +524,6 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
             "text": "Example 1: Find \\(\\csc30^\\circ\\). Since \\(\\sin30^\\circ=\\frac{1}{2}\\), take the reciprocal: \\(\\csc30^\\circ=2\\).",
             "id": "worked-examples-paragraph-1"
           },
@@ -626,9 +601,6 @@
             "type": "paragraph",
             "text": "Example 16: If \\(\\cot x=-2\\), find \\(\\tan x\\). Since cotangent and tangent are reciprocals, \\(\\tan x=-\\frac{1}{2}\\).",
             "id": "worked-examples-paragraph-16"
-=======
-            "text": "The examples here focus on function behavior, domain, range, period, asymptotes, and graph interpretation. Calculating reciprocal ratios from right-triangle sides belongs to reciprocal-trigonometric-ratios."
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },

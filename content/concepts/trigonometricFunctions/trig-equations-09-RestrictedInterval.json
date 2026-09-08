@@ -49,24 +49,8 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
-<<<<<<< HEAD
             "text": "Common intervals include 0 ≤ x < 2π and 0° ≤ x ≤ 360°.",
             "id": "common-intervals-paragraph-1"
-=======
-            "text": "Common radian intervals include 0 ≤ x < 2π, 0 ≤ x ≤ 2π, −π ≤ x ≤ π, and 0 ≤ x ≤ π."
-          },
-          {
-            "type": "paragraph",
-            "text": "Common degree intervals include 0° ≤ x ≤ 360°, 0° ≤ x < 360°, −180° ≤ x ≤ 180°, and 0° ≤ x ≤ 180°."
-          },
-          {
-            "type": "paragraph",
-            "text": "Always read whether each endpoint is included. The symbols ≤ and < are important."
->>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
-=======
-            "text": "Common intervals include 0 ≤ x < 2π, 0 ≤ x ≤ 2π, and 0° ≤ x ≤ 360°. The basic trigonometric equation methods are taught in trig-equations-03; this lesson focuses on selecting every valid solution inside the stated interval."
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -76,23 +60,8 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
-<<<<<<< HEAD
             "text": "Use the unit circle, reference angles, and periodicity to identify every solution inside the required interval.",
             "id": "finding-solutions-paragraph-1"
-=======
-            "text": "Trigonometric equations may be expressed in degrees or radians. Do not mix the two systems within a calculation."
-          },
-          {
-            "type": "paragraph",
-            "text": "A complete revolution is 360° or 2π radians. Therefore 180° = π radians."
-          },
-          {
-            "type": "paragraph",
-            "text": "Before solving, identify the unit used by the equation and the interval."
-=======
-            "text": "Use the degree/radian definitions from degrees-and-radians. Here the only new task is applying the correct full-turn period while filtering solutions in the requested interval."
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -296,7 +265,6 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
             "text": "Substitute each final value into the original equation."
           },
           {
@@ -306,10 +274,6 @@
           {
             "type": "paragraph",
             "text": "For equations involving reciprocals or multiple-angle expressions, checking the original equation is particularly important."
->>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
-=======
-            "text": "Substitute final values into the original equation and verify that each belongs to the stated interval. More detailed transformation-related checking belongs to trig-equations-10."
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       }
@@ -689,8 +653,4 @@
   "sources": [
     "libretexts-basic-trigonometric-equations"
   ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0

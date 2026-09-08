@@ -1,0 +1,558 @@
+@import "tailwindcss";
+
+:root {
+  font-family:
+    "Satoshi",
+    "Inter",
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  color: #050712;
+  background: #fff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #fff;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================================================
+   LANDING PAGE
+   ========================================================= */
+
+.landing-page {
+  min-height: 100vh;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Hero */
+
+.landing-hero {
+  position: relative;
+  min-height: calc(100vh - 76px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/*
+  Soft atmospheric glow behind the visual.
+  This replaces the Framer shader with a lightweight
+  CSS version so we don't introduce another dependency.
+*/
+
+.landing-hero::before {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  left: -160px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background:
+    radial-gradient(
+      circle,
+      rgba(102, 117, 255, 0.12) 0%,
+      rgba(174, 112, 255, 0.08) 30%,
+      rgba(255, 255, 255, 0) 70%
+    );
+  filter: blur(10px);
+  z-index: -2;
+}
+
+/* Hero text */
+
+.landing-content {
+  position: relative;
+  z-index: 5;
+  width: min(650px, calc(100% - 40px));
+  margin-left: 300px;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.landing-eyebrow {
+  margin: 0 0 22px;
+
+  font-size: 13px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+
+  color: #050712;
+}
+
+.landing-content h1 {
+  margin: 0;
+
+  font-size: clamp(48px, 5.3vw, 68px);
+  line-height: 1.02;
+  letter-spacing: -2.8px;
+  font-weight: 900;
+
+  color: #000;
+}
+
+.landing-description {
+  width: min(477px, 100%);
+  margin: 28px auto 0;
+
+  font-size: 17px;
+  line-height: 1.55;
+  letter-spacing: -0.2px;
+
+  color: rgba(5, 7, 18, 0.62);
+}
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.landing-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  margin-top: 34px;
+}
+
+.framer-button {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  min-height: 48px;
+  padding: 12px 20px;
+
+  border-radius: 999px;
+
+  font-size: 15px;
+  font-weight: 700;
+
+  overflow: hidden;
+
+  transition:
+    transform 220ms ease,
+    background-color 220ms ease,
+    color 220ms ease,
+    border-color 220ms ease,
+    box-shadow 220ms ease;
+}
+
+.framer-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  transform: translateX(-105%);
+
+  background: linear-gradient(
+    100deg,
+    transparent,
+    rgba(255, 255, 255, 0.18),
+    transparent
+  );
+
+  transition: transform 450ms ease;
+}
+
+.framer-button:hover::before {
+  transform: translateX(105%);
+}
+
+.framer-button:hover {
+  transform: translateY(-3px);
+}
+
+.framer-button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+.framer-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.button-arrow {
+  font-size: 17px;
+  line-height: 1;
+
+  transform: translate(0, 0);
+  transition: transform 220ms ease;
+}
+
+.framer-button:hover .button-arrow {
+  transform: translate(3px, -3px);
+}
+
+/* Primary */
+
+.framer-button-primary {
+  background: #000;
+  color: #fff;
+
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.2),
+    0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.framer-button-primary:hover {
+  background: #171717;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.16),
+    0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+/* Secondary */
+
+.framer-button-secondary {
+  background: #fff;
+  color: #050712;
+
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.framer-button-secondary:hover {
+  background: #050712;
+  border-color: #050712;
+  color: #fff;
+}
+
+/* =========================================================
+   DECORATIVE ORBIT
+   ========================================================= */
+
+.landing-orbit {
+  position: absolute;
+
+  left: -105px;
+  top: 50%;
+
+  width: 500px;
+  height: 500px;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+  z-index: 1;
+}
+
+.orbit-ring {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  border: 1px solid rgba(5, 7, 18, 0.11);
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.orbit-ring-1 {
+  width: 250px;
+  height: 250px;
+  animation: orbit-spin 18s linear infinite;
+}
+
+.orbit-ring-2 {
+  width: 360px;
+  height: 360px;
+  border-color: rgba(5, 7, 18, 0.08);
+  animation: orbit-spin-reverse 25s linear infinite;
+}
+
+.orbit-ring-3 {
+  width: 470px;
+  height: 470px;
+  border-color: rgba(5, 7, 18, 0.055);
+  animation: orbit-spin 35s linear infinite;
+}
+
+.orbit-core {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 128px;
+  height: 128px;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #fff,
+      #f4f4f4 45%,
+      #e7e7e7 100%
+    );
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+
+  animation: core-float 4s ease-in-out infinite;
+}
+
+.orbit-core::after {
+  content: "";
+
+  position: absolute;
+  inset: -8px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  animation: pulse-ring 3s ease-in-out infinite;
+}
+
+.orbit-core span {
+  font-size: 58px;
+  font-weight: 500;
+  letter-spacing: -5px;
+  color: #050712;
+}
+
+.orbit-dot {
+  position: absolute;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #050712;
+
+  box-shadow:
+    0 0 0 6px rgba(5, 7, 18, 0.05),
+    0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.orbit-dot-1 {
+  left: 50%;
+  top: 14px;
+  transform: translateX(-50%);
+}
+
+.orbit-dot-2 {
+  right: 17px;
+  bottom: 95px;
+}
+
+.orbit-dot-3 {
+  left: 62px;
+  bottom: 30px;
+}
+
+/* =========================================================
+   SECOND SECTION
+   ========================================================= */
+
+.landing-intro {
+  min-height: 65vh;
+
+  padding:
+    130px
+    max(40px, 8vw)
+    150px;
+
+  background: #050712;
+  color: #fff;
+}
+
+.landing-intro-label {
+  margin: 0 0 24px;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+
+  opacity: 0.55;
+}
+
+.landing-intro h2 {
+  margin: 0;
+
+  font-size: clamp(48px, 7vw, 92px);
+  line-height: 0.96;
+  letter-spacing: -4px;
+  font-weight: 900;
+}
+
+.landing-intro h2 span {
+  opacity: 0.35;
+}
+
+.landing-intro > p:last-child {
+  max-width: 520px;
+
+  margin: 38px 0 0;
+
+  font-size: 18px;
+  line-height: 1.6;
+
+  color: rgba(255, 255, 255, 0.62);
+}
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+@keyframes orbit-spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes orbit-spin-reverse {
+  from {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes core-float {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) translateY(-8px);
+  }
+}
+
+@keyframes pulse-ring {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.1;
+    transform: scale(1.08);
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .landing-content {
+    margin-left: 180px;
+  }
+
+  .landing-orbit {
+    left: -190px;
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: 700px) {
+  .landing-hero {
+    min-height: calc(100vh - 70px);
+  }
+
+  .landing-content {
+    width: calc(100% - 32px);
+    margin: 0;
+    padding: 60px 0;
+  }
+
+  .landing-eyebrow {
+    font-size: 11px;
+  }
+
+  .landing-content h1 {
+    font-size: clamp(42px, 12vw, 58px);
+    letter-spacing: -2.2px;
+  }
+
+  .landing-description {
+    font-size: 16px;
+  }
+
+  .landing-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .framer-button {
+    width: min(280px, 100%);
+  }
+
+  .landing-orbit {
+    left: 50%;
+    top: 12%;
+    transform: translateX(-50%) scale(0.55);
+    opacity: 0.25;
+  }
+
+  .landing-intro {
+    padding:
+      100px
+      24px
+      110px;
+  }
+
+  .landing-intro h2 {
+    letter-spacing: -2.5px;
+  }
+}

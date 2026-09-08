@@ -1,0 +1,239 @@
+{
+  "id": "right-triangles",
+  "title": "Right Triangles",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "intro-trigono",
+  "difficulty": 1,
+  "connections": {
+    "prerequisites": [
+      "clock-and-rotation",
+      "angles-on-a-circle"
+    ],
+    "leads_to": [
+      "similar-triangles",
+      "bridge-to-trig-ratios"
+    ],
+    "related": [
+      "geometry",
+      "pythagorean-theorem",
+      "complementary-angles",
+      "unit-circle"
+    ]
+  },
+  "theory": {
+    "introduction": "Right triangles are the geometric setting in which trigonometry first becomes precise. Their structure gives us a way to connect an angle with the lengths of the sides around it, which will later lead naturally to trigonometric ratios.",
+    "sections": [
+      {
+        "id": "what-makes-a-right-triangle",
+        "title": "What makes a triangle a right triangle?",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "right-angle-definition",
+            "text": "A right triangle is a triangle containing one right angle, an angle measuring 90 degrees. Because the three angles of a triangle add to 180 degrees, the other two angles must together add to 90 degrees."
+          },
+          {
+            "type": "paragraph",
+            "id": "two-acute-angles",
+            "text": "The two non-right angles of a right triangle are therefore acute angles. They are complementary because their measures add to 90 degrees."
+          }
+        ]
+      },
+      {
+        "id": "parts-of-right-triangle",
+        "title": "The three important sides",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "hypotenuse",
+            "text": "The side opposite the right angle is called the hypotenuse. It is the longest side of a right triangle."
+          },
+          {
+            "type": "paragraph",
+            "id": "legs",
+            "text": "The other two sides are the legs of the triangle. Which leg we call opposite or adjacent depends on which acute angle we are focusing on."
+          },
+          {
+            "type": "paragraph",
+            "id": "opposite-side",
+            "text": "For a chosen acute angle, the opposite side is the side directly across from that angle."
+          },
+          {
+            "type": "paragraph",
+            "id": "adjacent-side",
+            "text": "For a chosen acute angle, the adjacent side is the leg next to that angle. The hypotenuse is not treated as the adjacent leg in this terminology."
+          },
+          {
+            "type": "paragraph",
+            "id": "angle-changes-labels",
+            "text": "The triangle itself does not change when we switch from one acute angle to the other, but the labels opposite and adjacent switch. A side opposite one acute angle is adjacent to the other."
+          }
+        ]
+      },
+      {
+        "id": "pythagorean-structure",
+        "title": "The Pythagorean relationship",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "pythagorean-theorem",
+            "text": "The side lengths of every right triangle satisfy the Pythagorean Theorem: the square of the hypotenuse equals the sum of the squares of the two legs."
+          },
+          {
+            "type": "paragraph",
+            "id": "finding-missing-side",
+            "text": "If two side lengths are known, the Pythagorean Theorem can be used to determine the third side. This gives us a way to recover missing geometric information before introducing trigonometric ratios."
+          }
+        ]
+      },
+      {
+        "id": "angle-and-side-information",
+        "title": "An angle tells us something about the sides",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "shape-and-angle",
+            "text": "Changing an acute angle changes the shape of a right triangle. As the angle changes, the relative sizes of the opposite and adjacent legs change as well."
+          },
+          {
+            "type": "paragraph",
+            "id": "angle-side-pattern",
+            "text": "This suggests an important question: can we describe the relationship between an angle and the side lengths of a right triangle using a consistent numerical quantity?"
+          },
+          {
+            "type": "paragraph",
+            "id": "motivation-for-ratios",
+            "text": "The answer will be yes. The next ideas will show why ratios of side lengths are the natural quantities to use and why those ratios can be tied to an angle."
+          }
+        ]
+      },
+      {
+        "id": "complementary-angles",
+        "title": "The two acute angles are connected",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "complementary-relationship",
+            "text": "Because the two acute angles of a right triangle add to 90 degrees, knowing one determines the other. If one acute angle is θ, the other is 90 degrees minus θ."
+          },
+          {
+            "type": "paragraph",
+            "id": "same-triangle-two-views",
+            "text": "The same right triangle can therefore be viewed from either acute angle. What is opposite from one viewpoint becomes adjacent from the other viewpoint."
+          },
+          {
+            "type": "paragraph",
+            "id": "cofunction-preview",
+            "text": "This exchange between opposite and adjacent sides will later explain an important relationship between trigonometric functions of complementary angles."
+          }
+        ]
+      },
+      {
+        "id": "right-triangles-and-circles",
+        "title": "Right triangles can live inside circles",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "triangle-in-circle",
+            "text": "A right triangle can be formed using a radius of a circle together with horizontal and vertical distances. In particular, a right triangle naturally appears when a point on a circle is connected to the coordinate axes."
+          },
+          {
+            "type": "paragraph",
+            "id": "unit-circle-preview",
+            "text": "When the circle has radius 1, the resulting geometry becomes especially useful. This unit-circle viewpoint will later connect the triangle-based definitions of trigonometry with angles measured around a circle."
+          }
+        ]
+      },
+      {
+        "id": "applied-triangle-problems",
+        "title": "Why right triangles matter in the real world",
+        "content": [
+          {
+            "type": "paragraph",
+            "id": "inaccessible-distance",
+            "text": "Right triangles allow distances and heights to be represented geometrically even when they cannot be measured directly. A vertical object, a horizontal distance, and a line of sight can form the three sides of a right triangle."
+          },
+          {
+            "type": "paragraph",
+            "id": "height-measurement",
+            "text": "For example, if the horizontal distance from an observer to a building and an appropriate angle are known, the building's height can be treated as an unknown side of a right triangle."
+          },
+          {
+            "type": "paragraph",
+            "id": "bridge-forward",
+            "text": "To solve such problems systematically, we need a numerical relationship that turns an angle into information about side lengths. That is the central idea behind trigonometric ratios."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "pythagorean-theorem",
+      "name": "Pythagorean Theorem",
+      "expression": "a² + b² = c²",
+      "explanation": "For a right triangle, a and b are the legs and c is the hypotenuse."
+    },
+    {
+      "id": "complementary-angles",
+      "name": "Complementary Angles in a Right Triangle",
+      "expression": "θ + (90° − θ) = 90°",
+      "explanation": "The two acute angles of a right triangle are complementary."
+    }
+  ],
+  "examples": [
+    {
+      "id": "identify-sides",
+      "question": "In a right triangle, an acute angle is selected. Which side is the hypotenuse, and how are the opposite and adjacent sides identified?",
+      "solution": "The hypotenuse is always the side opposite the 90° angle. Relative to the selected acute angle, the opposite side is directly across from the angle, while the adjacent side is the leg next to the angle."
+    },
+    {
+      "id": "missing-hypotenuse",
+      "question": "A right triangle has legs of lengths 6 and 8. Find the hypotenuse.",
+      "solution": "Using a² + b² = c²: 6² + 8² = c², so 36 + 64 = c². Therefore c² = 100 and c = 10."
+    },
+    {
+      "id": "missing-leg",
+      "question": "A right triangle has a hypotenuse of length 13 and one leg of length 5. Find the other leg.",
+      "solution": "Using a² + b² = c²: 5² + b² = 13². Thus 25 + b² = 169, so b² = 144 and b = 12."
+    },
+    {
+      "id": "complementary-angle",
+      "question": "One acute angle of a right triangle measures 32°. What is the other acute angle?",
+      "solution": "The two acute angles are complementary, so the other angle is 90° − 32° = 58°."
+    },
+    {
+      "id": "tower-model",
+      "question": "An observer stands some distance from a vertical tower and looks toward its top. Why can this situation be modeled with a right triangle?",
+      "solution": "The ground provides a horizontal side, the tower provides a vertical side, and the line of sight provides the sloping side. The horizontal and vertical directions are perpendicular, so the resulting triangle contains a right angle."
+    }
+  ],
+  "key_ideas": [
+    "A right triangle contains one 90° angle.",
+    "The two remaining angles are acute and complementary.",
+    "The hypotenuse is opposite the right angle and is the longest side.",
+    "Opposite and adjacent are defined relative to the chosen acute angle.",
+    "Switching to the other acute angle swaps the roles of the two legs.",
+    "The Pythagorean Theorem relates the three side lengths of a right triangle.",
+    "Changing an angle changes the relative lengths of the sides.",
+    "Ratios of side lengths will provide a consistent way to connect an angle with triangle geometry.",
+    "Right triangles can model inaccessible heights and distances.",
+    "Right-triangle geometry can also be connected to circles and coordinates.",
+    "The unit circle will later connect circle-based angles with triangle-based trigonometry."
+  ],
+  "misconceptions": [
+    "The hypotenuse is the side next to the chosen angle.",
+    "The hypotenuse can be one of the legs.",
+    "Opposite and adjacent are fixed labels that never depend on the chosen angle.",
+    "A right triangle can have two right angles.",
+    "The two acute angles of a right triangle add to 180°.",
+    "The Pythagorean Theorem applies to every triangle.",
+    "Changing the orientation of a right triangle changes its geometric relationships.",
+    "A larger angle automatically means every side of the triangle is longer.",
+    "The side opposite an angle is always the same physical side regardless of which angle is chosen.",
+    "Right triangles are useful only for abstract geometry and not for measuring real quantities."
+  ],
+  "explorations": [],
+  "sources": []
+}

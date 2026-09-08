@@ -26,7 +26,6 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
             "text": "Before learning the new trigonometric ratios, we need to understand the word reciprocal.",
             "id": "what-is-a-reciprocal-paragraph-1"
           },
@@ -54,9 +53,6 @@
             "type": "paragraph",
             "text": "Therefore, if \\(\\sin(\\theta)=\\frac{O}{H}\\), its reciprocal is \\(\\frac{H}{O}\\). This reciprocal ratio is called cosecant.",
             "id": "what-is-a-reciprocal-paragraph-6"
-=======
-            "text": "A reciprocal reverses a nonzero number or ratio: a/b becomes b/a. In this lesson the idea is applied to the three basic trigonometric ratios. The later reciprocal-trigonometric-functions concept develops the corresponding functions, graphs, domains, ranges, and periods."
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -719,7 +715,6 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
             "text": "For a chosen acute angle in a right triangle, the six trigonometric ratios can be organised into three reciprocal pairs.",
             "id": "six-ratios-table-paragraph-1"
           },
@@ -757,9 +752,6 @@
             "type": "paragraph",
             "text": "This arrangement is useful because it shows that the six ratios are built from only three side comparisons and their reciprocals.",
             "id": "six-ratios-table-paragraph-8"
-=======
-            "text": "Use this as a quick reference for all six ratios. The full function-level comparison of sine, cosine, tangent, secant, cosecant, and cotangent is reserved for trigonometric-functions; this lesson focuses on how the three reciprocal ratios are obtained from the basic ratios."
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
@@ -805,7 +797,6 @@
         "content": [
           {
             "type": "paragraph",
-<<<<<<< HEAD
             "text": "The word inverse can cause confusion in trigonometry because it can refer to different ideas.",
             "id": "reciprocal-vs-inverse-paragraph-1"
           },
@@ -823,9 +814,6 @@
             "type": "paragraph",
             "text": "For now, focus on the simple rule: reciprocal means flip the fraction.",
             "id": "reciprocal-vs-inverse-paragraph-4"
-=======
-            "text": "A reciprocal and an inverse function are different ideas. This distinction is introduced here because it prevents a common mistake; inverse trigonometric functions are treated separately when solving equations."
->>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
           }
         ]
       },
