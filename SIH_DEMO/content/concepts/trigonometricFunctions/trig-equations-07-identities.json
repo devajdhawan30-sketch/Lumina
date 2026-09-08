@@ -1,0 +1,814 @@
+{
+  "id": "trig-equations-07",
+  "title": "Equations Using Identities",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 4,
+  "connections": {
+    "prerequisites": [
+      "advanced-trigonometric-identities",
+      "trig-equations-05",
+      "trig-equations-06"
+    ],
+    "leads_to": [
+      "trig-equations-08",
+      "trig-equations-10"
+    ],
+    "related": [
+      "trigonometric-identities",
+      "double-angle-identities"
+    ]
+  },
+  "theory": {
+    "introduction": "Many difficult trigonometric equations cannot be solved directly. The key is to transform them into a familiar form using identities. The most important skill is not merely memorizing identities, but recognizing which identity will simplify the equation. A good transformation usually reduces the number of different trigonometric functions, reduces the complexity of the expression, creates a factorable or quadratic form, or converts the equation into one of the basic equations already learned.",
+    "sections": [
+      {
+        "id": "choose-identity",
+        "title": "Choosing the Right Identity",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Choose an identity that reduces the number of different trigonometric functions or creates a familiar algebraic form.",
+            "id": "choose-identity-paragraph-1"
+          }
+        ]
+      },
+      {
+        "id": "identity-strategy",
+        "title": "A General Identity-Solving Strategy",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Pythagorean, reciprocal, double-angle, and sum-and-difference identities can transform complicated equations.",
+            "id": "common-identities-paragraph-1"
+          }
+        ]
+      },
+      {
+        "id": "pythagorean-identities",
+        "title": "Pythagorean Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Pythagorean identities are among the most important identities in trigonometric equation solving. They allow squared trigonometric functions to be converted into each other."
+          },
+          {
+            "type": "paragraph",
+            "text": "The fundamental identity is sin²(x) + cos²(x) = 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "Dividing this identity by cos²(x) produces 1 + tan²(x) = sec²(x), while dividing by sin²(x) produces 1 + cot²(x) = csc²(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "These identities are particularly useful when an equation contains squared trigonometric functions or when you need to eliminate one type of function."
+          }
+        ]
+      },
+      {
+        "id": "reciprocal-identities",
+        "title": "Reciprocal Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Reciprocal identities connect each basic trigonometric function with its reciprocal."
+          },
+          {
+            "type": "paragraph",
+            "text": "They are useful when an equation mixes functions such as sec(x) and cos(x), or csc(x) and sin(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "A common strategy is to rewrite every function using sine and cosine when this produces a simpler equation."
+          }
+        ]
+      },
+      {
+        "id": "quotient-identities",
+        "title": "Quotient Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Tangent and cotangent can be rewritten using sine and cosine."
+          },
+          {
+            "type": "paragraph",
+            "text": "This is useful when an equation contains a mixture of tan(x), sin(x), and cos(x), because rewriting tangent may allow the entire equation to be expressed using only sine and cosine."
+          }
+        ]
+      },
+      {
+        "id": "even-odd-identities",
+        "title": "Even and Odd Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Even and odd identities describe how trigonometric functions behave when their input is replaced by its negative."
+          },
+          {
+            "type": "paragraph",
+            "text": "They can simplify equations containing negative angles and are especially useful when expressions such as sin(−x), cos(−x), or tan(−x) appear."
+          }
+        ]
+      },
+      {
+        "id": "cofunction-identities",
+        "title": "Cofunction Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cofunction identities relate trigonometric functions of complementary angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sin(π/2 − x) = cos(x). These identities can transform an equation into one involving a single trigonometric function."
+          }
+        ]
+      },
+      {
+        "id": "sum-difference-identities",
+        "title": "Sum and Difference Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sum-and-difference identities expand expressions involving angles such as A + B and A − B."
+          },
+          {
+            "type": "paragraph",
+            "text": "They are particularly useful when an equation contains expressions such as sin(x + π/3), cos(x − π/4), or products involving known special angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "They can also convert an unfamiliar angle expression into combinations of sin(x) and cos(x)."
+          }
+        ]
+      },
+      {
+        "id": "double-angle-identities",
+        "title": "Double-Angle Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Double-angle identities connect expressions involving 2x with expressions involving x."
+          },
+          {
+            "type": "paragraph",
+            "text": "For cosine there are three especially useful forms: cos(2x) = cos²(x) − sin²(x), cos(2x) = 2cos²(x) − 1, and cos(2x) = 1 − 2sin²(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "The choice of form matters. Choose the version that matches the functions already present in the equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "Double-angle identities are particularly important for converting between multiple-angle equations and quadratic equations."
+          }
+        ]
+      },
+      {
+        "id": "power-reduction-identities",
+        "title": "Power-Reduction Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Power-reduction identities express squared sine and cosine in terms of cos(2x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "These are especially useful when an equation contains sin²(x) or cos²(x) and also contains a multiple-angle expression."
+          },
+          {
+            "type": "paragraph",
+            "text": "They can transform a quadratic-looking equation into a linear equation in cos(2x), or transform a multiple-angle expression into squared functions."
+          }
+        ]
+      },
+      {
+        "id": "triple-angle-identities",
+        "title": "Triple-Angle Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Triple-angle identities express sin(3x) and cos(3x) using powers of sin(x) or cos(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "They can be useful when solving equations containing 3x or when converting a multiple-angle equation into an algebraic equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because triple-angle equations can generate several solutions, interval checking is especially important."
+          }
+        ]
+      },
+      {
+        "id": "half-angle-identities",
+        "title": "Half-Angle Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Half-angle identities express trigonometric functions of x/2 in terms of functions of x."
+          },
+          {
+            "type": "paragraph",
+            "text": "They are useful when an equation contains angles such as x/2 or when solving equations involving squared trigonometric functions and a change of angle is helpful."
+          },
+          {
+            "type": "paragraph",
+            "text": "The ± sign in square-root forms must be handled carefully because the sign depends on the quadrant of the angle."
+          }
+        ]
+      },
+      {
+        "id": "product-to-sum",
+        "title": "Product-to-Sum Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Product-to-sum identities convert products of sine and cosine functions into sums or differences."
+          },
+          {
+            "type": "paragraph",
+            "text": "They are useful when an equation contains products such as sin(A)cos(B), cos(A)cos(B), or sin(A)sin(B) and an additive form is easier to solve."
+          },
+          {
+            "type": "paragraph",
+            "text": "These identities are more specialized than the core Pythagorean and double-angle identities, but they can be essential for certain advanced equation-solving problems."
+          }
+        ]
+      },
+      {
+        "id": "sum-to-product",
+        "title": "Sum-to-Product Identities",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sum-to-product identities convert sums or differences of trigonometric functions into products."
+          },
+          {
+            "type": "paragraph",
+            "text": "They are particularly useful when the resulting product can be set equal to zero and solved using the Zero Product Property."
+          }
+        ]
+      },
+      {
+        "id": "identity-and-factoring",
+        "title": "Combining Identities with Factoring",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An identity often does not solve an equation by itself. Its purpose may be to transform the equation into a factorable form."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sin²(x) − sin(x) = 0 can be factored directly, while an equation involving both sin²(x) and cos²(x) may first require the Pythagorean identity before factoring."
+          },
+          {
+            "type": "paragraph",
+            "text": "This creates an important problem-solving pattern: identity → algebraic simplification → factoring → basic trigonometric equations."
+          }
+        ]
+      },
+      {
+        "id": "identity-and-quadratic",
+        "title": "Combining Identities with Quadratic Methods",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Identities can transform equations into quadratic form."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, replacing sin²(x) with 1 − cos²(x) can turn an equation into a quadratic in cos(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This directly connects identity manipulation with the quadratic trigonometric equations studied in the previous lesson."
+          }
+        ]
+      },
+      {
+        "id": "identity-equation-workflow",
+        "title": "Complete Identity-Based Solving Workflow",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "When an equation needs an identity, identify the target form first, apply the smallest useful identity transformation, solve the resulting trigonometric equation, and check the original equation when necessary. Multiple-angle equation mechanics are applied in trig-equations-08; general-solution notation is consolidated in trig-equations-11."
+          }
+        ]
+      },
+      {
+        "id": "domain-awareness",
+        "title": "Domain Restrictions During Identity Manipulation",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Some identities involve division by sin(x) or cos(x). The resulting identity is therefore interpreted on the domain where those divisions are defined."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, tan(x) = sin(x)/cos(x) requires cos(x) ≠ 0, while sec(x) = 1/cos(x) also requires cos(x) ≠ 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "Never forget the original domain of the equation when rewriting expressions using reciprocals or quotient identities."
+          }
+        ]
+      },
+      {
+        "id": "identity-selection-guide",
+        "title": "Which Identity Should I Try?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "sin²(x) and cos²(x) together → try the Pythagorean identity."
+          },
+          {
+            "type": "paragraph",
+            "text": "tan²(x) and sec²(x) together → try 1 + tan²(x) = sec²(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "cot²(x) and csc²(x) together → try 1 + cot²(x) = csc²(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "sec(x), csc(x), or cot(x) mixed with sine and cosine → try reciprocal identities."
+          },
+          {
+            "type": "paragraph",
+            "text": "tan(x) mixed with sine and cosine → try quotient identities."
+          },
+          {
+            "type": "paragraph",
+            "text": "Expressions involving 2x → try double-angle identities."
+          },
+          {
+            "type": "paragraph",
+            "text": "Squared sine or cosine → consider power-reduction or Pythagorean identities depending on the target form."
+          },
+          {
+            "type": "paragraph",
+            "text": "Expressions involving A + B or A − B → try sum-and-difference identities."
+          },
+          {
+            "type": "paragraph",
+            "text": "Products of trigonometric functions → consider product-to-sum identities."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sums or differences of trigonometric functions → consider sum-to-product identities."
+          },
+          {
+            "type": "paragraph",
+            "text": "Expressions involving 3x → consider triple-angle identities."
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "pythagorean",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Pythagorean Identity",
+      "expression": "sin²(x) + cos²(x) = 1",
+      "explanation": "One of the most important identities in trigonometric equation solving. Use it to convert between sin²(x) and cos²(x), eliminate one function, or create quadratic form."
+    },
+    {
+      "id": "pythagorean-sine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Rearranged Pythagorean Identity",
+      "expression": "sin²(x) = 1 − cos²(x)",
+      "explanation": "Useful when you want an equation involving sine and cosine to become an equation only in cos(x)."
+    },
+    {
+      "id": "pythagorean-cosine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Rearranged Pythagorean Identity",
+      "expression": "cos²(x) = 1 − sin²(x)",
+      "explanation": "Useful when you want an equation involving sine and cosine to become an equation only in sin(x)."
+    },
+    {
+      "id": "pythagorean-tangent",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Pythagorean Identity",
+      "expression": "1 + tan²(x) = sec²(x)",
+      "explanation": "Useful when an equation contains tan²(x) and sec²(x)."
+    },
+    {
+      "id": "pythagorean-cotangent",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Pythagorean Identity",
+      "expression": "1 + cot²(x) = csc²(x)",
+      "explanation": "Useful when an equation contains cot²(x) and csc²(x)."
+    },
+    {
+      "id": "reciprocal-sine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Reciprocal Identity",
+      "expression": "csc(x) = 1/sin(x)",
+      "explanation": "Converts cosecant into sine and is useful when simplifying equations containing csc(x)."
+    },
+    {
+      "id": "reciprocal-cosine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Reciprocal Identity",
+      "expression": "sec(x) = 1/cos(x)",
+      "explanation": "Converts secant into cosine and is useful when simplifying equations containing sec(x)."
+    },
+    {
+      "id": "reciprocal-tangent",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Reciprocal Identity",
+      "expression": "cot(x) = 1/tan(x)",
+      "explanation": "Converts cotangent into tangent."
+    },
+    {
+      "id": "reciprocal-forms",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Reciprocal Identities",
+      "expression": "sin(x) = 1/csc(x),  cos(x) = 1/sec(x),  tan(x) = 1/cot(x)",
+      "explanation": "The reverse forms of the reciprocal identities. Useful when converting reciprocal functions into their basic counterparts."
+    },
+    {
+      "id": "quotient-tangent",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Quotient Identity",
+      "expression": "tan(x) = sin(x)/cos(x)",
+      "explanation": "Converts tangent into sine and cosine. Particularly useful when an equation contains tan(x) together with sine or cosine."
+    },
+    {
+      "id": "quotient-cotangent",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Quotient Identity",
+      "expression": "cot(x) = cos(x)/sin(x)",
+      "explanation": "Converts cotangent into sine and cosine."
+    },
+    {
+      "id": "even-sine",
+      "name": "Odd-Function Identity",
+      "expression": "sin(−x) = −sin(x)",
+      "explanation": "Useful for simplifying equations involving negative angles."
+    },
+    {
+      "id": "even-cosine",
+      "name": "Even-Function Identity",
+      "expression": "cos(−x) = cos(x)",
+      "explanation": "Useful for simplifying equations involving negative angles."
+    },
+    {
+      "id": "odd-tangent",
+      "name": "Odd-Function Identity",
+      "expression": "tan(−x) = −tan(x)",
+      "explanation": "Useful for simplifying equations involving negative angles."
+    },
+    {
+      "id": "cofunction-sine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cofunction Identity",
+      "expression": "sin(π/2 − x) = cos(x)",
+      "explanation": "Converts sine of a complementary angle into cosine."
+    },
+    {
+      "id": "cofunction-cosine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cofunction Identity",
+      "expression": "cos(π/2 − x) = sin(x)",
+      "explanation": "Converts cosine of a complementary angle into sine."
+    },
+    {
+      "id": "cofunction-tangent",
+      "name": "Cofunction Identity",
+      "expression": "tan(π/2 − x) = cot(x)",
+      "explanation": "Relates tangent and cotangent of complementary angles."
+    },
+    {
+      "id": "cofunction-cotangent",
+      "name": "Cofunction Identity",
+      "expression": "cot(π/2 − x) = tan(x)",
+      "explanation": "Relates cotangent and tangent of complementary angles."
+    },
+    {
+      "id": "cofunction-sec",
+      "name": "Cofunction Identity",
+      "expression": "sec(π/2 − x) = csc(x)",
+      "explanation": "Relates secant and cosecant of complementary angles."
+    },
+    {
+      "id": "cofunction-csc",
+      "name": "Cofunction Identity",
+      "expression": "csc(π/2 − x) = sec(x)",
+      "explanation": "Relates cosecant and secant of complementary angles."
+    },
+    {
+      "id": "sum-sine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Sine Sum Identity",
+      "expression": "sin(A + B) = sin(A)cos(B) + cos(A)sin(B)",
+      "explanation": "Expands the sine of a sum into products of sine and cosine."
+    },
+    {
+      "id": "difference-sine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Sine Difference Identity",
+      "expression": "sin(A − B) = sin(A)cos(B) − cos(A)sin(B)",
+      "explanation": "Expands the sine of a difference."
+    },
+    {
+      "id": "sum-cosine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosine Sum Identity",
+      "expression": "cos(A + B) = cos(A)cos(B) − sin(A)sin(B)",
+      "explanation": "Expands the cosine of a sum."
+    },
+    {
+      "id": "difference-cosine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosine Difference Identity",
+      "expression": "cos(A − B) = cos(A)cos(B) + sin(A)sin(B)",
+      "explanation": "Expands the cosine of a difference."
+    },
+    {
+      "id": "sum-tangent",
+      "name": "Tangent Sum Identity",
+      "expression": "tan(A + B) = (tan(A) + tan(B))/(1 − tan(A)tan(B))",
+      "explanation": "Expands tangent of a sum when the denominator is nonzero."
+    },
+    {
+      "id": "difference-tangent",
+      "name": "Tangent Difference Identity",
+      "expression": "tan(A − B) = (tan(A) − tan(B))/(1 + tan(A)tan(B))",
+      "explanation": "Expands tangent of a difference when the denominator is nonzero."
+    },
+    {
+      "id": "double-sine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Double-Angle Identity",
+      "expression": "sin(2x) = 2sin(x)cos(x)",
+      "explanation": "Extremely useful for converting a double-angle expression into a product or converting a product into a double-angle expression."
+    },
+    {
+      "id": "double-cosine-main",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Double-Angle Identity",
+      "expression": "cos(2x) = cos²(x) − sin²(x)",
+      "explanation": "The main double-angle cosine identity. Useful when both sin²(x) and cos²(x) appear."
+    },
+    {
+      "id": "double-cosine-sine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Double-Angle Identity",
+      "expression": "cos(2x) = 1 − 2sin²(x)",
+      "explanation": "Use when the equation contains sin²(x) and you want to replace it with cos(2x)."
+    },
+    {
+      "id": "double-cosine-cosine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Double-Angle Identity",
+      "expression": "cos(2x) = 2cos²(x) − 1",
+      "explanation": "Use when the equation contains cos²(x) and you want to replace it with cos(2x)."
+    },
+    {
+      "id": "double-tangent",
+      "name": "Double-Angle Identity",
+      "expression": "tan(2x) = 2tan(x)/(1 − tan²(x))",
+      "explanation": "Useful for equations containing tan(2x), provided the expression is defined."
+    },
+    {
+      "id": "power-reduction-sine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Power-Reduction Identity",
+      "expression": "sin²(x) = (1 − cos(2x))/2",
+      "explanation": "Converts squared sine into a double-angle cosine expression."
+    },
+    {
+      "id": "power-reduction-cosine",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Power-Reduction Identity",
+      "expression": "cos²(x) = (1 + cos(2x))/2",
+      "explanation": "Converts squared cosine into a double-angle cosine expression."
+    },
+    {
+      "id": "half-angle-sine",
+      "name": "Half-Angle Identity",
+      "expression": "sin²(x/2) = (1 − cos(x))/2",
+      "explanation": "Useful for equations involving squared sine of a half-angle."
+    },
+    {
+      "id": "half-angle-cosine",
+      "name": "Half-Angle Identity",
+      "expression": "cos²(x/2) = (1 + cos(x))/2",
+      "explanation": "Useful for equations involving squared cosine of a half-angle."
+    },
+    {
+      "id": "half-angle-sine-root",
+      "name": "Half-Angle Identity",
+      "expression": "sin(x/2) = ±√((1 − cos(x))/2)",
+      "explanation": "The sign depends on the quadrant containing x/2."
+    },
+    {
+      "id": "half-angle-cosine-root",
+      "name": "Half-Angle Identity",
+      "expression": "cos(x/2) = ±√((1 + cos(x))/2)",
+      "explanation": "The sign depends on the quadrant containing x/2."
+    },
+    {
+      "id": "half-angle-tangent",
+      "name": "Half-Angle Identity",
+      "expression": "tan(x/2) = ±√((1 − cos(x))/(1 + cos(x)))",
+      "explanation": "Useful when tangent of a half-angle must be related to cosine."
+    },
+    {
+      "id": "triple-sine",
+      "name": "Triple-Angle Identity",
+      "expression": "sin(3x) = 3sin(x) − 4sin³(x)",
+      "explanation": "Useful for equations involving sin(3x) or cubic expressions in sin(x)."
+    },
+    {
+      "id": "triple-cosine",
+      "name": "Triple-Angle Identity",
+      "expression": "cos(3x) = 4cos³(x) − 3cos(x)",
+      "explanation": "Useful for equations involving cos(3x) or cubic expressions in cos(x)."
+    },
+    {
+      "id": "triple-tangent",
+      "name": "Triple-Angle Identity",
+      "expression": "tan(3x) = (3tan(x) − tan³(x))/(1 − 3tan²(x))",
+      "explanation": "Useful for certain multiple-angle equations involving tangent, subject to domain restrictions."
+    },
+    {
+      "id": "product-sin-cos",
+      "name": "Product-to-Sum Identity",
+      "expression": "sin(A)cos(B) = [sin(A + B) + sin(A − B)]/2",
+      "explanation": "Converts a sine-cosine product into a sum."
+    },
+    {
+      "id": "product-cos-sin",
+      "name": "Product-to-Sum Identity",
+      "expression": "cos(A)sin(B) = [sin(A + B) − sin(A − B)]/2",
+      "explanation": "Converts a cosine-sine product into a sum."
+    },
+    {
+      "id": "product-cos-cos",
+      "name": "Product-to-Sum Identity",
+      "expression": "cos(A)cos(B) = [cos(A + B) + cos(A − B)]/2",
+      "explanation": "Converts a cosine-cosine product into a sum."
+    },
+    {
+      "id": "product-sin-sin",
+      "name": "Product-to-Sum Identity",
+      "expression": "sin(A)sin(B) = [cos(A − B) − cos(A + B)]/2",
+      "explanation": "Converts a sine-sine product into a difference of cosines."
+    },
+    {
+      "id": "sum-sin-sin",
+      "name": "Sum-to-Product Identity",
+      "expression": "sin(A) + sin(B) = 2sin((A + B)/2)cos((A − B)/2)",
+      "explanation": "Converts a sum of sines into a product, which can make the Zero Product Property applicable."
+    },
+    {
+      "id": "difference-sin-sin",
+      "name": "Sum-to-Product Identity",
+      "expression": "sin(A) − sin(B) = 2cos((A + B)/2)sin((A − B)/2)",
+      "explanation": "Converts a difference of sines into a product."
+    },
+    {
+      "id": "sum-cos-cos",
+      "name": "Sum-to-Product Identity",
+      "expression": "cos(A) + cos(B) = 2cos((A + B)/2)cos((A − B)/2)",
+      "explanation": "Converts a sum of cosines into a product."
+    },
+    {
+      "id": "difference-cos-cos",
+      "name": "Sum-to-Product Identity",
+      "expression": "cos(A) − cos(B) = −2sin((A + B)/2)sin((A − B)/2)",
+      "explanation": "Converts a difference of cosines into a product."
+    },
+    {
+      "id": "identity-equivalence",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Identity Principle",
+      "expression": "If A(x) = B(x) is an identity, either side can replace the other wherever the identity is valid.",
+      "explanation": "The fundamental principle behind identity-based equation solving. Choose the form that makes the equation easier to solve."
+    }
+  ],
+  "examples": [
+    {
+      "id": "identity-example",
+      "question": "Solve 1 − 2sin²(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Recognize the double-angle identity cos(2x) = 1 − 2sin²(x). Therefore cos(2x) = 0. Let y = 2x. Then cos(y) = 0, so y = π/2 + nπ. Thus 2x = π/2 + nπ, giving x = π/4 + nπ/2. On 0 ≤ x < 2π, the solutions are x = π/4, 3π/4, 5π/4, 7π/4."
+    },
+    {
+      "id": "pythagorean-example",
+      "question": "Solve sin²(x) + cos(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Use sin²(x) = 1 − cos²(x). Then 1 − cos²(x) + cos(x) = 0. Rearrange: cos²(x) − cos(x) − 1 = 0. Let u = cos(x). The quadratic formula gives u = (1 ± √5)/2. The value (1 + √5)/2 is greater than 1 and is impossible for cosine. Therefore cos(x) = (1 − √5)/2. Solve this cosine equation on the required interval."
+    },
+    {
+      "id": "identity-factor-example",
+      "question": "Solve sin²(x) − sin(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Factor directly: sin(x)(sin(x) − 1) = 0. Therefore sin(x) = 0 or sin(x) = 1. This gives x = 0, π and x = π/2. Final answer: x = 0, π/2, π."
+    },
+    {
+      "id": "identity-reciprocal-example",
+      "question": "Solve sec(x) = 2 for 0 ≤ x < 2π.",
+      "solution": "Use the reciprocal identity sec(x) = 1/cos(x). Then 1/cos(x) = 2, so cos(x) = 1/2. Therefore x = π/3 or 5π/3."
+    },
+    {
+      "id": "identity-quotient-example",
+      "question": "Solve tan(x) = sin(x)/cos(x) for all x where both sides are defined.",
+      "solution": "The quotient identity tan(x) = sin(x)/cos(x) is an identity, meaning the two expressions are equal everywhere on their common domain. The common domain requires cos(x) ≠ 0."
+    },
+    {
+      "id": "double-angle-sine-example",
+      "question": "Solve sin(2x) = sin(x) for 0 ≤ x < 2π.",
+      "solution": "Use sin(2x) = 2sin(x)cos(x). Then 2sin(x)cos(x) = sin(x). Move everything to one side: 2sin(x)cos(x) − sin(x) = 0. Factor: sin(x)(2cos(x) − 1) = 0. Therefore sin(x) = 0 or cos(x) = 1/2. On 0 ≤ x < 2π, this gives x = 0, π, π/3, 5π/3."
+    },
+    {
+      "id": "double-angle-cosine-example",
+      "question": "Solve cos(2x) = cos(x) for 0 ≤ x < 2π.",
+      "solution": "Use cos(2x) = 2cos²(x) − 1. Then 2cos²(x) − 1 = cos(x). Rearrange: 2cos²(x) − cos(x) − 1 = 0. Factor: (2cos(x) + 1)(cos(x) − 1) = 0. Therefore cos(x) = −1/2 or cos(x) = 1. On 0 ≤ x < 2π, the solutions are x = 2π/3, 4π/3, 0."
+    },
+    {
+      "id": "sum-difference-example",
+      "question": "Solve sin(x + π/3) = √3/2 for 0 ≤ x < 2π.",
+      "solution": "Let y = x + π/3. Then sin(y) = √3/2. Therefore y = π/3 + 2nπ or y = 2π/3 + 2nπ. Subtract π/3 from each family: x = 2nπ or x = π/3 + 2nπ. On 0 ≤ x < 2π, x = 0 and π/3."
+    },
+    {
+      "id": "sum-to-product-example",
+      "question": "Solve sin(x) + sin(3x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Use sin(A) + sin(B) = 2sin((A+B)/2)cos((A−B)/2). This gives 2sin(2x)cos(−x) = 0. Since cos(−x) = cos(x), the equation becomes 2sin(2x)cos(x) = 0. Therefore sin(2x) = 0 or cos(x) = 0. Solving both gives the complete set of solutions in the required interval."
+    },
+    {
+      "id": "pythagorean-tangent-example",
+      "question": "Solve sec²(x) − tan²(x) = 1 for all x in the common domain.",
+      "solution": "Use the Pythagorean identity sec²(x) − tan²(x) = 1. The equation is therefore an identity and is true for every x for which sec(x) and tan(x) are defined. Since both require cos(x) ≠ 0, the solution set is all x such that x ≠ π/2 + nπ, n ∈ ℤ."
+    },
+    {
+      "id": "identity-choice-example",
+      "question": "Solve 1 + tan²(x) = 4 for 0 ≤ x < 2π.",
+      "solution": "Recognize the Pythagorean identity 1 + tan²(x) = sec²(x), giving sec²(x) = 4. Thus sec(x) = ±2. Using sec(x) = 1/cos(x), cos(x) = ±1/2. Therefore x = π/3, 2π/3, 4π/3, 5π/3."
+    },
+    {
+      "id": "identity-double-angle-selection",
+      "question": "Rewrite 3 − 2cos²(x) using a double-angle identity.",
+      "solution": "Use 2cos²(x) − 1 = cos(2x). Therefore 3 − 2cos²(x) = 3 − [cos(2x) + 1] = 2 − cos(2x). The important skill is choosing the double-angle form that matches cos²(x)."
+    },
+    {
+      "id": "identity-check-example",
+      "question": "Explain why an identity transformation must preserve the original domain.",
+      "solution": "Consider tan(x) = sin(x)/cos(x). This equality is valid only where cos(x) ≠ 0 because tan(x) is undefined when cos(x) = 0. Therefore replacing tan(x) with sin(x)/cos(x) does not make those excluded values valid. Domain restrictions from the original equation must always be preserved."
+    }
+  ],
+  "key_ideas": [
+    "The purpose of an identity is to transform an equation into a form that is easier to solve.",
+    "Do not use identities randomly; choose one based on the structure of the equation.",
+    "The Pythagorean identities are among the most important identities for problem solving.",
+    "Reciprocal identities are useful for converting sec, csc, and cot into basic trigonometric functions.",
+    "Quotient identities are useful for converting tan and cot into sine and cosine.",
+    "Double-angle identities are essential when equations contain 2x or products such as sin(x)cos(x).",
+    "Power-reduction identities are useful when squared sine or cosine expressions need to be converted into double-angle expressions.",
+    "Sum-and-difference identities expand compound angles.",
+    "Sum-to-product identities can turn an equation into a factorable product.",
+    "Product-to-sum identities can turn products into sums or differences.",
+    "Pythagorean identities can convert equations into quadratic form.",
+    "Identity manipulation and factoring often work together.",
+    "Identity manipulation and quadratic methods often work together.",
+    "After transforming an equation, return to the basic trigonometric equations whenever possible.",
+    "Every resulting factor or trigonometric equation must be solved.",
+    "General solutions and restricted-interval solutions must be handled separately.",
+    "Domain restrictions must be preserved during identity transformations.",
+    "The best identity is the one that moves the equation closer to a familiar solvable form.",
+    "Some identities are far more frequently used in problem solving than others; these are explicitly marked as important."
+  ],
+  "misconceptions": [
+    "Trying random identities without first identifying the desired target form.",
+    "Assuming that applying more identities always makes an equation easier.",
+    "Memorizing identities without understanding what type of expression each identity transforms.",
+    "Forgetting the rearranged forms of the Pythagorean identity.",
+    "Using the wrong double-angle form for the functions present in the equation.",
+    "Forgetting that sin²(x) and cos²(x) are squared functions, not sin(x²) and cos(x²).",
+    "Applying a reciprocal identity without considering where the reciprocal function is undefined.",
+    "Dividing by sin(x) or cos(x) and losing possible solutions.",
+    "Forgetting that sum-to-product identities are useful because they create factors.",
+    "Stopping after applying an identity instead of solving the resulting equation.",
+    "Finding only one angle from a transformed trigonometric equation.",
+    "Forgetting to account for the full interval after a multiple-angle substitution.",
+    "Ignoring the ± sign in half-angle square-root identities.",
+    "Using half-angle identities without determining the correct sign from the quadrant.",
+    "Forgetting that an identity may only be valid on a restricted common domain.",
+    "Assuming that an identity transformation automatically preserves values where the transformed expression is undefined.",
+    "Checking only the transformed equation instead of the original equation when division or another potentially non-reversible operation was used."
+  ],
+  "explorations": [
+    {
+      "id": "identity-to-equation",
+      "type": "visualization"
+    },
+    {
+      "id": "identity-choice-tree",
+      "type": "visualization"
+    },
+    {
+      "id": "pythagorean-identity-unit-circle",
+      "type": "visualization"
+    },
+    {
+      "id": "double-angle-relationship",
+      "type": "visualization"
+    },
+    {
+      "id": "sum-to-product-factoring",
+      "type": "visualization"
+    },
+    {
+      "id": "why-identities-preserve-equations",
+      "type": "why"
+    },
+    {
+      "id": "why-different-forms-exist",
+      "type": "why"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations"
+  ]
+}

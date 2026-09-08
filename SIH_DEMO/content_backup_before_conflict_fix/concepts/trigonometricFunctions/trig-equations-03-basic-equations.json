@@ -1,0 +1,1024 @@
+{
+  "id": "trig-equations-03",
+  "title": "Solving Basic Trigonometric Equations",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 2,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-02",
+      "trigonometric-ratios",
+      "unit-circle"
+    ],
+    "leads_to": [
+      "trig-equations-04",
+      "trig-equations-05",
+      "trig-equations-06",
+      "trig-equations-07"
+    ],
+    "related": [
+      "inverse-trigonometric-functions",
+      "unit-circle",
+      "trigonometric-functions",
+      "periodic-functions",
+      "reference-angles",
+      "quadrants"
+    ]
+  },
+  "theory": {
+    "introduction": "Basic trigonometric equations are equations that can be transformed into a form involving a single basic trigonometric function such as sin(x), cos(x), or tan(x). The main goal is to find every angle that satisfies the equation. This requires more than simply using an inverse trigonometric function because sine, cosine, and tangent are periodic and can produce the same value at multiple angles.",
+    "sections": [
+      {
+        "id": "what-basic-equations-are",
+        "title": "What Is a Basic Trigonometric Equation?",
+        "content": [
+          {
+            "type": "paragraph",
+<<<<<<< HEAD
+            "text": "For sin(x) = a, find the angles where sine has value a and include all required solutions.",
+            "id": "sine-paragraph-1"
+=======
+            "text": "A basic trigonometric equation is an equation that can usually be rearranged so that one trigonometric function is isolated."
+          },
+          {
+            "type": "paragraph",
+            "text": "Examples include sin(x) = 1/2, cos(x) = −√2/2, tan(x) = √3, 2sin(x) − 1 = 0, and 3cos(x) + 2 = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "The first step is normally algebraic: isolate the trigonometric function before trying to determine the angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Once the equation has been reduced to sin(x) = a, cos(x) = a, or tan(x) = a, the unit circle, reference angles, inverse trigonometric functions, and periodicity can be used to obtain all solutions."
+>>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
+          }
+        ]
+      },
+      {
+        "id": "general-solving-process",
+        "title": "The General Method",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Start by isolating the trigonometric function, determine the relevant reference/principal angle, generate every branch, and then express or filter the solutions as requested. The reason these branches repeat comes from periodicity, covered in trig-equations-02; interval filtering is covered in trig-equations-09 and general notation in trig-equations-11."
+          }
+        ]
+      },
+      {
+        "id": "isolating-function",
+        "title": "First Isolate the Trigonometric Function",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Many equations are not initially written in the form sin(x) = a, cos(x) = a, or tan(x) = a."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, 2sin(x) − 1 = 0 can be rearranged to 2sin(x) = 1 and then sin(x) = 1/2."
+          },
+          {
+            "type": "paragraph",
+            "text": "Similarly, 3cos(x) + 2 = 0 becomes 3cos(x) = −2 and then cos(x) = −2/3."
+          },
+          {
+            "type": "paragraph",
+            "text": "The trigonometric solving step should normally begin only after the function has been isolated."
+          }
+        ]
+      },
+      {
+        "id": "sine",
+        "title": "Solving Sine Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For an equation of the form sin(x) = a, first check that −1 ≤ a ≤ 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "Use sin⁻¹(a) to obtain a principal angle or use the unit circle to identify the corresponding reference angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine is positive in Quadrants I and II and negative in Quadrants III and IV."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, for most values strictly between −1 and 1, two solutions occur during one complete revolution."
+          },
+          {
+            "type": "paragraph",
+            "text": "For all real solutions, periodicity must be included."
+          }
+        ]
+      },
+      {
+        "id": "sine-reference-angle",
+        "title": "Sine and Reference Angles",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The reference angle is the positive acute angle between the terminal side of an angle and the x-axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "If the reference angle is α and sine is positive, the solutions in one revolution occur in Quadrants I and II."
+          },
+          {
+            "type": "paragraph",
+            "text": "These angles are α and π − α."
+          },
+          {
+            "type": "paragraph",
+            "text": "If sine is negative, the solutions occur in Quadrants III and IV. The corresponding angles in 0 ≤ x < 2π can be written as π + α and 2π − α."
+          }
+        ]
+      },
+      {
+        "id": "cosine",
+        "title": "Solving Cosine Equations",
+        "content": [
+          {
+            "type": "paragraph",
+<<<<<<< HEAD
+            "text": "For cos(x) = a, use the unit circle and symmetry to locate the angles.",
+            "id": "cosine-paragraph-1"
+=======
+            "text": "For an equation of the form cos(x) = a, first check that −1 ≤ a ≤ 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "Use cos⁻¹(a) to obtain a principal angle or use the unit circle to determine the corresponding reference angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Cosine is positive in Quadrants I and IV and negative in Quadrants II and III."
+          },
+          {
+            "type": "paragraph",
+            "text": "For most values strictly between −1 and 1, cosine therefore produces two solutions during one complete revolution."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a general solution, the two solution families can be compactly represented using x = ±θ + 2nπ when θ = cos⁻¹(a)."
+>>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
+          }
+        ]
+      },
+      {
+        "id": "cosine-reference-angle",
+        "title": "Cosine and Reference Angles",
+        "content": [
+          {
+            "type": "paragraph",
+<<<<<<< HEAD
+            "text": "For tan(x) = a, find the reference angle and use tangent's period of π.",
+            "id": "tangent-paragraph-1"
+=======
+            "text": "If α is the reference angle, cosine is positive in Quadrants I and IV and negative in Quadrants II and III."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a positive cosine value, the angles in one revolution are α and 2π − α."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a negative cosine value, the angles in one revolution are π − α and π + α."
+          },
+          {
+            "type": "paragraph",
+            "text": "The reference-angle approach is particularly useful when exact unit-circle values are involved."
+          }
+        ]
+      },
+      {
+        "id": "tangent",
+        "title": "Solving Tangent Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For an equation of the form tan(x) = a, tangent can equal any real number, so there is no range restriction like the one for sine and cosine."
+          },
+          {
+            "type": "paragraph",
+            "text": "Use tan⁻¹(a) to obtain a principal angle or use the unit circle and reference angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent is positive in Quadrants I and III and negative in Quadrants II and IV."
+          },
+          {
+            "type": "paragraph",
+            "text": "Unlike sine and cosine, tangent repeats after π rather than 2π."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, one solution generates the complete solution family by adding integer multiples of π."
+          }
+        ]
+      },
+      {
+        "id": "tangent-reference-angle",
+        "title": "Tangent and Reference Angles",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For tangent, the sign determines the quadrants in which the solution occurs."
+          },
+          {
+            "type": "paragraph",
+            "text": "If tangent is positive, solutions occur in Quadrants I and III."
+          },
+          {
+            "type": "paragraph",
+            "text": "If tangent is negative, solutions occur in Quadrants II and IV."
+          },
+          {
+            "type": "paragraph",
+            "text": "Because the two corresponding angles differ by π, the complete solution can be represented using one base angle plus nπ."
+          }
+        ]
+      },
+      {
+        "id": "equations-in-form-sin-x-sin-theta",
+        "title": "Equations of the Form sin(x) = sin(θ)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Some equations are naturally written as sin(x) = sin(θ), where θ is a known angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Instead of first calculating an inverse sine value, we can use the symmetry of sine directly."
+          },
+          {
+            "type": "paragraph",
+            "text": "Sine has the same value at θ and π − θ within a single 2π cycle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, the complete solution can be written as x = θ + 2nπ or x = π − θ + 2nπ, where n ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "This form is especially useful when θ is already an exact angle such as π/6, π/4, π/3, or another known angle."
+          }
+        ]
+      },
+      {
+        "id": "equations-in-form-cos-x-cos-theta",
+        "title": "Equations of the Form cos(x) = cos(θ)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Cosine has the same value at θ and −θ because cosine is an even function."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, equations of the form cos(x) = cos(θ) can be solved using x = 2nπ ± θ, where n ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "This compact formula represents both solution families and is often faster than separately identifying the quadrants."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, cos(x) = cos(π/3) gives x = 2nπ ± π/3."
+          }
+        ]
+      },
+      {
+        "id": "equations-in-form-tan-x-tan-theta",
+        "title": "Equations of the Form tan(x) = tan(θ)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Tangent has period π, so angles separated by integer multiples of π have the same tangent value."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, tan(x) = tan(θ) has the general solution x = θ + nπ, where n ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "This is one of the most useful standard forms for solving basic tangent equations."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, tan(x) = tan(π/4) gives x = π/4 + nπ."
+          }
+        ]
+      },
+      {
+        "id": "inverse-functions",
+        "title": "Using Inverse Trigonometric Functions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Inverse trigonometric functions can provide a principal angle when the exact angle is not immediately known."
+          },
+          {
+            "type": "paragraph",
+            "text": "For sine, use x = sin⁻¹(a) as a starting value."
+          },
+          {
+            "type": "paragraph",
+            "text": "For cosine, use x = cos⁻¹(a) as a starting value."
+          },
+          {
+            "type": "paragraph",
+            "text": "For tangent, use x = tan⁻¹(a) as a starting value."
+          },
+          {
+            "type": "paragraph",
+            "text": "The calculator output is generally only one principal angle. Additional solutions must be generated using symmetry and periodicity."
+          }
+        ]
+      },
+      {
+        "id": "reference-angle-method",
+        "title": "The Reference-Angle Method",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A reference angle is the acute angle between the terminal side of an angle and the x-axis."
+          },
+          {
+            "type": "paragraph",
+            "text": "Reference angles allow the familiar first-quadrant trigonometric values to be used in every quadrant."
+          },
+          {
+            "type": "paragraph",
+            "text": "The sign of the required trigonometric value determines which quadrants are possible."
+          },
+          {
+            "type": "paragraph",
+            "text": "For sine: positive in I and II, negative in III and IV."
+          },
+          {
+            "type": "paragraph",
+            "text": "For cosine: positive in I and IV, negative in II and III."
+          },
+          {
+            "type": "paragraph",
+            "text": "For tangent: positive in I and III, negative in II and IV."
+          }
+        ]
+      },
+      {
+        "id": "special-angle-equations",
+        "title": "Using Exact Unit-Circle Values",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Many trigonometric equations use values associated with special angles such as π/6, π/4, and π/3."
+          },
+          {
+            "type": "paragraph",
+            "text": "Important sine values include sin(π/6) = 1/2, sin(π/4) = √2/2, and sin(π/3) = √3/2."
+          },
+          {
+            "type": "paragraph",
+            "text": "Important cosine values include cos(π/6) = √3/2, cos(π/4) = √2/2, and cos(π/3) = 1/2."
+          },
+          {
+            "type": "paragraph",
+            "text": "Important tangent values include tan(π/6) = 1/√3, tan(π/4) = 1, and tan(π/3) = √3."
+          },
+          {
+            "type": "paragraph",
+            "text": "When these values appear, the unit circle often allows exact solutions without using a calculator."
+          }
+        ]
+      },
+      {
+        "id": "restricted-interval",
+        "title": "Solving on a Restricted Interval",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Restricted-interval solving is a separate skill developed in trig-equations-09. Here, learn the basic solution branches; when an interval is supplied, use the later restricted-interval workflow rather than reteaching it in this lesson."
+          }
+        ]
+      },
+      {
+        "id": "degrees",
+        "title": "Solving in Degrees",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Degree-mode equations follow the same solution logic as radian-mode equations, with 360° replacing 2π and 180° replacing π. Detailed interval handling and degree/radian workflow belong to the angle-measurement and restricted-interval concepts."
+          }
+        ]
+      },
+      {
+        "id": "special-cases",
+        "title": "Special Cases",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Some values occur at especially important angles and should be recognized directly from the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sin(x) = 0 occurs at integer multiples of π."
+          },
+          {
+            "type": "paragraph",
+            "text": "cos(x) = 0 occurs at odd multiples of π/2."
+          },
+          {
+            "type": "paragraph",
+            "text": "tan(x) = 0 occurs at integer multiples of π."
+          },
+          {
+            "type": "paragraph",
+            "text": "Equations involving values 1 and −1 for sine and cosine also have special solution patterns because those extreme values occur at only one point during a half-open 2π interval."
+          }
+        ]
+      },
+      {
+        "id": "zero-values",
+        "title": "Zero-Value Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The equation sin(x) = 0 is satisfied whenever the terminal side lies on the x-axis. Therefore x = nπ, where n ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "The equation cos(x) = 0 is satisfied whenever the terminal side lies on the y-axis. Therefore x = π/2 + nπ, where n ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "The equation tan(x) = 0 is satisfied whenever sin(x) = 0 while cos(x) is nonzero. Therefore x = nπ, where n ∈ ℤ."
+          }
+        ]
+      },
+      {
+        "id": "positive-negative-values",
+        "title": "Using the Sign of the Trigonometric Function",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The sign of the given value immediately tells us which quadrants can contain solutions."
+          },
+          {
+            "type": "paragraph",
+            "text": "For sine, a positive value means Quadrants I and II, while a negative value means Quadrants III and IV."
+          },
+          {
+            "type": "paragraph",
+            "text": "For cosine, a positive value means Quadrants I and IV, while a negative value means Quadrants II and III."
+          },
+          {
+            "type": "paragraph",
+            "text": "For tangent, a positive value means Quadrants I and III, while a negative value means Quadrants II and IV."
+          },
+          {
+            "type": "paragraph",
+            "text": "Using the sign first greatly reduces the chance of missing or adding an incorrect solution."
+          }
+        ]
+      },
+      {
+        "id": "equation-with-angle-expression",
+        "title": "When the Unknown Is Inside a Multiple of an Angle",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Basic equations can also contain expressions such as sin(2x) = a or cos(3x) = a."
+          },
+          {
+            "type": "paragraph",
+            "text": "The basic solving idea is still useful: temporarily treat the entire angle expression as the unknown, find all possible values for that angle, and then solve the resulting algebraic equations for x."
+          },
+          {
+            "type": "paragraph",
+            "text": "However, because the angle expression may cover more than one period as x moves through a given interval, special care is required to avoid missing solutions."
+          },
+          {
+            "type": "paragraph",
+            "text": "Detailed multiple-angle equations are developed later in the roadmap."
+          }
+        ]
+      },
+      {
+        "id": "checking",
+        "title": "Checking Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "For basic equations, substitute a final candidate into the original equation when needed. The systematic treatment of extraneous solutions and domain-sensitive checking is developed in trig-equations-10."
+          }
+        ]
+      },
+      {
+        "id": "common-question-patterns",
+        "title": "Common Question Patterns",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Pattern 1: Direct equation such as sin(x) = a, cos(x) = a, or tan(x) = a."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pattern 2: Equation requiring algebra first, such as 2sin(x) + 1 = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pattern 3: Equation comparing equal trigonometric functions, such as sin(x) = sin(θ), cos(x) = cos(θ), or tan(x) = tan(θ)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pattern 4: Exact-value equations that can be solved directly using the unit circle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pattern 5: Equations asking for solutions on a specified interval."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pattern 6: Equations asking for the general solution."
+          },
+          {
+            "type": "paragraph",
+            "text": "Recognizing the pattern often tells you which formula or method should be used."
+          }
+        ]
+      },
+      {
+        "id": "when-to-use-which-method",
+        "title": "Choosing the Right Method",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Use the unit circle when the value is a familiar exact value and the relevant angles can be identified directly."
+          },
+          {
+            "type": "paragraph",
+            "text": "Use inverse trigonometric functions when the required value does not correspond to an immediately recognizable special angle."
+          },
+          {
+            "type": "paragraph",
+            "text": "Use the standard forms sin(x) = sin(θ), cos(x) = cos(θ), and tan(x) = tan(θ) when the equation already contains the same trigonometric function on both sides."
+          },
+          {
+            "type": "paragraph",
+            "text": "Use the general solution formulas when the problem asks for all real solutions."
+          },
+          {
+            "type": "paragraph",
+            "text": "Use interval checking when the problem asks for solutions within a particular range."
+          }
+        ]
+      },
+      {
+        "id": "complete-solution-thinking",
+        "title": "What Counts as a Complete Answer?",
+        "content": [
+          {
+            "type": "paragraph",
+<<<<<<< HEAD
+            "text": "A complete answer must contain every solution required by the problem."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a restricted interval, this means every valid solution inside the interval and no solutions outside it."
+          },
+          {
+            "type": "paragraph",
+            "text": "For a general solution, this means expressing all repeating solutions using an integer parameter such as n ∈ ℤ."
+          },
+          {
+            "type": "paragraph",
+            "text": "A calculator's single inverse-trigonometric output is therefore usually only the beginning of the solution, not the final answer."
+>>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
+=======
+            "text": "The purpose of this lesson is to master the basic forms sin(x)=a, cos(x)=a, and tan(x)=a. General-solution notation is consolidated in trig-equations-11, while interval filtering is consolidated in trig-equations-09."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "sine-general",
+      "name": "General Sine Solution",
+      "expression": "sin(x) = a  ⇒  x = (−1)ⁿ sin⁻¹(a) + nπ,  n ∈ ℤ",
+      "explanation": "Represents all real solutions when −1 ≤ a ≤ 1. This compact formula automatically accounts for the two sine solution families and the 2π periodicity."
+    },
+    {
+      "id": "sine-two-family",
+      "name": "Two-Form Sine Solution",
+      "expression": "sin(x) = a  ⇒  x = sin⁻¹(a) + 2nπ  or  x = π − sin⁻¹(a) + 2nπ,  n ∈ ℤ",
+      "explanation": "Shows the two repeating solution families explicitly. It is often easier for students to understand than the compact (−1)ⁿ form."
+    },
+    {
+      "id": "sine-equals-sine",
+      "name": "Sine Equals Sine",
+      "expression": "sin(x) = sin(θ)  ⇒  x = θ + 2nπ  or  x = π − θ + 2nπ,  n ∈ ℤ",
+      "explanation": "Use this when both sides are sine functions. The two families come from the symmetry of sine within one complete revolution."
+    },
+    {
+      "id": "cosine-general",
+      "name": "General Cosine Solution",
+      "expression": "cos(x) = a  ⇒  x = ±cos⁻¹(a) + 2nπ,  n ∈ ℤ",
+      "explanation": "Represents all real solutions when −1 ≤ a ≤ 1. The ± accounts for the two cosine solution families."
+    },
+    {
+      "id": "cosine-two-family",
+      "name": "Two-Form Cosine Solution",
+      "expression": "cos(x) = a  ⇒  x = cos⁻¹(a) + 2nπ  or  x = 2π − cos⁻¹(a) + 2nπ,  n ∈ ℤ",
+      "explanation": "Shows the two repeating cosine solution families explicitly for a principal angle in the standard first-cycle range."
+    },
+    {
+      "id": "cosine-equals-cosine",
+      "name": "Cosine Equals Cosine",
+      "expression": "cos(x) = cos(θ)  ⇒  x = 2nπ ± θ,  n ∈ ℤ",
+      "explanation": "Use this when both sides are cosine functions. The two families arise because cosine is an even function and has period 2π."
+    },
+    {
+      "id": "tangent-general",
+      "name": "General Tangent Solution",
+      "expression": "tan(x) = a  ⇒  x = tan⁻¹(a) + nπ,  n ∈ ℤ",
+      "explanation": "Represents all real solutions. Tangent has period π, so only one solution family is required."
+    },
+    {
+      "id": "tangent-equals-tangent",
+      "name": "Tangent Equals Tangent",
+      "expression": "tan(x) = tan(θ)  ⇒  x = θ + nπ,  n ∈ ℤ",
+      "explanation": "Use this when both sides are tangent functions. The solutions repeat every π because tangent has period π."
+    },
+    {
+      "id": "sine-zero",
+      "name": "Sine Equals Zero",
+      "expression": "sin(x) = 0  ⇒  x = nπ,  n ∈ ℤ",
+      "explanation": "Sine is zero on the x-axis of the unit circle, at every integer multiple of π."
+    },
+    {
+      "id": "cosine-zero",
+      "name": "Cosine Equals Zero",
+      "expression": "cos(x) = 0  ⇒  x = π/2 + nπ,  n ∈ ℤ",
+      "explanation": "Cosine is zero on the y-axis of the unit circle, at odd multiples of π/2."
+    },
+    {
+      "id": "tangent-zero",
+      "name": "Tangent Equals Zero",
+      "expression": "tan(x) = 0  ⇒  x = nπ,  n ∈ ℤ",
+      "explanation": "Tangent is zero whenever sine is zero and cosine is nonzero."
+    },
+    {
+      "id": "sine-positive-quadrants",
+      "name": "Sine Positive Quadrants",
+      "expression": "sin(x) > 0  in Quadrants I and II",
+      "explanation": "The y-coordinate of the unit-circle point is positive in Quadrants I and II."
+    },
+    {
+      "id": "sine-negative-quadrants",
+      "name": "Sine Negative Quadrants",
+      "expression": "sin(x) < 0  in Quadrants III and IV",
+      "explanation": "The y-coordinate of the unit-circle point is negative in Quadrants III and IV."
+    },
+    {
+      "id": "cosine-positive-quadrants",
+      "name": "Cosine Positive Quadrants",
+      "expression": "cos(x) > 0  in Quadrants I and IV",
+      "explanation": "The x-coordinate of the unit-circle point is positive in Quadrants I and IV."
+    },
+    {
+      "id": "cosine-negative-quadrants",
+      "name": "Cosine Negative Quadrants",
+      "expression": "cos(x) < 0  in Quadrants II and III",
+      "explanation": "The x-coordinate of the unit-circle point is negative in Quadrants II and III."
+    },
+    {
+      "id": "tangent-positive-quadrants",
+      "name": "Tangent Positive Quadrants",
+      "expression": "tan(x) > 0  in Quadrants I and III",
+      "explanation": "Tangent is sin(x)/cos(x), so it is positive when sine and cosine have the same sign."
+    },
+    {
+      "id": "tangent-negative-quadrants",
+      "name": "Tangent Negative Quadrants",
+      "expression": "tan(x) < 0  in Quadrants II and IV",
+      "explanation": "Tangent is sin(x)/cos(x), so it is negative when sine and cosine have opposite signs."
+    },
+    {
+      "id": "sine-range",
+      "name": "Sine Range",
+      "expression": "−1 ≤ sin(x) ≤ 1",
+      "explanation": "An equation sin(x) = a has no real solution when a < −1 or a > 1."
+    },
+    {
+      "id": "cosine-range",
+      "name": "Cosine Range",
+      "expression": "−1 ≤ cos(x) ≤ 1",
+      "explanation": "An equation cos(x) = a has no real solution when a < −1 or a > 1."
+    },
+    {
+      "id": "tangent-range",
+      "name": "Tangent Range",
+      "expression": "tan(x) ∈ ℝ",
+      "explanation": "Tangent can take every real value, although it is undefined at x = π/2 + nπ."
+    },
+    {
+      "id": "sine-period",
+      "name": "Sine Period",
+      "expression": "sin(x + 2π) = sin(x)",
+      "explanation": "Sine repeats every 2π radians or 360°."
+    },
+    {
+      "id": "cosine-period",
+      "name": "Cosine Period",
+      "expression": "cos(x + 2π) = cos(x)",
+      "explanation": "Cosine repeats every 2π radians or 360°."
+    },
+    {
+      "id": "tangent-period",
+      "name": "Tangent Period",
+      "expression": "tan(x + π) = tan(x)",
+      "explanation": "Tangent repeats every π radians or 180°."
+    },
+    {
+      "id": "degree-radian",
+      "name": "Degree-Radian Conversion",
+      "expression": "180° = π radians,  360° = 2π radians",
+      "explanation": "Use these relationships when converting between degree and radian forms."
+    },
+    {
+      "id": "tangent-domain",
+      "name": "Tangent Domain Restriction",
+      "expression": "x ≠ π/2 + nπ,  n ∈ ℤ",
+      "explanation": "Tangent is undefined wherever cosine is zero."
+    }
+  ],
+  "examples": [
+    {
+      "id": "sine-example",
+      "question": "Solve sin(x) = 1/2 for 0 ≤ x < 2π.",
+      "solution": "The reference angle is π/6 because sin(π/6) = 1/2. Sine is positive in Quadrants I and II. Therefore x = π/6 and x = π − π/6 = 5π/6."
+    },
+    {
+      "id": "sine-general-example",
+      "question": "Solve sin(x) = 1/2 for all real x.",
+      "solution": "The principal angle is π/6 and the second angle is 5π/6. Therefore x = π/6 + 2nπ or x = 5π/6 + 2nπ, where n ∈ ℤ. Equivalently, x = (−1)ⁿπ/6 + nπ."
+    },
+    {
+      "id": "sine-equals-sine-example",
+      "question": "Solve sin(x) = sin(π/6) for all real x.",
+      "solution": "Using sin(x) = sin(θ), x = θ + 2nπ or x = π − θ + 2nπ. Therefore x = π/6 + 2nπ or x = 5π/6 + 2nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "sine-negative-example",
+      "question": "Solve sin(x) = −1/2 for 0 ≤ x < 2π.",
+      "solution": "The reference angle is π/6. Sine is negative in Quadrants III and IV. Therefore x = π + π/6 = 7π/6 and x = 2π − π/6 = 11π/6."
+    },
+    {
+      "id": "sine-zero-example",
+      "question": "Solve sin(x) = 0 for all real x.",
+      "solution": "Sine is zero whenever the terminal side lies on the x-axis. Therefore x = nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "sine-one-example",
+      "question": "Solve sin(x) = 1 for 0 ≤ x < 2π.",
+      "solution": "Sine reaches 1 at x = π/2. Therefore the only solution in the half-open interval is x = π/2."
+    },
+    {
+      "id": "sine-impossible-example",
+      "question": "Solve sin(x) = 3 for real x.",
+      "solution": "There is no real solution because sine can only take values from −1 to 1."
+    },
+    {
+      "id": "cosine-example",
+      "question": "Solve cos(x) = −√2/2 for 0 ≤ x < 2π.",
+      "solution": "The reference angle is π/4 because cos(π/4) = √2/2. Cosine is negative in Quadrants II and III. Therefore x = 3π/4 and x = 5π/4."
+    },
+    {
+      "id": "cosine-general-example",
+      "question": "Solve cos(x) = −1/2 for all real x.",
+      "solution": "The principal inverse-cosine angle is 2π/3. Using x = ±cos⁻¹(a) + 2nπ gives x = ±2π/3 + 2nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "cosine-equals-cosine-example",
+      "question": "Solve cos(x) = cos(π/3) for all real x.",
+      "solution": "Use cos(x) = cos(θ) ⇒ x = 2nπ ± θ. Therefore x = 2nπ ± π/3, where n ∈ ℤ."
+    },
+    {
+      "id": "cosine-positive-example",
+      "question": "Solve cos(x) = 1/2 for 0 ≤ x < 2π.",
+      "solution": "The reference angle is π/3. Cosine is positive in Quadrants I and IV. Therefore x = π/3 and x = 5π/3."
+    },
+    {
+      "id": "cosine-zero-example",
+      "question": "Solve cos(x) = 0 for all real x.",
+      "solution": "Cosine is zero at odd multiples of π/2. Therefore x = π/2 + nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "cosine-impossible-example",
+      "question": "Solve cos(x) = −2 for real x.",
+      "solution": "There is no real solution because cosine can only take values from −1 to 1."
+    },
+    {
+      "id": "tangent-example",
+      "question": "Solve tan(x) = √3 for all real x.",
+      "solution": "The reference angle is π/3 because tan(π/3) = √3. Tangent is positive in Quadrants I and III and repeats every π. Therefore x = π/3 + nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "tangent-negative-example",
+      "question": "Solve tan(x) = −1 for 0 ≤ x < 2π.",
+      "solution": "The reference angle is π/4. Tangent is negative in Quadrants II and IV. Therefore x = 3π/4 and x = 7π/4."
+    },
+    {
+      "id": "tangent-equals-tangent-example",
+      "question": "Solve tan(x) = tan(π/4) for all real x.",
+      "solution": "Using tan(x) = tan(θ) ⇒ x = θ + nπ, we obtain x = π/4 + nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "tangent-zero-example",
+      "question": "Solve tan(x) = 0 for all real x.",
+      "solution": "Tangent is zero whenever sine is zero and cosine is nonzero. Therefore x = nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "tangent-domain-example",
+      "question": "Can x = π/2 be a solution of tan(x) = 1?",
+      "solution": "No. tan(π/2) is undefined because cos(π/2) = 0. Therefore π/2 is not in the domain of tangent."
+    },
+    {
+      "id": "linear-sine-example",
+      "question": "Solve 2sin(x) − 1 = 0 for 0 ≤ x < 2π.",
+      "solution": "First isolate sine: 2sin(x) = 1, so sin(x) = 1/2. The solutions are x = π/6 and x = 5π/6."
+    },
+    {
+      "id": "linear-cosine-example",
+      "question": "Solve 3cos(x) + 2 = 0 for 0 ≤ x < 2π.",
+      "solution": "First isolate cosine: 3cos(x) = −2, so cos(x) = −2/3. Since cosine is negative in Quadrants II and III, use the reference angle cos⁻¹(2/3) and place the solutions in those quadrants."
+    },
+    {
+      "id": "linear-tangent-example",
+      "question": "Solve 2tan(x) − 2 = 0 for all real x.",
+      "solution": "First isolate tangent: 2tan(x) = 2, so tan(x) = 1. Since tan⁻¹(1) = π/4 and tangent has period π, x = π/4 + nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "degree-sine-example",
+      "question": "Solve sin(x) = 1/2 for 0° ≤ x < 360°.",
+      "solution": "The reference angle is 30°. Sine is positive in Quadrants I and II, so x = 30° and x = 150°."
+    },
+    {
+      "id": "degree-cosine-example",
+      "question": "Solve cos(x) = −√3/2 for 0° ≤ x < 360°.",
+      "solution": "The reference angle is 30°. Cosine is negative in Quadrants II and III, so x = 150° and x = 210°."
+    },
+    {
+      "id": "degree-tangent-example",
+      "question": "Solve tan(x) = 1 for all real x in degrees.",
+      "solution": "The reference angle is 45°. Tangent has period 180°, so x = 45° + 180°n, where n ∈ ℤ."
+    },
+    {
+      "id": "multiple-angle-preview",
+      "question": "What is the basic idea behind solving sin(2x) = 1/2?",
+      "solution": "Treat 2x as the angle first. The sine equation  sin(2x) = 1/2 has multiple possible values of 2x. After finding those values, divide the resulting equations by 2 to obtain x. The exact number of solutions depends on the interval."
+    },
+    {
+      "id": "method-comparison",
+      "question": "Which is usually easier for solving cos(x) = cos(π/3): the unit circle or the cosine-equals-cosine formula?",
+      "solution": "Both methods work. The direct formula cos(x) = cos(θ) ⇒ x = 2nπ ± θ is especially efficient here because θ is already known."
+    }
+  ],
+  "key_ideas": [
+    "The first step is usually to isolate the trigonometric function.",
+    "The three fundamental basic forms are sin(x) = a, cos(x) = a, and tan(x) = a.",
+    "Inverse trigonometric functions provide principal angles, not automatically every solution.",
+    "The unit circle provides the exact locations of common trigonometric values.",
+    "Reference angles help locate solutions in all four quadrants.",
+    "Sine is positive in Quadrants I and II and negative in III and IV.",
+    "Cosine is positive in Quadrants I and IV and negative in II and III.",
+    "Tangent is positive in Quadrants I and III and negative in II and IV.",
+    "Sine and cosine have period 2π.",
+    "Tangent has period π.",
+    "For sin(x) = sin(θ), use x = θ + 2nπ or x = π − θ + 2nπ.",
+    "For cos(x) = cos(θ), use x = 2nπ ± θ.",
+    "For tan(x) = tan(θ), use x = θ + nπ.",
+    "For sin(x) = a, the compact general solution is x = (−1)ⁿsin⁻¹(a) + nπ.",
+    "For cos(x) = a, the general solution is x = ±cos⁻¹(a) + 2nπ.",
+    "For tan(x) = a, the general solution is x = tan⁻¹(a) + nπ.",
+    "Sine and cosine cannot equal values outside the interval [−1, 1].",
+    "Tangent can equal any real number but is undefined at π/2 + nπ.",
+    "Restricted intervals require filtering the general solution to the requested range.",
+    "General solutions use n ∈ ℤ to represent infinitely many solutions.",
+    "Exact unit-circle values should be preferred over decimal approximations when possible.",
+    "Degrees and radians must be kept consistent throughout the solution.",
+    "The interval endpoints must be checked carefully.",
+    "Every final solution should satisfy the original equation.",
+    "Recognizing the equation's form helps determine the fastest solving method.",
+    "Equations comparing the same trigonometric function on both sides have useful direct general-solution formulas.",
+    "Multiple-angle equations use the same basic principles but require additional interval and solution-count care."
+  ],
+  "misconceptions": [
+    "Giving only the calculator's inverse-trigonometric answer.",
+    "Thinking sin⁻¹(a) means 1/sin(a).",
+    "Forgetting that inverse trigonometric functions return principal values.",
+    "Forgetting the second solution for sine.",
+    "Forgetting the second solution for cosine.",
+    "Using the wrong period for tangent.",
+    "Assuming tangent has period 2π instead of π.",
+    "Using the same quadrant rules for all three functions.",
+    "Thinking sine and cosine can take values greater than 1 or less than −1.",
+    "Forgetting to isolate the trigonometric function before solving.",
+    "Forgetting to include all integer values of n in a general solution.",
+    "Treating n as a real number instead of an integer.",
+    "Forgetting negative values of n in a general solution.",
+    "Including solutions outside a restricted interval.",
+    "Missing a solution because only one quadrant was considered.",
+    "Using a reference angle as though it were always the final angle.",
+    "Confusing a reference angle with the actual solution angle.",
+    "Mixing degrees and radians.",
+    "Leaving the calculator in the wrong angle mode.",
+    "Using decimal approximations when an exact unit-circle answer is available.",
+    "Forgetting that tangent is undefined at odd multiples of π/2.",
+    "Assuming a value outside the range of sine or cosine can still produce a real angle.",
+    "Using x = θ + 2nπ for tangent instead of x = θ + nπ.",
+    "Using only x = θ + 2nπ for sine equations of the form sin(x) = sin(θ) and missing the second family.",
+    "Using x = θ + 2nπ for cosine equations and missing the symmetric solution.",
+    "Forgetting that cos(x) = cos(θ) has the compact form x = 2nπ ± θ.",
+    "Forgetting that tan(x) = tan(θ) has the compact form x = θ + nπ.",
+    "Dividing by a trigonometric expression without considering whether it can equal zero.",
+    "Assuming that solving a transformed equation automatically guarantees every resulting value is valid.",
+    "Failing to check final answers against the original equation.",
+    "Forgetting that multiple-angle equations may produce more solutions within an interval because the angle expression changes faster."
+  ],
+  "explorations": [
+    {
+      "id": "sine-equation-unit-circle",
+      "type": "visualization"
+    },
+    {
+      "id": "cosine-equation-unit-circle",
+      "type": "visualization"
+    },
+    {
+      "id": "tangent-equation-graph",
+      "type": "visualization"
+    },
+    {
+      "id": "sine-solution-families",
+      "type": "visualization"
+    },
+    {
+      "id": "cosine-solution-families",
+      "type": "visualization"
+    },
+    {
+      "id": "tangent-solution-families",
+      "type": "visualization"
+    },
+    {
+      "id": "reference-angle-quadrants",
+      "type": "visualization"
+    },
+    {
+      "id": "inverse-trig-principal-value",
+      "type": "why"
+    },
+    {
+      "id": "why-sin-equals-sin-has-two-families",
+      "type": "why"
+    },
+    {
+      "id": "why-cos-equals-cos-has-two-families",
+      "type": "why"
+    },
+    {
+      "id": "why-tan-equals-tan-has-one-family",
+      "type": "why"
+    },
+    {
+      "id": "restricted-interval-solutions",
+      "type": "visualization"
+    },
+    {
+      "id": "degrees-vs-radians",
+      "type": "visualization"
+    },
+    {
+      "id": "solution-count-prediction",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations",
+    "libretexts-basic-trigonometric-equations"
+  ]
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
+=======
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0

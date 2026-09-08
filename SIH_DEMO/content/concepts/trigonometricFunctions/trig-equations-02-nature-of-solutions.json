@@ -1,0 +1,327 @@
+{
+  "id": "trig-equations-02",
+  "title": "Understanding the Nature of Solutions",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 2,
+
+  "connections": {
+    "prerequisites": [
+      "trig-equations-01"
+    ],
+    "leads_to": [
+      "trig-equations-03",
+      "trig-equations-09",
+      "trig-equations-11"
+    ],
+    "related": [
+      "trigonometric-functions",
+      "trigonometric-graphs",
+      "unit-circle",
+      "periodic-functions",
+      "inverse-trigonometric-functions"
+    ]
+  },
+
+  "theory": {
+    "introduction": "The solutions of trigonometric equations behave differently from the solutions of many ordinary algebraic equations because trigonometric functions are periodic. A trigonometric function can return to the same value again and again as the angle increases. Understanding period, repeated solutions, principal values, intervals, and general solutions is therefore essential before learning how to solve trigonometric equations systematically.",
+
+    "sections": [
+      {
+        "id": "what-periodicity-means",
+        "title": "What Does Periodic Mean?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Sine and cosine repeat every 2π radians, while tangent repeats every π radians.",
+            "id": "periodicity-paragraph-1"
+          }
+        ]
+      },
+
+      {
+        "id": "sine-period",
+        "title": "Period of Sine",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A restricted interval asks for only the solutions inside a specified range. A general solution describes all solutions.",
+            "id": "general-and-restricted-paragraph-1"
+          }
+        ]
+      }
+    ]
+  },
+
+  "formulas": [
+    {
+      "id": "sine-period",
+      "name": "Sine Period",
+      "expression": "sin(x + 2π) = sin(x)",
+      "explanation": "Sine repeats every 2π radians, or 360°. Therefore, adding or subtracting any integer multiple of 2π gives the same sine value."
+    },
+    {
+      "id": "cosine-period",
+      "name": "Cosine Period",
+      "expression": "cos(x + 2π) = cos(x)",
+      "explanation": "Cosine repeats every 2π radians, or 360°. Therefore, adding or subtracting any integer multiple of 2π gives the same cosine value."
+    },
+    {
+      "id": "tangent-period",
+      "name": "Tangent Period",
+      "expression": "tan(x + π) = tan(x)",
+      "explanation": "Tangent repeats every π radians, or 180°. A half-turn is enough to produce the same tangent value."
+    },
+    {
+      "id": "sine-general-period",
+      "name": "Sine Periodic Family",
+      "expression": "sin(x + 2nπ) = sin(x),  n ∈ ℤ",
+      "explanation": "Adding any integer multiple of the sine period produces another angle with the same sine value."
+    },
+    {
+      "id": "cosine-general-period",
+      "name": "Cosine Periodic Family",
+      "expression": "cos(x + 2nπ) = cos(x),  n ∈ ℤ",
+      "explanation": "Adding any integer multiple of the cosine period produces another angle with the same cosine value."
+    },
+    {
+      "id": "tangent-general-period",
+      "name": "Tangent Periodic Family",
+      "expression": "tan(x + nπ) = tan(x),  n ∈ ℤ",
+      "explanation": "Adding any integer multiple of π produces another angle with the same tangent value, provided the function remains defined."
+    },
+    {
+      "id": "full-revolution",
+      "name": "One Complete Revolution",
+      "expression": "360° = 2π radians",
+      "explanation": "A complete rotation around the unit circle is 360° or 2π radians."
+    },
+    {
+      "id": "half-revolution",
+      "name": "Half Revolution",
+      "expression": "180° = π radians",
+      "explanation": "A half rotation around the unit circle is 180° or π radians. This is the period of tangent."
+    },
+    {
+      "id": "tangent-domain",
+      "name": "Tangent Domain Restriction",
+      "expression": "x ≠ π/2 + nπ,  n ∈ ℤ",
+      "explanation": "Tangent is undefined whenever cos(x) = 0, which occurs at odd multiples of π/2."
+    },
+    {
+      "id": "sine-range",
+      "name": "Sine Range",
+      "expression": "−1 ≤ sin(x) ≤ 1",
+      "explanation": "Sine can produce only values from −1 to 1. Therefore an equation such as sin(x) = 2 has no real solution."
+    },
+    {
+      "id": "cosine-range",
+      "name": "Cosine Range",
+      "expression": "−1 ≤ cos(x) ≤ 1",
+      "explanation": "Cosine can produce only values from −1 to 1. Therefore an equation such as cos(x) = −3 has no real solution."
+    },
+    {
+      "id": "tangent-range",
+      "name": "Tangent Range",
+      "expression": "tan(x) ∈ ℝ",
+      "explanation": "Tangent can take every real value, although it is undefined at x = π/2 + nπ."
+    },
+    {
+      "id": "integer-definition",
+      "name": "Integer Parameter",
+      "expression": "n ∈ ℤ",
+      "explanation": "The symbol n ∈ ℤ means that n may be any integer, allowing a general solution to represent infinitely many repeated solutions."
+    }
+  ],
+
+  "examples": [
+    {
+      "id": "period-example",
+      "question": "If x = π/6 is a solution of sin(x) = 1/2, give another solution using periodicity.",
+      "solution": "Sine has period 2π. Therefore x = π/6 + 2π = 13π/6 is also a solution."
+    },
+    {
+      "id": "multiple-sine-solutions",
+      "question": "Why does sin(x) = 1/2 have more than one solution during one complete revolution?",
+      "solution": "On the unit circle, sine represents the y-coordinate. The horizontal level y = 1/2 intersects the unit circle at two points, corresponding to x = π/6 and x = 5π/6 within 0 ≤ x < 2π."
+    },
+    {
+      "id": "cosine-solutions",
+      "question": "Why can cos(x) = 1/2 have two solutions in 0 ≤ x < 2π?",
+      "solution": "Cosine represents the x-coordinate on the unit circle. The vertical line x = 1/2 intersects the unit circle at two points, corresponding to x = π/3 and x = 5π/3."
+    },
+    {
+      "id": "tangent-period-example",
+      "question": "If x = π/4 is a solution of tan(x) = 1, give another solution.",
+      "solution": "Tangent has period π. Therefore x = π/4 + π = 5π/4 is another solution."
+    },
+    {
+      "id": "general-sine-family",
+      "question": "If x = π/6 is one solution of a sine equation, how can periodic solutions be represented?",
+      "solution": "Because sine has period 2π, the same sine value occurs at x = π/6 + 2nπ, where n ∈ ℤ. This represents infinitely many solutions belonging to one periodic family."
+    },
+    {
+      "id": "general-tangent-family",
+      "question": "If x = π/4 is one solution of tan(x) = 1, how can the repeated solutions be represented?",
+      "solution": "Tangent has period π, so the repeated family is x = π/4 + nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "principal-value",
+      "question": "A calculator gives sin⁻¹(1/2) = π/6. Is π/6 automatically the complete solution of sin(x) = 1/2?",
+      "solution": "No. π/6 is the principal value returned by the inverse sine function. The equation has another solution in 0 ≤ x < 2π, namely 5π/6, and infinitely many solutions over all real numbers."
+    },
+    {
+      "id": "restricted-interval",
+      "question": "How does the interval 0 ≤ x < 2π affect the solutions of sin(x) = 1/2?",
+      "solution": "Only angles between 0 and 2π are accepted, with 0 included and 2π excluded. The valid solutions are π/6 and 5π/6."
+    },
+    {
+      "id": "no-sine-solution",
+      "question": "Does sin(x) = 2 have a real solution?",
+      "solution": "No. The range of sine is from −1 to 1, so sine can never equal 2."
+    },
+    {
+      "id": "no-cosine-solution",
+      "question": "Does cos(x) = −4 have a real solution?",
+      "solution": "No. The range of cosine is from −1 to 1, so cosine can never equal −4."
+    },
+    {
+      "id": "tangent-domain",
+      "question": "Can x = π/2 be a solution of tan(x) = 1?",
+      "solution": "No. tan(π/2) is undefined because cos(π/2) = 0. Therefore π/2 is outside the domain of tangent."
+    },
+    {
+      "id": "degree-period",
+      "question": "If sin(x) is written using degrees, what is its period?",
+      "solution": "The period is 360°. This is equivalent to 2π radians."
+    },
+    {
+      "id": "tangent-degree-period",
+      "question": "If tan(x) is written using degrees, what is its period?",
+      "solution": "The period is 180°, which is equivalent to π radians."
+    },
+    {
+      "id": "endpoint-example",
+      "question": "Why is 2π excluded from the interval 0 ≤ x < 2π?",
+      "solution": "The inequality uses < rather than ≤, so 2π is not included. Also, 0 and 2π represent the same point after one complete revolution, so a half-open interval avoids counting the same position twice."
+    },
+    {
+      "id": "negative-angle-example",
+      "question": "Is x = −11π/6 related to x = π/6 for a sine equation?",
+      "solution": "Yes. −11π/6 + 2π = π/6. The two angles differ by one complete revolution, so they have the same sine value."
+    },
+    {
+      "id": "predict-number-solutions",
+      "question": "Before solving sin(x) = 1/2 on 0 ≤ x < 2π, how many solutions should you expect?",
+      "solution": "You should expect two solutions because the value 1/2 occurs twice during one complete revolution of the sine function."
+    },
+    {
+      "id": "period-vs-domain",
+      "question": "Is knowing that tangent has period π enough to understand all possible tangent solutions?",
+      "solution": "No. You must also remember that tangent is undefined at x = π/2 + nπ. Period tells you how the values repeat, while domain tells you which inputs are allowed."
+    }
+  ],
+
+  "key_ideas": [
+    "Trigonometric functions are periodic.",
+    "Period is the positive interval after which a function's values repeat.",
+    "Sine has period 2π radians or 360°.",
+    "Cosine has period 2π radians or 360°.",
+    "Tangent has period π radians or 180°.",
+    "Periodicity is the reason trigonometric equations can have infinitely many solutions.",
+    "The same trigonometric value can occur at different angles during one revolution.",
+    "The unit circle explains why sine and cosine commonly have two angles for the same value in one revolution.",
+    "Tangent repeats after a half-turn rather than a full turn.",
+    "A principal inverse-trigonometric value is not necessarily the complete solution to an equation.",
+    "A restricted solution contains only values inside the specified interval.",
+    "A general solution describes all valid solutions.",
+    "The integer n ∈ ℤ is used to represent infinitely many repeated solutions.",
+    "The endpoints of a restricted interval must be checked carefully.",
+    "Degrees and radians must not be mixed.",
+    "One complete revolution is 360° = 2π radians.",
+    "One half revolution is 180° = π radians.",
+    "The range of a function can determine whether an equation has any real solutions.",
+    "Sine and cosine can only produce values between −1 and 1.",
+    "Tangent can produce every real value but is undefined at odd multiples of π/2.",
+    "Period and domain describe different properties of a trigonometric function.",
+    "A solution should always belong to the domain of the original equation.",
+    "Thinking about the expected number and pattern of solutions provides a useful check after solving.",
+    "Solutions can be understood as repeating families rather than unrelated individual answers."
+  ],
+
+  "misconceptions": [
+    "Assuming a trigonometric equation has only one solution.",
+    "Assuming the answer from sin⁻¹, cos⁻¹, or tan⁻¹ is automatically the complete solution.",
+    "Forgetting that sine and cosine repeat every 2π.",
+    "Forgetting that tangent repeats every π rather than 2π.",
+    "Adding 2π to tangent solutions when the natural period is π.",
+    "Assuming every trigonometric function has the same period.",
+    "Thinking the period tells us the domain.",
+    "Forgetting that tangent is undefined at π/2 + nπ.",
+    "Ignoring the range of sine and cosine before attempting to solve an impossible equation.",
+    "Assuming that every value between −1 and 1 automatically produces two solutions in every possible interval.",
+    "Forgetting that the number of solutions depends on the interval.",
+    "Including solutions outside the specified interval.",
+    "Missing solutions because only the principal inverse-trigonometric value was considered.",
+    "Counting both 0 and 2π as different positions when using a single complete revolution.",
+    "Forgetting whether an interval endpoint is included or excluded.",
+    "Mixing degrees and radians.",
+    "Using a period in radians while the problem is expressed in degrees.",
+    "Assuming negative angles are invalid.",
+    "Assuming n can be any real number rather than an integer.",
+    "Thinking a general solution means only positive solutions.",
+    "Forgetting that n can be negative, zero, or positive.",
+    "Thinking periodicity means every angle gives the same trigonometric value.",
+    "Confusing repeated values with identical angles.",
+    "Ignoring domain restrictions after transforming an equation."
+  ],
+
+  "explorations": [
+    {
+      "id": "why-infinite-solutions",
+      "type": "visualization"
+    },
+    {
+      "id": "unit-circle-repeated-solutions",
+      "type": "visualization"
+    },
+    {
+      "id": "sine-periodicity",
+      "type": "visualization"
+    },
+    {
+      "id": "cosine-periodicity",
+      "type": "visualization"
+    },
+    {
+      "id": "tangent-periodicity",
+      "type": "visualization"
+    },
+    {
+      "id": "principal-value-vs-all-solutions",
+      "type": "why"
+    },
+    {
+      "id": "restricted-vs-general-solutions",
+      "type": "visualization"
+    },
+    {
+      "id": "solution-families",
+      "type": "visualization"
+    },
+    {
+      "id": "period-vs-domain",
+      "type": "why"
+    },
+    {
+      "id": "number-of-solutions-on-unit-circle",
+      "type": "visualization"
+    }
+  ],
+
+  "sources": [
+    "openstax-precalculus-trigonometric-equations",
+    "libretexts-basic-trigonometric-equations"
+  ]
+}

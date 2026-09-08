@@ -1,0 +1,657 @@
+{
+  "id": "trig-equations-06",
+  "title": "Quadratic Trigonometric Equations",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 3,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-03",
+      "trig-equations-05",
+      "quadratic-equations"
+    ],
+    "leads_to": [
+      "trig-equations-07",
+      "trig-equations-08"
+    ],
+    "related": [
+      "quadratic-equations",
+      "pythagorean-identities"
+    ]
+  },
+  "theory": {
+    "introduction": "Some trigonometric equations have the structure of quadratic equations when one trigonometric expression is temporarily treated as the variable. For example, 2cos²(x) − 3cos(x) + 1 = 0 has the same algebraic structure as 2u² − 3u + 1 = 0 if u = cos(x). The quadratic can first be solved algebraically, but every resulting value must then be converted back into a trigonometric equation and solved for all possible angles.",
+    "sections": [
+      {
+        "id": "recognizing-quadratic-form",
+        "title": "Recognizing Quadratic Trigonometric Equations",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A quadratic trigonometric equation contains a repeated trigonometric expression whose highest power is 2. Common forms include a sin²(x) + bsin(x) + c = 0, a cos²(x) + bcos(x) + c = 0, and a tan²(x) + btan(x) + c = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "The important pattern is that the same trigonometric function appears repeatedly. For example, 3sin²(x) − 5sin(x) + 2 = 0 is quadratic in sin(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "An expression such as sin²(x) + sin(x)cos(x) + cos²(x) = 1 is not immediately a quadratic in a single trigonometric function because more than one trigonometric expression is involved. Such equations may require identities before they become solvable."
+          }
+        ]
+      },
+      {
+        "id": "substitution",
+        "title": "Using Substitution",
+        "content": [
+          {
+            "type": "paragraph",
+<<<<<<< HEAD
+            "text": "If an equation contains repeated powers of one trigonometric function, temporarily treat that function as a variable and solve the resulting quadratic.",
+            "id": "substitution-paragraph-1"
+=======
+            "text": "When a trigonometric equation has repeated powers of one trigonometric function, temporarily replace that function with a variable."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, in 2cos²(x) − 3cos(x) + 1 = 0, let u = cos(x). Then cos²(x) becomes u² and the equation becomes 2u² − 3u + 1 = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "This turns the trigonometric equation into an ordinary quadratic equation that can be solved using factoring or the quadratic formula."
+          },
+          {
+            "type": "paragraph",
+            "text": "Substitution is not changing the mathematical problem. It is temporarily giving a shorter name to a repeated expression."
+>>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
+          }
+        ]
+      },
+      {
+        "id": "factoring-quadratic",
+        "title": "Solving the Quadratic by Factoring",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "If the quadratic factors easily, factoring is usually the fastest method."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, 2u² − 3u + 1 = 0 factors as (2u − 1)(u − 1) = 0. The Zero Product Property gives u = 1/2 or u = 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "After replacing u with the original trigonometric expression, these become separate trigonometric equations."
+          },
+          {
+            "type": "paragraph",
+            "text": "This is where Lesson 05 connects directly to quadratic trigonometric equations: the algebraic quadratic can often be solved using the same factoring techniques learned previously."
+          }
+        ]
+      },
+      {
+        "id": "quadratic-formula",
+        "title": "Using the Quadratic Formula",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Not every quadratic factors conveniently. In that case, use the quadratic formula."
+          },
+          {
+            "type": "paragraph",
+            "text": "For au² + bu + c = 0, the solutions are u = (−b ± √(b² − 4ac))/(2a)."
+          },
+          {
+            "type": "paragraph",
+            "text": "After finding u, substitute back to obtain an equation such as sin(x) = u or cos(x) = u."
+          },
+          {
+            "type": "paragraph",
+            "text": "The discriminant b² − 4ac determines the number and type of real algebraic solutions. However, even a real algebraic solution may not correspond to a real angle if it lies outside the range of the trigonometric function."
+          }
+        ]
+      },
+      {
+        "id": "convert-back",
+        "title": "Convert Back to Angles",
+        "content": [
+          {
+            "type": "paragraph",
+<<<<<<< HEAD
+            "text": "After solving the quadratic, substitute the trigonometric expression back and solve the resulting trigonometric equations.",
+            "id": "convert-back-paragraph-1"
+=======
+            "text": "Solving the quadratic only gives values of the temporary variable. These are not yet the final answers."
+          },
+          {
+            "type": "paragraph",
+            "text": "If u = cos(x) and the quadratic gives u = 1/2 and u = 1, convert them back to cos(x) = 1/2 and cos(x) = 1."
+          },
+          {
+            "type": "paragraph",
+            "text": "Each resulting trigonometric equation must then be solved completely using the unit circle, inverse trigonometric functions, or the appropriate general-solution formula."
+          },
+          {
+            "type": "paragraph",
+            "text": "This is one of the most important steps: the quadratic solution is a trigonometric value, not necessarily an angle."
+          }
+        ]
+      },
+      {
+        "id": "valid-trig-values",
+        "title": "Checking Whether Quadratic Solutions Are Possible",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The algebraic quadratic may produce values that are impossible for the original trigonometric function."
+          },
+          {
+            "type": "paragraph",
+            "text": "For sine and cosine, every real angle satisfies −1 ≤ sin(x) ≤ 1 and −1 ≤ cos(x) ≤ 1. Therefore a result such as sin(x) = 3 or cos(x) = −2 cannot produce a real solution."
+          },
+          {
+            "type": "paragraph",
+            "text": "Tangent can take any real value, so a value such as tan(x) = 3 is possible. However, tangent is undefined whenever cos(x) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "Always test the quadratic roots against the range and domain of the original trigonometric function before solving for angles."
+          }
+        ]
+      },
+      {
+        "id": "quadratic-in-sine",
+        "title": "Quadratic Equations in sin(x)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An equation of the form a sin²(x) + b sin(x) + c = 0 can be treated as a quadratic in sin(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Let u = sin(x), solve au² + bu + c = 0, reject any roots outside [−1, 1], and then solve each remaining equation sin(x) = u."
+          },
+          {
+            "type": "paragraph",
+            "text": "When working on a restricted interval, each valid sine value may produce two, one, or zero solutions depending on the value and the interval."
+          }
+        ]
+      },
+      {
+        "id": "quadratic-in-cosine",
+        "title": "Quadratic Equations in cos(x)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An equation of the form a cos²(x) + b cos(x) + c = 0 can be treated as a quadratic in cos(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Let u = cos(x), solve the resulting quadratic, reject values outside [−1, 1], and solve every remaining equation cos(x) = u."
+          },
+          {
+            "type": "paragraph",
+            "text": "Remember that cosine is positive in Quadrants I and IV and negative in Quadrants II and III."
+          }
+        ]
+      },
+      {
+        "id": "quadratic-in-tangent",
+        "title": "Quadratic Equations in tan(x)",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An equation of the form a tan²(x) + b tan(x) + c = 0 can be treated as a quadratic in tan(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Let u = tan(x), solve the quadratic, and then solve every equation tan(x) = u."
+          },
+          {
+            "type": "paragraph",
+            "text": "Unlike sine and cosine, tangent has no finite upper or lower bound, so every real quadratic root is potentially valid. However, the resulting angles must still lie in the domain of tangent."
+          }
+        ]
+      },
+      {
+        "id": "special-zero-cases",
+        "title": "Special Cases Involving Zero",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Some quadratic equations simplify into forms such as sin²(x) − sin(x) = 0. Factoring gives sin(x)(sin(x) − 1) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "This produces both sin(x) = 0 and sin(x) = 1. Neither solution should be lost by dividing through by sin(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "This connects directly to the solution-preservation principle from factoring: never remove a factor that could equal zero without considering its solutions."
+          }
+        ]
+      },
+      {
+        "id": "using-pythagorean-identities",
+        "title": "Using Pythagorean Identities to Create Quadratic Form",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Use the Pythagorean identities as algebraic conversion tools when needed. Their full identity family and selection strategy are taught in trig-equations-07; this lesson only applies the relevant identity to a quadratic-form equation."
+          }
+        ]
+      },
+      {
+        "id": "restricted-interval",
+        "title": "Solving on a Restricted Interval",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Once the quadratic equation has been solved and converted back to trigonometric values, use trig-equations-09 for systematic interval filtering."
+          }
+        ]
+      },
+      {
+        "id": "general-solution",
+        "title": "Writing General Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "After the quadratic step produces one or more basic trigonometric equations, use the general-solution conventions consolidated in trig-equations-11."
+          }
+        ]
+      },
+      {
+        "id": "duplicate-solutions",
+        "title": "Avoiding Duplicate Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Different algebraic branches can sometimes lead to the same angle, particularly when identities or multiple transformations are used."
+          },
+          {
+            "type": "paragraph",
+            "text": "The final solution set should contain each solution only once."
+          },
+          {
+            "type": "paragraph",
+            "text": "When solving within a restricted interval, sort the final answers and check for duplicates before presenting them."
+          }
+        ]
+      },
+      {
+        "id": "checking-solutions",
+        "title": "Checking Quadratic-Trig Candidates",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Quadratic methods can produce algebraic candidates, but candidates must satisfy the original trigonometric equation and its domain restrictions."
+          },
+          {
+            "type": "paragraph",
+            "text": "Lesson 10 owns the detailed theory of extraneous solutions and systematic checking. Here, apply that principle briefly: substitute the candidate into the original equation before accepting it."
+          }
+        ]
+      },
+      {
+        "id": "complete-workflow",
+        "title": "Quadratic-Trig Workflow",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "1. Identify the repeated trigonometric quantity, such as sin x, cos x, or tan x."
+          },
+          {
+            "type": "paragraph",
+            "text": "2. Substitute it with a temporary variable when that makes the algebra clearer."
+          },
+          {
+            "type": "paragraph",
+            "text": "3. Solve the resulting quadratic using factoring or the quadratic formula."
+          },
+          {
+            "type": "paragraph",
+            "text": "4. Convert the valid trigonometric values back into angle solutions using the appropriate trigonometric equation method."
+          },
+          {
+            "type": "paragraph",
+            "text": "5. If the problem gives a restricted interval, use Lesson 09 to select the allowed angles."
+          },
+          {
+            "type": "paragraph",
+            "text": "6. Check candidates in the original equation; Lesson 10 provides the full checking framework."
+          },
+          {
+            "type": "paragraph",
+<<<<<<< HEAD
+            "text": "Step 7: Solve every resulting trigonometric equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 8: Apply the required interval or write the complete general solution."
+          },
+          {
+            "type": "paragraph",
+            "text": "Step 9: Remove duplicates and check the final answers in the original equation when appropriate."
+>>>>>>> 040ee84ae1f15227cde180ef79a49dd21cad839d
+=======
+            "text": "This lesson owns the quadratic structure. It does not reteach interval filtering, general-solution notation, or extraneous-solution theory."
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "quadratic-form",
+      "name": "Quadratic Form",
+      "expression": "au² + bu + c = 0",
+      "explanation": "The standard quadratic form used after replacing a repeated trigonometric expression with u."
+    },
+    {
+      "id": "quadratic-formula",
+      "name": "Quadratic Formula",
+      "expression": "u = (−b ± √(b² − 4ac))/(2a)",
+      "explanation": "Used to solve a quadratic when factoring is inconvenient or impossible over the integers."
+    },
+    {
+      "id": "discriminant",
+      "name": "Discriminant",
+      "expression": "Δ = b² − 4ac",
+      "explanation": "Determines the nature of the quadratic roots. If Δ > 0 there are two distinct real roots, if Δ = 0 there is one repeated real root, and if Δ < 0 there are no real roots."
+    },
+    {
+      "id": "substitution-sine",
+      "name": "Sine Substitution",
+      "expression": "u = sin(x),  sin²(x) = u²",
+      "explanation": "Used when an equation is quadratic in sin(x)."
+    },
+    {
+      "id": "substitution-cosine",
+      "name": "Cosine Substitution",
+      "expression": "u = cos(x),  cos²(x) = u²",
+      "explanation": "Used when an equation is quadratic in cos(x)."
+    },
+    {
+      "id": "substitution-tangent",
+      "name": "Tangent Substitution",
+      "expression": "u = tan(x),  tan²(x) = u²",
+      "explanation": "Used when an equation is quadratic in tan(x)."
+    },
+    {
+      "id": "sine-range",
+      "name": "Range of Sine",
+      "expression": "−1 ≤ sin(x) ≤ 1",
+      "explanation": "Any quadratic root outside this interval cannot be a real value of sin(x)."
+    },
+    {
+      "id": "cosine-range",
+      "name": "Range of Cosine",
+      "expression": "−1 ≤ cos(x) ≤ 1",
+      "explanation": "Any quadratic root outside this interval cannot be a real value of cos(x)."
+    },
+    {
+      "id": "tangent-range",
+      "name": "Range of Tangent",
+      "expression": "tan(x) ∈ ℝ",
+      "explanation": "Tangent can take any real value, although it is undefined where cos(x) = 0."
+    },
+    {
+      "id": "sine-general",
+      "name": "General Sine Solution",
+      "expression": "sin(x) = a  ⇒  x = sin⁻¹(a) + 2nπ or x = π − sin⁻¹(a) + 2nπ,  n ∈ ℤ",
+      "explanation": "Use after a quadratic in sine produces a valid value a."
+    },
+    {
+      "id": "cosine-general",
+      "name": "General Cosine Solution",
+      "expression": "cos(x) = a  ⇒  x = ±cos⁻¹(a) + 2nπ,  n ∈ ℤ",
+      "explanation": "Use after a quadratic in cosine produces a valid value a."
+    },
+    {
+      "id": "tangent-general",
+      "name": "General Tangent Solution",
+      "expression": "tan(x) = a  ⇒  x = tan⁻¹(a) + nπ,  n ∈ ℤ",
+      "explanation": "Use after a quadratic in tangent produces a valid value a."
+    },
+    {
+      "id": "sine-zero",
+      "name": "Sine Equals Zero",
+      "expression": "sin(x) = 0  ⇒  x = nπ,  n ∈ ℤ",
+      "explanation": "Common result when a quadratic in sine has zero as one of its roots."
+    },
+    {
+      "id": "cosine-zero",
+      "name": "Cosine Equals Zero",
+      "expression": "cos(x) = 0  ⇒  x = π/2 + nπ,  n ∈ ℤ",
+      "explanation": "Common result when a quadratic in cosine has zero as one of its roots."
+    },
+    {
+      "id": "tangent-zero",
+      "name": "Tangent Equals Zero",
+      "expression": "tan(x) = 0  ⇒  x = nπ,  n ∈ ℤ",
+      "explanation": "Common result when a quadratic in tangent has zero as one of its roots."
+    },
+    {
+      "id": "sine-one",
+      "name": "Sine Equals One",
+      "expression": "sin(x) = 1  ⇒  x = π/2 + 2nπ,  n ∈ ℤ",
+      "explanation": "Useful when a quadratic produces sin(x) = 1."
+    },
+    {
+      "id": "sine-negative-one",
+      "name": "Sine Equals Negative One",
+      "expression": "sin(x) = −1  ⇒  x = 3π/2 + 2nπ,  n ∈ ℤ",
+      "explanation": "Useful when a quadratic produces sin(x) = −1."
+    },
+    {
+      "id": "cosine-one",
+      "name": "Cosine Equals One",
+      "expression": "cos(x) = 1  ⇒  x = 2nπ,  n ∈ ℤ",
+      "explanation": "Useful when a quadratic produces cos(x) = 1."
+    },
+    {
+      "id": "cosine-negative-one",
+      "name": "Cosine Equals Negative One",
+      "expression": "cos(x) = −1  ⇒  x = π + 2nπ,  n ∈ ℤ",
+      "explanation": "Useful when a quadratic produces cos(x) = −1."
+    },
+    {
+      "id": "sine-pythagorean",
+      "name": "Pythagorean Identity for Sine",
+      "expression": "sin²(x) + cos²(x) = 1",
+      "explanation": "Can convert between sin²(x) and cos²(x) and may turn an equation into quadratic form."
+    },
+    {
+      "id": "sine-square-replacement",
+      "name": "Rewrite sin²(x)",
+      "expression": "sin²(x) = 1 − cos²(x)",
+      "explanation": "Useful for converting an equation involving sin²(x) into one involving cos²(x)."
+    },
+    {
+      "id": "cosine-square-replacement",
+      "name": "Rewrite cos²(x)",
+      "expression": "cos²(x) = 1 − sin²(x)",
+      "explanation": "Useful for converting an equation involving cos²(x) into one involving sin²(x)."
+    },
+    {
+      "id": "quadratic-factoring",
+      "name": "Factored Quadratic",
+      "expression": "au² + bu + c = (pu + q)(ru + s)",
+      "explanation": "When the quadratic can be factored, use the Zero Product Property to obtain the possible values of u."
+    },
+    {
+      "id": "zero-product",
+      "name": "Zero Product Property",
+      "expression": "AB = 0  ⇒  A = 0 or B = 0",
+      "explanation": "Used after factoring the quadratic. Every factor must be considered."
+    },
+    {
+      "id": "sine-period",
+      "name": "Period of Sine",
+      "expression": "sin(x + 2π) = sin(x)",
+      "explanation": "Sine repeats every 2π radians."
+    },
+    {
+      "id": "cosine-period",
+      "name": "Period of Cosine",
+      "expression": "cos(x + 2π) = cos(x)",
+      "explanation": "Cosine repeats every 2π radians."
+    },
+    {
+      "id": "tangent-period",
+      "name": "Period of Tangent",
+      "expression": "tan(x + π) = tan(x)",
+      "explanation": "Tangent repeats every π radians."
+    }
+  ],
+  "examples": [
+    {
+      "id": "quadratic-example",
+      "question": "Solve 2cos²(x) − 3cos(x) + 1 = 0 for 0 ≤ x < 2π.",
+      "solution": "Let u = cos(x). Then 2u² − 3u + 1 = 0. Factor: (2u − 1)(u − 1) = 0. Therefore u = 1/2 or u = 1. Substitute back: cos(x) = 1/2 or cos(x) = 1. On 0 ≤ x < 2π, cos(x) = 1/2 gives x = π/3, 5π/3, while cos(x) = 1 gives x = 0. Final answer: x = 0, π/3, 5π/3."
+    },
+    {
+      "id": "quadratic-sine-example",
+      "question": "Solve 2sin²(x) − 3sin(x) + 1 = 0 for 0 ≤ x < 2π.",
+      "solution": "Let u = sin(x). Then 2u² − 3u + 1 = 0. Factor: (2u − 1)(u − 1) = 0. Therefore sin(x) = 1/2 or sin(x) = 1. Sin(x) = 1/2 gives x = π/6, 5π/6. Sin(x) = 1 gives x = π/2. Final answer: x = π/6, π/2, 5π/6."
+    },
+    {
+      "id": "quadratic-negative-sine",
+      "question": "Solve 2sin²(x) + sin(x) − 1 = 0 for 0 ≤ x < 2π.",
+      "solution": "Let u = sin(x). Then 2u² + u − 1 = 0. Factor: (2u − 1)(u + 1) = 0. Therefore sin(x) = 1/2 or sin(x) = −1. On 0 ≤ x < 2π, these give x = π/6, 5π/6, and 3π/2. Final answer: x = π/6, 5π/6, 3π/2."
+    },
+    {
+      "id": "quadratic-no-valid-root",
+      "question": "Solve 2sin²(x) − 7sin(x) + 6 = 0.",
+      "solution": "Let u = sin(x). Then 2u² − 7u + 6 = 0. Factor: (2u − 3)(u − 2) = 0. Therefore sin(x) = 3/2 or sin(x) = 2. Both values are outside the range [−1, 1] of sine. Therefore there are no real solutions."
+    },
+    {
+      "id": "quadratic-cosine-impossible-root",
+      "question": "Solve cos²(x) + cos(x) − 2 = 0.",
+      "solution": "Let u = cos(x). Then u² + u − 2 = 0. Factor: (u + 2)(u − 1) = 0. Thus cos(x) = −2 or cos(x) = 1. Cos(x) = −2 is impossible because cosine lies between −1 and 1. Therefore cos(x) = 1, giving x = 2nπ, n ∈ ℤ."
+    },
+    {
+      "id": "quadratic-tangent-example",
+      "question": "Solve tan²(x) − 3tan(x) + 2 = 0 for 0 ≤ x < 2π.",
+      "solution": "Let u = tan(x). Then u² − 3u + 2 = 0. Factor: (u − 1)(u − 2) = 0. Therefore tan(x) = 1 or tan(x) = 2. Tan(x) = 1 gives x = π/4, 5π/4. Tan(x) = 2 gives x = tan⁻¹(2), π + tan⁻¹(2). Final answer: x = π/4, tan⁻¹(2), 5π/4, π + tan⁻¹(2)."
+    },
+    {
+      "id": "quadratic-formula-example",
+      "question": "Solve 2sin²(x) + sin(x) − 1/2 = 0.",
+      "solution": "Let u = sin(x). Then 2u² + u − 1/2 = 0. Multiply by 2: 4u² + 2u − 1 = 0. Use the quadratic formula: u = [−2 ± √(2² − 4(4)(−1))]/8 = [−2 ± √20]/8 = (−1 ± √5)/4. Both values lie between −1 and 1, so both are possible sine values. The final step is to solve sin(x) = (−1 + √5)/4 and sin(x) = (−1 − √5)/4, using the appropriate inverse-sine and quadrant methods."
+    },
+    {
+      "id": "quadratic-zero-example",
+      "question": "Solve sin²(x) − sin(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Factor: sin(x)(sin(x) − 1) = 0. Therefore sin(x) = 0 or sin(x) = 1. On the interval, sin(x) = 0 gives x = 0, π and sin(x) = 1 gives x = π/2. Final answer: x = 0, π/2, π."
+    },
+    {
+      "id": "quadratic-zero-cosine-example",
+      "question": "Solve cos²(x) − cos(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Factor: cos(x)(cos(x) − 1) = 0. Therefore cos(x) = 0 or cos(x) = 1. Cos(x) = 0 gives x = π/2, 3π/2. Cos(x) = 1 gives x = 0. Final answer: x = 0, π/2, 3π/2."
+    },
+    {
+      "id": "quadratic-pythagorean-example",
+      "question": "Solve sin²(x) + cos(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Use sin²(x) = 1 − cos²(x). Then 1 − cos²(x) + cos(x) = 0. Rearrange: cos²(x) − cos(x) − 1 = 0. Let u = cos(x): u² − u − 1 = 0. The quadratic formula gives u = (1 ± √5)/2. The root (1 + √5)/2 is greater than 1 and is impossible for cosine. The root (1 − √5)/2 lies in [−1, 1], so the remaining equation is cos(x) = (1 − √5)/2. Solve this equation using the cosine general-solution method."
+    },
+    {
+      "id": "quadratic-restricted-interval",
+      "question": "Solve 3cos²(x) − 4cos(x) + 1 = 0 for 0 ≤ x ≤ 2π.",
+      "solution": "Let u = cos(x). Then 3u² − 4u + 1 = 0. Factor: (3u − 1)(u − 1) = 0. Therefore cos(x) = 1/3 or cos(x) = 1. Cos(x) = 1 gives x = 0 and x = 2π because this interval includes both endpoints. Cos(x) = 1/3 gives x = cos⁻¹(1/3) and x = 2π − cos⁻¹(1/3). Final answer: x = 0, cos⁻¹(1/3), 2π − cos⁻¹(1/3), 2π."
+    },
+    {
+      "id": "quadratic-general-sine",
+      "question": "Solve sin²(x) − 3sin(x) + 2 = 0 for all real x.",
+      "solution": "Let u = sin(x). Then u² − 3u + 2 = 0, which factors as (u − 1)(u − 2) = 0. Therefore sin(x) = 1 or sin(x) = 2. Sin(x) = 2 is impossible because the range of sine is [−1, 1]. Sin(x) = 1 gives x = π/2 + 2nπ, n ∈ ℤ."
+    },
+    {
+      "id": "quadratic-complete-workflow",
+      "question": "Solve 4cos²(x) − 4cos(x) = 0 for 0 ≤ x < 2π and demonstrate the complete workflow.",
+      "solution": "Step 1: The equation is already equal to zero. Step 2: It is quadratic in cos(x). Step 3: Let u = cos(x). Step 4: 4u² − 4u = 0. Factor: 4u(u − 1) = 0. Step 5: u = 0 or u = 1, and both are valid cosine values. Step 6: Convert back: cos(x) = 0 or cos(x) = 1. Step 7: On 0 ≤ x < 2π, cos(x) = 0 gives x = π/2, 3π/2, while cos(x) = 1 gives x = 0. Step 8: Combine and order the solutions. Final answer: x = 0, π/2, 3π/2."
+    }
+  ],
+  "key_ideas": [
+    "Recognize when a trigonometric equation has quadratic structure.",
+    "Treat a repeated trigonometric function as a temporary algebraic variable.",
+    "Use substitution to simplify quadratic trigonometric equations.",
+    "Solve the resulting quadratic by factoring whenever convenient.",
+    "Use the quadratic formula when factoring is not convenient.",
+    "The solutions of the quadratic are values of the trigonometric function, not automatically angles.",
+    "Always convert valid algebraic roots back into trigonometric equations.",
+    "Check whether every quadratic root lies within the range of the original trigonometric function.",
+    "Sine and cosine values must lie between −1 and 1.",
+    "Tangent can take any real value but has domain restrictions.",
+    "Every valid trigonometric equation must be solved completely.",
+    "A single trigonometric value can correspond to multiple angles.",
+    "Use the unit circle and quadrant signs to find all restricted-interval solutions.",
+    "Use general solution formulas when no interval is specified.",
+    "Pythagorean identities can sometimes transform an equation into quadratic form.",
+    "Do not divide by a trigonometric factor that could equal zero without separately considering that case.",
+    "Remove duplicate solutions from the final answer.",
+    "Check the final solutions in the original equation when transformations may have changed the solution set.",
+    "The complete process is: recognize → substitute → solve quadratic → validate roots → convert back → solve trigonometric equations → apply interval/general solution → check."
+  ],
+  "misconceptions": [
+    "Thinking that solving the quadratic completes the problem.",
+    "Treating the quadratic root u as the angle x instead of as a trigonometric value.",
+    "Forgetting to substitute the quadratic roots back into the original trigonometric expression.",
+    "Accepting sin(x) = 2 or cos(x) = −3 as real solutions.",
+    "Forgetting the range restriction of sine and cosine.",
+    "Assuming every valid trigonometric value produces only one angle.",
+    "Finding only the principal inverse-trigonometric value.",
+    "Forgetting the second angle for sine or cosine on a full period.",
+    "Using the wrong period for tangent.",
+    "Stopping after finding one quadratic root and ignoring the other.",
+    "Using the quadratic formula incorrectly because the coefficient a is not 1.",
+    "Forgetting to multiply through by a denominator before identifying the quadratic coefficients.",
+    "Dividing by sin(x), cos(x), or another expression that may equal zero and losing solutions.",
+    "Forgetting that tangent is undefined when cos(x) = 0.",
+    "Using a Pythagorean identity incorrectly when converting between sine and cosine.",
+    "Including solutions outside the requested interval.",
+    "Including both endpoints when the interval excludes one of them.",
+    "Listing duplicate solutions.",
+    "Assuming a real quadratic root always produces a real trigonometric solution.",
+    "Checking only the transformed equation instead of the original equation when a transformation may have introduced or removed solutions."
+  ],
+  "explorations": [
+    {
+      "id": "quadratic-trigonometric-equation",
+      "type": "visualization"
+    },
+    {
+      "id": "quadratic-as-function",
+      "type": "visualization"
+    },
+    {
+      "id": "trig-value-to-angle",
+      "type": "visualization"
+    },
+    {
+      "id": "quadratic-roots-on-unit-circle",
+      "type": "visualization"
+    },
+    {
+      "id": "pythagorean-identity-quadratic",
+      "type": "visualization"
+    },
+    {
+      "id": "why-roots-must-be-validated",
+      "type": "why"
+    },
+    {
+      "id": "why-substitution-works",
+      "type": "why"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations"
+  ]
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 6aae9e2c129059a383990d38293deaa98df015c0

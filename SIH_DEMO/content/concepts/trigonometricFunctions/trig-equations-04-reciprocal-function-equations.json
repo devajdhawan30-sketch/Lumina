@@ -1,0 +1,453 @@
+{
+  "id": "trig-equations-04",
+  "title": "Equations Using Reciprocal Functions",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 3,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-03"
+    ],
+    "leads_to": [
+      "trig-equations-05",
+      "trig-equations-07",
+      "trig-equations-10"
+    ],
+    "related": [
+      "trigonometric-functions",
+      "domain-and-range",
+      "trigonometric-identities",
+      "unit-circle",
+      "reference-angles",
+      "quadrants"
+    ]
+  },
+  "theory": {
+    "introduction": "Reciprocal trigonometric equations involve secant, cosecant, and cotangent. These functions are reciprocals of cosine, sine, and tangent respectively. Most reciprocal-function equations can be solved by rewriting them in terms of sine, cosine, or tangent, solving the resulting basic trigonometric equation, and then checking that the original reciprocal function is defined.",
+    "sections": [
+      {
+        "id": "reciprocal-functions",
+        "title": "Reciprocal Trigonometric Functions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Secant is the reciprocal of cosine, cosecant is the reciprocal of sine, and cotangent is the reciprocal of tangent.",
+            "id": "reciprocal-functions-paragraph-1"
+          }
+        ]
+      },
+      {
+        "id": "reciprocal-from-sine-cosine-tangent",
+        "title": "How the Reciprocal Functions Are Defined",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Since tan(x) = sin(x)/cos(x), its reciprocal is cot(x) = cos(x)/sin(x)."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since sec(x) = 1/cos(x), secant is defined only where cosine is nonzero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since csc(x) = 1/sin(x), cosecant is defined only where sine is nonzero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Since cot(x) = cos(x)/sin(x), cotangent is defined only where sine is nonzero."
+          },
+          {
+            "type": "paragraph",
+            "text": "Understanding these definitions is important because reciprocal functions inherit domain restrictions from the function in their denominator."
+          }
+        ]
+      },
+      {
+        "id": "domain",
+        "title": "Domain Restrictions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "These functions are undefined whenever their denominator is zero. Domain restrictions must be respected while solving.",
+            "id": "domain-paragraph-1"
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "sec-reciprocal",
+      "name": "Secant Reciprocal Identity",
+      "expression": "sec(x) = 1/cos(x)",
+      "explanation": "Use this to convert secant equations into cosine equations."
+    },
+    {
+      "id": "csc-reciprocal",
+      "name": "Cosecant Reciprocal Identity",
+      "expression": "csc(x) = 1/sin(x)",
+      "explanation": "Use this to convert cosecant equations into sine equations."
+    },
+    {
+      "id": "cot-reciprocal",
+      "name": "Cotangent Reciprocal Identity",
+      "expression": "cot(x) = 1/tan(x) = cos(x)/sin(x)",
+      "explanation": "Use this to convert cotangent equations into tangent, sine, or cosine equations when useful."
+    },
+    {
+      "id": "sec-to-cos-equation",
+      "name": "Secant Equation Conversion",
+      "expression": "sec(x) = a  ⇒  cos(x) = 1/a,  a ≠ 0",
+      "explanation": "Rewrite a secant equation as a cosine equation and then use the cosine solution methods."
+    },
+    {
+      "id": "csc-to-sin-equation",
+      "name": "Cosecant Equation Conversion",
+      "expression": "csc(x) = a  ⇒  sin(x) = 1/a,  a ≠ 0",
+      "explanation": "Rewrite a cosecant equation as a sine equation and then use the sine solution methods."
+    },
+    {
+      "id": "cot-to-tan-equation",
+      "name": "Cotangent Equation Conversion",
+      "expression": "cot(x) = a  ⇒  tan(x) = 1/a,  a ≠ 0",
+      "explanation": "Rewrite a cotangent equation as a tangent equation and then use the tangent solution methods."
+    },
+    {
+      "id": "sec-general",
+      "name": "General Secant Solution",
+      "expression": "sec(x) = a  ⇒  x = ±cos⁻¹(1/a) + 2nπ,  n ∈ ℤ,  |a| ≥ 1",
+      "explanation": "Obtained by converting sec(x) = a into cos(x) = 1/a and applying the general cosine solution."
+    },
+    {
+      "id": "csc-general",
+      "name": "General Cosecant Solution",
+      "expression": "csc(x) = a  ⇒  x = (−1)ⁿ sin⁻¹(1/a) + nπ,  n ∈ ℤ,  |a| ≥ 1",
+      "explanation": "Obtained by converting csc(x) = a into sin(x) = 1/a and applying the general sine solution."
+    },
+    {
+      "id": "cot-general",
+      "name": "General Cotangent Solution",
+      "expression": "cot(x) = a  ⇒  x = tan⁻¹(1/a) + nπ,  n ∈ ℤ,  a ≠ 0",
+      "explanation": "Obtained by converting cot(x) = a into tan(x) = 1/a. Cotangent has period π."
+    },
+    {
+      "id": "sec-domain",
+      "name": "Secant Domain Restriction",
+      "expression": "cos(x) ≠ 0  ⇒  x ≠ π/2 + nπ,  n ∈ ℤ",
+      "explanation": "Secant is undefined wherever cosine is zero."
+    },
+    {
+      "id": "csc-domain",
+      "name": "Cosecant Domain Restriction",
+      "expression": "sin(x) ≠ 0  ⇒  x ≠ nπ,  n ∈ ℤ",
+      "explanation": "Cosecant is undefined wherever sine is zero."
+    },
+    {
+      "id": "cot-domain",
+      "name": "Cotangent Domain Restriction",
+      "expression": "sin(x) ≠ 0  ⇒  x ≠ nπ,  n ∈ ℤ",
+      "explanation": "Cotangent is undefined wherever sine is zero."
+    },
+    {
+      "id": "sec-range",
+      "name": "Secant Range",
+      "expression": "sec(x) ∈ (−∞, −1] ∪ [1, ∞)",
+      "explanation": "Secant cannot have values strictly between −1 and 1."
+    },
+    {
+      "id": "csc-range",
+      "name": "Cosecant Range",
+      "expression": "csc(x) ∈ (−∞, −1] ∪ [1, ∞)",
+      "explanation": "Cosecant cannot have values strictly between −1 and 1."
+    },
+    {
+      "id": "cot-range",
+      "name": "Cotangent Range",
+      "expression": "cot(x) ∈ ℝ",
+      "explanation": "Cotangent can take every real value."
+    },
+    {
+      "id": "sec-period",
+      "name": "Secant Period",
+      "expression": "sec(x + 2π) = sec(x)",
+      "explanation": "Secant has the same period as cosine."
+    },
+    {
+      "id": "csc-period",
+      "name": "Cosecant Period",
+      "expression": "csc(x + 2π) = csc(x)",
+      "explanation": "Cosecant has the same period as sine."
+    },
+    {
+      "id": "cot-period",
+      "name": "Cotangent Period",
+      "expression": "cot(x + π) = cot(x)",
+      "explanation": "Cotangent has the same period as tangent."
+    },
+    {
+      "id": "sec-zero",
+      "name": "Secant Cannot Equal Zero",
+      "expression": "sec(x) ≠ 0",
+      "explanation": "A reciprocal of a defined finite nonzero value cannot be zero, so sec(x) = 0 has no real solution."
+    },
+    {
+      "id": "csc-zero",
+      "name": "Cosecant Cannot Equal Zero",
+      "expression": "csc(x) ≠ 0",
+      "explanation": "A reciprocal of a defined finite nonzero value cannot be zero, so csc(x) = 0 has no real solution."
+    },
+    {
+      "id": "cot-zero",
+      "name": "Cotangent Equals Zero",
+      "expression": "cot(x) = 0  ⇒  x = π/2 + nπ,  n ∈ ℤ",
+      "explanation": "Cotangent is cos(x)/sin(x), so it is zero when cosine is zero while sine remains nonzero."
+    },
+    {
+      "id": "sec-range-test",
+      "name": "Secant Solvability Test",
+      "expression": "sec(x) = a has real solutions only when |a| ≥ 1",
+      "explanation": "Because secant is the reciprocal of cosine and |cos(x)| ≤ 1, every defined secant value has magnitude at least 1."
+    },
+    {
+      "id": "csc-range-test",
+      "name": "Cosecant Solvability Test",
+      "expression": "csc(x) = a has real solutions only when |a| ≥ 1",
+      "explanation": "Because cosecant is the reciprocal of sine and |sin(x)| ≤ 1, every defined cosecant value has magnitude at least 1."
+    }
+  ],
+  "examples": [
+    {
+      "id": "sec-example",
+      "question": "Solve sec(x) = 2 for 0 ≤ x < 2π.",
+      "solution": "Rewrite using sec(x) = 1/cos(x): 1/cos(x) = 2. Therefore cos(x) = 1/2. Cosine is positive in Quadrants I and IV, so x = π/3 and x = 5π/3."
+    },
+    {
+      "id": "sec-general-example",
+      "question": "Solve sec(x) = 2 for all real x.",
+      "solution": "Convert to cos(x) = 1/2. Therefore x = ±π/3 + 2nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "sec-negative-example",
+      "question": "Solve sec(x) = −2 for 0 ≤ x < 2π.",
+      "solution": "Convert to cos(x) = −1/2. Cosine is negative in Quadrants II and III. Therefore x = 2π/3 and x = 4π/3."
+    },
+    {
+      "id": "sec-impossible-example",
+      "question": "Solve sec(x) = 1/2 for real x.",
+      "solution": "Convert to cos(x) = 2. This is impossible because cosine can only take values between −1 and 1. Therefore there is no real solution."
+    },
+    {
+      "id": "sec-one-example",
+      "question": "Solve sec(x) = 1 for all real x.",
+      "solution": "Convert to cos(x) = 1. Therefore x = 2nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "sec-minus-one-example",
+      "question": "Solve sec(x) = −1 for all real x.",
+      "solution": "Convert to cos(x) = −1. Therefore x = π + 2nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "csc-example",
+      "question": "Solve csc(x) = −1 for 0 ≤ x < 2π.",
+      "solution": "Convert to sin(x) = −1. Sine equals −1 at x = 3π/2. Therefore x = 3π/2."
+    },
+    {
+      "id": "csc-general-example",
+      "question": "Solve csc(x) = 2 for all real x.",
+      "solution": "Convert to sin(x) = 1/2. Therefore x = π/6 + 2nπ or x = 5π/6 + 2nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "csc-negative-example",
+      "question": "Solve csc(x) = −2 for 0 ≤ x < 2π.",
+      "solution": "Convert to sin(x) = −1/2. The reference angle is π/6 and sine is negative in Quadrants III and IV. Therefore x = 7π/6 and x = 11π/6."
+    },
+    {
+      "id": "csc-impossible-example",
+      "question": "Solve csc(x) = 1/2 for real x.",
+      "solution": "Convert to sin(x) = 2. Since sine cannot equal 2, there is no real solution."
+    },
+    {
+      "id": "csc-one-example",
+      "question": "Solve csc(x) = 1 for 0 ≤ x < 2π.",
+      "solution": "Convert to sin(x) = 1. Therefore x = π/2."
+    },
+    {
+      "id": "cot-example",
+      "question": "Solve cot(x) = 1 for 0 ≤ x < 2π.",
+      "solution": "Convert using cot(x) = 1/tan(x): 1/tan(x) = 1, so tan(x) = 1. Tangent is positive in Quadrants I and III. Therefore x = π/4 and x = 5π/4."
+    },
+    {
+      "id": "cot-general-example",
+      "question": "Solve cot(x) = √3 for all real x.",
+      "solution": "Convert to tan(x) = 1/√3. Since tan(π/6) = 1/√3, the general solution is x = π/6 + nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "cot-negative-example",
+      "question": "Solve cot(x) = −1 for 0 ≤ x < 2π.",
+      "solution": "Convert to tan(x) = −1. Tangent is negative in Quadrants II and IV. Therefore x = 3π/4 and x = 7π/4."
+    },
+    {
+      "id": "cot-zero-example",
+      "question": "Solve cot(x) = 0 for all real x.",
+      "solution": "Since cot(x) = cos(x)/sin(x), cotangent is zero when cos(x) = 0 and sin(x) is nonzero. Therefore x = π/2 + nπ, where n ∈ ℤ."
+    },
+    {
+      "id": "cot-impossible-domain-example",
+      "question": "Can x = π be a solution of cot(x) = 1?",
+      "solution": "No. cot(π) is undefined because sin(π) = 0. Therefore x = π cannot be a solution of any equation involving a defined cotangent value."
+    },
+    {
+      "id": "linear-sec-example",
+      "question": "Solve 2sec(x) − 4 = 0 for 0 ≤ x < 2π.",
+      "solution": "First isolate secant: 2sec(x) = 4, so sec(x) = 2. Convert to cos(x) = 1/2. Therefore x = π/3 and x = 5π/3."
+    },
+    {
+      "id": "linear-csc-example",
+      "question": "Solve 3csc(x) + 3 = 0 for 0 ≤ x < 2π.",
+      "solution": "First isolate cosecant: 3csc(x) = −3, so csc(x) = −1. Convert to sin(x) = −1. Therefore x = 3π/2."
+    },
+    {
+      "id": "linear-cot-example",
+      "question": "Solve 2cot(x) − 2 = 0 for 0 ≤ x < 2π.",
+      "solution": "First isolate cotangent: 2cot(x) = 2, so cot(x) = 1. Convert to tan(x) = 1. Therefore x = π/4 and x = 5π/4."
+    },
+    {
+      "id": "sec-domain-check-example",
+      "question": "Explain why x = π/2 cannot be a solution of sec(x) = 2.",
+      "solution": "Secant is 1/cos(x). Since cos(π/2) = 0, sec(π/2) is undefined. Therefore π/2 is outside the domain of secant and cannot be a solution."
+    },
+    {
+      "id": "csc-domain-check-example",
+      "question": "Explain why x = π cannot be a solution of csc(x) = 2.",
+      "solution": "Cosecant is 1/sin(x). Since sin(π) = 0, csc(π) is undefined. Therefore π cannot be a solution."
+    },
+    {
+      "id": "sec-graph-example",
+      "question": "How can sec(x) = 2 be understood graphically?",
+      "solution": "Graph y = sec(x) and y = 2. The solutions are the x-coordinates where the two graphs intersect. In one interval 0 ≤ x < 2π, these occur at x = π/3 and x = 5π/3."
+    },
+    {
+      "id": "reciprocal-choice-example",
+      "question": "Which basic function should be used to solve csc(x) = −2?",
+      "solution": "Cosecant is the reciprocal of sine, so convert csc(x) = −2 into sin(x) = −1/2 and then solve using the sine equation methods."
+    },
+    {
+      "id": "range-test-example",
+      "question": "Without solving, determine whether sec(x) = −1/2 can have a real solution.",
+      "solution": "No. The range of secant is (−∞, −1] ∪ [1, ∞), so −1/2 is not a possible secant value."
+    }
+  ],
+  "key_ideas": [
+    "Secant is the reciprocal of cosine.",
+    "Cosecant is the reciprocal of sine.",
+    "Cotangent is the reciprocal of tangent.",
+    "Secant equations can usually be converted into cosine equations.",
+    "Cosecant equations can usually be converted into sine equations.",
+    "Cotangent equations can usually be converted into tangent equations.",
+    "Always isolate the reciprocal function before converting when algebra is required.",
+    "Secant can only have values with magnitude at least 1.",
+    "Cosecant can only have values with magnitude at least 1.",
+    "Cotangent can take any real value.",
+    "Secant is undefined wherever cosine is zero.",
+    "Cosecant is undefined wherever sine is zero.",
+    "Cotangent is undefined wherever sine is zero.",
+    "Secant has period 2π.",
+    "Cosecant has period 2π.",
+    "Cotangent has period π.",
+    "Sec(x) = a can be converted to cos(x) = 1/a.",
+    "Csc(x) = a can be converted to sin(x) = 1/a.",
+    "Cot(x) = a can be converted to tan(x) = 1/a.",
+    "The general secant solution follows from the general cosine solution.",
+    "The general cosecant solution follows from the general sine solution.",
+    "The general cotangent solution follows from the general tangent solution.",
+    "Secant and cosecant can never equal zero.",
+    "Cotangent can equal zero when cosine is zero and sine is nonzero.",
+    "A reciprocal equation should always be checked against the domain of the original function.",
+    "Restricted intervals require only the valid solutions inside the requested interval.",
+    "The original equation is the final authority when checking a candidate solution.",
+    "Understanding reciprocal functions makes later identity-based equations easier to solve."
+  ],
+  "misconceptions": [
+    "Thinking sec(x) means 1/sin(x).",
+    "Thinking csc(x) means 1/cos(x).",
+    "Thinking cot(x) means 1/cos(x).",
+    "Forgetting that cot(x) = cos(x)/sin(x).",
+    "Thinking secant and cosine are the same function.",
+    "Thinking cosecant and sine are the same function.",
+    "Thinking cotangent and tangent are the same function.",
+    "Forgetting that reciprocal means multiplicative inverse.",
+    "Assuming secant or cosecant can take values between −1 and 1.",
+    "Thinking sec(x) = 0 has solutions.",
+    "Thinking csc(x) = 0 has solutions.",
+    "Forgetting that cot(x) can equal zero.",
+    "Ignoring points where the reciprocal function is undefined.",
+    "Assuming a transformed equation automatically preserves every possible value without considering domain restrictions.",
+    "Forgetting to convert secant to cosine.",
+    "Forgetting to convert cosecant to sine.",
+    "Forgetting to convert cotangent to tangent.",
+    "Using the period 2π for cotangent.",
+    "Using the period π for secant or cosecant.",
+    "Forgetting the reciprocal when converting an equation such as sec(x) = 2.",
+    "Incorrectly converting sec(x) = 2 into cos(x) = 2 instead of cos(x) = 1/2.",
+    "Incorrectly converting csc(x) = 2 into sin(x) = 2 instead of sin(x) = 1/2.",
+    "Incorrectly converting cot(x) = 2 into tan(x) = 2 instead of tan(x) = 1/2.",
+    "Accepting values where the original reciprocal function is undefined.",
+    "Checking only the converted equation and ignoring the original equation.",
+    "Forgetting that restricted intervals still require domain checking.",
+    "Assuming there must always be two solutions in 0 ≤ x < 2π.",
+    "Forgetting that special values such as sec(x) = 1 may have fewer solutions per cycle.",
+    "Confusing the range restriction of secant/cosecant with the range restriction of sine/cosine.",
+    "Forgetting that tangent and cotangent can take all real values."
+  ],
+  "explorations": [
+    {
+      "id": "reciprocal-function-graphs",
+      "type": "visualization"
+    },
+    {
+      "id": "secant-from-cosine",
+      "type": "visualization"
+    },
+    {
+      "id": "cosecant-from-sine",
+      "type": "visualization"
+    },
+    {
+      "id": "cotangent-from-tangent",
+      "type": "visualization"
+    },
+    {
+      "id": "reciprocal-domain-restrictions",
+      "type": "visualization"
+    },
+    {
+      "id": "secant-range",
+      "type": "visualization"
+    },
+    {
+      "id": "cosecant-range",
+      "type": "visualization"
+    },
+    {
+      "id": "cotangent-range",
+      "type": "visualization"
+    },
+    {
+      "id": "why-reciprocal-functions-cannot-equal-zero",
+      "type": "why"
+    },
+    {
+      "id": "why-sec-and-csc-have-two-sided-ranges",
+      "type": "why"
+    },
+    {
+      "id": "reciprocal-equation-graph-intersection",
+      "type": "visualization"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-functions",
+    "openstax-precalculus-trigonometric-equations"
+  ]
+}

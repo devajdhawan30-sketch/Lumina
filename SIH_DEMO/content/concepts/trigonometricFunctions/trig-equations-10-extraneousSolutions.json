@@ -1,0 +1,547 @@
+{
+  "id": "trig-equations-10",
+  "title": "Checking for Extraneous Solutions",
+  "subject": "mathematics",
+  "topic": "trigonometry",
+  "section": "trigonometric-equations",
+  "difficulty": 4,
+  "connections": {
+    "prerequisites": [
+      "trig-equations-04",
+      "trig-equations-05",
+      "trig-equations-07",
+      "trig-equations-09"
+    ],
+    "leads_to": [
+      "trig-equations-11"
+    ],
+    "related": [
+      "algebraic-equations",
+      "domain-and-range",
+      "trigonometric-identities",
+      "inverse-trigonometric-functions"
+    ]
+  },
+  "theory": {
+    "introduction": "Algebraic transformations are powerful tools for solving trigonometric equations, but some transformations can change the set of possible solutions. A value obtained during the algebraic process is only a candidate until it has been checked against the original equation and its original domain. An extraneous solution is a value that satisfies a transformed equation but does not satisfy the original equation.",
+    "sections": [
+      {
+        "id": "what-is-extraneous",
+        "title": "What Is an Extraneous Solution?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "An extraneous solution is a value that appears to solve an equation after an algebraic transformation but does not actually satisfy the original equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "The transformed equation may be easier to solve, but it is not always logically equivalent to the original equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "For this reason, every candidate solution must be checked in the original equation whenever a transformation may have changed the solution set."
+          }
+        ]
+      },
+      {
+        "id": "original-domain",
+        "title": "The Original Domain Comes First",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Before checking an equation, identify where the original expression is defined."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, tan(x) = sin(x)/cos(x), so tan(x) is undefined wherever cos(x) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "Similarly, sec(x), csc(x), and cot(x) have domain restrictions because they contain reciprocals of cosine, sine, and tangent."
+          },
+          {
+            "type": "paragraph",
+            "text": "A value outside the original domain is never a valid solution, even if an algebraically transformed equation accepts it."
+          }
+        ]
+      },
+      {
+        "id": "when-check",
+        "title": "When Should You Check?",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Checking is especially important after squaring, multiplying by expressions, dividing by expressions, or using reciprocal functions.",
+            "id": "when-check-paragraph-1"
+          }
+        ]
+      },
+      {
+        "id": "squaring",
+        "title": "Why Squaring Can Create Extraneous Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Squaring removes sign information. If A = B, then A² = B², but the reverse implication is not always true because A² = B² also allows A = −B."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, solving an equation obtained by squaring can produce candidates that satisfy the squared equation but not the original equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "In trigonometry, this commonly occurs when an equation contains a square root or when both sides are squared to remove radicals."
+          }
+        ]
+      },
+      {
+        "id": "square-root",
+        "title": "Taking Square Roots",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "When solving A² = B², the correct conclusion is A = ±B, not only A = B."
+          },
+          {
+            "type": "paragraph",
+            "text": "Forgetting the ± can remove valid solutions."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, checking is useful not only for detecting extraneous solutions but also for catching solutions that may have been lost during an incorrect transformation."
+          }
+        ]
+      },
+      {
+        "id": "division",
+        "title": "Dividing by an Expression",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Dividing both sides by an expression is only valid when that expression is nonzero."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, if an equation contains sin(x)cos(x) = 0 and you divide by sin(x), you automatically discard every solution for which sin(x) = 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "This is one of the most common ways valid trigonometric solutions are accidentally lost."
+          },
+          {
+            "type": "paragraph",
+            "text": "Instead of dividing by a variable expression immediately, consider factoring and using the zero-product property."
+          }
+        ]
+      },
+      {
+        "id": "multiplication",
+        "title": "Multiplying by an Expression",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Multiplying both sides by an expression can introduce candidates if the original equation contains a denominator that may be zero."
+          },
+          {
+            "type": "paragraph",
+            "text": "The multiplied equation may be defined at values where the original equation was undefined."
+          },
+          {
+            "type": "paragraph",
+            "text": "Therefore, after clearing denominators, every candidate must be tested against the original domain."
+          }
+        ]
+      },
+      {
+        "id": "reciprocal-functions",
+        "title": "Reciprocal Functions and Domain Restrictions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Replacing sec(x) with 1/cos(x), csc(x) with 1/sin(x), or cot(x) with cos(x)/sin(x) can reveal domain restrictions that must be preserved."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, sec(x) is undefined whenever cos(x) = 0. A transformed equation that happens to accept one of those angles does not make the original secant equation valid."
+          },
+          {
+            "type": "paragraph",
+            "text": "Always carry the original domain restriction throughout the solution."
+          }
+        ]
+      },
+      {
+        "id": "identity-transformations",
+        "title": "Using Trigonometric Identities Safely",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A correct trigonometric identity produces an equivalent expression wherever both sides are defined."
+          },
+          {
+            "type": "paragraph",
+            "text": "However, identities involving reciprocals or division may have domain restrictions that must be respected."
+          },
+          {
+            "type": "paragraph",
+            "text": "For example, tan(x) = sin(x)/cos(x) is valid only where cos(x) ≠ 0."
+          },
+          {
+            "type": "paragraph",
+            "text": "When simplifying an equation, do not assume that every intermediate expression has exactly the same domain as the original expression."
+          }
+        ]
+      },
+      {
+        "id": "factoring",
+        "title": "Factoring and Solution Checking",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Factoring itself is taught in Lesson 05. Here the only question is whether the resulting candidates satisfy the original equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "After factoring, carry each candidate into the original equation and reject any value that fails. This section therefore focuses on verification rather than reteaching the factoring method."
+          }
+        ]
+      },
+      {
+        "id": "substitution",
+        "title": "Substitution and Solution Checking",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The substitution method for quadratic-form equations is taught in Lesson 06. Here, use substitution only to trace candidates back to the original trigonometric equation and verify them."
+          },
+          {
+            "type": "paragraph",
+            "text": "A value can satisfy the transformed algebraic equation yet fail the original equation if a non-equivalent transformation was used."
+          }
+        ]
+      },
+      {
+        "id": "multiple-angle-checking",
+        "title": "Checking Multiple-Angle Candidates",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Multiple-angle equation methods belong to Lesson 08. This section applies the same verification principle: substitute each candidate into the original multiple-angle equation rather than relying only on the transformed form."
+          }
+        ]
+      },
+      {
+        "id": "restricted-interval-check",
+        "title": "Checking Restricted-Interval Solutions",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Interval filtering belongs to Lesson 09. After that lesson produces the candidates inside the requested interval, use this lesson to verify those candidates in the original equation when transformations may have introduced invalid values."
+          }
+        ]
+      },
+      {
+        "id": "original-equation",
+        "title": "Check the Original Equation",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Substitute each candidate back into the original equation rather than checking only a transformed version.",
+            "id": "original-equation-paragraph-1"
+          }
+        ]
+      }
+    ]
+  },
+  "formulas": [
+    {
+      "id": "squaring-condition",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Squaring Both Sides",
+      "expression": "A = B  ⇒  A² = B², but A² = B²  ⇏  A = B",
+      "explanation": "Squaring can remove sign information and therefore can create extraneous candidates. Always check candidates in the original equation after squaring."
+    },
+    {
+      "id": "square-equality",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Difference of Squares Principle",
+      "expression": "A² = B²  ⇒  (A − B)(A + B) = 0  ⇒  A = B OR A = −B",
+      "explanation": "Both possibilities must be considered when removing a square."
+    },
+    {
+      "id": "zero-product",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Zero-Product Property",
+      "expression": "AB = 0  ⇒  A = 0 OR B = 0",
+      "explanation": "Factoring and using the zero-product property is often safer than dividing by A or B because it does not automatically discard zero solutions."
+    },
+    {
+      "id": "division-condition",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Division Restriction",
+      "expression": "A/B = C/B  is valid only when B ≠ 0",
+      "explanation": "Never divide by an expression without considering the possibility that it equals zero."
+    },
+    {
+      "id": "tan-definition",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Tangent Definition and Domain",
+      "expression": "tan(x) = sin(x)/cos(x),  cos(x) ≠ 0",
+      "explanation": "Tangent is undefined wherever cosine is zero."
+    },
+    {
+      "id": "sec-definition",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Secant Definition and Domain",
+      "expression": "sec(x) = 1/cos(x),  cos(x) ≠ 0",
+      "explanation": "Secant is undefined wherever cosine is zero."
+    },
+    {
+      "id": "csc-definition",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosecant Definition and Domain",
+      "expression": "csc(x) = 1/sin(x),  sin(x) ≠ 0",
+      "explanation": "Cosecant is undefined wherever sine is zero."
+    },
+    {
+      "id": "cot-definition",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cotangent Definition and Domain",
+      "expression": "cot(x) = cos(x)/sin(x),  sin(x) ≠ 0",
+      "explanation": "Cotangent is undefined wherever sine is zero."
+    },
+    {
+      "id": "reciprocal-sec",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Secant Reciprocal Identity",
+      "expression": "sec(x) = 1/cos(x)",
+      "explanation": "Useful for converting secant equations into cosine equations while preserving the domain restriction cos(x) ≠ 0."
+    },
+    {
+      "id": "reciprocal-csc",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosecant Reciprocal Identity",
+      "expression": "csc(x) = 1/sin(x)",
+      "explanation": "Useful for converting cosecant equations into sine equations while preserving sin(x) ≠ 0."
+    },
+    {
+      "id": "reciprocal-cot",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cotangent Reciprocal Identity",
+      "expression": "cot(x) = 1/tan(x)",
+      "explanation": "Useful when converting cotangent equations into tangent equations, provided the relevant domains are respected."
+    },
+    {
+      "id": "pythagorean-identity",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Fundamental Pythagorean Identity",
+      "expression": "sin²(x) + cos²(x) = 1",
+      "explanation": "Frequently used to transform equations and substitute one squared trigonometric function for another."
+    },
+    {
+      "id": "tan-pythagorean",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Tangent Pythagorean Identity",
+      "expression": "1 + tan²(x) = sec²(x)",
+      "explanation": "Useful when equations contain tangent and secant."
+    },
+    {
+      "id": "cot-pythagorean",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cotangent Pythagorean Identity",
+      "expression": "1 + cot²(x) = csc²(x)",
+      "explanation": "Useful when equations contain cotangent and cosecant."
+    },
+    {
+      "id": "sine-range",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Sine Range",
+      "expression": "−1 ≤ sin(x) ≤ 1",
+      "explanation": "Any equation sin(x) = a has no real solution if |a| > 1."
+    },
+    {
+      "id": "cosine-range",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosine Range",
+      "expression": "−1 ≤ cos(x) ≤ 1",
+      "explanation": "Any equation cos(x) = a has no real solution if |a| > 1."
+    },
+    {
+      "id": "reciprocal-range-sec",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Secant Range",
+      "expression": "sec(x) ≤ −1 OR sec(x) ≥ 1",
+      "explanation": "Secant cannot have values strictly between −1 and 1."
+    },
+    {
+      "id": "reciprocal-range-csc",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosecant Range",
+      "expression": "csc(x) ≤ −1 OR csc(x) ≥ 1",
+      "explanation": "Cosecant cannot have values strictly between −1 and 1."
+    },
+    {
+      "id": "division-zero-warning",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Never Divide by a Possible Zero",
+      "expression": "If f(x) = 0 is possible, dividing by f(x) can remove valid solutions.",
+      "explanation": "Instead, consider factoring and solving f(x) = 0 as a separate case."
+    },
+    {
+      "id": "domain-check",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Domain Check",
+      "expression": "Valid solution = equation satisfied AND original domain satisfied AND required interval satisfied",
+      "explanation": "A candidate must pass all three conditions."
+    },
+    {
+      "id": "sine-double-angle",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Sine Double-Angle Identity",
+      "expression": "sin(2x) = 2sin(x)cos(x)",
+      "explanation": "Useful when converting products into multiple-angle expressions or simplifying equations before solving."
+    },
+    {
+      "id": "cosine-double-angle",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Cosine Double-Angle Identities",
+      "expression": "cos(2x) = cos²(x) − sin²(x) = 2cos²(x) − 1 = 1 − 2sin²(x)",
+      "explanation": "Different forms are useful for different equations. Choose the form that matches the expression you need to eliminate or introduce."
+    },
+    {
+      "id": "tan-double-angle",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] Tangent Double-Angle Identity",
+      "expression": "tan(2x) = 2tan(x)/(1 − tan²(x))",
+      "explanation": "Useful when converting between tan(2x) and tan(x), subject to domain restrictions."
+    },
+    {
+      "id": "sine-general",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] General Sine Solution",
+      "expression": "sin(x) = a  ⇒  x = sin⁻¹(a) + 2nπ OR x = π − sin⁻¹(a) + 2nπ,  n ∈ ℤ",
+      "explanation": "Use to generate complete candidate sets before applying the restricted interval."
+    },
+    {
+      "id": "cosine-general",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] General Cosine Solution",
+      "expression": "cos(x) = a  ⇒  x = ±cos⁻¹(a) + 2nπ,  n ∈ ℤ",
+      "explanation": "Generate both cosine solution families before restricting the interval."
+    },
+    {
+      "id": "tangent-general",
+      "name": "[IMPORTANT FOR PROBLEM SOLVING] General Tangent Solution",
+      "expression": "tan(x) = a  ⇒  x = tan⁻¹(a) + nπ,  n ∈ ℤ",
+      "explanation": "Tangent repeats every π."
+    }
+  ],
+  "examples": [
+    {
+      "id": "checking-example",
+      "question": "Why should a solution obtained after squaring both sides be checked?",
+      "solution": "Squaring can make two expressions equal even when their original signs were different. For example, −2 ≠ 2, but (−2)² = 2². Therefore, solving the squared equation can produce candidates that do not satisfy the original equation. Every candidate should be substituted into the original equation."
+    },
+    {
+      "id": "squaring-extraneous",
+      "question": "Solve √(sin(x)) = −1.",
+      "solution": "The original equation has no solution because a principal square root is never negative. If both sides are squared, we obtain sin(x) = 1, which would give x = π/2 + 2nπ. These values solve the squared equation but not the original equation, so they are extraneous."
+    },
+    {
+      "id": "division-loses-solutions",
+      "question": "Solve sin(x)cos(x) = 0 for 0 ≤ x < 2π.",
+      "solution": "Factor using the zero-product property: sin(x) = 0 OR cos(x) = 0. From sin(x) = 0, x = 0, π. From cos(x) = 0, x = π/2, 3π/2. Therefore the solutions are 0, π/2, π, and 3π/2. If we had divided by sin(x), the solutions x = 0 and x = π would have been lost."
+    },
+    {
+      "id": "domain-extraneous",
+      "question": "A transformed equation gives x = π/2 as a candidate for an equation containing sec(x). Is x automatically valid?",
+      "solution": "No. sec(x) = 1/cos(x), and cos(π/2) = 0. Therefore sec(π/2) is undefined. The candidate must be rejected because it is outside the original domain."
+    },
+    {
+      "id": "reciprocal-check",
+      "question": "Solve sec(x) = 2 for 0 ≤ x < 2π.",
+      "solution": "Rewrite sec(x) = 2 as cos(x) = 1/2. This gives x = π/3 and 5π/3. Check the original equation: cos(x) is nonzero at both values, and sec(x) = 2 at each. Therefore both are valid."
+    },
+    {
+      "id": "substitution-check",
+      "question": "Solve 2sin²(x) − 3sin(x) + 1 = 0 for 0 ≤ x < 2π.",
+      "solution": "Let u = sin(x). Then 2u² − 3u + 1 = 0, which factors as (2u − 1)(u − 1) = 0. Therefore u = 1/2 or u = 1. For sin(x) = 1/2, x = π/6 and 5π/6. For sin(x) = 1, x = π/2. All three values satisfy the original equation, so the final solutions are π/6, π/2, and 5π/6."
+    },
+    {
+      "id": "range-rejection",
+      "question": "Can sin(x) = 3/2 have a real solution?",
+      "solution": "No. Since −1 ≤ sin(x) ≤ 1, sine can never equal 3/2. Therefore there are no real solutions."
+    },
+    {
+      "id": "square-both-sides",
+      "question": "Why can squaring an equation change the solution set?",
+      "solution": "Suppose A = B. Squaring gives A² = B². However, A² = B² also allows A = −B. Therefore the squared equation can accept values that do not satisfy the original sign relationship. This is why every candidate must be checked in the original equation."
+    },
+    {
+      "id": "multiple-angle-check",
+      "question": "A candidate x = π/4 was obtained for sin(2x) = 1. Verify it.",
+      "solution": "Substitute into the original equation: sin(2·π/4) = sin(π/2) = 1. Therefore x = π/4 satisfies the original equation."
+    },
+    {
+      "id": "multiple-angle-invalid",
+      "question": "A candidate x = π/2 is obtained for an equation involving tan(2x). Explain why checking is necessary.",
+      "solution": "Substitute into the original tangent expression: tan(2·π/2) = tan(π), which is defined and equals 0. If the original equation required tan(2x) to equal a nonzero value, the candidate would be rejected. The original expression must always be checked."
+    },
+    {
+      "id": "restricted-check",
+      "question": "Suppose x = 2π is obtained while solving an equation for 0 ≤ x < 2π. Should it be included?",
+      "solution": "No. Although x = 2π may produce the same trigonometric values as x = 0, the interval explicitly excludes 2π. Therefore x = 2π is not an accepted solution."
+    },
+    {
+      "id": "identity-domain-check",
+      "question": "Why must domain restrictions be considered when replacing tan(x) with sin(x)/cos(x)?",
+      "solution": "The identity tan(x) = sin(x)/cos(x) requires cos(x) ≠ 0. At angles where cos(x) = 0, both the quotient and tangent are undefined. Therefore those values cannot become valid solutions simply because an algebraic transformation produces them."
+    }
+  ],
+  "key_ideas": [
+    "A candidate solution is not automatically a true solution.",
+    "The original equation is the final authority.",
+    "Always respect the original domain.",
+    "Restricted intervals are part of the conditions for a valid answer.",
+    "Squaring can create extraneous solutions because it removes sign information.",
+    "Taking a square root requires considering both signs when reversing a square equation.",
+    "Dividing by an expression that may equal zero can remove valid solutions.",
+    "Clearing denominators can introduce candidates that were undefined in the original equation.",
+    "Factoring is often safer than dividing by a variable expression.",
+    "Reciprocal trigonometric functions carry important domain restrictions.",
+    "Substitution can introduce algebraic candidates that still need to be converted back and checked.",
+    "Sine and cosine values must lie between −1 and 1.",
+    "Multiple-angle candidates should be checked in the complete original expression.",
+    "Use the original interval only after generating candidates, unless the solving method naturally incorporates the interval.",
+    "Checking is both a way to detect extraneous solutions and a way to catch algebraic mistakes."
+  ],
+  "misconceptions": [
+    "Assuming every value obtained through algebra is automatically a solution.",
+    "Checking only the transformed equation instead of the original equation.",
+    "Believing that squaring two sides always produces an equivalent equation.",
+    "Forgetting that A² = B² gives A = B or A = −B.",
+    "Dividing by sin(x), cos(x), tan(x), or another expression without considering when it can be zero.",
+    "Assuming multiplying by a denominator is always reversible.",
+    "Ignoring the original domain after replacing reciprocal functions.",
+    "Thinking that an identity automatically removes every domain restriction.",
+    "Forgetting that tan(x), sec(x), and cot(x) are undefined at certain angles.",
+    "Accepting a value outside the restricted interval.",
+    "Forgetting that sine and cosine cannot be greater than 1 in magnitude.",
+    "Checking a multiple-angle candidate using only the intermediate angle.",
+    "Losing valid solutions by dividing instead of factoring.",
+    "Assuming that every transformed equation has exactly the same domain as the original equation.",
+    "Not checking answers because the algebra appears correct."
+  ],
+  "explorations": [
+    {
+      "id": "checking-solutions",
+      "type": "visualization"
+    },
+    {
+      "id": "squaring-extraneous-solutions",
+      "type": "visualization"
+    },
+    {
+      "id": "domain-restrictions",
+      "type": "visualization"
+    },
+    {
+      "id": "division-loses-solutions",
+      "type": "visualization"
+    },
+    {
+      "id": "original-vs-transformed-equation",
+      "type": "visualization"
+    },
+    {
+      "id": "candidate-solution-checker",
+      "type": "visualization"
+    },
+    {
+      "id": "why-squaring-creates-candidates",
+      "type": "why"
+    },
+    {
+      "id": "why-domain-matters",
+      "type": "why"
+    }
+  ],
+  "sources": [
+    "openstax-precalculus-trigonometric-equations"
+  ]
+}
