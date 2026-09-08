@@ -56,7 +56,15 @@
           {
             "type": "paragraph",
             "text": "The graph of \\(y = \\sin x\\) can be constructed directly from the unit circle. As the angle increases, imagine a point moving counterclockwise around the circle. At every angle, record the point's vertical coordinate. That vertical coordinate is \\(\\sin x\\).",
-            "id": "unit-circle-to-graph-paragraph-1"
+            "id": "unit-circle-to-graph-paragraph-1",
+            "highlights": [
+              {
+                "id": "sine-circle-to-wave",
+                "text": "vertical coordinate",
+                "explorationId": "visualize-sine-wave",
+                "actions": ["visualize", "ask-ai", "why"]
+              }
+            ]
           },
           {
             "type": "paragraph",
