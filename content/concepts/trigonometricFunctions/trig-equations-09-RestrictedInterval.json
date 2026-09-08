@@ -49,7 +49,8 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Common intervals include 0 ≤ x < 2π, 0 ≤ x ≤ 2π, and 0° ≤ x ≤ 360°. The basic trigonometric equation methods are taught in trig-equations-03; this lesson focuses on selecting every valid solution inside the stated interval."
+            "text": "Common intervals include 0 ≤ x < 2π and 0° ≤ x ≤ 360°.",
+            "id": "common-intervals-paragraph-1"
           }
         ]
       },
@@ -59,7 +60,8 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Use the degree/radian definitions from degrees-and-radians. Here the only new task is applying the correct full-turn period while filtering solutions in the requested interval."
+            "text": "Use the unit circle, reference angles, and periodicity to identify every solution inside the required interval.",
+            "id": "finding-solutions-paragraph-1"
           }
         ]
       },
@@ -263,7 +265,15 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Substitute final values into the original equation and verify that each belongs to the stated interval. More detailed transformation-related checking belongs to trig-equations-10."
+            "text": "Substitute each final value into the original equation."
+          },
+          {
+            "type": "paragraph",
+            "text": "Also verify that every answer belongs to the specified interval."
+          },
+          {
+            "type": "paragraph",
+            "text": "For equations involving reciprocals or multiple-angle expressions, checking the original equation is particularly important."
           }
         ]
       }

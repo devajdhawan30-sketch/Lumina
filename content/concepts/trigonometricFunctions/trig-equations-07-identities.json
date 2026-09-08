@@ -29,19 +29,8 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Do not apply identities randomly. First inspect the equation and identify what is preventing it from being solved directly."
-          },
-          {
-            "type": "paragraph",
-            "text": "If both sin(x) and cos(x) appear, a Pythagorean identity may allow one function to be eliminated. If sec(x), csc(x), or cot(x) appears, reciprocal identities can convert the equation into sine, cosine, or tangent. If sin²(x) and cos²(x) appear together, the Pythagorean identity is often useful."
-          },
-          {
-            "type": "paragraph",
-            "text": "If expressions contain 2x, 3x, or another multiple angle, double-angle or multiple-angle identities may simplify them. If sums such as sin(A + B) or cos(A − B) appear, sum-and-difference identities may be required."
-          },
-          {
-            "type": "paragraph",
-            "text": "The goal is always to transform the equation into a form that can be solved using algebra, factoring, quadratic methods, or the basic trigonometric equations from earlier lessons."
+            "text": "Choose an identity that reduces the number of different trigonometric functions or creates a familiar algebraic form.",
+            "id": "choose-identity-paragraph-1"
           }
         ]
       },
@@ -51,7 +40,8 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "This lesson is the central identity reference for the equation module. Learn how to recognize and select an identity, but later equation lessons should use the required identity as a tool rather than reteaching the identity library."
+            "text": "Pythagorean, reciprocal, double-angle, and sum-and-difference identities can transform complicated equations.",
+            "id": "common-identities-paragraph-1"
           }
         ]
       },

@@ -71,15 +71,8 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Checking is especially important after squaring both sides, taking square roots, multiplying by expressions, dividing by expressions, clearing denominators, using reciprocal functions, or making substitutions."
-          },
-          {
-            "type": "paragraph",
-            "text": "If the transformation is known to be reversible for every value under consideration, checking may be less critical, but checking is still a useful habit in multi-step trigonometric equations."
-          },
-          {
-            "type": "paragraph",
-            "text": "When a problem involves a restricted interval, the candidate must satisfy both the original equation and the interval."
+            "text": "Checking is especially important after squaring, multiplying by expressions, dividing by expressions, or using reciprocal functions.",
+            "id": "when-check-paragraph-1"
           }
         ]
       },
@@ -253,89 +246,8 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Substitute each candidate back into the original equation rather than checking only a transformed version."
-          },
-          {
-            "type": "paragraph",
-            "text": "For an equation such as sin(x) = cos(x), substitute the candidate into both sides."
-          },
-          {
-            "type": "paragraph",
-            "text": "For an equation such as sec(x) = 2, verify the original secant expression rather than only checking the transformed cosine equation."
-          }
-        ]
-      },
-      {
-        "id": "logical-equivalence",
-        "title": "Equivalent Transformations vs One-Way Transformations",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "An equivalent transformation preserves exactly the same solution set. Examples include adding the same quantity to both sides or replacing an expression with an identity on its valid domain."
-          },
-          {
-            "type": "paragraph",
-            "text": "Some transformations preserve solutions in one direction but may create additional candidates in the reverse direction. Squaring is a major example."
-          },
-          {
-            "type": "paragraph",
-            "text": "This distinction explains why some algebraic methods require a final verification step."
-          }
-        ]
-      },
-      {
-        "id": "systematic-check",
-        "title": "The Complete Checking Workflow",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "Step 1: Write down the original equation."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 2: Identify the original domain restrictions."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 3: Solve using algebraic and trigonometric transformations."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 4: Generate all candidate solutions."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 5: Remove candidates outside the required interval."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 6: Remove candidates outside the original domain."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 7: Substitute every remaining candidate into the original equation."
-          },
-          {
-            "type": "paragraph",
-            "text": "Step 8: Report only the values that satisfy the original equation, domain, and interval."
-          }
-        ]
-      },
-      {
-        "id": "why-checking-matters",
-        "title": "Why Checking Is the Final Authority",
-        "content": [
-          {
-            "type": "paragraph",
-            "text": "The original equation defines the actual problem. Every transformed equation is only a tool for finding candidates."
-          },
-          {
-            "type": "paragraph",
-            "text": "A value is a true solution only if it satisfies the original equation under its original domain restrictions."
-          },
-          {
-            "type": "paragraph",
-            "text": "This principle applies not only to trigonometric equations but also to algebraic equations involving radicals, fractions, logarithms, and other restricted functions."
+            "text": "Substitute each candidate back into the original equation rather than checking only a transformed version.",
+            "id": "original-equation-paragraph-1"
           }
         ]
       }
