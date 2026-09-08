@@ -1,3 +1,14 @@
+# Environment files
 .dev.vars*
 .env*
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Cloudflare generated files
 server/.wrangler/
+
+# Build outputs
+dist/
+build/
