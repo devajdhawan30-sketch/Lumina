@@ -60,17 +60,17 @@ function SimilarTriangles() {
 }
 
 function TowerHeight() {
-  const progress = useLoopProgress()
-  const scale = 0.78 + pingPong(progress) * 0.34
-  const towerTop = 124 - 76 * scale
-  const towerAngle = Math.atan2(124 - towerTop, 125)
+  const [height, setHeight] = useState(70)
+  const distance = 125
+  const pixelsPerMeter = 0.65
+  const towerTop = 124 - height * pixelsPerMeter
+  const towerAngle = Math.atan2(height, distance)
   const arcRadius = 20
   const arc = Array.from({ length: 20 }, (_, index) => {
     const step = (towerAngle * index) / 19
     return `${index === 0 ? 'M' : 'L'}${65 + arcRadius * Math.cos(step)} ${124 - arcRadius * Math.sin(step)}`
   }).join(' ')
-  const height = Math.round(76 * scale)
-  return <svg viewBox="0 0 260 150" role="img" aria-label="Synchronized animated tower height measurement"><path d="M22 124H238" className="mini-axis" /><rect x="190" y={towerTop} width="18" height={height} className="mini-tower" /><line x1="65" y1="124" x2="190" y2={towerTop} className="mini-sight" /><circle cx="65" cy="124" r="5" className="mini-point" /><path d={arc} className="mini-arc" /><text x="72" y="116" className="mini-label">θ</text><text x="94" y="138" className="mini-label">distance</text><text x="211" y={towerTop + 2} className="mini-label">height</text><text x="24" y="22" className="mini-value">height ≈ {height} units</text></svg>
+  return <div className="tower-interactive"><svg viewBox="0 0 260 150" role="img" aria-label="Interactive tower height measurement"><path d="M22 124H238" className="mini-axis" /><rect x="190" y={towerTop} width="18" height={height * pixelsPerMeter} className="mini-tower" /><line x1="65" y1="124" x2="190" y2={towerTop} className="mini-sight" /><circle cx="65" cy="124" r="5" className="mini-point" /><path d={arc} className="mini-arc" /><text x="72" y="116" className="mini-label">θ</text><text x="94" y="138" className="mini-label">distance</text><text x="211" y={towerTop + 2} className="mini-label">height</text><text x="24" y="22" className="mini-value">θ = {(towerAngle * 180 / Math.PI).toFixed(1)}°</text></svg><label className="tower-control">Tower height: <strong>{height} m</strong><input aria-label="Tower height in metres" type="range" min="20" max="100" value={height} onChange={(event) => setHeight(Number(event.target.value))} /><span>distance = {distance} m · θ = tan⁻¹({height}/{distance})</span></label></div>
 }
 
 function OneRadian() {

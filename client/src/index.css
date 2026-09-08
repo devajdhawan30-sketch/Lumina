@@ -364,6 +364,10 @@ a {
 .mini-theta { fill: #171a24; font-size: 14px; font-weight: 800; }
 .mini-annotation { fill: #68706f; font-size: 8px; }
 .mini-value { fill: #171a24; font-size: 11px; font-weight: 800; }
+.tower-control { display: grid; gap: 6px; color: #68706f; font-size: 11px; font-weight: 700; }
+.tower-control strong { color: #171a24; font-size: 14px; }
+.tower-control input { width: 100%; accent-color: #ff695d; }
+.tower-control span { color: #8a9492; font-size: 10px; font-weight: 500; }
 .popover-purpose { display: block; color: #737887; font-size: 12px; }
 
 /* =========================================================
