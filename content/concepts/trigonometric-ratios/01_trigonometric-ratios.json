@@ -322,6 +322,7 @@
           {
             "type": "paragraph",
             "text": "Tangent compares the opposite side directly with the adjacent side.",
+            "highlights": [{"id": "tangent-opposite-adjacent", "text": "opposite side directly with the adjacent side", "explorationId": "visualize-tangent-ratio", "actions": ["visualize", "ask-ai", "why"]}],
             "id": "tangent-paragraph-2"
           },
           {

@@ -20,7 +20,6 @@
     ]
   },
   "theory": {
-    "introduction": "Similar triangles are triangles that have the same shape, even if their sizes are different. This is the missing link between a particular right triangle and the general trigonometric ratios that depend only on an angle. If two right triangles contain the same acute angle, they have the same shape and their corresponding side lengths change by the same scale factor. Therefore, ratios of corresponding sides remain unchanged.",
     "sections": [
       {
         "id": "what-similar-means",
@@ -149,7 +148,15 @@
           {
             "type": "paragraph",
             "id": "exploration-hook",
-            "text": "This gives a natural visualization for the next stage of learning: continuously resize a right triangle while keeping one angle fixed and watch the side lengths change while their ratios remain constant."
+            "text": "This gives a natural visualization for the next stage of learning: continuously resize a right triangle while keeping one angle fixed and watch the side lengths change while their ratios remain constant.",
+            "highlights": [
+              {
+                "id": "constant-ratio",
+                "text": "ratios remain constant",
+                "explorationId": "visualize-similar-triangles",
+                "actions": ["visualize", "ask-ai", "why"]
+              }
+            ]
           }
         ]
       },

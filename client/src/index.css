@@ -259,6 +259,118 @@ a {
 }
 
 /* =========================================================
+   INTERACTIVE LESSON
+   ========================================================= */
+
+.learn-page {
+  --ink: #171a24;
+  --muted: #737887;
+  --line: #e4e6eb;
+  --coral: #ff695d;
+  --cyan: #43c6bd;
+  min-height: 100vh;
+  padding: 144px 6vw 80px;
+  color: var(--ink);
+  background: #f6f5f1;
+}
+
+.learn-intro { max-width: 760px; margin: 0 auto 76px; }
+.learn-kicker, .panel-kicker { margin: 0 0 18px; color: var(--coral); font-size: 11px; font-weight: 800; letter-spacing: .18em; }
+.learn-intro h1 { margin: 0; font-size: clamp(48px, 7vw, 92px); line-height: .92; letter-spacing: -.07em; font-weight: 900; }
+.learn-intro h1 em { color: var(--coral); font-family: Georgia, serif; font-weight: 400; letter-spacing: -.06em; }
+.learn-lede { max-width: 520px; margin: 28px 0 0; color: var(--muted); font-size: 17px; line-height: 1.6; }
+.learn-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, 470px); gap: clamp(42px, 8vw, 130px); max-width: 1200px; margin: auto; align-items: start; }
+.lesson-column { min-width: 0; }
+.lesson-meta { display: flex; justify-content: space-between; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.lesson-meta span:first-child { color: var(--coral); }
+.lesson-column > h2 { margin: 34px 0 46px; font-size: clamp(32px, 4vw, 48px); letter-spacing: -.06em; }
+.lesson-section { max-width: 680px; margin-bottom: 42px; }
+.lesson-section h3 { margin: 0 0 16px; font-size: 18px; letter-spacing: -.02em; }
+.lesson-section p { margin: 0 0 16px; color: #5c606d; font-size: 16px; line-height: 1.85; }
+.text-highlight { display: inline-flex; align-items: center; gap: 4px; padding: 0 3px; border: 0; border-bottom: 2px solid var(--coral); color: var(--ink); background: #ffe2dc; font-weight: 700; }
+.text-highlight:hover { color: #9b3027; background: #ffd2ca; }
+.exploration-panel { position: sticky; top: 112px; padding: 25px; border: 1px solid #dedfdc; background: #fffefa; box-shadow: 16px 18px 0 #e9e4db; }
+.panel-top { display: flex; justify-content: space-between; align-items: start; }
+.panel-top h2 { margin: 0; max-width: 300px; font-size: 25px; letter-spacing: -.05em; }
+.panel-purpose { min-height: 48px; margin: 14px 0 18px; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.viz-shell { padding: 13px 12px 16px; background: #f0f4f1; }
+.visualization-transition { width: 100%; }
+.viz-shell svg { display: block; width: 100%; height: auto; overflow: visible; }
+.viz-axis { stroke: #cbd4d2; stroke-width: 1; }
+.viz-circle { fill: #e1f2ee; stroke: #257c79; stroke-width: 2; }
+.viz-ray { stroke: var(--coral); stroke-width: 3; stroke-linecap: round; }
+.viz-arc { fill: none; stroke: var(--cyan); stroke-width: 3; stroke-linecap: round; }
+.viz-guide { stroke: #9bc9c3; stroke-width: 1.5; stroke-dasharray: 4 4; }
+.viz-point { fill: var(--coral); stroke: #fffefa; stroke-width: 2; }
+.viz-origin { fill: #257c79; }
+.viz-triangle { fill: #ffd5cd; stroke: var(--coral); stroke-width: 2; stroke-linejoin: round; }
+.viz-wave { fill: none; stroke: #257c79; stroke-width: 2.5; stroke-linecap: round; }
+.viz-label { fill: #68706f; font-size: 10px; font-family: inherit; }
+.viz-readout, .ratio-readout { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin: 6px 0 14px; }
+.viz-readout strong, .ratio-readout strong { font-size: 18px; letter-spacing: -.03em; }
+.viz-readout span, .ratio-readout span { color: #77807f; font-size: 11px; text-align: right; }
+.coordinate-readout { display: flex; justify-content: space-between; margin: 8px 0 14px; color: #77807f; font-size: 12px; }
+.coordinate-readout b { color: var(--ink); }
+.viz-shell input { display: block; width: 100%; accent-color: var(--coral); }
+.exploration-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 18px; border: 1px solid var(--line); background: var(--line); }
+.exploration-tab { display: flex; justify-content: space-between; gap: 8px; min-height: 45px; padding: 10px; border: 0; color: #777b86; background: #fffefa; font-size: 11px; font-weight: 700; text-align: left; }
+.exploration-tab.active { color: var(--ink); background: #fff0eb; }
+.exploration-tab span { color: var(--coral); }
+.tutor-link { display: flex; align-items: center; gap: 8px; margin-top: 18px; color: var(--ink); font-size: 13px; font-weight: 800; }
+.tutor-link svg:last-child { margin-left: auto; }
+.selection-toolbar { position: fixed; z-index: 10; left: 50%; bottom: 26px; display: flex; align-items: center; gap: 12px; max-width: calc(100% - 32px); padding: 10px 12px 10px 16px; transform: translateX(-50%); border: 1px solid #343842; background: #20232d; color: #fff; box-shadow: 0 10px 30px #1e202c33; font-size: 12px; }
+.selection-toolbar span { max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #d4d7df; }
+.selection-toolbar button, .selection-toolbar a { display: inline-flex; align-items: center; gap: 5px; padding: 7px 9px; border: 0; background: #fff; color: var(--ink); font-size: 12px; font-weight: 800; }
+
+@media (max-width: 850px) {
+  .learn-page { padding: 120px 20px 56px; }
+  .learn-intro { margin-bottom: 52px; }
+  .learn-layout { grid-template-columns: 1fr; gap: 54px; }
+  .exploration-panel { position: relative; top: auto; box-shadow: 10px 12px 0 #e9e4db; }
+}
+
+@media (max-width: 520px) {
+  .lesson-meta { flex-wrap: wrap; }
+  .lesson-meta span:last-child { width: 100%; }
+  .exploration-panel { padding: 16px; }
+  .selection-toolbar { left: 16px; right: 16px; bottom: 16px; transform: none; flex-wrap: wrap; }
+}
+
+/* Inline content explorations */
+.content-highlight { padding: 0 2px; border: 0; border-bottom: 2px solid #ff695d; color: inherit; background: #ffe2dc; font-weight: 700; cursor: help; }
+.content-highlight:hover, .content-highlight:focus-visible { background: #ffd0c8; outline: 2px solid #ff695d; outline-offset: 2px; }
+.exploration-popover { position: absolute; z-index: 20; top: calc(100% + 12px); left: 0; width: min(440px, 86vw); padding: 16px; border: 1px solid #dedfdc; background: #fffefa; box-shadow: 8px 10px 0 #e9e4db; color: #171a24; font-size: 13px; line-height: 1.4; }
+.exploration-popover::before { content: ""; position: absolute; top: -6px; left: 16px; width: 10px; height: 10px; border-top: 1px solid #dedfdc; border-left: 1px solid #dedfdc; background: #fffefa; transform: rotate(45deg); }
+.popover-eyebrow { display: block; margin-bottom: 3px; color: #ff695d; font-size: 10px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.exploration-popover strong { display: block; margin-bottom: 8px; font-size: 16px; }
+.mini-visualization { margin: 0 -2px 10px; padding: 8px 4px; background: #f0f4f1; }
+.mini-visualization svg { display: block; width: 100%; height: auto; }
+.mini-axis { stroke: #cbd4d2; stroke-width: 1; }
+.mini-circle { fill: #e1f2ee; stroke: #257c79; stroke-width: 2; }
+.mini-ray, .mini-arc { fill: none; stroke: #ff695d; stroke-width: 3; stroke-linecap: round; }
+.mini-arc { stroke: #43c6bd; }
+.mini-initial { stroke: #8a9492; stroke-width: 2; stroke-dasharray: 4 3; }
+.mini-sight { stroke: #ff695d; stroke-width: 2; stroke-dasharray: 5 4; }
+.mini-hour-hand { stroke: #257c79; stroke-width: 4; stroke-linecap: round; }
+.mini-right-angle { fill: none; stroke: #43c6bd; stroke-width: 2; }
+.mini-component-x { stroke: #43c6bd; stroke-width: 3; }
+.mini-component-y { stroke: #257c79; stroke-width: 3; }
+.mini-tower { fill: #ffd5cd; stroke: #ff695d; stroke-width: 2; }
+.mini-guide { stroke: #9bc9c3; stroke-width: 1.5; stroke-dasharray: 4 4; }
+.mini-point { fill: #ff695d; stroke: #fffefa; stroke-width: 2; }
+.mini-triangle { fill: #ffd5cd; stroke: #ff695d; stroke-width: 2; stroke-linejoin: round; }
+.mini-wave { fill: none; stroke: #257c79; stroke-width: 2.5; }
+.mini-label { fill: #68706f; font-size: 10px; }
+.mini-theta { fill: #171a24; font-size: 14px; font-weight: 800; }
+.mini-annotation { fill: #68706f; font-size: 8px; }
+.mini-value { fill: #171a24; font-size: 11px; font-weight: 800; }
+.tower-control { display: grid; gap: 6px; color: #68706f; font-size: 11px; font-weight: 700; }
+.tower-control strong { color: #171a24; font-size: 14px; }
+.tower-control input { width: 100%; accent-color: #ff695d; }
+.tower-control span { color: #8a9492; font-size: 10px; font-weight: 500; }
+.popover-purpose { display: block; color: #737887; font-size: 12px; }
+
+/* =========================================================
    DECORATIVE ORBIT
    ========================================================= */
 
