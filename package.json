@@ -1,0 +1,8 @@
+{
+"type": "module",
+"dependencies": {
+"@google/genai": "^2.21.0",
+"ajv": "^8.20.0",
+"cheerio": "^1.2.0"
+}
+}
