@@ -1,6 +1,11 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "sih-demo-api",
+  "name": "sih-demo",
   "main": "./index.ts",
-  "compatibility_date": "2026-09-06"
+  "compatibility_date": "2026-09-06",
+
+  "assets": {
+    "directory": "../client/dist",
+    "not_found_handling": "single-page-application"
+  }
 }

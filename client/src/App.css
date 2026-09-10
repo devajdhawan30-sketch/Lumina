@@ -1,0 +1,242 @@
+
+
+/* =========================================================
+   TOPIC APPLICATIONS + MODULE EXPLORER
+   ========================================================= */
+
+.topic-landing-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 270px;
+  gap: 42px;
+  align-items: end;
+  padding: 28px 0 10px;
+}
+
+.topic-landing-badge {
+  padding: 24px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--surface);
+  box-shadow: 8px 10px 0 #e9e4db;
+}
+
+.topic-landing-badge span {
+  display: block;
+  margin-bottom: 24px;
+  color: var(--coral);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+.topic-landing-badge strong {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 26px;
+  line-height: 1.05;
+}
+
+.topic-landing-badge small {
+  display: block;
+  margin-top: 10px;
+  color: #737887;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.application-lab-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.application-lab-card {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(260px, 1.1fr);
+  min-height: 310px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  box-shadow: var(--shadow-xs);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.application-lab-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(30, 35, 42, .10);
+}
+
+.application-lab-card-featured {
+  min-height: 350px;
+}
+
+.application-lab-copy {
+  padding: 24px;
+}
+
+.application-lab-number {
+  color: #a2a7a5;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.application-lab-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 20px 16px;
+  background: var(--mist);
+}
+
+.application-lab-visual .mini-visualization {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.application-lab-visual svg {
+  display: block;
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+}
+
+.application-lab-visual .tower-interactive {
+  width: 100%;
+}
+
+.application-lab-visual .tower-control {
+  margin-top: 10px;
+}
+
+.module-card {
+  min-height: 170px;
+}
+
+@media (max-width: 1000px) {
+  .topic-landing-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .topic-landing-badge {
+    max-width: 340px;
+  }
+
+  .application-lab-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .application-lab-card,
+  .application-lab-card-featured {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .application-lab-visual {
+    min-height: 220px;
+  }
+}
+/* =========================================================
+   INTRODUCTION VISUALIZATION LABS
+   ========================================================= */
+
+.intro-viz {
+  width: 100%;
+}
+
+.intro-viz svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.intro-viz-controls {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.intro-viz-control {
+  display: block;
+}
+
+.intro-viz-control span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  color: #737887;
+  font-size: 11px;
+}
+
+.intro-viz-control strong {
+  color: #171a24;
+  font-size: 12px;
+}
+
+.intro-viz-control input {
+  display: block;
+  width: 100%;
+  accent-color: var(--coral);
+}
+
+.intro-viz-insight {
+  margin-top: 12px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #fff0eb;
+  color: #5d5f68;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.intro-viz-insight span {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--coral);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.intro-sky {
+  fill: #eef4f2;
+}
+
+.intro-sun {
+  fill: #ffd36b;
+  stroke: #e8a83e;
+  stroke-width: 2;
+}
+
+.intro-tree {
+  fill: #b7d8bd;
+  stroke: #5e9170;
+  stroke-width: 2;
+}
+
+.intro-shadow {
+  stroke: #8c9491;
+  stroke-width: 5;
+  stroke-linecap: round;
+  opacity: .55;
+}
+
+.intro-viz .mini-value {
+  fill: #171a24;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.intro-viz .mini-annotation {
+  fill: #737887;
+  font-size: 9px;
+}

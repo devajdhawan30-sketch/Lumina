@@ -16,7 +16,6 @@ import sineFunction from "../../content/concepts/trigonometric-ratios/06_sine-fu
 import cosineFunction from "../../content/concepts/trigonometric-ratios/07_cosine-function.json";
 import trigonometricFunctions from "../../content/concepts/trigonometric-ratios/08_trigonometric-functions.json";
 import reciprocalTrigonometricFunctions from "../../content/concepts/trigonometric-ratios/09_reciprocal-trigonometric-functions.json";
-import rightTriangleTrigonometry from "../../content/concepts/trigonometric-ratios/10_right-triangle-trigonometry.json";
 
 import whatAreTrigEquations from "../../content/concepts/trigonometricFunctions/trig-equations-01-what-are-equations.json";
 import natureOfSolutions from "../../content/concepts/trigonometricFunctions/trig-equations-02-nature-of-solutions.json";
@@ -54,7 +53,6 @@ const concepts = [
   cosineFunction,
   trigonometricFunctions,
   reciprocalTrigonometricFunctions,
-  rightTriangleTrigonometry,
 
   // Trigonometric Equations
   whatAreTrigEquations,

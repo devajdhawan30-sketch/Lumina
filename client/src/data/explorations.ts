@@ -11,6 +11,7 @@ export type ExplorationId =
   | 'visualize-triangulation'
   | 'visualize-navigation-vector'
   | 'visualize-wave-motion'
+  | 'visualize-shadow-measurement'
 
 type Trigger = {
   conceptId: string
@@ -160,6 +161,23 @@ export const explorations: ExplorationDefinition[] = [
     trigger: { conceptId: 'applications-of-trigonometry', contentId: 'waves-paragraph-1', highlightId: 'repeating-wave-pattern' },
     visualization: { component: 'visualize-wave-motion', interactive: true },
   },
+  {
+  id: 'visualize-shadow-measurement',
+  type: 'visualization',
+  title: 'Measure a tree using its shadow',
+  eyebrow: 'REAL-WORLD GEOMETRY',
+  purpose:
+    'Change the height of a tree and the Sun angle to discover how an inaccessible measurement can be connected to an angle.',
+  trigger: {
+    conceptId: 'right-triangles',
+    contentId: 'height-measurement',
+    highlightId: 'shadow-measurement',
+  },
+  visualization: {
+    component: 'visualize-shadow-measurement',
+    interactive: true,
+  },
+},
 ]
 
 export function getExploration(id: ExplorationId) {

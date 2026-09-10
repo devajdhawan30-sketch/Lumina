@@ -158,7 +158,15 @@
             "type": "paragraph",
             "id": "height-measurement",
             "text": "For example, if the horizontal distance from an observer to a building and an appropriate angle are known, the building's height can be treated as an unknown side of a right triangle."
-          },
+          ,
+        "highlights": [
+          {
+               "id": "shadow-measurement",
+                "text": "height",
+                "explorationId": "visualize-shadow-measurement",
+                "actions": ["visualize", "ask-ai", "why"]
+          }
+]},
           {
             "type": "paragraph",
             "id": "bridge-forward",

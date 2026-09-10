@@ -19,6 +19,7 @@
     ]
   },
   "theory": {
+    "introduction": "An angle is not merely a shape drawn between two lines. It can be understood as a geometric object created by two rays and, dynamically, as the amount of rotation from one ray to another. This rotational viewpoint is especially important in trigonometry because trigonometric functions eventually describe what happens as an angle rotates around a circle.",
     "sections": [
       {
         "id": "what-is-a-ray",
@@ -101,7 +102,11 @@
                 "id": "angle-as-rotation",
                 "text": "understood dynamically as a rotation",
                 "explorationId": "visualize-angle-rotation",
-                "actions": ["visualize", "ask-ai", "why"]
+                "actions": [
+                  "visualize",
+                  "ask-ai",
+                  "why"
+                ]
               }
             ]
           },
@@ -150,7 +155,15 @@
             "type": "paragraph",
             "id": "multiple-rotations",
             "text": "An angle can represent more than one complete rotation. For example, a rotation can go all the way around once and continue further before stopping. This is important because trigonometry works with angles as rotations, not merely with the small region visually enclosed by two rays."
-          }
+          ,"highlights": [
+           {
+             "id": "multiple-rotations-visual",
+              "text": "multiple rotations",
+              "explorationId": "visualize-angle-rotation",
+            "actions": ["visualize", "ask-ai", "why"]
+            }
+          ]
+        }
         ]
       },
       {
@@ -186,7 +199,11 @@
                 "id": "unit-circle-coordinate",
                 "text": "terminal side tells us where the rotation ends",
                 "explorationId": "visualize-unit-circle",
-                "actions": ["visualize", "ask-ai", "why"]
+                "actions": [
+                  "visualize",
+                  "ask-ai",
+                  "why"
+                ]
               }
             ]
           }

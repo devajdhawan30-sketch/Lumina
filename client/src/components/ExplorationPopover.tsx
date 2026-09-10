@@ -1,5 +1,6 @@
 import { motion, useAnimationFrame } from 'motion/react'
 import { useState } from 'react'
+import { Bot, HelpCircle } from 'lucide-react'
 import { getExploration, type ExplorationId } from '../data/explorations'
 
 function useLoopProgress(duration = 2600) {
@@ -20,15 +21,247 @@ function sampledArc(centerX: number, centerY: number, start: number, end: number
 }
 
 function AngleRotation() {
-  const progress = useLoopProgress()
-  const angle = pingPong(progress) * (Math.PI / 2.4)
+  const [angleDeg, setAngleDeg] = useState(45)
+
+  const angle = (angleDeg * Math.PI) / 180
   const radius = 58
-  const point = { x: 130 + radius * Math.cos(angle), y: 118 - radius * Math.sin(angle) }
-  const arc = Array.from({ length: 25 }, (_, index) => {
-    const step = (angle * index) / 24
-    return `${index === 0 ? 'M' : 'L'}${130 + radius * Math.cos(step)} ${118 - radius * Math.sin(step)}`
+
+  const point = {
+    x: 130 + radius * Math.cos(angle),
+    y: 118 - radius * Math.sin(angle),
+  }
+
+  const arc = Array.from({ length: 40 }, (_, index) => {
+    const step = (angle * index) / 39
+
+    return `${index === 0 ? 'M' : 'L'}${
+      130 + 34 * Math.cos(step)
+    } ${
+      118 - 34 * Math.sin(step)
+    }`
   }).join(' ')
-  return <svg viewBox="0 0 260 150" role="img" aria-label="Synchronized animated angle rotation"><path d="M24 118H238M130 138V16" className="mini-axis" /><line x1="130" y1="118" x2="188" y2="118" className="mini-initial" /><path d={arc} className="mini-arc" /><line x1="130" y1="118" x2={point.x} y2={point.y} className="mini-ray" /><circle cx={point.x} cy={point.y} r="5" className="mini-point" /><text x="148" y="105" className="mini-label">θ</text><text x="184" y="112" className="mini-annotation">initial</text><text x={point.x - 12} y={point.y - 10} className="mini-annotation">terminal</text><text x="24" y="22" className="mini-value">{Math.round((angle * 180) / Math.PI)}° rotation</text></svg>
+
+  const turns = angleDeg / 360
+
+  return (
+    <div className="intro-viz">
+      <svg
+        viewBox="0 0 260 150"
+        role="img"
+        aria-label="Interactive angle rotation"
+      >
+        <path
+          d="M24 118H238M130 138V16"
+          className="mini-axis"
+        />
+
+        <line
+          x1="130"
+          y1="118"
+          x2="188"
+          y2="118"
+          className="mini-initial"
+        />
+
+        <path
+          d={arc}
+          className="mini-arc"
+        />
+
+        <line
+          x1="130"
+          y1="118"
+          x2={point.x}
+          y2={point.y}
+          className="mini-ray"
+        />
+
+        <circle
+          cx={point.x}
+          cy={point.y}
+          r="6"
+          className="mini-point"
+        />
+
+        <text x="24" y="22" className="mini-value">
+          θ = {angleDeg}°
+        </text>
+
+        <text x="24" y="38" className="mini-annotation">
+          {turns.toFixed(2)} revolution
+          {Math.abs(turns) !== 1 ? 's' : ''}
+        </text>
+
+        <text x="143" y="110" className="mini-theta">
+          θ
+        </text>
+      </svg>
+
+      <label className="intro-viz-control">
+        <span>
+          Rotation
+          <strong>{angleDeg}°</strong>
+        </span>
+
+        <input
+          type="range"
+          min="-360"
+          max="720"
+          value={angleDeg}
+          onChange={(event) =>
+            setAngleDeg(Number(event.target.value))
+          }
+        />
+      </label>
+    </div>
+  )
+}
+
+function ShadowMeasurement() {
+  const [height, setHeight] = useState(8)
+  const [sunAngle, setSunAngle] = useState(38)
+
+  const angle = (sunAngle * Math.PI) / 180
+  const shadow = height / Math.tan(angle)
+
+  const treeHeight = Math.min(height * 7, 70)
+  const shadowLength = Math.min(shadow * 7, 150)
+
+  return (
+    <div className="intro-viz">
+      <svg
+        viewBox="0 0 300 170"
+        role="img"
+        aria-label="Interactive tree shadow measurement"
+      >
+        <defs>
+          <linearGradient id="skyGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" />
+            <stop offset="100%" />
+          </linearGradient>
+        </defs>
+
+        <rect
+          x="0"
+          y="0"
+          width="300"
+          height="170"
+          rx="14"
+          className="intro-sky"
+        />
+
+        <circle
+          cx="250"
+          cy="35"
+          r="18"
+          className="intro-sun"
+        />
+
+        <path
+          d="M25 140H275"
+          className="mini-axis"
+        />
+
+        {/* Tree */}
+        <rect
+          x="65"
+          y={140 - treeHeight}
+          width="9"
+          height={treeHeight}
+          className="mini-tower"
+        />
+
+        <circle
+          cx="69"
+          cy={134 - treeHeight}
+          r="18"
+          className="intro-tree"
+        />
+
+        {/* Shadow */}
+        <path
+          d={`M69 140 L${69 + shadowLength} 140`}
+          className="intro-shadow"
+        />
+
+        {/* Sun ray */}
+        <line
+          x1="250"
+          y1="35"
+          x2="69"
+          y2={140 - treeHeight}
+          className="mini-sight"
+        />
+
+        <text
+          x="20"
+          y="24"
+          className="mini-value"
+        >
+          Sun elevation = {sunAngle}°
+        </text>
+
+        <text
+          x="20"
+          y="40"
+          className="mini-annotation"
+        >
+          shadow ≈ {shadow.toFixed(1)} m
+        </text>
+
+        <text
+          x="72"
+          y={140 - treeHeight / 2}
+          className="mini-annotation"
+        >
+          {height.toFixed(1)} m
+        </text>
+      </svg>
+
+      <div className="intro-viz-controls">
+        <label className="intro-viz-control">
+          <span>
+            Tree height
+            <strong>{height.toFixed(1)} m</strong>
+          </span>
+
+          <input
+            type="range"
+            min="3"
+            max="15"
+            step="0.5"
+            value={height}
+            onChange={(event) =>
+              setHeight(Number(event.target.value))
+            }
+          />
+        </label>
+
+        <label className="intro-viz-control">
+          <span>
+            Sun angle
+            <strong>{sunAngle}°</strong>
+          </span>
+
+          <input
+            type="range"
+            min="15"
+            max="75"
+            value={sunAngle}
+            onChange={(event) =>
+              setSunAngle(Number(event.target.value))
+            }
+          />
+        </label>
+      </div>
+
+      <div className="intro-viz-insight">
+        <span>Notice</span>
+        Changing the sun angle changes the shadow dramatically.
+        The height did not change.
+      </div>
+    </div>
+  )
 }
 
 function UnitCircle() {
@@ -146,7 +379,10 @@ function WaveMotion() {
   return <svg viewBox="0 0 260 150" role="img" aria-label="Animated repeating wave pattern"><path d="M24 78H238M24 38V118" className="mini-axis" /><polyline points={wave} className="mini-wave" /><circle cx={24 + progress * 180} cy={78 - Math.sin(progress * Math.PI * 4 + shift / 12) * 34} r="5" className="mini-point" /><text x="24" y="22" className="mini-value">repeating signal</text><text x="82" y="140" className="mini-annotation">time →</text></svg>
 }
 
-function Visualization({ id }: { id: ExplorationId }) {
+export function Visualization({ id }: { id: ExplorationId }) {
+  if (id === 'visualize-shadow-measurement') {
+  return <ShadowMeasurement />
+}
   if (id === 'visualize-angle-rotation') return <AngleRotation />
   if (id === 'visualize-unit-circle') return <UnitCircle />
   if (id === 'visualize-sine-wave') return <SineWave />
@@ -161,14 +397,54 @@ function Visualization({ id }: { id: ExplorationId }) {
   return <WaveMotion />
 }
 
-export default function ExplorationPopover({ id }: { id: ExplorationId }) {
+export default function ExplorationPopover({
+  id,
+  actions = ['visualize'],
+  onAskTutor,
+  onWhy,
+}: {
+  id: ExplorationId
+  actions?: string[]
+  onAskTutor?: () => void
+  onWhy?: () => void
+}) {
   const exploration = getExploration(id)
   if (!exploration) return null
 
-  return <motion.div className="exploration-popover" role="dialog" aria-label={exploration.title} initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.18 }}>
-    <span className="popover-eyebrow">{exploration.eyebrow}</span>
-    <strong>{exploration.title}</strong>
-    <div className="mini-visualization"><Visualization id={id} /></div>
-    <span className="popover-purpose">{exploration.purpose}</span>
-  </motion.div>
+  const canAskTutor = actions.includes('ask-ai') && Boolean(onAskTutor)
+  const canAskWhy = actions.includes('why') && Boolean(onWhy)
+
+  return (
+    <motion.div
+      className="exploration-popover"
+      role="dialog"
+      aria-label={exploration.title}
+      initial={{ opacity: 0, y: 8 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.18 }}
+      onMouseDown={(event) => event.stopPropagation()}
+    >
+      <span className="popover-eyebrow">{exploration.eyebrow}</span>
+      <strong>{exploration.title}</strong>
+      <div className="mini-visualization">
+        <Visualization id={id} />
+      </div>
+      <span className="popover-purpose">{exploration.purpose}</span>
+
+      {(canAskTutor || canAskWhy) && (
+        <div className="exploration-actions">
+          {canAskTutor && (
+            <button type="button" onClick={onAskTutor}>
+              <Bot size={13} /> Ask Tutor
+            </button>
+          )}
+          {canAskWhy && (
+            <button type="button" onClick={onWhy}>
+              <HelpCircle size={13} /> Why?
+            </button>
+          )}
+        </div>
+      )}
+    </motion.div>
+  )
 }
