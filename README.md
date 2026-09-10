@@ -1,13 +1,13 @@
 ## Team Members
 
-  Name               Role                            Roll Number
-  ------------------ ------------------------------- ---------------
-  **Varun Verma**    Full Stack --- Team Leader      `2025UCS1685`
-  **Devaj Dhawan**   Content Automation              `2025UCA1834`
-  **Tanish Verma**   UI Design                       `2025UCA1596`
-  **Bhavin Goyal**   Backend & Content Integration   `2025UCA1860`
-  **Vansh Mehta**    AI Integration & Animations     `2025UCA1907`
-  **Navya Gupta**    PPT, Research & Design          `2025UCS1710`
+| Name | Role | Roll Number |
+|------|------|-------------|
+| **Varun Verma** | Full Stack — Team Leader | `2025UCS1685` |
+| **Devaj Dhawan** | Content Automation | `2025UCA1834` |
+| **Tanish Verma** | UI Design | `2025UCA1596` |
+| **Bhavin Goyal** | Backend & Content Integration | `2025UCA1860` |
+| **Vansh Mehta** | AI Integration & Animations | `2025UCA1907` |
+| **Navya Gupta** | PPT, Research & Design | `2025UCS1710` |
 
 # PathVerse --- Curiosity → Structured Learning
 
