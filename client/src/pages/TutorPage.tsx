@@ -544,9 +544,9 @@ function AiTutorPanel({
 
   const quickActions = mode === 'socratic'
     ? [
-        ['Start a Socratic check', `Explain ${concept.title} in your own words. I will check how well you understand it.`],
-        ['Test me with a question', 'Ask me one conceptual question about this topic. Do not reveal the answer until you have evaluated my response.'],
-        ['Assess my grasp', 'Based on my explanations so far, assess my grasp using Strong / Developing / Needs work, explain what I understand, what is shaky, and my next step.'],
+       // ['Start a Socratic check', `I will now start explaining ${concept.title}. Assess .`],
+        //['Test me with a question', 'Ask me one conceptual question about this topic. Do not reveal the answer until you have evaluated my response.'],
+        //['Assess my grasp', 'Based on my explanations so far, assess my grasp using Strong / Developing / Needs work, explain what I understand, what is shaky, and my next step.'],
       ]
     : [
         ['Explain this simpler', 'Explain the current concept in simpler words.'],

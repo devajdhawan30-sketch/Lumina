@@ -63,7 +63,6 @@ Here is a visual overview of the PathVerse platform:
 -   [Problem](#problem)
 -   [Solution](#solution)
 -   [Key Features](#key-features)
--   [Screenshots](#screenshots) 
 -   [How PathVerse Works](#how-pathverse-works)
 -   [Technology Stack](#technology-stack)
 -   [Architecture](#architecture)
@@ -74,8 +73,6 @@ Here is a visual overview of the PathVerse platform:
 -   [API](#api)
 -   [Content Model](#content-model)
 -   [Deployment](#deployment)
--   [Security](#security)
--   [Project Resources](#project-resources)
 -   [Future Scope](#future-scope)
 -   [References](#references)
 
@@ -661,9 +658,13 @@ This structure makes it possible for the same learning data to power:
 ------------------------------------------------------------------------
 
 
-### Production Prototype
+### Deployed Prototype
 
-**Deployed prototype:**\
+>**Disclaimer**:
+>We are currently using the free tier of the API which flagges requests coming from certain locations .
+>If such an error occurs please refresh the website or try switching to other networks
+
+**Deployed prototype:**
 https://sih-demo.beyondwhy.workers.dev/
 
 ------------------------------------------------------------------------
