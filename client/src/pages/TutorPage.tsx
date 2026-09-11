@@ -1,3 +1,8 @@
+import 'katex/dist/katex.min.css'
+import ReactMarkdown from 'react-markdown'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
+import renderMathInElement from 'katex/contrib/auto-render'
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 import {
@@ -26,6 +31,26 @@ type Highlight = {
   text: string
   explorationId?: ExplorationId
   actions?: string[]
+}
+
+function MathText({ children }: { children: string }) {
+  const ref = useRef<HTMLSpanElement>(null)
+
+  useEffect(() => {
+    if (!ref.current) return
+
+    renderMathInElement(ref.current, {
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '\\(', right: '\\)', display: false },
+        { left: '\\[', right: '\\]', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      throwOnError: false,
+    })
+  }, [children])
+
+  return <span ref={ref}>{children}</span>
 }
 
 export default function TutorPage() {
@@ -272,7 +297,7 @@ function ContentBlock({
       data-content-id={element.id}
       className="rounded-2xl border border-black/10 bg-[#f7f7f5] p-5 text-sm text-black/60"
     >
-      {element.text ?? JSON.stringify(element)}
+      <MathText>{element.text ?? JSON.stringify(element)}</MathText>
     </div>
   )
 }
@@ -293,7 +318,7 @@ function HighlightedParagraph({
   if (!highlights?.length) {
     return (
       <p data-content-id={contentId} className="text-lg leading-9 text-black/65">
-        {text}
+        <MathText>{text}</MathText>
       </p>
     )
   }
@@ -324,7 +349,7 @@ function HighlightedParagraph({
   if (!matches.length) {
     return (
       <p data-content-id={contentId} className="text-lg leading-9 text-black/65">
-        {text}
+        <MathText>{text}</MathText>
       </p>
     )
   }
@@ -337,7 +362,7 @@ function HighlightedParagraph({
 
     pieces.push(
       <span key={`text-${highlight.key}`}>
-        {text.slice(cursor, start)}
+      <MathText>{text.slice(cursor, start)}</MathText>
       </span>,
     )
 
@@ -382,7 +407,7 @@ function HighlightedParagraph({
 
   pieces.push(
     <span key="text-tail">
-      {text.slice(cursor)}
+      <MathText>{text.slice(cursor)}</MathText>
     </span>,
   )
 
@@ -611,7 +636,16 @@ function AiTutorPanel({
               ? 'ml-6 rounded-2xl bg-white px-4 py-3 text-sm text-black'
               : 'mr-4 rounded-2xl bg-white/5 px-4 py-3 text-sm leading-6 text-white/75'}
           >
-            {message.text}
+            {message.role === 'user' ? (
+                message.text
+              ) : (
+                <ReactMarkdown
+                  remarkPlugins={[remarkMath]}
+                  rehypePlugins={[rehypeKatex]}
+                >
+                  {message.text}
+                </ReactMarkdown>
+              )}
           </div>
         ))}
 
