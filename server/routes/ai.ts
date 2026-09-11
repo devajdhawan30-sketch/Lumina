@@ -10,16 +10,15 @@ import {
   type GeminiMessage
 } from "../services/gemini";
 
-
+// 1. Updated Bindings to match your new .dev.vars
 type Bindings = {
-  GEMINI_API_KEY: string;
+  CLOUDFLARE_API_TOKEN: string;
+  CLOUDFLARE_ACCOUNT_ID: string;
 };
-
 
 const aiRouter = new Hono<{
   Bindings: Bindings;
 }>();
-
 
 aiRouter.post("/chat", async (c) => {
   try {
@@ -31,7 +30,6 @@ aiRouter.post("/chat", async (c) => {
       history?: GeminiMessage[];
     }>();
 
-
     const {
       conceptId,
       contentId,
@@ -39,7 +37,6 @@ aiRouter.post("/chat", async (c) => {
       message,
       history = []
     } = body;
-
 
     if (!conceptId) {
       return c.json(
@@ -50,7 +47,6 @@ aiRouter.post("/chat", async (c) => {
       );
     }
 
-
     if (!message) {
       return c.json(
         {
@@ -60,9 +56,7 @@ aiRouter.post("/chat", async (c) => {
       );
     }
 
-
     const concept = getConceptById(conceptId);
-
 
     if (!concept) {
       return c.json(
@@ -73,9 +67,7 @@ aiRouter.post("/chat", async (c) => {
       );
     }
 
-
     let focusedContent = null;
-
 
     if (contentId) {
       focusedContent = getContentElement(
@@ -83,7 +75,6 @@ aiRouter.post("/chat", async (c) => {
         contentId
       );
     }
-
 
     const context = {
       concept: {
@@ -106,7 +97,6 @@ aiRouter.post("/chat", async (c) => {
 
       misconceptions: concept.misconceptions
     };
-
 
     const normalInstructions = `
 You are the AI tutor inside an interactive education platform.
@@ -160,12 +150,9 @@ Current learning context:
 ${JSON.stringify(context, null, 2)}
 `;
 
-
-    const apiKey = c.env.GEMINI_API_KEY;
-
-
-    if (!apiKey) {
-      console.error("GEMINI_API_KEY is missing");
+    // 2. Updated error checking for Cloudflare environment variables
+    if (!c.env.CLOUDFLARE_API_TOKEN || !c.env.CLOUDFLARE_ACCOUNT_ID) {
+      console.error("Cloudflare Gateway credentials missing");
 
       return c.json(
         {
@@ -175,34 +162,31 @@ ${JSON.stringify(context, null, 2)}
       );
     }
 
-
+    // 3. Pass the entire 'c.env' object to askGemini
+    const recentHistory = history.slice(-6);
     const answer = await askGemini(
-      apiKey,
+      c.env,
       systemInstruction,
-      history,
+      recentHistory,
       message
     );
-
 
     return c.json({
       answer
     });
 
-
   } catch (error) {
+    console.error("AI route error:", error);
 
-  console.error("AI route error:", error);
-
-  return c.json(
-    {
-      error: error instanceof Error
-        ? error.message
-        : "Failed to generate AI response"
-    },
-    500
-  );
-}
+    return c.json(
+      {
+        error: error instanceof Error
+          ? error.message
+          : "Failed to generate AI response"
+      },
+      500
+    );
+  }
 });
-
 
 export default aiRouter;

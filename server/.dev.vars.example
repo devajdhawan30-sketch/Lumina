@@ -1,1 +1,2 @@
-GEMINI_API_KEY="your-gemini-api-key"
+CLOUDFLARE_API_TOKEN="your_cloudflare_api_token"
+CLOUDFLARE_ACCOUNT_ID="your_cloudflare_account_id"
