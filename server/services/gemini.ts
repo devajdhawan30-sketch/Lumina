@@ -77,7 +77,7 @@ export async function askGemini(
           },
           contents,
           generationConfig: {
-            maxOutputTokens: 500
+            maxOutputTokens: 2000
           }
         })
       });

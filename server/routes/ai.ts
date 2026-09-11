@@ -114,6 +114,7 @@ IMPORTANT RULES:
 8. Do not unnecessarily introduce advanced topics outside the current concept.
 9. Keep the student's current context in mind.
 10. If the question is unrelated, answer briefly and guide the student back to the relevant concept.
+11. try to complete the answer within 2000 token limit and do not leave them incomplete
 `;
 
     const socraticInstructions = `
