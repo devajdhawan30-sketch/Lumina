@@ -33,24 +33,53 @@ type Highlight = {
   actions?: string[]
 }
 
-function MathText({ children }: { children: string }) {
-  const ref = useRef<HTMLSpanElement>(null)
+/*
+ * MathText
+ *
+ * Renders normal text while also converting LaTeX such as:
+ * $x^2 + y^2 = r^2$
+ * \(x^2 + y^2 = r^2\)
+ * $$x^2 + y^2 = r^2$$
+ * \[x^2 + y^2 = r^2\]
+ *
+ * This component can now be used inside headings, paragraphs,
+ * cards, examples, key ideas, misconceptions, etc.
+ */
+function MathText({
+  children,
+  as: Component = 'span',
+  className,
+}: {
+  children: string
+  as?: 'span' | 'div'
+  className?: string
+}) {
+  const ref = useRef<HTMLElement>(null)
 
   useEffect(() => {
     if (!ref.current) return
 
+    // Reset the element before rendering again.
+    ref.current.textContent = children
+
     renderMathInElement(ref.current, {
       delimiters: [
         { left: '$$', right: '$$', display: true },
-        { left: '\\(', right: '\\)', display: false },
         { left: '\\[', right: '\\]', display: true },
+        { left: '\\(', right: '\\)', display: false },
         { left: '$', right: '$', display: false },
       ],
       throwOnError: false,
+      strict: false,
     })
   }, [children])
 
-  return <span ref={ref}>{children}</span>
+  return (
+    <Component
+      ref={ref as React.RefObject<any>}
+      className={className}
+    />
+  )
 }
 
 export default function TutorPage() {
@@ -68,6 +97,7 @@ export default function TutorPage() {
   useEffect(() => {
     async function loadConcept() {
       if (!conceptId) return
+
       try {
         setLoading(true)
         setError(null)
@@ -81,6 +111,7 @@ export default function TutorPage() {
         setLoading(false)
       }
     }
+
     loadConcept()
   }, [conceptId])
 
@@ -96,10 +127,15 @@ export default function TutorPage() {
 
       const range = selection.getRangeAt(0)
       const container = range.commonAncestorContainer
-      const node = container.nodeType === Node.TEXT_NODE
-        ? container.parentElement
-        : container as Element
-      const article = (node as HTMLElement | null)?.closest('[data-learning-article="true"]')
+
+      const node =
+        container.nodeType === Node.TEXT_NODE
+          ? container.parentElement
+          : (container as Element)
+
+      const article = (node as HTMLElement | null)?.closest(
+        '[data-learning-article="true"]',
+      )
 
       if (!article) {
         setShowSelectionAction(false)
@@ -107,6 +143,7 @@ export default function TutorPage() {
       }
 
       const rect = range.getBoundingClientRect()
+
       setSelectedText(text)
       setSelectionPosition({
         top: Math.max(82, rect.bottom + 8),
@@ -116,13 +153,21 @@ export default function TutorPage() {
         ),
       })
 
-      const contentElement = (node as HTMLElement | null)?.closest('[data-content-id]')
-      setSelectedContentId(contentElement?.getAttribute('data-content-id') ?? undefined)
+      const contentElement = (node as HTMLElement | null)?.closest(
+        '[data-content-id]',
+      )
+
+      setSelectedContentId(
+        contentElement?.getAttribute('data-content-id') ?? undefined,
+      )
+
       setShowSelectionAction(true)
     }
 
     document.addEventListener('selectionchange', handleSelection)
-    return () => document.removeEventListener('selectionchange', handleSelection)
+
+    return () =>
+      document.removeEventListener('selectionchange', handleSelection)
   }, [])
 
   const nextConceptId = concept?.connections.leads_to?.[0]
@@ -145,6 +190,7 @@ export default function TutorPage() {
 
   const askAboutSelection = () => {
     if (!selectedText) return
+
     setTutorPrompt(`Explain this to me: "${selectedText}"`)
     setShowSelectionAction(false)
   }
@@ -153,7 +199,8 @@ export default function TutorPage() {
     return (
       <main className="flex min-h-screen items-center justify-center bg-[#f7f7f5]">
         <div className="flex items-center gap-3 text-black/50">
-          <LoaderCircle className="animate-spin" size={20} /> Loading lesson...
+          <LoaderCircle className="animate-spin" size={20} />
+          Loading lesson...
         </div>
       </main>
     )
@@ -162,8 +209,14 @@ export default function TutorPage() {
   if (error || !concept) {
     return (
       <main className="flex min-h-screen flex-col items-center justify-center gap-5 bg-[#f7f7f5]">
-        <h1 className="text-3xl font-semibold">We couldn't load this lesson.</h1>
-        <p className="text-black/50">{error ?? 'Concept not found'}</p>
+        <h1 className="text-3xl font-semibold">
+          We couldn't load this lesson.
+        </h1>
+
+        <p className="text-black/50">
+          {error ?? 'Concept not found'}
+        </p>
+
         <Link
           to="/subjects/mathematics"
           className="rounded-full bg-black px-6 py-3 text-sm font-semibold text-white"
@@ -180,10 +233,14 @@ export default function TutorPage() {
         <button
           onMouseDown={(event) => event.preventDefault()}
           onClick={askAboutSelection}
-          style={{ top: selectionPosition.top, left: selectionPosition.left }}
+          style={{
+            top: selectionPosition.top,
+            left: selectionPosition.left,
+          }}
           className="fixed z-[100] flex -translate-x-1/2 items-center gap-2 rounded-full bg-black px-4 py-2.5 text-xs font-semibold text-white shadow-2xl transition hover:scale-105"
         >
-          <Bot size={14} /> Ask Tutor
+          <Bot size={14} />
+          Ask Tutor
         </button>
       )}
 
@@ -194,8 +251,10 @@ export default function TutorPage() {
               to={`/topics/${concept.topic}`}
               className="flex items-center gap-2 text-sm text-black/45 transition hover:text-black"
             >
-              <ArrowLeft size={16} /> Back to roadmap
+              <ArrowLeft size={16} />
+              Back to roadmap
             </Link>
+
             <span className="rounded-full bg-black px-4 py-2 text-xs font-semibold text-white">
               {formatSection(concept.subject)}
             </span>
@@ -203,25 +262,29 @@ export default function TutorPage() {
 
           <div className="mx-auto max-w-3xl">
             <div className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-black/35">
-              {formatSection(concept.section)}
+              <MathText>{formatSection(concept.section)}</MathText>
             </div>
 
             <h1 className="text-5xl font-semibold tracking-[-0.05em] md:text-6xl">
-              {concept.title}
+              <MathText>{concept.title}</MathText>
             </h1>
 
             <p className="mt-5 text-xl leading-8 text-black/50">
-              {concept.theory.introduction}
+              <MathText>{concept.theory.introduction}</MathText>
             </p>
 
             <div className="my-12 h-px bg-black/10" />
 
-            <article data-learning-article="true" className="space-y-14">
+            <article
+              data-learning-article="true"
+              className="space-y-14"
+            >
               {concept.theory.sections.map((section) => (
                 <section key={section.id}>
                   <h2 className="mb-6 text-3xl font-semibold tracking-tight">
-                    {section.title}
+                    <MathText>{section.title}</MathText>
                   </h2>
+
                   <div className="space-y-6">
                     {section.content.map((element, index) => (
                       <ContentBlock
@@ -234,10 +297,18 @@ export default function TutorPage() {
                 </section>
               ))}
 
-              {concept.examples.length > 0 && <Examples examples={concept.examples} />}
-              {concept.key_ideas.length > 0 && <KeyIdeas ideas={concept.key_ideas} />}
+              {concept.examples.length > 0 && (
+                <Examples examples={concept.examples} />
+              )}
+
+              {concept.key_ideas.length > 0 && (
+                <KeyIdeas ideas={concept.key_ideas} />
+              )}
+
               {concept.misconceptions.length > 0 && (
-                <Misconceptions misconceptions={concept.misconceptions} />
+                <Misconceptions
+                  misconceptions={concept.misconceptions}
+                />
               )}
             </article>
 
@@ -247,14 +318,16 @@ export default function TutorPage() {
                   onClick={continueToNext}
                   className="flex items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
                 >
-                  Continue <ChevronRight size={16} />
+                  Continue
+                  <ChevronRight size={16} />
                 </button>
               ) : (
                 <Link
                   to={`/topics/${concept.topic}`}
                   className="flex items-center gap-2 rounded-full bg-black px-6 py-3 text-sm font-semibold text-white"
                 >
-                  Back to roadmap <ArrowRight size={16} />
+                  Back to roadmap
+                  <ArrowRight size={16} />
                 </Link>
               )}
             </div>
@@ -317,14 +390,20 @@ function HighlightedParagraph({
 
   if (!highlights?.length) {
     return (
-      <p data-content-id={contentId} className="text-lg leading-9 text-black/65">
+      <p
+        data-content-id={contentId}
+        className="text-lg leading-9 text-black/65"
+      >
         <MathText>{text}</MathText>
       </p>
     )
   }
 
   const validHighlights = highlights
-    .filter((highlight) => highlight.text && highlight.explorationId)
+    .filter(
+      (highlight) =>
+        highlight.text && highlight.explorationId,
+    )
     .map((highlight, index) => ({
       ...highlight,
       key: highlight.id ?? `${highlight.text}-${index}`,
@@ -332,8 +411,11 @@ function HighlightedParagraph({
 
   if (!validHighlights.length) {
     return (
-      <p data-content-id={contentId} className="text-lg leading-9 text-black/65">
-        {text}
+      <p
+        data-content-id={contentId}
+        className="text-lg leading-9 text-black/65"
+      >
+        <MathText>{text}</MathText>
       </p>
     )
   }
@@ -348,7 +430,10 @@ function HighlightedParagraph({
 
   if (!matches.length) {
     return (
-      <p data-content-id={contentId} className="text-lg leading-9 text-black/65">
+      <p
+        data-content-id={contentId}
+        className="text-lg leading-9 text-black/65"
+      >
         <MathText>{text}</MathText>
       </p>
     )
@@ -361,9 +446,9 @@ function HighlightedParagraph({
     if (start < cursor) return
 
     pieces.push(
-      <span key={`text-${highlight.key}`}>
-      <MathText>{text.slice(cursor, start)}</MathText>
-      </span>,
+      <MathText key={`text-${highlight.key}`}>
+        {text.slice(cursor, start)}
+      </MathText>,
     )
 
     const isActive = activeId === highlight.key
@@ -390,11 +475,15 @@ function HighlightedParagraph({
             id={highlight.explorationId}
             actions={highlight.actions}
             onAskTutor={() => {
-              onAskTutor(`Explain this to me: "${highlight.text}"`)
+              onAskTutor(
+                `Explain this to me: "${highlight.text}"`,
+              )
               setActiveId(null)
             }}
             onWhy={() => {
-              onAskTutor(`Why is "${highlight.text}" important here? Explain the reasoning behind it.`)
+              onAskTutor(
+                `Why is "${highlight.text}" important here? Explain the reasoning behind it.`,
+              )
               setActiveId(null)
             }}
           />
@@ -406,13 +495,16 @@ function HighlightedParagraph({
   })
 
   pieces.push(
-    <span key="text-tail">
-      <MathText>{text.slice(cursor)}</MathText>
-    </span>,
+    <MathText key="text-tail">
+      {text.slice(cursor)}
+    </MathText>,
   )
 
   return (
-    <p data-content-id={contentId} className="text-lg leading-9 text-black/65">
+    <p
+      data-content-id={contentId}
+      className="text-lg leading-9 text-black/65"
+    >
       {pieces}
     </p>
   )
@@ -421,13 +513,18 @@ function HighlightedParagraph({
 function Examples({
   examples,
 }: {
-  examples: { id: string; question: string; solution: string }[]
+  examples: {
+    id: string
+    question: string
+    solution: string
+  }[]
 }) {
   return (
     <section>
       <h2 className="mb-6 text-3xl font-semibold tracking-tight">
-        Try thinking about it
+        <MathText>Try thinking about it</MathText>
       </h2>
+
       <div className="space-y-5">
         {examples.map((example, index) => (
           <details
@@ -439,11 +536,15 @@ function Examples({
                 <span className="text-sm font-semibold text-black/30">
                   {String(index + 1).padStart(2, '0')}
                 </span>
-                <p className="font-medium leading-7">{example.question}</p>
+
+                <p className="font-medium leading-7">
+                  <MathText>{example.question}</MathText>
+                </p>
               </div>
             </summary>
+
             <div className="border-t border-black/10 px-6 py-5 text-black/55">
-              {example.solution}
+              <MathText>{example.solution}</MathText>
             </div>
           </details>
         ))}
@@ -457,12 +558,19 @@ function KeyIdeas({ ideas }: { ideas: string[] }) {
     <section>
       <div className="mb-6 flex items-center gap-3">
         <Lightbulb size={21} />
-        <h2 className="text-3xl font-semibold tracking-tight">Key ideas</h2>
+
+        <h2 className="text-3xl font-semibold tracking-tight">
+          <MathText>Key ideas</MathText>
+        </h2>
       </div>
+
       <div className="grid gap-3">
         {ideas.map((idea) => (
-          <div key={idea} className="rounded-2xl bg-[#f7f7f5] px-5 py-4 text-black/60">
-            {idea}
+          <div
+            key={idea}
+            className="rounded-2xl bg-[#f7f7f5] px-5 py-4 text-black/60"
+          >
+            <MathText>{idea}</MathText>
           </div>
         ))}
       </div>
@@ -470,16 +578,24 @@ function KeyIdeas({ ideas }: { ideas: string[] }) {
   )
 }
 
-function Misconceptions({ misconceptions }: { misconceptions: string[] }) {
+function Misconceptions({
+  misconceptions,
+}: {
+  misconceptions: string[]
+}) {
   return (
     <section>
       <h2 className="mb-6 text-3xl font-semibold tracking-tight">
-        Watch out for these ideas
+        <MathText>Watch out for these ideas</MathText>
       </h2>
+
       <div className="space-y-3">
         {misconceptions.map((item) => (
-          <div key={item} className="rounded-2xl border border-black/10 px-5 py-4 text-black/55">
-            {item}
+          <div
+            key={item}
+            className="rounded-2xl border border-black/10 px-5 py-4 text-black/55"
+          >
+            <MathText>{item}</MathText>
           </div>
         ))}
       </div>
@@ -511,19 +627,31 @@ function AiTutorPanel({
 
   useEffect(() => {
     if (!initialPrompt) return
+
     setInput(initialPrompt)
     onInitialPromptConsumed()
+
     requestAnimationFrame(() => inputRef.current?.focus())
   }, [initialPrompt, onInitialPromptConsumed])
 
   const sendMessage = async (messageOverride?: string) => {
     const message = (messageOverride ?? input).trim()
+
     if (!message || sending) return
 
     setSending(true)
     setError('')
+
     const history = messages
-    setMessages((current) => [...current, { role: 'user', text: message }])
+
+    setMessages((current) => [
+      ...current,
+      {
+        role: 'user',
+        text: message,
+      },
+    ])
+
     setInput('')
 
     try {
@@ -534,25 +662,46 @@ function AiTutorPanel({
         message,
         history,
       })
-      setMessages((current) => [...current, { role: 'model', text: result.answer }])
+
+      setMessages((current) => [
+        ...current,
+        {
+          role: 'model',
+          text: result.answer,
+        },
+      ])
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'AI tutor failed to respond')
+      setError(
+        err instanceof Error
+          ? err.message
+          : 'AI tutor failed to respond',
+      )
     } finally {
       setSending(false)
     }
   }
 
-  const quickActions = mode === 'socratic'
-    ? [
-       // ['Start a Socratic check', `I will now start explaining ${concept.title}. Assess .`],
-        //['Test me with a question', 'Ask me one conceptual question about this topic. Do not reveal the answer until you have evaluated my response.'],
-        //['Assess my grasp', 'Based on my explanations so far, assess my grasp using Strong / Developing / Needs work, explain what I understand, what is shaky, and my next step.'],
-      ]
-    : [
-        ['Explain this simpler', 'Explain the current concept in simpler words.'],
-        ['Give me an example', 'Give me a clear example of the current concept.'],
-        ['Why does this work?', 'Why does this work? Explain the reasoning.'],
-      ]
+  const quickActions =
+    mode === 'socratic'
+      ? [
+          // ['Start a Socratic check', `I will now start explaining ${concept.title}. Assess .`],
+          // ['Test me with a question', 'Ask me one conceptual question about this topic. Do not reveal the answer until you have evaluated my response.'],
+          // ['Assess my grasp', 'Based on my explanations so far, assess my grasp using Strong / Developing / Needs work, explain what I understand, what is shaky, and my next step.'],
+        ]
+      : [
+          [
+            'Explain this simpler',
+            'Explain the current concept in simpler words.',
+          ],
+          [
+            'Give me an example',
+            'Give me a clear example of the current concept.',
+          ],
+          [
+            'Why does this work?',
+            'Why does this work? Explain the reasoning.',
+          ],
+        ]
 
   return (
     <aside className="sticky top-24 flex min-h-[calc(100vh-9rem)] max-h-[calc(100vh-6rem)] flex-col rounded-3xl border border-black/10 bg-[#111] text-white">
@@ -561,9 +710,13 @@ function AiTutorPanel({
           <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-white text-black">
             <Bot size={20} />
           </div>
+
           <div className="min-w-0">
             <p className="font-semibold">AI Tutor</p>
-            <p className="truncate text-xs text-white/40">Ask, explore, or test your understanding</p>
+
+            <p className="truncate text-xs text-white/40">
+              Ask, explore, or test your understanding
+            </p>
           </div>
         </div>
 
@@ -571,14 +724,23 @@ function AiTutorPanel({
           <button
             type="button"
             onClick={() => setMode('normal')}
-            className={`rounded-lg px-3 py-2 text-xs font-semibold transition ${mode === 'normal' ? 'bg-white text-black' : 'text-white/45 hover:text-white'}`}
+            className={`rounded-lg px-3 py-2 text-xs font-semibold transition ${
+              mode === 'normal'
+                ? 'bg-white text-black'
+                : 'text-white/45 hover:text-white'
+            }`}
           >
             Tutor
           </button>
+
           <button
             type="button"
             onClick={() => setMode('socratic')}
-            className={`rounded-lg px-3 py-2 text-xs font-semibold transition ${mode === 'socratic' ? 'bg-white text-black' : 'text-white/45 hover:text-white'}`}
+            className={`rounded-lg px-3 py-2 text-xs font-semibold transition ${
+              mode === 'socratic'
+                ? 'bg-white text-black'
+                : 'text-white/45 hover:text-white'
+            }`}
           >
             Socratic Mode
           </button>
@@ -586,7 +748,8 @@ function AiTutorPanel({
 
         {mode === 'socratic' && (
           <p className="mt-3 rounded-xl bg-white/5 p-3 text-xs leading-5 text-white/50">
-            You explain the idea. The AI asks probing questions, checks your reasoning, and gives you a grasp assessment.
+            You explain the idea. The AI asks probing questions, checks your
+            reasoning, and gives you a grasp assessment.
           </p>
         )}
       </div>
@@ -596,18 +759,29 @@ function AiTutorPanel({
           <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
             <div className="mb-2 flex items-center justify-between text-xs font-semibold uppercase tracking-wider text-white/35">
               Selected text
-              <button onClick={onClearSelection} aria-label="Clear selected text">
+
+              <button
+                onClick={onClearSelection}
+                aria-label="Clear selected text"
+              >
                 <X size={14} />
               </button>
             </div>
-            <p className="text-sm leading-6 text-white/75">“{selectedText}”</p>
+
+            <p className="text-sm leading-6 text-white/75">
+              “{selectedText}”
+            </p>
           </div>
         )}
 
         {messages.length === 0 && (
           <>
             <div className="flex gap-3">
-              <Sparkles className="mt-1 shrink-0 text-white/40" size={17} />
+              <Sparkles
+                className="mt-1 shrink-0 text-white/40"
+                size={17}
+              />
+
               <p className="text-sm leading-6 text-white/60">
                 {mode === 'socratic'
                   ? 'Explain the concept in your own words. I will question your reasoning instead of giving away the answer.'
@@ -632,26 +806,32 @@ function AiTutorPanel({
         {messages.map((message, index) => (
           <div
             key={`${message.role}-${index}`}
-            className={message.role === 'user'
-              ? 'ml-6 rounded-2xl bg-white px-4 py-3 text-sm text-black'
-              : 'mr-4 rounded-2xl bg-white/5 px-4 py-3 text-sm leading-6 text-white/75'}
+            className={
+              message.role === 'user'
+                ? 'ml-6 rounded-2xl bg-white px-4 py-3 text-sm text-black'
+                : 'mr-4 rounded-2xl bg-white/5 px-4 py-3 text-sm leading-6 text-white/75'
+            }
           >
             {message.role === 'user' ? (
-                message.text
-              ) : (
-                <ReactMarkdown
-                  remarkPlugins={[remarkMath]}
-                  rehypePlugins={[rehypeKatex]}
-                >
-                  {message.text}
-                </ReactMarkdown>
-              )}
+              message.text
+            ) : (
+              <ReactMarkdown
+                remarkPlugins={[remarkMath]}
+                rehypePlugins={[rehypeKatex]}
+              >
+                {message.text}
+              </ReactMarkdown>
+            )}
           </div>
         ))}
 
         {sending && (
           <div className="flex items-center gap-2 text-sm text-white/40">
-            <LoaderCircle size={15} className="animate-spin" /> Thinking...
+            <LoaderCircle
+              size={15}
+              className="animate-spin"
+            />
+            Thinking...
           </div>
         )}
 
@@ -669,12 +849,19 @@ function AiTutorPanel({
             value={input}
             onChange={(event) => setInput(event.target.value)}
             onKeyDown={(event) => {
-              if (event.key === 'Enter') sendMessage()
+              if (event.key === 'Enter') {
+                sendMessage()
+              }
             }}
             className="min-w-0 flex-1 bg-transparent text-sm outline-none placeholder:text-white/30"
-            placeholder={mode === 'socratic' ? 'Explain your thinking...' : 'Ask a doubt...'}
+            placeholder={
+              mode === 'socratic'
+                ? 'Explain your thinking...'
+                : 'Ask a doubt...'
+            }
             disabled={sending}
           />
+
           <button
             onClick={() => sendMessage()}
             disabled={sending || !input.trim()}
@@ -691,6 +878,9 @@ function AiTutorPanel({
 function formatSection(section: string) {
   return section
     .split('-')
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .map(
+      (word) =>
+        word.charAt(0).toUpperCase() + word.slice(1),
+    )
     .join(' ')
 }

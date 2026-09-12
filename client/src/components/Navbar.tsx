@@ -1,15 +1,15 @@
 import { Link, useLocation } from 'react-router-dom'
-import { ArrowUpRight, Menu, X } from 'lucide-react'
-import { useState } from 'react'
+//import { ArrowUpRight, Menu, X } from 'lucide-react'
+//import { useState } from 'react'
 
 export default function Navbar() {
   const location = useLocation()
   const isHome = location.pathname === '/'
-  const [menuOpen, setMenuOpen] = useState(false)
+  //const [menuOpen, setMenuOpen] = useState(false)
   const expanded = !isHome
 
   const links = [
-    { label: 'Learn', path: '/learn' },
+    // { label: 'Learn', path: '/learn' },
     { label: 'Subjects', path: '/subjects' },
     { label: 'Roadmap', path: '/roadmap' },
     { label: 'Explore', path: '/explore/applications/trigonometry' },
@@ -43,16 +43,18 @@ export default function Navbar() {
           })}
         </div>
 
-        {!expanded ? (
-          <Link to="/learn" className="btn btn-primary !min-h-0 px-5 py-2.5 text-sm">
+        {/* {!expanded ? (
+          // <Link to="/learn" className="btn btn-primary !min-h-0 px-5 py-2.5 text-sm">
+          <div className="btn btn-primary !min-h-0 px-5 py-2.5 text-sm">
             Get Started <ArrowUpRight size={15} />
-          </Link>
+            </div>
+          // </Link>
         ) : <>
           <button type="button" className="site-nav-menu md:hidden" aria-label="Toggle navigation menu" aria-expanded={menuOpen} aria-controls="primary-navigation-items" onClick={() => setMenuOpen((open) => !open)}>{menuOpen ? <X size={20} /> : <Menu size={20} />}</button>
           <div id="primary-navigation-items" className={`site-nav-mobile md:hidden ${menuOpen ? 'is-open' : ''}`}>
             {links.map((link) => <Link key={link.path} data-nav-item to={link.path} onClick={() => setMenuOpen(false)}>{link.label}</Link>)}
           </div>
-        </>}
+        </>} */}
       </nav>
     </header>
   )

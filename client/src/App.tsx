@@ -1,7 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import LandingPage from './pages/LandingPage'
-import LearnPage from './pages/LearnPage'
+//import LearnPage from './pages/LearnPage'
 import SubjectsPage from './pages/SubjectsPage'
 import SubjectTopicsPage from './pages/SubjectTopicsPage'
 import SubjectRoadmapPage from './pages/SubjectRoadmapPage'
@@ -19,7 +19,7 @@ function App() {
       <PageMotion>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/learn" element={<LearnPage />} />
+          {/* <Route path="/learn" element={<LearnPage />} /> */}
           <Route path="/subjects" element={<SubjectsPage />} />
           <Route path="/subjects/:subjectId" element={<SubjectTopicsPage />} />
           <Route path="/roadmap" element={<Navigate to="/roadmap/subject/mathematics" replace />} />
